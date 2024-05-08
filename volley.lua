@@ -169,7 +169,7 @@ local admins = {
     ["Wreft#5240"] = true
 }
 
-local gameVersion = "V1.8.0"
+local gameVersion = "V1.8.1"
 
 local trad = ""
 local lang = {}
@@ -195,7 +195,7 @@ lang.br = {
 	messageMaxPlayersAlert = "<bv>O número máximo de jogadores deve ser no mínimo 6 e no máximo 20<n>",
 	previousMessage = "<p align='center'>Voltar",
 	nextMessage = "<p align='center'>Próximo",
-	realModeRules = "<p align='center'><font size='15px'>Volley Real Mode Regras<br><br><p align='left'><font size='12px'><b>- Cada time pode se <b>transformar</b> em um <vi>objeto esférico<n> somente 3x (exceto no <b>saque</b> que é apenas 1x)<br><br>- Se a bola for para a fora do lado do seu time e <b>ninguém</b> do seu time se transformou em um <vi>objeto esférico<n> o ponto é do seu time<br><br>- Se a bola foi para fora e o seu time se <b>transformou no</b> <vi><b>objeto esférico<b><n> o ponto é do adversário<br><br>- Cada jogador irá sacar a bola uma vez conforme o andamento da partida<br><br>- Se o jogador sair da quadra, o jogador poderá realizar uma ação por <j>7 segundos<n>, caso contrário o jogador não poderá usar a <j>tecla de espaço<n>"
+	realModeRules = "<p align='center'><font size='15px'>Volley Real Mode Regras<br><br><p align='left'><font size='12px'><b>- Cada time pode se <b>transformar</b> em um <vi>objeto esférico<n> somente 3x (exceto no <b>saque</b> que é apenas 1x)<br><br>- Se a bola for para a fora do lado do seu time e <b>ninguém</b> do seu time se transformou em um <vi>objeto esférico<n> o ponto é do seu time<br><br>- Se a bola foi para fora e o seu time se <b>transformou no</b> <vi><b>objeto esférico<b><n> o ponto é do adversário<br><br>- Cada jogador irá sacar a bola uma vez conforme o andamento da partida<br><br>- Se o jogador sair da quadra, o jogador poderá realizar uma ação por <j>7 segundos<n>, caso contrário o jogador não poderá usar a <j>tecla de espaço<n><br><br>- As teclas 1, 2, 3 e 4 alteram a força do jogador"
 }
 lang.en = {
 	welcomeMessage = "<j>Welcome to the Volley, game was created by Refletz#6472<n>",
@@ -219,7 +219,7 @@ lang.en = {
 	messageMaxPlayersAlert = "<bv>The maximum number of players must be a minimum of 6 and a maximum of 20<n>",
 	previousMessage = "<p align='center'>Back",
 	nextMessage = "<p align='center'>Next",
-	realModeRules = "<p align='center'><font size='15px'>Volley Real Mode Rules<br><br><p align='left'><font size='12px'><b>- Each team can join <b>transform</b> into a <vi>spherical object<n> only 3 times (except for the <b>serve</b> which is only 1 time)<br><br>- If the ball goes out on your team's side and <b>no one</b> on your team turned into a <vi>spherical object<n> the point is your team's<br><br>- If the ball went out and someone of your team <b>turned into</b> <vi><b>spherical object<b><n> the point belongs to the opponent<br><br>- Each player will serve the ball once <br><br>- If the player leaves the court, the player will be able to perform an action for <j>7 seconds<n>, otherwise the player will not be able to use the <j>space key<n>"
+	realModeRules = "<p align='center'><font size='15px'>Volley Real Mode Rules<br><br><p align='left'><font size='12px'><b>- Each team can join <b>transform</b> into a <vi>spherical object<n> only 3 times (except for the <b>serve</b> which is only 1 time)<br><br>- If the ball goes out on your team's side and <b>no one</b> on your team turned into a <vi>spherical object<n> the point is your team's<br><br>- If the ball went out and someone of your team <b>turned into</b> <vi><b>spherical object<b><n> the point belongs to the opponent<br><br>- Each player will serve the ball once <br><br>- If the player leaves the court, the player will be able to perform an action for <j>7 seconds<n>, otherwise the player will not be able to use the <j>space key<n><br><br>- The 1, 2, 3 and 4 keys change the player's strength"
 }
 lang.ar = {
 	welcomeMessage = "<j>مرحبًا بكم في لعبة كرة الطائرة، التي تم إنشاؤها من طرف Refletz#6472<n>",
@@ -243,7 +243,7 @@ lang.ar = {
 	messageMaxPlayersAlert = "<bv>يجب أن يكون الحد الأقصى لعدد اللاعبين 6 لاعبين كحد أدنى و20 كحد أقصى<n>",
 	previousMessage = "<p align='center'>الخلف",
 	nextMessage = "<p align='center'>التالي",
-	realModeRules = "<p align='center'><font size='15px'>قواعد الوضع الحقيقي للكرة الطائرة<br><br><p align='right'><font size='12px'><b>- يمكن لكل فريق الانضمام <b>يتحول</b> إلى <vi>جسم كروي<n> 3 مرات فقط (باستثناء <b>الإرسال</b> الذي يكون مرة واحدة فقط)<br><br>- إذا ذهبت الكرة خرجت إلى جانب فريقك و<b>لم يتحول أي شخص</b> في فريقك إلى <vi>جسم كروي<n> فالنقطة تخص فريقك<br><br>-  إذا خرجت الكرة وشخص ما من فريقك الفريق <b>الذي تحول إلى</b> <vi><b>جسم كروي<b><n> النقطة مملوكة للخصم<br><br>- سيرسل كل لاعب الكرة مرة واحدة  <br><br>-فسيتمكن اللاعب من تنفيذ إجراء لمدة <j>7 ثوانٍ<n>، وإلا فلن يتمكن اللاعب من استخدام <j>مفتاح المسافة<n>"
+	realModeRules = "<p align='center'><font size='15px'>قواعد الوضع الحقيقي للكرة الطائرة<br><br><p align='right'><font size='12px'><b>- يمكن لكل فريق الانضمام <b>يتحول</b> إلى <vi>جسم كروي<n> 3 مرات فقط (باستثناء <b>الإرسال</b> الذي يكون مرة واحدة فقط)<br><br>- إذا ذهبت الكرة خرجت إلى جانب فريقك و<b>لم يتحول أي شخص</b> في فريقك إلى <vi>جسم كروي<n> فالنقطة تخص فريقك<br><br>-  إذا خرجت الكرة وشخص ما من فريقك الفريق <b>الذي تحول إلى</b> <vi><b>جسم كروي<b><n> النقطة مملوكة للخصم<br><br>- سيرسل كل لاعب الكرة مرة واحدة  <br><br>-فسيتمكن اللاعب من تنفيذ إجراء لمدة <j>7 ثوانٍ<n>، وإلا فلن يتمكن اللاعب من استخدام <j>مفتاح المسافة<n><br><br>-تعمل المفاتيح 1 و2 و3 و4 على تغيير قوة اللاعب"
 }
 
 lang.fr = {
@@ -268,7 +268,7 @@ lang.fr = {
 	messageMaxPlayersAlert = "<bv>Le maximum de joueurs doit être au minimum de 6 et au maximum de 20<n>",
 	previousMessage = "<p align='center'>Précédent",
 	nextMessage = "<p align='center'>Suivant",
-	realModeRules = "<p align='center'><font size='15px'>Règles du Volley Real Mode<br><br><p align='left'><font size='12px'><b>- Chaque équipe peut se <b>transformer</b> en un <vi>objet sphérique<n> seulement 3 fois (sauf pour le <b>service</b> où ce n'est qu'UNE fois)<br><br>- Si la balle va dehors de votre côté du terrain et que <b>personne</b> de votre équipe ne s'est transformé en un <vi>objet sphérique<n> le point est pour votre équipe<br><br>- Si la balle va dehors et que quelqu'un de votre équipe <b>s'est transformé</b> en un <vi><b>objet sphérique<b><n> le point revient à l'adversaire<br><br>- Chaque joueur servira la balle une fois <br><br>- Si le joueur quitte le terrain, le joueur pourra effectuer une action pendant <j>7 secondes<n>, autrement le joueur ne sera pas capable d'utiliser la <j>touche espace<n>"
+	realModeRules = "<p align='center'><font size='15px'>Règles du Volley Real Mode<br><br><p align='left'><font size='12px'><b>- Chaque équipe peut se <b>transformer</b> en un <vi>objet sphérique<n> seulement 3 fois (sauf pour le <b>service</b> où ce n'est qu'UNE fois)<br><br>- Si la balle va dehors de votre côté du terrain et que <b>personne</b> de votre équipe ne s'est transformé en un <vi>objet sphérique<n> le point est pour votre équipe<br><br>- Si la balle va dehors et que quelqu'un de votre équipe <b>s'est transformé</b> en un <vi><b>objet sphérique<b><n> le point revient à l'adversaire<br><br>- Chaque joueur servira la balle une fois <br><br>- Si le joueur quitte le terrain, le joueur pourra effectuer une action pendant <j>7 secondes<n>, autrement le joueur ne sera pas capable d'utiliser la <j>touche espace<n><br><br>- Les touches 1, 2, 3 et 4 changent la force du joueur."
 }
 
 if tfm.get.room.language == "br" then
@@ -303,6 +303,7 @@ system.disableChatCommandDisplay (nil, true)
 tfm.exec.disableMortCommand(true)
 
 local playerCanTransform = {}
+local playerForce = {}
 local playerBan = {}
 local playersAfk = {}
 local playerInGame = {}
@@ -646,6 +647,7 @@ function init()
 	tfm.exec.newGame('<C><P /><Z><S><S L="800" H="50" X="400" Y="385" T="6" P="0,0,0.3,0.2,0,0,0,0" /><S m="" L="10" H="404" X="2" Y="202" T="1" P="0,0,0,0.2,0,0,0,0" /><S m="" L="10" X="795" H="404" Y="203" T="1" P="0,0,0,0.2,0,0,0,0" /><S m="" L="10" H="800" X="396" Y="7" T="1" P="0,0,0,0.2,90,0,0,0" /></S><D><DS Y="349" X="400" /><P P="0,0" Y="359" T="6" X="217" /><P P="0,0" Y="363" T="4" X="580" /><P P="0,0" Y="360" T="5" X="319" /><P P="0,0" Y="0" T="257" X="0" /></D><O /></Z></C>')
 
 	for name, data in pairs(tfm.get.room.playerList) do
+		playerForce[name] = 0
 		playerCanTransform[name] = true
 		playerInGame[name] = false
 		playerCoordinates[name] = {x = 0, y = 0}
@@ -2201,6 +2203,7 @@ function teleportPlayersWithTypeMap(islargeMode)
 end
 
 function eventNewPlayer(name)
+	playerForce[name] = 0
 	showOutOfCourtText[name] = false
 	playerOutOfCourt[name] = false
 	playerLanguage[name] = {tr = trad, name = name}
@@ -2267,6 +2270,20 @@ function eventKeyboard(name, key, down, x, y, xv, yv)
 		end
 
 		if gameStats.realMode then
+			if key == 49 then
+				playerForce[name] = 0
+				tfm.exec.chatMessage("<bv>Your strength changed to normal<n>", name)
+			elseif key == 50 then
+				playerForce[name] = -0.2
+				tfm.exec.chatMessage("<bv>Your strength has been reduced by 20%<n>", name)
+			elseif key == 51 then
+				playerForce[name] = -0.45
+				tfm.exec.chatMessage("<bv>Your strength has been reduced by 45%<n>", name)
+			elseif key == 52 then
+				playerForce[name] = -1
+				tfm.exec.chatMessage("<bv>Your strength has been reduced by 100%<n>", name)
+			end
+
 			if x <= 599 or x >= 2001 then
 				if not playerOutOfCourt[name] and not showOutOfCourtText[name] then
 					showOutOfCourtText[name] = true
@@ -2310,11 +2327,11 @@ function eventKeyboard(name, key, down, x, y, xv, yv)
 				local searchPlayerTeam = searchPlayerTeam(name)
 
 				if searchPlayerTeam == "red" and gameStats.redQuantitySpawn >= 0 then
-					aditionalForce = 0
+					aditionalForce = 0 + playerForce[name]
 				end
 
 				if searchPlayerTeam == "blue" and gameStats.blueQuantitySpawn >= 0 then
-					aditionalForce = 0
+					aditionalForce = 0 + playerForce[name]
 				end
 
 				if gameStats.redServe then
@@ -2332,16 +2349,16 @@ function eventKeyboard(name, key, down, x, y, xv, yv)
 				end
 
 				if gameStats.redQuantitySpawn == 3 then
-					aditionalForce = 0.2
+					aditionalForce = 0.2 + playerForce[name]
 				end
 
 				if gameStats.blueQuantitySpawn == 3 then
-					aditionalForce = 0.2
+					aditionalForce = 0.2 + playerForce[name]
 				end
 
 				if gameStats.reduceForce and searchPlayerTeam == gameStats.teamWithOutAce then
 					gameStats.reduceForce = false
-					aditionalForce = -0.45
+					aditionalForce = -0.45 + playerForce[name]
 				end
 
 				playerNearOfTheBall(name, x, y)
