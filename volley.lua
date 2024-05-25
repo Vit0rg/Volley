@@ -169,7 +169,7 @@ local admins = {
     ["Wreft#5240"] = true
 }
 
-local gameVersion = "V1.8.1"
+local gameVersion = "V1.9.0"
 
 local trad = ""
 local lang = {}
@@ -184,8 +184,8 @@ lang.br = {
 	helpText = { 
 		[1] = { text = "<br><br><p align='left'><font size='12px'>O objetivo do vôlei é evitar que a bola caia no chão de sua quadra, e para evitar isso, você pode transformar seu rato em um objeto circular apertando a tecla <j>[ Espaço ]<n>, o rato se destransforma 3 segundos depois. A equipe que fazer 7 pontos primeiro vence!<br>Criar uma sala com admin: <bv><a href='event:roomadmin'>/sala *#volley0SeuNome#0000</a><n><br><br>Comandos (<rose>*<n> = durante a partida | <vp>*<n> = comandos do admin):<br><br><j>!lang<n> <ch>[AR/BR/EN/FR]<n> - Para modificar o idioma do minigame<br><j>!join<n> <rose>*<n> - Para entrar na partida <br><j>!leave<n> <rose>*<n> - Para sair da partida e ir para a área de espectador<br><j>!resettimer<n> <vp>*<n> - Resetar o tempo no lobby antes de começar a partida<br><j>!setmap<n> <ch>[small/large/extra-large]<n> <vp>*<n> - Para selecionar um mapa em especifico antes de começar uma partida<br><j>!pw<n> <ch>[senha]<n> <vp>*<n> - Colocar uma senha na sala"}, 
 		[2] = { text = "<p align='left'><font size='12px'><br><br>Comandos (<rose>*<n> = durante a partida | <vp>*<n> = comandos do admin):<br><br><j>!winscore<n> <ch>[número]<n> <rose>*<n> <vp>*<n> - Mudar o numero máximo de pontos para vencer uma partida<br><j>!customMap<n> <ch>[true ou false]<n> <ch>[index do mapa]<n> <vp>*<n> - Selecionar um mapa costumizado<br><j>!maps<n> - Mostra a lista de mapas<br><j>!votemap<n> <ch>[numero]<n> - Votar em um mapa costumizado para a próxima partida<br><j>!setscore<n> <ch>[nome do jogador]<n> <ch>[numero]<n> <rose>*<n> <vp>*<n> - Troca a score do jogador pelo numero<br><j>!setscore<n> <ch>[nome do jogador]<n> <rose>*<n> <vp>*<n> - Adiciona +1 a score do jogador<br><j>!setscore<n> <ch>[red ou blue]<n> <ch>[numero]<n> <rose>*<n> <vp>*<n> - Troca a score do time pelo numero<br><j>!4teamsmode<n> <ch>[true ou false]<n> <vp>*<n> - Seleciona o modo de 4 times do Volley<br>"},
-		[3] = { text = "<p align='left'><font size='12px'><br><br>Comandos (<rose>*<n> = durante a partida | <vp>*<n> = comandos do admin):<br><br><j>!setmaxplayers <ch>[6 - 20]<n> <vp>*<n> - Seleciona o máximo de jogadores para entrar na sala<br><j>!balls<n> - Mostra a lista de bolas costumizadas do #Volley<br><j>!customball<n> <ch>[Número]<n> <vp>*<n> - Seleciona uma bola costumizável para a próxima partida<br><j>!lobby<n> <rose>*<n> <vp>*<n> - Encerra uma partida que estava em andamento e retorna para o lobby<br><j>!setplayerforce<n> <ch>[Número: 0 - 1.5]<n> <vp>*<n> - Seleciona a força para o objeto esférico do rato<br><j>!2teamsmode<n> <ch>[true ou false]<n> <vp>*<n> - Seleciona o modo especial de 2 times<br><j>!sync<n> <vp>*<n> - O sistema escolhe o jogador com a menor latência para sincronizar a sala<br><j>!synctfm<n> <vp>*<n> - O sistema do TFM escolhe o jogador com a menor latência para sincronizar"},
-		[4] = { text = "<p align='left'><font size='12px'><br><br>Comandos (<rose>*<n> = durante a partida | <vp>*<n> = comandos do admin):<br><br><j>!skiptimer<n> <vp>*<n> - Inicia a partida o mais rápido possível<br><j>!afksystem<n> <ch>[true ou false]<n> <vp>*<n> - Ativa ou desativa o sistema de AFK<n><br><j>!settimeafk<n> <ch>[segundos]<n> <vp>*<n> - Seleciona o tempo de afk em segundos<br><j>!realmode<n> <ch>[true ou false]<n> - Seleciona Volley Real Mode" }
+		[3] = { text = "<p align='left'><font size='12px'><br><br>Comandos (<rose>*<n> = durante a partida | <vp>*<n> = comandos do admin):<br><br><j>!setmaxplayers <ch>[6 - 20]<n> <vp>*<n> - Seleciona o máximo de jogadores para entrar na sala<br><j>!balls<n> - Mostra a lista de bolas costumizadas do #Volley<br><j>!customball<n> <ch>[Número]<n> <vp>*<n> - Seleciona uma bola costumizável para a próxima partida<br><j>!lobby<n> <rose>*<n> <vp>*<n> - Encerra uma partida que estava em andamento e retorna para o lobby<br><j>!setplayerforce<n> <ch>[Número: 0 - 1.05]<n> <vp>*<n> - Seleciona a força para o objeto esférico do rato<br><j>!2teamsmode<n> <ch>[true ou false]<n> <vp>*<n> - Seleciona o modo especial de 2 times<br><j>!sync<n> <vp>*<n> - O sistema escolhe o jogador com a menor latência para sincronizar a sala<br><j>!synctfm<n> <vp>*<n> - O sistema do TFM escolhe o jogador com a menor latência para sincronizar"},
+		[4] = { text = "<p align='left'><font size='12px'><br><br>Comandos (<rose>*<n> = durante a partida | <vp>*<n> = comandos do admin):<br><br><j>!skiptimer<n> <vp>*<n> - Inicia a partida o mais rápido possível<br><j>!afksystem<n> <ch>[true ou false]<n> <vp>*<n> - Ativa ou desativa o sistema de AFK<n><br><j>!settimeafk<n> <ch>[segundos]<n> <vp>*<n> - Seleciona o tempo de afk em segundos<br><j>!realmode<n> <ch>[true ou false]<n> - Seleciona Volley Real Mode<br><j>!twoballs<n> <ch>[true ou false]<n> - Ativa duas bolas em jogo para o modo de 4 times do Volley<br><j>!consumables<n> <ch>[true ou false]<n> - Escolha um consumível com as teclas (7, 8, 9 e 0) e ative eles apertando M no modo normal" }
 	},
 	creditsTitle = "<p align='center'><font size='15px'>Créditos (Volley)",
 	creditsText = "<br><br><p align='left'><font size='12px'>O jogo foi desenvolvido por <j>Refletz#6472 (Soristl)<n><br><br>Tradução BR/EN: <j>Refletz#6472 (Soristl)<n><br><br>Tradução AR: <j>Ionut_eric_pro#1679<n>Tradução <br><br>FR: <j>Rowed#4415<n>",
@@ -208,8 +208,8 @@ lang.en = {
 	helpText = { 
 		[1] = { text = "<br><br><p align='left'><font size='12px'>The objective of volleyball is to prevent the ball from falling to the floor of your court, and to avoid this, you can turn your mouse into a circular object by pressing the <j>[ Space ]<n> key, the mouse untransforms 3 seconds later. The team that scores 7 points first wins!<br>Create a room with admin: <bv><a href='event:roomadmin'>/room *#volley0YourName#0000</a><n><br><br>Commands (<rose>*<n> = during the match | <vp>*<n> = admin's commands):<br><br><j>!lang<n> <ch>[AR/BR/EN/FR]<n> - To modify the minigame language<br><j>!join<n> <rose>*<n> - To join the match<br><j>!leave<n> <rose>*<n> - To leave the match and go to the spectator area<br><j>!resettimer<n> <vp>*<n> - Reset time in the lobby before starting the match<br><j>!setmap<n> <ch>[small/large/extra-large]<n> <vp>*<n> - To select a specific map before starting a match<br><j>!pw<n> <ch>[password]<n> <vp>*<n> - Put a password in the room"},
 		[2] = { text = "<p align='left'><font size='12px'><br><br>Commands (<rose>*<n> = during the match | <vp>*<n> = admin's commands):<br><br><j>!winscore<n> <ch>[number]<n> <rose>*<n> <vp>*<n> - Change the maximum number of points to win a match<br><j>!customMap<n> <ch>[true or false]<n> <ch>[map index]<n> <vp>*<n> - Select a custom map<br><j>!maps<n> - Shows the list of maps<br><j>!votemap<n> <ch>[number]<n> - Vote for a custom map for the next match<br><j>!setscore<n> <ch>[Player name]<n> <ch>[number]<n> <rose>*<n> <vp>*<n> - Swap the player's score by number<br><j>!setscore<n> <ch>[Player name]<n> <rose>*<n> <vp>*<n> - Adds +1 to player's score<br><j>!setscore<n> <ch>[red or blue]<n> <ch>[number]<n> <rose>*<n> <vp>*<n> - Swap the team's score for the number<br><j>!4teamsmode<n> <ch>[true or false]<n> <vp>*<n> - Select 4-team Volley mode"},
-		[3] = { text = "<p align='left'><font size='12px'><br><br>Commands (<rose>*<n> = during the match | <vp>*<n> = admin's commands)<br><br><j>!setmaxplayers <ch>[6 - 20]<n> <vp>*<n> - Selects the maximum number of players to enter the room<br><j>!balls<n> - Shows the list of #Volley custom balls<br><j>!customball<n> <ch>[Number]<n> <vp>*<n> - Select a customizable ball for the next match<br><j>!lobby<n> <rose>*<n> <vp>*<n> - End a match that was in progress and return to the lobby<br><j>!setplayerforce<n> <ch>[Number: 0 - 1.5]<n> <vp>*<n> - Selects the strength for the spherical mouse object<br><j>!2teamsmode<n> <ch>[true or false]<n> <vp>*<n> - Selects the special 2-team mode<br><j>!sync<n> <vp>*<n> - The system chooses the player with the lowest latency to synchronize the room<br><j>!synctfm<n> <vp>*<n> - The TFM system chooses the player with the lowest latency to synchronize the room"},
-		[4] = { text = "<p align='left'><font size='12px'><br><br>Commands (<rose>*<n> = during the match | <vp>*<n> = admin's commands)<br><br><j>!skiptimer<n> <vp>*<n> - Start the game as quickly as possible<br><j>!afksystem<n> <ch>[true or false]<n> <vp>*<n> - Enables or disables the AFK system<n><br><j>!settimeafk<n> <ch>[seconds]<n> <vp>*<n> - Select the afk time in seconds<br><j>!realmode<n> <ch>[true or false]<n> - Select Volley Real Mode"}
+		[3] = { text = "<p align='left'><font size='12px'><br><br>Commands (<rose>*<n> = during the match | <vp>*<n> = admin's commands)<br><br><j>!setmaxplayers <ch>[6 - 20]<n> <vp>*<n> - Selects the maximum number of players to enter the room<br><j>!balls<n> - Shows the list of #Volley custom balls<br><j>!customball<n> <ch>[Number]<n> <vp>*<n> - Select a customizable ball for the next match<br><j>!lobby<n> <rose>*<n> <vp>*<n> - End a match that was in progress and return to the lobby<br><j>!setplayerforce<n> <ch>[Number: 0 - 1.05]<n> <vp>*<n> - Selects the strength for the spherical mouse object<br><j>!2teamsmode<n> <ch>[true or false]<n> <vp>*<n> - Selects the special 2-team mode<br><j>!sync<n> <vp>*<n> - The system chooses the player with the lowest latency to synchronize the room<br><j>!synctfm<n> <vp>*<n> - The TFM system chooses the player with the lowest latency to synchronize the room"},
+		[4] = { text = "<p align='left'><font size='12px'><br><br>Commands (<rose>*<n> = during the match | <vp>*<n> = admin's commands)<br><br><j>!skiptimer<n> <vp>*<n> - Start the game as quickly as possible<br><j>!afksystem<n> <ch>[true or false]<n> <vp>*<n> - Enables or disables the AFK system<n><br><j>!settimeafk<n> <ch>[seconds]<n> <vp>*<n> - Select the afk time in seconds<br><j>!realmode<n> <ch>[true or false]<n> - Select Volley Real Mode<br><j>!twoballs<n> <ch>[true or false]<n> - Activates two balls in play for Volley's 4-team mode<br><j>!consumables<n> <ch>[true or false]<n> - Choose a consumable with the keys (7, 8, 9 and 0) and activate them by pressing M in normal mode"}
 	},
 	creditsTitle = "<p align='center'><font size='15px'>Credits (Volley)",
 	creditsText = "<br><br><p align='left'><font size='12px'>The game was developed by <j>Refletz#6472 (Soristl)<n><br><br>BR/EN Translation: <j>Refletz#6472 (Soristl)<n><br><br>AR Translation: <j>Ionut_eric_pro#1679<n><br><br>FR Translation: <j>Rowed#4415<n>",
@@ -232,8 +232,8 @@ lang.ar = {
 	helpText = { 
 		[1] = { text = "<br><br><p align='right'><font size='12px'>هدف كرة الطائرة هو منع الكرة من السقوط إلى أرضية ملعب فريقك، ولتحقيق هذا، يمكنك تحويل الفأر الخاص بك إلى كائن دائري عن طريق الضغط على <j>[ مسطرة ]<n> مفتاح, ويعود الفأر إلى شكله الأصلي بعد 3 ثوانٍ. الفريق الذي يسجل 7 نقاط أولاً يفوز!<br>إنشاء غرفة بخاصيات المشرف: <bv><a href='event:roomadmin'>/room *#volley0إسمك#0000</a><n><br><br>الأوامر (<rose>*<n> = أثناء المباراة | <vp>*<n> = أوامر المشرف):<br><br><j>!lang<n> <ch>[AR/BR/EN/FR]<n> - لتعديل لغة النمط<br><j>!join<n> <rose>*<n> - للإنضمام للمباراة<br><j>!leave<n> <rose>*<n> - لمغادرة المباراة والذهاب إلى منطقة المتفرجين<br><j>!resettimer<n> <vp>*<n> - قم بإعادة ضبط الوقت في الردهة قبل بدء المباراة<br><j>!setmap<n> <ch>[small/large/extra-large]<n> <vp>*<n> - لتحديد خريطة معينة قبل بدء المباراة<br><j>!pw<n> <ch>[password]<n> <vp>*<n> - ضع كلمة مرور في الغرفة"},
 		[2] = { text = "<p align='right'><font size='12px'><br><br>الأوامر (<rose>*<n> = أثناء المباراة | <vp>*<n> = أوامر المشرف):<br><br><j>!winscore<n> <ch>[number]<n> <rose>*<n> <vp>*<n> - تغيير الحد الأقصى لعدد النقاط للفوز بالمباراة<br><j>!customMap<n> <ch>[true or false]<n> <ch>[map index]<n> <vp>*<n> - اختر ماب مخصص<br><j>!maps<n> - تظهر قائمة الخرائط<br><j>!votemap<n> <ch>[number]<n> - التصويت للحصول على ماب مخصص للمباراة القادمة<br><j>!setscore<n> <ch>[Player name]<n> <ch>[number]<n> <rose>*<n> <vp>*<n> - قم بتبديل نتيجة اللاعب بالرقم<br><j>!setscore<n> <ch>[Player name]<n> <rose>*<n> <vp>*<n> - يضيف +1 إلى نتيجة اللاعب<br><j>!setscore<n> <ch>[red or blue]<n> <ch>[number]<n> <rose>*<n> <vp>*<n> - قم بتبديل نتيجة الفريق بالرقم<br><j>!4teamsmode<n> <ch>[true or false]<n> <vp>*<n> - حدد وضع الكرة الطائرة المكون من 4 فرق"},
-		[3] = { text = "<p align='right'><font size='12px'><br><br>الأوامر (<rose>*<n> = أثناء المباراة | <vp>*<n> = أوامر المشرف)<br><br><j>!setmaxplayers <ch>[6 - 20]<n> <vp>*<n> - يحدد الحد الأقصى لعدد اللاعبين لدخول الغرفة<br><j>!balls<n> - تظهر قائمة الكرات الخاصة بالنمط <br><j>!customball<n> <ch>[Number]<n> <vp>*<n> - حدد كرة خاصة للمباراة القادمة<br><j>!lobby<n> <rose>*<n> <vp>*<n> - إنهاء المباراة الجارية والعودة إلى الردهة<br><j>!setplayerforce<n> <ch>[Number: 0 - 1.5]<n> <vp>*<n> - تحديد قوة شكل الفأر الكروي<br><j>!2teamsmode<n> <ch>[true or false]<n> <vp>*<n> - يختار الوضع الخاص المكون من فريقين<br><j>!sync<n> <vp>*<n> - يختار النظام اللاعب ذو زمن الاستجابة الأقل لمزامنة الغرفة<br><j>!synctfm<n> <vp>*<n> - يقام نظام TFM باختيار اللاعب صاحب أقل زمن استجابة لمزامنة الغرفة."},
-		[4] = { text = "<p align='right'><font size='12px'><br><br>الأوامر (<rose>*<n> = أثناء المباراة | <vp>*<n> = أوامر المشرف)<br><br><j>!skiptimer<n> <vp>*<n> - يتخطى وقت الانتظار لبدء اللعبة إلى 5 ثواني <br><j>!afksystem<n> <ch>[true or false]<n> <vp>*<n> - تمكين أو تعطيل نظام AFK<n><br><j>!settimeafk<n> <ch>[true or false]<n> <vp>*<n> - حدد الوقت AFK بالثواني <br><j>!realmode<n> <ch>[true or false]<n> - حدد الوضع الحقيقي للكرة الطائرة"}
+		[3] = { text = "<p align='right'><font size='12px'><br><br>الأوامر (<rose>*<n> = أثناء المباراة | <vp>*<n> = أوامر المشرف)<br><br><j>!setmaxplayers <ch>[6 - 20]<n> <vp>*<n> - يحدد الحد الأقصى لعدد اللاعبين لدخول الغرفة<br><j>!balls<n> - تظهر قائمة الكرات الخاصة بالنمط <br><j>!customball<n> <ch>[Number]<n> <vp>*<n> - حدد كرة خاصة للمباراة القادمة<br><j>!lobby<n> <rose>*<n> <vp>*<n> - إنهاء المباراة الجارية والعودة إلى الردهة<br><j>!setplayerforce<n> <ch>[Number: 0 - 1.05]<n> <vp>*<n> - تحديد قوة شكل الفأر الكروي<br><j>!2teamsmode<n> <ch>[true or false]<n> <vp>*<n> - يختار الوضع الخاص المكون من فريقين<br><j>!sync<n> <vp>*<n> - يختار النظام اللاعب ذو زمن الاستجابة الأقل لمزامنة الغرفة<br><j>!synctfm<n> <vp>*<n> - يقام نظام TFM باختيار اللاعب صاحب أقل زمن استجابة لمزامنة الغرفة."},
+		[4] = { text = "<p align='right'><font size='12px'><br><br>الأوامر (<rose>*<n> = أثناء المباراة | <vp>*<n> = أوامر المشرف)<br><br><j>!skiptimer<n> <vp>*<n> - يتخطى وقت الانتظار لبدء اللعبة إلى 5 ثواني <br><j>!afksystem<n> <ch>[true or false]<n> <vp>*<n> - تمكين أو تعطيل نظام AFK<n><br><j>!settimeafk<n> <ch>[true or false]<n> <vp>*<n> - حدد الوقت AFK بالثواني <br><j>!realmode<n> <ch>[true or false]<n> - حدد الوضع الحقيقي للكرة الطائرة <br><j>!twoballs<n> <ch>[True or False]<n> - تفعيل كرتين في اللعب لفرق الوضع 4 في الكرة الطائرة<br><j>!consumables<n> <ch>[true or false]<n> - حدد عنصرًا مستهلكًا باستخدام المفاتيح (7، 8، 9، 0)، وقم بتنشيطه وإنشاء M في الوضع العادي"}
 	},
 	creditsTitle = "<p align='center'><font size='15px'>شكر خاص (الكرة الطائرة)",
 	creditsText = "<br><br><p align='right'><font size='12px'>تم تطوير اللعبة من طرف <j>Refletz#6472 (Soristl)<n><br><br>ترجمة BR/EN: <j>Refletz#6472 (Soristl)<n><br><br>ترجمة AR: <j>Ionut_eric_pro#1679<n><br><br>ترجمة FR: <j>Rowed#4415<n>",
@@ -257,8 +257,8 @@ lang.fr = {
 	helpText = { 
 		[1] = { text = "<br><br><p align='left'><font size='12px'>L'objectif du volley est d'éviter que la balle ne tombe sur le sol de votre côté du terrain, et pour éviter cela, vous pouvez transformer votre souris en un objet circulaire en pressant la touche <j><br>[ Espace ]<n>, la souris reprend sa forme originale 3 secondes plus tard. L'équipe qui marque 7 points en première gagne!<br>Créer un salon avec admin: <bv><a href='event:roomadmin'>/salon *#volley0VotreNom#0000</a><n><br><br>Commandes (<rose>*<n> = durant la partie | <vp>*<n> = commandes admin):<br><br><j>!lang<n> <ch>[AR/BR/EN/FR]<n> - Pour modifier la langue du mini-jeu<br><j>!join<n> <rose>*<n> - Pour rejoindre la partie<br><j>!leave<n> <rose>*<n> - Pour quitter la partie et aller dans la zone des spectateurs<br><j>!resettimer<n> <vp>*<n> - Réinitialise le temps dans le lobby avant de commencer la partie<br><j>!setmap<n> <ch>[small/large/extra-large]<n> <vp>*<n> - Pour sélectionner une carte spécifique avant de commencer la partie"},
 		[2] = { text = "<p align='left'><font size='12px'><br><br>Commandes (<rose>*<n> = durant la partie | <vp>*<n> = commandes admin):<br><br><j>!pw<n> <ch>[password]<n> <vp>*<n> - Mettre un mot de passe dans le salon<br><j>!winscore<n> <ch>[nombre]<n> <rose>*<n> <vp>*<n> - Change le score à atteindre pour gagner la partie<br><j>!customMap<n> <ch>[true ou false]<n> <ch>[index de la carte]<n> <vp>*<n> - Sélectionne une carte customisée<br><j>!maps<n> - Affiche la liste de cartes<br><j>!votemap<n> <ch>[nombre]<n> - Vote pour une carte customisée pour la prochaine partie<br><j>!setscore<n> <ch>[Nom du joueur]<n> <ch>[nombre]<n> <rose>*<n> <vp>*<n> - Change le score du joueur par le nombre<br><j>!setscore<n> <ch>[Nom du joueur]<n> <rose>*<n> <vp>*<n> - Ajoute +1 au score du joueur<br><j>!setscore<n> <ch>[red ou blue]<n> <ch>[nombre]<n> <rose>*<n> <vp>*<n> - Change le score de l'équipe par le nombre<br><j>!4teamsmode<n> <ch>[true ou false]<n> <vp>*<n> - Sélectionne le mode de 4 équipes au Volley"},
-		[3] = { text = "<p align='left'><font size='12px'><br><br>Commandes (<rose>*<n> = durant la partie | <vp>*<n> = commandes admin)<br><br><j>!setmaxplayers <ch>[6 - 20]<n> <vp>*<n> - Sélectionne le nombre maximum de joueurs pouvant entrer dans le salon<br><j>!balls<n> - Affiche la liste des balles customisées du #Volley<br><j>!customball<n> <ch>[Nombre]<n> <vp>*<n> - Sélectionne une balle customisée pour la prochaine partie<br><j>!lobby<n> <rose>*<n> <vp>*<n> - Termine un match en cours et retourne au lobby<br><j>!setplayerforce<n> <ch>[Nombre: 0 - 1.5]<n> <vp>*<n> - Sélectionne la force pour l'objet sphérique de la souris<br><j>!2teamsmode<n> <ch>[true ou false]<n> <vp>*<n> - Sélectionne le mode de jeu spécial à 2 équipes<br><j>!sync<n> <vp>*<n> - Le système choisit le joueur avec la latence la plus faible pour synchroniser le salon<br><j>!synctfm<n> <vp>*<n> - Le système TFM choisit le joueur avec la latence la plus faible pour synchroniser le salon"},
-		[4] = { text = "<p align='left'><font size='12px'><br><br>Commandes (<rose>*<n> = durant la partie | <vp>*<n> = commandes amdin)<br><br><j>!skiptimer<n> <vp>*<n> - Commence la partie le plus vite possible<br><j>!afksystem<n> <ch>[true ou false]<n> <vp>*<n> - Active ou désactive le système AFK<n><br><j>!settimeafk<n> <ch>[secondes]<n> <vp>*<n> - Sélectionne le temps d'afk en secondes<br><j>!realmode<n> <ch>[true ou false]<n> - Sélectionne le mode Réel de Volley"}
+		[3] = { text = "<p align='left'><font size='12px'><br><br>Commandes (<rose>*<n> = durant la partie | <vp>*<n> = commandes admin)<br><br><j>!setmaxplayers <ch>[6 - 20]<n> <vp>*<n> - Sélectionne le nombre maximum de joueurs pouvant entrer dans le salon<br><j>!balls<n> - Affiche la liste des balles customisées du #Volley<br><j>!customball<n> <ch>[Nombre]<n> <vp>*<n> - Sélectionne une balle customisée pour la prochaine partie<br><j>!lobby<n> <rose>*<n> <vp>*<n> - Termine un match en cours et retourne au lobby<br><j>!setplayerforce<n> <ch>[Nombre: 0 - 1.05]<n> <vp>*<n> - Sélectionne la force pour l'objet sphérique de la souris<br><j>!2teamsmode<n> <ch>[true ou false]<n> <vp>*<n> - Sélectionne le mode de jeu spécial à 2 équipes<br><j>!sync<n> <vp>*<n> - Le système choisit le joueur avec la latence la plus faible pour synchroniser le salon<br><j>!synctfm<n> <vp>*<n> - Le système TFM choisit le joueur avec la latence la plus faible pour synchroniser le salon"},
+		[4] = { text = "<p align='left'><font size='12px'><br><br>Commandes (<rose>*<n> = durant la partie | <vp>*<n> = commandes amdin)<br><br><j>!skiptimer<n> <vp>*<n> - Commence la partie le plus vite possible<br><j>!afksystem<n> <ch>[true ou false]<n> <vp>*<n> - Active ou désactive le système AFK<n><br><j>!settimeafk<n> <ch>[secondes]<n> <vp>*<n> - Sélectionne le temps d'afk en secondes<br><j>!realmode<n> <ch>[true ou false]<n> - Sélectionne le mode Réel de Volley<br><j>!twoballs<n> <ch>[true ou false]<n> - Active deux balles en jeu pour le mode 4 équipes de Volley<br><j>!consumables<n> <ch>[true ou false]<n> - Choisissez un consommable avec les touches (7, 8, 9 et 0) et activez-le en appuyant sur M en mode normal"}
 	},
 	creditsTitle = "<p align='center'><font size='15px'>Crédits (Volley)",
 	creditsText = "<br><br><p align='left'><font size='12px'>Le jeu a été développé par <j>Refletz#6472 (Soristl)<n><br><br>BR/EN Translation: <j>Refletz#6472 (Soristl)<n><br><br>AR Translation: <j>Ionut_eric_pro#1679<n><br><br>FR Translation: <j>Rowed#4415<n>",
@@ -389,8 +389,33 @@ local customMaps = {
 local customMapsTwoTeamsMode = {
 	[1] = {
 		[1] = '<C><P L="1600" F="3" G="0,4" MEDATA=";;;;-0;0:::1-"/><Z><S><S T="7" X="805" Y="400" L="1610" H="100" P="0,0,0.1,0.2,0,0,0,0" c="3" N=""/><S T="9" X="600" Y="430" L="1200" H="10" P="0,0,0,0,0,0,0,0"/><S T="1" X="400" Y="350" L="10" H="200" P="0,0,0,0.2,0,0,0,0"/><S T="12" X="400" Y="455" L="800" H="10" P="0,0,0.3,0.2,0,0,0,0" o="6a7495"/><S T="13" X="100" Y="359" L="10" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="3"/><S T="13" X="600" Y="359" L="10" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="3"/><S T="12" X="250" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="1" X="790" Y="0" L="1620" H="10" P="0,0,0,0.2,0,0,0,0" c="3"/><S T="0" X="790" Y="95" L="1620" H="10" P="0,0,0.3,0.2,0,0,0,0" c="3" m=""/><S T="0" X="305" Y="48" L="10" H="100" P="0,0,0.3,0.2,0,0,0,0" c="3" m=""/><S T="0" X="1300" Y="48" L="10" H="100" P="0,0,0.3,0.2,0,0,0,0" c="3" m=""/><S T="0" X="790" Y="225" L="1620" H="10" P="0,0,0.3,0.2,0,0,0,0" c="3" m=""/><S T="0" X="400" Y="239" L="10" H="30" P="0,0,0,0,0,0,0,0" c="3" m=""/><S T="0" X="400" Y="791" L="800" H="10" P="0,0,0.3,0.2,90,0,0,0" c="3" m=""/><S T="12" X="316" Y="-129" L="20" H="200" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3"/><S T="12" X="407" Y="-133" L="20" H="200" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3"/><S T="12" X="363" Y="-92" L="20" H="100" P="0,0,0.2,0.2,90,0,0,0" o="6a7495" c="3"/><S T="12" X="360" Y="-206" L="20" H="100" P="0,0,0.2,0.2,90,0,0,0" o="6a7495" c="3"/><S T="12" X="400" Y="460" L="3000" H="120" P="0,0,0.3,0.2,0,0,0,0" o="6a7495" c="4" N=""/><S T="12" X="1350" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="1" X="600" Y="-800" L="1200" H="10" P="0,0,0,0.2,0,0,0,0"/><S T="1" X="800" Y="350" L="10" H="200" P="0,0,0,0.2,0,0,0,0"/><S T="0" X="800" Y="790" L="800" H="10" P="0,0,0.3,0.2,90,0,0,0" c="3" m=""/><S T="0" X="800" Y="239" L="10" H="30" P="0,0,0,0,0,0,0,0" c="3" m=""/><S T="13" X="1000" Y="359" L="10" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="3"/><S T="1" X="1200" Y="350" L="10" H="200" P="0,0,0,0.2,0,0,0,0"/><S T="0" X="1200" Y="239" L="10" H="30" P="0,0,0,0,0,0,0,0" c="3" m=""/><S T="0" X="1200" Y="790" L="800" H="10" P="0,0,0.3,0.2,90,0,0,0" c="3" m=""/><S T="12" X="600" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="12" X="1000" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="13" X="1500" Y="359" L="10" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="3"/><S T="12" X="400" Y="455" L="800" H="10" P="0,0,0.3,0.2,0,0,0,0" o="6a7495"/><S T="12" X="-5" Y="0" L="10" H="3000" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3"/><S T="12" X="1605" Y="0" L="10" H="3000" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3"/><S T="1" X="900" Y="-763" L="3000" H="10" P="0,0,0,0.2,0,0,0,0"/><S T="1" X="-80" Y="235" L="125" H="10" P="0,0,0,0.2,0,0,0,0" c="2"/><S T="1" X="-30" Y="160" L="30" H="10" P="0,0,0,0.2,0,0,0,0"/><S T="9" X="-75" Y="195" L="120" H="70" P="0,0,0,0,0,0,0,0"/><S T="1" X="-50" Y="-236" L="10" H="800" P="0,0,0,0.2,0,0,0,0" c="2"/><S T="12" X="-120" Y="0" L="10" H="3000" P="0,0,0.2,0.2,0,0,0,0" o="6a7495"/><S T="1" X="-84" Y="-704" L="300" H="11" P="0,0,0,0.1,-20,0,0,0"/><S T="9" X="-90" Y="-194" L="80" H="760" P="0,0,0,0,0,0,0,0"/><S T="12" X="-5" Y="1730" L="10" H="3000" P="0,0,0.2,0.2,0,0,0,0" o="6a7495"/><S T="12" X="-5" Y="-232" L="10" H="790" P="0,0,0.2,0.2,0,0,0,0" o="6a7495"/><S T="1" X="-21" Y="-632" L="46" H="10" P="0,0,0,0.2,0,0,0,0"/><S T="9" X="-129" Y="-693" L="190" H="127" P="0,0,0,0,0,0,0,0"/><S T="9" X="1675" Y="195" L="120" H="70" P="0,0,0,0,0,0,0,0"/><S T="1" X="1680" Y="235" L="125" H="10" P="0,0,0,0.2,0,0,0,0" c="2"/><S T="12" X="-5" Y="1730" L="10" H="3000" P="0,0,0.2,0.2,0,0,0,0" o="6a7495"/><S T="12" X="1605" Y="1730" L="10" H="3000" P="0,0,0.2,0.2,0,0,0,0" o="6a7495"/><S T="12" X="1605" Y="-232" L="10" H="790" P="0,0,0.2,0.2,0,0,0,0" o="6a7495"/><S T="1" X="1630" Y="160" L="30" H="10" P="0,0,0,0.2,0,0,0,0"/><S T="1" X="1650" Y="-236" L="10" H="800" P="0,0,0,0.2,0,0,0,0" c="2"/><S T="12" X="1720" Y="0" L="10" H="3000" P="0,0,0.2,0.2,0,0,0,0" o="6a7495"/><S T="9" X="1690" Y="-194" L="80" H="760" P="0,0,0,0,0,0,0,0"/><S T="1" X="1621" Y="-632" L="46" H="10" P="0,0,0,0.2,0,0,0,0"/><S T="9" X="1929" Y="-693" L="190" H="127" P="0,0,0,0,0,0,0,0"/><S T="1" X="1684" Y="-704" L="300" H="11" P="0,0,0,0.1,20,0,0,0"/><S T="9" X="-92" Y="-602" L="80" H="35" P="0,0,0,0,0,0,0,0"/><S T="9" X="1692" Y="-602" L="80" H="35" P="0,0,0,0,0,0,0,0"/></S><D><P X="599" Y="363" T="10" P="1,0"/><P X="99" Y="363" T="10" P="1,0"/><P X="999" Y="363" T="10" P="1,0"/><P X="1499" Y="363" T="10" P="1,0"/><DS X="365" Y="-141"/></D><O/><L/></Z></C>',
-		[3] = 'Watter cannon'	
+		[3] = 'Watter cannon',
+		[4] = 'Refletz#6472'	
 	}	
+}
+
+local customMapsFourTeamsMode = {
+	[1] = {
+		[1] = '<C><P L="1600" F="3" G="0,4" MEDATA=";;;;-0;0:::1-"/><Z><S><S T="7" X="805" Y="400" L="1610" H="100" P="0,0,0.1,0.2,0,0,0,0" c="3" N=""/><S T="9" X="600" Y="430" L="1200" H="10" P="0,0,0,0,0,0,0,0"/><S T="1" X="400" Y="350" L="10" H="200" P="0,0,0,0.2,0,0,0,0"/><S T="12" X="400" Y="455" L="800" H="10" P="0,0,0.3,0.2,0,0,0,0" o="6a7495"/><S T="13" X="100" Y="359" L="10" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="3"/><S T="13" X="600" Y="359" L="10" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="3"/><S T="12" X="250" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="1" X="790" Y="0" L="1620" H="10" P="0,0,0,0.2,0,0,0,0" c="3"/><S T="0" X="790" Y="95" L="1620" H="10" P="0,0,0.3,0.2,0,0,0,0" c="3" m=""/><S T="0" X="305" Y="48" L="10" H="100" P="0,0,0.3,0.2,0,0,0,0" c="3" m=""/><S T="0" X="1300" Y="48" L="10" H="100" P="0,0,0.3,0.2,0,0,0,0" c="3" m=""/><S T="0" X="790" Y="225" L="1620" H="10" P="0,0,0.3,0.2,0,0,0,0" c="3" m=""/><S T="0" X="400" Y="239" L="10" H="30" P="0,0,0,0,0,0,0,0" c="3" m=""/><S T="0" X="400" Y="791" L="800" H="10" P="0,0,0.3,0.2,90,0,0,0" c="3" m=""/><S T="12" X="316" Y="-129" L="20" H="200" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3"/><S T="12" X="407" Y="-133" L="20" H="200" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3"/><S T="12" X="363" Y="-92" L="20" H="100" P="0,0,0.2,0.2,90,0,0,0" o="6a7495" c="3"/><S T="12" X="360" Y="-206" L="20" H="100" P="0,0,0.2,0.2,90,0,0,0" o="6a7495" c="3"/><S T="12" X="400" Y="460" L="3000" H="120" P="0,0,0.3,0.2,0,0,0,0" o="6a7495" c="4" N=""/><S T="12" X="1350" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="1" X="600" Y="-800" L="1200" H="10" P="0,0,0,0.2,0,0,0,0"/><S T="1" X="800" Y="350" L="10" H="200" P="0,0,0,0.2,0,0,0,0"/><S T="0" X="800" Y="790" L="800" H="10" P="0,0,0.3,0.2,90,0,0,0" c="3" m=""/><S T="0" X="800" Y="239" L="10" H="30" P="0,0,0,0,0,0,0,0" c="3" m=""/><S T="13" X="1000" Y="359" L="10" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="3"/><S T="1" X="1200" Y="350" L="10" H="200" P="0,0,0,0.2,0,0,0,0"/><S T="0" X="1200" Y="239" L="10" H="30" P="0,0,0,0,0,0,0,0" c="3" m=""/><S T="0" X="1200" Y="790" L="800" H="10" P="0,0,0.3,0.2,90,0,0,0" c="3" m=""/><S T="12" X="600" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="12" X="1000" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="13" X="1500" Y="359" L="10" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="3"/><S T="12" X="400" Y="455" L="800" H="10" P="0,0,0.3,0.2,0,0,0,0" o="6a7495"/><S T="12" X="-5" Y="0" L="10" H="3000" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3"/><S T="12" X="1605" Y="0" L="10" H="3000" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3"/><S T="1" X="900" Y="-763" L="3000" H="10" P="0,0,0,0.2,0,0,0,0"/><S T="1" X="-80" Y="235" L="125" H="10" P="0,0,0,0.2,0,0,0,0" c="2"/><S T="1" X="-30" Y="160" L="30" H="10" P="0,0,0,0.2,0,0,0,0"/><S T="9" X="-75" Y="195" L="120" H="70" P="0,0,0,0,0,0,0,0"/><S T="1" X="-50" Y="-236" L="10" H="800" P="0,0,0,0.2,0,0,0,0" c="2"/><S T="12" X="-120" Y="0" L="10" H="3000" P="0,0,0.2,0.2,0,0,0,0" o="6a7495"/><S T="1" X="-84" Y="-704" L="300" H="11" P="0,0,0,0.1,-20,0,0,0"/><S T="9" X="-90" Y="-194" L="80" H="760" P="0,0,0,0,0,0,0,0"/><S T="12" X="-5" Y="1730" L="10" H="3000" P="0,0,0.2,0.2,0,0,0,0" o="6a7495"/><S T="12" X="-5" Y="-232" L="10" H="790" P="0,0,0.2,0.2,0,0,0,0" o="6a7495"/><S T="1" X="-21" Y="-632" L="46" H="10" P="0,0,0,0.2,0,0,0,0"/><S T="9" X="-129" Y="-693" L="190" H="127" P="0,0,0,0,0,0,0,0"/><S T="9" X="1675" Y="195" L="120" H="70" P="0,0,0,0,0,0,0,0"/><S T="1" X="1680" Y="235" L="125" H="10" P="0,0,0,0.2,0,0,0,0" c="2"/><S T="12" X="-5" Y="1730" L="10" H="3000" P="0,0,0.2,0.2,0,0,0,0" o="6a7495"/><S T="12" X="1605" Y="1730" L="10" H="3000" P="0,0,0.2,0.2,0,0,0,0" o="6a7495"/><S T="12" X="1605" Y="-232" L="10" H="790" P="0,0,0.2,0.2,0,0,0,0" o="6a7495"/><S T="1" X="1630" Y="160" L="30" H="10" P="0,0,0,0.2,0,0,0,0"/><S T="1" X="1650" Y="-236" L="10" H="800" P="0,0,0,0.2,0,0,0,0" c="2"/><S T="12" X="1720" Y="0" L="10" H="3000" P="0,0,0.2,0.2,0,0,0,0" o="6a7495"/><S T="9" X="1690" Y="-194" L="80" H="760" P="0,0,0,0,0,0,0,0"/><S T="1" X="1621" Y="-632" L="46" H="10" P="0,0,0,0.2,0,0,0,0"/><S T="9" X="1929" Y="-693" L="190" H="127" P="0,0,0,0,0,0,0,0"/><S T="1" X="1684" Y="-704" L="300" H="11" P="0,0,0,0.1,20,0,0,0"/><S T="9" X="-92" Y="-602" L="80" H="35" P="0,0,0,0,0,0,0,0"/><S T="9" X="1692" Y="-602" L="80" H="35" P="0,0,0,0,0,0,0,0"/></S><D><P X="599" Y="363" T="10" P="1,0"/><P X="99" Y="363" T="10" P="1,0"/><P X="999" Y="363" T="10" P="1,0"/><P X="1499" Y="363" T="10" P="1,0"/><DS X="365" Y="-141"/></D><O/><L/></Z></C>',
+		[2] = '<C><P L="1200" F="3" G="0,4" MEDATA=";;;;-0;0:::1-"/><Z><S><S T="7" X="600" Y="400" L="1200" H="100" P="0,0,0.1,0.2,0,0,0,0" c="3" N=""/><S T="9" X="600" Y="430" L="1200" H="10" P="0,0,0,0,0,0,0,0"/><S T="1" X="400" Y="350" L="10" H="200" P="0,0,0,0.2,0,0,0,0"/><S T="1" X="800" Y="350" L="10" H="200" P="0,0,0,0.2,0,0,0,0"/><S T="12" X="400" Y="455" L="800" H="10" P="0,0,0.3,0.2,0,0,0,0" o="6a7495"/><S T="12" X="-5" Y="0" L="10" H="3000" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3"/><S T="12" X="1205" Y="0" L="10" H="3000" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3"/><S T="13" X="100" Y="359" L="10" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="3"/><S T="13" X="1100" Y="359" L="10" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="3"/><S T="13" X="600" Y="359" L="10" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="3"/><S T="12" X="250" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="12" X="600" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="1" X="600" Y="0" L="1200" H="10" P="0,0,0,0.2,0,0,0,0" c="3"/><S T="0" X="600" Y="95" L="1200" H="10" P="0,0,0.3,0.2,0,0,0,0" c="3" m=""/><S T="0" X="305" Y="48" L="10" H="100" P="0,0,0.3,0.2,0,0,0,0" c="3" m=""/><S T="0" X="900" Y="48" L="10" H="100" P="0,0,0.3,0.2,0,0,0,0" c="3" m=""/><S T="0" X="601" Y="225" L="1200" H="10" P="0,0,0.3,0.2,0,0,0,0" c="3" m=""/><S T="0" X="400" Y="239" L="10" H="30" P="0,0,0,0,0,0,0,0" c="3" m=""/><S T="0" X="800" Y="239" L="10" H="30" P="0,0,0,0,0,0,0,0" c="3" m=""/><S T="0" X="400" Y="791" L="800" H="10" P="0,0,0.3,0.2,90,0,0,0" c="3" m=""/><S T="0" X="800" Y="791" L="800" H="10" P="0,0,0.3,0.2,90,0,0,0" c="3" m=""/><S T="12" X="316" Y="-129" L="20" H="200" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3"/><S T="12" X="407" Y="-133" L="20" H="200" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3"/><S T="12" X="363" Y="-92" L="20" H="100" P="0,0,0.2,0.2,90,0,0,0" o="6a7495" c="3"/><S T="12" X="360" Y="-206" L="20" H="100" P="0,0,0.2,0.2,90,0,0,0" o="6a7495" c="3"/><S T="12" X="400" Y="460" L="3000" H="120" P="0,0,0.3,0.2,0,0,0,0" o="6a7495" c="4" N=""/><S T="12" X="950" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="1" X="600" Y="-763" L="3000" H="10" P="0,0,0,0.2,0,0,0,0"/><S T="1" X="-80" Y="235" L="125" H="10" P="0,0,0,0.2,0,0,0,0" c="2"/><S T="1" X="-30" Y="160" L="30" H="10" P="0,0,0,0.2,0,0,0,0"/><S T="9" X="-75" Y="195" L="120" H="70" P="0,0,0,0,0,0,0,0"/><S T="1" X="-50" Y="-236" L="10" H="800" P="0,0,0,0.2,0,0,0,0" c="2"/><S T="12" X="-120" Y="0" L="10" H="3000" P="0,0,0.2,0.2,0,0,0,0" o="6a7495"/><S T="1" X="-84" Y="-704" L="300" H="11" P="0,0,0,0.1,-20,0,0,0"/><S T="9" X="-90" Y="-194" L="80" H="760" P="0,0,0,0,0,0,0,0"/><S T="12" X="-5" Y="1730" L="10" H="3000" P="0,0,0.2,0.2,0,0,0,0" o="6a7495"/><S T="12" X="-5" Y="-232" L="10" H="790" P="0,0,0.2,0.2,0,0,0,0" o="6a7495"/><S T="1" X="-21" Y="-632" L="46" H="10" P="0,0,0,0.2,0,0,0,0"/><S T="9" X="-129" Y="-693" L="190" H="127" P="0,0,0,0,0,0,0,0"/><S T="9" X="1275" Y="195" L="120" H="70" P="0,0,0,0,0,0,0,0"/><S T="1" X="1280" Y="235" L="125" H="10" P="0,0,0,0.2,0,0,0,0" c="2"/><S T="12" X="-5" Y="1730" L="10" H="3000" P="0,0,0.2,0.2,0,0,0,0" o="6a7495"/><S T="12" X="1205" Y="1730" L="10" H="3000" P="0,0,0.2,0.2,0,0,0,0" o="6a7495"/><S T="12" X="1205" Y="-232" L="10" H="790" P="0,0,0.2,0.2,0,0,0,0" o="6a7495"/><S T="1" X="1230" Y="160" L="30" H="10" P="0,0,0,0.2,0,0,0,0"/><S T="1" X="1250" Y="-236" L="10" H="800" P="0,0,0,0.2,0,0,0,0" c="2"/><S T="12" X="1320" Y="0" L="10" H="3000" P="0,0,0.2,0.2,0,0,0,0" o="6a7495"/><S T="9" X="1290" Y="-194" L="80" H="760" P="0,0,0,0,0,0,0,0"/><S T="1" X="1221" Y="-632" L="46" H="10" P="0,0,0,0.2,0,0,0,0"/><S T="9" X="1329" Y="-693" L="190" H="127" P="0,0,0,0,0,0,0,0"/><S T="1" X="1284" Y="-704" L="300" H="11" P="0,0,0,0.1,20,0,0,0"/><S T="9" X="-92" Y="-602" L="80" H="35" P="0,0,0,0,0,0,0,0"/><S T="9" X="1292" Y="-602" L="80" H="35" P="0,0,0,0,0,0,0,0"/></S><D><P X="1100" Y="365" T="10" P="1,0"/><P X="100" Y="365" T="10" P="1,0"/><P X="600" Y="365" T="10" P="1,0"/><DS X="365" Y="-141"/></D><O/><L/></Z></C>',
+		[3] = 'Watter cannon',
+		[4] = 'Refletz#6472',
+		[5] = '<C><P G="0,4" F="3" /><Z><S><S H="100" L="800" X="400" c="3" N="" Y="400" T="7" P="0,0,.1,.2,,0,0,0" /><S L="800" X="400" H="10" Y="430" T="9" P="0,0,,,,0,0,0" /><S L="10" H="200" X="400" Y="350" T="1" P="0,0,.0,,,0,0,0" /><S L="800" o="6a7495" H="10" X="400" Y="455" T="12" P="0,0,.3,.2,,0,0,0" /><S H="3000" L="10" o="6a7495" X="-5" c="3" Y="0" T="12" P="0,0,.2,,,0,0,0" /><S H="3000" L="10" o="6a7495" X="805" c="3" Y="0" T="12" P="0,0,.2,,,0,0,0" /><S H="10" L="10" o="324650" X="100" c="3" Y="359" T="13" P="0,0,.3,.2,,0,0,0" /><S X="700" L="10" o="324650" H="10" c="3" Y="359" T="13" P="0,0,.3,.2,,0,0,0" /><S P="0,0,.3,.2,,0,0,0" L="100" o="324650" X="50" c="4" Y="45" T="12" H="105" /><S P="0,0,0,0.2,0,0,0,0" L="800" X="400" c="3" N="" Y="0" T="1" H="10" /><S P="0,0,0.3,0.2,0,0,0,0" L="800" X="400" c="3" N="" Y="95" T="0" m="" H="10" /><S P="0,0,0.3,0.2,0,0,0,0" L="10" X="105" c="3" Y="48" T="0" m="" H="100" /><S P="0,0,0.3,0.2,0,0,0,0" L="10" H="100" c="3" N="" Y="48" T="0" m="" X="700" /><S H="10" L="800" X="401" c="3" Y="225" T="0" m="" P="0,0,0.3,0.2,0,0,0,0" /><S H="30" L="10" X="400" c="3" Y="239" T="0" m="" P="0,0,0,0,0,0,0,0" /><S H="10" L="800" X="400" c="3" Y="791" T="0" m="" P="0,0,0.3,0.2,90,0,0,0" /><S P="0,0,.2,,,0,0,0" L="20" o="6a7495" X="316" c="3" Y="-129" T="12" H="200" /><S H="200" L="20" o="6a7495" X="407" c="3" Y="-133" T="12" P="0,0,.2,,,0,0,0" /><S P="0,0,.2,,90,0,0,0" L="20" o="6a7495" X="363" c="3" Y="-92" T="12" H="100" /><S H="100" L="20" o="6a7495" X="360" c="3" Y="-206" T="12" P="0,0,.2,,90,0,0,0" /><S P="0,0,0.3,0.2,0,0,0,0" L="3000" o="6a7495" X="400" c="4" N="" Y="460" T="12" H="120" /><S H="105" L="100" o="324650" X="750" c="4" Y="45" T="12" P="0,0,.3,.2,,0,0,0" /><S H="10" L="3000" X="390" c="1" N="" Y="-763" T="1" P="0,0,0,0.2,0,0,0,0" /><S P="0,0,0,0.2,0,0,0,0" L="125" X="-80" c="2" Y="235" T="1" H="10" /><S L="30" X="-30" H="10" Y="160" T="1" P="0,0,0,0.2,0,0,0,0" /><S L="120" X="-75" H="70" Y="195" T="9" P="0,0,,,,0,0,0" /><S P="0,0,0,0.2,0,0,0,0" L="10" X="-50" c="2" Y="-236" T="1" H="800" /><S P="0,0,.2,,0,0,0,0" L="10" o="6a7495" X="-120" c="1" Y="0" T="12" H="3000" /><S L="300" H="11" X="-84" Y="-704" T="1" P="0,0,0,0.1,-20,0,0,0" /><S L="80" H="760" X="-90" Y="-194" T="9" P="0,0,,,,0,0,0" /><S P="0,0,.2,,,0,0,0" L="10" o="6a7495" X="-5" c="1" Y="1730" T="12" H="3000" /><S H="790" L="10" o="6a7495" X="-5" c="1" Y="-232" T="12" P="0,0,.2,,,0,0,0" /><S L="46" X="-21" H="10" Y="-632" T="1" P="0,0,0,0.2,0,0,0,0" /><S L="190" X="-129" H="127" Y="-693" T="9" P="0,0,,,,0,0,0" /><S H="3000" L="10" o="6a7495" X="805" c="1" Y="1730" T="12" P="0,0,.2,,,0,0,0" /><S H="10" L="125" X="880" c="2" Y="235" T="1" P="0,0,0,0.2,0,0,0,0" /><S L="120" H="70" X="875" Y="195" T="9" P="0,0,,,,0,0,0" /><S L="80" X="880" H="760" Y="-194" T="9" P="0,0,,,,0,0,0" /><S H="3000" L="10" o="6a7495" X="920" c="1" Y="0" T="12" P="0,0,.2,,0,0,0,0" /><S L="30" H="10" X="830" Y="160" T="1" P="0,0,0,0.2,0,0,0,0" /><S H="800" L="10" X="850" c="2" Y="-236" T="1" P="0,0,0,0.2,0,0,0,0" /><S P="0,0,.2,,,0,0,0" L="10" o="6a7495" X="805" c="1" Y="-232" T="12" H="790" /><S L="300" X="844" H="11" Y="-704" T="1" P="0,0,0,0.1,20,0,0,0" /><S L="190" H="127" X="929" Y="-693" T="9" P="0,0,,,,0,0,0" /><S L="46" H="10" X="821" Y="-632" T="1" P="0,0,0,0.2,0,0,0,0" /><S L="80" X="-92" H="35" Y="-602" T="9" P="0,0,,,,0,0,0" /><S L="80" H="35" X="892" Y="-602" T="9" P="0,0,,,,0,0,0" /></S><D><P X="699" Y="365" T="10" P="1" /><P P="1" Y="365" T="10" X="99" /><DS Y="-151" X="360" /></D><O /></Z></C>'
+	},
+	[2] = {
+		[1] = '<C><P L="1600" F="3" G="0,4" MEDATA="35,1;;;;-0;0:::1-"/><Z><S><S T="1" X="805" Y="400" L="1610" H="100" P="0,0,0,0.2,0,0,0,0" c="3" N=""/><S T="9" X="600" Y="430" L="1200" H="10" P="0,0,0,0,0,0,0,0"/><S T="1" X="400" Y="350" L="10" H="200" P="0,0,0,0.2,0,0,0,0"/><S T="12" X="400" Y="455" L="800" H="10" P="0,0,0.3,0.2,0,0,0,0" o="6a7495"/><S T="12" X="-5" Y="0" L="10" H="3000" P="0,0,0.2,0.2,0,0,0,0" o="6a7495"/><S T="12" X="1600" Y="0" L="10" H="3000" P="0,0,0.2,0.2,0,0,0,0" o="6a7495"/><S T="13" X="100" Y="359" L="10" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="3"/><S T="13" X="600" Y="359" L="10" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="3"/><S T="12" X="250" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="1" X="790" Y="0" L="1620" H="10" P="0,0,0,0.2,0,0,0,0" c="3"/><S T="0" X="790" Y="95" L="1620" H="10" P="0,0,0.3,0.2,0,0,0,0" c="3" m=""/><S T="0" X="305" Y="48" L="10" H="100" P="0,0,0.3,0.2,0,0,0,0" c="3" m=""/><S T="0" X="1300" Y="48" L="10" H="100" P="0,0,0.3,0.2,0,0,0,0" c="3" m=""/><S T="0" X="790" Y="225" L="1620" H="10" P="0,0,0.3,0.2,0,0,0,0" c="3" m=""/><S T="0" X="400" Y="239" L="10" H="30" P="0,0,0,0,0,0,0,0" c="3" m=""/><S T="0" X="400" Y="791" L="800" H="10" P="0,0,0.3,0.2,90,0,0,0" c="3" m=""/><S T="12" X="316" Y="-129" L="20" H="200" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3"/><S T="12" X="407" Y="-133" L="20" H="200" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3"/><S T="12" X="363" Y="-92" L="20" H="100" P="0,0,0.2,0.2,90,0,0,0" o="6a7495" c="3"/><S T="12" X="360" Y="-206" L="20" H="100" P="0,0,0.2,0.2,90,0,0,0" o="6a7495" c="3"/><S T="12" X="400" Y="460" L="3000" H="120" P="0,0,0.3,0.2,0,0,0,0" o="6a7495" c="4" N=""/><S T="12" X="1350" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="1" X="600" Y="-800" L="1200" H="10" P="0,0,0,0.2,0,0,0,0"/><S T="1" X="800" Y="350" L="10" H="200" P="0,0,0,0.2,0,0,0,0"/><S T="0" X="800" Y="790" L="800" H="10" P="0,0,0.3,0.2,90,0,0,0" c="3" m=""/><S T="0" X="800" Y="239" L="10" H="30" P="0,0,0,0,0,0,0,0" c="3" m=""/><S T="13" X="1000" Y="359" L="10" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="3"/><S T="1" X="1200" Y="350" L="10" H="200" P="0,0,0,0.2,0,0,0,0"/><S T="0" X="1200" Y="239" L="10" H="30" P="0,0,0,0,0,0,0,0" c="3" m=""/><S T="0" X="1200" Y="790" L="800" H="10" P="0,0,0.3,0.2,90,0,0,0" c="3" m=""/><S T="12" X="600" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="12" X="1000" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="13" X="1500" Y="359" L="10" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="3"/><S T="1" X="400" Y="137" L="80" H="10" P="1,0,0,0.2,0,0,0,0"/><S T="1" X="800" Y="137" L="80" H="10" P="1,0,0,0.2,0,0,0,0"/><S T="1" X="1200" Y="137" L="80" H="10" P="1,0,0,0.2,0,0,0,0"/></S><D><P X="0" Y="0" T="138" P="0,0"/><P X="800" Y="0" T="138" P="0,0"/><P X="102" Y="357" T="258" P="1,0"/><P X="599" Y="357" T="258" P="1,0"/><P X="999" Y="357" T="258" P="1,0"/><P X="1499" Y="357" T="258" P="1,0"/><DS X="365" Y="-141"/></D><O><O X="400" Y="137" C="12" P="0"/><O X="800" Y="137" C="12" P="0"/><O X="1200" Y="137" C="12" P="0"/></O><L/></Z></C>',
+		[2] = '<C><P L="1200" F="0" G="0,4" MEDATA=";1,1;;;-0;0:::1-"/><Z><S><S T="9" X="600" Y="430" L="1200" H="10" P="0,0,0,0,0,0,0,0"/><S T="1" X="400" Y="350" L="10" H="200" P="0,0,0,0.2,0,0,0,0"/><S T="1" X="800" Y="350" L="10" H="200" P="0,0,0,0.2,0,0,0,0"/><S T="12" X="400" Y="455" L="800" H="10" P="0,0,0.3,0.2,0,0,0,0" o="6a7495"/><S T="12" X="-5" Y="0" L="10" H="3000" P="0,0,0.2,0.2,0,0,0,0" o="6a7495"/><S T="12" X="1200" Y="0" L="10" H="3000" P="0,0,0.2,0.2,0,0,0,0" o="6a7495"/><S T="13" X="100" Y="359" L="10" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="3"/><S T="13" X="1100" Y="359" L="10" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="3"/><S T="13" X="600" Y="359" L="10" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="3"/><S T="12" X="250" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="12" X="600" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="1" X="600" Y="0" L="1200" H="10" P="0,0,0,0.2,0,0,0,0" c="3"/><S T="0" X="600" Y="95" L="1200" H="10" P="0,0,0.3,0.2,0,0,0,0" c="3" m=""/><S T="0" X="305" Y="48" L="10" H="100" P="0,0,0.3,0.2,0,0,0,0" c="3" m=""/><S T="0" X="900" Y="48" L="10" H="100" P="0,0,0.3,0.2,0,0,0,0" c="3" m=""/><S T="0" X="601" Y="225" L="1200" H="10" P="0,0,0.3,0.2,0,0,0,0" c="3" m=""/><S T="0" X="400" Y="239" L="10" H="30" P="0,0,0,0,0,0,0,0" c="3" m=""/><S T="0" X="800" Y="239" L="10" H="30" P="0,0,0,0,0,0,0,0" c="3" m=""/><S T="0" X="400" Y="791" L="800" H="10" P="0,0,0.3,0.2,90,0,0,0" c="3" m=""/><S T="0" X="800" Y="791" L="800" H="10" P="0,0,0.3,0.2,90,0,0,0" c="3" m=""/><S T="12" X="316" Y="-129" L="20" H="200" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3"/><S T="12" X="407" Y="-133" L="20" H="200" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3"/><S T="12" X="363" Y="-92" L="20" H="100" P="0,0,0.2,0.2,90,0,0,0" o="6a7495" c="3"/><S T="12" X="360" Y="-206" L="20" H="100" P="0,0,0.2,0.2,90,0,0,0" o="6a7495" c="3"/><S T="12" X="400" Y="460" L="3000" H="120" P="0,0,0.3,0.2,0,0,0,0" o="6a7495" c="4" N=""/><S T="12" X="950" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="1" X="600" Y="-800" L="1200" H="10" P="0,0,0,0.2,0,0,0,0"/><S T="1" X="600" Y="400" L="1200" H="100" P="0,0,0,0.2,0,0,0,0" c="3" N=""/><S T="1" X="400" Y="137" L="80" H="10" P="1,0,0,0.2,0,0,0,0"/><S T="1" X="800" Y="137" L="80" H="10" P="1,0,0,0.2,0,0,0,0"/></S><D><P X="100" Y="365" T="258" P="1,0"/><P X="1100" Y="365" T="258" P="1,0"/><P X="600" Y="365" T="258" P="1,0"/><P X="0" Y="0" T="138" P="0,0"/><P X="1200" Y="0" T="138" P="0,1"/><DS X="365" Y="-141"/></D><O><O X="400" Y="137" C="12" P="0"/><O X="800" Y="137" C="12" P="0"/></O><L/></Z></C>',
+		[3] = 'Ice barrier',
+		[4] = '+Mimounaaa#0000',
+		[5] = '<C><P G="0,4" F="0" /><Z><S><S L="800" X="400" H="10" Y="430" T="9" P="0,0,,,,0,0,0" /><S L="10" H="200" X="400" Y="350" T="1" P="0,0,.0,,,0,0,0" /><S L="800" o="6a7495" H="10" X="400" Y="455" T="12" P="0,0,.3,.2,,0,0,0" /><S H="3000" L="10" o="6a7495" X="-5" c="1" Y="0" T="12" P="0,0,.2,,,0,0,0" /><S H="3000" L="10" o="6a7495" X="805" c="1" Y="0" T="12" P="0,0,.2,,,0,0,0" /><S H="10" L="10" o="324650" X="100" c="3" Y="359" T="13" P="0,0,.3,.2,,0,0,0" /><S X="700" L="10" o="324650" H="10" c="3" Y="359" T="13" P="0,0,.3,.2,,0,0,0" /><S P="0,0,.3,.2,,0,0,0" L="100" o="324650" X="50" c="4" Y="45" T="12" H="105" /><S P="0,0,0,0.2,0,0,0,0" L="800" X="400" c="3" N="" Y="0" T="1" H="10" /><S P="0,0,0.3,0.2,0,0,0,0" L="800" X="400" c="3" N="" Y="95" T="0" m="" H="10" /><S P="0,0,0.3,0.2,0,0,0,0" L="10" X="105" c="3" Y="48" T="0" m="" H="100" /><S P="0,0,0.3,0.2,0,0,0,0" L="10" H="100" c="3" N="" Y="48" T="0" m="" X="700" /><S H="10" L="800" X="401" c="3" Y="225" T="0" m="" P="0,0,0.3,0.2,0,0,0,0" /><S H="30" L="10" X="400" c="3" Y="239" T="0" m="" P="0,0,0,0,0,0,0,0" /><S H="10" L="800" X="400" c="3" Y="791" T="0" m="" P="0,0,0.3,0.2,90,0,0,0" /><S P="0,0,.2,,,0,0,0" L="20" o="6a7495" X="316" c="3" Y="-129" T="12" H="200" /><S H="200" L="20" o="6a7495" X="407" c="3" Y="-133" T="12" P="0,0,.2,,,0,0,0" /><S P="0,0,.2,,90,0,0,0" L="20" o="6a7495" X="363" c="3" Y="-92" T="12" H="100" /><S H="100" L="20" o="6a7495" X="360" c="3" Y="-206" T="12" P="0,0,.2,,90,0,0,0" /><S P="0,0,0.3,0.2,0,0,0,0" L="3000" o="6a7495" X="400" c="4" N="" Y="460" T="12" H="120" /><S H="105" L="100" o="324650" X="750" c="4" Y="45" T="12" P="0,0,.3,.2,,0,0,0" /><S H="10" L="800" X="400" c="1" N="" Y="-800" T="1" P="0,0,0,0.2,0,0,0,0" /><S L="80" H="10" X="400" Y="137" T="1" P="1,0,0,0.2,0,0,0,0" /><S P="0,0,0,0.2,0,0,0,0" L="800" X="400" c="3" N="" Y="400" T="1" H="100" /></S><D><DS Y="-151" X="360" /><P P="0,0" Y="0" T="138" X="0" /><P P="1,0" Y="357" T="258" X="102" /><P X="699" Y="357" T="258" P="1,0" /></D><O><O C="12" Y="137" X="400" P="0" /></O></Z></C>'
+	},
+	[3] = {
+		[1] = '<C><P L="1600" F="3" G="0,4" MEDATA="34,1;;;;-0;0:::1-"/><Z><S><S T="7" X="805" Y="400" L="1610" H="100" P="0,0,0.1,0.2,0,0,0,0" c="3" N=""/><S T="9" X="600" Y="430" L="1200" H="10" P="0,0,0,0,0,0,0,0"/><S T="1" X="400" Y="350" L="10" H="200" P="0,0,0,0.2,0,0,0,0"/><S T="12" X="400" Y="455" L="800" H="10" P="0,0,0.3,0.2,0,0,0,0" o="6a7495"/><S T="12" X="-5" Y="0" L="10" H="3000" P="0,0,0.2,0.2,0,0,0,0" o="6a7495"/><S T="12" X="1600" Y="0" L="10" H="3000" P="0,0,0.2,0.2,0,0,0,0" o="6a7495"/><S T="13" X="100" Y="359" L="10" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="3"/><S T="13" X="600" Y="359" L="10" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="3"/><S T="12" X="250" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="1" X="790" Y="0" L="1620" H="10" P="0,0,0,0.2,0,0,0,0" c="3"/><S T="0" X="790" Y="95" L="1620" H="10" P="0,0,0.3,0.2,0,0,0,0" c="3" m=""/><S T="0" X="305" Y="48" L="10" H="100" P="0,0,0.3,0.2,0,0,0,0" c="3" m=""/><S T="0" X="1300" Y="48" L="10" H="100" P="0,0,0.3,0.2,0,0,0,0" c="3" m=""/><S T="0" X="790" Y="225" L="1620" H="10" P="0,0,0.3,0.2,0,0,0,0" c="3" m=""/><S T="0" X="400" Y="239" L="10" H="30" P="0,0,0,0,0,0,0,0" c="3" m=""/><S T="0" X="400" Y="791" L="800" H="10" P="0,0,0.3,0.2,90,0,0,0" c="3" m=""/><S T="12" X="316" Y="-129" L="20" H="200" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3"/><S T="12" X="407" Y="-133" L="20" H="200" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3"/><S T="12" X="363" Y="-92" L="20" H="100" P="0,0,0.2,0.2,90,0,0,0" o="6a7495" c="3"/><S T="12" X="360" Y="-206" L="20" H="100" P="0,0,0.2,0.2,90,0,0,0" o="6a7495" c="3"/><S T="12" X="400" Y="460" L="3000" H="120" P="0,0,0.3,0.2,0,0,0,0" o="6a7495" c="4" N=""/><S T="12" X="1350" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="1" X="600" Y="-800" L="1200" H="10" P="0,0,0,0.2,0,0,0,0"/><S T="1" X="800" Y="350" L="10" H="200" P="0,0,0,0.2,0,0,0,0"/><S T="0" X="800" Y="790" L="800" H="10" P="0,0,0.3,0.2,90,0,0,0" c="3" m=""/><S T="0" X="800" Y="239" L="10" H="30" P="0,0,0,0,0,0,0,0" c="3" m=""/><S T="13" X="1000" Y="359" L="10" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="3"/><S T="1" X="1200" Y="350" L="10" H="200" P="0,0,0,0.2,0,0,0,0"/><S T="0" X="1200" Y="239" L="10" H="30" P="0,0,0,0,0,0,0,0" c="3" m=""/><S T="0" X="1200" Y="790" L="800" H="10" P="0,0,0.3,0.2,90,0,0,0" c="3" m=""/><S T="12" X="600" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="12" X="1000" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="13" X="1500" Y="359" L="10" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="3"/><S T="13" X="400" Y="137" L="15" P="0,0,0.3,0.2,0,0,0,0" o="324650"/><S T="13" X="50" Y="137" L="15" P="0,0,0.3,0.2,0,0,0,0" o="324650"/><S T="13" X="800" Y="137" L="15" P="0,0,0.3,0.2,0,0,0,0" o="324650"/><S T="13" X="1200" Y="137" L="15" P="0,0,0.3,0.2,0,0,0,0" o="324650"/><S T="13" X="1550" Y="137" L="15" P="0,0,0.3,0.2,0,0,0,0" o="324650"/></S><D><P X="599" Y="363" T="10" P="1,0"/><P X="99" Y="363" T="10" P="1,0"/><P X="999" Y="363" T="10" P="1,0"/><P X="1499" Y="363" T="10" P="1,0"/><DS X="365" Y="-141"/></D><O/><L/></Z></C>',
+		[2] = '<C><P L="1200" F="3" G="0,4" MEDATA="31,1;;;;-0;0:::1-"/><Z><S><S T="7" X="600" Y="400" L="1200" H="100" P="0,0,0.1,0.2,0,0,0,0" c="3" N=""/><S T="9" X="600" Y="430" L="1200" H="10" P="0,0,0,0,0,0,0,0"/><S T="1" X="400" Y="350" L="10" H="200" P="0,0,0,0.2,0,0,0,0"/><S T="12" X="400" Y="455" L="800" H="10" P="0,0,0.3,0.2,0,0,0,0" o="6a7495"/><S T="12" X="-5" Y="0" L="10" H="3000" P="0,0,0.2,0.2,0,0,0,0" o="6a7495"/><S T="12" X="1200" Y="0" L="10" H="3000" P="0,0,0.2,0.2,0,0,0,0" o="6a7495"/><S T="13" X="100" Y="359" L="10" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="3"/><S T="13" X="600" Y="359" L="10" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="3"/><S T="12" X="250" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="1" X="600" Y="0" L="1200" H="10" P="0,0,0,0.2,0,0,0,0" c="3"/><S T="0" X="600" Y="95" L="1200" H="10" P="0,0,0.3,0.2,0,0,0,0" c="3" m=""/><S T="0" X="305" Y="48" L="10" H="100" P="0,0,0.3,0.2,0,0,0,0" c="3" m=""/><S T="0" X="900" Y="48" L="10" H="100" P="0,0,0.3,0.2,0,0,0,0" c="3" m=""/><S T="0" X="601" Y="225" L="1200" H="10" P="0,0,0.3,0.2,0,0,0,0" c="3" m=""/><S T="0" X="400" Y="239" L="10" H="30" P="0,0,0,0,0,0,0,0" c="3" m=""/><S T="0" X="400" Y="791" L="800" H="10" P="0,0,0.3,0.2,90,0,0,0" c="3" m=""/><S T="12" X="316" Y="-129" L="20" H="200" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3"/><S T="12" X="407" Y="-133" L="20" H="200" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3"/><S T="12" X="363" Y="-92" L="20" H="100" P="0,0,0.2,0.2,90,0,0,0" o="6a7495" c="3"/><S T="12" X="360" Y="-206" L="20" H="100" P="0,0,0.2,0.2,90,0,0,0" o="6a7495" c="3"/><S T="12" X="400" Y="460" L="3000" H="120" P="0,0,0.3,0.2,0,0,0,0" o="6a7495" c="4" N=""/><S T="12" X="950" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="1" X="600" Y="-800" L="1200" H="10" P="0,0,0,0.2,0,0,0,0"/><S T="1" X="800" Y="350" L="10" H="200" P="0,0,0,0.2,0,0,0,0"/><S T="0" X="800" Y="239" L="10" H="30" P="0,0,0,0,0,0,0,0" c="3" m=""/><S T="0" X="800" Y="791" L="800" H="10" P="0,0,0.3,0.2,90,0,0,0" c="3" m=""/><S T="13" X="1100" Y="359" L="10" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="3"/><S T="12" X="600" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="13" X="400" Y="137" L="15" P="0,0,0.3,0.2,0,0,0,0" o="324650"/><S T="13" X="800" Y="137" L="15" P="0,0,0.3,0.2,0,0,0,0" o="324650"/><S T="13" X="1150" Y="137" L="15" P="0,0,0.3,0.2,0,0,0,0" o="324650"/><S T="13" X="50" Y="137" L="15" P="0,0,0.3,0.2,0,0,0,0" o="324650"/></S><D><P X="599" Y="363" T="10" P="1,0"/><P X="99" Y="363" T="10" P="1,0"/><P X="1099" Y="363" T="10" P="1,0"/><DS X="365" Y="-141"/></D><O/><L/></Z></C>',
+		[3] = 'Circle grounds on the sky', 
+		[4] = 'Refletz#6472',
+		[5] = '<C><P G="0,4" F="0" /><Z><S><S P="0,0,.1,.2,,0,0,0" L="800" X="400" c="3" N="" Y="400" T="7" H="100" /><S L="800" H="10" X="400" Y="430" T="9" P="0,0,,,,0,0,0" /><S L="10" X="400" H="200" Y="350" T="1" P="0,0,.0,,,0,0,0" /><S P="0,0,.3,.2,,0,0,0" L="800" o="6a7495" H="10" Y="455" T="12" X="400" /><S P="0,0,.2,,,0,0,0" L="10" o="6a7495" X="-5" c="1" Y="0" T="12" H="3000" /><S P="0,0,.2,,,0,0,0" L="10" o="6a7495" X="805" c="1" Y="0" T="12" H="3000" /><S P="0,0,.3,.2,,0,0,0" L="10" o="324650" X="100" c="3" Y="359" T="13" H="10" /><S P="0,0,.3,.2,,0,0,0" L="10" o="324650" H="10" c="3" Y="359" T="13" X="700" /><S H="105" L="100" o="324650" X="50" c="4" Y="45" T="12" P="0,0,.3,.2,,0,0,0" /><S X="400" L="800" H="10" c="3" N="" Y="0" T="1" P="0,0,0,0.2,0,0,0,0" /><S X="400" L="800" H="10" c="3" N="" Y="95" T="0" m="" P="0,0,0.3,0.2,0,0,0,0" /><S X="105" L="10" H="100" c="3" Y="48" T="0" m="" P="0,0,0.3,0.2,0,0,0,0" /><S H="100" L="10" X="700" c="3" N="" Y="48" T="0" m="" P="0,0,0.3,0.2,0,0,0,0" /><S P="0,0,0.3,0.2,0,0,0,0" L="800" X="401" c="3" Y="225" T="0" m="" H="10" /><S P="0,0,0,0,0,0,0,0" L="10" X="400" c="3" Y="239" T="0" m="" H="30" /><S P="0,0,0.3,0.2,90,0,0,0" L="800" X="400" c="3" Y="791" T="0" m="" H="10" /><S H="200" L="20" o="6a7495" X="316" c="3" Y="-129" T="12" P="0,0,.2,,,0,0,0" /><S P="0,0,.2,,,0,0,0" L="20" o="6a7495" X="407" c="3" Y="-133" T="12" H="200" /><S H="100" L="20" o="6a7495" X="363" c="3" Y="-92" T="12" P="0,0,.2,,90,0,0,0" /><S P="0,0,.2,,90,0,0,0" L="20" o="6a7495" X="360" c="3" Y="-206" T="12" H="100" /><S H="120" L="3000" o="6a7495" X="400" c="4" N="" Y="460" T="12" P="0,0,0.3,0.2,0,0,0,0" /><S P="0,0,.3,.2,,0,0,0" L="100" o="324650" X="750" c="4" Y="45" T="12" H="105" /><S L="15" o="324650" X="100" H="10" Y="140" T="13" P="0,0,0.3,0.2,0,0,0,0" /><S L="15" o="324650" X="150" H="10" Y="180" T="13" P="0,0,0.3,0.2,0,0,0,0" /><S P="0,0,0.3,0.2,0,0,0,0" L="15" o="324650" H="10" Y="180" T="13" X="650" /><S P="0,0,0.3,0.2,0,0,0,0" L="15" o="324650" H="10" Y="140" T="13" X="700" /><S P="0,0,0,0.2,0,0,0,0" L="800" X="400" c="1" N="" Y="-800" T="1" H="10" /></S><D><P P="1" Y="365" T="10" X="699" /><P X="99" Y="365" T="10" P="1" /><DS Y="-151" X="360" /></D><O /></Z></C>'
+	}
 }
 
 local balls = {
@@ -462,6 +487,14 @@ local score_red = 0
 local score_blue = 0
 local ball_id = 0
 local ballOnGame = false
+local ballOnGame2 = false
+local playerConsumable = {}
+local playerConsumableItem = {}
+local playerConsumables = {}
+local playerLeftRight = {}
+local playerConsumableKey = {}
+local ballOnGameTwoBalls = {}
+local ballsId = {}
 local gameStats = {gameMode = ''}
 local pagesList = {}
 local mapsVotes = {}
@@ -494,6 +527,15 @@ for name, data in pairs(tfm.get.room.playerList) do
 	system.bindKeyboard(name, 1, true, true)
 	system.bindKeyboard(name, 2, true, true)
 	system.bindKeyboard(name, 3, true, true)
+	system.bindKeyboard(name, 49, true, true)
+	system.bindKeyboard(name, 50, true, true)
+	system.bindKeyboard(name, 51, true, true)
+	system.bindKeyboard(name, 52, true, true)
+	system.bindKeyboard(name, 55, true, true)
+	system.bindKeyboard(name, 56, true, true)
+	system.bindKeyboard(name, 57, true, true)
+	system.bindKeyboard(name, 48, true, true)
+	system.bindKeyboard(name, 77, true, true)
 end
 
 function ui.addWindow(id, text, player, x, y, width, height, alpha, corners, closeButton, buttonText)
@@ -567,7 +609,11 @@ end
 function init()
 	mode = "startGame"
 	removeTimer('verifyBallCoordinates')
+	playerConsumables = {}
 	ballOnGame = false
+	ballOnGame2 = false
+	ballOnGameTwoBalls = {ballOnGame, ballOnGame2}
+	ballsId = {nil, nil}
 	tfm.exec.disableAllShamanSkills(true)
 	playerCanTransform = {}
 	playerInGame = {}
@@ -637,7 +683,7 @@ function init()
 		mapsVotes[i] = 0
 	end
 
-	gameStats = {gameMode = '', redX = 0, blueX = 0, yellowX = 0, greenX = 0, redX2 = 0, blueX2 = 0, setMapName = '', winscore = 7, isCustomMap = false, customMapIndex = 0, initTimer = 0, totalVotes = 0, mapIndexSelected = 0, canTransform = false, teamsMode = false, canJoin = true, typeMap = '', customBall = false, customBallId = 0, banCommandIsEnabled = true, killSpec = false, isGamePaused = false, psyhicObjectForce = 1, twoTeamsMode = false, enableAfkMode = false, realMode = false, redServeIndex = 1, blueServeIndex = 1, redPlayerServe = "", bluePlayerServe = "", redServe = false, blueServe = false, redQuantitySpawn = 0, redLimitSpawn = 3, blueQuantitySpawn = 0, blueLimitSpawn = 3, lastPlayerRed = "", lastPlayerBlue = "", teamWithOutAce = "", reduceForce = false, aceRed = false, aceBlue = false}
+	gameStats = {gameMode = '', redX = 0, blueX = 0, yellowX = 0, greenX = 0, redX2 = 0, blueX2 = 0, setMapName = '', winscore = 7, isCustomMap = false, customMapIndex = 0, initTimer = 0, totalVotes = 0, mapIndexSelected = 0, canTransform = false, teamsMode = false, canJoin = true, typeMap = '', customBall = false, customBallId = 0, banCommandIsEnabled = true, killSpec = false, isGamePaused = false, psyhicObjectForce = 1, twoTeamsMode = false, enableAfkMode = false, realMode = false, redServeIndex = 1, blueServeIndex = 1, redPlayerServe = "", bluePlayerServe = "", redServe = false, blueServe = false, redQuantitySpawn = 0, redLimitSpawn = 3, blueQuantitySpawn = 0, blueLimitSpawn = 3, lastPlayerRed = "", lastPlayerBlue = "", teamWithOutAce = "", reduceForce = false, aceRed = false, aceBlue = false, twoBalls = false, consumables = false}
 	playerCoordinates = {}
 	countId = 1
 	playerPhysicId = {}
@@ -647,6 +693,10 @@ function init()
 	tfm.exec.newGame('<C><P /><Z><S><S L="800" H="50" X="400" Y="385" T="6" P="0,0,0.3,0.2,0,0,0,0" /><S m="" L="10" H="404" X="2" Y="202" T="1" P="0,0,0,0.2,0,0,0,0" /><S m="" L="10" X="795" H="404" Y="203" T="1" P="0,0,0,0.2,0,0,0,0" /><S m="" L="10" H="800" X="396" Y="7" T="1" P="0,0,0,0.2,90,0,0,0" /></S><D><DS Y="349" X="400" /><P P="0,0" Y="359" T="6" X="217" /><P P="0,0" Y="363" T="4" X="580" /><P P="0,0" Y="360" T="5" X="319" /><P P="0,0" Y="0" T="257" X="0" /></D><O /></Z></C>')
 
 	for name, data in pairs(tfm.get.room.playerList) do
+		playerLeftRight[name] = 0
+		playerConsumableKey[name] = 56
+		playerConsumable[name] = true
+		playerConsumableItem[name] = 80
 		playerForce[name] = 0
 		playerCanTransform[name] = true
 		playerInGame[name] = false
@@ -658,6 +708,15 @@ function init()
 		system.bindKeyboard(name, 1, true, true)
 		system.bindKeyboard(name, 2, true, true)
 		system.bindKeyboard(name, 3, true, true)
+		system.bindKeyboard(name, 49, true, true)
+		system.bindKeyboard(name, 50, true, true)
+		system.bindKeyboard(name, 51, true, true)
+		system.bindKeyboard(name, 52, true, true)
+		system.bindKeyboard(name, 55, true, true)
+		system.bindKeyboard(name, 56, true, true)
+		system.bindKeyboard(name, 57, true, true)
+		system.bindKeyboard(name, 48, true, true)
+		system.bindKeyboard(name, 77, true, true)
 		tfm.exec.setNameColor(name, 0xD1D5DB)
 		tfm.exec.setPlayerScore(name, 0, false)
 		pagesList[name] = {helpPage = 1}
@@ -790,7 +849,7 @@ function eventTextAreaCallback(id, name, c)
 		end
 	end
 	if c == "menuOpen" then
-		ui.addWindow(23, "<p align='center'><font size='13px'><a href='event:menuClose'>Menu</a>"..playerLanguage[name].tr.menuOpenText, name, 5, 15, 150, 100, 0.2, false, false, _)
+		ui.addWindow(23, "<p align='center'><font size='13px'><a href='event:menuClose'>Menu</a>"..playerLanguage[name].tr.menuOpenText, name, 5, 15, 200, 100, 0.2, false, false, _)
 	elseif c == "menuClose" then
         ui.addWindow(23, "<p align='center'><font size='13px'><a href='event:menuOpen'>Menu", name, 5, 15, 100, 30, 0.2, false, false, _)
     elseif c == "howToPlay" then
@@ -999,6 +1058,11 @@ function selectMap()
 	end
 
 	if gameStats.teamsMode then
+		if gameStats.isCustomMap then
+			tfm.exec.newGame(customMapsFourTeamsMode[gameStats.customMapIndex][1])
+
+			return
+		end
 		tfm.exec.newGame('<C><P F="3" L="1600" G="0,4" /><Z><S><S P="0,0,.1,.2,,0,0,0" L="1610" X="805" c="3" N="" Y="400" T="7" H="100" /><S L="1200" H="10" X="600" Y="430" T="9" P="0,0,,,,0,0,0" /><S L="10" X="400" H="200" Y="350" T="1" P="0,0,.0,,,0,0,0" /><S L="800" o="6a7495" H="10" X="400" Y="455" T="12" P="0,0,.3,.2,,0,0,0" /><S P="0,0,.2,,,0,0,0" L="10" o="6a7495" X="-5" c="1" Y="0" T="12" H="3000" /><S P="0,0,.2,,,0,0,0" L="10" o="6a7495" X="1600" c="1" Y="0" T="12" H="3000" /><S P="0,0,.3,.2,,0,0,0" L="10" o="324650" X="100" c="3" Y="359" T="13" H="10" /><S P="0,0,.3,.2,,0,0,0" L="10" o="324650" H="10" c="3" Y="359" T="13" X="600" /><S H="105" L="100" o="324650" X="250" c="4" Y="45" T="12" P="0,0,.3,.2,,0,0,0" /><S X="790" L="1620" H="10" c="3" Y="0" T="1" P="0,0,0,0.2,0,0,0,0" /><S X="790" L="1620" H="10" c="3" Y="95" T="0" m="" P="0,0,0.3,0.2,0,0,0,0" /><S X="305" L="10" H="100" c="3" Y="48" T="0" m="" P="0,0,0.3,0.2,0,0,0,0" /><S H="100" L="10" X="1300" c="3" Y="48" T="0" m="" P="0,0,0.3,0.2,0,0,0,0" /><S P="0,0,0.3,0.2,0,0,0,0" L="1620" X="790" c="3" Y="225" T="0" m="" H="10" /><S P="0,0,0,0,0,0,0,0" L="10" X="400" c="3" Y="239" T="0" m="" H="30" /><S P="0,0,0.3,0.2,90,0,0,0" L="800" X="400" c="3" Y="791" T="0" m="" H="10" /><S H="200" L="20" o="6a7495" X="316" c="3" Y="-129" T="12" P="0,0,.2,,,0,0,0" /><S P="0,0,.2,,,0,0,0" L="20" o="6a7495" X="407" c="3" Y="-133" T="12" H="200" /><S H="100" L="20" o="6a7495" X="363" c="3" Y="-92" T="12" P="0,0,.2,,90,0,0,0" /><S P="0,0,.2,,90,0,0,0" L="20" o="6a7495" X="360" c="3" Y="-206" T="12" H="100" /><S H="120" L="3000" o="6a7495" X="400" c="4" N="" Y="460" T="12" P="0,0,0.3,0.2,0,0,0,0" /><S P="0,0,.3,.2,,0,0,0" L="100" o="324650" X="1350" c="4" Y="45" T="12" H="105" /><S P="0,0,0,0.2,0,0,0,0" L="1200" X="600" c="1" Y="-800" T="1" H="10" /><S L="10" H="200" X="800" Y="350" T="1" P="0,0,.0,,,0,0,0" /><S H="10" L="800" X="800" c="3" Y="790" T="0" m="" P="0,0,0.3,0.2,90,0,0,0" /><S H="30" L="10" X="800" c="3" Y="239" T="0" m="" P="0,0,0,0,0,0,0,0" /><S X="1000" L="10" o="324650" H="10" c="3" Y="359" T="13" P="0,0,.3,.2,,0,0,0" /><S L="10" X="1200" H="200" Y="350" T="1" P="0,0,.0,,,0,0,0" /><S P="0,0,0,0,0,0,0,0" L="10" H="30" c="3" Y="239" T="0" m="" X="1200" /><S P="0,0,0.3,0.2,90,0,0,0" L="800" H="10" c="3" Y="790" T="0" m="" X="1200" /><S P="0,0,.3,.2,,0,0,0" L="100" o="324650" X="600" c="4" Y="45" T="12" H="105" /><S H="105" L="100" o="324650" X="1000" c="4" Y="45" T="12" P="0,0,.3,.2,,0,0,0" /><S P="0,0,.3,.2,,0,0,0" L="10" o="324650" H="10" c="3" Y="359" T="13" X="1500" /></S><D><P X="599" Y="363" T="10" P="1" /><P P="1" Y="363" T="10" X="99" /><DS Y="-141" X="365" /><P P="1" Y="363" T="10" X="999" /><P X="1499" Y="363" T="10" P="1" /></D><O /></Z></C>')
 		return
 	end
@@ -1108,32 +1172,78 @@ function spawnInitialBall()
 	if gameStats.teamsMode and gameStats.typeMap == "large4v4" then
 		x = {200, 600, 1000, 1400}
 		if gameStats.customBall then
-			ball_id = tfm.exec.addShamanObject(balls[gameStats.customBallId].id, x[math.random(1, #x)], 50, 0, 0, -5, true)
+			local randomIndex = math.random(1, #x)
+			ball_id = tfm.exec.addShamanObject(balls[gameStats.customBallId].id, x[randomIndex], 50, 0, 0, -5, true)
+			table.remove(x, randomIndex)
+
+			if gameStats.twoBalls then
+				ball_id2 = tfm.exec.addShamanObject(balls[gameStats.customBallId].id, x[math.random(1, #x)], 50, 0, 0, -5, true)				
+				ballOnGame2 = true
+			end
 		else
-			ball_id = tfm.exec.addShamanObject(6, x[math.random(1, #x)], 50, 0, 0, -5, true)
+			local randomIndex = math.random(1, #x)
+			ball_id = tfm.exec.addShamanObject(6, x[randomIndex], 50, 0, 0, -5, true)
+			table.remove(x, randomIndex)
+
+			if gameStats.twoBalls then
+				ball_id2 = tfm.exec.addShamanObject(6, x[math.random(1, #x)], 50, 0, 0, -5, true)
+				ballOnGame2 = true
+				print(ballOnGame2)
+			end
 		end
 		
 		ballOnGame = true
+		updateTwoBallOnGame()
 		return
 	elseif gameStats.teamsMode and gameStats.typeMap == "large3v3" then
 		x = {200, 600, 1000}
 		if gameStats.customBall then
-			ball_id = tfm.exec.addShamanObject(balls[gameStats.customBallId].id, x[math.random(1, #x)], 50, 0, 0, -5, true)
+			local randomIndex = math.random(1, #x)
+			ball_id = tfm.exec.addShamanObject(balls[gameStats.customBallId].id, x[randomIndex], 50, 0, 0, -5, true)
+			table.remove(x, randomIndex)
+
+			if gameStats.twoBalls then
+				ball_id2 = tfm.exec.addShamanObject(balls[gameStats.customBallId].id, x[math.random(1, #x)], 50, 0, 0, -5, true)				
+				ballOnGame2 = true
+			end
 		else
-			ball_id = tfm.exec.addShamanObject(6, x[math.random(1, #x)], 50, 0, 0, -5, true)
+			local randomIndex = math.random(1, #x)
+			ball_id = tfm.exec.addShamanObject(6, x[randomIndex], 50, 0, 0, -5, true)
+			table.remove(x, randomIndex)
+
+			if gameStats.twoBalls then
+				ball_id2 = tfm.exec.addShamanObject(6, x[math.random(1, #x)], 50, 0, 0, -5, true)
+				ballOnGame2 = true
+			end
 		end
 
 		ballOnGame = true
+		updateTwoBallOnGame()
 		return
 	elseif gameStats.teamsMode and gameStats.typeMap == "small" then
 		x = {200, 600}
 		if gameStats.customBall then
-			ball_id = tfm.exec.addShamanObject(balls[gameStats.customBallId].id, x[math.random(1, #x)], 50, 0, 0, -5, true)
+			local randomIndex = math.random(1, #x)
+			ball_id = tfm.exec.addShamanObject(balls[gameStats.customBallId].id, x[randomIndex], 50, 0, 0, -5, true)
+			table.remove(x, randomIndex)
+
+			if gameStats.twoBalls then
+				ball_id2 = tfm.exec.addShamanObject(balls[gameStats.customBallId].id, x[math.random(1, #x)], 50, 0, 0, -5, true)				
+				ballOnGame2 = true
+			end
 		else
-			ball_id = tfm.exec.addShamanObject(6, x[math.random(1, #x)], 50, 0, 0, -5, true)
+			local randomIndex = math.random(1, #x)
+			ball_id = tfm.exec.addShamanObject(6, x[randomIndex], 50, 0, 0, -5, true)
+			table.remove(x, randomIndex)
+
+			if gameStats.twoBalls then
+				ball_id2 = tfm.exec.addShamanObject(6, x[math.random(1, #x)], 50, 0, 0, -5, true)
+				ballOnGame2 = true
+			end
 		end
 
 		ballOnGame = true
+		updateTwoBallOnGame()
 		return
 	end
 
@@ -1467,9 +1577,54 @@ function spawnBallRealMode(team)
 	end
 end
 
-function spawnBall(x)
+function spawnBall(x, index)
+	if gameStats.teamsMode and gameStats.twoBalls then
+
+		if index == 1 then
+			tfm.exec.removeObject(ball_id)
+			ball_id = nil
+			ballOnGame = false
+			updateTwoBallOnGame()
+
+			if gameStats.customBall then
+				ball_id = tfm.exec.addShamanObject(balls[gameStats.customBallId].id, x, 50, 0, 0, -5, true)
+				ballOnGame = true
+				updateTwoBallOnGame()
+
+				return
+			else
+				ball_id = tfm.exec.addShamanObject(6, x, 50, 0, 0, -5, true)
+				ballOnGame = true
+				updateTwoBallOnGame()
+
+				return
+			end
+		elseif index == 2 then
+			tfm.exec.removeObject(ball_id2)
+			ball_id2 = nil
+			ballOnGame2 = false
+			updateTwoBallOnGame()
+
+			if gameStats.customBall then
+				ball_id2 = tfm.exec.addShamanObject(balls[gameStats.customBallId].id, x, 50, 0, 0, -5, true)
+				ballOnGame2 = true
+				updateTwoBallOnGame()
+
+				return
+			else
+				ball_id2 = tfm.exec.addShamanObject(6, x, 50, 0, 0, -5, true)
+				ballOnGame2 = true
+				updateTwoBallOnGame()
+
+				return
+			end	
+		end
+	end
+
 	ballOnGame = false
 	tfm.exec.removeObject (ball_id)
+	updateTwoBallOnGame()
+
 	if gameStats.customBall then
 		ball_id = tfm.exec.addShamanObject(balls[gameStats.customBallId].id, x, 50, 0, 0, -5, true)
 	else
@@ -1477,17 +1632,19 @@ function spawnBall(x)
 	end
 	
 	ballOnGame = true
+	updateTwoBallOnGame()
 	showTheScore()
 end
 
 function verifyIsPoint()
 	verifyBallCoordinates = addTimer(function(i)
-		if ballOnGame then
-			if gameStats.teamsMode then
-				setLostLife()
+		if gameStats.teamsMode then
+			setLostLife()
 
-				return
-			end
+			return
+		end
+		if ballOnGame then
+
 			if gameStats.twoTeamsMode then
 				verifyIsPointTwoTeamsMode()
 
@@ -1788,273 +1945,291 @@ function verifyIsPointTwoTeamsMode()
 end
 
 function setLostLife()
-	if gameStats.typeMap == "large4v4" then
-		if tfm.get.room.objectList[ball_id].x <= gameStats.yellowX and tfm.get.room.objectList[ball_id].y >= 368 and teamsLifes[1].yellow >= 1 then
-			teamsLifes[1].yellow = teamsLifes[1].yellow - 1
-			if teamsLifes[1].yellow == 0 then
-                ballOnGame = false
-				for i = 1, #playersYellow do
-					tfm.exec.setNameColor(playersYellow[i].name, 0xD1D5DB)
-					tfm.exec.movePlayer(playersYellow[i].name, 391, 74)
-					playerInGame[playersYellow[i].name] = false
-					playersYellow[i].name = ''
-				end
-				tfm.exec.chatMessage("<j>Yellow team lost all their lives<n>", nil)
-				toggleMapType()
-				updateTeamsColors(1)
-				gameStats.canTransform = false
-				disablePlayersCanTransform(4000)
-				delayToToggleMap = addTimer(function(i)
-		        	if i == 1 then
-		        		toggleMap()
-		        	end
-		       	end, 3000, 1, "delayToToggleMap")
-				
-				return
-			end
-			tfm.exec.chatMessage("<j>Yellow team lost a life<n>", nil)
-			tfm.exec.chatMessage("<j>Team Yellow<n> "..teamsLifes[1].yellow.." | <r>Team Red<n> "..teamsLifes[2].red.." | <bv>Team Blue<n> "..teamsLifes[3].blue.." | <vp>Team Green<n> "..teamsLifes[4].green.."", nil)
-			print("<j>Team Yellow<n> "..teamsLifes[1].yellow.." | <r>Team Red<n> "..teamsLifes[2].red.." | <bv>Team Blue<n> "..teamsLifes[3].blue.." | <vp>Team Green<n> "..teamsLifes[4].green.."")
-			spawnBall(200)
-			showTheScore()
-			return
-		elseif tfm.get.room.objectList[ball_id].x <= gameStats.redX and tfm.get.room.objectList[ball_id].y >= 368 and teamsLifes[2].red >= 1 then
-			teamsLifes[2].red = teamsLifes[2].red - 1
-			if teamsLifes[2].red == 0 then
-                ballOnGame = false
-				for i = 1, #playersRed do
-					tfm.exec.setNameColor(playersRed[i].name, 0xD1D5DB)
-					tfm.exec.movePlayer(playersRed[i].name, 391, 74)
-					playerInGame[playersRed[i].name] = false
-					playersRed[i].name = ''
-				end
-				tfm.exec.chatMessage("<r>Red team lost all their lives<n>", nil)
-				toggleMapType()
-				updateTeamsColors(2)
-				gameStats.canTransform = false
-				disablePlayersCanTransform(4000)
-				delayToToggleMap = addTimer(function(i)
-		        	if i == 1 then
-		        		toggleMap()
-		        	end
-		        end, 3000, 1, "delayToToggleMap")
-				return
-			end
-			tfm.exec.chatMessage("<r>Red team lost a life<n>", nil)
-			tfm.exec.chatMessage("<j>Team Yellow<n> "..teamsLifes[1].yellow.." | <r>Team Red<n> "..teamsLifes[2].red.." | <bv>Team Blue<n> "..teamsLifes[3].blue.." | <vp>Team Green<n> "..teamsLifes[4].green.."", nil)
-			print("<j>Team Yellow<n> "..teamsLifes[1].yellow.." | <r>Team Red<n> "..teamsLifes[2].red.." | <bv>Team Blue<n> "..teamsLifes[3].blue.." | <vp>Team Green<n> "..teamsLifes[4].green.."")
-			spawnBall(600)
-			showTheScore()
-			return
-		elseif tfm.get.room.objectList[ball_id].x <= gameStats.blueX and tfm.get.room.objectList[ball_id].y >= 368 and teamsLifes[3].blue >= 1 then
-			teamsLifes[3].blue = teamsLifes[3].blue - 1
-			if teamsLifes[3].blue == 0 then
-                ballOnGame = false
+	local quantityBalls = 1
 
-				for i = 1, #playersBlue do
-					tfm.exec.setNameColor(playersBlue[i].name, 0xD1D5DB)
-					tfm.exec.movePlayer(playersBlue[i].name, 391, 74)
-					playerInGame[playersBlue[i].name] = false
-					playersBlue[i].name = ''
-				end
-				tfm.exec.chatMessage("<bv>Blue team lost all their lives<n>", nil)
-				toggleMapType()
-				updateTeamsColors(3)
-				gameStats.canTransform = false
-				disablePlayersCanTransform(4000)
-				delayToToggleMap = addTimer(function(i)
-		        	if i == 1 then
-		        		toggleMap()
-		        	end
-		        end, 3000, 1, "delayToToggleMap")
-				return
-			end
-			tfm.exec.chatMessage("<bv>Blue team lost a life<n>", nil)
-			tfm.exec.chatMessage("<j>Team Yellow<n> "..teamsLifes[1].yellow.." | <r>Team Red<n> "..teamsLifes[2].red.." | <bv>Team Blue<n> "..teamsLifes[3].blue.." | <vp>Team Green<n> "..teamsLifes[4].green.."", nil)
-			print("<j>Team Yellow<n> "..teamsLifes[1].yellow.." | <r>Team Red<n> "..teamsLifes[2].red.." | <bv>Team Blue<n> "..teamsLifes[3].blue.." | <vp>Team Green<n> "..teamsLifes[4].green.."")
-			spawnBall(1000)
-			showTheScore()
-			return
-		elseif tfm.get.room.objectList[ball_id].x >= gameStats.greenX and tfm.get.room.objectList[ball_id].y >= 368 and teamsLifes[4].green >= 1 then
-			teamsLifes[4].green = teamsLifes[4].green - 1
-			if teamsLifes[4].green == 0 then
-                ballOnGame = false
-				for i = 1, #playersGreen do
-					tfm.exec.setNameColor(playersGreen[i].name, 0xD1D5DB)
-					tfm.exec.movePlayer(playersGreen[i].name, 391, 74)
-					playerInGame[playersGreen[i].name] = false
-					playersGreen[i].name = ''
-				end
-				tfm.exec.chatMessage("<vp>Green team lost all their lives<n>", nil)
-				toggleMapType()
-				updateTeamsColors(4)
-				gameStats.canTransform = false
-				disablePlayersCanTransform(4000)
-				delayToToggleMap = addTimer(function(i)
-		        	if i == 1 then
-		        		toggleMap()
-		        	end
-		        end, 3000, 1, "delayToToggleMap")
-				return
-			end
-			tfm.exec.chatMessage("<vp>Green team lost a life<n>", nil)
-			tfm.exec.chatMessage("<j>Team Yellow<n> "..teamsLifes[1].yellow.." | <r>Team Red<n> "..teamsLifes[2].red.." | <bv>Team Blue<n> "..teamsLifes[3].blue.." | <vp>Team Green<n> "..teamsLifes[4].green.."", nil)
-			print("<j>Team Yellow<n> "..teamsLifes[1].yellow.." | <r>Team Red<n> "..teamsLifes[2].red.." | <bv>Team Blue<n> "..teamsLifes[3].blue.." | <vp>Team Green<n> "..teamsLifes[4].green.."")
-			spawnBall(1400)
-			showTheScore()
-			return
-		end
-	elseif gameStats.typeMap == "large3v3" then
-		for i = 1, #getTeamsLifes do
-			if tfm.get.room.objectList[ball_id].x <= 399 and tfm.get.room.objectList[ball_id].y >= 368 and getTeamsLifes[1] >= 1 and i == 1 then
-				getTeamsLifes[1] = getTeamsLifes[1] - 1
-				if getTeamsLifes[1] == 0 then
-                    ballOnGame = false
-					for j = 1, #teamsPlayersOnGame[i] do
-						tfm.exec.setNameColor(teamsPlayersOnGame[i][j].name, 0xD1D5DB)
-						tfm.exec.movePlayer(teamsPlayersOnGame[i][j].name, 391, 74)
-						playerInGame[teamsPlayersOnGame[i][j].name] = false
-						teamsPlayersOnGame[i][j].name = ''
+	if gameStats.twoBalls then
+		quantityBalls = 2
+	end
+
+	for j = 1, quantityBalls do
+		local onCondition = false
+
+		print(ballsId[j])
+		print(ballOnGameTwoBalls[j])
+		print('===')
+		if gameStats.typeMap == "large4v4" and ballOnGameTwoBalls[j] and ballsId[j] ~= nil then
+			if tfm.get.room.objectList[ballsId[j]].x <= gameStats.yellowX and tfm.get.room.objectList[ballsId[j]].y >= 368 and teamsLifes[1].yellow >= 1 then
+				onCondition = true
+				teamsLifes[1].yellow = teamsLifes[1].yellow - 1
+				if teamsLifes[1].yellow == 0 then
+					ballOnGame = false
+					ballOnGame2 = false
+					
+					for i = 1, #playersYellow do
+						tfm.exec.setNameColor(playersYellow[i].name, 0xD1D5DB)
+						tfm.exec.movePlayer(playersYellow[i].name, 391, 74)
+						playerInGame[playersYellow[i].name] = false
+						playersYellow[i].name = ''
 					end
-					tfm.exec.chatMessage(messageTeamsLifes[1], nil)
-					print(messageTeamsLifes[1])
-					updateTeamsColors(1)
+					tfm.exec.chatMessage("<j>Yellow team lost all their lives<n>", nil)
 					toggleMapType()
+					updateTeamsColors(1)
 					gameStats.canTransform = false
 					disablePlayersCanTransform(4000)
 					delayToToggleMap = addTimer(function(i)
-		        		if i == 1 then
-		        			toggleMap()
-		        		end
-		       		end, 3000, 1, "delayToToggleMap")
+			        	if i == 1 then
+			        		toggleMap()
+			        	end
+			       	end, 3000, 1, "delayToToggleMap")
+					
 					return
 				end
-				tfm.exec.chatMessage(messageTeamsLostOneLife[1], nil)
-				print(messageTeamsLostOneLife[1])
-				tfm.exec.chatMessage(""..messageTeamsLifesTextChat[1].." "..getTeamsLifes[1].." | "..messageTeamsLifesTextChat[2].." "..getTeamsLifes[2].." | "..messageTeamsLifesTextChat[3].." "..getTeamsLifes[3].."", nil)
-				print(""..messageTeamsLifesTextChat[1].." "..getTeamsLifes[1].." | "..messageTeamsLifesTextChat[2].." "..getTeamsLifes[2].." | "..messageTeamsLifesTextChat[3].." "..getTeamsLifes[3].."")
-				spawnBall(200)
+				tfm.exec.chatMessage("<j>Yellow team lost a life<n>", nil)
+				tfm.exec.chatMessage("<j>Team Yellow<n> "..teamsLifes[1].yellow.." | <r>Team Red<n> "..teamsLifes[2].red.." | <bv>Team Blue<n> "..teamsLifes[3].blue.." | <vp>Team Green<n> "..teamsLifes[4].green.."", nil)
+				print("<j>Team Yellow<n> "..teamsLifes[1].yellow.." | <r>Team Red<n> "..teamsLifes[2].red.." | <bv>Team Blue<n> "..teamsLifes[3].blue.." | <vp>Team Green<n> "..teamsLifes[4].green.."")
+				spawnBall(200, j)
 				showTheScore()
-				return
-			elseif tfm.get.room.objectList[ball_id].x <= 799 and tfm.get.room.objectList[ball_id].y >= 368 and getTeamsLifes[2] >= 1 and i == 2 then
-				getTeamsLifes[2] = getTeamsLifes[2] - 1
-				if getTeamsLifes[2] == 0 then
-                    ballOnGame = false
-					for j = 1, #teamsPlayersOnGame[i] do
-						tfm.exec.setNameColor(teamsPlayersOnGame[i][j].name, 0xD1D5DB)
-						tfm.exec.movePlayer(teamsPlayersOnGame[i][j].name, 391, 74)
-						playerInGame[teamsPlayersOnGame[i][j].name] = false
-						teamsPlayersOnGame[i][j].name = ''
+			elseif tfm.get.room.objectList[ballsId[j]].x <= gameStats.redX and tfm.get.room.objectList[ballsId[j]].y >= 368 and teamsLifes[2].red >= 1 and not onCondition then
+				onCondition = true
+				teamsLifes[2].red = teamsLifes[2].red - 1
+				if teamsLifes[2].red == 0 then
+	                ballOnGame = false
+					ballOnGame2 = false
+					for i = 1, #playersRed do
+						tfm.exec.setNameColor(playersRed[i].name, 0xD1D5DB)
+						tfm.exec.movePlayer(playersRed[i].name, 391, 74)
+						playerInGame[playersRed[i].name] = false
+						playersRed[i].name = ''
 					end
-					tfm.exec.chatMessage(messageTeamsLifes[2], nil)
-					print(messageTeamsLifes[2])
+					tfm.exec.chatMessage("<r>Red team lost all their lives<n>", nil)
 					toggleMapType()
 					updateTeamsColors(2)
 					gameStats.canTransform = false
 					disablePlayersCanTransform(4000)
 					delayToToggleMap = addTimer(function(i)
-		        		if i == 1 then
-		        			toggleMap()
-		        		end
-		       		end, 3000, 1, "delayToToggleMap")
+			        	if i == 1 then
+			        		toggleMap()
+			        	end
+			        end, 3000, 1, "delayToToggleMap")
 					return
 				end
-				tfm.exec.chatMessage(messageTeamsLostOneLife[2], nil)
-				print(messageTeamsLostOneLife[2])
-				tfm.exec.chatMessage(""..messageTeamsLifesTextChat[1].." "..getTeamsLifes[1].." | "..messageTeamsLifesTextChat[2].." "..getTeamsLifes[2].." | "..messageTeamsLifesTextChat[3].." "..getTeamsLifes[3].."", nil)
-				print(""..messageTeamsLifesTextChat[1].." "..getTeamsLifes[1].." | "..messageTeamsLifesTextChat[2].." "..getTeamsLifes[2].." | "..messageTeamsLifesTextChat[3].." "..getTeamsLifes[3].."")
-				spawnBall(600)
+				tfm.exec.chatMessage("<r>Red team lost a life<n>", nil)
+				tfm.exec.chatMessage("<j>Team Yellow<n> "..teamsLifes[1].yellow.." | <r>Team Red<n> "..teamsLifes[2].red.." | <bv>Team Blue<n> "..teamsLifes[3].blue.." | <vp>Team Green<n> "..teamsLifes[4].green.."", nil)
+				print("<j>Team Yellow<n> "..teamsLifes[1].yellow.." | <r>Team Red<n> "..teamsLifes[2].red.." | <bv>Team Blue<n> "..teamsLifes[3].blue.." | <vp>Team Green<n> "..teamsLifes[4].green.."")
+				spawnBall(600, j)
 				showTheScore()
-				return
-			elseif tfm.get.room.objectList[ball_id].x >= 801 and tfm.get.room.objectList[ball_id].y >= 368 and getTeamsLifes[3] >= 1 and i == 3 then
-				getTeamsLifes[3] = getTeamsLifes[3] - 1
-				if getTeamsLifes[3] == 0 then
-                    ballOnGame = false
-					for j = 1, #teamsPlayersOnGame[i] do
-						tfm.exec.setNameColor(teamsPlayersOnGame[i][j].name, 0xD1D5DB)
-						tfm.exec.movePlayer(teamsPlayersOnGame[i][j].name, 391, 74)
-						playerInGame[teamsPlayersOnGame[i][j].name] = false
-						teamsPlayersOnGame[i][j].name = ''
+			elseif tfm.get.room.objectList[ballsId[j]].x <= gameStats.blueX and tfm.get.room.objectList[ballsId[j]].y >= 368 and teamsLifes[3].blue >= 1 and not onCondition then
+				onCondition = true
+				teamsLifes[3].blue = teamsLifes[3].blue - 1
+				if teamsLifes[3].blue == 0 then
+	                ballOnGame = false
+					ballOnGame2 = false
+
+					for i = 1, #playersBlue do
+						tfm.exec.setNameColor(playersBlue[i].name, 0xD1D5DB)
+						tfm.exec.movePlayer(playersBlue[i].name, 391, 74)
+						playerInGame[playersBlue[i].name] = false
+						playersBlue[i].name = ''
 					end
-					tfm.exec.chatMessage(messageTeamsLifes[3], nil)
-					print(messageTeamsLifes[3])
+					tfm.exec.chatMessage("<bv>Blue team lost all their lives<n>", nil)
 					toggleMapType()
 					updateTeamsColors(3)
 					gameStats.canTransform = false
 					disablePlayersCanTransform(4000)
 					delayToToggleMap = addTimer(function(i)
-		        		if i == 1 then
-		        			toggleMap()
-		        		end
-		       		end, 3000, 1, "delayToToggleMap")
+			        	if i == 1 then
+			        		toggleMap()
+			        	end
+			        end, 3000, 1, "delayToToggleMap")
 					return
 				end
-
-				tfm.exec.chatMessage(messageTeamsLostOneLife[3], nil)
-				print(messageTeamsLostOneLife[3])
-				tfm.exec.chatMessage(""..messageTeamsLifesTextChat[1].." "..getTeamsLifes[1].." | "..messageTeamsLifesTextChat[2].." "..getTeamsLifes[2].." | "..messageTeamsLifesTextChat[3].." "..getTeamsLifes[3].."", nil)
-				print(""..messageTeamsLifesTextChat[1].." "..getTeamsLifes[1].." | "..messageTeamsLifesTextChat[2].." "..getTeamsLifes[2].." | "..messageTeamsLifesTextChat[3].." "..getTeamsLifes[3].."")
-				spawnBall(1000)
+				tfm.exec.chatMessage("<bv>Blue team lost a life<n>", nil)
+				tfm.exec.chatMessage("<j>Team Yellow<n> "..teamsLifes[1].yellow.." | <r>Team Red<n> "..teamsLifes[2].red.." | <bv>Team Blue<n> "..teamsLifes[3].blue.." | <vp>Team Green<n> "..teamsLifes[4].green.."", nil)
+				print("<j>Team Yellow<n> "..teamsLifes[1].yellow.." | <r>Team Red<n> "..teamsLifes[2].red.." | <bv>Team Blue<n> "..teamsLifes[3].blue.." | <vp>Team Green<n> "..teamsLifes[4].green.."")
+				spawnBall(1000, j)
 				showTheScore()
-				return
+			elseif tfm.get.room.objectList[ballsId[j]].x >= gameStats.greenX and tfm.get.room.objectList[ballsId[j]].y >= 368 and teamsLifes[4].green >= 1 and not onCondition then
+				onCondition = true
+				teamsLifes[4].green = teamsLifes[4].green - 1
+				if teamsLifes[4].green == 0 then
+	            	ballOnGame = false
+					ballOnGame2 = false
+					for i = 1, #playersGreen do
+						tfm.exec.setNameColor(playersGreen[i].name, 0xD1D5DB)
+						tfm.exec.movePlayer(playersGreen[i].name, 391, 74)
+						playerInGame[playersGreen[i].name] = false
+						playersGreen[i].name = ''
+					end
+					tfm.exec.chatMessage("<vp>Green team lost all their lives<n>", nil)
+					toggleMapType()
+					updateTeamsColors(4)
+					gameStats.canTransform = false
+					disablePlayersCanTransform(4000)
+					delayToToggleMap = addTimer(function(i)
+			        	if i == 1 then
+			        		toggleMap()
+			        	end
+			        end, 3000, 1, "delayToToggleMap")
+					return
+				end
+				tfm.exec.chatMessage("<vp>Green team lost a life<n>", nil)
+				tfm.exec.chatMessage("<j>Team Yellow<n> "..teamsLifes[1].yellow.." | <r>Team Red<n> "..teamsLifes[2].red.." | <bv>Team Blue<n> "..teamsLifes[3].blue.." | <vp>Team Green<n> "..teamsLifes[4].green.."", nil)
+				print("<j>Team Yellow<n> "..teamsLifes[1].yellow.." | <r>Team Red<n> "..teamsLifes[2].red.." | <bv>Team Blue<n> "..teamsLifes[3].blue.." | <vp>Team Green<n> "..teamsLifes[4].green.."")
+				spawnBall(1400, j)
+				showTheScore()
 			end
-		end
-	elseif gameStats.typeMap == "small" then
-		for i = 1, #getTeamsLifes do
-			if tfm.get.room.objectList[ball_id].x <= 399 and tfm.get.room.objectList[ball_id].y >= 368 and getTeamsLifes[1] >= 1 and i == 1 then
-				getTeamsLifes[1] = getTeamsLifes[1] - 1
-				if getTeamsLifes[1] == 0 then
-					for j = 1, #teamsPlayersOnGame[i] do
-						tfm.exec.setNameColor(teamsPlayersOnGame[i][j].name, 0xD1D5DB)
-						tfm.exec.movePlayer(teamsPlayersOnGame[i][j].name, 391, 74)
-						playerInGame[teamsPlayersOnGame[i][j].name] = false
-						teamsPlayersOnGame[i][j].name = ''
+		elseif gameStats.typeMap == "large3v3" and ballOnGameTwoBalls[j] and ballsId[j] ~= nil then
+			for i = 1, #getTeamsLifes do
+				if tfm.get.room.objectList[ballsId[j]].x <= 399 and tfm.get.room.objectList[ballsId[j]].y >= 368 and getTeamsLifes[1] >= 1 and i == 1 then
+					getTeamsLifes[1] = getTeamsLifes[1] - 1
+					if getTeamsLifes[1] == 0 then
+	                	ballOnGame = false
+						ballOnGame2 = false
+						for j = 1, #teamsPlayersOnGame[i] do
+							tfm.exec.setNameColor(teamsPlayersOnGame[i][j].name, 0xD1D5DB)
+							tfm.exec.movePlayer(teamsPlayersOnGame[i][j].name, 391, 74)
+							playerInGame[teamsPlayersOnGame[i][j].name] = false
+							teamsPlayersOnGame[i][j].name = ''
+						end
+						tfm.exec.chatMessage(messageTeamsLifes[1], nil)
+						print(messageTeamsLifes[1])
+						updateTeamsColors(1)
+						toggleMapType()
+						gameStats.canTransform = false
+						disablePlayersCanTransform(4000)
+						delayToToggleMap = addTimer(function(i)
+			        		if i == 1 then
+			        			toggleMap()
+			        		end
+			       		end, 3000, 1, "delayToToggleMap")
+						return
 					end
-					print(messageTeamsLifes[1])
-					tfm.exec.chatMessage(messageTeamsLifes[1], nil)
+					tfm.exec.chatMessage(messageTeamsLostOneLife[1], nil)
+					print(messageTeamsLostOneLife[1])
+					tfm.exec.chatMessage(""..messageTeamsLifesTextChat[1].." "..getTeamsLifes[1].." | "..messageTeamsLifesTextChat[2].." "..getTeamsLifes[2].." | "..messageTeamsLifesTextChat[3].." "..getTeamsLifes[3].."", nil)
+					print(""..messageTeamsLifesTextChat[1].." "..getTeamsLifes[1].." | "..messageTeamsLifesTextChat[2].." "..getTeamsLifes[2].." | "..messageTeamsLifesTextChat[3].." "..getTeamsLifes[3].."")
+					spawnBall(200, j)
 					showTheScore()
-					updateTeamsColors(1)
-					showMessageWinner()
-					ballOnGame = false
-					tfm.exec.removeObject (ball_id)
-					mode = "endGame"
-					gameTimeEnd = os.time() + 5000
-					return
-				end
-				tfm.exec.chatMessage(messageTeamsLostOneLife[1], nil)
-				print(messageTeamsLostOneLife[1])
-				tfm.exec.chatMessage(""..messageTeamsLifesTextChat[1].." "..getTeamsLifes[1].." | "..messageTeamsLifesTextChat[2].." "..getTeamsLifes[2].."", nil)
-				print(""..messageTeamsLifesTextChat[1].." "..getTeamsLifes[1].." | "..messageTeamsLifesTextChat[2].." "..getTeamsLifes[2].."")
-				spawnBall(200)
-				showTheScore()
-				return
-			elseif tfm.get.room.objectList[ball_id].x >= 401 and tfm.get.room.objectList[ball_id].y >= 368 and getTeamsLifes[2] >= 1 and i == 2 then
-				getTeamsLifes[2] = getTeamsLifes[2] - 1
-				if getTeamsLifes[2] == 0 then
-					for j = 1, #teamsPlayersOnGame[i] do
-						tfm.exec.setNameColor(teamsPlayersOnGame[i][j].name, 0xD1D5DB)
-						tfm.exec.movePlayer(teamsPlayersOnGame[i][j].name, 391, 74)
-						playerInGame[teamsPlayersOnGame[i][j].name] = false
-						teamsPlayersOnGame[i][j].name = ''
+				elseif tfm.get.room.objectList[ballsId[j]].x <= 799 and tfm.get.room.objectList[ballsId[j]].y >= 368 and getTeamsLifes[2] >= 1 and i == 2 then
+					getTeamsLifes[2] = getTeamsLifes[2] - 1
+					if getTeamsLifes[2] == 0 then
+	                    ballOnGame = false
+						ballOnGame2 = false
+						for j = 1, #teamsPlayersOnGame[i] do
+							tfm.exec.setNameColor(teamsPlayersOnGame[i][j].name, 0xD1D5DB)
+							tfm.exec.movePlayer(teamsPlayersOnGame[i][j].name, 391, 74)
+							playerInGame[teamsPlayersOnGame[i][j].name] = false
+							teamsPlayersOnGame[i][j].name = ''
+						end
+						tfm.exec.chatMessage(messageTeamsLifes[2], nil)
+						print(messageTeamsLifes[2])
+						toggleMapType()
+						updateTeamsColors(2)
+						gameStats.canTransform = false
+						disablePlayersCanTransform(4000)
+						delayToToggleMap = addTimer(function(i)
+			        		if i == 1 then
+			        			toggleMap()
+			        		end
+			       		end, 3000, 1, "delayToToggleMap")
+						return
 					end
-					tfm.exec.chatMessage(messageTeamsLifes[2], nil)
-					print(messageTeamsLifes[2])
+					tfm.exec.chatMessage(messageTeamsLostOneLife[2], nil)
+					print(messageTeamsLostOneLife[2])
+					tfm.exec.chatMessage(""..messageTeamsLifesTextChat[1].." "..getTeamsLifes[1].." | "..messageTeamsLifesTextChat[2].." "..getTeamsLifes[2].." | "..messageTeamsLifesTextChat[3].." "..getTeamsLifes[3].."", nil)
+					print(""..messageTeamsLifesTextChat[1].." "..getTeamsLifes[1].." | "..messageTeamsLifesTextChat[2].." "..getTeamsLifes[2].." | "..messageTeamsLifesTextChat[3].." "..getTeamsLifes[3].."")
+					spawnBall(600, j)
 					showTheScore()
-					updateTeamsColors(2)
-					showMessageWinner()
-					ballOnGame = false
-					tfm.exec.removeObject (ball_id)
-					mode = "endGame"
-					gameTimeEnd = os.time() + 5000
-					return
+				elseif tfm.get.room.objectList[ballsId[j]].x >= 801 and tfm.get.room.objectList[ballsId[j]].y >= 368 and getTeamsLifes[3] >= 1 and i == 3 then
+					getTeamsLifes[3] = getTeamsLifes[3] - 1
+					if getTeamsLifes[3] == 0 then
+	                    ballOnGame = false
+						ballOnGame2 = false
+						for j = 1, #teamsPlayersOnGame[i] do
+							tfm.exec.setNameColor(teamsPlayersOnGame[i][j].name, 0xD1D5DB)
+							tfm.exec.movePlayer(teamsPlayersOnGame[i][j].name, 391, 74)
+							playerInGame[teamsPlayersOnGame[i][j].name] = false
+							teamsPlayersOnGame[i][j].name = ''
+						end
+						tfm.exec.chatMessage(messageTeamsLifes[3], nil)
+						print(messageTeamsLifes[3])
+						toggleMapType()
+						updateTeamsColors(3)
+						gameStats.canTransform = false
+						disablePlayersCanTransform(4000)
+						delayToToggleMap = addTimer(function(i)
+			        		if i == 1 then
+			        			toggleMap()
+			        		end
+			       		end, 3000, 1, "delayToToggleMap")
+						return
+					end
+
+					tfm.exec.chatMessage(messageTeamsLostOneLife[3], nil)
+					print(messageTeamsLostOneLife[3])
+					tfm.exec.chatMessage(""..messageTeamsLifesTextChat[1].." "..getTeamsLifes[1].." | "..messageTeamsLifesTextChat[2].." "..getTeamsLifes[2].." | "..messageTeamsLifesTextChat[3].." "..getTeamsLifes[3].."", nil)
+					print(""..messageTeamsLifesTextChat[1].." "..getTeamsLifes[1].." | "..messageTeamsLifesTextChat[2].." "..getTeamsLifes[2].." | "..messageTeamsLifesTextChat[3].." "..getTeamsLifes[3].."")
+					spawnBall(1000, j)
+					showTheScore()
 				end
-				tfm.exec.chatMessage(messageTeamsLostOneLife[2], nil)
-				print(messageTeamsLostOneLife[2])
-				tfm.exec.chatMessage(""..messageTeamsLifesTextChat[1].." "..getTeamsLifes[1].." | "..messageTeamsLifesTextChat[2].." "..getTeamsLifes[2].."", nil)
-				print(""..messageTeamsLifesTextChat[1].." "..getTeamsLifes[1].." | "..messageTeamsLifesTextChat[2].." "..getTeamsLifes[2].."")
-				spawnBall(600)
-				showTheScore()
-				return
+			end
+		elseif gameStats.typeMap == "small" and ballOnGameTwoBalls[j] and ballsId[j] ~= nil then
+			for i = 1, #getTeamsLifes do
+				if tfm.get.room.objectList[ballsId[j]].x <= 399 and tfm.get.room.objectList[ballsId[j]].y >= 368 and getTeamsLifes[1] >= 1 and i == 1 then
+					getTeamsLifes[1] = getTeamsLifes[1] - 1
+					if getTeamsLifes[1] == 0 then
+						for j = 1, #teamsPlayersOnGame[i] do
+							tfm.exec.setNameColor(teamsPlayersOnGame[i][j].name, 0xD1D5DB)
+							tfm.exec.movePlayer(teamsPlayersOnGame[i][j].name, 391, 74)
+							playerInGame[teamsPlayersOnGame[i][j].name] = false
+							teamsPlayersOnGame[i][j].name = ''
+						end
+						print(messageTeamsLifes[1])
+						tfm.exec.chatMessage(messageTeamsLifes[1], nil)
+						showTheScore()
+						updateTeamsColors(1)
+						showMessageWinner()
+						ballOnGame = false
+						ballOnGame2 = false
+						tfm.exec.removeObject (ballsId[j])
+						mode = "endGame"
+						gameTimeEnd = os.time() + 5000
+						return
+					end
+					tfm.exec.chatMessage(messageTeamsLostOneLife[1], nil)
+					print(messageTeamsLostOneLife[1])
+					tfm.exec.chatMessage(""..messageTeamsLifesTextChat[1].." "..getTeamsLifes[1].." | "..messageTeamsLifesTextChat[2].." "..getTeamsLifes[2].."", nil)
+					print(""..messageTeamsLifesTextChat[1].." "..getTeamsLifes[1].." | "..messageTeamsLifesTextChat[2].." "..getTeamsLifes[2].."")
+					spawnBall(200, j)
+					showTheScore()
+				elseif tfm.get.room.objectList[ballsId[j]].x >= 401 and tfm.get.room.objectList[ballsId[j]].y >= 368 and getTeamsLifes[2] >= 1 and i == 2 then
+					getTeamsLifes[2] = getTeamsLifes[2] - 1
+					if getTeamsLifes[2] == 0 then
+						for j = 1, #teamsPlayersOnGame[i] do
+							tfm.exec.setNameColor(teamsPlayersOnGame[i][j].name, 0xD1D5DB)
+							tfm.exec.movePlayer(teamsPlayersOnGame[i][j].name, 391, 74)
+							playerInGame[teamsPlayersOnGame[i][j].name] = false
+							teamsPlayersOnGame[i][j].name = ''
+						end
+						tfm.exec.chatMessage(messageTeamsLifes[2], nil)
+						print(messageTeamsLifes[2])
+						showTheScore()
+						updateTeamsColors(2)
+						showMessageWinner()
+						ballOnGame = false
+						ballOnGame2 = false
+						tfm.exec.removeObject (ballsId[j])
+						mode = "endGame"
+						gameTimeEnd = os.time() + 5000
+						return
+					end
+					tfm.exec.chatMessage(messageTeamsLostOneLife[2], nil)
+					print(messageTeamsLostOneLife[2])
+					tfm.exec.chatMessage(""..messageTeamsLifesTextChat[1].." "..getTeamsLifes[1].." | "..messageTeamsLifesTextChat[2].." "..getTeamsLifes[2].."", nil)
+					print(""..messageTeamsLifesTextChat[1].." "..getTeamsLifes[1].." | "..messageTeamsLifesTextChat[2].." "..getTeamsLifes[2].."")
+					spawnBall(600, j)
+					showTheScore()
+				end
 			end
 		end
 	end
@@ -2085,7 +2260,11 @@ function toggleMap()
 	ballOnGame = false
 	if gameStats.typeMap == "large3v3" then
 		ui.removeTextArea(8998991)
-		tfm.exec.newGame('<C><P F="3" L="1200" G="0,4" /><Z><S><S H="100" L="1200" X="600" c="3" N="" Y="400" T="7" P="0,0,.1,.2,,0,0,0" /><S L="1200" X="600" H="10" Y="430" T="9" P="0,0,,,,0,0,0" /><S L="10" H="200" X="400" Y="350" T="1" P="0,0,.0,,,0,0,0" /><S P="0,0,.3,.2,,0,0,0" L="800" o="6a7495" X="400" Y="455" T="12" H="10" /><S H="3000" L="10" o="6a7495" X="-5" c="1" Y="0" T="12" P="0,0,.2,,,0,0,0" /><S H="3000" L="10" o="6a7495" X="1200" c="1" Y="0" T="12" P="0,0,.2,,,0,0,0" /><S H="10" L="10" o="324650" X="100" c="3" Y="359" T="13" P="0,0,.3,.2,,0,0,0" /><S X="600" L="10" o="324650" H="10" c="3" Y="359" T="13" P="0,0,.3,.2,,0,0,0" /><S P="0,0,.3,.2,,0,0,0" L="100" o="324650" X="250" c="4" Y="45" T="12" H="105" /><S P="0,0,0,0.2,0,0,0,0" L="1200" X="600" c="3" Y="0" T="1" H="10" /><S P="0,0,0.3,0.2,0,0,0,0" L="1200" X="600" c="3" Y="95" T="0" m="" H="10" /><S P="0,0,0.3,0.2,0,0,0,0" L="10" X="305" c="3" Y="48" T="0" m="" H="100" /><S P="0,0,0.3,0.2,0,0,0,0" L="10" H="100" c="3" Y="48" T="0" m="" X="900" /><S H="10" L="1200" X="601" c="3" Y="225" T="0" m="" P="0,0,0.3,0.2,0,0,0,0" /><S H="30" L="10" X="400" c="3" Y="239" T="0" m="" P="0,0,0,0,0,0,0,0" /><S H="10" L="800" X="400" c="3" Y="791" T="0" m="" P="0,0,0.3,0.2,90,0,0,0" /><S P="0,0,.2,,,0,0,0" L="20" o="6a7495" X="316" c="3" Y="-129" T="12" H="200" /><S H="200" L="20" o="6a7495" X="407" c="3" Y="-133" T="12" P="0,0,.2,,,0,0,0" /><S P="0,0,.2,,90,0,0,0" L="20" o="6a7495" X="363" c="3" Y="-92" T="12" H="100" /><S H="100" L="20" o="6a7495" X="360" c="3" Y="-206" T="12" P="0,0,.2,,90,0,0,0" /><S P="0,0,0.3,0.2,0,0,0,0" L="3000" o="6a7495" X="400" c="4" N="" Y="460" T="12" H="120" /><S H="105" L="100" o="324650" X="950" c="4" Y="45" T="12" P="0,0,.3,.2,,0,0,0" /><S H="10" L="1200" X="600" c="1" Y="-800" T="1" P="0,0,0,0.2,0,0,0,0" /><S L="10" X="800" H="200" Y="350" T="1" P="0,0,.0,,,0,0,0" /><S P="0,0,0,0,0,0,0,0" L="10" H="30" c="3" Y="239" T="0" m="" X="800" /><S P="0,0,0.3,0.2,90,0,0,0" L="800" H="10" c="3" Y="791" T="0" m="" X="800" /><S P="0,0,.3,.2,,0,0,0" L="10" o="324650" H="10" c="3" Y="359" T="13" X="1100" /><S P="0,0,.3,.2,,0,0,0" L="100" o="324650" X="600" c="4" Y="45" T="12" H="105" /></S><D><P P="1" Y="363" T="10" X="599" /><P X="99" Y="363" T="10" P="1" /><DS Y="-141" X="365" /><P X="1099" Y="363" T="10" P="1" /></D><O /></Z></C>')
+		if gameStats.isCustomMap then
+			tfm.exec.newGame(customMapsFourTeamsMode[gameStats.customMapIndex][2])
+		else
+			tfm.exec.newGame('<C><P F="3" L="1200" G="0,4" /><Z><S><S H="100" L="1200" X="600" c="3" N="" Y="400" T="7" P="0,0,.1,.2,,0,0,0" /><S L="1200" X="600" H="10" Y="430" T="9" P="0,0,,,,0,0,0" /><S L="10" H="200" X="400" Y="350" T="1" P="0,0,.0,,,0,0,0" /><S P="0,0,.3,.2,,0,0,0" L="800" o="6a7495" X="400" Y="455" T="12" H="10" /><S H="3000" L="10" o="6a7495" X="-5" c="1" Y="0" T="12" P="0,0,.2,,,0,0,0" /><S H="3000" L="10" o="6a7495" X="1200" c="1" Y="0" T="12" P="0,0,.2,,,0,0,0" /><S H="10" L="10" o="324650" X="100" c="3" Y="359" T="13" P="0,0,.3,.2,,0,0,0" /><S X="600" L="10" o="324650" H="10" c="3" Y="359" T="13" P="0,0,.3,.2,,0,0,0" /><S P="0,0,.3,.2,,0,0,0" L="100" o="324650" X="250" c="4" Y="45" T="12" H="105" /><S P="0,0,0,0.2,0,0,0,0" L="1200" X="600" c="3" Y="0" T="1" H="10" /><S P="0,0,0.3,0.2,0,0,0,0" L="1200" X="600" c="3" Y="95" T="0" m="" H="10" /><S P="0,0,0.3,0.2,0,0,0,0" L="10" X="305" c="3" Y="48" T="0" m="" H="100" /><S P="0,0,0.3,0.2,0,0,0,0" L="10" H="100" c="3" Y="48" T="0" m="" X="900" /><S H="10" L="1200" X="601" c="3" Y="225" T="0" m="" P="0,0,0.3,0.2,0,0,0,0" /><S H="30" L="10" X="400" c="3" Y="239" T="0" m="" P="0,0,0,0,0,0,0,0" /><S H="10" L="800" X="400" c="3" Y="791" T="0" m="" P="0,0,0.3,0.2,90,0,0,0" /><S P="0,0,.2,,,0,0,0" L="20" o="6a7495" X="316" c="3" Y="-129" T="12" H="200" /><S H="200" L="20" o="6a7495" X="407" c="3" Y="-133" T="12" P="0,0,.2,,,0,0,0" /><S P="0,0,.2,,90,0,0,0" L="20" o="6a7495" X="363" c="3" Y="-92" T="12" H="100" /><S H="100" L="20" o="6a7495" X="360" c="3" Y="-206" T="12" P="0,0,.2,,90,0,0,0" /><S P="0,0,0.3,0.2,0,0,0,0" L="3000" o="6a7495" X="400" c="4" N="" Y="460" T="12" H="120" /><S H="105" L="100" o="324650" X="950" c="4" Y="45" T="12" P="0,0,.3,.2,,0,0,0" /><S H="10" L="1200" X="600" c="1" Y="-800" T="1" P="0,0,0,0.2,0,0,0,0" /><S L="10" X="800" H="200" Y="350" T="1" P="0,0,.0,,,0,0,0" /><S P="0,0,0,0,0,0,0,0" L="10" H="30" c="3" Y="239" T="0" m="" X="800" /><S P="0,0,0.3,0.2,90,0,0,0" L="800" H="10" c="3" Y="791" T="0" m="" X="800" /><S P="0,0,.3,.2,,0,0,0" L="10" o="324650" H="10" c="3" Y="359" T="13" X="1100" /><S P="0,0,.3,.2,,0,0,0" L="100" o="324650" X="600" c="4" Y="45" T="12" H="105" /></S><D><P P="1" Y="363" T="10" X="599" /><P X="99" Y="363" T="10" P="1" /><DS Y="-141" X="365" /><P X="1099" Y="363" T="10" P="1" /></D><O /></Z></C>')
+		end
 		teleportPlayersWithTypeMap(true)
 		showTheScore()
 		spawnInitialBall()
@@ -2101,7 +2280,11 @@ function toggleMap()
 	elseif gameStats.typeMap == "small" then
 		ui.removeTextArea(8998991)
 		ui.removeTextArea(899899)
-		tfm.exec.newGame('<C><P G="0,4" F="0" /><Z><S><S X="400" L="800" H="100" c="3" N="" Y="400" T="7" P="0,0,.1,.2,,0,0,0" /><S L="800" X="400" H="10" Y="430" T="9" P="0,0,,,,0,0,0" /><S L="10" H="200" X="400" Y="350" T="1" P="0,0,.0,,,0,0,0" /><S L="800" o="6a7495" X="400" H="10" Y="455" T="12" P="0,0,.3,.2,,0,0,0" /><S H="3000" L="10" o="6a7495" X="-5" c="1" Y="0" T="12" P="0,0,.2,,,0,0,0" /><S H="3000" L="10" o="6a7495" X="805" c="1" Y="0" T="12" P="0,0,.2,,,0,0,0" /><S H="10" L="10" o="324650" X="100" c="3" Y="359" T="13" P="0,0,.3,.2,,0,0,0" /><S X="700" L="10" o="324650" H="10" c="3" Y="359" T="13" P="0,0,.3,.2,,0,0,0" /><S P="0,0,.3,.2,,0,0,0" L="100" o="324650" X="50" c="4" Y="45" T="12" H="105" /><S P="0,0,0,0.2,0,0,0,0" L="800" H="10" c="3" N="" Y="0" T="1" X="400" /><S P="0,0,0.3,0.2,0,0,0,0" L="800" H="10" c="3" N="" Y="95" T="0" m="" X="400" /><S P="0,0,0.3,0.2,0,0,0,0" L="10" H="100" c="3" Y="48" T="0" m="" X="105" /><S P="0,0,0.3,0.2,0,0,0,0" L="10" X="700" c="3" N="" Y="48" T="0" m="" H="100" /><S X="401" L="800" H="10" c="3" Y="225" T="0" m="" P="0,0,0.3,0.2,0,0,0,0" /><S X="400" L="10" H="30" c="3" Y="239" T="0" m="" P="0,0,0,0,0,0,0,0" /><S X="400" L="800" H="10" c="3" Y="791" T="0" m="" P="0,0,0.3,0.2,90,0,0,0" /><S P="0,0,.2,,,0,0,0" L="20" o="6a7495" X="316" c="3" Y="-129" T="12" H="200" /><S H="200" L="20" o="6a7495" X="407" c="3" Y="-133" T="12" P="0,0,.2,,,0,0,0" /><S P="0,0,.2,,90,0,0,0" L="20" o="6a7495" X="363" c="3" Y="-92" T="12" H="100" /><S H="100" L="20" o="6a7495" X="360" c="3" Y="-206" T="12" P="0,0,.2,,90,0,0,0" /><S P="0,0,0.3,0.2,0,0,0,0" L="3000" o="6a7495" X="400" c="4" N="" Y="460" T="12" H="120" /><S H="105" L="100" o="324650" X="750" c="4" Y="45" T="12" P="0,0,.3,.2,,0,0,0" /><S X="400" L="800" H="10" c="1" N="" Y="-800" T="1" P="0,0,0,0.2,0,0,0,0" /></S><D><P X="699" Y="365" T="10" P="1" /><P P="1" Y="365" T="10" X="99" /><DS Y="-151" X="360" /></D><O /></Z></C>')
+		if gameStats.isCustomMap then
+			tfm.exec.newGame(customMapsFourTeamsMode[gameStats.customMapIndex][5])
+		else
+			tfm.exec.newGame('<C><P G="0,4" F="0" /><Z><S><S X="400" L="800" H="100" c="3" N="" Y="400" T="7" P="0,0,.1,.2,,0,0,0" /><S L="800" X="400" H="10" Y="430" T="9" P="0,0,,,,0,0,0" /><S L="10" H="200" X="400" Y="350" T="1" P="0,0,.0,,,0,0,0" /><S L="800" o="6a7495" X="400" H="10" Y="455" T="12" P="0,0,.3,.2,,0,0,0" /><S H="3000" L="10" o="6a7495" X="-5" c="1" Y="0" T="12" P="0,0,.2,,,0,0,0" /><S H="3000" L="10" o="6a7495" X="805" c="1" Y="0" T="12" P="0,0,.2,,,0,0,0" /><S H="10" L="10" o="324650" X="100" c="3" Y="359" T="13" P="0,0,.3,.2,,0,0,0" /><S X="700" L="10" o="324650" H="10" c="3" Y="359" T="13" P="0,0,.3,.2,,0,0,0" /><S P="0,0,.3,.2,,0,0,0" L="100" o="324650" X="50" c="4" Y="45" T="12" H="105" /><S P="0,0,0,0.2,0,0,0,0" L="800" H="10" c="3" N="" Y="0" T="1" X="400" /><S P="0,0,0.3,0.2,0,0,0,0" L="800" H="10" c="3" N="" Y="95" T="0" m="" X="400" /><S P="0,0,0.3,0.2,0,0,0,0" L="10" H="100" c="3" Y="48" T="0" m="" X="105" /><S P="0,0,0.3,0.2,0,0,0,0" L="10" X="700" c="3" N="" Y="48" T="0" m="" H="100" /><S X="401" L="800" H="10" c="3" Y="225" T="0" m="" P="0,0,0.3,0.2,0,0,0,0" /><S X="400" L="10" H="30" c="3" Y="239" T="0" m="" P="0,0,0,0,0,0,0,0" /><S X="400" L="800" H="10" c="3" Y="791" T="0" m="" P="0,0,0.3,0.2,90,0,0,0" /><S P="0,0,.2,,,0,0,0" L="20" o="6a7495" X="316" c="3" Y="-129" T="12" H="200" /><S H="200" L="20" o="6a7495" X="407" c="3" Y="-133" T="12" P="0,0,.2,,,0,0,0" /><S P="0,0,.2,,90,0,0,0" L="20" o="6a7495" X="363" c="3" Y="-92" T="12" H="100" /><S H="100" L="20" o="6a7495" X="360" c="3" Y="-206" T="12" P="0,0,.2,,90,0,0,0" /><S P="0,0,0.3,0.2,0,0,0,0" L="3000" o="6a7495" X="400" c="4" N="" Y="460" T="12" H="120" /><S H="105" L="100" o="324650" X="750" c="4" Y="45" T="12" P="0,0,.3,.2,,0,0,0" /><S X="400" L="800" H="10" c="1" N="" Y="-800" T="1" P="0,0,0,0.2,0,0,0,0" /></S><D><P X="699" Y="365" T="10" P="1" /><P P="1" Y="365" T="10" X="99" /><DS Y="-151" X="360" /></D><O /></Z></C>')
+		end
 		teleportPlayersWithTypeMap(false)
 		showTheScore()
 		spawnInitialBall()
@@ -2203,6 +2386,10 @@ function teleportPlayersWithTypeMap(islargeMode)
 end
 
 function eventNewPlayer(name)
+	playerLeftRight[name] = 0 
+	playerConsumable[name] = true
+	playerConsumableKey[name] = 56
+	playerConsumableItem[name] = 80
 	playerForce[name] = 0
 	showOutOfCourtText[name] = false
 	playerOutOfCourt[name] = false
@@ -2230,6 +2417,15 @@ function eventNewPlayer(name)
 	system.bindKeyboard(name, 1, true, true)
 	system.bindKeyboard(name, 2, true, true)
 	system.bindKeyboard(name, 3, true, true)
+	system.bindKeyboard(name, 49, true, true)
+	system.bindKeyboard(name, 50, true, true)
+	system.bindKeyboard(name, 51, true, true)
+	system.bindKeyboard(name, 52, true, true)
+	system.bindKeyboard(name, 55, true, true)
+	system.bindKeyboard(name, 56, true, true)
+	system.bindKeyboard(name, 57, true, true)
+	system.bindKeyboard(name, 48, true, true)
+	system.bindKeyboard(name, 77, true, true)
 	tfm.exec.setNameColor(name, 0xD1D5DB)
 	ui.addWindow(23, "<p align='center'><font size='13px'><a href='event:menuOpen'>Menu", name, 5, 15, 100, 30, 0.2, false, false, _)
 	tfm.exec.chatMessage(playerLanguage[name].tr.welcomeMessage, name)
@@ -2245,9 +2441,36 @@ function eventNewPlayer(name)
 	tfm.exec.chatMessage("<ce>Join our #Volley Discord server: https://discord.com/invite/pWNTesmNhu<n>", name)
 end
 
+function setConsumablesForce(key, playerMove) 
+	local speedX = 0
+	local speedY = 0
+	local yCoord = 0
+
+	if key == 55 or key == 48 then
+		yCoord = -65
+		if playerMove == 0 then
+			speedX = -10
+		elseif playerMove == 2 then
+			speedX = 10
+		end
+	elseif key == 57 then
+		yCoord = -65
+		speedY = -5
+
+		if playerMove == 0 then
+			speedX = -5
+		elseif playerMove == 2 then
+			speedX = 5
+		end
+	end
+
+	return { speedX, speedY, yCoord }
+end
+
 function eventKeyboard(name, key, down, x, y, xv, yv)
 	local OffsetX = 0
 	local OffsetY = 0
+
 	if xv < 0 then
 		OffsetX = -15
 	elseif xv > 0 then
@@ -2264,6 +2487,56 @@ function eventKeyboard(name, key, down, x, y, xv, yv)
 	tfm.get.room.playerList[name].y = coordinatesY
 
 	if playerInGame[name] and mode == "gameStart" then
+
+		if key == 0 or key == 2 then
+			playerLeftRight[name] = key
+		end
+
+		if gameStats.consumables then
+			if not gameStats.teamsMode and not gameStats.twoTeamsMode and not gameStats.realMode then
+				local keysEmote = {55, 56, 57, 48}
+				local consumablesId = {65, 80, 6, 34}
+				local consumablesNames = {"pufferfish", "paper plane", "ball", "snow ball"}
+
+				for i = 1, #keysEmote do
+					if keysEmote[i] == key then
+						playerConsumableKey[name] = keysEmote[i]
+						playerConsumableItem[name] = consumablesId[i]
+						tfm.exec.chatMessage("<bv>You chose the consumable "..consumablesNames[i].."<n>", name)
+						print("<bv>You chose the consumable "..consumablesNames[i].."<n>")
+					end
+				end
+
+				if key == 77 then
+					if not playerConsumable[name] then
+						tfm.exec.chatMessage("<bv>You need wait 5 seconds to spawn a new consumable<n>", name)
+						print("<bv>You need wait 5 seconds to spawn a new item<n>")
+
+						return
+					end
+					local speed = setConsumablesForce(playerConsumableKey[name], playerLeftRight[name])
+					playerConsumable[name] = false
+
+					local enablePlayerConsumable = addTimer(function(i)
+		        		if i == 1 then
+		        			playerConsumable[name] = true
+		        			tfm.exec.chatMessage("<bv>You can spawn a new consumable<n>", name)
+		        			print("<bv>You can spawn a new consumable <n>")
+		        		end
+					end, 5000, 1, "enablePlayerConsumable")
+
+					local id = tfm.exec.addShamanObject(playerConsumableItem[name], x + OffsetX + (OffsetX / 2), y + speed[3], 0, speed[1], speed[2], false)
+					playerConsumables[#playerConsumables + 1] = id
+
+					local removeShamanObject = addTimer(function(i)
+		        		if i == 1 then
+		        			tfm.exec.removeObject(playerConsumables[1])
+		        			table.remove(playerConsumables, 1)
+		        		end
+					end, 15000, 1, "removeShamanObject")
+				end
+			end
+		end
 
 		if key == 0 or key == 1 or key == 2 or key == 3 or key == 32 then
 			playersAfk[name] = os.time()
@@ -2700,14 +2973,21 @@ function eventChatCommand(name, c)
 		local str = "<bv>Volley maps"
 		if gameStats.twoTeamsMode then
 			for i = 1, #customMapsTwoTeamsMode do
-				str = ""..str.."\n"..i.."- "..customMaps[i][3]..""
+				str = ""..str.."\n"..i.."- "..customMapsTwoTeamsMode[i][3]..""
+			end
+		elseif gameStats.teamsMode then
+			for i = 1, #customMapsFourTeamsMode do
+				str = ""..str.."\n"..i.."- "..customMapsFourTeamsMode[i][3]..""
 			end
 		else
 			for i = 1, #customMaps do
 				str = ""..str.."\n"..i.."- "..customMaps[i][3]..""
 			end
 		end
-		str = ""..str.."\n\nto vote type !votemap number, example: !votemap 1<n>"
+		if not gameStats.twoTeamsMode and not gameStats.teamsMode then
+			str = ""..str.."\n\nto vote type !votemap number, example: !votemap 1<n>"
+		end
+
 		tfm.exec.chatMessage(str, name)
 		print(str)
 	elseif command == "balls" then
@@ -2801,13 +3081,16 @@ function eventChatCommand(name, c)
 				tfm.exec.chatMessage(playerLanguage[name].tr.passwordRemoved, name)
 			end
 		elseif command:sub(1, 9) == "custommap" and mode == "startGame" then
-			if gameStats.teamsMode then
-				commandNotAvailable(command:sub(1, 9), name)
+			if gameStats.realMode then
+				tfm.exec.chatMessage("<bv>The command !customMap is not available on Volley Real Mode<n>", name)
 				return
 			end
 			local args = split(command)
-			local indexMap = math.abs(math.floor(tonumber(args[3])))
-
+			local indexMap = ""
+			if #args >= 3 then
+				indexMap = math.abs(math.floor(tonumber(args[3])))
+			end
+			
 			if args[2] ~= "true" and args[2] ~= "false" then
 				tfm.exec.chatMessage('<bv>Second parameter invalid, must be true or false<n>', name)
 				return
@@ -2823,7 +3106,16 @@ function eventChatCommand(name, c)
 					tfm.exec.chatMessage('<bv>Third parameter invalid, the map index must be higher than 1 and less than '..tostring(#customMapsTwoTeamsMode)..'<n>', name)
 					return
 				end
-			else
+			end
+
+			if gameStats.teamsMode then
+				if indexMap < 1 or indexMap > #customMapsFourTeamsMode then
+					tfm.exec.chatMessage('<bv>Third parameter invalid, the map index must be higher than 1 and less than '..tostring(#customMapsFourTeamsMode)..'<n>', name)
+					return
+				end
+			end
+
+			if not gameStats.twoTeamsMode and not gameStats.teamsMode then
 				if indexMap < 1 or indexMap > #customMaps then
 					tfm.exec.chatMessage('<bv>Third parameter invalid, the map index must be higher than 1 and less than '..tostring(#customMaps)..'<n>', name)
 					return
@@ -2834,12 +3126,18 @@ function eventChatCommand(name, c)
 				gameStats.isCustomMap = true
 				gameStats.customMapIndex = indexMap
 				if gameStats.twoTeamsMode then
-					tfm.exec.chatMessage('<bv>'..customMapsTwoTeamsMode[gameStats.customMapIndex][3]..' map selected by admin '..name..'<n>', nil)
-					print('<bv>'..customMapsTwoTeamsMode[gameStats.customMapIndex][3]..' map selected by admin '..name..'<n>')
-				else
-					tfm.exec.chatMessage('<bv>'..customMaps[gameStats.customMapIndex][3]..' map (created by '..customMaps[gameStats.customMapIndex][4]..') selected by admin '..name..'<n>', nil)
+					tfm.exec.chatMessage('<bv>'..customMapsTwoTeamsMode[gameStats.customMapIndex][3]..' map (created by '..customMapsTwoTeamsMode[gameStats.customMapIndex][4]..') selected by admin '..name..'<n>', nil)
+					print('<bv>'..customMapsTwoTeamsMode[gameStats.customMapIndex][3]..' map (created by '..customMapsTwoTeamsMode[gameStats.customMapIndex][4]..') selected by admin '..name..'<n>')
+					return
 				end
-				
+
+				if gameStats.teamsMode then
+					tfm.exec.chatMessage('<bv>'..customMapsFourTeamsMode[gameStats.customMapIndex][3]..' map (created by '..customMapsFourTeamsMode[gameStats.customMapIndex][4]..') selected by admin '..name..'<n>', nil)
+					print('<bv>'..customMapsFourTeamsMode[gameStats.customMapIndex][3]..' map (created by '..customMapsFourTeamsMode[gameStats.customMapIndex][4]..') selected by admin '..name..'<n>')
+					return
+				end
+
+				tfm.exec.chatMessage('<bv>'..customMaps[gameStats.customMapIndex][3]..' map (created by '..customMaps[gameStats.customMapIndex][4]..') selected by admin '..name..'<n>', nil)
 				return
 			end
 
@@ -2922,24 +3220,33 @@ function eventChatCommand(name, c)
 				return
 			end
 			gameStats.canJoin = false
+			gameStats.isCustomMap = false
+			gameStats.customMapIndex = 0
 			if args[2] == "true" then
+				if gameStats.teamsMode then
+					return
+				end
 				gameStats.teamsMode = true
 				tfm.exec.chatMessage("<bv>4-team volley mode activated by admin "..name.."<n>", nil)
 				updateLobbyTextAreas(gameStats.teamsMode)
 				return
 			end
 
+			if not gameStats.teamsMode then
+				return
+			end
+
 			gameStats.teamsMode = false
 			tfm.exec.chatMessage("<bv>4-team volley mode disabled by admin "..name.."<n>", nil)
 			updateLobbyTextAreas(gameStats.teamsMode)
-		elseif command:sub(1, 8) == "realmode" then
+		elseif command:sub(1, 8) == "realmode" and mode == "startGame" then
 			if gameStats.twoTeamsMode then
-				tfm.exec.chatMessage("<bv>You should disable the 2 teams mode first to enable the 4 teams mode<n>", nil)
+				tfm.exec.chatMessage("<bv>You should disable the real mode first to enable the 4 teams mode<n>", nil)
 				return
 			end
 
 			if gameStats.teamsMode then
-				tfm.exec.chatMessage("<bv>You should disable the 4 teams mode first to enable the 2 teams mode<n>", nil)
+				tfm.exec.chatMessage("<bv>You should disable the realmode mode first to enable the 2 teams mode<n>", nil)
 				return
 			end
 
@@ -2948,6 +3255,10 @@ function eventChatCommand(name, c)
 				tfm.exec.chatMessage('<bv>Second parameter invalid, must be true or false<n>', name)
 				return
 			end
+
+			gameStats.isCustomMap = false
+			gameStats.customMapIndex = 0
+
 			if args[2] == "true" then
 				gameStats.realMode = true
 				tfm.exec.chatMessage("<bv>real volley mode activated by admin "..name.."<n>", nil)
@@ -3086,6 +3397,8 @@ function eventChatCommand(name, c)
 			tfm.exec.chatMessage("<bv>"..balls[gameStats.customBallId].name.." selected by admin "..name.."<n>", nil)
 		elseif command:sub(1, 6) == "lobby" and mode == "gameStart" then
 			ballOnGame = false
+			ballOnGame2 = false
+			ballOnGameTwoBalls = {ballOnGame, ballOnGame2}
 			tfm.exec.removeObject(ball_id)
 			mode = "endGame"
 			gameTimeEnd = os.time() + 5000
@@ -3119,6 +3432,11 @@ function eventChatCommand(name, c)
 				end
 			end
 		elseif command == "pause" and mode == "gameStart" then
+
+			if gameStats.teamsMode then
+				tfm.exec.chatMessage("<bv>The command pause is temporarily disabled in 4 teams mode", name)
+				return
+			end
 
 			if name == "Refletz#6472" or name == "+Mimounaaa#0000" or name == "Soristl1#0000" or name == "Axeldoton#0000" or name == "Nagi#6356" or name == "Wreft#5240" then
 				if not gameStats.isGamePaused then
@@ -3243,9 +3561,20 @@ function eventChatCommand(name, c)
 				tfm.exec.chatMessage('<bv>Second parameter invalid, must be true or false<n>', name)
 				return
 			end
+
+			gameStats.isCustomMap = false
+			gameStats.customMapIndex = 0
+
 			if args[2] == "true" then
+				if gameStats.twoTeamsMode then
+					return
+				end
 				gameStats.twoTeamsMode = true
 				tfm.exec.chatMessage("<bv>2-team volley mode activated by admin "..name.."<n>", nil)
+				return
+			end
+
+			if not gameStats.twoTeamsMode then
 				return
 			end
 
@@ -3284,7 +3613,46 @@ function eventChatCommand(name, c)
 			afkTimeValue = math.abs(afkTime - (afkTime * 2))
 
 			tfm.exec.chatMessage("<bv>Afk timeout changed to "..afkTime.." seconds by admin "..name.."<n>", nil)
+		elseif command:sub(1, 8) == "twoballs" and mode == "startGame" then
+			local args = split(command)
+			print(args[2])
+			if not gameStats.teamsMode then
+				tfm.exec.chatMessage("<bv>The 4 teams mode must be enabled to use the two balls command<n>", name)
 
+				return
+			end
+			if args[2] ~= "true" and args[2] ~= "false" then
+				tfm.exec.chatMessage('<bv>Second parameter invalid, must be true or false<n>', name)
+				return
+			end
+			if args[2] == "true" then
+				gameStats.twoBalls = true
+				tfm.exec.chatMessage("<bv>Two balls on 4 teams has enabled by the admin "..name.."<n>", nil)
+				return
+			end
+
+			gameStats.twoBalls = false
+			tfm.exec.chatMessage("<bv>Two balls on 4 teams has disabled by the admin "..name.."<n>", nil)
+		elseif command:sub(1, 11) == "consumables" and mode == "startGame" then
+			local args = split(command)
+
+			if not gameStats.teamsMode and not gameStats.twoTeamsMode and not gameStats.realMode then
+				tfm.exec.chatMessage("<bv>The command consumables only works on normal mode<n>", name)
+			end
+
+			if args[2] ~= "true" and args[2] ~= "false" then
+				tfm.exec.chatMessage('<bv>Second parameter invalid, must be true or false<n>', name)
+				return
+			end
+
+			if args[2] == "true" then
+				gameStats.consumables = true
+				tfm.exec.chatMessage("<bv>Consumables on normal mode has enabled by the admin "..name.."<n>", nil)
+				return
+			end
+
+			gameStats.consumables = false
+			tfm.exec.chatMessage("<bv>Consumables on normal mode has disabled by the admin "..name.."<n>", nil)
 		end
 	end
 end
@@ -3480,6 +3848,10 @@ function leaveTeamTeamsModeConfig(name)
 		end
 		if count == 0 then
 			ballOnGame = false
+			ballOnGame2 = false
+			ball_id = nil
+			ball_id2 = nil
+			updateTwoBallOnGame()
 			tfm.exec.chatMessage("<j>Yellow team lost all their lives<n>", nil)
 			teamsLifes[1].yellow = 0
 			toggleMapType()
@@ -3510,6 +3882,10 @@ function leaveTeamTeamsModeConfig(name)
 
         if count == 0 then
         	ballOnGame = false
+        	ballOnGame2 = false
+        	ball_id = nil
+			ball_id2 = nil
+        	updateTwoBallOnGame()
         	tfm.exec.chatMessage("<r>Red team lost all their lives<n>", nil)
         	teamsLifes[2].red = 0
 			toggleMapType()
@@ -3539,6 +3915,10 @@ function leaveTeamTeamsModeConfig(name)
 
 		if count == 0 then
 			ballOnGame = false
+			ballOnGame2 = false
+			ball_id = nil
+			ball_id2 = nil
+			updateTwoBallOnGame()
         	tfm.exec.chatMessage("<bv>Blue team lost all their lives<n>", nil)
         	teamsLifes[3].blue = 0
 			toggleMapType()
@@ -3568,6 +3948,10 @@ function leaveTeamTeamsModeConfig(name)
 
 		if count == 0 then
 			ballOnGame = false
+			ballOnGame2 = false
+			ball_id = nil
+			ball_id2 = nil
+			updateTwoBallOnGame()
         	tfm.exec.chatMessage("<vp>Green team lost all their lives<n>", nil)
         	teamsLifes[4].green = 0
 			toggleMapType()
@@ -3596,6 +3980,10 @@ function leaveTeamTeamsModeConfig(name)
 
 			if count == 0 then
 				ballOnGame = false
+				ballOnGame2 = false
+				ball_id = nil
+				ball_id2 = nil
+				updateTwoBallOnGame()
 				tfm.exec.chatMessage(messageTeamsLifes[index], nil)
 				print(messageTeamsLifes[index])
 				updateTeamsColors(index)
@@ -3633,6 +4021,10 @@ function leaveTeamTeamsModeConfig(name)
 				updateTeamsColors(index)
 				showMessageWinner()
 				ballOnGame = false
+				ballOnGame2 = false
+				ball_id = nil
+				ball_id2 = nil
+				updateTwoBallOnGame()
 				tfm.exec.removeObject (ball_id)
 				mode = "endGame"
 				gameTimeEnd = os.time() + 5000
@@ -4278,6 +4670,11 @@ function resetPlayerConfigs()
 		system.bindKeyboard(name, 1, true, true)
 		system.bindKeyboard(name, 2, true, true)
 		system.bindKeyboard(name, 3, true, true)
+		system.bindKeyboard(name, 55, true, true)
+		system.bindKeyboard(name, 56, true, true)
+		system.bindKeyboard(name, 57, true, true)
+		system.bindKeyboard(name, 48, true, true)
+		system.bindKeyboard(name, 77, true, true)
 		tfm.exec.setNameColor(name, 0xD1D5DB)
 		tfm.exec.setPlayerScore(name, 0, false)
 		canVote[name] = true
@@ -4411,6 +4808,11 @@ function isPermanentAdmin(name)
 	end
 
 	return false
+end
+
+function updateTwoBallOnGame()
+	ballOnGameTwoBalls = {ballOnGame, ballOnGame2}
+	ballsId = {ball_id, ball_id2}
 end
 
 local afkSystem = addTimer(function(i)
