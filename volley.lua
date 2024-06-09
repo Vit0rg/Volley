@@ -166,13 +166,15 @@ local admins = {
     ["+Mimounaaa#0000"] = true,
     ["Axeldoton#0000"] = true,
     ["Nagi#6356"] = true,
-    ["Wreft#5240"] = true
+    ["Wreft#5240"] = true,
+    ["Lylastyla#0000"] = true
 }
 
-local gameVersion = "V1.9.0"
+local gameVersion = "V1.9.1"
 
 local trad = ""
 local lang = {}
+local languages = "[AR/BR/EN/FR/PL]"
 lang.br = {
 	welcomeMessage = "<j>Bem vindo ao Volley, jogo criado por Refletz#6472<n>",
 	welcomeMessage2 = "<j>Digite !join para entrar na partida<n>",
@@ -182,13 +184,13 @@ lang.br = {
 	closeUIText = "<p align='center'><font size='12px'><a href='event:closeWindow'>Fechar",
 	helpTitle = "<p align='center'><font size='15px'>Como jogar Volley ("..gameVersion..")",
 	helpText = { 
-		[1] = { text = "<br><br><p align='left'><font size='12px'>O objetivo do vôlei é evitar que a bola caia no chão de sua quadra, e para evitar isso, você pode transformar seu rato em um objeto circular apertando a tecla <j>[ Espaço ]<n>, o rato se destransforma 3 segundos depois. A equipe que fazer 7 pontos primeiro vence!<br>Criar uma sala com admin: <bv><a href='event:roomadmin'>/sala *#volley0SeuNome#0000</a><n><br><br>Comandos (<rose>*<n> = durante a partida | <vp>*<n> = comandos do admin):<br><br><j>!lang<n> <ch>[AR/BR/EN/FR]<n> - Para modificar o idioma do minigame<br><j>!join<n> <rose>*<n> - Para entrar na partida <br><j>!leave<n> <rose>*<n> - Para sair da partida e ir para a área de espectador<br><j>!resettimer<n> <vp>*<n> - Resetar o tempo no lobby antes de começar a partida<br><j>!setmap<n> <ch>[small/large/extra-large]<n> <vp>*<n> - Para selecionar um mapa em especifico antes de começar uma partida<br><j>!pw<n> <ch>[senha]<n> <vp>*<n> - Colocar uma senha na sala"}, 
+		[1] = { text = "<br><br><p align='left'><font size='12px'>O objetivo do vôlei é evitar que a bola caia no chão de sua quadra, e para evitar isso, você pode transformar seu rato em um objeto circular apertando a tecla <j>[ Espaço ]<n>, o rato se destransforma 3 segundos depois. A equipe que fazer 7 pontos primeiro vence!<br>Criar uma sala com admin: <bv><a href='event:roomadmin'>/sala *#volley0SeuNome#0000</a><n><br><br>Comandos (<rose>*<n> = durante a partida | <vp>*<n> = comandos do admin):<br><br><j>!lang<n> <ch>"..languages.."<n> - Para modificar o idioma do minigame<br><j>!join<n> <rose>*<n> - Para entrar na partida <br><j>!leave<n> <rose>*<n> - Para sair da partida e ir para a área de espectador<br><j>!resettimer<n> <vp>*<n> - Resetar o tempo no lobby antes de começar a partida<br><j>!setmap<n> <ch>[small/large/extra-large]<n> <vp>*<n> - Para selecionar um mapa em especifico antes de começar uma partida<br><j>!pw<n> <ch>[senha]<n> <vp>*<n> - Colocar uma senha na sala"}, 
 		[2] = { text = "<p align='left'><font size='12px'><br><br>Comandos (<rose>*<n> = durante a partida | <vp>*<n> = comandos do admin):<br><br><j>!winscore<n> <ch>[número]<n> <rose>*<n> <vp>*<n> - Mudar o numero máximo de pontos para vencer uma partida<br><j>!customMap<n> <ch>[true ou false]<n> <ch>[index do mapa]<n> <vp>*<n> - Selecionar um mapa costumizado<br><j>!maps<n> - Mostra a lista de mapas<br><j>!votemap<n> <ch>[numero]<n> - Votar em um mapa costumizado para a próxima partida<br><j>!setscore<n> <ch>[nome do jogador]<n> <ch>[numero]<n> <rose>*<n> <vp>*<n> - Troca a score do jogador pelo numero<br><j>!setscore<n> <ch>[nome do jogador]<n> <rose>*<n> <vp>*<n> - Adiciona +1 a score do jogador<br><j>!setscore<n> <ch>[red ou blue]<n> <ch>[numero]<n> <rose>*<n> <vp>*<n> - Troca a score do time pelo numero<br><j>!4teamsmode<n> <ch>[true ou false]<n> <vp>*<n> - Seleciona o modo de 4 times do Volley<br>"},
 		[3] = { text = "<p align='left'><font size='12px'><br><br>Comandos (<rose>*<n> = durante a partida | <vp>*<n> = comandos do admin):<br><br><j>!setmaxplayers <ch>[6 - 20]<n> <vp>*<n> - Seleciona o máximo de jogadores para entrar na sala<br><j>!balls<n> - Mostra a lista de bolas costumizadas do #Volley<br><j>!customball<n> <ch>[Número]<n> <vp>*<n> - Seleciona uma bola costumizável para a próxima partida<br><j>!lobby<n> <rose>*<n> <vp>*<n> - Encerra uma partida que estava em andamento e retorna para o lobby<br><j>!setplayerforce<n> <ch>[Número: 0 - 1.05]<n> <vp>*<n> - Seleciona a força para o objeto esférico do rato<br><j>!2teamsmode<n> <ch>[true ou false]<n> <vp>*<n> - Seleciona o modo especial de 2 times<br><j>!sync<n> <vp>*<n> - O sistema escolhe o jogador com a menor latência para sincronizar a sala<br><j>!synctfm<n> <vp>*<n> - O sistema do TFM escolhe o jogador com a menor latência para sincronizar"},
 		[4] = { text = "<p align='left'><font size='12px'><br><br>Comandos (<rose>*<n> = durante a partida | <vp>*<n> = comandos do admin):<br><br><j>!skiptimer<n> <vp>*<n> - Inicia a partida o mais rápido possível<br><j>!afksystem<n> <ch>[true ou false]<n> <vp>*<n> - Ativa ou desativa o sistema de AFK<n><br><j>!settimeafk<n> <ch>[segundos]<n> <vp>*<n> - Seleciona o tempo de afk em segundos<br><j>!realmode<n> <ch>[true ou false]<n> - Seleciona Volley Real Mode<br><j>!twoballs<n> <ch>[true ou false]<n> - Ativa duas bolas em jogo para o modo de 4 times do Volley<br><j>!consumables<n> <ch>[true ou false]<n> - Escolha um consumível com as teclas (7, 8, 9 e 0) e ative eles apertando M no modo normal" }
 	},
 	creditsTitle = "<p align='center'><font size='15px'>Créditos (Volley)",
-	creditsText = "<br><br><p align='left'><font size='12px'>O jogo foi desenvolvido por <j>Refletz#6472 (Soristl)<n><br><br>Tradução BR/EN: <j>Refletz#6472 (Soristl)<n><br><br>Tradução AR: <j>Ionut_eric_pro#1679<n>Tradução <br><br>FR: <j>Rowed#4415<n>",
+	creditsText = "<br><br><p align='left'><font size='12px'>O jogo foi desenvolvido por <j>Refletz#6472 (Soristl)<n><br><br>Tradução BR/EN: <j>Refletz#6472 (Soristl)<n><br><br>Tradução AR: <j>Ionut_eric_pro#1679<n><br><br>Tradução FR: <j>Rowed#4415<n><br><br>Tradução PL: <j>Prestige#5656<n>",
 	messageSetMaxPlayers = "Número máximo de jogadores colocado para",
 	newPassword = "Nova senha:",
 	passwordRemoved = "<bv>Senha removida<n>",
@@ -206,13 +208,13 @@ lang.en = {
 	closeUIText = "<p align='center'><font size='12px'><a href='event:closeWindow'>Close",
 	helpTitle = "<p align='center'><font size='15px'>How to play Volley ("..gameVersion..")",
 	helpText = { 
-		[1] = { text = "<br><br><p align='left'><font size='12px'>The objective of volleyball is to prevent the ball from falling to the floor of your court, and to avoid this, you can turn your mouse into a circular object by pressing the <j>[ Space ]<n> key, the mouse untransforms 3 seconds later. The team that scores 7 points first wins!<br>Create a room with admin: <bv><a href='event:roomadmin'>/room *#volley0YourName#0000</a><n><br><br>Commands (<rose>*<n> = during the match | <vp>*<n> = admin's commands):<br><br><j>!lang<n> <ch>[AR/BR/EN/FR]<n> - To modify the minigame language<br><j>!join<n> <rose>*<n> - To join the match<br><j>!leave<n> <rose>*<n> - To leave the match and go to the spectator area<br><j>!resettimer<n> <vp>*<n> - Reset time in the lobby before starting the match<br><j>!setmap<n> <ch>[small/large/extra-large]<n> <vp>*<n> - To select a specific map before starting a match<br><j>!pw<n> <ch>[password]<n> <vp>*<n> - Put a password in the room"},
+		[1] = { text = "<br><br><p align='left'><font size='12px'>The objective of volleyball is to prevent the ball from falling to the floor of your court, and to avoid this, you can turn your mouse into a circular object by pressing the <j>[ Space ]<n> key, the mouse untransforms 3 seconds later. The team that scores 7 points first wins!<br>Create a room with admin: <bv><a href='event:roomadmin'>/room *#volley0YourName#0000</a><n><br><br>Commands (<rose>*<n> = during the match | <vp>*<n> = admin's commands):<br><br><j>!lang<n> <ch>"..languages.."<n> - To modify the minigame language<br><j>!join<n> <rose>*<n> - To join the match<br><j>!leave<n> <rose>*<n> - To leave the match and go to the spectator area<br><j>!resettimer<n> <vp>*<n> - Reset time in the lobby before starting the match<br><j>!setmap<n> <ch>[small/large/extra-large]<n> <vp>*<n> - To select a specific map before starting a match<br><j>!pw<n> <ch>[password]<n> <vp>*<n> - Put a password in the room"},
 		[2] = { text = "<p align='left'><font size='12px'><br><br>Commands (<rose>*<n> = during the match | <vp>*<n> = admin's commands):<br><br><j>!winscore<n> <ch>[number]<n> <rose>*<n> <vp>*<n> - Change the maximum number of points to win a match<br><j>!customMap<n> <ch>[true or false]<n> <ch>[map index]<n> <vp>*<n> - Select a custom map<br><j>!maps<n> - Shows the list of maps<br><j>!votemap<n> <ch>[number]<n> - Vote for a custom map for the next match<br><j>!setscore<n> <ch>[Player name]<n> <ch>[number]<n> <rose>*<n> <vp>*<n> - Swap the player's score by number<br><j>!setscore<n> <ch>[Player name]<n> <rose>*<n> <vp>*<n> - Adds +1 to player's score<br><j>!setscore<n> <ch>[red or blue]<n> <ch>[number]<n> <rose>*<n> <vp>*<n> - Swap the team's score for the number<br><j>!4teamsmode<n> <ch>[true or false]<n> <vp>*<n> - Select 4-team Volley mode"},
 		[3] = { text = "<p align='left'><font size='12px'><br><br>Commands (<rose>*<n> = during the match | <vp>*<n> = admin's commands)<br><br><j>!setmaxplayers <ch>[6 - 20]<n> <vp>*<n> - Selects the maximum number of players to enter the room<br><j>!balls<n> - Shows the list of #Volley custom balls<br><j>!customball<n> <ch>[Number]<n> <vp>*<n> - Select a customizable ball for the next match<br><j>!lobby<n> <rose>*<n> <vp>*<n> - End a match that was in progress and return to the lobby<br><j>!setplayerforce<n> <ch>[Number: 0 - 1.05]<n> <vp>*<n> - Selects the strength for the spherical mouse object<br><j>!2teamsmode<n> <ch>[true or false]<n> <vp>*<n> - Selects the special 2-team mode<br><j>!sync<n> <vp>*<n> - The system chooses the player with the lowest latency to synchronize the room<br><j>!synctfm<n> <vp>*<n> - The TFM system chooses the player with the lowest latency to synchronize the room"},
 		[4] = { text = "<p align='left'><font size='12px'><br><br>Commands (<rose>*<n> = during the match | <vp>*<n> = admin's commands)<br><br><j>!skiptimer<n> <vp>*<n> - Start the game as quickly as possible<br><j>!afksystem<n> <ch>[true or false]<n> <vp>*<n> - Enables or disables the AFK system<n><br><j>!settimeafk<n> <ch>[seconds]<n> <vp>*<n> - Select the afk time in seconds<br><j>!realmode<n> <ch>[true or false]<n> - Select Volley Real Mode<br><j>!twoballs<n> <ch>[true or false]<n> - Activates two balls in play for Volley's 4-team mode<br><j>!consumables<n> <ch>[true or false]<n> - Choose a consumable with the keys (7, 8, 9 and 0) and activate them by pressing M in normal mode"}
 	},
 	creditsTitle = "<p align='center'><font size='15px'>Credits (Volley)",
-	creditsText = "<br><br><p align='left'><font size='12px'>The game was developed by <j>Refletz#6472 (Soristl)<n><br><br>BR/EN Translation: <j>Refletz#6472 (Soristl)<n><br><br>AR Translation: <j>Ionut_eric_pro#1679<n><br><br>FR Translation: <j>Rowed#4415<n>",
+	creditsText = "<br><br><p align='left'><font size='12px'>The game was developed by <j>Refletz#6472 (Soristl)<n><br><br>BR/EN Translation: <j>Refletz#6472 (Soristl)<n><br><br>AR Translation: <j>Ionut_eric_pro#1679<n><br><br>FR Translation: <j>Rowed#4415<n><br><br>PL Translation: <j>Prestige#5656<n>",
 	messageSetMaxPlayers = "Maximum number of players placed for",
 	newPassword = "New password:",
 	passwordRemoved = "<bv>Password removed<n>",
@@ -230,13 +232,13 @@ lang.ar = {
 	closeUIText = "<p align='center'><font size='12px'><a href='event:closeWindow'>إغلاق",
 	helpTitle = "<p align='center'><font size='15px'>كيفية لعب الكرة الطائرة ("..gameVersion..")",
 	helpText = { 
-		[1] = { text = "<br><br><p align='right'><font size='12px'>هدف كرة الطائرة هو منع الكرة من السقوط إلى أرضية ملعب فريقك، ولتحقيق هذا، يمكنك تحويل الفأر الخاص بك إلى كائن دائري عن طريق الضغط على <j>[ مسطرة ]<n> مفتاح, ويعود الفأر إلى شكله الأصلي بعد 3 ثوانٍ. الفريق الذي يسجل 7 نقاط أولاً يفوز!<br>إنشاء غرفة بخاصيات المشرف: <bv><a href='event:roomadmin'>/room *#volley0إسمك#0000</a><n><br><br>الأوامر (<rose>*<n> = أثناء المباراة | <vp>*<n> = أوامر المشرف):<br><br><j>!lang<n> <ch>[AR/BR/EN/FR]<n> - لتعديل لغة النمط<br><j>!join<n> <rose>*<n> - للإنضمام للمباراة<br><j>!leave<n> <rose>*<n> - لمغادرة المباراة والذهاب إلى منطقة المتفرجين<br><j>!resettimer<n> <vp>*<n> - قم بإعادة ضبط الوقت في الردهة قبل بدء المباراة<br><j>!setmap<n> <ch>[small/large/extra-large]<n> <vp>*<n> - لتحديد خريطة معينة قبل بدء المباراة<br><j>!pw<n> <ch>[password]<n> <vp>*<n> - ضع كلمة مرور في الغرفة"},
+		[1] = { text = "<br><br><p align='right'><font size='12px'>هدف كرة الطائرة هو منع الكرة من السقوط إلى أرضية ملعب فريقك، ولتحقيق هذا، يمكنك تحويل الفأر الخاص بك إلى كائن دائري عن طريق الضغط على <j>[ مسطرة ]<n> مفتاح, ويعود الفأر إلى شكله الأصلي بعد 3 ثوانٍ. الفريق الذي يسجل 7 نقاط أولاً يفوز!<br>إنشاء غرفة بخاصيات المشرف: <bv><a href='event:roomadmin'>/room *#volley0إسمك#0000</a><n><br><br>الأوامر (<rose>*<n> = أثناء المباراة | <vp>*<n> = أوامر المشرف):<br><br><j>!lang<n> <ch>"..languages.."<n> - لتعديل لغة النمط<br><j>!join<n> <rose>*<n> - للإنضمام للمباراة<br><j>!leave<n> <rose>*<n> - لمغادرة المباراة والذهاب إلى منطقة المتفرجين<br><j>!resettimer<n> <vp>*<n> - قم بإعادة ضبط الوقت في الردهة قبل بدء المباراة<br><j>!setmap<n> <ch>[small/large/extra-large]<n> <vp>*<n> - لتحديد خريطة معينة قبل بدء المباراة<br><j>!pw<n> <ch>[password]<n> <vp>*<n> - ضع كلمة مرور في الغرفة"},
 		[2] = { text = "<p align='right'><font size='12px'><br><br>الأوامر (<rose>*<n> = أثناء المباراة | <vp>*<n> = أوامر المشرف):<br><br><j>!winscore<n> <ch>[number]<n> <rose>*<n> <vp>*<n> - تغيير الحد الأقصى لعدد النقاط للفوز بالمباراة<br><j>!customMap<n> <ch>[true or false]<n> <ch>[map index]<n> <vp>*<n> - اختر ماب مخصص<br><j>!maps<n> - تظهر قائمة الخرائط<br><j>!votemap<n> <ch>[number]<n> - التصويت للحصول على ماب مخصص للمباراة القادمة<br><j>!setscore<n> <ch>[Player name]<n> <ch>[number]<n> <rose>*<n> <vp>*<n> - قم بتبديل نتيجة اللاعب بالرقم<br><j>!setscore<n> <ch>[Player name]<n> <rose>*<n> <vp>*<n> - يضيف +1 إلى نتيجة اللاعب<br><j>!setscore<n> <ch>[red or blue]<n> <ch>[number]<n> <rose>*<n> <vp>*<n> - قم بتبديل نتيجة الفريق بالرقم<br><j>!4teamsmode<n> <ch>[true or false]<n> <vp>*<n> - حدد وضع الكرة الطائرة المكون من 4 فرق"},
 		[3] = { text = "<p align='right'><font size='12px'><br><br>الأوامر (<rose>*<n> = أثناء المباراة | <vp>*<n> = أوامر المشرف)<br><br><j>!setmaxplayers <ch>[6 - 20]<n> <vp>*<n> - يحدد الحد الأقصى لعدد اللاعبين لدخول الغرفة<br><j>!balls<n> - تظهر قائمة الكرات الخاصة بالنمط <br><j>!customball<n> <ch>[Number]<n> <vp>*<n> - حدد كرة خاصة للمباراة القادمة<br><j>!lobby<n> <rose>*<n> <vp>*<n> - إنهاء المباراة الجارية والعودة إلى الردهة<br><j>!setplayerforce<n> <ch>[Number: 0 - 1.05]<n> <vp>*<n> - تحديد قوة شكل الفأر الكروي<br><j>!2teamsmode<n> <ch>[true or false]<n> <vp>*<n> - يختار الوضع الخاص المكون من فريقين<br><j>!sync<n> <vp>*<n> - يختار النظام اللاعب ذو زمن الاستجابة الأقل لمزامنة الغرفة<br><j>!synctfm<n> <vp>*<n> - يقام نظام TFM باختيار اللاعب صاحب أقل زمن استجابة لمزامنة الغرفة."},
 		[4] = { text = "<p align='right'><font size='12px'><br><br>الأوامر (<rose>*<n> = أثناء المباراة | <vp>*<n> = أوامر المشرف)<br><br><j>!skiptimer<n> <vp>*<n> - يتخطى وقت الانتظار لبدء اللعبة إلى 5 ثواني <br><j>!afksystem<n> <ch>[true or false]<n> <vp>*<n> - تمكين أو تعطيل نظام AFK<n><br><j>!settimeafk<n> <ch>[true or false]<n> <vp>*<n> - حدد الوقت AFK بالثواني <br><j>!realmode<n> <ch>[true or false]<n> - حدد الوضع الحقيقي للكرة الطائرة <br><j>!twoballs<n> <ch>[True or False]<n> - تفعيل كرتين في اللعب لفرق الوضع 4 في الكرة الطائرة<br><j>!consumables<n> <ch>[true or false]<n> - حدد عنصرًا مستهلكًا باستخدام المفاتيح (7، 8، 9، 0)، وقم بتنشيطه وإنشاء M في الوضع العادي"}
 	},
 	creditsTitle = "<p align='center'><font size='15px'>شكر خاص (الكرة الطائرة)",
-	creditsText = "<br><br><p align='right'><font size='12px'>تم تطوير اللعبة من طرف <j>Refletz#6472 (Soristl)<n><br><br>ترجمة BR/EN: <j>Refletz#6472 (Soristl)<n><br><br>ترجمة AR: <j>Ionut_eric_pro#1679<n><br><br>ترجمة FR: <j>Rowed#4415<n>",
+	creditsText = "<br><br><p align='right'><font size='12px'>تم تطوير اللعبة من طرف <j>Refletz#6472 (Soristl)<n><br><br>ترجمة BR/EN: <j>Refletz#6472 (Soristl)<n><br><br>ترجمة AR: <j>Ionut_eric_pro#1679<n><br><br>ترجمة FR: <j>Rowed#4415<n><br><br>ترجمة PL: <j>Prestige#5656<n>",
 	messageSetMaxPlayers = "الحد الأقصى لعدد اللاعبين الذين تم وضعهم هو",
 	newPassword = "كلمة المرور الجديدة:",
 	passwordRemoved = "<bv>تمت إزالة كلمة المرور<n>",
@@ -255,13 +257,13 @@ lang.fr = {
 	closeUIText = "<p align='center'><font size='12px'><a href='event:closeWindow'>Fermer",
 	helpTitle = "<p align='center'><font size='15px'>Comment jouer au Volley ("..gameVersion..")",
 	helpText = { 
-		[1] = { text = "<br><br><p align='left'><font size='12px'>L'objectif du volley est d'éviter que la balle ne tombe sur le sol de votre côté du terrain, et pour éviter cela, vous pouvez transformer votre souris en un objet circulaire en pressant la touche <j><br>[ Espace ]<n>, la souris reprend sa forme originale 3 secondes plus tard. L'équipe qui marque 7 points en première gagne!<br>Créer un salon avec admin: <bv><a href='event:roomadmin'>/salon *#volley0VotreNom#0000</a><n><br><br>Commandes (<rose>*<n> = durant la partie | <vp>*<n> = commandes admin):<br><br><j>!lang<n> <ch>[AR/BR/EN/FR]<n> - Pour modifier la langue du mini-jeu<br><j>!join<n> <rose>*<n> - Pour rejoindre la partie<br><j>!leave<n> <rose>*<n> - Pour quitter la partie et aller dans la zone des spectateurs<br><j>!resettimer<n> <vp>*<n> - Réinitialise le temps dans le lobby avant de commencer la partie<br><j>!setmap<n> <ch>[small/large/extra-large]<n> <vp>*<n> - Pour sélectionner une carte spécifique avant de commencer la partie"},
+		[1] = { text = "<br><br><p align='left'><font size='12px'>L'objectif du volley est d'éviter que la balle ne tombe sur le sol de votre côté du terrain, et pour éviter cela, vous pouvez transformer votre souris en un objet circulaire en pressant la touche <j><br>[ Espace ]<n>, la souris reprend sa forme originale 3 secondes plus tard. L'équipe qui marque 7 points en première gagne!<br>Créer un salon avec admin: <bv><a href='event:roomadmin'>/salon *#volley0VotreNom#0000</a><n><br><br>Commandes (<rose>*<n> = durant la partie | <vp>*<n> = commandes admin):<br><br><j>!lang<n> <ch>"..languages.."<n> - Pour modifier la langue du mini-jeu<br><j>!join<n> <rose>*<n> - Pour rejoindre la partie<br><j>!leave<n> <rose>*<n> - Pour quitter la partie et aller dans la zone des spectateurs<br><j>!resettimer<n> <vp>*<n> - Réinitialise le temps dans le lobby avant de commencer la partie<br><j>!setmap<n> <ch>[small/large/extra-large]<n> <vp>*<n> - Pour sélectionner une carte spécifique avant de commencer la partie"},
 		[2] = { text = "<p align='left'><font size='12px'><br><br>Commandes (<rose>*<n> = durant la partie | <vp>*<n> = commandes admin):<br><br><j>!pw<n> <ch>[password]<n> <vp>*<n> - Mettre un mot de passe dans le salon<br><j>!winscore<n> <ch>[nombre]<n> <rose>*<n> <vp>*<n> - Change le score à atteindre pour gagner la partie<br><j>!customMap<n> <ch>[true ou false]<n> <ch>[index de la carte]<n> <vp>*<n> - Sélectionne une carte customisée<br><j>!maps<n> - Affiche la liste de cartes<br><j>!votemap<n> <ch>[nombre]<n> - Vote pour une carte customisée pour la prochaine partie<br><j>!setscore<n> <ch>[Nom du joueur]<n> <ch>[nombre]<n> <rose>*<n> <vp>*<n> - Change le score du joueur par le nombre<br><j>!setscore<n> <ch>[Nom du joueur]<n> <rose>*<n> <vp>*<n> - Ajoute +1 au score du joueur<br><j>!setscore<n> <ch>[red ou blue]<n> <ch>[nombre]<n> <rose>*<n> <vp>*<n> - Change le score de l'équipe par le nombre<br><j>!4teamsmode<n> <ch>[true ou false]<n> <vp>*<n> - Sélectionne le mode de 4 équipes au Volley"},
 		[3] = { text = "<p align='left'><font size='12px'><br><br>Commandes (<rose>*<n> = durant la partie | <vp>*<n> = commandes admin)<br><br><j>!setmaxplayers <ch>[6 - 20]<n> <vp>*<n> - Sélectionne le nombre maximum de joueurs pouvant entrer dans le salon<br><j>!balls<n> - Affiche la liste des balles customisées du #Volley<br><j>!customball<n> <ch>[Nombre]<n> <vp>*<n> - Sélectionne une balle customisée pour la prochaine partie<br><j>!lobby<n> <rose>*<n> <vp>*<n> - Termine un match en cours et retourne au lobby<br><j>!setplayerforce<n> <ch>[Nombre: 0 - 1.05]<n> <vp>*<n> - Sélectionne la force pour l'objet sphérique de la souris<br><j>!2teamsmode<n> <ch>[true ou false]<n> <vp>*<n> - Sélectionne le mode de jeu spécial à 2 équipes<br><j>!sync<n> <vp>*<n> - Le système choisit le joueur avec la latence la plus faible pour synchroniser le salon<br><j>!synctfm<n> <vp>*<n> - Le système TFM choisit le joueur avec la latence la plus faible pour synchroniser le salon"},
 		[4] = { text = "<p align='left'><font size='12px'><br><br>Commandes (<rose>*<n> = durant la partie | <vp>*<n> = commandes amdin)<br><br><j>!skiptimer<n> <vp>*<n> - Commence la partie le plus vite possible<br><j>!afksystem<n> <ch>[true ou false]<n> <vp>*<n> - Active ou désactive le système AFK<n><br><j>!settimeafk<n> <ch>[secondes]<n> <vp>*<n> - Sélectionne le temps d'afk en secondes<br><j>!realmode<n> <ch>[true ou false]<n> - Sélectionne le mode Réel de Volley<br><j>!twoballs<n> <ch>[true ou false]<n> - Active deux balles en jeu pour le mode 4 équipes de Volley<br><j>!consumables<n> <ch>[true ou false]<n> - Choisissez un consommable avec les touches (7, 8, 9 et 0) et activez-le en appuyant sur M en mode normal"}
 	},
 	creditsTitle = "<p align='center'><font size='15px'>Crédits (Volley)",
-	creditsText = "<br><br><p align='left'><font size='12px'>Le jeu a été développé par <j>Refletz#6472 (Soristl)<n><br><br>BR/EN Translation: <j>Refletz#6472 (Soristl)<n><br><br>AR Translation: <j>Ionut_eric_pro#1679<n><br><br>FR Translation: <j>Rowed#4415<n>",
+	creditsText = "<br><br><p align='left'><font size='12px'>Le jeu a été développé par <j>Refletz#6472 (Soristl)<n><br><br>BR/EN Translation: <j>Refletz#6472 (Soristl)<n><br><br>AR Translation: <j>Ionut_eric_pro#1679<n><br><br>FR Translation: <j>Rowed#4415<n><br><br>PL Translation: <j>Prestige#5656<n>",
 	messageSetMaxPlayers = "Nombre de joueurs maximum mis à",
 	newPassword = "Nouveau mot de passe:",
 	passwordRemoved = "<bv>Mot de passe retiré<n>",
@@ -269,6 +271,30 @@ lang.fr = {
 	previousMessage = "<p align='center'>Précédent",
 	nextMessage = "<p align='center'>Suivant",
 	realModeRules = "<p align='center'><font size='15px'>Règles du Volley Real Mode<br><br><p align='left'><font size='12px'><b>- Chaque équipe peut se <b>transformer</b> en un <vi>objet sphérique<n> seulement 3 fois (sauf pour le <b>service</b> où ce n'est qu'UNE fois)<br><br>- Si la balle va dehors de votre côté du terrain et que <b>personne</b> de votre équipe ne s'est transformé en un <vi>objet sphérique<n> le point est pour votre équipe<br><br>- Si la balle va dehors et que quelqu'un de votre équipe <b>s'est transformé</b> en un <vi><b>objet sphérique<b><n> le point revient à l'adversaire<br><br>- Chaque joueur servira la balle une fois <br><br>- Si le joueur quitte le terrain, le joueur pourra effectuer une action pendant <j>7 secondes<n>, autrement le joueur ne sera pas capable d'utiliser la <j>touche espace<n><br><br>- Les touches 1, 2, 3 et 4 changent la force du joueur."
+}
+lang.pl = {
+	welcomeMessage = "<j>Witaj w Volley, gra została stworzona przez Refletz#6472<n>",
+	welcomeMessage2 = "<j>Wpisz !join, by dołączyć do meczu<n>",
+	msgRedWinner = "Drużyna czerwonych wygrała!",
+	msgBlueWinner = "Drużyna niebieskich wygrała!",
+	menuOpenText = "<br><br><a href='event:howToPlay'>Jak grać</a><br><a href='event:realmode'>Volley Real Mode</a><br><a href='event:credits'>Credits</a><br>",
+	closeUIText = "<p align='center'><font size='12px'><a href='event:closeWindow'>Close",
+	helpTitle = "<p align='center'><font size='15px'>Jak grać w Volley ("..gameVersion..")",
+	helpText = { 
+		[1] = { text = "<br><br><p align='left'><font size='12px'>Celem siatkówki jest zapobieganie upadkowi piłki na podłogę twojego boiska, a aby to osiągnąć, możesz zamienić myszkę w okrągły obiekt, naciskając przycisk <j>[ Space ]<n> Mysz wraca do pierwotnego kształtu po 3 sekundach. Drużyna, która pierwsza zdobędzie 7 punktów, wygrywa!<br>Stwórz swój pokój: <bv><a href='event:roomadmin'>/room *#volley0YourName#0000</a><n><br><br>Komendy (<rose>*<n> = podczas meczu | <vp>*<n> = komendy administratora):<br><br><j>!lang<n> <ch>"..languages.."<n> - Aby zmodyfikować język minigry<br><j>!join<n> <rose>*<n> - Aby dołączyć do meczu<br><j>!leave<n> <rose>*<n> - Aby opuścić mecz i przejść do strefy oglądających<br><j>!resettimer<n> <vp>*<n> - Resetuje czas w lobby przed rozpoczęciem się meczu<br><j>!setmap<n> <ch>[small/large/extra-large]<n> <vp>*<n> - Aby wybrać określoną mapę przed rozpoczęciem meczu<br><j>!pw<n> <ch>[hasło]<n> <vp>*<n> - Ustaw hasło w pokoju"},
+		[2] = { text = "<p align='left'><font size='12px'><br><br>Komendy (<rose>*<n> = podczas meczu | <vp>*<n> = komendy administratora):<br><br><j>!winscore<n> <ch>[liczba]<n> <rose>*<n> <vp>*<n> - Zmień maksymalną ilość punktów by wygrać mecz<br><j>!customMap<n> <ch>[true or false]<n> <ch>[map index]<n> <vp>*<n> - Wybierz niestandardową mapę<br><j>!maps<n> - Pokazuje listę map<br><j>!votemap<n> <ch>[liczba]<n> - Głosowanie za niestadardową mapę w następnym meczu<br><j>!setscore<n> <ch>[nazwa gracza]<n> <ch>[liczba]<n> <rose>*<n> <vp>*<n> - Zmień wynik gracza na liczbę<br><j>!setscore<n> <ch>[nazwa gracza]<n> <rose>*<n> <vp>*<n> - Dodaje +1 do wyniku gracza<br><j>!setscore<n> <ch>[red or blue]<n> <ch>[liczba]<n> <rose>*<n> <vp>*<n> - Zmień wynik drużyny<br><j>!4teamsmode<n> <ch>[true or false]<n> <vp>*<n> - Wybierz 4-drużynowy Volley mode"},
+		[3] = { text = "<p align='left'><font size='12px'><br><br>Komendy (<rose>*<n> = podczas meczu | <vp>*<n> = komendy administratora)<br><br><j>!setmaxplayers <ch>[6 - 20]<n> <vp>*<n> - Wybierz maksymalną ilość graczy, którzy mogą dołączyć do pokoju<br><j>!balls<n> - Pokazuje listę niestandardowych piłek #Volley<br><j>!customball<n> <ch>[liczba]<n> <vp>*<n> - Wybierz niestandardową piłkę na następny mecz<br><j>!lobby<n> <rose>*<n> <vp>*<n> - Zakończ mecz, który był w trakcie i wróć do lobby<br><j>!setplayerforce<n> <ch>[Number: 0 - 1.05]<n> <vp>*<n> - Wybierz siłę dla okrągłego obiektu myszy<br><j>!2teamsmode<n> <ch>[true or false]<n> <vp>*<n> - Wybierz tryb specjalny dwóch drużyn<br><j>!sync<n> <vp>*<n> - System wybiera gracza z najniższym opóźnieniem, aby zsynchronizować pokój<br><j>!synctfm<n> <vp>*<n> - System TFM wybiera gracza z najniższym opóźnieniem, aby zsynchronizować pokój"},
+		[4] = { text = "<p align='left'><font size='12px'><br><br>Komendy (<rose>*<n> = podczas meczu | <vp>*<n> = komendy administratora)<br><br><j>!skiptimer<n> <vp>*<n> - Uruchom grę tak szybko, jak to możliwe<br><j>!afksystem<n> <ch>[true or false]<n> <vp>*<n> - Włącza lub wyłącza system AFK<n><br><j>!settimeafk<n> <ch>[seconds]<n> <vp>*<n> - Wybierz czas AFK w sekundach<br><j>!realmode<n> <ch>[true or false]<n> - Wybierz tryb rzeczywistej siatkówki<br><j>!twoballs<n> <ch>[true or false]<n> - Aktywuje dwie piłki w grze dla trybu 4-drużynowego w Volley<br><j>!consumables<n> <ch>[true or false]<n> - Wybierz przedmiot konsumpcyjny za pomocą klawiszy (7, 8, 9 i 0) i aktywuj go, naciskając M w trybie normalnym"}
+	},
+	creditsTitle = "<p align='center'><font size='15px'>Credits (Volley)",
+	creditsText = "<br><br><p align='left'><font size='12px'>Gra została stworzona przez <j>Refletz#6472 (Soristl)<n><br><br>BR/EN Tłumaczenie: <j>Refletz#6472 (Soristl)<n><br><br>AR Tłumaczenie: <j>Ionut_eric_pro#1679<n><br><br>FR Tłumaczenie: <j>Rowed#4415<n><br><br>PL Tłumaczenie: <j>Prestige#5656<n>",
+	messageSetMaxPlayers = "Z maksymalną liczbą graczy umieszczoną dla",
+	newPassword = "Nowe hasło:",
+	passwordRemoved = "<bv>Hasło usunięte<n>",
+	messageMaxPlayersAlert = "<bv>Maksymalna liczba graczy musi wynosić minimum 6, a maksimum 20<n>",
+	previousMessage = "<p align='center'>Powrót",
+	nextMessage = "<p align='center'>Następny",
+	realModeRules = "<p align='center'><font size='15px'>Zasady trybu Volley Real Mode<br><br><p align='left'><font size='12px'><b>- Każda drużyna może się zmienić <b>transform</b> w <vi>okrągły obiekt<n> tylko 3 razy (nielicząc <b>serwa</b> który jest tylko raz)<br><br>- Jeśli piłka wyląduje poza boiskiem po stronie twojego zespołu i <b>nikt</b> z twojej drużyny nie przekształcił się w <vi>okrągły obiekt<n> wtedy punkt jest zdobyty przez twoją drużynę<br><br>- Jeśli piłka wylądowała poza boiskiem i ktoś z twojej drużyny <b>zmienił się w</b> <vi><b>okrągły obiekt<b><n> wtedy punkt należy do drużyny przeciwnej<br><br>- Każdy z graczy serwuje raz <br><br>- Jeśli zawodnik opuści boisko, będzie mógł wykonać akcję przez <j>7 sekund<n>, w przeciwnym razie zawodnik nie będzie mógł użyć <j>klawiszu spacji<n><br><br>- Klawisze 1, 2, 3 i 4 zmieniają siłę gracza"
 }
 
 if tfm.get.room.language == "br" then
@@ -279,6 +305,8 @@ elseif tfm.get.room.language == "ar" then
 	trad = lang.ar
 elseif tfm.get.room.language == "fr" then
 	trad = lang.fr
+elseif tfm.get.room.language == "pl" then
+	trad = lang.pl
 else
 	trad = lang.en
 end
@@ -478,6 +506,18 @@ local balls = {
 		isImage = false,
 		image = '',
 		name = 'Crystal ball'
+	},
+	[11] = {
+		id = 6,
+		isImage = true,
+		image = '18fd18e2334.png',
+		name = 'White Volley ball'
+	},
+	[12] = {
+		id = 6,
+		isImage = true,
+		image = '18fd18e5dc6.png',
+		name = 'Original Volley ball'
 	}
 }
 
@@ -667,6 +707,12 @@ function init()
 		[2] = {red = 3},
 		[3] = {blue = 3},
 		[4] = {green = 3}
+	}
+
+	mapsToTest = {
+		[1] = "",
+		[2] = "",
+		[3] = ""
 	}
 
 	getTeamsLifes = {}
@@ -1058,6 +1104,11 @@ function selectMap()
 	end
 
 	if gameStats.teamsMode then
+		if mapsToTest[1] ~= "" then
+			tfm.exec.newGame(mapsToTest[1])
+
+			return
+		end
 		if gameStats.isCustomMap then
 			tfm.exec.newGame(customMapsFourTeamsMode[gameStats.customMapIndex][1])
 
@@ -1068,6 +1119,11 @@ function selectMap()
 	end
 
 	if gameStats.twoTeamsMode then
+		if mapsToTest[1] ~= "" then
+			tfm.exec.newGame(mapsToTest[1])
+
+			return
+		end
 		if gameStats.isCustomMap then
 			tfm.exec.newGame(customMapsTwoTeamsMode[gameStats.customMapIndex][1])
 
@@ -1079,6 +1135,11 @@ function selectMap()
 
 	if gameStats.setMapName == "" then
 		if gameStats.gameMode == "3v3" then
+			if mapsToTest[1] ~= "" then
+				tfm.exec.newGame(mapsToTest[1])
+
+				return
+			end
 			if gameStats.isCustomMap then
 				tfm.exec.newGame(customMaps[gameStats.customMapIndex][1])
 			else
@@ -1096,6 +1157,11 @@ function selectMap()
 			end
 			
 		else
+			if mapsToTest[1] ~= "" then
+				tfm.exec.newGame(mapsToTest[1])
+
+				return
+			end
 			if gameStats.isCustomMap then
 				tfm.exec.newGame(customMaps[gameStats.customMapIndex][2])
 			else
@@ -1115,6 +1181,11 @@ function selectMap()
 			gameStats.gameMode = "3v3"
 			gameStats.redX = 399
 			gameStats.blueX = 401
+			if mapsToTest[1] ~= "" then
+				tfm.exec.newGame(mapsToTest[1])
+
+				return
+			end
 			if gameStats.isCustomMap then
 				tfm.exec.newGame(customMaps[gameStats.customMapIndex][1])
 			else
@@ -1132,6 +1203,11 @@ function selectMap()
 			gameStats.gameMode = "4v4"
 			gameStats.redX = 599
 			gameStats.blueX = 601
+			if mapsToTest[1] ~= "" then
+				tfm.exec.newGame(mapsToTest[1])
+				
+				return
+			end
 			if gameStats.isCustomMap then
 				tfm.exec.newGame(customMaps[gameStats.customMapIndex][2])
 			else
@@ -1161,6 +1237,9 @@ function spawnInitialBall()
 		x = {200, 600, 1000, 1400}
 		if gameStats.customBall then
 			ball_id = tfm.exec.addShamanObject(balls[gameStats.customBallId].id, x[math.random(1, #x)], 50, 0, 0, -5, true)
+			if balls[gameStats.customBallId].isImage then
+				tfm.exec.addImage(balls[gameStats.customBallId].image, "#"..ball_id, -15, -15, nil, 1, 1, _, 1)
+			end
 		else
 			ball_id = tfm.exec.addShamanObject(6, x[math.random(1, #x)], 50, 0, 0, -5, true)
 		end
@@ -1176,8 +1255,15 @@ function spawnInitialBall()
 			ball_id = tfm.exec.addShamanObject(balls[gameStats.customBallId].id, x[randomIndex], 50, 0, 0, -5, true)
 			table.remove(x, randomIndex)
 
+			if balls[gameStats.customBallId].isImage then
+				tfm.exec.addImage(balls[gameStats.customBallId].image, "#"..ball_id, -15, -15, nil, 1, 1, _, 1)
+			end
+
 			if gameStats.twoBalls then
-				ball_id2 = tfm.exec.addShamanObject(balls[gameStats.customBallId].id, x[math.random(1, #x)], 50, 0, 0, -5, true)				
+				ball_id2 = tfm.exec.addShamanObject(balls[gameStats.customBallId].id, x[math.random(1, #x)], 50, 0, 0, -5, true)
+				if balls[gameStats.customBallId].isImage then
+					tfm.exec.addImage(balls[gameStats.customBallId].image, "#"..ball_id2, -15, -15, nil, 1, 1, _, 1)
+				end
 				ballOnGame2 = true
 			end
 		else
@@ -1201,9 +1287,15 @@ function spawnInitialBall()
 			local randomIndex = math.random(1, #x)
 			ball_id = tfm.exec.addShamanObject(balls[gameStats.customBallId].id, x[randomIndex], 50, 0, 0, -5, true)
 			table.remove(x, randomIndex)
+			if balls[gameStats.customBallId].isImage then
+				tfm.exec.addImage(balls[gameStats.customBallId].image, "#"..ball_id, -15, -15, nil, 1, 1, _, 1)
+			end
 
 			if gameStats.twoBalls then
-				ball_id2 = tfm.exec.addShamanObject(balls[gameStats.customBallId].id, x[math.random(1, #x)], 50, 0, 0, -5, true)				
+				ball_id2 = tfm.exec.addShamanObject(balls[gameStats.customBallId].id, x[math.random(1, #x)], 50, 0, 0, -5, true)
+				if balls[gameStats.customBallId].isImage then
+					tfm.exec.addImage(balls[gameStats.customBallId].image, "#"..ball_id2, -15, -15, nil, 1, 1, _, 1)
+				end
 				ballOnGame2 = true
 			end
 		else
@@ -1226,9 +1318,15 @@ function spawnInitialBall()
 			local randomIndex = math.random(1, #x)
 			ball_id = tfm.exec.addShamanObject(balls[gameStats.customBallId].id, x[randomIndex], 50, 0, 0, -5, true)
 			table.remove(x, randomIndex)
+			if balls[gameStats.customBallId].isImage then
+				tfm.exec.addImage(balls[gameStats.customBallId].image, "#"..ball_id, -15, -15, nil, 1, 1, _, 1)
+			end
 
 			if gameStats.twoBalls then
-				ball_id2 = tfm.exec.addShamanObject(balls[gameStats.customBallId].id, x[math.random(1, #x)], 50, 0, 0, -5, true)				
+				ball_id2 = tfm.exec.addShamanObject(balls[gameStats.customBallId].id, x[math.random(1, #x)], 50, 0, 0, -5, true)
+				if balls[gameStats.customBallId].isImage then
+					tfm.exec.addImage(balls[gameStats.customBallId].image, "#"..ball_id2, -15, -15, nil, 1, 1, _, 1)
+				end
 				ballOnGame2 = true
 			end
 		else
@@ -1265,6 +1363,9 @@ function spawnInitialBall()
 			    if i == 1 then
 			        if gameStats.customBall then
 						ball_id = tfm.exec.addShamanObject(balls[gameStats.customBallId].id,  xRed[math.random(1, #xRed)], y[math.random(1, #y)], 0, xSpeed[math.random(1, #xSpeed)], ySpeed[math.random(1, #ySpeed)], true)
+						if balls[gameStats.customBallId].isImage then
+							tfm.exec.addImage(balls[gameStats.customBallId].image, "#"..ball_id, -15, -15, nil, 1, 1, _, 1)
+						end
 					else
 						ball_id = tfm.exec.addShamanObject(6, xRed[math.random(1, #xRed)], y[math.random(1, #y)], 0, xSpeed[math.random(1, #xSpeed)], ySpeed[math.random(1, #ySpeed)], true)
 					end
@@ -1278,6 +1379,9 @@ function spawnInitialBall()
 			    if i == 1 then
 			        if gameStats.customBall then
 						ball_id = tfm.exec.addShamanObject(balls[gameStats.customBallId].id, xBlue[math.random(1, #xBlue)], y[math.random(1, #y)], 0, xSpeed[math.random(1, #xSpeed)], ySpeed[math.random(1, #ySpeed)], true)
+						if balls[gameStats.customBallId].isImage then
+							tfm.exec.addImage(balls[gameStats.customBallId].image, "#"..ball_id, -15, -15, nil, 1, 1, _, 1)
+						end
 					else
 						ball_id = tfm.exec.addShamanObject(6, xBlue[math.random(1, #xBlue)], y[math.random(1, #y)], 0, xSpeed[math.random(1, #xSpeed)], ySpeed[math.random(1, #ySpeed)], true)
 					end
@@ -1306,6 +1410,10 @@ function spawnInitialBall()
 
 	if gameStats.customBall then
 		ball_id = tfm.exec.addShamanObject(balls[gameStats.customBallId].id, x[math.random(1, #x)], 50, 0, 0, -5, true)
+
+		if balls[gameStats.customBallId].isImage then
+			tfm.exec.addImage(balls[gameStats.customBallId].image, "#"..ball_id, -15, -15, nil, 1, 1, _, 1)
+		end
 	else
 		ball_id = tfm.exec.addShamanObject(6, x[math.random(1, #x)], 50, 0, 0, -5, true)
 	end
@@ -1548,6 +1656,9 @@ function spawnBallRealMode(team)
 
 		if gameStats.customBall then
 			ball_id = tfm.exec.addShamanObject(balls[gameStats.customBallId].id, xRed[math.random(1, #xRed)], y[math.random(1, #y)], 0, xSpeed[math.random(1, #xSpeed)], ySpeed[math.random(1, #ySpeed)], true)
+			if balls[gameStats.customBallId].isImage then
+				tfm.exec.addImage(balls[gameStats.customBallId].image, "#"..ball_id, -15, -15, nil, 1, 1, _, 1)
+			end
 		else
 			ball_id = tfm.exec.addShamanObject(6, xRed[math.random(1, #xRed)], y[math.random(1, #y)], 0, xSpeed[math.random(1, #xSpeed)], ySpeed[math.random(1, #ySpeed)], true)
 		end
@@ -1566,6 +1677,9 @@ function spawnBallRealMode(team)
 		gameStats.blueServe = true
 		if gameStats.customBall then
 			ball_id = tfm.exec.addShamanObject(balls[gameStats.customBallId].id, xBlue[math.random(1, #xBlue)], y[math.random(1, #y)], 0, xSpeed[math.random(1, #xSpeed)], ySpeed[math.random(1, #ySpeed)], true)
+			if balls[gameStats.customBallId].isImage then
+				tfm.exec.addImage(balls[gameStats.customBallId].image, "#"..ball_id, -15, -15, nil, 1, 1, _, 1)
+			end
 		else
 			ball_id = tfm.exec.addShamanObject(6, xBlue[math.random(1, #xBlue)], y[math.random(1, #y)], 0, xSpeed[math.random(1, #xSpeed)], ySpeed[math.random(1, #ySpeed)], true)
 		end
@@ -1588,6 +1702,9 @@ function spawnBall(x, index)
 
 			if gameStats.customBall then
 				ball_id = tfm.exec.addShamanObject(balls[gameStats.customBallId].id, x, 50, 0, 0, -5, true)
+				if balls[gameStats.customBallId].isImage then
+					tfm.exec.addImage(balls[gameStats.customBallId].image, "#"..ball_id, -15, -15, nil, 1, 1, _, 1)
+				end
 				ballOnGame = true
 				updateTwoBallOnGame()
 
@@ -1607,6 +1724,9 @@ function spawnBall(x, index)
 
 			if gameStats.customBall then
 				ball_id2 = tfm.exec.addShamanObject(balls[gameStats.customBallId].id, x, 50, 0, 0, -5, true)
+				if balls[gameStats.customBallId].isImage then
+					tfm.exec.addImage(balls[gameStats.customBallId].image, "#"..ball_id2, -15, -15, nil, 1, 1, _, 1)
+				end
 				ballOnGame2 = true
 				updateTwoBallOnGame()
 
@@ -1627,6 +1747,9 @@ function spawnBall(x, index)
 
 	if gameStats.customBall then
 		ball_id = tfm.exec.addShamanObject(balls[gameStats.customBallId].id, x, 50, 0, 0, -5, true)
+		if balls[gameStats.customBallId].isImage then
+			tfm.exec.addImage(balls[gameStats.customBallId].image, "#"..ball_id, -15, -15, nil, 1, 1, _, 1)
+		end
 	else
 		ball_id = tfm.exec.addShamanObject(6, x, 50, 0, 0, -5, true)
 	end
@@ -2260,11 +2383,16 @@ function toggleMap()
 	ballOnGame = false
 	if gameStats.typeMap == "large3v3" then
 		ui.removeTextArea(8998991)
-		if gameStats.isCustomMap then
-			tfm.exec.newGame(customMapsFourTeamsMode[gameStats.customMapIndex][2])
+		if mapsToTest[2] ~= "" then
+			tfm.exec.newGame(mapsToTest[2])
 		else
-			tfm.exec.newGame('<C><P F="3" L="1200" G="0,4" /><Z><S><S H="100" L="1200" X="600" c="3" N="" Y="400" T="7" P="0,0,.1,.2,,0,0,0" /><S L="1200" X="600" H="10" Y="430" T="9" P="0,0,,,,0,0,0" /><S L="10" H="200" X="400" Y="350" T="1" P="0,0,.0,,,0,0,0" /><S P="0,0,.3,.2,,0,0,0" L="800" o="6a7495" X="400" Y="455" T="12" H="10" /><S H="3000" L="10" o="6a7495" X="-5" c="1" Y="0" T="12" P="0,0,.2,,,0,0,0" /><S H="3000" L="10" o="6a7495" X="1200" c="1" Y="0" T="12" P="0,0,.2,,,0,0,0" /><S H="10" L="10" o="324650" X="100" c="3" Y="359" T="13" P="0,0,.3,.2,,0,0,0" /><S X="600" L="10" o="324650" H="10" c="3" Y="359" T="13" P="0,0,.3,.2,,0,0,0" /><S P="0,0,.3,.2,,0,0,0" L="100" o="324650" X="250" c="4" Y="45" T="12" H="105" /><S P="0,0,0,0.2,0,0,0,0" L="1200" X="600" c="3" Y="0" T="1" H="10" /><S P="0,0,0.3,0.2,0,0,0,0" L="1200" X="600" c="3" Y="95" T="0" m="" H="10" /><S P="0,0,0.3,0.2,0,0,0,0" L="10" X="305" c="3" Y="48" T="0" m="" H="100" /><S P="0,0,0.3,0.2,0,0,0,0" L="10" H="100" c="3" Y="48" T="0" m="" X="900" /><S H="10" L="1200" X="601" c="3" Y="225" T="0" m="" P="0,0,0.3,0.2,0,0,0,0" /><S H="30" L="10" X="400" c="3" Y="239" T="0" m="" P="0,0,0,0,0,0,0,0" /><S H="10" L="800" X="400" c="3" Y="791" T="0" m="" P="0,0,0.3,0.2,90,0,0,0" /><S P="0,0,.2,,,0,0,0" L="20" o="6a7495" X="316" c="3" Y="-129" T="12" H="200" /><S H="200" L="20" o="6a7495" X="407" c="3" Y="-133" T="12" P="0,0,.2,,,0,0,0" /><S P="0,0,.2,,90,0,0,0" L="20" o="6a7495" X="363" c="3" Y="-92" T="12" H="100" /><S H="100" L="20" o="6a7495" X="360" c="3" Y="-206" T="12" P="0,0,.2,,90,0,0,0" /><S P="0,0,0.3,0.2,0,0,0,0" L="3000" o="6a7495" X="400" c="4" N="" Y="460" T="12" H="120" /><S H="105" L="100" o="324650" X="950" c="4" Y="45" T="12" P="0,0,.3,.2,,0,0,0" /><S H="10" L="1200" X="600" c="1" Y="-800" T="1" P="0,0,0,0.2,0,0,0,0" /><S L="10" X="800" H="200" Y="350" T="1" P="0,0,.0,,,0,0,0" /><S P="0,0,0,0,0,0,0,0" L="10" H="30" c="3" Y="239" T="0" m="" X="800" /><S P="0,0,0.3,0.2,90,0,0,0" L="800" H="10" c="3" Y="791" T="0" m="" X="800" /><S P="0,0,.3,.2,,0,0,0" L="10" o="324650" H="10" c="3" Y="359" T="13" X="1100" /><S P="0,0,.3,.2,,0,0,0" L="100" o="324650" X="600" c="4" Y="45" T="12" H="105" /></S><D><P P="1" Y="363" T="10" X="599" /><P X="99" Y="363" T="10" P="1" /><DS Y="-141" X="365" /><P X="1099" Y="363" T="10" P="1" /></D><O /></Z></C>')
+			if gameStats.isCustomMap then
+				tfm.exec.newGame(customMapsFourTeamsMode[gameStats.customMapIndex][2])
+			else
+				tfm.exec.newGame('<C><P F="3" L="1200" G="0,4" /><Z><S><S H="100" L="1200" X="600" c="3" N="" Y="400" T="7" P="0,0,.1,.2,,0,0,0" /><S L="1200" X="600" H="10" Y="430" T="9" P="0,0,,,,0,0,0" /><S L="10" H="200" X="400" Y="350" T="1" P="0,0,.0,,,0,0,0" /><S P="0,0,.3,.2,,0,0,0" L="800" o="6a7495" X="400" Y="455" T="12" H="10" /><S H="3000" L="10" o="6a7495" X="-5" c="1" Y="0" T="12" P="0,0,.2,,,0,0,0" /><S H="3000" L="10" o="6a7495" X="1200" c="1" Y="0" T="12" P="0,0,.2,,,0,0,0" /><S H="10" L="10" o="324650" X="100" c="3" Y="359" T="13" P="0,0,.3,.2,,0,0,0" /><S X="600" L="10" o="324650" H="10" c="3" Y="359" T="13" P="0,0,.3,.2,,0,0,0" /><S P="0,0,.3,.2,,0,0,0" L="100" o="324650" X="250" c="4" Y="45" T="12" H="105" /><S P="0,0,0,0.2,0,0,0,0" L="1200" X="600" c="3" Y="0" T="1" H="10" /><S P="0,0,0.3,0.2,0,0,0,0" L="1200" X="600" c="3" Y="95" T="0" m="" H="10" /><S P="0,0,0.3,0.2,0,0,0,0" L="10" X="305" c="3" Y="48" T="0" m="" H="100" /><S P="0,0,0.3,0.2,0,0,0,0" L="10" H="100" c="3" Y="48" T="0" m="" X="900" /><S H="10" L="1200" X="601" c="3" Y="225" T="0" m="" P="0,0,0.3,0.2,0,0,0,0" /><S H="30" L="10" X="400" c="3" Y="239" T="0" m="" P="0,0,0,0,0,0,0,0" /><S H="10" L="800" X="400" c="3" Y="791" T="0" m="" P="0,0,0.3,0.2,90,0,0,0" /><S P="0,0,.2,,,0,0,0" L="20" o="6a7495" X="316" c="3" Y="-129" T="12" H="200" /><S H="200" L="20" o="6a7495" X="407" c="3" Y="-133" T="12" P="0,0,.2,,,0,0,0" /><S P="0,0,.2,,90,0,0,0" L="20" o="6a7495" X="363" c="3" Y="-92" T="12" H="100" /><S H="100" L="20" o="6a7495" X="360" c="3" Y="-206" T="12" P="0,0,.2,,90,0,0,0" /><S P="0,0,0.3,0.2,0,0,0,0" L="3000" o="6a7495" X="400" c="4" N="" Y="460" T="12" H="120" /><S H="105" L="100" o="324650" X="950" c="4" Y="45" T="12" P="0,0,.3,.2,,0,0,0" /><S H="10" L="1200" X="600" c="1" Y="-800" T="1" P="0,0,0,0.2,0,0,0,0" /><S L="10" X="800" H="200" Y="350" T="1" P="0,0,.0,,,0,0,0" /><S P="0,0,0,0,0,0,0,0" L="10" H="30" c="3" Y="239" T="0" m="" X="800" /><S P="0,0,0.3,0.2,90,0,0,0" L="800" H="10" c="3" Y="791" T="0" m="" X="800" /><S P="0,0,.3,.2,,0,0,0" L="10" o="324650" H="10" c="3" Y="359" T="13" X="1100" /><S P="0,0,.3,.2,,0,0,0" L="100" o="324650" X="600" c="4" Y="45" T="12" H="105" /></S><D><P P="1" Y="363" T="10" X="599" /><P X="99" Y="363" T="10" P="1" /><DS Y="-141" X="365" /><P X="1099" Y="363" T="10" P="1" /></D><O /></Z></C>')
+			end
 		end
+
 		teleportPlayersWithTypeMap(true)
 		showTheScore()
 		spawnInitialBall()
@@ -2280,11 +2408,16 @@ function toggleMap()
 	elseif gameStats.typeMap == "small" then
 		ui.removeTextArea(8998991)
 		ui.removeTextArea(899899)
-		if gameStats.isCustomMap then
-			tfm.exec.newGame(customMapsFourTeamsMode[gameStats.customMapIndex][5])
+		if mapsToTest[3] ~= '' then
+			tfm.exec.newGame(mapsToTest[3])
 		else
-			tfm.exec.newGame('<C><P G="0,4" F="0" /><Z><S><S X="400" L="800" H="100" c="3" N="" Y="400" T="7" P="0,0,.1,.2,,0,0,0" /><S L="800" X="400" H="10" Y="430" T="9" P="0,0,,,,0,0,0" /><S L="10" H="200" X="400" Y="350" T="1" P="0,0,.0,,,0,0,0" /><S L="800" o="6a7495" X="400" H="10" Y="455" T="12" P="0,0,.3,.2,,0,0,0" /><S H="3000" L="10" o="6a7495" X="-5" c="1" Y="0" T="12" P="0,0,.2,,,0,0,0" /><S H="3000" L="10" o="6a7495" X="805" c="1" Y="0" T="12" P="0,0,.2,,,0,0,0" /><S H="10" L="10" o="324650" X="100" c="3" Y="359" T="13" P="0,0,.3,.2,,0,0,0" /><S X="700" L="10" o="324650" H="10" c="3" Y="359" T="13" P="0,0,.3,.2,,0,0,0" /><S P="0,0,.3,.2,,0,0,0" L="100" o="324650" X="50" c="4" Y="45" T="12" H="105" /><S P="0,0,0,0.2,0,0,0,0" L="800" H="10" c="3" N="" Y="0" T="1" X="400" /><S P="0,0,0.3,0.2,0,0,0,0" L="800" H="10" c="3" N="" Y="95" T="0" m="" X="400" /><S P="0,0,0.3,0.2,0,0,0,0" L="10" H="100" c="3" Y="48" T="0" m="" X="105" /><S P="0,0,0.3,0.2,0,0,0,0" L="10" X="700" c="3" N="" Y="48" T="0" m="" H="100" /><S X="401" L="800" H="10" c="3" Y="225" T="0" m="" P="0,0,0.3,0.2,0,0,0,0" /><S X="400" L="10" H="30" c="3" Y="239" T="0" m="" P="0,0,0,0,0,0,0,0" /><S X="400" L="800" H="10" c="3" Y="791" T="0" m="" P="0,0,0.3,0.2,90,0,0,0" /><S P="0,0,.2,,,0,0,0" L="20" o="6a7495" X="316" c="3" Y="-129" T="12" H="200" /><S H="200" L="20" o="6a7495" X="407" c="3" Y="-133" T="12" P="0,0,.2,,,0,0,0" /><S P="0,0,.2,,90,0,0,0" L="20" o="6a7495" X="363" c="3" Y="-92" T="12" H="100" /><S H="100" L="20" o="6a7495" X="360" c="3" Y="-206" T="12" P="0,0,.2,,90,0,0,0" /><S P="0,0,0.3,0.2,0,0,0,0" L="3000" o="6a7495" X="400" c="4" N="" Y="460" T="12" H="120" /><S H="105" L="100" o="324650" X="750" c="4" Y="45" T="12" P="0,0,.3,.2,,0,0,0" /><S X="400" L="800" H="10" c="1" N="" Y="-800" T="1" P="0,0,0,0.2,0,0,0,0" /></S><D><P X="699" Y="365" T="10" P="1" /><P P="1" Y="365" T="10" X="99" /><DS Y="-151" X="360" /></D><O /></Z></C>')
+			if gameStats.isCustomMap then
+				tfm.exec.newGame(customMapsFourTeamsMode[gameStats.customMapIndex][5])
+			else
+				tfm.exec.newGame('<C><P G="0,4" F="0" /><Z><S><S X="400" L="800" H="100" c="3" N="" Y="400" T="7" P="0,0,.1,.2,,0,0,0" /><S L="800" X="400" H="10" Y="430" T="9" P="0,0,,,,0,0,0" /><S L="10" H="200" X="400" Y="350" T="1" P="0,0,.0,,,0,0,0" /><S L="800" o="6a7495" X="400" H="10" Y="455" T="12" P="0,0,.3,.2,,0,0,0" /><S H="3000" L="10" o="6a7495" X="-5" c="1" Y="0" T="12" P="0,0,.2,,,0,0,0" /><S H="3000" L="10" o="6a7495" X="805" c="1" Y="0" T="12" P="0,0,.2,,,0,0,0" /><S H="10" L="10" o="324650" X="100" c="3" Y="359" T="13" P="0,0,.3,.2,,0,0,0" /><S X="700" L="10" o="324650" H="10" c="3" Y="359" T="13" P="0,0,.3,.2,,0,0,0" /><S P="0,0,.3,.2,,0,0,0" L="100" o="324650" X="50" c="4" Y="45" T="12" H="105" /><S P="0,0,0,0.2,0,0,0,0" L="800" H="10" c="3" N="" Y="0" T="1" X="400" /><S P="0,0,0.3,0.2,0,0,0,0" L="800" H="10" c="3" N="" Y="95" T="0" m="" X="400" /><S P="0,0,0.3,0.2,0,0,0,0" L="10" H="100" c="3" Y="48" T="0" m="" X="105" /><S P="0,0,0.3,0.2,0,0,0,0" L="10" X="700" c="3" N="" Y="48" T="0" m="" H="100" /><S X="401" L="800" H="10" c="3" Y="225" T="0" m="" P="0,0,0.3,0.2,0,0,0,0" /><S X="400" L="10" H="30" c="3" Y="239" T="0" m="" P="0,0,0,0,0,0,0,0" /><S X="400" L="800" H="10" c="3" Y="791" T="0" m="" P="0,0,0.3,0.2,90,0,0,0" /><S P="0,0,.2,,,0,0,0" L="20" o="6a7495" X="316" c="3" Y="-129" T="12" H="200" /><S H="200" L="20" o="6a7495" X="407" c="3" Y="-133" T="12" P="0,0,.2,,,0,0,0" /><S P="0,0,.2,,90,0,0,0" L="20" o="6a7495" X="363" c="3" Y="-92" T="12" H="100" /><S H="100" L="20" o="6a7495" X="360" c="3" Y="-206" T="12" P="0,0,.2,,90,0,0,0" /><S P="0,0,0.3,0.2,0,0,0,0" L="3000" o="6a7495" X="400" c="4" N="" Y="460" T="12" H="120" /><S H="105" L="100" o="324650" X="750" c="4" Y="45" T="12" P="0,0,.3,.2,,0,0,0" /><S X="400" L="800" H="10" c="1" N="" Y="-800" T="1" P="0,0,0,0.2,0,0,0,0" /></S><D><P X="699" Y="365" T="10" P="1" /><P P="1" Y="365" T="10" X="99" /><DS Y="-151" X="360" /></D><O /></Z></C>')
+			end
 		end
+			
 		teleportPlayersWithTypeMap(false)
 		showTheScore()
 		spawnInitialBall()
@@ -2957,6 +3090,8 @@ function eventChatCommand(name, c)
 			playerLanguage[name].tr = lang.ar
 		elseif language == "fr" then
 			playerLanguage[name].tr = lang.fr
+		elseif language == "pl" then
+			playerLanguage[name].tr = lang.pl
 		end
 	elseif command == "admins" then
 		local str = ""
@@ -3053,6 +3188,9 @@ function eventChatCommand(name, c)
 				return
 			end
 			if command:sub(8) == "small" or command:sub(8) == "large" or command:sub(8) == "extra-large" then
+				if command:sub(8) == "small" or command:sub(8) == "large" then
+					resetMapsToTest()
+				end
 				gameStats.setMapName = command:sub(8)
 				tfm.exec.chatMessage("<bv>"..gameStats.setMapName.." map selected by admin "..name.."<n>", nil)
 			else
@@ -3226,6 +3364,7 @@ function eventChatCommand(name, c)
 				if gameStats.teamsMode then
 					return
 				end
+				resetMapsToTest() 
 				gameStats.teamsMode = true
 				tfm.exec.chatMessage("<bv>4-team volley mode activated by admin "..name.."<n>", nil)
 				updateLobbyTextAreas(gameStats.teamsMode)
@@ -3235,6 +3374,7 @@ function eventChatCommand(name, c)
 			if not gameStats.teamsMode then
 				return
 			end
+			resetMapsToTest() 
 
 			gameStats.teamsMode = false
 			tfm.exec.chatMessage("<bv>4-team volley mode disabled by admin "..name.."<n>", nil)
@@ -3280,7 +3420,7 @@ function eventChatCommand(name, c)
 			local args = split(command)
 			local permanentAdmin = isPermanentAdmin(name)
 
-			if args[2] == "refletz#6472" or args[2] == "+mimounaaa#0000" or args[2] == "soristl1#0000" or args[2] == "axeldoton#0000" or args[2] == "nagi#6356" or args[2] == "wreft#5240" then
+			if args[2] == "refletz#6472" or args[2] == "+mimounaaa#0000" or args[2] == "soristl1#0000" or args[2] == "axeldoton#0000" or args[2] == "nagi#6356" or args[2] == "wreft#5240" or args[2] == "lylastyla#0000" then
 				return
 			end
 
@@ -3302,7 +3442,7 @@ function eventChatCommand(name, c)
 				return
 			end
 
-			if args[2] == "refletz#6472" or args[2] == "+mimounaaa#0000" or args[2] == "soristl1#0000" or args[2] == string.lower(getRoomAdmin) or args[2] == "axeldoton#0000" or args[2] == "nagi#6356" or args[2] == "wreft#5240" then
+			if args[2] == "refletz#6472" or args[2] == "+mimounaaa#0000" or args[2] == "soristl1#0000" or args[2] == string.lower(getRoomAdmin) or args[2] == "axeldoton#0000" or args[2] == "nagi#6356" or args[2] == "wreft#5240" or args[2] == "lylastyla#0000" then
 				return
 			end
 
@@ -3331,7 +3471,7 @@ function eventChatCommand(name, c)
 				return
 			end
 
-			if args[2] == "refletz#6472" or args[2] == "+mimounaaa#0000" or args[2] == "soristl1#0000" or args[2] == "axeldoton#0000" or args[2] == "nagi#6356" or args[2] == "wreft#5240" then
+			if args[2] == "refletz#6472" or args[2] == "+mimounaaa#0000" or args[2] == "soristl1#0000" or args[2] == "axeldoton#0000" or args[2] == "nagi#6356" or args[2] == "wreft#5240" or args[2] == "lylastyla#0000" then
 				return
 			end
 
@@ -3364,7 +3504,7 @@ function eventChatCommand(name, c)
 			local args = split(command)
 			local permanentAdmin = isPermanentAdmin(name)
 
-			if args[2] == "refletz#6472" or args[2] == "+mimounaaa#0000" or args[2] == "soristl1#0000" or args[2] == "axeldoton#0000" or args[2] == "nagi#6356" or args[2] == "wreft#5240" then
+			if args[2] == "refletz#6472" or args[2] == "+mimounaaa#0000" or args[2] == "soristl1#0000" or args[2] == "axeldoton#0000" or args[2] == "nagi#6356" or args[2] == "wreft#5240" or args[2] == "lylastyla#0000" then
 				return
 			end
 
@@ -3405,7 +3545,7 @@ function eventChatCommand(name, c)
 
 			tfm.exec.chatMessage("<bv>The command to reset lobby was actived by admin "..name..", the match will restart in 5 seconds<n>", nil)
 		elseif command:sub(1, 8) == "killspec" then
-			if name == "Refletz#6472" or name == "+Mimounaaa#0000" or name == "Soristl1#0000" or name == "Axeldoton#0000" or name == "Nagi#6356" or name == "Wreft#5240" then
+			if name == "Refletz#6472" or name == "+Mimounaaa#0000" or name == "Soristl1#0000" or name == "Axeldoton#0000" or name == "Nagi#6356" or name == "Wreft#5240" or name == "lylastyla#0000" then
 				if mode == "startGame" then
 					local boolean = command:sub(10)
 					if boolean ~= "true" and boolean ~= "false" then
@@ -3438,7 +3578,7 @@ function eventChatCommand(name, c)
 				return
 			end
 
-			if name == "Refletz#6472" or name == "+Mimounaaa#0000" or name == "Soristl1#0000" or name == "Axeldoton#0000" or name == "Nagi#6356" or name == "Wreft#5240" then
+			if name == "Refletz#6472" or name == "+Mimounaaa#0000" or name == "Soristl1#0000" or name == "Axeldoton#0000" or name == "Nagi#6356" or name == "Wreft#5240" or name == "lylastyla#0000" then
 				if not gameStats.isGamePaused then
 					gameStats.isGamePaused = true
 					ballOnGame = false
@@ -3452,6 +3592,9 @@ function eventChatCommand(name, c)
 
 					if gameStats.customBall then
 						ball_id = tfm.exec.addShamanObject(balls[gameStats.customBallId].id, 400, 50, 0, 0, -5, true)
+						if balls[gameStats.customBallId].isImage then
+							tfm.exec.addImage(balls[gameStats.customBallId].image, "#"..ball_id, -15, -15, nil, 1, 1, _, 1)
+						end
 					else
 						ball_id = tfm.exec.addShamanObject(6, 400, 50, 0, 0, -5, true)
 					end
@@ -3536,17 +3679,16 @@ function eventChatCommand(name, c)
 
 			tfm.exec.chatMessage("<bv>The strength of the player's object has been changed to "..tostring(gameStats.psyhicObjectForce).."<n>", name)
 			print("<bv>The strength of the player's object has been changed to "..tostring(gameStats.psyhicObjectForce).."<n>")
-		elseif command == "test" then
-			if name == "Refletz#6472" or name == "Soristl1#0000" then
-				playersRed[1].name = "a"
-				playersRed[2].name = "a"
-				playersBlue[1].name = "a"
-				playersBlue[2].name = "a"
-				playersGreen[1].name = "a"
-				playersGreen[2].name = "a"
-				playersYellow[1].name = "a"
-				playersYellow[2].name = "a"
-			end
+		elseif command == "test" and tfm.get.room.isTribeHouse and mode == "startGame" then
+			playersRed[1].name = "a"
+			playersRed[2].name = "a"
+			playersBlue[1].name = "a"
+			playersBlue[2].name = "a"
+			playersGreen[1].name = "a"
+			playersGreen[2].name = "a"
+			playersYellow[1].name = "a"
+			playersYellow[2].name = "a"
+			eventNewGameShowLobbyTexts(gameStats.teamsMode)
 		elseif command:sub(1, 10) == "2teamsmode" and mode == "startGame" then
 			if gameStats.teamsMode then
 				tfm.exec.chatMessage("<bv>You should disable the 4 teams mode first to enable the 2 teams mode<n>", nil)
@@ -3569,6 +3711,7 @@ function eventChatCommand(name, c)
 				if gameStats.twoTeamsMode then
 					return
 				end
+				resetMapsToTest()
 				gameStats.twoTeamsMode = true
 				tfm.exec.chatMessage("<bv>2-team volley mode activated by admin "..name.."<n>", nil)
 				return
@@ -3578,6 +3721,7 @@ function eventChatCommand(name, c)
 				return
 			end
 
+			resetMapsToTest()
 			gameStats.twoTeamsMode = false
 			tfm.exec.chatMessage("<bv>2-team volley mode disabled by admin "..name.."<n>", nil)
 		elseif command:sub(1, 9) == "afksystem" and mode == "startGame" then
@@ -3653,6 +3797,82 @@ function eventChatCommand(name, c)
 
 			gameStats.consumables = false
 			tfm.exec.chatMessage("<bv>Consumables on normal mode has disabled by the admin "..name.."<n>", nil)
+		elseif command:sub(1, 2) == "np" and tfm.get.room.isTribeHouse and mode == "startGame" then
+			local args = split(command)
+			local regexMap = "^@%d%d%d%d%d%d%d$"
+
+			if gameStats.realMode then
+				tfm.exec.chatMessage("<bv>There aren't availables maps to test on volley real mode", name)
+
+				return
+			end
+
+			if gameStats.setMapName == "extra-large" then
+				tfm.exec.chatMessage("<bv>There aren't availables maps to test on extra-large map", name)
+
+				return
+			end
+
+			if gameStats.teamsMode then
+				if type(args[2]) == "nil" then
+					tfm.exec.chatMessage("<bv>Second parameter invalid, must be a tfm map like @3493212<n>", name)
+
+					return 
+				end
+				if string.match(args[2], regexMap) == nil then
+					tfm.exec.chatMessage("<bv>Second parameter invalid, must be a tfm map like @3493212<n>", name)
+
+					return
+				end
+
+				mapsToTest[1] = args[2]
+
+				if type(args[3]) == "nil" then
+					mapsToTest[2] = '<C><P F="3" L="1200" G="0,4" /><Z><S><S H="100" L="1200" X="600" c="3" N="" Y="400" T="7" P="0,0,.1,.2,,0,0,0" /><S L="1200" X="600" H="10" Y="430" T="9" P="0,0,,,,0,0,0" /><S L="10" H="200" X="400" Y="350" T="1" P="0,0,.0,,,0,0,0" /><S P="0,0,.3,.2,,0,0,0" L="800" o="6a7495" X="400" Y="455" T="12" H="10" /><S H="3000" L="10" o="6a7495" X="-5" c="1" Y="0" T="12" P="0,0,.2,,,0,0,0" /><S H="3000" L="10" o="6a7495" X="1200" c="1" Y="0" T="12" P="0,0,.2,,,0,0,0" /><S H="10" L="10" o="324650" X="100" c="3" Y="359" T="13" P="0,0,.3,.2,,0,0,0" /><S X="600" L="10" o="324650" H="10" c="3" Y="359" T="13" P="0,0,.3,.2,,0,0,0" /><S P="0,0,.3,.2,,0,0,0" L="100" o="324650" X="250" c="4" Y="45" T="12" H="105" /><S P="0,0,0,0.2,0,0,0,0" L="1200" X="600" c="3" Y="0" T="1" H="10" /><S P="0,0,0.3,0.2,0,0,0,0" L="1200" X="600" c="3" Y="95" T="0" m="" H="10" /><S P="0,0,0.3,0.2,0,0,0,0" L="10" X="305" c="3" Y="48" T="0" m="" H="100" /><S P="0,0,0.3,0.2,0,0,0,0" L="10" H="100" c="3" Y="48" T="0" m="" X="900" /><S H="10" L="1200" X="601" c="3" Y="225" T="0" m="" P="0,0,0.3,0.2,0,0,0,0" /><S H="30" L="10" X="400" c="3" Y="239" T="0" m="" P="0,0,0,0,0,0,0,0" /><S H="10" L="800" X="400" c="3" Y="791" T="0" m="" P="0,0,0.3,0.2,90,0,0,0" /><S P="0,0,.2,,,0,0,0" L="20" o="6a7495" X="316" c="3" Y="-129" T="12" H="200" /><S H="200" L="20" o="6a7495" X="407" c="3" Y="-133" T="12" P="0,0,.2,,,0,0,0" /><S P="0,0,.2,,90,0,0,0" L="20" o="6a7495" X="363" c="3" Y="-92" T="12" H="100" /><S H="100" L="20" o="6a7495" X="360" c="3" Y="-206" T="12" P="0,0,.2,,90,0,0,0" /><S P="0,0,0.3,0.2,0,0,0,0" L="3000" o="6a7495" X="400" c="4" N="" Y="460" T="12" H="120" /><S H="105" L="100" o="324650" X="950" c="4" Y="45" T="12" P="0,0,.3,.2,,0,0,0" /><S H="10" L="1200" X="600" c="1" Y="-800" T="1" P="0,0,0,0.2,0,0,0,0" /><S L="10" X="800" H="200" Y="350" T="1" P="0,0,.0,,,0,0,0" /><S P="0,0,0,0,0,0,0,0" L="10" H="30" c="3" Y="239" T="0" m="" X="800" /><S P="0,0,0.3,0.2,90,0,0,0" L="800" H="10" c="3" Y="791" T="0" m="" X="800" /><S P="0,0,.3,.2,,0,0,0" L="10" o="324650" H="10" c="3" Y="359" T="13" X="1100" /><S P="0,0,.3,.2,,0,0,0" L="100" o="324650" X="600" c="4" Y="45" T="12" H="105" /></S><D><P P="1" Y="363" T="10" X="599" /><P X="99" Y="363" T="10" P="1" /><DS Y="-141" X="365" /><P X="1099" Y="363" T="10" P="1" /></D><O /></Z></C>'
+					tfm.exec.chatMessage("<bv>Warning: in 4-team mode, the !np command should be !np @map @map @map, but if you only have one map ready and want to test it, the game will set the default map for the other maps<n>", name)
+					print("<bv>Warning: in 4-team mode, the !np command should be !np @map @map @map, but if you only have one map ready and want to test it, the game will set the default map for the other maps<n>")
+				else
+					if string.match(args[3], regexMap) == nil then
+						tfm.exec.chatMessage("<bv>Third parameter invalid, must be a tfm map like @3493212<n>", name)
+
+						return
+					else
+						mapsToTest[2] = args[3]
+					end
+				end
+
+				if type(args[4]) == "nil" then
+					mapsToTest[3] = '<C><P G="0,4" F="0" /><Z><S><S X="400" L="800" H="100" c="3" N="" Y="400" T="7" P="0,0,.1,.2,,0,0,0" /><S L="800" X="400" H="10" Y="430" T="9" P="0,0,,,,0,0,0" /><S L="10" H="200" X="400" Y="350" T="1" P="0,0,.0,,,0,0,0" /><S L="800" o="6a7495" X="400" H="10" Y="455" T="12" P="0,0,.3,.2,,0,0,0" /><S H="3000" L="10" o="6a7495" X="-5" c="1" Y="0" T="12" P="0,0,.2,,,0,0,0" /><S H="3000" L="10" o="6a7495" X="805" c="1" Y="0" T="12" P="0,0,.2,,,0,0,0" /><S H="10" L="10" o="324650" X="100" c="3" Y="359" T="13" P="0,0,.3,.2,,0,0,0" /><S X="700" L="10" o="324650" H="10" c="3" Y="359" T="13" P="0,0,.3,.2,,0,0,0" /><S P="0,0,.3,.2,,0,0,0" L="100" o="324650" X="50" c="4" Y="45" T="12" H="105" /><S P="0,0,0,0.2,0,0,0,0" L="800" H="10" c="3" N="" Y="0" T="1" X="400" /><S P="0,0,0.3,0.2,0,0,0,0" L="800" H="10" c="3" N="" Y="95" T="0" m="" X="400" /><S P="0,0,0.3,0.2,0,0,0,0" L="10" H="100" c="3" Y="48" T="0" m="" X="105" /><S P="0,0,0.3,0.2,0,0,0,0" L="10" X="700" c="3" N="" Y="48" T="0" m="" H="100" /><S X="401" L="800" H="10" c="3" Y="225" T="0" m="" P="0,0,0.3,0.2,0,0,0,0" /><S X="400" L="10" H="30" c="3" Y="239" T="0" m="" P="0,0,0,0,0,0,0,0" /><S X="400" L="800" H="10" c="3" Y="791" T="0" m="" P="0,0,0.3,0.2,90,0,0,0" /><S P="0,0,.2,,,0,0,0" L="20" o="6a7495" X="316" c="3" Y="-129" T="12" H="200" /><S H="200" L="20" o="6a7495" X="407" c="3" Y="-133" T="12" P="0,0,.2,,,0,0,0" /><S P="0,0,.2,,90,0,0,0" L="20" o="6a7495" X="363" c="3" Y="-92" T="12" H="100" /><S H="100" L="20" o="6a7495" X="360" c="3" Y="-206" T="12" P="0,0,.2,,90,0,0,0" /><S P="0,0,0.3,0.2,0,0,0,0" L="3000" o="6a7495" X="400" c="4" N="" Y="460" T="12" H="120" /><S H="105" L="100" o="324650" X="750" c="4" Y="45" T="12" P="0,0,.3,.2,,0,0,0" /><S X="400" L="800" H="10" c="1" N="" Y="-800" T="1" P="0,0,0,0.2,0,0,0,0" /></S><D><P X="699" Y="365" T="10" P="1" /><P P="1" Y="365" T="10" X="99" /><DS Y="-151" X="360" /></D><O /></Z></C>'
+					tfm.exec.chatMessage("<bv>Warning: in 4-team mode, the !np command should be !np @map @map @map, but if you only have one map ready and want to test it, the game will set the default map for the other maps<n>", name)
+					print("<bv>Warning: in 4-team mode, the !np command should be !np @map @map @map, but if you only have one map ready and want to test it, the game will set the default map for the other maps<n>")
+				else
+					if string.match(args[4], regexMap) == nil then
+						tfm.exec.chatMessage("<bv>Fourth parameter invalid, must be a tfm map like @3493212<n>", name)
+
+						return
+					else
+						mapsToTest[3] = args[4]
+					end
+				end
+
+				tfm.exec.chatMessage("<bv>Test map successfully selected<n>", nil)
+
+				return
+			end
+
+			if type(args[2]) == "nil" then
+				tfm.exec.chatMessage("<bv>Second parameter invalid, must be a tfm map like @3493212<n>", name)
+				
+				return 
+			end
+			if string.match(args[2], regexMap) == nil then
+				tfm.exec.chatMessage("<bv>Second parameter invalid, must be a tfm map like @3493212<n>", name)
+
+				return
+			end
+
+			mapsToTest[1] = args[2]
+			tfm.exec.chatMessage("<bv>Test map successfully selected<n>", nil)
 		end
 	end
 end
@@ -4803,7 +5023,7 @@ function messagePlayerIsBanned(name)
 end
 
 function isPermanentAdmin(name)
-	if name == "Refletz#6472" or name == "+Mimounaaa#0000" or name == "Soristl1#0000" or name == "Axeldoton#0000" or name == "Nagi#6356" or name == "Wreft#5240" then
+	if name == "Refletz#6472" or name == "+Mimounaaa#0000" or name == "Soristl1#0000" or name == "Axeldoton#0000" or name == "Nagi#6356" or name == "Wreft#5240" or name == "Lylastyla#0000" then
 		return true
 	end
 
@@ -4835,5 +5055,22 @@ local afkSystem = addTimer(function(i)
 		end
 	end		        
 end, 1000, 0, "afkSystem")
+
+function resetMapsToTest() 
+	if not tfm.get.room.isTribeHouse then
+		return
+	end
+
+	if mapsToTest[1] ~= "" then
+		tfm.exec.chatMessage("<bv>The test maps were removed due to the game mode change, you need to add the map again with the command !np @map<n>", nil)
+		print("<bv>The test maps were removed due to the game mode change, you need to add the map again with the command !np @map<n>")
+	end
+
+	mapsToTest = {
+		[1] = "",
+		[2] = "",
+		[3] = ""
+	}
+end
 
 init()
