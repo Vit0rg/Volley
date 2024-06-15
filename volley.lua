@@ -330,6 +330,7 @@ tfm.exec.setRoomMaxPlayers(16)
 system.disableChatCommandDisplay (nil, true)
 tfm.exec.disableMortCommand(true)
 
+local disableListSync = true
 local playerCanTransform = {}
 local playerForce = {}
 local playerBan = {}
@@ -3651,7 +3652,7 @@ function eventChatCommand(name, c)
 			local syncLatency = tfm.get.room.playerList[playerSync].averageLatency
 
 			tfm.exec.chatMessage("<bv>Set new player sync: "..playerSync.."<n>", nil)
-		elseif command == "listsync" then
+		elseif command == "listsync" and not disableListSync then
 			local permanentAdmin = isPermanentAdmin(name)
 
 			if not permanentAdmin then
@@ -3661,7 +3662,7 @@ function eventChatCommand(name, c)
 			local str = "Sync list: <br><br>"
 
 			for name1, data in pairs(tfm.get.room.playerList) do
-				str = ""..str..""..name1.." - "..tfm.get.room.playerList[name1].averageLatency.."<br>"
+				str = ""..str..""..name1.."<br>"
 			end
 
 			ui.addPopup(0, 0, str, name, 300, 50, 300, true)
