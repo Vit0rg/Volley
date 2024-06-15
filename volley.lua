@@ -3617,7 +3617,7 @@ function eventChatCommand(name, c)
 				end
 
 				tfm.exec.setPlayerSync(newPlayerSync)
-				tfm.exec.chatMessage("<bv>Set new player sync: "..newPlayerSync.." with "..lowestSync.." latency<n>", nil)
+				tfm.exec.chatMessage("<bv>Set new player sync: "..newPlayerSync.."<n>", nil)
 			else
 				local permanentAdmin = isPermanentAdmin(name)
 
@@ -3639,7 +3639,7 @@ function eventChatCommand(name, c)
 				if playerOnRoom then
 					tfm.exec.setPlayerSync(playerName)
 
-					tfm.exec.chatMessage("<bv>Set new player sync: "..playerName.." with "..playerSync.." latency<n>", nil)
+					tfm.exec.chatMessage("<bv>Set new player sync: "..playerName.."<n>", nil)
 				end
 
 			end
@@ -3650,7 +3650,7 @@ function eventChatCommand(name, c)
 			local playerSync = tfm.exec.getPlayerSync()
 			local syncLatency = tfm.get.room.playerList[playerSync].averageLatency
 
-			tfm.exec.chatMessage("<bv>Set new player sync: "..playerSync.." with "..syncLatency.." latency<n>", nil)
+			tfm.exec.chatMessage("<bv>Set new player sync: "..playerSync.."<n>", nil)
 		elseif command == "listsync" then
 			local permanentAdmin = isPermanentAdmin(name)
 
