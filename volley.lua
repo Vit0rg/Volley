@@ -170,7 +170,7 @@ local admins = {
     ["Lylastyla#0000"] = true
 }
 
-local gameVersion = "V1.9.5"
+local gameVersion = "V1.9.6"
 
 local trad = ""
 local lang = {}
@@ -180,14 +180,14 @@ lang.br = {
 	welcomeMessage2 = "<j>Digite !join para entrar na partida<n>",
 	msgRedWinner = "O time vermelho venceu!",
 	msgBlueWinner = "O time azul venceu!",
-	menuOpenText = "<br><br><a href='event:howToPlay'>Como jogar</a><br><a href='event:realmode'>Vôlei Modo Real</a><br><a href='event:credits'>Creditos</a><br>",
+	menuOpenText = "<br><br><a href='event:howToPlay'>Como jogar</a><br><a href='event:realmode'>Vôlei Modo Real</a><br><a href='event:ranking'>Ranking</a><br><a href='event:credits'>Creditos</a><br>",
 	closeUIText = "<p align='center'><font size='12px'><a href='event:closeWindow'>Fechar",
 	helpTitle = "<p align='center'><font size='15px'>Como jogar Volley ("..gameVersion..")",
 	helpText = { 
 		[1] = { text = "<br><br><p align='left'><font size='12px'>O objetivo do vôlei é evitar que a bola caia no chão de sua quadra, e para evitar isso, você pode transformar seu rato em um objeto circular apertando a tecla <j>[ Espaço ]<n>, o rato se destransforma 3 segundos depois. A equipe que fazer 7 pontos primeiro vence!<br>Criar uma sala com admin: <bv><a href='event:roomadmin'>/sala *#volley0SeuNome#0000</a><n><br><br>Comandos (<rose>*<n> = durante a partida | <vp>*<n> = comandos do admin):<br><br><j>!lang<n> <ch>"..languages.."<n> - Para modificar o idioma do minigame<br><j>!join<n> <rose>*<n> - Para entrar na partida <br><j>!leave<n> <rose>*<n> - Para sair da partida e ir para a área de espectador<br><j>!resettimer<n> <vp>*<n> - Resetar o tempo no lobby antes de começar a partida<br><j>!setmap<n> <ch>[small/large/extra-large]<n> <vp>*<n> - Para selecionar um mapa em especifico antes de começar uma partida<br><j>!pw<n> <ch>[senha]<n> <vp>*<n> - Colocar uma senha na sala"}, 
 		[2] = { text = "<p align='left'><font size='12px'><br><br>Comandos (<rose>*<n> = durante a partida | <vp>*<n> = comandos do admin):<br><br><j>!winscore<n> <ch>[número]<n> <rose>*<n> <vp>*<n> - Mudar o numero máximo de pontos para vencer uma partida<br><j>!customMap<n> <ch>[true ou false]<n> <ch>[index do mapa]<n> <vp>*<n> - Selecionar um mapa costumizado<br><j>!maps<n> - Mostra a lista de mapas<br><j>!votemap<n> <ch>[numero]<n> - Votar em um mapa costumizado para a próxima partida<br><j>!setscore<n> <ch>[nome do jogador]<n> <ch>[numero]<n> <rose>*<n> <vp>*<n> - Troca a score do jogador pelo numero<br><j>!setscore<n> <ch>[nome do jogador]<n> <rose>*<n> <vp>*<n> - Adiciona +1 a score do jogador<br><j>!setscore<n> <ch>[red ou blue]<n> <ch>[numero]<n> <rose>*<n> <vp>*<n> - Troca a score do time pelo numero<br><j>!4teamsmode<n> <ch>[true ou false]<n> <vp>*<n> - Seleciona o modo de 4 times do Volley<br>"},
 		[3] = { text = "<p align='left'><font size='12px'><br><br>Comandos (<rose>*<n> = durante a partida | <vp>*<n> = comandos do admin):<br><br><j>!setmaxplayers <ch>[6 - 20]<n> <vp>*<n> - Seleciona o máximo de jogadores para entrar na sala<br><j>!balls<n> - Mostra a lista de bolas costumizadas do #Volley<br><j>!customball<n> <ch>[Número]<n> <vp>*<n> - Seleciona uma bola costumizável para a próxima partida<br><j>!lobby<n> <rose>*<n> <vp>*<n> - Encerra uma partida que estava em andamento e retorna para o lobby<br><j>!setplayerforce<n> <ch>[Número: 0 - 1.05]<n> <vp>*<n> - Seleciona a força para o objeto esférico do rato<br><j>!2teamsmode<n> <ch>[true ou false]<n> <vp>*<n> - Seleciona o modo especial de 2 times<br><j>!sync<n> <vp>*<n> - O sistema escolhe o jogador com a menor latência para sincronizar a sala<br><j>!synctfm<n> <vp>*<n> - O sistema do TFM escolhe o jogador com a menor latência para sincronizar"},
-		[4] = { text = "<p align='left'><font size='12px'><br><br>Comandos (<rose>*<n> = durante a partida | <vp>*<n> = comandos do admin):<br><br><j>!skiptimer<n> <vp>*<n> - Inicia a partida o mais rápido possível<br><j>!afksystem<n> <ch>[true ou false]<n> <vp>*<n> - Ativa ou desativa o sistema de AFK<n><br><j>!settimeafk<n> <ch>[segundos]<n> <vp>*<n> - Seleciona o tempo de afk em segundos<br><j>!realmode<n> <ch>[true ou false]<n> <vp>*<n> - Seleciona Volley Real Mode<br><j>!twoballs<n> <ch>[true ou false]<n> <vp>*<n> - Ativa duas bolas em jogo<br><j>!consumables<n> <ch>[true ou false]<n> <vp>*<n> - Escolha um consumível com as teclas (7, 8, 9 e 0) e ative eles apertando M no modo normal<br><j>!settings<n> <vp>*<n> - Comando para fazer configurações globais na sala" }
+		[4] = { text = "<p align='left'><font size='12px'><br><br>Comandos (<rose>*<n> = durante a partida | <vp>*<n> = comandos do admin):<br><br><j>!skiptimer<n> <vp>*<n> - Inicia a partida o mais rápido possível<br><j>!afksystem<n> <ch>[true ou false]<n> <vp>*<n> - Ativa ou desativa o sistema de AFK<n><br><j>!settimeafk<n> <ch>[segundos]<n> <vp>*<n> - Seleciona o tempo de afk em segundos<br><j>!realmode<n> <ch>[true ou false]<n> <vp>*<n> - Seleciona Volley Real Mode<br><j>!twoballs<n> <ch>[true ou false]<n> <vp>*<n> - Ativa duas bolas em jogo<br><j>!consumables<n> <ch>[true ou false]<n> <vp>*<n> - Escolha um consumível com as teclas (7, 8, 9 e 0) e ative eles apertando M no modo normal<br><j>!settings<n> <vp>*<n> - Comando para fazer configurações globais na sala<br><j>!setsync<n> <vp>*<n> - Seleciona a sync para o jogador" }
 	},
 	creditsTitle = "<p align='center'><font size='15px'>Créditos (Volley)",
 	creditsText = "<br><br><p align='left'><font size='12px'>O jogo foi desenvolvido por <j>Refletz#6472 (Soristl)<n><br><br>Tradução BR/EN: <j>Refletz#6472 (Soristl)<n><br><br>Tradução AR: <j>Ionut_eric_pro#1679<n><br><br>Tradução FR: <j>Rowed#4415<n><br><br>Tradução PL: <j>Prestige#5656<n>",
@@ -206,14 +206,14 @@ lang.en = {
 	welcomeMessage2 = "<j>Type !join to join on the match<n>",
 	msgRedWinner = "Team red won!",
 	msgBlueWinner = "Team blue won!",
-	menuOpenText = "<br><br><a href='event:howToPlay'>How to play</a><br><a href='event:realmode'>Volley Real Mode</a><br><a href='event:credits'>Credits</a><br>",
+	menuOpenText = "<br><br><a href='event:howToPlay'>How to play</a><br><a href='event:realmode'>Volley Real Mode</a><br><a href='event:ranking'>Ranking</a><br><a href='event:credits'>Credits</a><br>",
 	closeUIText = "<p align='center'><font size='12px'><a href='event:closeWindow'>Close",
 	helpTitle = "<p align='center'><font size='15px'>How to play Volley ("..gameVersion..")",
 	helpText = { 
 		[1] = { text = "<br><br><p align='left'><font size='12px'>The objective of volleyball is to prevent the ball from falling to the floor of your court, and to avoid this, you can turn your mouse into a circular object by pressing the <j>[ Space ]<n> key, the mouse untransforms 3 seconds later. The team that scores 7 points first wins!<br>Create a room with admin: <bv><a href='event:roomadmin'>/room *#volley0YourName#0000</a><n><br><br>Commands (<rose>*<n> = during the match | <vp>*<n> = admin's commands):<br><br><j>!lang<n> <ch>"..languages.."<n> - To modify the minigame language<br><j>!join<n> <rose>*<n> - To join the match<br><j>!leave<n> <rose>*<n> - To leave the match and go to the spectator area<br><j>!resettimer<n> <vp>*<n> - Reset time in the lobby before starting the match<br><j>!setmap<n> <ch>[small/large/extra-large]<n> <vp>*<n> - To select a specific map before starting a match<br><j>!pw<n> <ch>[password]<n> <vp>*<n> - Put a password in the room"},
 		[2] = { text = "<p align='left'><font size='12px'><br><br>Commands (<rose>*<n> = during the match | <vp>*<n> = admin's commands):<br><br><j>!winscore<n> <ch>[number]<n> <rose>*<n> <vp>*<n> - Change the maximum number of points to win a match<br><j>!customMap<n> <ch>[true or false]<n> <ch>[map index]<n> <vp>*<n> - Select a custom map<br><j>!maps<n> - Shows the list of maps<br><j>!votemap<n> <ch>[number]<n> - Vote for a custom map for the next match<br><j>!setscore<n> <ch>[Player name]<n> <ch>[number]<n> <rose>*<n> <vp>*<n> - Swap the player's score by number<br><j>!setscore<n> <ch>[Player name]<n> <rose>*<n> <vp>*<n> - Adds +1 to player's score<br><j>!setscore<n> <ch>[red or blue]<n> <ch>[number]<n> <rose>*<n> <vp>*<n> - Swap the team's score for the number<br><j>!4teamsmode<n> <ch>[true or false]<n> <vp>*<n> - Select 4-team Volley mode"},
 		[3] = { text = "<p align='left'><font size='12px'><br><br>Commands (<rose>*<n> = during the match | <vp>*<n> = admin's commands)<br><br><j>!setmaxplayers <ch>[6 - 20]<n> <vp>*<n> - Selects the maximum number of players to enter the room<br><j>!balls<n> - Shows the list of #Volley custom balls<br><j>!customball<n> <ch>[Number]<n> <vp>*<n> - Select a customizable ball for the next match<br><j>!lobby<n> <rose>*<n> <vp>*<n> - End a match that was in progress and return to the lobby<br><j>!setplayerforce<n> <ch>[Number: 0 - 1.05]<n> <vp>*<n> - Selects the strength for the spherical mouse object<br><j>!2teamsmode<n> <ch>[true or false]<n> <vp>*<n> - Selects the special 2-team mode<br><j>!sync<n> <vp>*<n> - The system chooses the player with the lowest latency to synchronize the room<br><j>!synctfm<n> <vp>*<n> - The TFM system chooses the player with the lowest latency to synchronize the room"},
-		[4] = { text = "<p align='left'><font size='12px'><br><br>Commands (<rose>*<n> = during the match | <vp>*<n> = admin's commands)<br><br><j>!skiptimer<n> <vp>*<n> - Start the game as quickly as possible<br><j>!afksystem<n> <ch>[true or false]<n> <vp>*<n> - Enables or disables the AFK system<n><br><j>!settimeafk<n> <ch>[seconds]<n> <vp>*<n> - Select the afk time in seconds<br><j>!realmode<n> <ch>[true or false]<n> <vp>*<n> - Selects Volley Real Mode<br><j>!twoballs<n> <ch>[true or false] <n> <vp>*<n> - Activates two balls in game<br><j>!consumables<n> <ch>[true or false]<n> <vp>*<n> - Choose a consumable with the keys (7, 8, 9 and 0) and activate them by pressing M in normal mode<br><j>!settings<n> <vp>*<n> - Command to make global settings in the room"}
+		[4] = { text = "<p align='left'><font size='12px'><br><br>Commands (<rose>*<n> = during the match | <vp>*<n> = admin's commands)<br><br><j>!skiptimer<n> <vp>*<n> - Start the game as quickly as possible<br><j>!afksystem<n> <ch>[true or false]<n> <vp>*<n> - Enables or disables the AFK system<n><br><j>!settimeafk<n> <ch>[seconds]<n> <vp>*<n> - Select the afk time in seconds<br><j>!realmode<n> <ch>[true or false]<n> <vp>*<n> - Selects Volley Real Mode<br><j>!twoballs<n> <ch>[true or false] <n> <vp>*<n> - Activates two balls in game<br><j>!consumables<n> <ch>[true or false]<n> <vp>*<n> - Choose a consumable with the keys (7, 8, 9 and 0) and activate them by pressing M in normal mode<br><j>!settings<n> <vp>*<n> - Command to make global settings in the room<br><j>!setsync<n> <vp>*<n> - Selects sync for the player"}
 	},
 	creditsTitle = "<p align='center'><font size='15px'>Credits (Volley)",
 	creditsText = "<br><br><p align='left'><font size='12px'>The game was developed by <j>Refletz#6472 (Soristl)<n><br><br>BR/EN Translation: <j>Refletz#6472 (Soristl)<n><br><br>AR Translation: <j>Ionut_eric_pro#1679<n><br><br>FR Translation: <j>Rowed#4415<n><br><br>PL Translation: <j>Prestige#5656<n>",
@@ -232,14 +232,14 @@ lang.ar = {
 	welcomeMessage2 = "<j>اكتب  !join للانضمام إلى المباراة.<n>",
 	msgRedWinner = "فاز الفريق الأحمر!",
 	msgBlueWinner = "فاز الفريق الأزرق!",
-	menuOpenText = "<br><br><a href='event:howToPlay'>كيفية اللعب</a><br><a href='event:realmode'>وضع الكرة الطائرة الحقيقي</a><br><a href='event:credits'>شكر خاص</a><br>",
+	menuOpenText = "<br><br><a href='event:howToPlay'>كيفية اللعب</a><br><a href='event:realmode'>وضع الكرة الطائرة الحقيقي</a><br><a href='event:ranking'>التصنيف</a><br><a href='event:credits'>شكر خاص</a><br>",
 	closeUIText = "<p align='center'><font size='12px'><a href='event:closeWindow'>إغلاق",
 	helpTitle = "<p align='center'><font size='15px'>كيفية لعب الكرة الطائرة ("..gameVersion..")",
 	helpText = { 
 		[1] = { text = "<br><br><p align='right'><font size='12px'>هدف كرة الطائرة هو منع الكرة من السقوط إلى أرضية ملعب فريقك، ولتحقيق هذا، يمكنك تحويل الفأر الخاص بك إلى كائن دائري عن طريق الضغط على <j>[ مسطرة ]<n> مفتاح, ويعود الفأر إلى شكله الأصلي بعد 3 ثوانٍ. الفريق الذي يسجل 7 نقاط أولاً يفوز!<br>إنشاء غرفة بخاصيات المشرف: <bv><a href='event:roomadmin'>/room *#volley0إسمك#0000</a><n><br><br>الأوامر (<rose>*<n> = أثناء المباراة | <vp>*<n> = أوامر المشرف):<br><br><j>!lang<n> <ch>"..languages.."<n> - لتعديل لغة النمط<br><j>!join<n> <rose>*<n> - للإنضمام للمباراة<br><j>!leave<n> <rose>*<n> - لمغادرة المباراة والذهاب إلى منطقة المتفرجين<br><j>!resettimer<n> <vp>*<n> - قم بإعادة ضبط الوقت في الردهة قبل بدء المباراة<br><j>!setmap<n> <ch>[small/large/extra-large]<n> <vp>*<n> - لتحديد خريطة معينة قبل بدء المباراة<br><j>!pw<n> <ch>[password]<n> <vp>*<n> - ضع كلمة مرور في الغرفة"},
 		[2] = { text = "<p align='right'><font size='12px'><br><br>الأوامر (<rose>*<n> = أثناء المباراة | <vp>*<n> = أوامر المشرف):<br><br><j>!winscore<n> <ch>[number]<n> <rose>*<n> <vp>*<n> - تغيير الحد الأقصى لعدد النقاط للفوز بالمباراة<br><j>!customMap<n> <ch>[true or false]<n> <ch>[map index]<n> <vp>*<n> - اختر ماب مخصص<br><j>!maps<n> - تظهر قائمة الخرائط<br><j>!votemap<n> <ch>[number]<n> - التصويت للحصول على ماب مخصص للمباراة القادمة<br><j>!setscore<n> <ch>[Player name]<n> <ch>[number]<n> <rose>*<n> <vp>*<n> - قم بتبديل نتيجة اللاعب بالرقم<br><j>!setscore<n> <ch>[Player name]<n> <rose>*<n> <vp>*<n> - يضيف +1 إلى نتيجة اللاعب<br><j>!setscore<n> <ch>[red or blue]<n> <ch>[number]<n> <rose>*<n> <vp>*<n> - قم بتبديل نتيجة الفريق بالرقم<br><j>!4teamsmode<n> <ch>[true or false]<n> <vp>*<n> - حدد وضع الكرة الطائرة المكون من 4 فرق"},
 		[3] = { text = "<p align='right'><font size='12px'><br><br>الأوامر (<rose>*<n> = أثناء المباراة | <vp>*<n> = أوامر المشرف)<br><br><j>!setmaxplayers <ch>[6 - 20]<n> <vp>*<n> - يحدد الحد الأقصى لعدد اللاعبين لدخول الغرفة<br><j>!balls<n> - تظهر قائمة الكرات الخاصة بالنمط <br><j>!customball<n> <ch>[Number]<n> <vp>*<n> - حدد كرة خاصة للمباراة القادمة<br><j>!lobby<n> <rose>*<n> <vp>*<n> - إنهاء المباراة الجارية والعودة إلى الردهة<br><j>!setplayerforce<n> <ch>[Number: 0 - 1.05]<n> <vp>*<n> - تحديد قوة شكل الفأر الكروي<br><j>!2teamsmode<n> <ch>[true or false]<n> <vp>*<n> - يختار الوضع الخاص المكون من فريقين<br><j>!sync<n> <vp>*<n> - يختار النظام اللاعب ذو زمن الاستجابة الأقل لمزامنة الغرفة<br><j>!synctfm<n> <vp>*<n> - يقام نظام TFM باختيار اللاعب صاحب أقل زمن استجابة لمزامنة الغرفة."},
-		[4] = { text = "<p align='right'><font size='12px'><br><br>الأوامر (<rose>*<n> = أثناء المباراة | <vp>*<n> = أوامر المشرف)<br><br><j>!skiptimer<n> <vp>*<n> - يتخطى وقت الانتظار لبدء اللعبة إلى 5 ثواني <br><j>!afksystem<n> <ch>[true or false]<n> <vp>*<n> - تمكين أو تعطيل نظام AFK<n><br><j>!settimeafk<n> <ch>[true or false]<n> <vp>*<n> - حدد الوقت AFK بالثواني <br><j>!realmode<n> <ch>[true or false خطأ]<n> <vp>*<n> - تحديد الوضع الحقيقي للكرة الطائرة<br><j>!twoballs<n> <ch>[true or false] <n> <vp>*<n> - ينشط كرتين في اللعبة<br><j>!consumables<n> <ch>[true or false]<n> <vp>*<n> - اختر عنصرًا مستهلكًا به المفاتيح (7 و 8 و 9 و 0) وتفعيلها بالضغط على M في الوضع العادي<br><j>!settings<n> <vp>*<n> - الأمر بإجراء الإعدادات العامة في الغرفة"}
+		[4] = { text = "<p align='right'><font size='12px'><br><br>الأوامر (<rose>*<n> = أثناء المباراة | <vp>*<n> = أوامر المشرف)<br><br><j>!skiptimer<n> <vp>*<n> - يتخطى وقت الانتظار لبدء اللعبة إلى 5 ثواني <br><j>!afksystem<n> <ch>[true or false]<n> <vp>*<n> - تمكين أو تعطيل نظام AFK<n><br><j>!settimeafk<n> <ch>[true or false]<n> <vp>*<n> - حدد الوقت AFK بالثواني <br><j>!realmode<n> <ch>[true or false خطأ]<n> <vp>*<n> - تحديد الوضع الحقيقي للكرة الطائرة<br><j>!twoballs<n> <ch>[true or false] <n> <vp>*<n> - ينشط كرتين في اللعبة<br><j>!consumables<n> <ch>[true or false]<n> <vp>*<n> - اختر عنصرًا مستهلكًا به المفاتيح (7 و 8 و 9 و 0) وتفعيلها بالضغط على M في الوضع العادي<br><j>!settings<n> <vp>*<n> - الأمر بإجراء الإعدادات العامة في الغرفة<br><j>!setsync<n> <vp>*<n> - يحدد المزامنة للمشغل"}
 	},
 	creditsTitle = "<p align='center'><font size='15px'>شكر خاص (الكرة الطائرة)",
 	creditsText = "<br><br><p align='right'><font size='12px'>تم تطوير اللعبة من طرف <j>Refletz#6472 (Soristl)<n><br><br>ترجمة BR/EN: <j>Refletz#6472 (Soristl)<n><br><br>ترجمة AR: <j>Ionut_eric_pro#1679<n><br><br>ترجمة FR: <j>Rowed#4415<n><br><br>ترجمة PL: <j>Prestige#5656<n>",
@@ -259,14 +259,14 @@ lang.fr = {
 	welcomeMessage2 = "<j>Tapez !join pour rejoindre la partie<n>",
 	msgRedWinner = "L'équipe rouge a gagné!",
 	msgBlueWinner = "L'équipe bleue a gagné!",
-	menuOpenText = "<br><br><a href='event:howToPlay'>Comment jouer</a><br><a href='event:realmode'>Mode Réel de Volley</a><br><a href='event:credits'>Crédits</a><br>",
+	menuOpenText = "<br><br><a href='event:howToPlay'>Comment jouer</a><br><a href='event:realmode'>Mode Réel de Volley</a><br><a href='event:ranking'>Ranking</a><br><a href='event:credits'>Crédits</a><br>",
 	closeUIText = "<p align='center'><font size='12px'><a href='event:closeWindow'>Fermer",
 	helpTitle = "<p align='center'><font size='15px'>Comment jouer au Volley ("..gameVersion..")",
 	helpText = { 
 		[1] = { text = "<br><br><p align='left'><font size='12px'>L'objectif du volley est d'éviter que la balle ne tombe sur le sol de votre côté du terrain, et pour éviter cela, vous pouvez transformer votre souris en un objet circulaire en pressant la touche <j><br>[ Espace ]<n>, la souris reprend sa forme originale 3 secondes plus tard. L'équipe qui marque 7 points en première gagne!<br>Créer un salon avec admin: <bv><a href='event:roomadmin'>/salon *#volley0VotreNom#0000</a><n><br><br>Commandes (<rose>*<n> = durant la partie | <vp>*<n> = commandes admin):<br><br><j>!lang<n> <ch>"..languages.."<n> - Pour modifier la langue du mini-jeu<br><j>!join<n> <rose>*<n> - Pour rejoindre la partie<br><j>!leave<n> <rose>*<n> - Pour quitter la partie et aller dans la zone des spectateurs<br><j>!resettimer<n> <vp>*<n> - Réinitialise le temps dans le lobby avant de commencer la partie<br><j>!setmap<n> <ch>[small/large/extra-large]<n> <vp>*<n> - Pour sélectionner une carte spécifique avant de commencer la partie"},
 		[2] = { text = "<p align='left'><font size='12px'><br><br>Commandes (<rose>*<n> = durant la partie | <vp>*<n> = commandes admin):<br><br><j>!pw<n> <ch>[password]<n> <vp>*<n> - Mettre un mot de passe dans le salon<br><j>!winscore<n> <ch>[nombre]<n> <rose>*<n> <vp>*<n> - Change le score à atteindre pour gagner la partie<br><j>!customMap<n> <ch>[true ou false]<n> <ch>[index de la carte]<n> <vp>*<n> - Sélectionne une carte customisée<br><j>!maps<n> - Affiche la liste de cartes<br><j>!votemap<n> <ch>[nombre]<n> - Vote pour une carte customisée pour la prochaine partie<br><j>!setscore<n> <ch>[Nom du joueur]<n> <ch>[nombre]<n> <rose>*<n> <vp>*<n> - Change le score du joueur par le nombre<br><j>!setscore<n> <ch>[Nom du joueur]<n> <rose>*<n> <vp>*<n> - Ajoute +1 au score du joueur<br><j>!setscore<n> <ch>[red ou blue]<n> <ch>[nombre]<n> <rose>*<n> <vp>*<n> - Change le score de l'équipe par le nombre<br><j>!4teamsmode<n> <ch>[true ou false]<n> <vp>*<n> - Sélectionne le mode de 4 équipes au Volley"},
 		[3] = { text = "<p align='left'><font size='12px'><br><br>Commandes (<rose>*<n> = durant la partie | <vp>*<n> = commandes admin)<br><br><j>!setmaxplayers <ch>[6 - 20]<n> <vp>*<n> - Sélectionne le nombre maximum de joueurs pouvant entrer dans le salon<br><j>!balls<n> - Affiche la liste des balles customisées du #Volley<br><j>!customball<n> <ch>[Nombre]<n> <vp>*<n> - Sélectionne une balle customisée pour la prochaine partie<br><j>!lobby<n> <rose>*<n> <vp>*<n> - Termine un match en cours et retourne au lobby<br><j>!setplayerforce<n> <ch>[Nombre: 0 - 1.05]<n> <vp>*<n> - Sélectionne la force pour l'objet sphérique de la souris<br><j>!2teamsmode<n> <ch>[true ou false]<n> <vp>*<n> - Sélectionne le mode de jeu spécial à 2 équipes<br><j>!sync<n> <vp>*<n> - Le système choisit le joueur avec la latence la plus faible pour synchroniser le salon<br><j>!synctfm<n> <vp>*<n> - Le système TFM choisit le joueur avec la latence la plus faible pour synchroniser le salon"},
-		[4] = { text = "<p align='left'><font size='12px'><br><br>Commandes (<rose>*<n> = durant la partie | <vp>*<n> = commandes amdin)<br><br><j>!skiptimer<n> <vp>*<n> - Commence la partie le plus vite possible<br><j>!afksystem<n> <ch>[true ou false]<n> <vp>*<n> - Active ou désactive le système AFK<n><br><j>!settimeafk<n> <ch>[secondes]<n> <vp>*<n> - Sélectionne le temps d'afk en secondes<br><j>!realmode<n> <ch>[true ou false]<n> <vp>*<n> - Sélectionne le mode réel de volée<br><j>!twoballs<n> <ch>[true ou false] <n> <vp>*<n> - Active deux balles dans le jeu<br><j>!consumables<n> <ch>[true ou false]<n> <vp>*<n> - Choisissez un consommable avec les touches (7, 8, 9 et 0) et activez-les en appuyant sur M en mode normal<br><j>!settings<n> <vp>*<n> - Commande pour effectuer les réglages globaux dans la pièce"}
+		[4] = { text = "<p align='left'><font size='12px'><br><br>Commandes (<rose>*<n> = durant la partie | <vp>*<n> = commandes amdin)<br><br><j>!skiptimer<n> <vp>*<n> - Commence la partie le plus vite possible<br><j>!afksystem<n> <ch>[true ou false]<n> <vp>*<n> - Active ou désactive le système AFK<n><br><j>!settimeafk<n> <ch>[secondes]<n> <vp>*<n> - Sélectionne le temps d'afk en secondes<br><j>!realmode<n> <ch>[true ou false]<n> <vp>*<n> - Sélectionne le mode réel de volée<br><j>!twoballs<n> <ch>[true ou false] <n> <vp>*<n> - Active deux balles dans le jeu<br><j>!consumables<n> <ch>[true ou false]<n> <vp>*<n> - Choisissez un consommable avec les touches (7, 8, 9 et 0) et activez-les en appuyant sur M en mode normal<br><j>!settings<n> <vp>*<n> - Commande pour effectuer les réglages globaux dans la pièce<br><j>!setsync<n> <vp>*<n> - Sélectionne la synchronisation pour le lecteur"}
 	},
 	creditsTitle = "<p align='center'><font size='15px'>Crédits (Volley)",
 	creditsText = "<br><br><p align='left'><font size='12px'>Le jeu a été développé par <j>Refletz#6472 (Soristl)<n><br><br>BR/EN Translation: <j>Refletz#6472 (Soristl)<n><br><br>AR Translation: <j>Ionut_eric_pro#1679<n><br><br>FR Translation: <j>Rowed#4415<n><br><br>PL Translation: <j>Prestige#5656<n>",
@@ -285,14 +285,14 @@ lang.pl = {
 	welcomeMessage2 = "<j>Wpisz !join, by dołączyć do meczu<n>",
 	msgRedWinner = "Drużyna czerwonych wygrała!",
 	msgBlueWinner = "Drużyna niebieskich wygrała!",
-	menuOpenText = "<br><br><a href='event:howToPlay'>Jak grać</a><br><a href='event:realmode'>Volley Real Mode</a><br><a href='event:credits'>Credits</a><br>",
+	menuOpenText = "<br><br><a href='event:howToPlay'>Jak grać</a><br><a href='event:realmode'>Volley Real Mode</a><br><a href='event:ranking'>Ranking</a><br><a href='event:credits'>Credits</a><br>",
 	closeUIText = "<p align='center'><font size='12px'><a href='event:closeWindow'>Close",
 	helpTitle = "<p align='center'><font size='15px'>Jak grać w Volley ("..gameVersion..")",
 	helpText = { 
 		[1] = { text = "<br><br><p align='left'><font size='12px'>Celem siatkówki jest zapobieganie upadkowi piłki na podłogę twojego boiska, a aby to osiągnąć, możesz zamienić myszkę w okrągły obiekt, naciskając przycisk <j>[ Space ]<n> Mysz wraca do pierwotnego kształtu po 3 sekundach. Drużyna, która pierwsza zdobędzie 7 punktów, wygrywa!<br>Stwórz swój pokój: <bv><a href='event:roomadmin'>/room *#volley0YourName#0000</a><n><br><br>Komendy (<rose>*<n> = podczas meczu | <vp>*<n> = komendy administratora):<br><br><j>!lang<n> <ch>"..languages.."<n> - Aby zmodyfikować język minigry<br><j>!join<n> <rose>*<n> - Aby dołączyć do meczu<br><j>!leave<n> <rose>*<n> - Aby opuścić mecz i przejść do strefy oglądających<br><j>!resettimer<n> <vp>*<n> - Resetuje czas w lobby przed rozpoczęciem się meczu<br><j>!setmap<n> <ch>[small/large/extra-large]<n> <vp>*<n> - Aby wybrać określoną mapę przed rozpoczęciem meczu<br><j>!pw<n> <ch>[hasło]<n> <vp>*<n> - Ustaw hasło w pokoju"},
 		[2] = { text = "<p align='left'><font size='12px'><br><br>Komendy (<rose>*<n> = podczas meczu | <vp>*<n> = komendy administratora):<br><br><j>!winscore<n> <ch>[liczba]<n> <rose>*<n> <vp>*<n> - Zmień maksymalną ilość punktów by wygrać mecz<br><j>!customMap<n> <ch>[true or false]<n> <ch>[map index]<n> <vp>*<n> - Wybierz niestandardową mapę<br><j>!maps<n> - Pokazuje listę map<br><j>!votemap<n> <ch>[liczba]<n> - Głosowanie za niestadardową mapę w następnym meczu<br><j>!setscore<n> <ch>[nazwa gracza]<n> <ch>[liczba]<n> <rose>*<n> <vp>*<n> - Zmień wynik gracza na liczbę<br><j>!setscore<n> <ch>[nazwa gracza]<n> <rose>*<n> <vp>*<n> - Dodaje +1 do wyniku gracza<br><j>!setscore<n> <ch>[red or blue]<n> <ch>[liczba]<n> <rose>*<n> <vp>*<n> - Zmień wynik drużyny<br><j>!4teamsmode<n> <ch>[true or false]<n> <vp>*<n> - Wybierz 4-drużynowy Volley mode"},
 		[3] = { text = "<p align='left'><font size='12px'><br><br>Komendy (<rose>*<n> = podczas meczu | <vp>*<n> = komendy administratora)<br><br><j>!setmaxplayers <ch>[6 - 20]<n> <vp>*<n> - Wybierz maksymalną ilość graczy, którzy mogą dołączyć do pokoju<br><j>!balls<n> - Pokazuje listę niestandardowych piłek #Volley<br><j>!customball<n> <ch>[liczba]<n> <vp>*<n> - Wybierz niestandardową piłkę na następny mecz<br><j>!lobby<n> <rose>*<n> <vp>*<n> - Zakończ mecz, który był w trakcie i wróć do lobby<br><j>!setplayerforce<n> <ch>[Number: 0 - 1.05]<n> <vp>*<n> - Wybierz siłę dla okrągłego obiektu myszy<br><j>!2teamsmode<n> <ch>[true or false]<n> <vp>*<n> - Wybierz tryb specjalny dwóch drużyn<br><j>!sync<n> <vp>*<n> - System wybiera gracza z najniższym opóźnieniem, aby zsynchronizować pokój<br><j>!synctfm<n> <vp>*<n> - System TFM wybiera gracza z najniższym opóźnieniem, aby zsynchronizować pokój"},
-		[4] = { text = "<p align='left'><font size='12px'><br><br>Komendy (<rose>*<n> = podczas meczu | <vp>*<n> = komendy administratora)<br><br><j>!skiptimer<n> <vp>*<n> - Uruchom grę tak szybko, jak to możliwe<br><j>!afksystem<n> <ch>[true or false]<n> <vp>*<n> - Włącza lub wyłącza system AFK<n><br><j>!settimeafk<n> <ch>[seconds]<n> <vp>*<n> - Wybierz czas AFK w sekundach<br><j>!realmode<n> <ch>[true or false]<n> <vp>*<n> - Wybiera tryb prawdziwej siatkówki<br><j>!twoballs<n> <ch>[true or false] <n> <vp>*<n> - Aktywuje dwie kule w grze<br><j>!consumables<n> <ch>[true or false]<n> <vp>*<n> - Wybierz materiał eksploatacyjny za pomocą klawiszy (7, 8, 9 i 0) i aktywuj je naciskając M w trybie normalnym<br><j>!settings<n> <vp>*<n> - Polecenie wykonania globalnych ustawień w pomieszczeniu"}
+		[4] = { text = "<p align='left'><font size='12px'><br><br>Komendy (<rose>*<n> = podczas meczu | <vp>*<n> = komendy administratora)<br><br><j>!skiptimer<n> <vp>*<n> - Uruchom grę tak szybko, jak to możliwe<br><j>!afksystem<n> <ch>[true or false]<n> <vp>*<n> - Włącza lub wyłącza system AFK<n><br><j>!settimeafk<n> <ch>[seconds]<n> <vp>*<n> - Wybierz czas AFK w sekundach<br><j>!realmode<n> <ch>[true or false]<n> <vp>*<n> - Wybiera tryb prawdziwej siatkówki<br><j>!twoballs<n> <ch>[true or false] <n> <vp>*<n> - Aktywuje dwie kule w grze<br><j>!consumables<n> <ch>[true or false]<n> <vp>*<n> - Wybierz materiał eksploatacyjny za pomocą klawiszy (7, 8, 9 i 0) i aktywuj je naciskając M w trybie normalnym<br><j>!settings<n> <vp>*<n> - Polecenie wykonania globalnych ustawień w pomieszczeniu<br><j>!setsync<n> <vp>*<n> - Wybiera synchronizację odtwarzacza"}
 	},
 	creditsTitle = "<p align='center'><font size='15px'>Credits (Volley)",
 	creditsText = "<br><br><p align='left'><font size='12px'>Gra została stworzona przez <j>Refletz#6472 (Soristl)<n><br><br>BR/EN Tłumaczenie: <j>Refletz#6472 (Soristl)<n><br><br>AR Tłumaczenie: <j>Ionut_eric_pro#1679<n><br><br>FR Tłumaczenie: <j>Rowed#4415<n><br><br>PL Tłumaczenie: <j>Prestige#5656<n>",
@@ -818,10 +818,39 @@ local showOutOfCourtText = {}
 local globalSettings = { mode = 'Normal mode', twoBalls = false }
 local settings = {}
 local settingsMode = {}
+local playersNormalMode = {}
+local rankNormalMode = {}
+local playersOnGameHistoric = {}
+local pageNormalMode = {}
+local playerRankingMode = {}
+local playersFourTeamsMode = {}
+local rankFourTeamsMode = {}
+local pageFourTeamsMode = {}
+local rankTwoTeamsMode = {}
+local playersTwoTeamsMode = {}
+local pageTwoTeamsMode = {}
+local rankRealMode = {}
+local playersRealMode = {}
+local pageRealMode = {}
+local openRank = {}
+local countMatches = 0
+local playerLastMatchCount = {}
+local playerLeft = {}
 
 local gameTimeEnd = os.time() + 5000
 
 for name, data in pairs(tfm.get.room.playerList) do
+	playersNormalMode[name] = {name = name, matches = 0, wins = 0, winRatio = 0, winsRed = 0, winsBlue = 0}
+	pageNormalMode[name] = 1
+	playersFourTeamsMode[name] = {name = name, matches = 0, wins = 0, winRatio = 0, winsRed = 0, winsBlue = 0, winsYellow = 0, winsGreen = 0}
+	pageFourTeamsMode[name] = 1
+	playersTwoTeamsMode[name] = {name = name, matches = 0, wins = 0, winRatio = 0, winsRed = 0, winsBlue = 0}
+	pageTwoTeamsMode[name] = 1
+	playersRealMode[name] = {name = name, matches = 0, wins = 0, winRatio = 0, winsRed = 0, winsBlue = 0}
+	pageRealMode[name] = 1
+	playerRankingMode[name] = "Normal mode"
+	playerLeft[name] = false
+	openRank[name] = false
 	settings[name] = false
 	settingsMode[name] = false
 	playerLanguage[name] = {tr = trad, name = name}
@@ -853,6 +882,7 @@ for name, data in pairs(tfm.get.room.playerList) do
 	system.bindKeyboard(name, 57, true, true)
 	system.bindKeyboard(name, 48, true, true)
 	system.bindKeyboard(name, 77, true, true)
+	system.bindKeyboard(name, 76, true, true)
 end
 
 function ui.addWindow(id, text, player, x, y, width, height, alpha, corners, closeButton, buttonText)
@@ -924,6 +954,7 @@ function removeButtons(id, name)
 end
 
 function init()
+	playersOnGameHistoric = {}
 	mode = "startGame"
 	removeTimer('verifyBallCoordinates')
 	playerConsumables = {}
@@ -1050,6 +1081,7 @@ function init()
 		playerInGame[name] = false
 		playerCoordinates[name] = {x = 0, y = 0}
 		playerPhysicId[name] = 0
+		playersOnGameHistoric[name] = { teams = {} }
 		playersAfk[name] = os.time()
 		system.bindKeyboard(name, 32, true, true)
 		system.bindKeyboard(name, 0, true, true)
@@ -1197,10 +1229,12 @@ function eventTextAreaCallback(id, name, c)
 		end
 	end
 	if c == "menuOpen" then
-		ui.addWindow(23, "<p align='center'><font size='13px'><a href='event:menuClose'>Menu</a>"..playerLanguage[name].tr.menuOpenText, name, 5, 15, 200, 100, 0.2, false, false, _)
+		ui.addWindow(23, "<p align='center'><font size='13px'><a href='event:menuClose'>Menu</a>"..playerLanguage[name].tr.menuOpenText, name, 5, 15, 200, 120, 0.2, false, false, _)
 	elseif c == "menuClose" then
         ui.addWindow(23, "<p align='center'><font size='13px'><a href='event:menuOpen'>Menu", name, 5, 15, 100, 30, 0.2, false, false, _)
     elseif c == "howToPlay" then
+    	openRank[name] = false
+    	closeRankingUI(name)
     	pagesList[name].helpPage = 1
     	windowForHelp(name, pagesList[name].helpPage, playerLanguage[name].tr.nextMessage, playerLanguage[name].tr.previousMessage)
     elseif string.sub(c, 1, 8) == "nextHelp" then
@@ -1210,10 +1244,15 @@ function eventTextAreaCallback(id, name, c)
     	pagesList[name].helpPage = tonumber(string.sub(c, 9))
     	windowForHelp(name, pagesList[name].helpPage, playerLanguage[name].tr.nextMessage, playerLanguage[name].tr.previousMessage)
     elseif c == "credits" then
+    	openRank[name] = false
+    	closeRankingUI(name)
     	ui.addWindow(24, ""..playerLanguage[name].tr.creditsTitle..""..playerLanguage[name].tr.creditsText.."", name, 125, 60, 650, 300, 1, false, true, playerLanguage[name].tr.closeUIText)
     elseif c == "realmode" then
+    	openRank[name] = false
+    	closeRankingUI(name)
     	ui.addWindow(266, ""..playerLanguage[name].tr.realModeRules.."", name, 125, 60, 650, 300, 1, false, true, playerLanguage[name].tr.closeUIText)
     elseif c == "closeWindow" then
+    	openRank[name] = false
     	closeWindow(21, name)
     	closeWindow(24, name)
     	closeWindow(25, name)
@@ -1223,8 +1262,23 @@ function eventTextAreaCallback(id, name, c)
     	removeButtons(26, name)
     	settings[name] = false
     	settingsMode[name] = false
+
+    	closeRankingUI(name)
     elseif c == "roomadmin" then
     	tfm.exec.chatMessage("<rose>/room *#volley0"..name.."<n>", name)
+    elseif string.sub(c, 1, 4) == "sync" then
+    	local playerSync = string.sub(c, 5)
+
+    	print(playerLeft[name])
+
+    	if playerLeft[playerSync] then
+    		tfm.exec.chatMessage("<bv>Player not found, choose another player<n>", name)
+    		windowUISync(name)
+    	else
+    		closeWindow(24, name)
+    		tfm.exec.setPlayerSync(playerSync)
+    		tfm.exec.chatMessage("<bv>Set new player sync: "..playerSync.."<n>", nil)
+    	end
     elseif c == "openMode" then
     	settingsMode[name] = true
     	local modes = getActionsModes()
@@ -1253,6 +1307,60 @@ function eventTextAreaCallback(id, name, c)
     elseif c == "closeMode" then
     	settingsMode[name] = false
     	ui.addWindow(25, "<p align='center'><font size='11px'><a href='event:openMode'>Select a mode</a>", name, 665, 110, 100, 30, 1, false, false)
+    elseif c == "ranking" then
+    	openRank[name] = true
+    	ui.addWindow(24, "<p align='center'><font size='15px'>", name, 125, 60, 650, 300, 1, false, true, playerLanguage[name].tr.closeUIText)
+    	ui.addTextArea(9999543, "<p align='center'>Room Ranking", name, 17, 168, 100, 20, 0x142b2e, 0x8a583c, 1, true)
+    	ui.addTextArea(9999544, "<p align='center'><n2>Global Ranking<n>", name, 17, 268, 100, 18, 0x142b2e, 0x8a583c, 1, true)
+    	showMode(playerRankingMode[name], name)
+    elseif c == "Normal mode" then
+    	playerRankingMode[name] = "Normal mode"
+
+    	showMode(playerRankingMode[name], name)
+    elseif c == "4 teams mode" then
+    	playerRankingMode[name] = "4 teams mode"
+
+    	showMode(playerRankingMode[name], name)
+    elseif c == "2 teams mode" then
+    	playerRankingMode[name] = "2 teams mode"
+
+    	showMode(playerRankingMode[name], name)
+    elseif c == "Real mode" then
+    	playerRankingMode[name] = "Real mode"
+
+    	showMode(playerRankingMode[name], name)
+    elseif string.sub(c, 1, 8) == "prevRank" then
+    	local index = tonumber(string.sub(c, 9))
+
+    	if playerRankingMode[name] == "Normal mode" then
+    		pageNormalMode[name] = index
+    		showMode(playerRankingMode[name], name)
+    	elseif playerRankingMode[name] == "4 teams mode" then
+    		pageFourTeamsMode[name] = index
+    		showMode(playerRankingMode[name], name)
+    	elseif playerRankingMode[name] == "2 teams mode" then
+    		pageTwoTeamsMode[name] = index
+    		showMode(playerRankingMode[name], name)
+    	elseif playerRankingMode[name] == "Real mode" then
+    		pageRealMode[name] = index
+    		showMode(playerRankingMode[name], name)
+    	end
+    elseif string.sub(c, 1, 8) == "nextRank" then
+    	local index = tonumber(string.sub(c, 9))
+
+    	if playerRankingMode[name] == "Normal mode" then
+    		pageNormalMode[name] = index
+    		showMode(playerRankingMode[name], name) 
+    	elseif playerRankingMode[name] == "4 teams mode" then
+    		pageFourTeamsMode[name] = index
+    		showMode(playerRankingMode[name], name)
+    	elseif playerRankingMode[name] == "2 teams mode" then
+    		pageTwoTeamsMode[name] = index
+    		showMode(playerRankingMode[name], name)
+    	elseif playerRankingMode[name] == "Real mode" then
+    		pageRealMode[name] = index
+    		showMode(playerRankingMode[name], name)
+    	end
 	end
 end
 
@@ -1353,6 +1461,7 @@ function eventLoop(elapsedTime, remainingTime)
     	local x = math.ceil((gameTimeEnd - os.time())/1000)
     	local c = string.format("%d", x)
     	if x == 0 then
+    		countMatches = countMatches + 1
     		ui.removeTextArea(899899)
     		ui.removeTextArea(8998991)
     		removeTimer('verifyBallCoordinates')
@@ -1400,6 +1509,7 @@ function startGame()
 	gameStats.canTransform = false
 	disablePlayersCanTransform(1500)
 
+	addMatchesToAllPlayers()
 	selectMap()
 	
 	tfm.exec.addPhysicObject (99999, 800, 460, {
@@ -2125,6 +2235,8 @@ function verifyIsPoint()
 						tfm.exec.removeObject(ballsId[j])
 						showTheScore()
 						showMessageWinner()
+						normalModeTeamWinner("blue")
+						updateRankingNormalMode()
 						mode = "endGame"
 						gameTimeEnd = os.time() + 5000
 					else
@@ -2147,6 +2259,8 @@ function verifyIsPoint()
 						ballOnGame2 = false
 						updateTwoBallOnGame()
 						tfm.exec.removeObject(ballsId[j])
+						normalModeTeamWinner("red")
+						updateRankingNormalMode()
 						mode = "endGame"
 						gameTimeEnd = os.time() + 5000
 					else
@@ -2186,6 +2300,12 @@ function verifyIsPointRealMode()
 			showMessageWinner()
 			ballOnGame = false
 			tfm.exec.removeObject (ball_id)
+			if gameStats.redQuantitySpawn > 0 or gameStats.redServe then
+				realModeWinner("blue")
+			else
+				realModeWinner("red")
+			end
+			updateRankingRealMode()
 			mode = "endGame"
 			gameTimeEnd = os.time() + 5000
 		else
@@ -2232,6 +2352,8 @@ function verifyIsPointRealMode()
 			tfm.exec.removeObject (ball_id)
 			showTheScore()
 			showMessageWinner()
+			realModeWinner("blue")
+			updateRankingRealMode()
 			mode = "endGame"
 			gameTimeEnd = os.time() + 5000
 		else
@@ -2260,6 +2382,8 @@ function verifyIsPointRealMode()
 		if score_red >= gameStats.winscore then
 			showTheScore()
 			showMessageWinner()
+			realModeWinner("red")
+			updateRankingRealMode()
 			ballOnGame = false
 			tfm.exec.removeObject (ball_id)
 			mode = "endGame"
@@ -2294,11 +2418,17 @@ function verifyIsPointRealMode()
 		end
 		
 		tfm.exec.chatMessage("<r>Team Red<n> "..score_red.." X "..score_blue.." <bv>Team Blue<n>", nil)
-		if score_blue >= gameStats.winscore then
+		if score_blue >= gameStats.winscore or score_red >= gameStats.winscore then
 			ballOnGame = false
 			tfm.exec.removeObject (ball_id)
 			showTheScore()
 			showMessageWinner()
+			if gameStats.blueQuantitySpawn > 0 or gameStats.blueServe then
+				realModeWinner("red")
+			else
+				realModeWinner("blue")
+			end
+			updateRankingRealMode()
 			mode = "endGame"
 			gameTimeEnd = os.time() + 5000
 		else
@@ -2358,6 +2488,8 @@ function verifyIsPointTwoTeamsMode()
 					ballOnGame = false
 					ballOnGame2 = false
 					updateTwoBallOnGame()
+					twoTeamsModeWinner("red")
+					updateRankingTwoTeamsMode()
 					tfm.exec.removeObject (ballsId[j])
 					mode = "endGame"
 					gameTimeEnd = os.time() + 5000
@@ -2373,6 +2505,8 @@ function verifyIsPointTwoTeamsMode()
 					ballOnGame = false
 					ballOnGame2 = false
 					updateTwoBallOnGame()
+					twoTeamsModeWinner("blue")
+					updateRankingTwoTeamsMode()
 					tfm.exec.removeObject (ballsId[j])
 					showTheScore()
 					showMessageWinner()
@@ -2392,6 +2526,8 @@ function verifyIsPointTwoTeamsMode()
 					ballOnGame = false
 					ballOnGame2 = false
 					updateTwoBallOnGame()
+					twoTeamsModeWinner("red")
+					updateRankingTwoTeamsMode()
 					tfm.exec.removeObject (ballsId[j])
 					mode = "endGame"
 					gameTimeEnd = os.time() + 5000
@@ -2407,6 +2543,8 @@ function verifyIsPointTwoTeamsMode()
 					ballOnGame = false
 					ballOnGame2 = false
 					updateTwoBallOnGame()
+					twoTeamsModeWinner("blue")
+					updateRankingTwoTeamsMode()
 					tfm.exec.removeObject (ballsId[j])
 					showTheScore()
 					showMessageWinner()
@@ -2676,6 +2814,7 @@ function setLostLife()
 							playerInGame[teamsPlayersOnGame[i][j].name] = false
 							teamsPlayersOnGame[i][j].name = ''
 						end
+						print(teamsPlayersOnGame)
 						print(messageTeamsLifes[1])
 						tfm.exec.chatMessage(messageTeamsLifes[1], nil)
 						showTheScore()
@@ -2683,7 +2822,10 @@ function setLostLife()
 						showMessageWinner()
 						ballOnGame = false
 						ballOnGame2 = false
+						fourTeamsModeWinner(messageTeamsLifes[1], teamsPlayersOnGame[1])
+						updateRankingFourTeamsMode()
 						updateTwoBallOnGame()
+
 						tfm.exec.removeObject (ballsId[j])
 						mode = "endGame"
 						gameTimeEnd = os.time() + 5000
@@ -2712,6 +2854,8 @@ function setLostLife()
 						showMessageWinner()
 						ballOnGame = false
 						ballOnGame2 = false
+						fourTeamsModeWinner(messageTeamsLifes[1], teamsPlayersOnGame[1])
+						updateRankingFourTeamsMode()
 						updateTwoBallOnGame()
 						tfm.exec.removeObject (ballsId[j])
 						mode = "endGame"
@@ -2893,6 +3037,7 @@ end
 function eventNewPlayer(name)
 	settings[name] = false
 	settingsMode[name] = false
+	playerLeft[name] = false
 	playerLeftRight[name] = 0 
 	playerConsumable[name] = true
 	playerConsumableKey[name] = 56
@@ -2900,6 +3045,7 @@ function eventNewPlayer(name)
 	playerForce[name] = 0
 	showOutOfCourtText[name] = false
 	playerOutOfCourt[name] = false
+	openRank[name] = false
 	playerLanguage[name] = {tr = trad, name = name}
 	pagesList[name] = {helpPage = 1}
 	playersAfk[name] = os.time()
@@ -2908,12 +3054,36 @@ function eventNewPlayer(name)
 		canVote[name] = true
 	end
 
+	if playersOnGameHistoric[name] == nil then
+		playersOnGameHistoric[name] = { teams = {} }
+	end
+
+	if playerLastMatchCount[name] == nil then
+		playerLastMatchCount[name] = countMatches
+	else
+		if playerLastMatchCount[name] ~= countMatches then
+			playersOnGameHistoric[name] = { teams = {} }
+		end
+	end
+
 	if playerBan[name] == nil then
 		playerBan[name] = false
 	end
 
 	if gameStats.killSpec == false or killSpecPermanent then
 		tfm.exec.respawnPlayer(name)
+	end
+
+	if playersNormalMode[name] == nil then
+		playersNormalMode[name] = {name = name, matches = 0, wins = 0, winRatio = 0, winsRed = 0, winsBlue = 0}
+		pageNormalMode[name] = 1
+		playersFourTeamsMode[name] = {name = name, matches = 0, wins = 0, winRatio = 0, winsRed = 0, winsBlue = 0, winsYellow = 0, winsGreen = 0}
+		pageFourTeamsMode[name] = 1
+		playersTwoTeamsMode[name] = {name = name, matches = 0, wins = 0, winRatio = 0, winsRed = 0, winsBlue = 0}
+		pageTwoTeamsMode[name] = 1
+		playersRealMode[name] = {name = name, matches = 0, wins = 0, winRatio = 0, winsRed = 0, winsBlue = 0}
+		pageRealMode[name] = 1
+		playerRankingMode[name] = "Normal mode"
 	end
 
 	playerCanTransform[name] = true
@@ -2933,6 +3103,7 @@ function eventNewPlayer(name)
 	system.bindKeyboard(name, 57, true, true)
 	system.bindKeyboard(name, 48, true, true)
 	system.bindKeyboard(name, 77, true, true)
+	system.bindKeyboard(name, 76, true, true)
 	tfm.exec.setNameColor(name, 0xD1D5DB)
 	ui.addWindow(23, "<p align='center'><font size='13px'><a href='event:menuOpen'>Menu", name, 5, 15, 100, 30, 0.2, false, false, _)
 	tfm.exec.chatMessage(playerLanguage[name].tr.welcomeMessage, name)
@@ -2992,6 +3163,26 @@ function eventKeyboard(name, key, down, x, y, xv, yv)
 	local coordinatesY = (y + yv) + OffsetY
 	tfm.get.room.playerList[name].x = coordinatesX
 	tfm.get.room.playerList[name].y = coordinatesY
+
+	if key == 76 then
+		if openRank[name] then
+			openRank[name] = false
+	    	closeWindow(21, name)
+	    	closeWindow(24, name)
+	    	closeWindow(25, name)
+	    	ui.removeTextArea(99992, name)
+	    	closeWindow(266, name)
+	    	removeButtons(25, name)
+	    	removeButtons(26, name)
+			closeRankingUI(name)
+		else
+			openRank[name] = true
+			ui.addWindow(24, "<p align='center'><font size='15px'>", name, 125, 60, 650, 300, 1, false, true, playerLanguage[name].tr.closeUIText)
+	    	ui.addTextArea(9999543, "<p align='center'>Room Ranking", name, 17, 168, 100, 20, 0x142b2e, 0x8a583c, 1, true)
+	    	ui.addTextArea(9999544, "<p align='center'><n2>Global Ranking<n>", name, 17, 268, 100, 18, 0x142b2e, 0x8a583c, 1, true)
+	    	showMode(playerRankingMode[name], name)
+		end
+	end
 
 	if playerInGame[name] and mode == "gameStart" then
 
@@ -3090,9 +3281,6 @@ function eventKeyboard(name, key, down, x, y, xv, yv)
 				return
 			end
 		end
-		--[[if y <= 0 then
-			teleportPlayer(name, gameStats.gameMode)
-		end--]]
 		if key == 32 and playerCanTransform[name] and gameStats.canTransform and not playerOutOfCourt[name] then
 			print(x)
 			print(y)
@@ -3388,6 +3576,8 @@ function teleportPlayerOnTeamsMode(name)
 end
 
 function eventPlayerLeft(name)
+	playerLeft[name] = true
+	playerLastMatchCount[name] = countMatches
 	playerCanTransform[name] = true
 	playerInGame[name] = false
 	if mode == "startGame" then
@@ -4019,7 +4209,8 @@ function eventChatCommand(name, c)
 				end
 
 			end
-
+		elseif command == "setsync" then
+			windowUISync(name)
 		elseif command == "synctfm" then
 			tfm.exec.setPlayerSync(nil)
 
@@ -4043,8 +4234,6 @@ function eventChatCommand(name, c)
 			end
 
 			table.sort(playersSync, function(a, b) return a.sync < b.sync end)
-
-			print(playersSync)
 
 			for i = 1, #playersSync do
 				str = ""..str..""..playersSync[i].name.." - "..playersSync[i].syncCondition.."<br>"
@@ -4184,6 +4373,7 @@ function eventChatCommand(name, c)
 			gameStats.consumables = false
 			tfm.exec.chatMessage("<bv>Consumables on normal mode has disabled by the admin "..name.."<n>", nil)
 		elseif command == "settings" then
+			closeRankingUI(name)
 			settings[name] = true
 			ui.addWindow(24, ""..playerLanguage[name].tr.titleSettings.."", name, 125, 60, 650, 300, 1, false, true, playerLanguage[name].tr.closeUIText)
 			ui.addTextArea(99992, ""..playerLanguage[name].tr.textSettings, name, 150, 110, 500, 200, 0x161616, 0x161616, 0, true)
@@ -4371,6 +4561,14 @@ function chooseTeamTeamsMode(name)
 		if smallQuantity[2] == 1 and quantity.yellow < 3 then
 			for i= 1, #playersYellow do
 				if playersYellow[i].name == '' then
+					local isNewTeam = playerHistoryOnMatch("yellow", name)
+
+					if isNewTeam then
+						local playerTeams = playersOnGameHistoric[name].teams
+						playersOnGameHistoric[name].teams[#playerTeams + 1] = "yellow"
+
+						addMatchToPlayerFourTeamsMode(name)
+					end
 					playersYellow[i].name = name
 					playerInGame[name] = true
 					tfm.exec.setNameColor(playersYellow[i].name, 0xF59E0B)
@@ -4383,6 +4581,14 @@ function chooseTeamTeamsMode(name)
 		elseif smallQuantity[2] == 2 and quantity.red < 3 then
 			for i= 1, #playersRed do
 				if playersRed[i].name == '' then
+					local isNewTeam = playerHistoryOnMatch("red", name)
+
+					if isNewTeam then
+						local playerTeams = playersOnGameHistoric[name].teams
+						playersOnGameHistoric[name].teams[#playerTeams + 1] = "red"
+
+						addMatchToPlayerFourTeamsMode(name)
+					end
 					playersRed[i].name = name
 					playerInGame[name] = true
 					tfm.exec.setNameColor(playersRed[i].name, 0xEF4444)
@@ -4395,6 +4601,14 @@ function chooseTeamTeamsMode(name)
 		elseif smallQuantity[2] == 3 and quantity.blue < 3 then
 			for i= 1, #playersBlue do
 				if playersBlue[i].name == '' then
+					local isNewTeam = playerHistoryOnMatch("blue", name)
+
+					if isNewTeam then
+						local playerTeams = playersOnGameHistoric[name].teams
+						playersOnGameHistoric[name].teams[#playerTeams + 1] = "blue"
+
+						addMatchToPlayerFourTeamsMode(name)
+					end
 					playersBlue[i].name = name
 					playerInGame[name] = true
 					tfm.exec.setNameColor(playersBlue[i].name, 0x3B82F6)
@@ -4408,6 +4622,14 @@ function chooseTeamTeamsMode(name)
 		elseif smallQuantity[2] == 4 and quantity.green < 3 then
 			for i= 1, #playersGreen do
 				if playersGreen[i].name == '' then
+					local isNewTeam = playerHistoryOnMatch("green", name)
+
+					if isNewTeam then
+						local playerTeams = playersOnGameHistoric[name].teams
+						playersOnGameHistoric[name].teams[#playerTeams + 1] = "green"
+
+						addMatchToPlayerFourTeamsMode(name)
+					end
 					playersGreen[i].name = name
 					playerInGame[name] = true
 					tfm.exec.setNameColor(playersGreen[i].name, 0x109267)
@@ -4428,11 +4650,52 @@ function chooseTeamTeamsMode(name)
 			if i == smallQuantity[2] then
 				for j = 1, #teamsPlayersOnGame[smallQuantity[2]] do
 					if teamsPlayersOnGame[smallQuantity[2]][j].name == '' then
+						local team = getTeamName(messageTeamsLifes[smallQuantity[2]])
+
+						if team == "Yellow" then
+							local isNewTeam = playerHistoryOnMatch("yellow", name)
+
+							if isNewTeam then
+								local playerTeams = playersOnGameHistoric[name].teams
+								playersOnGameHistoric[name].teams[#playerTeams + 1] = "yellow"
+
+								addMatchToPlayerFourTeamsMode(name)
+							end
+						elseif team == "Red" then
+							local isNewTeam = playerHistoryOnMatch("red", name)
+
+							if isNewTeam then
+								local playerTeams = playersOnGameHistoric[name].teams
+								playersOnGameHistoric[name].teams[#playerTeams + 1] = "red"
+
+								addMatchToPlayerFourTeamsMode(name)
+							end
+						elseif team == "Blue" then
+							local isNewTeam = playerHistoryOnMatch("blue", name)
+
+							if isNewTeam then
+								local playerTeams = playersOnGameHistoric[name].teams
+								playersOnGameHistoric[name].teams[#playerTeams + 1] = "blue"
+
+								addMatchToPlayerFourTeamsMode(name)
+							end
+						elseif team == "Green" then
+							local isNewTeam = playerHistoryOnMatch("green", name)
+
+							if isNewTeam then
+								local playerTeams = playersOnGameHistoric[name].teams
+								playersOnGameHistoric[name].teams[#playerTeams + 1] = "green"
+
+								addMatchToPlayerFourTeamsMode(name)
+							end
+						end
 						teamsPlayersOnGame[smallQuantity[2]][j].name = name
 						playerInGame[name] = true
 						tfm.exec.setNameColor(name, getTeamsColorsName[smallQuantity[2]])
 						tfm.exec.movePlayer(name, x[smallQuantity[2]], 334)
 						disablePlayerCanTransform(name)
+
+						return
 					end
 				end
 			end
@@ -4642,6 +4905,8 @@ function leaveTeamTeamsModeConfig(name)
 				ball_id = nil
 				ball_id2 = nil
 				updateTwoBallOnGame()
+				fourTeamsModeWinner(messageTeamsLifes[1], teamsPlayersOnGame[1])
+				updateRankingFourTeamsMode()
 				tfm.exec.removeObject (ball_id)
 				mode = "endGame"
 				gameTimeEnd = os.time() + 5000
@@ -4694,6 +4959,20 @@ function chooseTeam(name)
 	if quantity.red < quantity.blue and quantity.red < maxPlayersOnGame then
 		for i = 1, 6 do
 			if playersRed[i].name == '' then
+				local isNewTeam = playerHistoryOnMatch("red", name)
+
+				if isNewTeam then
+					local playerTeams = playersOnGameHistoric[name].teams
+					playersOnGameHistoric[name].teams[#playerTeams + 1] = "red"
+
+					if gameStats.twoTeamsMode then
+						addMatchToPlayerTwoTeamsMode(name)
+					elseif gameStats.realMode then
+						addMatchToPlayerRealMode(name)
+					else
+						addMatchToPlayer(name)
+					end
+				end
 				playersRed[i].name = name
 				playerInGame[name] = true
 				tfm.exec.setNameColor(playersRed[i].name, 0xEF4444)
@@ -4736,6 +5015,20 @@ function chooseTeam(name)
 	elseif quantity.blue < quantity.red and quantity.blue < maxPlayersOnGame then
 		for i = 1, 6 do
 			if playersBlue[i].name == '' then
+				local isNewTeam = playerHistoryOnMatch("blue", name)
+
+				if isNewTeam then
+					local playerTeams = playersOnGameHistoric[name].teams
+					playersOnGameHistoric[name].teams[#playerTeams + 1] = "blue"
+					
+					if gameStats.twoTeamsMode then
+						addMatchToPlayerTwoTeamsMode(name)
+					elseif gameStats.realMode then
+						addMatchToPlayerRealMode(name)
+					else
+						addMatchToPlayer(name)
+					end
+				end
 				playersBlue[i].name = name
 				playerInGame[name] = true
 				tfm.exec.setNameColor(playersBlue[i].name, 0x3B82F6)
@@ -4778,6 +5071,20 @@ function chooseTeam(name)
 	elseif quantity.red == quantity.blue and quantity.red < maxPlayersOnGame then
 		for i = 1, 6 do
 			if playersRed[i].name == '' then
+				local isNewTeam = playerHistoryOnMatch("red", name)
+
+				if isNewTeam then
+					local playerTeams = playersOnGameHistoric[name].teams
+					playersOnGameHistoric[name].teams[#playerTeams + 1] = "red"
+
+					if gameStats.twoTeamsMode then
+						addMatchToPlayerTwoTeamsMode(name)
+					elseif gameStats.realMode then
+						addMatchToPlayerRealMode(name)
+					else
+						addMatchToPlayer(name)
+					end
+				end
 				playersRed[i].name = name
 				playerInGame[name] = true
 				tfm.exec.setNameColor(playersRed[i].name, 0xEF4444)
@@ -4919,6 +5226,7 @@ function teleportPlayers()
 		local spawnOnMiddle = true
 		for i = 1, #playersRed do
 			if playersRed[i].name ~= '' then
+				playersOnGameHistoric[playersRed[i].name] = { teams = {"red"} }
 				if spawnOnMiddle then
 					playersAfk[playersRed[i].name] = os.time()
 					tfm.exec.movePlayer(playersRed[i].name, 600, 334)
@@ -4943,6 +5251,7 @@ function teleportPlayers()
 		local spawnOnMiddle = true
 		for i = 1, #playersBlue do
 			if playersBlue[i].name ~= '' then
+				playersOnGameHistoric[playersBlue[i].name] = { teams = {"blue"} }
 				if spawnOnMiddle then
 					playersAfk[playersBlue[i].name] = os.time()
 					tfm.exec.movePlayer(playersBlue[i].name, 1000, 334)
@@ -4968,6 +5277,7 @@ function teleportPlayers()
 	if gameStats.teamsMode then
 		for i = 1, #playersYellow do
 			if playersYellow[i].name ~= '' then
+				playersOnGameHistoric[playersYellow[i].name] = { teams = {"yellow"} }
 				playersAfk[playersYellow[i].name] = os.time()
 				tfm.exec.movePlayer(playersYellow[i].name, 200, 334)
 				tfm.exec.setNameColor(playersYellow[i].name, 0xF59E0B)
@@ -4975,6 +5285,7 @@ function teleportPlayers()
 		end
 		for i = 1, #playersRed do
 			if playersRed[i].name ~= '' then
+				playersOnGameHistoric[playersRed[i].name] = { teams = {"red"} }
 				playersAfk[playersRed[i].name] = os.time()
 				tfm.exec.movePlayer(playersRed[i].name, 600, 334)
 				tfm.exec.setNameColor(playersRed[i].name, 0xEF4444)
@@ -4982,6 +5293,7 @@ function teleportPlayers()
 		end
 		for i = 1, #playersBlue do
 			if playersBlue[i].name ~= '' then
+				playersOnGameHistoric[playersBlue[i].name] = { teams = {"blue"} }
 				playersAfk[playersBlue[i].name] = os.time()
 				tfm.exec.movePlayer(playersBlue[i].name, 1000, 334)
 				tfm.exec.setNameColor(playersBlue[i].name, 0x3B82F6)
@@ -4989,6 +5301,7 @@ function teleportPlayers()
 		end
 		for i = 1, #playersGreen do
 			if playersGreen[i].name ~= '' then
+				playersOnGameHistoric[playersGreen[i].name] = { teams = {"green"} }
 				playersAfk[playersGreen[i].name] = os.time()
 				tfm.exec.movePlayer(playersGreen[i].name, 1400, 334)
 				tfm.exec.setNameColor(playersGreen[i].name, 0x109267)
@@ -5000,6 +5313,8 @@ function teleportPlayers()
 
 	for i = 1, #playersRed do
 		if playersRed[i].name ~= '' then
+			playersOnGameHistoric[playersRed[i].name] = { teams = {"red"} }
+
 			playersAfk[playersRed[i].name] = os.time()
 			if gameStats.realMode then
 				tfm.exec.movePlayer(playersRed[i].name, 900, 334)
@@ -5019,6 +5334,7 @@ function teleportPlayers()
 	end
 	for i = 1, #playersBlue do
 		if playersBlue[i].name ~= '' then
+			playersOnGameHistoric[playersBlue[i].name] = { teams = {"blue"} }
 			playersAfk[playersBlue[i].name] = os.time()
 			if gameStats.realMode then
 				tfm.exec.movePlayer(playersBlue[i].name, 1700, 334)
@@ -5535,6 +5851,503 @@ function messageLog(message)
 			tfm.exec.chatMessage(message, name)
 		end
 	end
+end
+
+function winRatioPercentage(wins, matches)
+    if matches == 0 then
+        return 0
+    end
+
+    return (wins / matches) * 100
+end
+
+function addMatchesToAllPlayers()
+
+	local mode = verifyMode()
+
+	if mode == "Normal mode" then
+		for name, value in pairs(playerInGame) do
+			if value then
+				playersNormalMode[name].matches = playersNormalMode[name].matches + 1
+				playersNormalMode[name].winRatio = winRatioPercentage(playersNormalMode[name].wins, playersNormalMode[name].matches)
+			end
+		end
+	elseif mode == "4 teams mode" then
+		for name, value in pairs(playerInGame) do
+			if value then
+				playersFourTeamsMode[name].matches = playersFourTeamsMode[name].matches + 1
+				playersFourTeamsMode[name].winRatio = winRatioPercentage(playersFourTeamsMode[name].wins, playersFourTeamsMode[name].matches)
+			end
+		end
+	elseif mode == "2 teams mode" then
+		for name, value in pairs(playerInGame) do
+			if value then
+				playersTwoTeamsMode[name].matches = playersTwoTeamsMode[name].matches + 1
+				playersTwoTeamsMode[name].winRatio = winRatioPercentage(playersTwoTeamsMode[name].wins, playersTwoTeamsMode[name].matches)
+			end
+		end
+	elseif mode == "Real mode" then
+		for name, value in pairs(playerInGame) do
+			if value then
+				playersRealMode[name].matches = playersRealMode[name].matches + 1
+				playersRealMode[name].winRatio = winRatioPercentage(playersRealMode[name].wins, playersRealMode[name].matches)
+			end
+		end
+	end
+end
+
+function verifyMode()
+	if gameStats.teamsMode then
+		return "4 teams mode"
+	elseif gameStats.twoTeamsMode then
+		return "2 teams mode"
+	elseif gameStats.realMode then
+		return "Real mode"
+	else
+		return "Normal mode"
+	end
+end
+
+function addMatchToPlayer(name)
+	playersNormalMode[name].matches = playersNormalMode[name].matches + 1
+	playersNormalMode[name].winRatio = winRatioPercentage(playersNormalMode[name].wins, playersNormalMode[name].matches)
+end
+
+function addMatchToPlayerFourTeamsMode(name)
+	playersFourTeamsMode[name].matches = playersFourTeamsMode[name].matches + 1
+	playersFourTeamsMode[name].winRatio = winRatioPercentage(playersFourTeamsMode[name].wins, playersFourTeamsMode[name].matches)
+end
+
+function addMatchToPlayerTwoTeamsMode(name)
+	playersTwoTeamsMode[name].matches = playersTwoTeamsMode[name].matches + 1
+	playersTwoTeamsMode[name].winRatio = winRatioPercentage(playersTwoTeamsMode[name].wins, playersTwoTeamsMode[name].matches)
+end
+
+function addMatchToPlayerRealMode(name)
+	playersRealMode[name].matches = playersRealMode[name].matches + 1
+	playersRealMode[name].winRatio = winRatioPercentage(playersRealMode[name].wins, playersRealMode[name].matches)
+end
+
+function normalModeTeamWinner(team)
+	if team == "red" then
+		for i = 1, #playersRed do
+			local player = playersRed[i].name
+			if player ~= "a" and player ~= '' then
+				playersNormalMode[player].wins = playersNormalMode[player].wins + 1
+				playersNormalMode[player].winRatio = winRatioPercentage(playersNormalMode[player].wins, playersNormalMode[player].matches)
+				playersNormalMode[player].winsRed = playersNormalMode[player].winsRed + 1
+			end
+		end
+
+		return
+	end
+
+	for i = 1, #playersBlue do
+		local player = playersBlue[i].name
+
+		if player ~= "a" and player ~= '' then
+			playersNormalMode[player].wins = playersNormalMode[player].wins + 1
+			playersNormalMode[player].winRatio = winRatioPercentage(playersNormalMode[player].wins, playersNormalMode[player].matches)
+			playersNormalMode[player].winsBlue = playersNormalMode[player].winsBlue + 1
+		end
+	end
+end
+
+function updateRankingNormalMode()
+	local rank_list = {}
+
+	for name, stats in pairs(playersNormalMode) do
+		if stats.matches > 0 then
+	    	rank_list[#rank_list + 1] = {name = name, matches = stats.matches, wins = stats.wins, winRatio = stats.winRatio, winsRed = stats.winsRed, winsBlue = stats.winsBlue}
+		end
+	end
+
+	table.sort(rank_list, function(a, b)
+	    if a.wins == b.wins then
+	        return a.matches < b.matches
+	    else
+	        return a.wins > b.wins
+	    end
+	end)
+
+	rankNormalMode = rank_list
+end
+
+function fourTeamsModeWinner(teamText, playersOnTeam)
+	local team = getTeamName(teamText)
+
+	if team == "Yellow" then
+		for i = 1, #playersOnTeam do
+			local player = playersOnTeam[i].name
+
+			if player ~= 'a' and player ~= '' then
+				playersFourTeamsMode[player].wins = playersFourTeamsMode[player].wins + 1
+				playersFourTeamsMode[player].winRatio = winRatioPercentage(playersFourTeamsMode[player].wins, playersFourTeamsMode[player].matches)
+				playersFourTeamsMode[player].winsYellow = playersFourTeamsMode[player].winsYellow + 1
+			end
+		end
+
+		return
+	elseif team == "Red" then
+		for i = 1, #playersOnTeam do
+			local player = playersOnTeam[i].name
+
+			if player ~= 'a' and player ~= '' then
+				playersFourTeamsMode[player].wins = playersFourTeamsMode[player].wins + 1
+				playersFourTeamsMode[player].winRatio = winRatioPercentage(playersFourTeamsMode[player].wins, playersFourTeamsMode[player].matches)
+				playersFourTeamsMode[player].winsRed = playersFourTeamsMode[player].winsRed + 1
+			end
+		end
+
+		return
+	elseif team == "Blue" then
+		for i = 1, #playersOnTeam do
+			local player = playersOnTeam[i].name
+
+			if player ~= 'a' and player ~= '' then
+				playersFourTeamsMode[player].wins = playersFourTeamsMode[player].wins + 1
+				playersFourTeamsMode[player].winRatio = winRatioPercentage(playersFourTeamsMode[player].wins, playersFourTeamsMode[player].matches)
+				playersFourTeamsMode[player].winsBlue = playersFourTeamsMode[player].winsBlue + 1
+			end
+		end
+
+		return
+	elseif team == "Green" then
+		for i = 1, #playersOnTeam do
+			local player = playersOnTeam[i].name
+
+			if player ~= 'a' and player ~= '' then
+				playersFourTeamsMode[player].wins = playersFourTeamsMode[player].wins + 1
+				playersFourTeamsMode[player].winRatio = winRatioPercentage(playersFourTeamsMode[player].wins, playersFourTeamsMode[player].matches)
+				playersFourTeamsMode[player].winsGreen = playersFourTeamsMode[player].winsGreen + 1
+			end
+		end
+
+		return
+	end
+end
+
+function getTeamName(text)
+	if string.sub(text, 1, 9) == "<j>Yellow" then
+		return "Yellow"
+	elseif string.sub(text, 1, 6) == "<r>Red" then
+		return "Red"
+	elseif string.sub(text, 1, 8) == "<bv>Blue" then
+		return "Blue"
+	elseif string.sub(text, 1, 9) == "<vp>Green" then
+		return "Green"
+	end
+end
+
+
+function updateRankingFourTeamsMode()
+	local rank_list = {}
+
+	for name, stats in pairs(playersFourTeamsMode) do
+		if stats.matches > 0 then
+			rank_list[#rank_list + 1] = {name = name, matches = stats.matches, wins = stats.wins, winRatio = stats.winRatio, winsRed = stats.winsRed, winsBlue = stats.winsBlue, winsYellow = stats.winsYellow, winsGreen = stats.winsGreen}
+		end
+	end
+
+	table.sort(rank_list, function(a, b)
+	    if a.wins == b.wins then
+	        return a.matches < b.matches
+	    else
+	        return a.wins > b.wins
+	    end
+	end)
+
+	rankFourTeamsMode = rank_list
+end
+
+function twoTeamsModeWinner(team)
+	if team == "red" then
+		for i = 1, #playersRed do
+			local player = playersRed[i].name
+			if player ~= "a" and player ~= '' then
+				playersTwoTeamsMode[player].wins = playersTwoTeamsMode[player].wins + 1
+				playersTwoTeamsMode[player].winRatio = winRatioPercentage(playersTwoTeamsMode[player].wins, playersTwoTeamsMode[player].matches)
+				playersTwoTeamsMode[player].winsRed = playersTwoTeamsMode[player].winsRed + 1
+			end
+		end
+
+		return
+	end
+
+	for i = 1, #playersBlue do
+		local player = playersBlue[i].name
+
+		if player ~= "a" and player ~= '' then
+			playersTwoTeamsMode[player].wins = playersTwoTeamsMode[player].wins + 1
+			playersTwoTeamsMode[player].winRatio = winRatioPercentage(playersTwoTeamsMode[player].wins, playersTwoTeamsMode[player].matches)
+			playersTwoTeamsMode[player].winsBlue = playersTwoTeamsMode[player].winsBlue + 1
+		end
+	end
+end
+
+function updateRankingTwoTeamsMode()
+	local rank_list = {}
+
+	for name, stats in pairs(playersTwoTeamsMode) do
+		if stats.matches > 0 then
+	    	rank_list[#rank_list + 1] = {name = name, matches = stats.matches, wins = stats.wins, winRatio = stats.winRatio, winsRed = stats.winsRed, winsBlue = stats.winsBlue}
+		end
+	end
+
+	table.sort(rank_list, function(a, b)
+	    if a.wins == b.wins then
+	        return a.matches < b.matches
+	    else
+	        return a.wins > b.wins
+	    end
+	end)
+
+	rankTwoTeamsMode = rank_list
+end
+
+function realModeWinner(team)
+	if team == "red" then
+		for i = 1, #playersRed do
+			local player = playersRed[i].name
+			if player ~= "a" and player ~= '' then
+				playersRealMode[player].wins = playersRealMode[player].wins + 1
+				playersRealMode[player].winRatio = winRatioPercentage(playersRealMode[player].wins, playersRealMode[player].matches)
+				playersRealMode[player].winsRed = playersRealMode[player].winsRed + 1
+			end
+		end
+
+		return
+	end
+
+	for i = 1, #playersBlue do
+		local player = playersBlue[i].name
+
+		if player ~= "a" and player ~= '' then
+			playersRealMode[player].wins = playersRealMode[player].wins + 1
+				playersRealMode[player].winRatio = winRatioPercentage(playersRealMode[player].wins, playersRealMode[player].matches)
+				playersRealMode[player].winsBlue = playersRealMode[player].winsBlue + 1
+		end
+	end
+end
+
+function updateRankingRealMode()
+	local rank_list = {}
+
+	for name, stats in pairs(playersRealMode) do
+		if stats.matches > 0 then
+	    	rank_list[#rank_list + 1] = {name = name, matches = stats.matches, wins = stats.wins, winRatio = stats.winRatio, winsRed = stats.winsRed, winsBlue = stats.winsBlue}
+		end
+	end
+
+	table.sort(rank_list, function(a, b)
+	    if a.wins == b.wins then
+	        return a.matches < b.matches
+	    else
+	        return a.wins > b.wins
+	    end
+	end)
+
+	rankRealMode = rank_list
+end
+
+function showMode(mode, name) 
+	if mode ~= "4 teams mode" then
+		ui.removeTextArea(9999564, name)
+		ui.removeTextArea(9999565, name)
+	end
+
+	local rank = rankMode(mode)
+	local page = rankPageMode(mode, name)
+
+	local y = 137
+	local colorBackground = 0x2d5a61
+	local indexPositions = positionsString(page)
+	local namesRank = ""
+	local matchesRank = ""
+	local winsRank = ""
+	local winRatioRank = ""
+	local winsRed = ""
+	local winsBlue = ""
+	local winsYellow = ""
+	local winsGreen = ""
+
+	for i = 9999554, 9999563 do
+		local index = (i - 9999553) + (10 * (page - 1))
+
+		if rank[index] ~= nil then
+			local winRatioString = tostring(rank[index].winRatio)
+
+			ui.addTextArea(i, "", name, 135, y, 630, 6, colorBackground, colorBackground, 1, true)
+
+			if page == 1 and index == 1 then
+				namesRank = ""..namesRank.."<br>"..indexPositions[(i - 9999553)].." <cs>"..string.sub(rank[index].name, 1, #rank[index].name - 5).."<n><bl>"..string.sub(rank[index].name, #rank[index].name - 4).."<n>"
+			else
+				namesRank = ""..namesRank.."<br>"..indexPositions[(i - 9999553)].." "..string.sub(rank[index].name, 1, #rank[index].name - 5).."<bl>"..string.sub(rank[index].name, #rank[index].name - 4).."<n>"
+			end
+			matchesRank = ""..matchesRank.."<br>"..rank[index].matches..""
+			winsRank = ""..winsRank.."<br>"..rank[index].wins..""
+			winRatioRank = ""..winRatioRank.."<br>"..string.sub(winRatioString, 1, 4).."%"
+			winsRed = ""..winsRed.."<br>"..rank[index].winsRed..""
+			winsBlue = ""..winsBlue.."<br>"..rank[index].winsBlue..""
+
+			if mode == "4 teams mode" then
+				winsYellow = ""..winsYellow.."<br>"..rank[index].winsYellow..""
+				winsGreen = ""..winsGreen.."<br>"..rank[index].winsGreen..""
+			end
+
+			if colorBackground == 0x2d5a61 then
+				colorBackground = 0x142b2e
+			else
+				colorBackground = 0x2d5a61
+			end
+		else
+			ui.addTextArea(i, "", name, 135, y, 630, 6, colorBackground, colorBackground, 0, true)
+		end
+			
+		y = y + 16
+	end
+
+	local findNextIndexValue = 1 + (10 * (page))
+
+	ui.addTextArea(9999545, "<p align='center'><font size='11px'>"..playerRankingMode[name].."", name, 390, 85, 120, 20, 0x161616, 0x161616, 0, true)
+	if mode == "Normal mode" then
+		ui.addTextArea(9999546, "<p align='center'><font size='13px'><n2>«<n>", name, 350, 86, 30, 18, 0x142b2e, 0x8a583c, 1, true)
+    	ui.addTextArea(9999547, "<p align='center'><font size='13px'><a href='event:4 teams mode'>»</a>", name, 520, 86, 30, 18, 0x142b2e, 0x8a583c, 1, true)
+    elseif mode == "4 teams mode" then
+    	ui.addTextArea(9999546, "<p align='center'><font size='13px'><a href='event:Normal mode'>«</a>", name, 350, 86, 30, 18, 0x142b2e, 0x8a583c, 1, true)
+    	ui.addTextArea(9999547, "<p align='center'><font size='13px'><a href='event:2 teams mode'>»</a>", name, 520, 86, 30, 18, 0x142b2e, 0x8a583c, 1, true)
+    elseif mode == "2 teams mode" then
+    	ui.addTextArea(9999546, "<p align='center'><font size='13px'><a href='event:4 teams mode'>«</a>", name, 350, 86, 30, 18, 0x142b2e, 0x8a583c, 1, true)
+    	ui.addTextArea(9999547, "<p align='center'><font size='13px'><a href='event:Real mode'>»</a>", name, 520, 86, 30, 18, 0x142b2e, 0x8a583c, 1, true)
+    elseif mode == "Real mode" then
+    	ui.addTextArea(9999546, "<p align='center'><font size='13px'><a href='event:2 teams mode'>«</a>", name, 350, 86, 30, 18, 0x142b2e, 0x8a583c, 1, true)
+    	ui.addTextArea(9999547, "<p align='center'><font size='13px'><n2>»</n>", name, 520, 86, 30, 18, 0x142b2e, 0x8a583c, 1, true)
+	end
+	ui.addTextArea(9999548, "<textformat leading='3px'><j>Name<n>"..namesRank.."", name, 135, 115, 185, 185, 0x161616, 0x161616, 0, true)
+	ui.addTextArea(9999549, "<textformat leading='3px'><j>Matches<n>"..matchesRank.."", name, 335, 115, 50, 185, 0x161616, 0x161616, 0, true)
+	ui.addTextArea(9999550, "<textformat leading='3px'><j>Wins<n>"..winsRank.."", name, 400, 115, 50, 185, 0x161616, 0x161616, 0, true)
+	ui.addTextArea(9999551, "<textformat leading='3px'><j>Win rate<n>"..winRatioRank.."", name, 465, 115, 55, 185, 0x161616, 0x161616, 0, true)
+	if mode == "4 teams mode" then
+		ui.addTextArea(9999552, "<textformat leading='3px'><r>WR<n>"..winsRed.."", name, 535, 115, 50, 185, 0x161616, 0x161616, 0, true)
+		ui.addTextArea(9999553, "<textformat leading='3px'><bv>WB<n>"..winsBlue.."", name, 597, 115, 50, 185, 0x161616, 0x161616, 0, true)
+		ui.addTextArea(9999564, "<textformat leading='3px'><j>WY<n>"..winsYellow.."", name, 659, 115, 50, 185, 0x161616, 0x161616, 0, true)
+		ui.addTextArea(9999565, "<textformat leading='3px'><vp>WG<n>"..winsGreen.."", name, 721, 115, 50, 185, 0x161616, 0x161616, 0, true)
+	else
+		ui.addTextArea(9999552, "<textformat leading='3px'><r>WR<n>"..winsRed.."", name, 650, 115, 50, 185, 0x161616, 0x161616, 0, true)
+		ui.addTextArea(9999553, "<textformat leading='3px'><bv>WB<n>"..winsBlue.."", name, 715, 115, 50, 185, 0x161616, 0x161616, 0, true)
+	end
+
+	if page == 1 then
+		buttonNextOrPrev(26, name, 135, 300, 200, 30, 1, "<n2>"..playerLanguage[name].tr.previousMessage.."</n>")
+	else
+		buttonNextOrPrev(26, name, 135, 300, 200, 30, 1, "<a href='event:prevRank"..tostring(page - 1).."'>"..playerLanguage[name].tr.previousMessage.."</a>")
+	end
+
+	if rank[findNextIndexValue] == nil or findNextIndexValue > 30 then
+		buttonNextOrPrev(25, name, 560, 300, 200, 30, 1, "<n2>"..playerLanguage[name].tr.nextMessage.."</n>")
+	else
+		buttonNextOrPrev(25, name, 560, 300, 200, 30, 1, "<a href='event:nextRank"..tostring(page + 1).."'>"..playerLanguage[name].tr.nextMessage.."</a>")
+	end	
+end
+
+function rankMode(mode) 
+	if mode == "Normal mode" then
+		return rankNormalMode
+	elseif mode == "4 teams mode" then
+		return rankFourTeamsMode
+	elseif mode == "2 teams mode" then
+		return rankTwoTeamsMode
+	elseif mode == "Real mode" then
+		return rankRealMode
+	end
+end
+
+function rankPageMode(mode, name)
+	if mode == "Normal mode" then
+		return pageNormalMode[name]
+	elseif mode == "4 teams mode" then
+		return pageFourTeamsMode[name]
+	elseif mode == "2 teams mode" then
+		return pageTwoTeamsMode[name]
+	elseif mode == "Real mode" then
+		return pageRealMode[name]
+	end
+end
+
+function positionsString(page) 
+	local positions = {}
+
+	for i = 1, 10 do
+		if i == 1 and page == 1 then
+			positions[#positions + 1] = "<j>"..tostring( i + (10 * (page - 1)))..".<n>"
+		elseif i == 2 and page == 1 then
+			positions[#positions + 1] = "<n2>"..tostring( i + (10 * (page - 1)))..".<n>"
+		elseif i == 3 and page == 1 then
+			positions[#positions + 1] = "<ce>"..tostring( i + (10 * (page - 1)))..".<n>"
+		else
+			positions[#positions + 1] = "<n>"..tostring( i + (10 * (page - 1)))..".<n>"
+		end
+	end
+
+	return positions
+end
+
+function positions(page)
+	local positions = {}
+
+	for i = 1, 10 do
+		positions[#positions + 1] = i
+	end
+
+	return positions
+end
+
+function playerHistoryOnMatch(team, name)
+	local playerTeams = playersOnGameHistoric[name].teams
+	local notFindSameTeam = true
+
+	for i = 1, #playerTeams do
+		if playerTeams[i] == team then
+			notFindSameTeam = false
+		end
+	end
+
+	if notFindSameTeam then
+		return true
+	end
+
+	return false
+end
+
+function closeRankingUI(name)
+	for i = 9999543, 9999565 do 
+	    ui.removeTextArea(i, name)
+	end
+end
+
+function windowUISync(name)
+	local playersSync = {}
+	closeRankingUI(name)
+	openRank[name] = false
+	for name1, data in pairs(tfm.get.room.playerList) do
+		local playerSync = tfm.get.room.playerList[name1].averageLatency
+		local syncCondition = textSyncCondition(tfm.get.room.playerList[name1].averageLatency)
+
+		if not playerLeft[name1] then
+			playersSync[#playersSync + 1] = { name = name1, sync = tfm.get.room.playerList[name1].averageLatency, syncCondition = syncCondition }
+		end
+	end
+
+	table.sort(playersSync, function(a, b) return a.sync < b.sync end)
+
+	local str = ""
+	for i = 1, 3 do
+		if playersSync[i] ~= nil then
+			str = ""..str.."<p align='left'><font size='12px'><a href='event:sync"..playersSync[i].name.."'>"..playersSync[i].name.."</a></p><p align='right'><font size='12px'>"..playersSync[i].syncCondition.."</p><br><br>"
+		end
+	end
+
+	ui.addWindow(24, "<p align='center'><font size='14px'>Select player sync (click on player name to select the sync)</p><br><br><p align='left'><font size='12px'>Player</p><p align='right'><font size='12px'>Sync condition</p><br>"..str.."", name, 125, 60, 650, 300, 1, false, true, playerLanguage[name].tr.closeUIText)
 end
 
 init()
