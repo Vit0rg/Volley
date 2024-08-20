@@ -4107,6 +4107,16 @@ function eventChatCommand(name, c)
 			mode = "endGame"
 			gameTimeEnd = os.time() + 5000
 
+			if gameStats.teamsMode then
+				updateRankingFourTeamsMode()
+			elseif gameStats.twoTeamsMode then
+				updateRankingTwoTeamsMode()
+			elseif gameStats.realMode then
+				updateRankingRealMode()
+			else
+				updateRankingNormalMode()
+			end
+
 			tfm.exec.chatMessage("<bv>The command to reset lobby was actived by admin "..name..", the match will restart in 5 seconds<n>", nil)
 		elseif command:sub(1, 8) == "killspec" then
 			if name == "Refletz#6472" or name == "+Mimounaaa#0000" or name == "Soristl1#0000" or name == "Axeldoton#0000" or name == "Nagi#6356" or name == "Wreft#5240" or name == "lylastyla#0000" then
