@@ -3745,7 +3745,7 @@ function eventChatCommand(name, c)
 
 			if maxNumberPlayers >= 6 and maxNumberPlayers <= 20 then
 				tfm.exec.setRoomMaxPlayers(maxNumberPlayers)
-				tfm.exec.chatMessage("<bv>"..playerLanguage[name].tr.messageSetMaxPlayers.." "..command:sub(15).."<n>", name)
+				tfm.exec.chatMessage("<bv>"..playerLanguage[name].tr.messageSetMaxPlayers.." "..command:sub(15).." by admin "..name.."<n>", nil)
 			else
 				tfm.exec.chatMessage(playerLanguage[name].tr.messageMaxPlayersAlert, name)
 			end
@@ -3781,7 +3781,7 @@ function eventChatCommand(name, c)
 		elseif command:sub(1,2) == "pw" then
 			tfm.exec.setRoomPassword(command:sub(4))
 			if command:sub(4) ~= "" then
-				tfm.exec.chatMessage("<bv>"..playerLanguage[name].tr.newPassword.." "..command:sub(4).."<n>", name)
+				tfm.exec.chatMessage("<bv>"..playerLanguage[name].tr.newPassword.." "..command:sub(4).." by admin "..name.."<n>", nil)
 			else
 				tfm.exec.chatMessage(playerLanguage[name].tr.passwordRemoved, name)
 			end
@@ -3991,7 +3991,7 @@ function eventChatCommand(name, c)
 				return
 			end
 
-			for name1, data in pairs(tfm.get.room.playerList) do
+			for name1, data in pairs(playerLanguage) do
 				if string.lower(name1) == args[2] then
 					if name1 == getRoomAdmin and permanentAdmin then
 						admins[name1] = false
