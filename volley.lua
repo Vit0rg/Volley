@@ -184,7 +184,7 @@ local permanentAdmins = {
     "Rowed#4415"
 }
 
-local gameVersion = "V2.1.0"
+local gameVersion = "V2.1.1"
 
 local trad = ""
 local lang = {}
@@ -217,7 +217,8 @@ lang.br = {
 	textSettings = "<p align='left'><font size='12px'>Selecionar modo de jogo<br><br><br><br><br><br><br><br><br><br>Ativar o comando !twoballs</p>",
 	msgAchievements = "<p align='left'><font size='14px'>Conquistas:",
 	msgsTrophies = {
-		[1] = "Troféu Copa do Mundo de Vôlei"
+		[1] = "Troféu Copa do Mundo de Vôlei",
+		[2] = "FootVolley Ultimate Team Badge"
 	},
 	mapSelect = 'Selecionar um mapa',
 }
@@ -249,7 +250,8 @@ lang.en = {
 	textSettings = "<p align='left'><font size='12px'>Select game mode<br><br><br><br><br><br><br><br><br><br>Activate the !twoballs command</p>",
 	msgAchievements = "<p align='left'><font size='14px'>Achievements:",
 	msgsTrophies = {
-		[1] = "Volleyball World Cup Trophy"
+		[1] = "Volleyball World Cup Trophy",
+		[2] = "FootVolley Ultimate Team Badge"
 	},
 	mapSelect = 'Select a map'
 }
@@ -281,7 +283,8 @@ lang.ar = {
 	textSettings = "<p align='right'><font size='12px'>اختر وضع اللعبة<br><br><br><br><br><br><br><br><br><br> قم بتنشيط !twoballs الأمر </p>",
 	msgAchievements = "<p align='right'><font size='14px'>الإنجازات:",
 	msgsTrophies = {
-		[1] = "كأس العالم للكرة الطائرة"
+		[1] = "كأس العالم للكرة الطائرة",
+		[2] = "شارة فريق FootVolley Ultimate Team"
 	},
 	mapSelect = 'حدد الخريطة'
 }
@@ -314,7 +317,8 @@ lang.fr = {
 	textSettings = "<p align='left'><font size='12px'>Sélectionner le mode de jeu<br><br><br><br><br><br><br><br><br><br>Activer les !twoballs commande</p>",
 	msgAchievements = "<p align='left'><font size='14px'>Réalisations:",
 	msgsTrophies = {
-		[1] = "Trophée de la Coupe du Monde de Volleyball"
+		[1] = "Trophée de la Coupe du Monde de Volleyball",
+		[2] = "FootVolley Ultimate Team Badge"
 	},
 	mapSelect = 'Sélectionner une carte'
 }
@@ -346,7 +350,8 @@ lang.pl = {
 	textSettings = "<p align='left'><font size='12px'>Wybierz tryb gry<br><br><br><br><br><br><br><br><br><br>Aktywuj !twoballs dowodzenie</p>",
 	msgAchievements = "<p align='left'><font size='14px'>Osiągnięcia:",
 	msgsTrophies = {
-		[1] = "Trofeum Pucharu Świata w siatkówce"
+		[1] = "Trofeum Pucharu Świata w siatkówce",
+		[2] = "FootVolley Ultimate Team Badge"
 	},
 	mapSelect = 'Wybierz mapę'
 }
@@ -1045,8 +1050,10 @@ playerAchievements["Jenji#1475"] = { [1] = { image = "img@193d675bca7", quantity
 playerAchievements["Ramasevosaff#0000"] = { [1] = { image = "img@193d675bca7", quantity = 1 }}
 playerAchievements["Rex#2654"] = { [1] = { image = "img@193d675bca7", quantity = 1 }}
 playerAchievements["Raidensnd#0000"] = { [1] = { image = "img@193d675bca7", quantity = 1 }}
-playerAchievements["Mulan#5042"] = { [1] = { image = "img@193d675bca7", quantity = 1 }}
-playerAchievements["Basker#2238"] = { [1] = { image = "img@193d675bca7", quantity = 1 }}
+playerAchievements["Mulan#5042"] = { [1] = { image = "img@193d675bca7", quantity = 1 }, [2] = { image = '19636905a3c.png', quantity = 1 }}
+playerAchievements["Basker#2338"] = { [1] = { image = "img@193d675bca7", quantity = 1 }}
+playerAchievements["Ppoppohaejuseyo#2315"] = { [1] = { image = "img@193d6763c82", quantity = 1 }, [2] = { image = '19636905a3c.png', quantity = 1 }}
+playerAchievements["Djadja#5590"] = { [1] = { image = "img@193d6763c82", quantity = 1 }, [2] = { image = '19636905a3c.png', quantity = 1 }}
 
 for name, data in pairs(tfm.get.room.playerList) do
 	customMapCommand[name] = true
@@ -1056,7 +1063,7 @@ for name, data in pairs(tfm.get.room.playerList) do
 	isOpenProfile[name] = false
 	playerTrophyImage[name] = 0
 	if playerAchievements[name] == nil then
-		playerAchievements[name] = {[1] = { image = "img@193d6763c82", quantity = 0 }}
+		playerAchievements[name] = {[1] = { image = "img@193d6763c82", quantity = 0 }, [2] = { image = '19636907e9e.png', quantity = 0}}
 	end
 	playerAchievementsImages[name] = {}
 	showCrownImages[name] = true
@@ -3531,7 +3538,7 @@ function eventNewPlayer(name)
 	isOpenProfile[name] = false
 	playerTrophyImage[name] = 0
 	if playerAchievements[name] == nil then
-		playerAchievements[name] = {[1] = { image = "img@193d6763c82", quantity = 0 }}
+		playerAchievements[name] = {[1] = { image = "img@193d6763c82", quantity = 0 }, [2] = { image = '19636907e9e.png', quantity = 0}}
 	end
 	playerAchievementsImages[name] = {}
 	settings[name] = false
@@ -7361,6 +7368,7 @@ end
 
 function removeUITrophies(name) 
 	isOpenProfile[name] = false
+	closeWindow(28, name)
 	closeWindow(27, name)
 	closeWindow(26, name)
 
@@ -7383,6 +7391,7 @@ function profileUI(name, playerTarget)
 	local images1 = ui.addWindow(24, "<p align='center'><font size='16px'><textformat leading='-10'><br><v>"..string.sub(playerTarget, 1, #playerTarget - 5).."<n><bl>"..string.sub(playerTarget, #playerTarget -4).."<n>", name, 300, 105, 400, 50, 1, true, false, "", {false, false, true, true})
 	local images2 = ui.addWindow(25, "<p align='center'><font size='30px'><textformat leading='-10'><br><j>#1<n>", name, 200, 80, 100, 100, 1, true, false, "", {true, true, true, true})
 	ui.addTrophie(27, "trophie1", name, playerTarget, 230, 230, 50, 50, 1)
+	ui.addTrophie(28, "trophie2", name, playerTarget, 295, 230, 50, 50, 1)
 
 	appendAchievementsImages(name, images1)
 	appendAchievementsImages(name, images2)
