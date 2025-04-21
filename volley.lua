@@ -1046,13 +1046,13 @@ local customMapCommand = {}
 
 local gameTimeEnd = os.time() + 5000
 
-playerAchievements["Jenji#1475"] = { [1] = { image = "img@193d675bca7", quantity = 1 }}
-playerAchievements["Ramasevosaff#0000"] = { [1] = { image = "img@193d675bca7", quantity = 1 }}
-playerAchievements["Rex#2654"] = { [1] = { image = "img@193d675bca7", quantity = 1 }}
-playerAchievements["Raidensnd#0000"] = { [1] = { image = "img@193d675bca7", quantity = 1 }}
+playerAchievements["Jenji#1475"] = { [1] = { image = "img@193d675bca7", quantity = 1 }, [2] = { image = '19636907e9e.png', quantity = 0}}
+playerAchievements["Ramasevosaff#0000"] = { [1] = { image = "img@193d675bca7", quantity = 1 }, [2] = { image = '19636907e9e.png', quantity = 0}}
+playerAchievements["Rex#2654"] = { [1] = { image = "img@193d675bca7", quantity = 1 }, [2] = { image = '19636907e9e.png', quantity = 0}}
+playerAchievements["Raidensnd#0000"] = { [1] = { image = "img@193d675bca7", quantity = 1 }, [2] = { image = '19636907e9e.png', quantity = 0}}
 playerAchievements["Mulan#5042"] = { [1] = { image = "img@193d675bca7", quantity = 1 }, [2] = { image = '19636905a3c.png', quantity = 1 }}
-playerAchievements["Basker#2338"] = { [1] = { image = "img@193d675bca7", quantity = 1 }}
-playerAchievements["Ppoppohaejuseyo#2315"] = { [1] = { image = "img@193d6763c82", quantity = 1 }, [2] = { image = '19636905a3c.png', quantity = 1 }}
+playerAchievements["Basker#2338"] = { [1] = { image = "img@193d675bca7", quantity = 1 }, [2] = { image = '19636907e9e.png', quantity = 0}}
+playerAchievements["Ppoppohaejuseyo#2315"] = { [1] = { image = "img@193d6763c82", quantity = 0 }, [2] = { image = '19636905a3c.png', quantity = 1 }}
 playerAchievements["Djadja#5590"] = { [1] = { image = "img@193d6763c82", quantity = 1 }, [2] = { image = '19636905a3c.png', quantity = 1 }}
 
 for name, data in pairs(tfm.get.room.playerList) do
