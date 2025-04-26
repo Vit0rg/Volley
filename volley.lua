@@ -184,7 +184,7 @@ local permanentAdmins = {
     "Rowed#4415"
 }
 
-local gameVersion = "V2.1.1"
+local gameVersion = "V2.2.0"
 
 local trad = ""
 local lang = {}
@@ -665,6 +665,13 @@ local customMaps = {
 		[3] = 'The Rainbow',
 		[4] = 'Kralizmox#0000',
 		[6] = '19554034040.png'
+	},
+	[39] = {
+		[1] = '<C><P F="7" G="0,4" MEDATA=";1,1;;;-0;0:::1-"/><Z><S><S T="9" X="400" Y="430" L="800" H="10" P="0,0,0,0,0,0,0,0"/><S T="1" X="400" Y="350" L="10" H="200" P="0,0,0,0.2,0,0,0,0"/><S T="12" X="400" Y="455" L="800" H="10" P="0,0,0.3,0.2,0,0,0,0" o="6a7495"/><S T="12" X="-5" Y="0" L="10" H="3000" P="0,0,0.2,0.2,0,0,0,0" o="6a7495"/><S T="12" X="805" Y="0" L="10" H="3000" P="0,0,0.2,0.2,0,0,0,0" o="6a7495"/><S T="12" X="50" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="1" X="400" Y="0" L="800" H="10" P="0,0,0,0.2,0,0,0,0" c="3" N=""/><S T="0" X="400" Y="95" L="800" H="10" P="0,0,0.3,0.2,0,0,0,0" c="3" N="" m=""/><S T="0" X="105" Y="48" L="10" H="100" P="0,0,0.3,0.2,0,0,0,0" c="3" m=""/><S T="0" X="700" Y="48" L="10" H="100" P="0,0,0.3,0.2,0,0,0,0" c="3" N="" m=""/><S T="0" X="400" Y="175" L="10" H="158" P="0,0,0.2,0,0,0,0,0" c="3" m=""/><S T="0" X="400" Y="791" L="800" H="10" P="0,0,0.3,0.2,90,0,0,0" m=""/><S T="12" X="316" Y="-129" L="20" H="200" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3"/><S T="12" X="407" Y="-133" L="20" H="200" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3"/><S T="12" X="363" Y="-92" L="20" H="100" P="0,0,0.2,0.2,90,0,0,0" o="6a7495" c="3"/><S T="12" X="360" Y="-206" L="20" H="100" P="0,0,0.2,0.2,90,0,0,0" o="6a7495" c="3"/><S T="12" X="400" Y="460" L="3000" H="120" P="0,0,0.3,0.2,0,0,0,0" o="6a7495" c="4" N=""/><S T="12" X="750" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="1" X="400" Y="-800" L="800" H="10" P="0,0,0,0.2,0,0,0,0" N=""/><S T="10" X="342" Y="264" L="108" H="10" P="0,0,0.1,0.2,0,0,0,0" c="3"/><S T="10" X="458" Y="264" L="108" H="10" P="0,0,0.1,0.2,0,0,0,0" c="3"/><S T="10" X="326" Y="214" L="68" H="10" P="0,0,0.1,0.2,0,0,0,0" c="3"/><S T="10" X="474" Y="214" L="68" H="10" P="0,0,0.1,0.2,0,0,0,0" c="3"/><S T="10" X="355" Y="184" L="10" H="66" P="0,0,0.1,0.2,0,0,0,0" c="3"/><S T="10" X="445" Y="184" L="10" H="66" P="0,0,0.1,0.2,0,0,0,0" c="3"/><S T="10" X="51" Y="207" L="10" H="66" P="0,0,0.1,0.2,0,0,0,0" c="3"/><S T="10" X="751" Y="207" L="10" H="66" P="0,0,0.1,0.2,0,0,0,0" c="3"/><S T="10" X="377" Y="156" L="48" H="10" P="0,0,0.1,0.2,0,0,0,0" c="3"/><S T="10" X="423" Y="156" L="48" H="10" P="0,0,0.1,0.2,0,0,0,0" c="3"/><S T="10" X="25" Y="179" L="48" H="10" P="0,0,0.1,0.2,0,0,0,0" c="3"/><S T="10" X="775" Y="179" L="48" H="10" P="0,0,0.1,0.2,0,0,0,0" c="3"/><S T="10" X="293" Y="238" L="10" H="59" P="0,0,0.1,0.2,0,0,0,0" c="3"/><S T="10" X="507" Y="238" L="10" H="59" P="0,0,0.1,0.2,0,0,0,0" c="3"/><S T="10" X="190" Y="378" L="139" H="10" P="0,0,0.1,0.2,0,0,0,0" c="3"/><S T="10" X="610" Y="378" L="139" H="10" P="0,0,0.1,0.2,0,0,0,0" c="3"/><S T="10" X="190" Y="328" L="139" H="10" P="0,0,0.1,0.2,0,0,0,0" c="3"/><S T="10" X="611" Y="328" L="139" H="10" P="0,0,0.1,0.2,0,0,0,0" c="3"/><S T="10" X="126" Y="352" L="10" H="59" P="0,0,0.1,0.2,0,0,0,0" c="3"/><S T="10" X="546" Y="352" L="10" H="59" P="0,0,0.1,0.2,0,0,0,0" c="3"/><S T="10" X="255" Y="354" L="10" H="57" P="0,0,0.1,0.2,0,0,0,0" c="3"/><S T="10" X="676" Y="354" L="10" H="57" P="0,0,0.1,0.2,0,0,0,0" c="3"/><S T="10" X="50" Y="300" L="100" H="10" P="0,0,0.1,0.2,0,0,0,0" c="3"/><S T="10" X="750" Y="300" L="100" H="10" P="0,0,0.1,0.2,0,0,0,0" c="3"/><S T="10" X="73" Y="240" L="55" H="10" P="0,0,0.1,0.2,0,0,0,0" c="3"/><S T="10" X="727" Y="240" L="55" H="10" P="0,0,0.1,0.2,0,0,0,0" c="3"/><S T="10" X="96" Y="270" L="10" H="68" P="0,0,0.1,0.2,0,0,0,0" c="3"/><S T="10" X="704" Y="270" L="10" H="68" P="0,0,0.1,0.2,0,0,0,0" c="3"/></S><D><T X="335" Y="251" spawn="2"/><T X="465" Y="251" spawn="2"/><T X="190" Y="366" spawn="1"/><T X="610" Y="366" spawn="1"/><T X="41" Y="281" spawn="3"/><T X="761" Y="281" spawn="3"/><DS X="360" Y="-151"/></D><O/><L/></Z></C>',
+		[2] = '<C><P L="1200" F="7" G="0,4" MEDATA=";3,1;;;-0;0:::1-"/><Z><S><S T="9" X="600" Y="430" L="1200" H="10" P="0,0,0,0,0,0,0,0"/><S T="1" X="600" Y="350" L="10" H="200" P="0,0,0,0.2,0,0,0,0"/><S T="12" X="400" Y="455" L="800" H="10" P="0,0,0.3,0.2,0,0,0,0" o="6a7495"/><S T="12" X="-5" Y="0" L="10" H="3000" P="0,0,0.2,0.2,0,0,0,0" o="6a7495"/><S T="12" X="1200" Y="0" L="10" H="3000" P="0,0,0.2,0.2,0,0,0,0" o="6a7495"/><S T="12" X="250" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="1" X="600" Y="0" L="1200" H="10" P="0,0,0,0.2,0,0,0,0" c="3"/><S T="0" X="600" Y="95" L="1200" H="10" P="0,0,0.3,0.2,0,0,0,0" c="3" m=""/><S T="0" X="305" Y="48" L="10" H="100" P="0,0,0.3,0.2,0,0,0,0" c="3" m=""/><S T="0" X="900" Y="48" L="10" H="100" P="0,0,0.3,0.2,0,0,0,0" c="3" m=""/><S T="0" X="600" Y="178" L="10" H="152" P="0,0,0.2,0,0,0,0,0" c="3" m=""/><S T="0" X="600" Y="791" L="800" H="10" P="0,0,0.3,0.2,90,0,0,0" m=""/><S T="12" X="316" Y="-129" L="20" H="200" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3"/><S T="12" X="407" Y="-133" L="20" H="200" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3"/><S T="12" X="363" Y="-92" L="20" H="100" P="0,0,0.2,0.2,90,0,0,0" o="6a7495" c="3"/><S T="12" X="360" Y="-206" L="20" H="100" P="0,0,0.2,0.2,90,0,0,0" o="6a7495" c="3"/><S T="12" X="400" Y="460" L="3000" H="120" P="0,0,0.3,0.2,0,0,0,0" o="6a7495" c="4" N=""/><S T="12" X="950" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="1" X="600" Y="-800" L="1200" H="10" P="0,0,0,0.2,0,0,0,0"/><S T="10" X="526" Y="264" L="144" H="10" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="674" Y="264" L="144" H="10" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="459" Y="238" L="10" H="59" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="741" Y="238" L="10" H="59" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="508" Y="214" L="104" H="10" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="692" Y="214" L="104" H="10" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="555" Y="184" L="10" H="66" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="645" Y="184" L="10" H="66" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="577" Y="156" L="48" H="10" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="623" Y="156" L="48" H="10" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="298" Y="328" L="308" H="10" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="902" Y="328" L="308" H="10" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="298" Y="378" L="308" H="10" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="902" Y="378" L="308" H="10" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="149" Y="352" L="10" H="59" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="753" Y="352" L="10" H="59" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="447" Y="352" L="10" H="59" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="1051" Y="352" L="10" H="59" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="69" Y="300" L="138" H="10" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="1131" Y="300" L="138" H="10" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="133" Y="270" L="10" H="68" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="1067" Y="270" L="10" H="68" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="92" Y="240" L="92" H="10" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="1108" Y="240" L="92" H="10" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="51" Y="207" L="10" H="66" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="1149" Y="207" L="10" H="66" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="24" Y="179" L="48" H="10" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="1176" Y="179" L="48" H="10" P="0,0,0.3,0,0,0,0,0" c="3"/></S><D><P X="360" Y="35" T="131" C="555D77" P="0,0"/><P X="840" Y="35" T="131" C="555D77" P="0,0"/><T X="535" Y="251" spawn="2"/><T X="665" Y="251" spawn="2"/><T X="300" Y="366" spawn="1"/><T X="900" Y="366" spawn="1"/><T X="41" Y="281" spawn="3"/><T X="1159" Y="281" spawn="3"/><DS X="365" Y="-141"/></D><O/><L/></Z></C>',
+		[3] = 'Platforms',
+		[4] = 'Refletz#6472',
+		[6] = '196599446e1.png'
 	}
 }
 
@@ -908,6 +915,14 @@ local customMapsFourTeamsMode = {
 		[4] = 'Kralizmox#0000',
 		[5] = '<C><P G="0,4" MEDATA=";;;;-0;0::0,1,2,3,4,5,6,7,8,9,10,11:1-" /><Z><S><S P="0,0,0,0.2,0,0,0,0" L="10" X="400" H="200" Y="350" T="1" /><S P="0,0,0.3,0.2,0,0,0,0" c="4" L="100" o="324650" X="50" H="105" Y="45" T="12" /><S P="0,0,0.3,0.2,0,0,0,0" c="3" L="800" m="" X="400" H="10" N="" Y="95" T="0" /><S P="0,0,0.3,0.2,0,0,0,0" c="3" L="10" m="" X="105" H="100" Y="48" T="0" /><S P="0,0,0.3,0.2,0,0,0,0" c="3" L="10" m="" X="700" H="100" N="" Y="48" T="0" /><S P="0,0,0,0,0,0,0,0" c="3" L="10" m="" X="400" H="150" Y="175" T="0" /><S P="0,0,0.3,0.2,90,0,0,0" c="3" L="800" m="" X="400" H="10" Y="791" T="0" /><S P="0,0,0.2,0.2,0,0,0,0" c="3" L="20" o="6a7495" X="316" H="200" Y="-129" T="12" /><S P="0,0,0.2,0.2,0,0,0,0" c="3" L="20" o="6a7495" X="407" H="200" Y="-133" T="12" /><S P="0,0,0.2,0.2,90,0,0,0" c="3" L="20" o="6a7495" X="363" H="100" Y="-92" T="12" /><S P="0,0,0.2,0.2,90,0,0,0" c="3" L="20" o="6a7495" X="360" H="100" Y="-206" T="12" /><S P="0,0,0.3,0.2,0,0,0,0" H="10" L="200" o="ee0f0f" X="200" c="3" N="" Y="500" T="13" /><S P="0,0,0.3,0.2,0,0,0,0" H="10" L="200" o="ee0f0f" X="600" c="3" N="" Y="500" T="13" /><S P="0,0,0.3,0.2,0,0,0,0" H="10" L="200" o="eea10f" X="200" c="3" N="" Y="510" T="13" /><S P="0,0,0.3,0.2,0,0,0,0" H="10" L="200" o="eea10f" X="600" c="3" N="" Y="510" T="13" /><S P="0,0,0.3,0.2,0,0,0,0" H="10" L="200" o="f7ff00" X="200" c="3" N="" Y="520" T="13" /><S P="0,0,0.3,0.2,0,0,0,0" H="10" L="200" o="f7ff00" X="600" c="3" N="" Y="520" T="13" /><S P="0,0,0.3,0.2,0,0,0,0" H="10" L="200" o="00ff21" X="200" c="3" N="" Y="530" T="13" /><S P="0,0,0.3,0.2,0,0,0,0" H="10" L="200" o="00ff21" X="600" c="3" N="" Y="530" T="13" /><S P="0,0,0.3,0.2,0,0,0,0" H="10" L="200" o="00e8ff" X="200" c="3" N="" Y="540" T="13" /><S P="0,0,0.3,0.2,0,0,0,0" H="10" L="200" o="00e8ff" X="600" c="3" N="" Y="540" T="13" /><S P="0,0,0.3,0.2,0,0,0,0" H="10" L="200" o="0028ff" X="200" c="3" N="" Y="550" T="13" /><S P="0,0,0.3,0.2,0,0,0,0" H="10" L="200" o="0028ff" X="600" c="3" N="" Y="550" T="13" /><S P="0,0,0.3,0.2,0,0,0,0" H="10" L="200" o="6d00ff" X="200" c="3" N="" Y="560" T="13" /><S P="0,0,0.3,0.2,0,0,0,0" H="10" L="200" o="6d00ff" X="600" c="3" N="" Y="560" T="13" /><S P="0,0,0.3,0.2,0,0,0,0" H="10" L="200" o="69cdff" X="200" c="3" N="" Y="570" T="13" /><S P="0,0,0.3,0.2,0,0,0,0" H="10" L="200" o="69cdff" X="600" c="3" N="" Y="570" T="13" /><S P="0,0,0.3,0.2,0,0,0,0" c="4" L="3000" o="6a7495" X="400" H="400" N="" Y="600" T="12" /><S P="0,0,0.3,0.2,0,0,0,0" c="4" L="100" o="324650" X="750" H="105" Y="45" T="12" /><S P="0,0,0,0.2,0,0,0,0" c="3" L="800" X="400" H="10" Y="-5" T="1" /><S P="0,0,0,0.2,0,0,0,0" L="800" X="400" H="10" N="" Y="-800" T="1" /><S P="0,0,0.2,0.2,0,0,0,0" L="200" o="6a7495" X="-95" H="3000" Y="0" T="12" /><S P="0,0,0.2,0.2,0,0,0,0" L="200" o="6a7495" X="895" H="3000" Y="0" T="12" /></S><D><DS Y="-151" X="360" /></D><O /><L><JD c="69cdff,200,1," P1="0,299" P2="800,299" /><JD c="69cdff,200,1," P1="0,100" P2="800,100" /><JD c="ffffff,50,1," P1="200,180" P2="200,181" /><JD c="ffffff,50,1," P1="600,180" P2="600,181" /><JD c="ffffff,50,1," P1="160,180" P2="160,181" /><JD c="ffffff,50,1," P1="560,180" P2="560,181" /><JD c="ffffff,50,1," P1="180,160" P2="180,161" /><JD c="ffffff,50,1," P1="580,160" P2="580,161" /><JD c="ffffff,50,1," P1="220,160" P2="220,161" /><JD c="ffffff,50,1," P1="620,160" P2="620,161" /><JD c="ffffff,50,1," P1="240,180" P2="240,181" /><JD c="ffffff,50,1," P1="640,180" P2="640,181" /></L></Z></C>',
 		[6] = '19554034040.png'
+	},
+	[31] = {
+		[1] = '<C><P L="1600" F="7" G="0,4" MEDATA=";10,1;;;-0;0:::1-"/><Z><S><S T="9" X="600" Y="430" L="1200" H="10" P="0,0,0,0,0,0,0,0"/><S T="1" X="400" Y="350" L="10" H="200" P="0,0,0,0.2,0,0,0,0"/><S T="12" X="400" Y="455" L="800" H="10" P="0,0,0.3,0.2,0,0,0,0" o="6a7495"/><S T="12" X="-5" Y="0" L="10" H="3000" P="0,0,0.2,0.2,0,0,0,0" o="6a7495"/><S T="12" X="1600" Y="0" L="10" H="3000" P="0,0,0.2,0.2,0,0,0,0" o="6a7495"/><S T="12" X="250" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="1" X="790" Y="0" L="1620" H="10" P="0,0,0,0.2,0,0,0,0" c="3"/><S T="0" X="790" Y="95" L="1620" H="10" P="0,0,0.3,0.2,0,0,0,0" c="3" m=""/><S T="0" X="305" Y="48" L="10" H="100" P="0,0,0.3,0.2,0,0,0,0" c="3" m=""/><S T="0" X="1300" Y="48" L="10" H="100" P="0,0,0.3,0.2,0,0,0,0" c="3" m=""/><S T="0" X="400" Y="178" L="10" H="155" P="0,0,0.2,0,0,0,0,0" c="3" m=""/><S T="0" X="400" Y="791" L="800" H="10" P="0,0,0.3,0.2,90,0,0,0" m=""/><S T="12" X="316" Y="-129" L="20" H="200" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3"/><S T="12" X="407" Y="-133" L="20" H="200" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3"/><S T="12" X="363" Y="-92" L="20" H="100" P="0,0,0.2,0.2,90,0,0,0" o="6a7495" c="3"/><S T="12" X="360" Y="-206" L="20" H="100" P="0,0,0.2,0.2,90,0,0,0" o="6a7495" c="3"/><S T="12" X="400" Y="460" L="3000" H="120" P="0,0,0.3,0.2,0,0,0,0" o="6a7495" c="4" N=""/><S T="12" X="1350" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="1" X="600" Y="-800" L="1200" H="10" P="0,0,0,0.2,0,0,0,0"/><S T="1" X="800" Y="350" L="10" H="200" P="0,0,0,0.2,0,0,0,0"/><S T="0" X="800" Y="790" L="800" H="10" P="0,0,0.3,0.2,90,0,0,0" m=""/><S T="0" X="800" Y="177" L="10" H="155" P="0,0,0.2,0,0,0,0,0" c="3" m=""/><S T="1" X="1200" Y="350" L="10" H="200" P="0,0,0,0.2,0,0,0,0"/><S T="0" X="1200" Y="178" L="10" H="155" P="0,0,0.2,0,0,0,0,0" c="3" m=""/><S T="0" X="1200" Y="790" L="800" H="10" P="0,0,0.3,0.2,90,0,0,0" m=""/><S T="12" X="600" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="12" X="1000" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="10" X="342" Y="264" L="108" H="10" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="742" Y="264" L="108" H="10" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="1142" Y="264" L="108" H="10" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="1258" Y="264" L="108" H="10" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="458" Y="264" L="108" H="10" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="858" Y="264" L="108" H="10" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="326" Y="214" L="68" H="10" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="474" Y="214" L="68" H="10" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="874" Y="214" L="68" H="10" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="726" Y="214" L="68" H="10" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="1126" Y="214" L="68" H="10" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="1274" Y="214" L="68" H="10" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="293" Y="238" L="10" H="59" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="507" Y="238" L="10" H="59" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="907" Y="238" L="10" H="59" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="693" Y="238" L="10" H="59" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="1093" Y="238" L="10" H="59" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="1307" Y="238" L="10" H="59" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="355" Y="184" L="10" H="66" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="445" Y="184" L="10" H="66" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="845" Y="184" L="10" H="66" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="755" Y="184" L="10" H="66" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="1155" Y="184" L="10" H="66" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="1245" Y="184" L="10" H="66" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="377" Y="156" L="48" H="10" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="423" Y="156" L="48" H="10" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="823" Y="156" L="48" H="10" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="777" Y="156" L="48" H="10" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="1177" Y="156" L="48" H="10" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="1223" Y="156" L="48" H="10" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="190" Y="328" L="139" H="10" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="611" Y="328" L="139" H="10" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="1011" Y="328" L="139" H="10" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="1410" Y="328" L="139" H="10" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="1410" Y="378" L="139" H="10" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="190" Y="378" L="139" H="10" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="611" Y="378" L="139" H="10" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="1011" Y="378" L="139" H="10" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="126" Y="352" L="10" H="59" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="546" Y="352" L="10" H="59" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="946" Y="352" L="10" H="59" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="1475" Y="352" L="10" H="59" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="255" Y="352" L="10" H="59" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="676" Y="352" L="10" H="59" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="1076" Y="352" L="10" H="59" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="1345" Y="352" L="10" H="59" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="50" Y="300" L="100" H="10" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="1550" Y="300" L="100" H="10" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="96" Y="270" L="10" H="68" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="1504" Y="270" L="10" H="68" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="73" Y="240" L="55" H="10" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="1527" Y="240" L="55" H="10" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="51" Y="207" L="10" H="66" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="1549" Y="207" L="10" H="66" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="25" Y="179" L="48" H="10" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="1575" Y="179" L="48" H="10" P="0,0,0.3,0,0,0,0,0" c="3"/></S><D><T X="335" Y="251" spawn="2"/><T X="465" Y="251" spawn="2"/><T X="865" Y="251" spawn="2"/><T X="735" Y="251" spawn="2"/><T X="1135" Y="251" spawn="2"/><T X="1265" Y="251" spawn="2"/><T X="190" Y="366" spawn="1"/><T X="610" Y="366" spawn="1"/><T X="1010" Y="366" spawn="1"/><T X="1410" Y="366" spawn="1"/><T X="41" Y="281" spawn="3"/><T X="1559" Y="281" spawn="3"/><DS X="365" Y="-141"/></D><O/><L/></Z></C>',
+		[2] = '<C><P L="1200" F="7" G="0,4" MEDATA=";7,1;;;-0;0:::1-"/><Z><S><S T="9" X="600" Y="430" L="1200" H="10" P="0,0,0,0,0,0,0,0"/><S T="1" X="400" Y="350" L="10" H="200" P="0,0,0,0.2,0,0,0,0"/><S T="12" X="400" Y="455" L="800" H="10" P="0,0,0.3,0.2,0,0,0,0" o="6a7495"/><S T="12" X="-5" Y="0" L="10" H="3000" P="0,0,0.2,0.2,0,0,0,0" o="6a7495"/><S T="12" X="1200" Y="0" L="10" H="3000" P="0,0,0.2,0.2,0,0,0,0" o="6a7495"/><S T="12" X="250" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="1" X="600" Y="0" L="1200" H="10" P="0,0,0,0.2,0,0,0,0" c="3"/><S T="0" X="600" Y="95" L="1200" H="10" P="0,0,0.3,0.2,0,0,0,0" c="3" m=""/><S T="0" X="305" Y="48" L="10" H="100" P="0,0,0.3,0.2,0,0,0,0" c="3" m=""/><S T="0" X="900" Y="48" L="10" H="100" P="0,0,0.3,0.2,0,0,0,0" c="3" m=""/><S T="0" X="400" Y="176" L="10" H="156" P="0,0,0.2,0,0,0,0,0" c="3" m=""/><S T="0" X="400" Y="791" L="800" H="10" P="0,0,0.3,0.2,90,0,0,0" m=""/><S T="12" X="316" Y="-129" L="20" H="200" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3"/><S T="12" X="407" Y="-133" L="20" H="200" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3"/><S T="12" X="363" Y="-92" L="20" H="100" P="0,0,0.2,0.2,90,0,0,0" o="6a7495" c="3"/><S T="12" X="360" Y="-206" L="20" H="100" P="0,0,0.2,0.2,90,0,0,0" o="6a7495" c="3"/><S T="12" X="400" Y="460" L="3000" H="120" P="0,0,0.3,0.2,0,0,0,0" o="6a7495" c="4" N=""/><S T="12" X="950" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="1" X="600" Y="-800" L="1200" H="10" P="0,0,0,0.2,0,0,0,0"/><S T="1" X="800" Y="350" L="10" H="200" P="0,0,0,0.2,0,0,0,0"/><S T="0" X="800" Y="175" L="10" H="158" P="0,0,0.2,0,0,0,0,0" c="3" m=""/><S T="0" X="800" Y="791" L="800" H="10" P="0,0,0.3,0.2,90,0,0,0" m=""/><S T="12" X="600" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="10" X="342" Y="264" L="108" H="10" P="0,0,0.3,0.2,0,0,0,0" c="3"/><S T="10" X="458" Y="264" L="108" H="10" P="0,0,0.3,0.2,0,0,0,0" c="3"/><S T="10" X="858" Y="264" L="108" H="10" P="0,0,0.3,0.2,0,0,0,0" c="3"/><S T="10" X="742" Y="264" L="108" H="10" P="0,0,0.3,0.2,0,0,0,0" c="3"/><S T="10" X="293" Y="238" L="10" H="59" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="507" Y="238" L="10" H="59" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="907" Y="238" L="10" H="59" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="693" Y="238" L="10" H="59" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="190" Y="378" L="139" H="10" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="326" Y="214" L="68" H="10" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="474" Y="214" L="68" H="10" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="874" Y="214" L="68" H="10" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="726" Y="214" L="68" H="10" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="355" Y="184" L="10" H="66" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="445" Y="184" L="10" H="66" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="845" Y="184" L="10" H="66" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="755" Y="184" L="10" H="66" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="377" Y="156" L="48" H="10" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="423" Y="156" L="48" H="10" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="823" Y="156" L="48" H="10" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="777" Y="156" L="48" H="10" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="190" Y="328" L="139" H="10" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="611" Y="328" L="139" H="10" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="1011" Y="328" L="139" H="10" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="611" Y="378" L="139" H="10" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="1011" Y="378" L="139" H="10" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="126" Y="354" L="10" H="57" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="547" Y="354" L="10" H="57" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="947" Y="354" L="10" H="57" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="255" Y="354" L="10" H="57" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="676" Y="354" L="10" H="57" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="1076" Y="354" L="10" H="57" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="50" Y="300" L="100" H="10" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="1150" Y="300" L="100" H="10" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="96" Y="270" L="10" H="68" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="1104" Y="270" L="10" H="68" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="73" Y="240" L="55" H="10" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="1127" Y="240" L="55" H="10" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="51" Y="207" L="10" H="66" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="1149" Y="207" L="10" H="66" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="25" Y="179" L="48" H="10" P="0,0,0.3,0,0,0,0,0" c="3"/><S T="10" X="1175" Y="179" L="48" H="10" P="0,0,0.3,0,0,0,0,0" c="3"/></S><D><T X="335" Y="251" spawn="2"/><T X="465" Y="251" spawn="2"/><T X="865" Y="251" spawn="2"/><T X="735" Y="251" spawn="2"/><T X="190" Y="366" spawn="1"/><T X="610" Y="366" spawn="1"/><T X="1010" Y="366" spawn="1"/><T X="41" Y="281" spawn="3"/><T X="1159" Y="281" spawn="3"/><DS X="365" Y="-141"/></D><O/><L/></Z></C>',
+		[3] = 'Platforms',
+		[4] = 'Refletz#6472',
+		[5] = '<C><P F="7" G="0,4" MEDATA=";4,1;;;-0;0:::1-"/><Z><S><S T="9" X="400" Y="430" L="800" H="10" P="0,0,0,0,0,0,0,0"/><S T="1" X="400" Y="350" L="10" H="200" P="0,0,0,0.2,0,0,0,0"/><S T="12" X="400" Y="455" L="800" H="10" P="0,0,0.3,0.2,0,0,0,0" o="6a7495"/><S T="12" X="-5" Y="0" L="10" H="3000" P="0,0,0.2,0.2,0,0,0,0" o="6a7495"/><S T="12" X="805" Y="0" L="10" H="3000" P="0,0,0.2,0.2,0,0,0,0" o="6a7495"/><S T="12" X="50" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="1" X="400" Y="0" L="800" H="10" P="0,0,0,0.2,0,0,0,0" c="3" N=""/><S T="0" X="400" Y="95" L="800" H="10" P="0,0,0.3,0.2,0,0,0,0" c="3" N="" m=""/><S T="0" X="105" Y="48" L="10" H="100" P="0,0,0.3,0.2,0,0,0,0" c="3" m=""/><S T="0" X="700" Y="48" L="10" H="100" P="0,0,0.3,0.2,0,0,0,0" c="3" N="" m=""/><S T="0" X="400" Y="175" L="10" H="158" P="0,0,0.2,0,0,0,0,0" c="3" m=""/><S T="0" X="400" Y="791" L="800" H="10" P="0,0,0.3,0.2,90,0,0,0" m=""/><S T="12" X="316" Y="-129" L="20" H="200" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3"/><S T="12" X="407" Y="-133" L="20" H="200" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3"/><S T="12" X="363" Y="-92" L="20" H="100" P="0,0,0.2,0.2,90,0,0,0" o="6a7495" c="3"/><S T="12" X="360" Y="-206" L="20" H="100" P="0,0,0.2,0.2,90,0,0,0" o="6a7495" c="3"/><S T="12" X="400" Y="460" L="3000" H="120" P="0,0,0.3,0.2,0,0,0,0" o="6a7495" c="4" N=""/><S T="12" X="750" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="1" X="400" Y="-800" L="800" H="10" P="0,0,0,0.2,0,0,0,0" N=""/><S T="10" X="342" Y="264" L="108" H="10" P="0,0,0.1,0.2,0,0,0,0" c="3"/><S T="10" X="458" Y="264" L="108" H="10" P="0,0,0.1,0.2,0,0,0,0" c="3"/><S T="10" X="326" Y="214" L="68" H="10" P="0,0,0.1,0.2,0,0,0,0" c="3"/><S T="10" X="474" Y="214" L="68" H="10" P="0,0,0.1,0.2,0,0,0,0" c="3"/><S T="10" X="355" Y="184" L="10" H="66" P="0,0,0.1,0.2,0,0,0,0" c="3"/><S T="10" X="445" Y="184" L="10" H="66" P="0,0,0.1,0.2,0,0,0,0" c="3"/><S T="10" X="51" Y="207" L="10" H="66" P="0,0,0.1,0.2,0,0,0,0" c="3"/><S T="10" X="751" Y="207" L="10" H="66" P="0,0,0.1,0.2,0,0,0,0" c="3"/><S T="10" X="377" Y="156" L="48" H="10" P="0,0,0.1,0.2,0,0,0,0" c="3"/><S T="10" X="423" Y="156" L="48" H="10" P="0,0,0.1,0.2,0,0,0,0" c="3"/><S T="10" X="25" Y="179" L="48" H="10" P="0,0,0.1,0.2,0,0,0,0" c="3"/><S T="10" X="775" Y="179" L="48" H="10" P="0,0,0.1,0.2,0,0,0,0" c="3"/><S T="10" X="293" Y="238" L="10" H="59" P="0,0,0.1,0.2,0,0,0,0" c="3"/><S T="10" X="507" Y="238" L="10" H="59" P="0,0,0.1,0.2,0,0,0,0" c="3"/><S T="10" X="190" Y="378" L="139" H="10" P="0,0,0.1,0.2,0,0,0,0" c="3"/><S T="10" X="610" Y="378" L="139" H="10" P="0,0,0.1,0.2,0,0,0,0" c="3"/><S T="10" X="190" Y="328" L="139" H="10" P="0,0,0.1,0.2,0,0,0,0" c="3"/><S T="10" X="611" Y="328" L="139" H="10" P="0,0,0.1,0.2,0,0,0,0" c="3"/><S T="10" X="126" Y="352" L="10" H="59" P="0,0,0.1,0.2,0,0,0,0" c="3"/><S T="10" X="546" Y="352" L="10" H="59" P="0,0,0.1,0.2,0,0,0,0" c="3"/><S T="10" X="255" Y="354" L="10" H="57" P="0,0,0.1,0.2,0,0,0,0" c="3"/><S T="10" X="676" Y="354" L="10" H="57" P="0,0,0.1,0.2,0,0,0,0" c="3"/><S T="10" X="50" Y="300" L="100" H="10" P="0,0,0.1,0.2,0,0,0,0" c="3"/><S T="10" X="750" Y="300" L="100" H="10" P="0,0,0.1,0.2,0,0,0,0" c="3"/><S T="10" X="73" Y="240" L="55" H="10" P="0,0,0.1,0.2,0,0,0,0" c="3"/><S T="10" X="727" Y="240" L="55" H="10" P="0,0,0.1,0.2,0,0,0,0" c="3"/><S T="10" X="96" Y="270" L="10" H="68" P="0,0,0.1,0.2,0,0,0,0" c="3"/><S T="10" X="704" Y="270" L="10" H="68" P="0,0,0.1,0.2,0,0,0,0" c="3"/></S><D><T X="335" Y="251" spawn="2"/><T X="465" Y="251" spawn="2"/><T X="190" Y="366" spawn="1"/><T X="610" Y="366" spawn="1"/><T X="41" Y="281" spawn="3"/><T X="761" Y="281" spawn="3"/><DS X="360" Y="-151"/></D><O/><L/></Z></C>',
+		[6] = '196599446e1.png'
 	}
 }
 
@@ -1043,6 +1058,10 @@ local selectMapOpen = {}
 local selectMapPage = {}
 local selectMapImages = {}
 local customMapCommand = {}
+local playersSpawn400 = {}
+local playersSpawn800 = {}
+local playersSpawn1200 = {}
+local playersSpawn1600 = {}
 
 local gameTimeEnd = os.time() + 5000
 
@@ -1215,6 +1234,11 @@ function init()
 	spawnBallArea800 = {}
 	spawnBallArea1200 = {}
 	spawnBallArea1600 = {}
+	playersSpawn400 = {}
+	playersSpawn800 = {}
+	playersSpawn1200 = {}
+	playersSpawn1600 = {}
+
 	playersOnGameHistoric = {}
 	mode = "startGame"
 	removeTimer('verifyBallCoordinates')
@@ -1877,11 +1901,11 @@ function startGame()
 		groundCollision = false
 	})
 	enableAfkMode()
-	teleportPlayers()
 	removeTextAreasOfLobby()
 	showTheScore()
 	delaySpawnBall = addTimer(function(i) 
 		if i == 1 then
+			teleportPlayers()
 			spawnInitialBall()		
 		end
 	end, 1500)
@@ -1917,6 +1941,7 @@ function selectMap()
 			local foundMap = addTimer(function(i) 
 				if i == 1 then
 					foundBallSpawnsOnMap(mapsToTest[1], false)
+					foundMiceSpawnsOnMap(mapsToTest[1], false)
 				end
 			end, 1000)
 
@@ -1925,6 +1950,7 @@ function selectMap()
 		if gameStats.isCustomMap then
 			tfm.exec.newGame(customMapsFourTeamsMode[gameStats.customMapIndex][1])
 			foundBallSpawnsOnMap(customMapsFourTeamsMode[gameStats.customMapIndex][1], false)
+			foundMiceSpawnsOnMap(customMapsFourTeamsMode[gameStats.customMapIndex][1], false)
 
 			return
 		end
@@ -1934,6 +1960,7 @@ function selectMap()
 		if gameStats.totalVotes >= 2 then
 			tfm.exec.newGame(customMapsFourTeamsMode[gameStats.mapIndexSelected][1])
 			foundBallSpawnsOnMap(customMapsFourTeamsMode[gameStats.mapIndexSelected][1], false)
+			foundMiceSpawnsOnMap(customMapsFourTeamsMode[gameStats.mapIndexSelected][1], false)
 			tfm.exec.chatMessage("<bv>The "..customMapsFourTeamsMode[gameStats.mapIndexSelected][3].." map (created by "..customMapsFourTeamsMode[gameStats.mapIndexSelected][4]..") was selected ("..tostring(mapsVotes[gameStats.mapIndexSelected]).." votes)<n>", nil)
 			print("<bv>The "..customMapsFourTeamsMode[gameStats.mapIndexSelected][3].." map (created by "..customMapsFourTeamsMode[gameStats.mapIndexSelected][4]..") was selected ("..tostring(mapsVotes[gameStats.mapIndexSelected]).." votes)<n>")
 
@@ -1950,6 +1977,7 @@ function selectMap()
 			local foundMap = addTimer(function(i) 
 				if i == 1 then
 					foundBallSpawnsOnMap(mapsToTest[1], false)
+					foundMiceSpawnsOnMap(mapsToTest[1], false)
 				end
 			end, 1000)
 
@@ -1958,6 +1986,7 @@ function selectMap()
 		if gameStats.isCustomMap then
 			tfm.exec.newGame(customMapsFourTeamsMode[gameStats.customMapIndex][1])
 			foundBallSpawnsOnMap(customMapsFourTeamsMode[gameStats.customMapIndex][1], false)
+			foundMiceSpawnsOnMap(customMapsFourTeamsMode[gameStats.customMapIndex][1], false)
 
 			return
 		end
@@ -1967,6 +1996,7 @@ function selectMap()
 		if gameStats.totalVotes >= 2 then
 			tfm.exec.newGame(customMapsFourTeamsMode[gameStats.mapIndexSelected][1])
 			foundBallSpawnsOnMap(customMapsFourTeamsMode[gameStats.mapIndexSelected][1], false)
+			foundMiceSpawnsOnMap(customMapsFourTeamsMode[gameStats.mapIndexSelected][1], false)
 			tfm.exec.chatMessage("<bv>The "..customMapsFourTeamsMode[gameStats.mapIndexSelected][3].." map (created by "..customMapsFourTeamsMode[gameStats.mapIndexSelected][4]..") was selected ("..tostring(mapsVotes[gameStats.mapIndexSelected]).." votes)<n>", nil)
 			print("<bv>The "..customMapsFourTeamsMode[gameStats.mapIndexSelected][3].." map (created by "..customMapsFourTeamsMode[gameStats.mapIndexSelected][4]..") was selected ("..tostring(mapsVotes[gameStats.mapIndexSelected]).." votes)<n>")
 
@@ -1983,6 +2013,7 @@ function selectMap()
 				local foundMap = addTimer(function(i) 
 					if i == 1 then
 						foundBallSpawnsOnMap(mapsToTest[1], false)
+						foundMiceSpawnsOnMap(mapsToTest[1], false)
 					end
 				end, 1000)
 
@@ -1991,6 +2022,7 @@ function selectMap()
 			if gameStats.isCustomMap then
 				tfm.exec.newGame(customMaps[gameStats.customMapIndex][1])
 				foundBallSpawnsOnMap(customMaps[gameStats.customMapIndex][1], false)
+				foundMiceSpawnsOnMap(customMaps[gameStats.customMapIndex][1], false)
 			else
 				if gameStats.totalVotes == 1 then
 					tfm.exec.chatMessage('<bv>It is necessary that at least 2 players have used the !votemap command for a map to be selected<n>', nil)
@@ -1998,6 +2030,7 @@ function selectMap()
 				if gameStats.totalVotes >= 2 then
 					tfm.exec.newGame(customMaps[gameStats.mapIndexSelected][1])
 					foundBallSpawnsOnMap(customMaps[gameStats.mapIndexSelected][1], false)
+					foundMiceSpawnsOnMap(customMaps[gameStats.mapIndexSelected][1], false)
 					tfm.exec.chatMessage("<bv>The "..customMaps[gameStats.mapIndexSelected][3].." map (created by "..customMaps[gameStats.mapIndexSelected][4]..") was selected ("..tostring(mapsVotes[gameStats.mapIndexSelected]).." votes)<n>", nil)
 					print("<bv>The "..customMaps[gameStats.mapIndexSelected][3].." map (created by "..customMaps[gameStats.mapIndexSelected][4]..") was selected ("..tostring(mapsVotes[gameStats.mapIndexSelected]).." votes)<n>")
 				else
@@ -2012,6 +2045,7 @@ function selectMap()
 				local foundMap = addTimer(function(i) 
 					if i == 1 then
 						foundBallSpawnsOnMap(mapsToTest[1], true)
+						foundMiceSpawnsOnMap(mapsToTest[1], true)
 					end
 				end, 1000)
 
@@ -2020,6 +2054,7 @@ function selectMap()
 			if gameStats.isCustomMap then
 				tfm.exec.newGame(customMaps[gameStats.customMapIndex][2])
 				foundBallSpawnsOnMap(customMaps[gameStats.customMapIndex][2], true)
+				foundMiceSpawnsOnMap(customMaps[gameStats.customMapIndex][2], true)
 			else
 				if gameStats.totalVotes == 1 then
 					tfm.exec.chatMessage('<bv>It is necessary that at least 2 players have used the !votemap command for a map to be selected<n>', nil)
@@ -2027,6 +2062,7 @@ function selectMap()
 				if gameStats.totalVotes >= 2 then
 					tfm.exec.newGame(customMaps[gameStats.mapIndexSelected][2])
 					foundBallSpawnsOnMap(customMaps[gameStats.mapIndexSelected][2], true)
+					foundMiceSpawnsOnMap(customMaps[gameStats.mapIndexSelected][2], true)
 					tfm.exec.chatMessage("<bv>The "..customMaps[gameStats.mapIndexSelected][3].." map (created by "..customMaps[gameStats.mapIndexSelected][4]..") was selected ("..tostring(mapsVotes[gameStats.mapIndexSelected]).." votes)<n>", nil)
 				else
 					tfm.exec.newGame(maps[2])
@@ -2043,6 +2079,7 @@ function selectMap()
 				local foundMap = addTimer(function(i) 
 					if i == 1 then
 						foundBallSpawnsOnMap(mapsToTest[1], false)
+						foundMiceSpawnsOnMap(mapsToTest[1], false)
 					end
 				end, 1000)
 
@@ -2051,6 +2088,7 @@ function selectMap()
 			if gameStats.isCustomMap then
 				tfm.exec.newGame(customMaps[gameStats.customMapIndex][1])
 				foundBallSpawnsOnMap(customMaps[gameStats.customMapIndex][1], false)
+				foundMiceSpawnsOnMap(customMaps[gameStats.customMapIndex][1], false)
 			else
 				if gameStats.totalVotes == 1 then
 					tfm.exec.chatMessage('<bv>It is necessary that at least 2 players have used the !votemap command for a map to be selected<n>', nil)
@@ -2058,6 +2096,7 @@ function selectMap()
 				if gameStats.totalVotes >= 2 then
 					tfm.exec.newGame(customMaps[gameStats.mapIndexSelected][1])
 					foundBallSpawnsOnMap(customMaps[gameStats.mapIndexSelected][1], false)
+					foundMiceSpawnsOnMap(customMaps[gameStats.mapIndexSelected][1], false)
 					tfm.exec.chatMessage("<bv>The "..customMaps[gameStats.mapIndexSelected][3].." map (created by "..customMaps[gameStats.mapIndexSelected][4]..") was selected ("..tostring(mapsVotes[gameStats.mapIndexSelected]).." votes)<n>", nil)
 				else
 					tfm.exec.newGame(maps[1])
@@ -2072,6 +2111,7 @@ function selectMap()
 				local foundMap = addTimer(function(i) 
 					if i == 1 then
 						foundBallSpawnsOnMap(mapsToTest[1], true)
+						foundMiceSpawnsOnMap(mapsToTest[1], true)
 					end
 				end, 1000)
 				return
@@ -2079,6 +2119,7 @@ function selectMap()
 			if gameStats.isCustomMap then
 				tfm.exec.newGame(customMaps[gameStats.customMapIndex][2])
 				foundBallSpawnsOnMap(customMaps[gameStats.customMapIndex][2], true)
+				foundMiceSpawnsOnMap(customMaps[gameStats.customMapIndex][2], true)
 			else
 				if gameStats.totalVotes == 1 then
 					tfm.exec.chatMessage('<bv>It is necessary that at least 2 players have used the !votemap command for a map to be selected<n>', nil)
@@ -2086,6 +2127,7 @@ function selectMap()
 				if gameStats.totalVotes >= 2 then
 					tfm.exec.newGame(customMaps[gameStats.mapIndexSelected][2])
 					foundBallSpawnsOnMap(customMaps[gameStats.mapIndexSelected][2], true)
+					foundMiceSpawnsOnMap(customMaps[gameStats.mapIndexSelected][2], true)
 					tfm.exec.chatMessage("<bv>The "..customMaps[gameStats.mapIndexSelected][3].." map (created by "..customMaps[gameStats.mapIndexSelected][4]..") was selected ("..tostring(mapsVotes[gameStats.mapIndexSelected]).." votes)<n>", nil)
 				else
 					tfm.exec.newGame(maps[2])
@@ -3373,15 +3415,18 @@ function toggleMap()
 			local foundMap = addTimer(function(i) 
 				if i == 1 then
 					foundBallSpawnsOnMap(mapsToTest[2], false)
+					foundMiceSpawnsOnMap(mapsToTest[2], false)
 				end
 			end, 1000)
 		else
 			if gameStats.isCustomMap then
 				tfm.exec.newGame(customMapsFourTeamsMode[gameStats.customMapIndex][2])
 				foundBallSpawnsOnMap(customMapsFourTeamsMode[gameStats.customMapIndex][2], false)
+				foundMiceSpawnsOnMap(customMapsFourTeamsMode[gameStats.customMapIndex][2], false)
 			elseif gameStats.totalVotes >= 2 then
 				tfm.exec.newGame(customMapsFourTeamsMode[gameStats.mapIndexSelected][2])
 				foundBallSpawnsOnMap(customMapsFourTeamsMode[gameStats.mapIndexSelected][2], false)
+				foundMiceSpawnsOnMap(customMapsFourTeamsMode[gameStats.mapIndexSelected][2], false)
 			else
 				tfm.exec.newGame('<C><P L="1200" F="3" G="0,4" MEDATA="25,1;;;;-0;0:::1-"/><Z><S><S T="7" X="600" Y="400" L="1200" H="100" P="0,0,0.1,0.2,0,0,0,0" c="3" N=""/><S T="9" X="600" Y="430" L="1200" H="10" P="0,0,0,0,0,0,0,0"/><S T="1" X="400" Y="350" L="10" H="200" P="0,0,0,0.2,0,0,0,0"/><S T="12" X="400" Y="455" L="800" H="10" P="0,0,0.3,0.2,0,0,0,0" o="6a7495"/><S T="12" X="-5" Y="0" L="10" H="3000" P="0,0,0.2,0.2,0,0,0,0" o="6a7495"/><S T="12" X="1200" Y="0" L="10" H="3000" P="0,0,0.2,0.2,0,0,0,0" o="6a7495"/><S T="13" X="100" Y="359" L="10" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="3"/><S T="13" X="600" Y="359" L="10" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="3"/><S T="12" X="250" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="1" X="600" Y="0" L="1200" H="10" P="0,0,0,0.2,0,0,0,0" c="3"/><S T="0" X="600" Y="95" L="1200" H="10" P="0,0,0.3,0.2,0,0,0,0" c="3" m=""/><S T="0" X="305" Y="48" L="10" H="100" P="0,0,0.3,0.2,0,0,0,0" c="3" m=""/><S T="0" X="900" Y="48" L="10" H="100" P="0,0,0.3,0.2,0,0,0,0" c="3" m=""/><S T="0" X="601" Y="225" L="1200" H="10" P="0,0,0.3,0.2,0,0,0,0" c="3" m=""/><S T="0" X="400" Y="239" L="10" H="30" P="0,0,0,0,0,0,0,0" c="3" m=""/><S T="0" X="400" Y="791" L="800" H="10" P="0,0,0.3,0.2,90,0,0,0" m=""/><S T="12" X="316" Y="-129" L="20" H="200" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3"/><S T="12" X="407" Y="-133" L="20" H="200" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3"/><S T="12" X="363" Y="-92" L="20" H="100" P="0,0,0.2,0.2,90,0,0,0" o="6a7495" c="3"/><S T="12" X="360" Y="-206" L="20" H="100" P="0,0,0.2,0.2,90,0,0,0" o="6a7495" c="3"/><S T="12" X="400" Y="460" L="3000" H="120" P="0,0,0.3,0.2,0,0,0,0" o="6a7495" c="4" N=""/><S T="12" X="950" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="1" X="600" Y="-800" L="1200" H="10" P="0,0,0,0.2,0,0,0,0"/><S T="1" X="800" Y="350" L="10" H="200" P="0,0,0,0.2,0,0,0,0"/><S T="0" X="800" Y="239" L="10" H="30" P="0,0,0,0,0,0,0,0" c="3" m=""/><S T="0" X="800" Y="791" L="800" H="10" P="0,0,0.3,0.2,90,0,0,0" m=""/><S T="13" X="1100" Y="359" L="10" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="3"/><S T="12" X="600" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/></S><D><P X="599" Y="363" T="10" P="1,0"/><P X="99" Y="363" T="10" P="1,0"/><P X="1099" Y="363" T="10" P="1,0"/><DS X="365" Y="-141"/></D><O/><L/></Z></C>')
 			end
@@ -3414,15 +3459,18 @@ function toggleMap()
 			local foundMap = addTimer(function(i) 
 				if i == 1 then
 					foundBallSpawnsOnMap(mapsToTest[3], false)
+					foundMiceSpawnsOnMap(mapsToTest[3], false)
 				end
 			end, 1000)
 		else
 			if gameStats.isCustomMap then
 				tfm.exec.newGame(customMapsFourTeamsMode[gameStats.customMapIndex][5])
 				foundBallSpawnsOnMap(customMapsFourTeamsMode[gameStats.customMapIndex][5], false)
+				foundMiceSpawnsOnMap(customMapsFourTeamsMode[gameStats.customMapIndex][5], false)
 			elseif gameStats.totalVotes >= 2 then
 				tfm.exec.newGame(customMapsFourTeamsMode[gameStats.mapIndexSelected][5])
 				foundBallSpawnsOnMap(customMapsFourTeamsMode[gameStats.mapIndexSelected][5], false)
+				foundMiceSpawnsOnMap(customMapsFourTeamsMode[gameStats.mapIndexSelected][5], false)
 			else
 				tfm.exec.newGame('<C><P F="0" G="0,4" MEDATA="15,1;;;;-0;0:::1-"/><Z><S><S T="7" X="400" Y="400" L="800" H="100" P="0,0,0.1,0.2,0,0,0,0" c="3" N=""/><S T="9" X="400" Y="430" L="800" H="10" P="0,0,0,0,0,0,0,0"/><S T="1" X="400" Y="350" L="10" H="200" P="0,0,0,0.2,0,0,0,0"/><S T="12" X="400" Y="455" L="800" H="10" P="0,0,0.3,0.2,0,0,0,0" o="6a7495"/><S T="12" X="-5" Y="0" L="10" H="3000" P="0,0,0.2,0.2,0,0,0,0" o="6a7495"/><S T="12" X="805" Y="0" L="10" H="3000" P="0,0,0.2,0.2,0,0,0,0" o="6a7495"/><S T="13" X="100" Y="359" L="10" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="3"/><S T="13" X="700" Y="359" L="10" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="3"/><S T="12" X="50" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="1" X="400" Y="0" L="800" H="10" P="0,0,0,0.2,0,0,0,0" c="3" N=""/><S T="0" X="400" Y="95" L="800" H="10" P="0,0,0.3,0.2,0,0,0,0" c="3" N="" m=""/><S T="0" X="105" Y="48" L="10" H="100" P="0,0,0.3,0.2,0,0,0,0" c="3" m=""/><S T="0" X="700" Y="48" L="10" H="100" P="0,0,0.3,0.2,0,0,0,0" c="3" N="" m=""/><S T="0" X="401" Y="225" L="800" H="10" P="0,0,0.3,0.2,0,0,0,0" c="3" m=""/><S T="0" X="400" Y="239" L="10" H="30" P="0,0,0,0,0,0,0,0" c="3" m=""/><S T="0" X="400" Y="791" L="800" H="10" P="0,0,0.3,0.2,90,0,0,0" m=""/><S T="12" X="316" Y="-129" L="20" H="200" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3"/><S T="12" X="407" Y="-133" L="20" H="200" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3"/><S T="12" X="363" Y="-92" L="20" H="100" P="0,0,0.2,0.2,90,0,0,0" o="6a7495" c="3"/><S T="12" X="360" Y="-206" L="20" H="100" P="0,0,0.2,0.2,90,0,0,0" o="6a7495" c="3"/><S T="12" X="400" Y="460" L="3000" H="120" P="0,0,0.3,0.2,0,0,0,0" o="6a7495" c="4" N=""/><S T="12" X="750" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="1" X="400" Y="-800" L="800" H="10" P="0,0,0,0.2,0,0,0,0" N=""/></S><D><P X="699" Y="365" T="10" P="1,0"/><P X="99" Y="365" T="10" P="1,0"/><DS X="360" Y="-151"/></D><O/><L/></Z></C>')
 			end
@@ -3466,6 +3514,7 @@ function teleportPlayersWithTypeMap(islargeMode)
 	local teamsToTeleport = {teamsLifes[1].yellow, teamsLifes[2].red, teamsLifes[3].blue, teamsLifes[4].green}
 	local teamsPlayers = {playersYellow, playersRed, playersBlue, playersGreen}
 	local teamsColors = {0xF59E0B, 0xEF4444, 0x3B82F6, 0x109267}
+	local spawnTeleport = { playersSpawn400, playersSpawn800, playersSpawn1200 }
 
 	if islargeMode then
 		sideToTeleport = { true, true, true }
@@ -3513,7 +3562,12 @@ function teleportPlayersWithTypeMap(islargeMode)
 						sideToTeleport[j] = false
 						for h = 1, #teamsPlayers[i] do
 							if teamsPlayers[i][h].name ~= '' then
-								tfm.exec.movePlayer(teamsPlayers[i][h].name, teleportX[j], 334)
+								if #spawnTeleport[j] > 0 then
+									teleportPlayerWithSpecificSpawn(spawnTeleport[j], teamsPlayers[i][h].name)
+								else
+									tfm.exec.movePlayer(teamsPlayers[i][h].name, teleportX[j], 334)	
+								end
+								
 								if gameStats.typeMap == "large3v3" then
 									tfm.exec.setNameColor(teamsPlayers[i][h].name, teamsColors[i])
 								else
@@ -4141,11 +4195,13 @@ function eventPlayerLeft(name)
 			if playersRed[i].name == name then
 				playersRed[i].name = ''
 				twoTeamsPlayerRedPosition[i] = ''
+				removePlayerOnSpawnConfig(name) 
 				leaveConfigRealMode(name) 
 			end
 			if playersBlue[i].name == name then
 				playersBlue[i].name = ''
 				twoTeamsPlayerBluePosition[i] = ''
+				removePlayerOnSpawnConfig(name) 
 				leaveConfigRealMode(name) 
 			end
 		end
@@ -5346,7 +5402,12 @@ function chooseTeamTeamsMode(name)
 					playersYellow[i].name = name
 					playerInGame[name] = true
 					tfm.exec.setNameColor(playersYellow[i].name, 0xF59E0B)
-					tfm.exec.movePlayer(name, 200, 334)
+					if #playersSpawn400 > 0 then
+						teleportPlayerWithSpecificSpawn(playersSpawn400, name)
+					else
+						tfm.exec.movePlayer(name, 200, 334)	
+					end
+					
 					disablePlayerCanTransform(name)
 
 					return
@@ -5366,7 +5427,12 @@ function chooseTeamTeamsMode(name)
 					playersRed[i].name = name
 					playerInGame[name] = true
 					tfm.exec.setNameColor(playersRed[i].name, 0xEF4444)
-					tfm.exec.movePlayer(name, 600, 334)
+					if #playersSpawn800 > 0 then
+						teleportPlayerWithSpecificSpawn(playersSpawn800, name)
+					else
+						tfm.exec.movePlayer(name, 600, 334)	
+					end
+					
 					disablePlayerCanTransform(name)
 
 					return
@@ -5386,7 +5452,12 @@ function chooseTeamTeamsMode(name)
 					playersBlue[i].name = name
 					playerInGame[name] = true
 					tfm.exec.setNameColor(playersBlue[i].name, 0x3B82F6)
-					tfm.exec.movePlayer(name, 1000, 334)
+					if #playersSpawn1200 > 0 then
+						teleportPlayerWithSpecificSpawn(playersSpawn1200, name)
+					else
+						tfm.exec.movePlayer(name, 1000, 334)	
+					end
+					
 					disablePlayerCanTransform(name)
 
 					return
@@ -5407,7 +5478,12 @@ function chooseTeamTeamsMode(name)
 					playersGreen[i].name = name
 					playerInGame[name] = true
 					tfm.exec.setNameColor(playersGreen[i].name, 0x109267)
-					tfm.exec.movePlayer(name, 1400, 334)
+					if #playersSpawn1600 > 0 then
+						teleportPlayerWithSpecificSpawn(playersSpawn1600, name)
+					else
+						tfm.exec.movePlayer(name, 1400, 334)	
+					end
+					
 					disablePlayerCanTransform(name)
 
 					return
@@ -5418,6 +5494,7 @@ function chooseTeamTeamsMode(name)
 		end
 	elseif gameStats.typeMap == "large3v3" or gameStats.typeMap == "small" then
 		local x = {200, 600, 1000}
+		local playersSpawn = { playersSpawn400, playersSpawn800, playersSpawn1200 }
 		print("a")
 		print(smallQuantity[2])
 		for i = 1, #teamsPlayersOnGame do
@@ -5466,7 +5543,12 @@ function chooseTeamTeamsMode(name)
 						teamsPlayersOnGame[smallQuantity[2]][j].name = name
 						playerInGame[name] = true
 						tfm.exec.setNameColor(name, getTeamsColorsName[smallQuantity[2]])
-						tfm.exec.movePlayer(name, x[smallQuantity[2]], 334)
+						if #playersSpawn[smallQuantity[2]] > 0 then
+							teleportPlayerWithSpecificSpawn(playersSpawn[smallQuantity[2]], name)
+						else
+							tfm.exec.movePlayer(name, x[smallQuantity[2]], 334)
+						end
+						
 						disablePlayerCanTransform(name)
 
 						return
@@ -5494,6 +5576,7 @@ function leaveTeamTeamsModeConfig(name)
 			if playersYellow[i].name == name then
 				playersYellow[i].name = ''
 				tfm.exec.killPlayer(name)
+				removePlayerOnSpawnConfig(name)
 
 				local movePlayer = addTimer(function(i)
 					tfm.exec.respawnPlayer(name)
@@ -5532,6 +5615,7 @@ function leaveTeamTeamsModeConfig(name)
 			if playersRed[i].name == name then
 				playersRed[i].name = ''
 				tfm.exec.killPlayer(name)
+				removePlayerOnSpawnConfig(name)
 
 				local movePlayer = addTimer(function(i)
 					tfm.exec.respawnPlayer(name)
@@ -5570,6 +5654,7 @@ function leaveTeamTeamsModeConfig(name)
 			if playersBlue[i].name == name then
 				playersBlue[i].name = ''
 				tfm.exec.killPlayer(name)
+				removePlayerOnSpawnConfig(name)
 
 				local movePlayer = addTimer(function(i)
 					tfm.exec.respawnPlayer(name)
@@ -5608,6 +5693,7 @@ function leaveTeamTeamsModeConfig(name)
 			if playersGreen[i].name == name then
 				playersGreen[i].name = ''
 				tfm.exec.killPlayer(name)
+				removePlayerOnSpawnConfig(name)
 
 				local movePlayer = addTimer(function(i)
 					tfm.exec.respawnPlayer(name)
@@ -5645,6 +5731,7 @@ function leaveTeamTeamsModeConfig(name)
     			if teamsPlayersOnGame[i][j].name == name then
 					teamsPlayersOnGame[i][j].name = ''
 					tfm.exec.killPlayer(name)
+					removePlayerOnSpawnConfig(name)
 
 					local movePlayer = addTimer(function(i)
 						tfm.exec.respawnPlayer(name)
@@ -5686,6 +5773,7 @@ function leaveTeamTeamsModeConfig(name)
     			if teamsPlayersOnGame[i][j].name == name then
 					teamsPlayersOnGame[i][j].name = ''
 					tfm.exec.killPlayer(name)
+					removePlayerOnSpawnConfig(name)
 
 					local movePlayer = addTimer(function(i)
 						tfm.exec.respawnPlayer(name)
@@ -5792,22 +5880,45 @@ function chooseTeam(name)
 					local quantity = getQuantityPlayersOnPosition("red")
 
 					if quantity.middle < quantity.back then
-						tfm.exec.movePlayer(name, 600, 334)
+						if #playersSpawn800 > 0 then
+							teleportPlayerWithSpecificSpawn(playersSpawn800, name)
+						else
+							tfm.exec.movePlayer(name, 600, 334)
+						end
+						
 						twoTeamsPlayerRedPosition[i] = "middle"
 					elseif quantity.back < quantity.middle then
-						tfm.exec.movePlayer(name, 1400, 334)
+						if #playersSpawn1600 > 0 then
+							teleportPlayerWithSpecificSpawn(playersSpawn1600, name)
+						else
+							tfm.exec.movePlayer(name, 1400, 334)
+						end
+						
 						twoTeamsPlayerRedPosition[i] = "back"
 					else
-						tfm.exec.movePlayer(name, 600, 334)
+						if #playersSpawn800 > 0 then
+							teleportPlayerWithSpecificSpawn(playersSpawn800, name)
+						else
+							tfm.exec.movePlayer(name, 600, 334)	
+						end
+						
 						twoTeamsPlayerRedPosition[i] = "middle"
 					end
 
 					break
 				end
 				if gameStats.gameMode == "3v3" then
-					tfm.exec.movePlayer(name, 101, 334)
+					if #playersSpawn400 > 0 then
+						teleportPlayerWithSpecificSpawn(playersSpawn400, name)
+					else
+						tfm.exec.movePlayer(name, 101, 334)	
+					end
 				elseif gameStats.gameMode == "4v4" then
-					tfm.exec.movePlayer(name, 301, 334)
+					if #playersSpawn800 > 0 then
+						teleportPlayerWithSpecificSpawn(playersSpawn800, name)
+					else
+						tfm.exec.movePlayer(name, 301, 334)
+					end
 				else
 					tfm.exec.movePlayer(name, 401, 334)
 				end
@@ -5848,22 +5959,45 @@ function chooseTeam(name)
 					local quantity = getQuantityPlayersOnPosition("blue")
 
 					if quantity.middle < quantity.back then
-						tfm.exec.movePlayer(name, 1000, 334)
+						if #playersSpawn1200 > 0 then
+							teleportPlayerWithSpecificSpawn(playersSpawn1200, name)
+						else
+							tfm.exec.movePlayer(name, 1000, 334)	
+						end
+						
 						twoTeamsPlayerBluePosition[i] = "middle"
 					elseif quantity.back < quantity.middle then
-						tfm.exec.movePlayer(name, 200, 334)
+						if #playersSpawn400 > 0 then
+							teleportPlayerWithSpecificSpawn(playersSpawn400, name)
+						else
+							tfm.exec.movePlayer(name, 200, 334)	
+						end
+						
 						twoTeamsPlayerBluePosition[i] = "back"
 					else
-						tfm.exec.movePlayer(name, 1000, 334)
+						if #playersSpawn1200 > 0 then
+							teleportPlayerWithSpecificSpawn(playersSpawn1200, name)
+						else
+							tfm.exec.movePlayer(name, 1000, 334)	
+						end
+
 						twoTeamsPlayerBluePosition[i] = "middle"
 					end
 
 					break
 				end
 				if gameStats.gameMode == "3v3" then
-					tfm.exec.movePlayer(name, 700, 334)
+					if #playersSpawn800 > 0 then
+						teleportPlayerWithSpecificSpawn(playersSpawn800, name)
+					else
+						tfm.exec.movePlayer(name, 700, 334)	
+					end
 				elseif gameStats.gameMode == "4v4" then
-					tfm.exec.movePlayer(name, 900, 334)
+					if #playersSpawn1600 > 0 then
+						teleportPlayerWithSpecificSpawn(playersSpawn1600, name)
+					else
+						tfm.exec.movePlayer(name, 900, 334)
+					end
 				else
 					tfm.exec.movePlayer(name, 1500, 334)
 				end
@@ -5919,9 +6053,17 @@ function chooseTeam(name)
 					break
 				end
 				if gameStats.gameMode == "3v3" then
-					tfm.exec.movePlayer(name, 101, 334)
+					if #playersSpawn400 > 0 then
+						teleportPlayerWithSpecificSpawn(playersSpawn400, name)
+					else
+						tfm.exec.movePlayer(name, 101, 334)
+					end
 				elseif gameStats.gameMode == "4v4" then
-					tfm.exec.movePlayer(name, 301, 334)
+					if #playersSpawn800 > 0 then
+						teleportPlayerWithSpecificSpawn(playersSpawn800, name)
+					else
+						tfm.exec.movePlayer(name, 301, 334)
+					end
 				else
 					tfm.exec.movePlayer(name, 401, 334)
 				end
@@ -5942,6 +6084,7 @@ function leaveTeam(name)
 		if playersRed[i].name == name then
 			playersRed[i].name = ''
 			twoTeamsPlayerRedPosition[i] = ""
+			removePlayerOnSpawnConfig(name) 
 			leaveConfigRealMode(name)
 			if killSpecPermanent then
 				tfm.exec.killPlayer(name)
@@ -5957,6 +6100,7 @@ function leaveTeam(name)
 		if playersBlue[i].name == name then
 			playersBlue[i].name = ''
 			twoTeamsPlayerBluePosition[i] = ""
+			removePlayerOnSpawnConfig(name) 
 			leaveConfigRealMode(name) 
 			if killSpecPermanent then
 				tfm.exec.killPlayer(name)
@@ -5967,6 +6111,48 @@ function leaveTeam(name)
 					tfm.exec.respawnPlayer(name)
 					tfm.exec.movePlayer(name, 391, 74)	
 				end, 1000, 1, "movePlayer")
+			end
+		end
+	end
+end
+
+function removePlayerOnSpawnConfig(name) 
+	for i = 1, #playersSpawn400 do
+		for j = 1, #playersSpawn400[i].players do
+			if playersSpawn400[i].players[j] == name then
+				table.remove(playersSpawn400[i].players, j)
+				
+				return
+			end
+		end
+	end
+
+	for i = 1, #playersSpawn800 do
+		for j = 1, #playersSpawn800[i].players do
+			if playersSpawn800[i].players[j] == name then
+				table.remove(playersSpawn800[i].players, j)
+				
+				return
+			end
+		end
+	end
+
+	for i = 1, #playersSpawn1200 do
+		for j = 1, #playersSpawn1200[i].players do
+			if playersSpawn1200[i].players[j] == name then
+				table.remove(playersSpawn1200[i].players, j)
+				
+				return
+			end
+		end
+	end
+
+	for i = 1, #playersSpawn1600 do
+		for j = 1, #playersSpawn1600[i].players do
+			if playersSpawn1600[i].players[j] == name then
+				table.remove(playersSpawn1600[i].players, j)
+				
+				return
 			end
 		end
 	end
@@ -6043,14 +6229,24 @@ function teleportPlayers()
 				playersOnGameHistoric[playersRed[i].name] = { teams = {"red"} }
 				if spawnOnMiddle then
 					playersAfk[playersRed[i].name] = os.time()
-					tfm.exec.movePlayer(playersRed[i].name, 600, 334)
+					if #playersSpawn800 > 0 then
+						teleportPlayerWithSpecificSpawn(playersSpawn800, playersRed[i].name)
+					else
+						tfm.exec.movePlayer(playersRed[i].name, 600, 334)	
+					end
+					
 					tfm.exec.setNameColor(playersRed[i].name, 0xEF4444)
 					twoTeamsPlayerRedPosition[i] = "middle"
 
 					spawnOnMiddle = false
 				else
 					playersAfk[playersRed[i].name] = os.time()
-					tfm.exec.movePlayer(playersRed[i].name, 1400, 334)
+					if #playersSpawn1600 > 0 then
+						teleportPlayerWithSpecificSpawn(playersSpawn1600, playersRed[i].name)
+					else
+						tfm.exec.movePlayer(playersRed[i].name, 1400, 334)	
+					end
+					
 					tfm.exec.setNameColor(playersRed[i].name, 0xEF4444)
 
 					twoTeamsPlayerRedPosition[i] = "back"
@@ -6068,14 +6264,23 @@ function teleportPlayers()
 				playersOnGameHistoric[playersBlue[i].name] = { teams = {"blue"} }
 				if spawnOnMiddle then
 					playersAfk[playersBlue[i].name] = os.time()
-					tfm.exec.movePlayer(playersBlue[i].name, 1000, 334)
+					if #playersSpawn1200 > 0 then
+						teleportPlayerWithSpecificSpawn(playersSpawn1200, playersBlue[i].name)
+					else
+						tfm.exec.movePlayer(playersBlue[i].name, 1000, 334)
+					end
 					tfm.exec.setNameColor(playersBlue[i].name, 0x3B82F6)
 					twoTeamsPlayerBluePosition[i] = "middle"
 
 					spawnOnMiddle = false
 				else
 					playersAfk[playersBlue[i].name] = os.time()
-					tfm.exec.movePlayer(playersBlue[i].name, 200, 334)
+					if #playersSpawn400 > 0 then
+						teleportPlayerWithSpecificSpawn(playersSpawn400, playersBlue[i].name)
+					else
+						tfm.exec.movePlayer(playersBlue[i].name, 200, 334)	
+					end
+					
 					tfm.exec.setNameColor(playersBlue[i].name, 0x3B82F6)
 					twoTeamsPlayerBluePosition[i] = "back"
 
@@ -6093,7 +6298,12 @@ function teleportPlayers()
 			if playersYellow[i].name ~= '' then
 				playersOnGameHistoric[playersYellow[i].name] = { teams = {"yellow"} }
 				playersAfk[playersYellow[i].name] = os.time()
-				tfm.exec.movePlayer(playersYellow[i].name, 200, 334)
+				if #playersSpawn400 > 0 then
+					teleportPlayerWithSpecificSpawn(playersSpawn400, playersYellow[i].name)
+				else
+					tfm.exec.movePlayer(playersYellow[i].name, 200, 334)
+				end
+				
 				tfm.exec.setNameColor(playersYellow[i].name, 0xF59E0B)
 			end
 		end
@@ -6101,7 +6311,12 @@ function teleportPlayers()
 			if playersRed[i].name ~= '' then
 				playersOnGameHistoric[playersRed[i].name] = { teams = {"red"} }
 				playersAfk[playersRed[i].name] = os.time()
-				tfm.exec.movePlayer(playersRed[i].name, 600, 334)
+				if #playersSpawn800 > 0 then
+					teleportPlayerWithSpecificSpawn(playersSpawn800, playersRed[i].name)
+				else
+					tfm.exec.movePlayer(playersRed[i].name, 600, 334)
+				end
+				
 				tfm.exec.setNameColor(playersRed[i].name, 0xEF4444)
 			end
 		end
@@ -6109,7 +6324,12 @@ function teleportPlayers()
 			if playersBlue[i].name ~= '' then
 				playersOnGameHistoric[playersBlue[i].name] = { teams = {"blue"} }
 				playersAfk[playersBlue[i].name] = os.time()
-				tfm.exec.movePlayer(playersBlue[i].name, 1000, 334)
+				if #playersSpawn1200 > 0 then
+					teleportPlayerWithSpecificSpawn(playersSpawn1200, playersBlue[i].name)
+				else
+					tfm.exec.movePlayer(playersBlue[i].name, 1000, 334)	
+				end
+				
 				tfm.exec.setNameColor(playersBlue[i].name, 0x3B82F6)
 			end
 		end
@@ -6117,7 +6337,12 @@ function teleportPlayers()
 			if playersGreen[i].name ~= '' then
 				playersOnGameHistoric[playersGreen[i].name] = { teams = {"green"} }
 				playersAfk[playersGreen[i].name] = os.time()
-				tfm.exec.movePlayer(playersGreen[i].name, 1400, 334)
+				if #playersSpawn1600 > 0 then
+					teleportPlayerWithSpecificSpawn(playersSpawn1600, playersGreen[i].name)
+				else
+					tfm.exec.movePlayer(playersGreen[i].name, 1400, 334)	
+				end
+				
 				tfm.exec.setNameColor(playersGreen[i].name, 0x109267)
 			end
 		end
@@ -6134,9 +6359,17 @@ function teleportPlayers()
 				tfm.exec.movePlayer(playersRed[i].name, 900, 334)
 			else
 				if gameStats.gameMode == "3v3" then
-					tfm.exec.movePlayer(playersRed[i].name, 101, 334)
+					if #playersSpawn400 > 0 then
+						teleportPlayerWithSpecificSpawn(playersSpawn400, playersRed[i].name)
+					else
+						tfm.exec.movePlayer(playersRed[i].name, 101, 334)	
+					end
 				elseif gameStats.gameMode == "4v4" then
-					tfm.exec.movePlayer(playersRed[i].name, 301, 334)
+					if #playersSpawn800 > 0 then
+						teleportPlayerWithSpecificSpawn(playersSpawn800, playersRed[i].name)
+					else
+						tfm.exec.movePlayer(playersRed[i].name, 301, 334)
+					end
 				else
 					tfm.exec.movePlayer(playersRed[i].name, 401, 334)
 				end
@@ -6154,9 +6387,17 @@ function teleportPlayers()
 				tfm.exec.movePlayer(playersBlue[i].name, 1700, 334)
 			else
 				if gameStats.gameMode == "3v3" then
-					tfm.exec.movePlayer(playersBlue[i].name, 700, 334)
+					if #playersSpawn800 > 0 then
+						teleportPlayerWithSpecificSpawn(playersSpawn800, playersBlue[i].name)
+					else
+						tfm.exec.movePlayer(playersBlue[i].name, 700, 334)
+					end
 				elseif gameStats.gameMode == "4v4" then
-					tfm.exec.movePlayer(playersBlue[i].name, 900, 334)
+					if #playersSpawn1600 > 0 then
+						teleportPlayerWithSpecificSpawn(playersSpawn1600, playersBlue[i].name)
+					else
+						tfm.exec.movePlayer(playersBlue[i].name, 900, 334)
+					end
 				else
 					tfm.exec.movePlayer(playersBlue[i].name, 1500, 334)
 				end
@@ -6164,6 +6405,64 @@ function teleportPlayers()
 			end
 		end
 	end
+end
+
+function teleportPlayerWithSpecificSpawn(playersSpawn, name)
+	local lowestPlayersQuantity
+	local availableIndexesToSpawn = {}
+	for i = 1, #playersSpawn do
+		if lowestPlayersQuantity == nil then
+			lowestPlayersQuantity = #playersSpawn[i].players
+			availableIndexesToSpawn[#availableIndexesToSpawn + 1] = i
+		else
+			if #playersSpawn[i].players == lowestPlayersQuantity then
+				availableIndexesToSpawn[#availableIndexesToSpawn + 1] = i
+			elseif #playersSpawn[i].players < lowestPlayersQuantity then
+				lowestPlayersQuantity = #playersSpawn[i].players
+				availableIndexesToSpawn = {[1] = i}
+			end
+		end
+	end
+
+	if #availableIndexesToSpawn == 1 then
+		local index = availableIndexesToSpawn[1]
+		playersSpawn[index].players[#playersSpawn[index].players + 1] = name
+		tfm.exec.movePlayer(name, playersSpawn[index].x, playersSpawn[index].y)
+
+		return
+	end
+
+	local lowestSpawnPriority
+	local indexSelected
+	local foundDifference = false
+	for i = 1, #availableIndexesToSpawn do
+		local index = availableIndexesToSpawn[i]
+
+		if lowestSpawnPriority == nil then
+			lowestSpawnPriority = playersSpawn[index].spawnPriority
+			indexSelected = index
+		else
+			if lowestSpawnPriority ~= playersSpawn[index].spawnPriority then
+				foundDifference = true
+			end
+
+			if playersSpawn[index].spawnPriority < lowestSpawnPriority then
+				lowestSpawnPriority = playersSpawn[index].spawnPriority
+				indexSelected = index
+			end
+		end
+	end
+
+	if foundDifference then
+		playersSpawn[indexSelected].players[#playersSpawn[indexSelected].players + 1] = name
+		tfm.exec.movePlayer(name, playersSpawn[indexSelected].x, playersSpawn[indexSelected].y)
+
+		return
+	end
+
+	local index = availableIndexesToSpawn[math.random(1, #availableIndexesToSpawn)]
+	playersSpawn[index].players[#playersSpawn[index].players + 1] = name
+	tfm.exec.movePlayer(name, playersSpawn[index].x, playersSpawn[index].y)
 end
 
 function resetQuantityTeams() 
@@ -7436,6 +7735,69 @@ function removePlayerTrophy(name)
 	end
 end
 
+function foundMiceSpawnsOnMap(map, isLargeMap) 
+	playersSpawn400 = {}
+	playersSpawn800 = {}
+	playersSpawn1200 = {}
+	playersSpawn1600 = {}
+
+	local mapXML = ""
+
+	if #map > 10 then
+		mapXML = map
+	else
+		mapXML = tfm.get.room.xmlMapInfo.xml
+	end
+
+	for tag in string.gmatch(mapXML, '<T%s+.-/>') do
+	    local x = string.match(tag, 'X="([^"]+)"')
+	    local y = string.match(tag, 'Y="([^"]+)"')
+	    local spawn = string.match(tag, 'spawn="([^"]+)"')
+	    
+	    local xNumber = tonumber(x)
+		local yNumber = tonumber(y)
+
+		if spawn == nil then
+			spawn = 99999
+		end
+
+		setConfigPlayersSpawn(isLargeMap, xNumber, yNumber, tonumber(spawn))
+	end
+
+	print('400: '..#playersSpawn400..'')
+	print('800: '..#playersSpawn800..'')
+	print('1200: '..#playersSpawn1200..'')
+	print('1600: '..#playersSpawn1600..'')
+end
+
+function setConfigPlayersSpawn(isLargeMap, xNumber, yNumber, spawnPriority)
+	if isLargeMap then
+		if xNumber >= 0 and xNumber <= 600 then
+			playersSpawn800[#playersSpawn800 + 1] = { x = xNumber, y = yNumber, spawnPriority = spawnPriority, players = {}}
+		end
+
+		if xNumber >= 600 and xNumber <= 1200 then
+			playersSpawn1600[#playersSpawn1600 + 1] = { x = xNumber , y = yNumber, spawnPriority = spawnPriority, players = {} }
+		end
+	else
+		if xNumber >= 0 and xNumber <= 400 then
+	    	playersSpawn400[#playersSpawn400 + 1] = { x = xNumber, y = yNumber, spawnPriority = spawnPriority, players = {} }
+	    end
+
+	    if xNumber >= 400 and xNumber <= 800 then
+	    	playersSpawn800[#playersSpawn800 + 1] = { x = xNumber, y = yNumber, spawnPriority = spawnPriority, players = {} }
+	    end
+
+	    if xNumber >= 800 and xNumber <= 1200 then
+	    	playersSpawn1200[#playersSpawn1200 + 1] = { x = xNumber, y = yNumber, spawnPriority = spawnPriority, players = {} }
+	    end
+
+	    if xNumber >= 1200 and xNumber <= 1600 then
+	    	playersSpawn1600[#playersSpawn1600 + 1] = { x = xNumber, y = yNumber, spawnPriority = spawnPriority, players = {} }
+	    end
+	end   
+end
+
 function foundBallSpawnsOnMap(map, isLargeMap)
 	local tags_T131 = {}
 	spawnBallArea400 = {}
@@ -7522,8 +7884,6 @@ end
 function spawnBallsOnSpecificPlaces(spawnBallsTable, defaultSpawnBallTable)
 	local spawnBalls = spawnBallsTable
 	local defaultSpawnBall = defaultSpawnBallTable
-
-	print(spawnBallsTable)
 
 	local randomIndex = 0
 	local spawnPlaces = {[1] = {x = 0, y = 50}, [2] = {x = 0, y = 50}}
