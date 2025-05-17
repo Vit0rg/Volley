@@ -184,7 +184,7 @@ local permanentAdmins = {
     "Rowed#4415"
 }
 
-local gameVersion = "V2.2.0"
+local gameVersion = "V2.2.1"
 
 local trad = ""
 local lang = {}
@@ -1058,6 +1058,7 @@ local selectMapOpen = {}
 local selectMapPage = {}
 local selectMapImages = {}
 local customMapCommand = {}
+local lobbySpawn = {}
 local playersSpawn400 = {}
 local playersSpawn800 = {}
 local playersSpawn1200 = {}
@@ -1234,6 +1235,7 @@ function init()
 	spawnBallArea800 = {}
 	spawnBallArea1200 = {}
 	spawnBallArea1600 = {}
+	lobbySpawn = {}
 	playersSpawn400 = {}
 	playersSpawn800 = {}
 	playersSpawn1200 = {}
@@ -3692,7 +3694,8 @@ function eventNewPlayer(name)
 	elseif mode ~= "startGame" then
 		tfm.exec.chatMessage("<ch>If you don't want to see the ranking crowns, type the command !crown false<n>", name)
 		showTheScore()
-		tfm.exec.movePlayer(name, 391, 74)
+		teleportPlayersToSpecWithSpecificSpawn(name)
+		
 		tfm.exec.chatMessage(playerLanguage[name].tr.welcomeMessage2, name)
 		canVote[name] = true
 	end
@@ -5580,7 +5583,8 @@ function leaveTeamTeamsModeConfig(name)
 
 				local movePlayer = addTimer(function(i)
 					tfm.exec.respawnPlayer(name)
-					tfm.exec.movePlayer(name, 391, 74)	
+
+					teleportPlayersToSpecWithSpecificSpawn(name)
 				end, 1000, 1, "movePlayer")
 			end
 
@@ -5619,7 +5623,7 @@ function leaveTeamTeamsModeConfig(name)
 
 				local movePlayer = addTimer(function(i)
 					tfm.exec.respawnPlayer(name)
-					tfm.exec.movePlayer(name, 391, 74)	
+					teleportPlayersToSpecWithSpecificSpawn(name)
 				end, 1000, 1, "movePlayer")
 			end
 
@@ -5658,7 +5662,7 @@ function leaveTeamTeamsModeConfig(name)
 
 				local movePlayer = addTimer(function(i)
 					tfm.exec.respawnPlayer(name)
-					tfm.exec.movePlayer(name, 391, 74)	
+					teleportPlayersToSpecWithSpecificSpawn(name)
 				end, 1000, 1, "movePlayer")
 			end
 
@@ -5697,7 +5701,7 @@ function leaveTeamTeamsModeConfig(name)
 
 				local movePlayer = addTimer(function(i)
 					tfm.exec.respawnPlayer(name)
-					tfm.exec.movePlayer(name, 391, 74)	
+					teleportPlayersToSpecWithSpecificSpawn(name)
 				end, 1000, 1, "movePlayer")
 			end
 
@@ -5735,7 +5739,7 @@ function leaveTeamTeamsModeConfig(name)
 
 					local movePlayer = addTimer(function(i)
 						tfm.exec.respawnPlayer(name)
-						tfm.exec.movePlayer(name, 391, 74)	
+						teleportPlayersToSpecWithSpecificSpawn(name)
 					end, 1000, 1, "movePlayer")
 				end
 
@@ -5777,7 +5781,7 @@ function leaveTeamTeamsModeConfig(name)
 
 					local movePlayer = addTimer(function(i)
 						tfm.exec.respawnPlayer(name)
-						tfm.exec.movePlayer(name, 391, 74)	
+						teleportPlayersToSpecWithSpecificSpawn(name)
 					end, 1000, 1, "movePlayer")
 				end
 
@@ -6093,7 +6097,8 @@ function leaveTeam(name)
 
 				local movePlayer = addTimer(function(i)
 					tfm.exec.respawnPlayer(name)
-					tfm.exec.movePlayer(name, 391, 74)	
+
+					teleportPlayersToSpecWithSpecificSpawn(name)
 				end, 1000, 1, "movePlayer")
 			end
 		end
@@ -6109,7 +6114,8 @@ function leaveTeam(name)
 
 				local movePlayer = addTimer(function(i)
 					tfm.exec.respawnPlayer(name)
-					tfm.exec.movePlayer(name, 391, 74)	
+
+					teleportPlayersToSpecWithSpecificSpawn(name)
 				end, 1000, 1, "movePlayer")
 			end
 		end
@@ -6213,9 +6219,19 @@ function teleportPlayersToSpec()
 			if killSpecPermanent then
 				tfm.exec.killPlayer(name)
 			else
-				tfm.exec.movePlayer(name, 391, 74)
+				teleportPlayersToSpecWithSpecificSpawn(name)
 			end
 		end
+	end
+end
+
+function teleportPlayersToSpecWithSpecificSpawn(name)
+	if #lobbySpawn > 0 then
+		local index = math.random(1, #lobbySpawn)
+
+		tfm.exec.movePlayer(name, lobbySpawn[index].x, lobbySpawn[index].y)
+	else
+		tfm.exec.movePlayer(name, 391, 74)	
 	end
 end
 
@@ -7736,6 +7752,7 @@ function removePlayerTrophy(name)
 end
 
 function foundMiceSpawnsOnMap(map, isLargeMap) 
+	lobbySpawn = {}
 	playersSpawn400 = {}
 	playersSpawn800 = {}
 	playersSpawn1200 = {}
@@ -7753,6 +7770,7 @@ function foundMiceSpawnsOnMap(map, isLargeMap)
 	    local x = string.match(tag, 'X="([^"]+)"')
 	    local y = string.match(tag, 'Y="([^"]+)"')
 	    local spawn = string.match(tag, 'spawn="([^"]+)"')
+	    local lobby = string.match(tag, 'lobby="([^"]+)"')
 	    
 	    local xNumber = tonumber(x)
 		local yNumber = tonumber(y)
@@ -7761,13 +7779,21 @@ function foundMiceSpawnsOnMap(map, isLargeMap)
 			spawn = 99999
 		end
 
-		setConfigPlayersSpawn(isLargeMap, xNumber, yNumber, tonumber(spawn))
+		if lobby ~= nil then
+			setConfigLobbySpawn(xNumber, yNumber)
+		else
+			setConfigPlayersSpawn(isLargeMap, xNumber, yNumber, tonumber(spawn))	
+		end
 	end
 
 	print('400: '..#playersSpawn400..'')
 	print('800: '..#playersSpawn800..'')
 	print('1200: '..#playersSpawn1200..'')
 	print('1600: '..#playersSpawn1600..'')
+end
+
+function setConfigLobbySpawn(xNumber, yNumber)
+	lobbySpawn[#lobbySpawn + 1] = { x = xNumber, y = yNumber }
 end
 
 function setConfigPlayersSpawn(isLargeMap, xNumber, yNumber, spawnPriority)
