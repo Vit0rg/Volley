@@ -7751,6 +7751,26 @@ function removePlayerTrophy(name)
 	end
 end
 
+function foundMicePlayersConfig(map)
+	local mapXML = ""
+
+	if #map > 10 then
+		mapXML = map
+	else
+		mapXML = tfm.get.room.xmlMapInfo.xml
+	end
+
+	local pTag = string.match(mapXML, '<C><P%s+([^>]+)')
+
+	if pTag then
+	    local playerForce = string.match(pTag, 'playerForce="([^"]+)"')
+		
+		if type(tonumber(playerForce)) == 'number' then
+			gameStats.psyhicObjectForce = tonumber(playerForce)
+		end
+	end
+end
+
 function foundMiceSpawnsOnMap(map, isLargeMap) 
 	lobbySpawn = {}
 	playersSpawn400 = {}
@@ -7785,6 +7805,8 @@ function foundMiceSpawnsOnMap(map, isLargeMap)
 			setConfigPlayersSpawn(isLargeMap, xNumber, yNumber, tonumber(spawn))	
 		end
 	end
+
+	foundMicePlayersConfig(map)
 
 	print('400: '..#playersSpawn400..'')
 	print('800: '..#playersSpawn800..'')
