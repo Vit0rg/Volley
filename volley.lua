@@ -169,7 +169,9 @@ local admins = {
   ["Wreft#5240"] = true,
   ["Lylastyla#0000"] = true,
   ["Ppoppohaejuseyo#2315"] = true,
-  ["Rowed#4415"] = true
+  ["Rowed#4415"] = true,
+  ["Tonycoolnees#0000"] = true,
+  ["Tanarchosl#4785"] = true
 }
 
 local permanentAdmins = {
@@ -181,7 +183,9 @@ local permanentAdmins = {
   "Wreft#5240",
   "Lylastyla#0000",
   "Ppoppohaejuseyo#2315",
-  "Rowed#4415"
+  "Rowed#4415",
+  "Tanarchosl#4785",
+  "Tonycoolnees#0000"
 }
 
 local gameVersion = "V2.2.1"
@@ -218,7 +222,8 @@ lang.br = {
   msgAchievements = "<p align='left'><font size='14px'>Conquistas:",
   msgsTrophies = {
     [1] = "Troféu Copa do Mundo de Vôlei",
-    [2] = "FootVolley Ultimate Team Badge"
+    [2] = "Futevôlei Ultimate Team Badge",
+    [3] = "Copa do mundo de Futebol"
   },
   mapSelect = 'Selecionar um mapa',
 }
@@ -251,7 +256,8 @@ lang.en = {
   msgAchievements = "<p align='left'><font size='14px'>Achievements:",
   msgsTrophies = {
     [1] = "Volleyball World Cup Trophy",
-    [2] = "FootVolley Ultimate Team Badge"
+    [2] = "FootVolley Ultimate Team Badge",
+    [3] = "Volley Soccer World Cup"
   },
   mapSelect = 'Select a map'
 }
@@ -284,7 +290,8 @@ lang.ar = {
   msgAchievements = "<p align='right'><font size='14px'>الإنجازات:",
   msgsTrophies = {
     [1] = "كأس العالم للكرة الطائرة",
-    [2] = "شارة فريق FootVolley Ultimate Team"
+    [2] = "شارة فريق FootVolley Ultimate Team",
+    [3] = "كأس العالم لكرة القدم الطائرة"
   },
   mapSelect = 'حدد الخريطة'
 }
@@ -318,7 +325,8 @@ lang.fr = {
   msgAchievements = "<p align='left'><font size='14px'>Réalisations:",
   msgsTrophies = {
     [1] = "Trophée de la Coupe du Monde de Volleyball",
-    [2] = "FootVolley Ultimate Team Badge"
+    [2] = "FootVolley Ultimate Team Badge",
+    [3] = "Coupe de monde de soccer volley"
   },
   mapSelect = 'Sélectionner une carte'
 }
@@ -351,7 +359,8 @@ lang.pl = {
   msgAchievements = "<p align='left'><font size='14px'>Osiągnięcia:",
   msgsTrophies = {
     [1] = "Trofeum Pucharu Świata w siatkówce",
-    [2] = "FootVolley Ultimate Team Badge"
+    [2] = "FootVolley Ultimate Team Badge",
+    [3] = "Puchar Świata w piłce siatkowej"
   },
   mapSelect = 'Wybierz mapę'
 }
@@ -734,13 +743,13 @@ local customMaps = {
     [4] = 'Tanarchosl#4785 and Tanatosl#0000',
     [6] = '19539e5756b.png'
   },
--- [99] = {
---   [1] = 'small map',
---   [2] = 'large map',
---   [3] = 'map name',
---   [4] = 'author name',
---   [6] = '19539e5756b.png'
--- },
+  -- [99] = {
+  --   [1] = 'small map',
+  --   [2] = 'large map',
+  --   [3] = 'map name',
+  --   [4] = 'author name',
+  --   [6] = '19539e5756b.png'
+  -- },
 }
 
 local customMapsFourTeamsMode = {
@@ -1010,15 +1019,15 @@ local customMapsFourTeamsMode = {
     [5] = '<C><P F="0" G="0,4"/><Z><S><S H="560" L="120" Y="133" P="0,0,0,0,0,0,0,0" X="-60" c="4" o="000000" T="12" /><S H="560" L="120" Y="133" P="0,0,0,0,0,0,0,0" X="860" c="4" o="000000" T="12" /><S H="560" L="120" Y="133" tint="23003E" X="860" P="0,0,0,0,0,0,0,0" c="4" T="12" /><S archCheeseMax="1" H="450" L="50" Y="138" archAcc="0.5" tint="260042" X="-85" P="0,0,0,0,0,0,0,0" T="9" archMax="2" /><S archCheeseMax="1" H="450" L="50" Y="140" archAcc="0.5" tint="260042" X="885" P="0,0,0,0,0,0,0,0" T="9" archMax="2" /><S archCheeseMax="1" H="60" L="80" Y="320" archAcc="0.75" tint="FF0000" X="-40" P="0,0,0,0,0,0,0,0" T="9" archMax="1" /><S archCheeseMax="1" H="60" L="80" Y="320" archAcc="0.75" tint="FF0000" X="840" P="0,0,0,0,0,0,0,0" T="9" archMax="1" /><S H="20" L="1100" Y="-590" tint="1D0034" X="400" P="0,0,0,0.2,0,0,0,0" friction="20,4" T="10" /><S H="10" c="3" Y="-5" P="0,0,0,0.2,0,0,0,0" m="" X="400" L="800" o="FF0000" T="12" /><S H="10" c="3" Y="-80" P="0,0,0,0.2,0,0,0,0" m="" X="400" L="800" o="FF0000" T="12" /><S H="10" L="800" Y="115" m="" tint="1D0034" X="400" P="0,0,0.3,0.2,0,0,0,0" c="3" T="10" /><S H="10" L="800" Y="235" tint="1D0034" X="400" P="0,0,0.3,0.2,0,0,0,0" c="3" T="10" /><S H="140" L="10" Y="180" m="" X="400" P="0,0,0,0.2,0,0,0,0" friction="-100,-20" c="3" T="1" /><S H="200" L="10" Y="340" tint="1D0034" X="400" P="0,0,0,0,0,0,0,0" T="1" /><S H="10" L="1200" Y="430" m="" X="600" P="0,0,0,0,0,0,0,0" T="9" /><S H="200" c="3" Y="20" P="0,0,0.3,0.2,0,0,0,0" m="" X="-5" L="10" o="324650" T="12" /><S H="200" c="3" Y="20" P="0,0,0.3,0.2,0,0,0,0" m="" X="805" L="10" o="324650" T="12" /><S H="10" c="3" Y="165" P="0,0,0.3,0.2,0,0,0,0" m="" X="-60" L="120" o="FF0000" T="12" /><S H="10" c="3" Y="165" P="0,0,0.3,0.2,0,0,0,0" m="" X="860" L="120" o="FF0000" T="12" /><S H="60" L="60" Y="20" tint="1D0034" X="-30" P="0,0,0.3,0.2,3,0,0,0" T="10" /><S H="60" L="60" Y="20" tint="1D0034" X="830" P="0,0,0.3,0.2,-3,0,0,0" T="10" /><S H="60" L="60" Y="260" tint="1D0034" X="-30" P="0,0,0.3,0.2,3,0,0,0" T="10" /><S H="60" L="60" Y="260" tint="1D0034" X="830" P="0,0,0.3,0.2,-3,0,0,0" T="10" /><S H="60" L="60" Y="140" tint="1D0034" X="-30" P="0,0,0.3,0.2,3,0,0,0" T="10" /><S H="60" L="60" Y="140" tint="1D0034" X="830" P="0,0,0.3,0.2,-3,0,0,0" T="10" /><S H="10" L="800" Y="455" P="0,0,0.3,0.2,0,0,0,0" X="400" o="6a7495" T="12" /><S H="200" L="20" Y="-129" P="0,0,0.2,0.2,0,0,0,0" X="316" c="3" o="6a7495" T="12" /><S H="200" L="20" Y="-133" P="0,0,0.2,0.2,0,0,0,0" X="407" c="3" o="6a7495" T="12" /><S H="100" L="20" Y="-92" P="0,0,0.2,0.2,90,0,0,0" X="363" c="3" o="6a7495" T="12" /><S H="100" L="20" Y="-206" P="0,0,0.2,0.2,90,0,0,0" X="360" c="3" o="6a7495" T="12" /><S H="10" L="65" Y="355" tint="5C1B56" X="-33" P="0,0,0,0.2,0,0,0,0" N="" T="10" /><S H="10" L="65" Y="355" tint="5C1B56" X="833" P="0,0,0,0.2,0,0,0,0" N="" T="10" /><S archCheeseMax="1" H="60" L="80" Y="200" archAcc="0.5" tint="00FF40" X="-40" P="0,0,0,0,0,0,0,0" T="9" archMax="1" /><S archCheeseMax="1" H="60" L="80" Y="200" archAcc="0.5" tint="00FF40" X="840" P="0,0,0,0,0,0,0,0" T="9" archMax="1" /><S archCheeseMax="1" H="60" L="80" Y="80" archAcc="0.25" tint="0008FF" X="-40" P="0,0,0,0,0,0,0,0" T="9" archMax="1" /><S archCheeseMax="1" H="60" L="80" Y="80" archAcc="0.25" tint="0008FF" X="840" P="0,0,0,0,0,0,0,0" T="9" archMax="1" /><S archCheeseMax="1" H="140" L="80" Y="-80" archAcc="0.5" tint="260042" X="-40" P="0,0,0,0,0,0,0,0" T="9" archMax="1" /><S archCheeseMax="1" H="140" L="80" Y="-80" archAcc="0.5" tint="260042" X="840" P="0,0,0,0,0,0,0,0" T="9" archMax="1" /><S H="1200" L="10" Y="500" tint="1D0034" X="-115" P="0,0,0,0,0,0,0,0" T="10" /><S H="1200" L="10" Y="500" tint="1D0034" X="915" P="0,0,0,0,0,0,0,0" T="10" /><S H="460" L="20" Y="-370" tint="1D0034" X="70" P="0,0,0,0.5,0,0,0,0" c="2" T="10" /><S H="460" L="20" Y="-370" tint="1D0034" X="730" P="0,0,0,0.5,0,0,0,0" c="2" T="10" /><S H="400" L="1600" Y="550" P="0,0,0.2,0.2,0,0,0,0" X="400" c="3" N="" o="6a7495" T="12" /><S H="100" L="1200" Y="400" tint="1D0034" X="400" P="0,0,0.2,0,0,0,0,0" N="" c="3" T="10" /><S H="216" L="100" Y="-130" tint="1D0034" X="-20" P="0,0,0,0,80,0,0,0" T="10" /><S H="216" L="100" Y="-130" tint="1D0034" X="820" P="0,0,0.3,0.2,-80,0,0,0" T="10" /><S H="700" c="3" Y="700" P="0,0,0,0,0,0,0,0" m="" X="400" L="10" N="" o="FF0000" T="12" /></S><D><P X="835" P="0,1" Y="345" T="307" /><P X="835" P="0,0" Y="110" T="306" /><DS X="365" Y="-141" /></D><O /><L /></Z></C>',
     [6] = '19539e5756b.png'
   },
--- [99] =
--- {
---   [1] = 'map1',
---   [2] = 'map2',
---   [3] = 'name',
---   [4] = 'author',
---   [5] = 'small map',
---   [6] = '19539e5756b.png'
--- }
+  -- [99] =
+  -- {
+  --   [1] = 'map1',
+  --   [2] = 'map2',
+  --   [3] = 'name',
+  --   [4] = 'author',
+  --   [5] = 'small map',
+  --   [6] = '19539e5756b.png'
+  -- }
 }
 
 local balls = {
@@ -1093,7 +1102,19 @@ local balls = {
     isImage = true,
     image = '18fd18e5dc6.png',
     name = 'Original Volley ball'
-  }
+  },
+  [13] = {
+    id = 6,
+    isImage = true,
+    image = '197d9275c53.png',
+    name = 'Morocco ball'
+  },
+  -- [99] = {
+  --   id = 6,
+  --   isImage = no,
+  --   image = '',
+  --   name = 'Custom ball'
+  -- }
 }
 
 local x = {100, 280, 280, 640, 460, 460, 100, 100, 280, 640, 460, 640}
@@ -1161,14 +1182,76 @@ local playersSpawn1600 = {}
 
 local gameTimeEnd = os.time() + 5000
 
-playerAchievements["Jenji#1475"] = { [1] = { image = "img@193d675bca7", quantity = 1 }, [2] = { image = '19636907e9e.png', quantity = 0}}
-playerAchievements["Ramasevosaff#0000"] = { [1] = { image = "img@193d675bca7", quantity = 1 }, [2] = { image = '19636907e9e.png', quantity = 0}}
-playerAchievements["Rex#2654"] = { [1] = { image = "img@193d675bca7", quantity = 1 }, [2] = { image = '19636907e9e.png', quantity = 0}}
-playerAchievements["Raidensnd#0000"] = { [1] = { image = "img@193d675bca7", quantity = 1 }, [2] = { image = '19636907e9e.png', quantity = 0}}
-playerAchievements["Mulan#5042"] = { [1] = { image = "img@193d675bca7", quantity = 1 }, [2] = { image = '19636905a3c.png', quantity = 1 }}
-playerAchievements["Basker#2338"] = { [1] = { image = "img@193d675bca7", quantity = 1 }, [2] = { image = '19636907e9e.png', quantity = 0}}
-playerAchievements["Ppoppohaejuseyo#2315"] = { [1] = { image = "img@193d6763c82", quantity = 0 }, [2] = { image = '19636905a3c.png', quantity = 1 }}
-playerAchievements["Djadja#5590"] = { [1] = { image = "img@193d6763c82", quantity = 1 }, [2] = { image = '19636905a3c.png', quantity = 1 }}
+playerAchievements["Jenji#1475"] = {
+  [1] = { image = "img@193d675bca7", quantity = 1 },
+  [2] = { image = "19636907e9e.png", quantity = 0},
+  [3] = { image = "197d9274460.png", quantity = 1 },
+--[4] = { image = "lost", quantity = 0 }
+}
+playerAchievements["Ramasevosaff#0000"] = {
+  [1] = { image = "img@193d675bca7", quantity = 1 },
+  [2] = { image = "19636907e9e.png", quantity = 0},
+  [3] = { image = "197d9274460.png", quantity = 1 },
+--[4] = { image = "lost", quantity = 0 }
+}
+playerAchievements["Rex#2654"] = {
+  [1] = { image = "img@193d675bca7", quantity = 1 },
+  [2] = { image = "19636907e9e.png", quantity = 0},
+  [3] = { image = "197d9272515.png", quantity = 0 },
+--[4] = { image = "lost", quantity = 0 }
+}
+playerAchievements["Raidensnd#0000"] = {
+  [1] = { image = "img@193d675bca7", quantity = 1 },
+  [2] = { image = "19636907e9e.png", quantity = 0},
+  [3] = { image = "197d9272515.png", quantity = 0 },
+--[4] = { image = "lost", quantity = 0 }
+}
+playerAchievements["Mulan#5042"] = {
+  [1] = { image = "img@193d675bca7", quantity = 1 },
+  [2] = { image = "19636905a3c.png", quantity = 1 },
+  [3] = { image = "197d9272515.png", quantity = 0 },
+--[4] = { image = "lost", quantity = 0 }
+}
+playerAchievements["Basker#2338"] = {
+  [1] = { image = "img@193d675bca7", quantity = 1 },
+  [2] = { image = "19636907e9e.png", quantity = 0},
+  [3] = { image = "197d9272515.png", quantity = 0 },
+--[4] = { image = "lost", quantity = 0 }
+}
+playerAchievements["Ppoppohaejuseyo#2315"] = {
+  [1] = { image = "img@193d6763c82", quantity = 0 },
+  [2] = { image = "19636905a3c.png", quantity = 1 },
+  [3] = { image = "197d9272515.png", quantity = 0 },
+--[4] = { image = "lost", quantity = 0 }
+}
+playerAchievements["Djadja#5590"] = {
+  [1] = { image = "img@193d675bca7", quantity = 1 },
+  [2] = { image = "19636905a3c.png", quantity = 1 },
+  [3] = { image = "197d9272515.png", quantity = 0 },
+--[4] = { image = "lost", quantity = 0 }
+}
+playerAchievements["Lightning#7523"] = {
+  [1] = { image = "img@193d6763c82", quantity = 0 },
+  [2] = { image = "19636907e9e.png", quantity = 0},
+  [3] = { image = "197d9274460.png", quantity = 1 },
+--[4] = { image = "lost", quantity = 0 }
+}
+playerAchievements["Nkmk#3180"] = {
+  [1] = { image = "img@193d6763c82", quantity = 0 },
+  [2] = { image = "19636907e9e.png", quantity = 0},
+  [3] = { image = "197d9274460.png", quantity = 1 },
+--[4] = { image = "lost", quantity = 0 }
+}
+-- playerAchievements["nickname"] = {
+--  [1] = { image = "img@193d6763c82", quantity = 0 }, --lost
+--  [1] = { image = "img@193d675bca7", quantity = 0 }, --won
+--  [2] = { image = "19636907e9e.png", quantity = 0}, --lost
+--  [2] = { image = "19636905a3c.png", quantity = 0}, --won
+--  [3] = { image = "197d9272515.png", quantity = 0 } --lost
+--  [3] = { image = "197d9274460.png", quantity = 1 } --won
+--  [4] = { image = "lost", quantity = 0 }
+--  [4] = { image = "won", quantity = 1 }
+--}
 
 for name, data in pairs(tfm.get.room.playerList) do
   customMapCommand[name] = true
@@ -1178,7 +1261,11 @@ for name, data in pairs(tfm.get.room.playerList) do
   isOpenProfile[name] = false
   playerTrophyImage[name] = 0
   if playerAchievements[name] == nil then
-    playerAchievements[name] = {[1] = { image = "img@193d6763c82", quantity = 0 }, [2] = { image = '19636907e9e.png', quantity = 0}}
+    playerAchievements[name] = {
+      [1] = { image = "img@193d6763c82", quantity = 0 },
+      [2] = { image = '19636907e9e.png', quantity = 0},
+      [3] = { image = "197d9272515.png", quantity = 0 }
+    }
   end
   playerAchievementsImages[name] = {}
   showCrownImages[name] = true
@@ -3689,7 +3776,11 @@ function eventNewPlayer(name)
   isOpenProfile[name] = false
   playerTrophyImage[name] = 0
   if playerAchievements[name] == nil then
-    playerAchievements[name] = {[1] = { image = "img@193d6763c82", quantity = 0 }, [2] = { image = '19636907e9e.png', quantity = 0}}
+    playerAchievements[name] = {
+      [1] = { image = "img@193d6763c82", quantity = 0 }, 
+      [2] = { image = '19636907e9e.png', quantity = 0},
+      [3] = { image = "197d9272515.png", quantity = 0 }
+    }
   end
   playerAchievementsImages[name] = {}
   settings[name] = false
@@ -7778,6 +7869,7 @@ end
 
 function removeUITrophies(name)
   isOpenProfile[name] = false
+  closeWindow(29, name)
   closeWindow(28, name)
   closeWindow(27, name)
   closeWindow(26, name)
@@ -7802,6 +7894,7 @@ function profileUI(name, playerTarget)
   local images2 = ui.addWindow(25, "<p align='center'><font size='30px'><textformat leading='-10'><br><j>#1<n>", name, 200, 80, 100, 100, 1, true, false, "", {true, true, true, true})
   ui.addTrophie(27, "trophie1", name, playerTarget, 230, 230, 50, 50, 1)
   ui.addTrophie(28, "trophie2", name, playerTarget, 295, 230, 50, 50, 1)
+  ui.addTrophie(29, "trophie3", name, playerTarget, 355, 230, 50, 50, 1)
 
   appendAchievementsImages(name, images1)
   appendAchievementsImages(name, images2)
