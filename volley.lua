@@ -188,7 +188,7 @@ local permanentAdmins = {
   "Tonycoolnees#0000"
 }
 
-local gameVersion = "V2.2.1"
+local gameVersion = "V2.2.2"
 
 local trad = ""
 local lang = {}
@@ -200,7 +200,7 @@ lang.br = {
   msgBlueWinner = "O time azul venceu!",
   menuOpenText = "<br><br><a href='event:howToPlay'>Como jogar</a><br><a href='event:realmode'>Vôlei Modo Real</a><br><a href='event:ranking'>Ranking</a><br><a href='event:credits'>Creditos</a><br>",
   closeUIText = "<p align='center'><font size='12px'><a href='event:closeWindow'>Fechar",
-  helpTitle = "<p align='center'><font size='15px'>Como jogar Volley ("..gameVersion..")",
+  helpTitle = "<p align='center'><font size='16px'>Como jogar Volley ("..gameVersion..")",
   helpText = {
     [1] = { text = "<br><br><p align='left'><font size='12px'>O objetivo do vôlei é evitar que a bola caia no chão de sua quadra, e para evitar isso, você pode transformar seu rato em um objeto circular apertando a tecla <j>[ Espaço ]<n>, o rato se destransforma 3 segundos depois. A equipe que fazer 7 pontos primeiro vence!<br>Criar uma sala com admin: <bv><a href='event:roomadmin'>/sala *#volley0SeuNome#0000</a><n><br><br>Comandos (<rose>*<n> = durante a partida | <vp>*<n> = comandos do admin):<br><br><j>!lang<n> <ch>"..languages.."<n> - Para modificar o idioma do minigame<br><j>!join<n> <rose>*<n> - Para entrar na partida <br><j>!leave<n> <rose>*<n> - Para sair da partida e ir para a área de espectador<br><j>!resettimer<n> <vp>*<n> - Resetar o tempo no lobby antes de começar a partida<br><j>!setmap<n> <ch>[small/large/extra-large]<n> <vp>*<n> - Para selecionar um mapa em especifico antes de começar uma partida<br><j>!pw<n> <ch>[senha]<n> <vp>*<n> - Colocar uma senha na sala"},
     [2] = { text = "<p align='left'><font size='12px'><br><br>Comandos (<rose>*<n> = durante a partida | <vp>*<n> = comandos do admin):<br><br><j>!winscore<n> <ch>[número]<n> <rose>*<n> <vp>*<n> - Mudar o numero máximo de pontos para vencer uma partida<br><j>!customMap<n> <ch>[true ou false]<n> <ch>[index do mapa]<n> <vp>*<n> - Selecionar um mapa costumizado<br><j>!maps<n> - Mostra a lista de mapas<br><j>!votemap<n> <ch>[numero]<n> - Votar em um mapa costumizado para a próxima partida<br><j>!setscore<n> <ch>[nome do jogador]<n> <ch>[numero]<n> <rose>*<n> <vp>*<n> - Troca a score do jogador pelo numero<br><j>!setscore<n> <ch>[nome do jogador]<n> <rose>*<n> <vp>*<n> - Adiciona +1 a score do jogador<br><j>!setscore<n> <ch>[red ou blue]<n> <ch>[numero]<n> <rose>*<n> <vp>*<n> - Troca a score do time pelo numero<br><j>!4teamsmode<n> <ch>[true ou false]<n> <vp>*<n> - Seleciona o modo de 4 times do Volley<br>"},
@@ -208,7 +208,7 @@ lang.br = {
     [4] = { text = "<p align='left'><font size='12px'><br><br>Comandos (<rose>*<n> = durante a partida | <vp>*<n> = comandos do admin):<br><br><j>!skiptimer<n> <vp>*<n> - Inicia a partida o mais rápido possível<br><j>!afksystem<n> <ch>[true ou false]<n> <vp>*<n> - Ativa ou desativa o sistema de AFK<n><br><j>!settimeafk<n> <ch>[segundos]<n> <vp>*<n> - Seleciona o tempo de afk em segundos<br><j>!realmode<n> <ch>[true ou false]<n> <vp>*<n> - Seleciona Volley Real Mode<br><j>!twoballs<n> <ch>[true ou false]<n> <vp>*<n> - Ativa duas bolas em jogo<br><j>!consumables<n> <ch>[true ou false]<n> <vp>*<n> - Escolha um consumível com as teclas (7, 8, 9 e 0) e ative eles apertando M no modo normal<br><j>!settings<n> <vp>*<n> - Comando para fazer configurações globais na sala<br><j>!setsync<n> <vp>*<n> - Seleciona a sync para o jogador<br><j>!crown<n> <ch>[true ou false]<n> - Ativa/desativa imagens de coroa" },
     [5] = { text = "<p align='left'><font size='12px'><br><br>Comandos (<rose>*<n> = durante a partida | <vp>*<n> = comandos do admin):<br><br><j>!profile<n> <vp>*<n> - Mostra o seu perfil no Volley, você também pode abrir o seu perfil usando a tecla P<br><j>!profile<n> <ch>[playerName#0000]<n> <vp>*<n> - Mostra o perfil do jogador selecionado no Volley" }
   },
-  creditsTitle = "<p align='center'><font size='15px'>Créditos (Volley)",
+  creditsTitle = "<p align='center'><font size='16px'>Créditos (Volley)",
   creditsText = "<br><br><p align='left'><font size='12px'>O jogo foi desenvolvido por <j>Refletz#6472 (Soristl)<n><br><br>Tradução BR/EN: <j>Refletz#6472 (Soristl)<n><br><br>Tradução AR: <j>Ionut_eric_pro#1679<n><br><br>Tradução FR: <j>Rowed#4415<n><br><br>Tradução PL: <j>Prestige#5656<n>",
   messageSetMaxPlayers = "Número máximo de jogadores colocado para",
   newPassword = "Nova senha:",
@@ -216,8 +216,8 @@ lang.br = {
   messageMaxPlayersAlert = "<bv>O número máximo de jogadores deve ser no mínimo 6 e no máximo 20<n>",
   previousMessage = "<p align='center'>Voltar",
   nextMessage = "<p align='center'>Próximo",
-  realModeRules = "<p align='center'><font size='15px'>Volley Real Mode Regras<br><br><p align='left'><font size='12px'><b>- Cada time pode se <b>transformar</b> em um <vi>objeto esférico<n> somente 3x (exceto no <b>saque</b> que é apenas 1x)<br><br>- Se a bola for para a fora do lado do seu time e <b>ninguém</b> do seu time se transformou em um <vi>objeto esférico<n> o ponto é do seu time<br><br>- Se a bola foi para fora e o seu time se <b>transformou no</b> <vi><b>objeto esférico<b><n> o ponto é do adversário<br><br>- Cada jogador irá sacar a bola uma vez conforme o andamento da partida<br><br>- Se o jogador sair da quadra, o jogador poderá realizar uma ação por <j>7 segundos<n>, caso contrário o jogador não poderá usar a <j>tecla de espaço<n><br><br>- As teclas 1, 2, 3 e 4 alteram a força do jogador",
-  titleSettings = "<p align='center'><font size='15px'>Configurações da sala</p>",
+  realModeRules = "<p align='center'><font size='16px'>Volley Real Mode Regras<br><br><p align='left'><font size='12px'><b>- Cada time pode se <b>transformar</b> em um <vi>objeto esférico<n> somente 3x (exceto no <b>saque</b> que é apenas 1x)<br><br>- Se a bola for para a fora do lado do seu time e <b>ninguém</b> do seu time se transformou em um <vi>objeto esférico<n> o ponto é do seu time<br><br>- Se a bola foi para fora e o seu time se <b>transformou no</b> <vi><b>objeto esférico<b><n> o ponto é do adversário<br><br>- Cada jogador irá sacar a bola uma vez conforme o andamento da partida<br><br>- Se o jogador sair da quadra, o jogador poderá realizar uma ação por <j>7 segundos<n>, caso contrário o jogador não poderá usar a <j>tecla de espaço<n><br><br>- As teclas 1, 2, 3 e 4 alteram a força do jogador",
+  titleSettings = "<p align='center'><font size='16px'>Configurações da sala</p>",
   textSettings = "<p align='left'><font size='12px'>Selecionar modo de jogo<br><br><br><br><br><br><br><br><br><br>Ativar o comando !twoballs</p>",
   msgAchievements = "<p align='left'><font size='14px'>Conquistas:",
   msgsTrophies = {
@@ -234,7 +234,7 @@ lang.en = {
   msgBlueWinner = "Team blue won!",
   menuOpenText = "<br><br><a href='event:howToPlay'>How to play</a><br><a href='event:realmode'>Volley Real Mode</a><br><a href='event:ranking'>Ranking</a><br><a href='event:credits'>Credits</a><br>",
   closeUIText = "<p align='center'><font size='12px'><a href='event:closeWindow'>Close",
-  helpTitle = "<p align='center'><font size='15px'>How to play Volley ("..gameVersion..")",
+  helpTitle = "<p align='center'><font size='16px'>How to play Volley ("..gameVersion..")",
   helpText = {
     [1] = { text = "<br><br><p align='left'><font size='12px'>The objective of volleyball is to prevent the ball from falling to the floor of your court, and to avoid this, you can turn your mouse into a circular object by pressing the <j>[ Space ]<n> key, the mouse untransforms 3 seconds later. The team that scores 7 points first wins!<br>Create a room with admin: <bv><a href='event:roomadmin'>/room *#volley0YourName#0000</a><n><br><br>Commands (<rose>*<n> = during the match | <vp>*<n> = admin's commands):<br><br><j>!lang<n> <ch>"..languages.."<n> - To modify the minigame language<br><j>!join<n> <rose>*<n> - To join the match<br><j>!leave<n> <rose>*<n> - To leave the match and go to the spectator area<br><j>!resettimer<n> <vp>*<n> - Reset time in the lobby before starting the match<br><j>!setmap<n> <ch>[small/large/extra-large]<n> <vp>*<n> - To select a specific map before starting a match<br><j>!pw<n> <ch>[password]<n> <vp>*<n> - Put a password in the room"},
     [2] = { text = "<p align='left'><font size='12px'><br><br>Commands (<rose>*<n> = during the match | <vp>*<n> = admin's commands):<br><br><j>!winscore<n> <ch>[number]<n> <rose>*<n> <vp>*<n> - Change the maximum number of points to win a match<br><j>!customMap<n> <ch>[true or false]<n> <ch>[map index]<n> <vp>*<n> - Select a custom map<br><j>!maps<n> - Shows the list of maps<br><j>!votemap<n> <ch>[number]<n> - Vote for a custom map for the next match<br><j>!setscore<n> <ch>[Player name]<n> <ch>[number]<n> <rose>*<n> <vp>*<n> - Swap the player's score by number<br><j>!setscore<n> <ch>[Player name]<n> <rose>*<n> <vp>*<n> - Adds +1 to player's score<br><j>!setscore<n> <ch>[red or blue]<n> <ch>[number]<n> <rose>*<n> <vp>*<n> - Swap the team's score for the number<br><j>!4teamsmode<n> <ch>[true or false]<n> <vp>*<n> - Select 4-team Volley mode"},
@@ -242,7 +242,7 @@ lang.en = {
     [4] = { text = "<p align='left'><font size='12px'><br><br>Commands (<rose>*<n> = during the match | <vp>*<n> = admin's commands)<br><br><j>!skiptimer<n> <vp>*<n> - Start the game as quickly as possible<br><j>!afksystem<n> <ch>[true or false]<n> <vp>*<n> - Enables or disables the AFK system<n><br><j>!settimeafk<n> <ch>[seconds]<n> <vp>*<n> - Select the afk time in seconds<br><j>!realmode<n> <ch>[true or false]<n> <vp>*<n> - Selects Volley Real Mode<br><j>!twoballs<n> <ch>[true or false] <n> <vp>*<n> - Activates two balls in game<br><j>!consumables<n> <ch>[true or false]<n> <vp>*<n> - Choose a consumable with the keys (7, 8, 9 and 0) and activate them by pressing M in normal mode<br><j>!settings<n> <vp>*<n> - Command to make global settings in the room<br><j>!setsync<n> <vp>*<n> - Selects sync for the player<br><j>!crown<n> <ch>[true or false]<n> - Enables/disables crown images"},
     [5] = { text = "<p align='left'><font size='12px'><br><br>Commands (<rose>*<n> = during the match | <vp>*<n> = admin's commands)<br><br><j>!profile<n> <vp>*<n> - Shows your profile on Volley, you can also open your profile using the P key<br><j>!profile<n> <ch>[playerName#0000]<n> <vp>*<n> - Shows the profile of the selected player in Volley"}
   },
-  creditsTitle = "<p align='center'><font size='15px'>Credits (Volley)",
+  creditsTitle = "<p align='center'><font size='16px'>Credits (Volley)",
   creditsText = "<br><br><p align='left'><font size='12px'>The game was developed by <j>Refletz#6472 (Soristl)<n><br><br>BR/EN Translation: <j>Refletz#6472 (Soristl)<n><br><br>AR Translation: <j>Ionut_eric_pro#1679<n><br><br>FR Translation: <j>Rowed#4415<n><br><br>PL Translation: <j>Prestige#5656<n>",
   messageSetMaxPlayers = "Maximum number of players placed for",
   newPassword = "New password:",
@@ -250,9 +250,9 @@ lang.en = {
   messageMaxPlayersAlert = "<bv>The maximum number of players must be a minimum of 6 and a maximum of 20<n>",
   previousMessage = "<p align='center'>Back",
   nextMessage = "<p align='center'>Next",
-  realModeRules = "<p align='center'><font size='15px'>Volley Real Mode Rules<br><br><p align='left'><font size='12px'><b>- Each team can join <b>transform</b> into a <vi>spherical object<n> only 3 times (except for the <b>serve</b> which is only 1 time)<br><br>- If the ball goes out on your team's side and <b>no one</b> on your team turned into a <vi>spherical object<n> the point is your team's<br><br>- If the ball went out and someone of your team <b>turned into</b> <vi><b>spherical object<b><n> the point belongs to the opponent<br><br>- Each player will serve the ball once <br><br>- If the player leaves the court, the player will be able to perform an action for <j>7 seconds<n>, otherwise the player will not be able to use the <j>space key<n><br><br>- The 1, 2, 3 and 4 keys change the player's strength",
-  titleSettings = "<p align='center'><font size='15px'>Room Settings</p>",
-  textSettings = "<p align='left'><font size='12px'>Select game mode<br><br><br><br><br><br><br><br><br><br>Activate the !twoballs command</p>",
+  realModeRules = "<p align='center'><font size='16px'>Volley Real Mode Rules<br><br><p align='left'><font size='12px'><b>- Each team can join <b>transform</b> into a <vi>spherical object<n> only 3 times (except for the <b>serve</b> which is only 1 time)<br><br>- If the ball goes out on your team's side and <b>no one</b> on your team turned into a <vi>spherical object<n> the point is your team's<br><br>- If the ball went out and someone of your team <b>turned into</b> <vi><b>spherical object<b><n> the point belongs to the opponent<br><br>- Each player will serve the ball once <br><br>- If the player leaves the court, the player will be able to perform an action for <j>7 seconds<n>, otherwise the player will not be able to use the <j>space key<n><br><br>- The 1, 2, 3 and 4 keys change the player's strength",
+  titleSettings = "<p align='center'><font size='16px'>Room Settings</p>",
+  textSettings = "<p align='left'><font size='12px'>Select game mode<br><br><br><br>Activate the !randomball command<br><br><br><br>Activate the !randommap command<br><br><br><br>Activate the !twoballs command</p>",
   msgAchievements = "<p align='left'><font size='14px'>Achievements:",
   msgsTrophies = {
     [1] = "Volleyball World Cup Trophy",
@@ -268,7 +268,7 @@ lang.ar = {
   msgBlueWinner = "فاز الفريق الأزرق!",
   menuOpenText = "<br><br><a href='event:howToPlay'>كيفية اللعب</a><br><a href='event:realmode'>وضع الكرة الطائرة الحقيقي</a><br><a href='event:ranking'>التصنيف</a><br><a href='event:credits'>شكر خاص</a><br>",
   closeUIText = "<p align='center'><font size='12px'><a href='event:closeWindow'>إغلاق",
-  helpTitle = "<p align='center'><font size='15px'>كيفية لعب الكرة الطائرة ("..gameVersion..")",
+  helpTitle = "<p align='center'><font size='16px'>كيفية لعب الكرة الطائرة ("..gameVersion..")",
   helpText = {
     [1] = { text = "<br><br><p align='right'><font size='12px'>هدف كرة الطائرة هو منع الكرة من السقوط إلى أرضية ملعب فريقك، ولتحقيق هذا، يمكنك تحويل الفأر الخاص بك إلى كائن دائري عن طريق الضغط على <j>[ مسطرة ]<n> مفتاح, ويعود الفأر إلى شكله الأصلي بعد 3 ثوانٍ. الفريق الذي يسجل 7 نقاط أولاً يفوز!<br>إنشاء غرفة بخاصيات المشرف: <bv><a href='event:roomadmin'>/room *#volley0إسمك#0000</a><n><br><br>الأوامر (<rose>*<n> = أثناء المباراة | <vp>*<n> = أوامر المشرف):<br><br><j>!lang<n> <ch>"..languages.."<n> - لتعديل لغة النمط<br><j>!join<n> <rose>*<n> - للإنضمام للمباراة<br><j>!leave<n> <rose>*<n> - لمغادرة المباراة والذهاب إلى منطقة المتفرجين<br><j>!resettimer<n> <vp>*<n> - قم بإعادة ضبط الوقت في الردهة قبل بدء المباراة<br><j>!setmap<n> <ch>[small/large/extra-large]<n> <vp>*<n> - لتحديد خريطة معينة قبل بدء المباراة<br><j>!pw<n> <ch>[password]<n> <vp>*<n> - ضع كلمة مرور في الغرفة"},
     [2] = { text = "<p align='right'><font size='12px'><br><br>الأوامر (<rose>*<n> = أثناء المباراة | <vp>*<n> = أوامر المشرف):<br><br><j>!winscore<n> <ch>[number]<n> <rose>*<n> <vp>*<n> - تغيير الحد الأقصى لعدد النقاط للفوز بالمباراة<br><j>!customMap<n> <ch>[true or false]<n> <ch>[map index]<n> <vp>*<n> - اختر ماب مخصص<br><j>!maps<n> - تظهر قائمة الخرائط<br><j>!votemap<n> <ch>[number]<n> - التصويت للحصول على ماب مخصص للمباراة القادمة<br><j>!setscore<n> <ch>[Player name]<n> <ch>[number]<n> <rose>*<n> <vp>*<n> - قم بتبديل نتيجة اللاعب بالرقم<br><j>!setscore<n> <ch>[Player name]<n> <rose>*<n> <vp>*<n> - يضيف +1 إلى نتيجة اللاعب<br><j>!setscore<n> <ch>[red or blue]<n> <ch>[number]<n> <rose>*<n> <vp>*<n> - قم بتبديل نتيجة الفريق بالرقم<br><j>!4teamsmode<n> <ch>[true or false]<n> <vp>*<n> - حدد وضع الكرة الطائرة المكون من 4 فرق"},
@@ -276,7 +276,7 @@ lang.ar = {
     [4] = { text = "<p align='right'><font size='12px'><br><br>الأوامر (<rose>*<n> = أثناء المباراة | <vp>*<n> = أوامر المشرف)<br><br><j>!skiptimer<n> <vp>*<n> - يتخطى وقت الانتظار لبدء اللعبة إلى 5 ثواني <br><j>!afksystem<n> <ch>[true or false]<n> <vp>*<n> - تمكين أو تعطيل نظام AFK<n><br><j>!settimeafk<n> <ch>[true or false]<n> <vp>*<n> - حدد الوقت AFK بالثواني <br><j>!realmode<n> <ch>[true or false خطأ]<n> <vp>*<n> - تحديد الوضع الحقيقي للكرة الطائرة<br><j>!twoballs<n> <ch>[true or false] <n> <vp>*<n> - ينشط كرتين في اللعبة<br><j>!consumables<n> <ch>[true or false]<n> <vp>*<n> - اختر عنصرًا مستهلكًا به المفاتيح (7 و 8 و 9 و 0) وتفعيلها بالضغط على M في الوضع العادي<br><j>!settings<n> <vp>*<n> - الأمر بإجراء الإعدادات العامة في الغرفة<br><j>!setsync<n> <vp>*<n> - يحدد المزامنة للمشغل<br><j>!crown<n> <ch>[true or false]<n> - تمكين/تعطيل صور التاج"},
     [5] = { text = "<p align='right'><font size='12px'><br><br>الأوامر (<rose>*<n> = أثناء المباراة | <vp>*<n> = أوامر المشرف)<br><br><j>!profile<n> <vp>*<n> - يعرض ملفك الشخصي على Volley، ويمكنك أيضًا فتح ملفك الشخصي باستخدام مفتاح P<br><j>!profile<n> <ch>[playerName#0000]<n> <vp>*<n> - يعرض الملف الشخصي للاعب المحدد في الكرة الطائرة"}
   },
-  creditsTitle = "<p align='center'><font size='15px'>شكر خاص (الكرة الطائرة)",
+  creditsTitle = "<p align='center'><font size='16px'>شكر خاص (الكرة الطائرة)",
   creditsText = "<br><br><p align='right'><font size='12px'>تم تطوير اللعبة من طرف <j>Refletz#6472 (Soristl)<n><br><br>ترجمة BR/EN: <j>Refletz#6472 (Soristl)<n><br><br>ترجمة AR: <j>Ionut_eric_pro#1679<n><br><br>ترجمة FR: <j>Rowed#4415<n><br><br>ترجمة PL: <j>Prestige#5656<n>",
   messageSetMaxPlayers = "الحد الأقصى لعدد اللاعبين الذين تم وضعهم هو",
   newPassword = "كلمة المرور الجديدة:",
@@ -284,8 +284,8 @@ lang.ar = {
   messageMaxPlayersAlert = "<bv>يجب أن يكون الحد الأقصى لعدد اللاعبين 6 لاعبين كحد أدنى و20 كحد أقصى<n>",
   previousMessage = "<p align='center'>الخلف",
   nextMessage = "<p align='center'>التالي",
-  realModeRules = "<p align='center'><font size='15px'>قواعد الوضع الحقيقي للكرة الطائرة<br><br><p align='right'><font size='12px'><b>- يمكن لكل فريق الانضمام <b>يتحول</b> إلى <vi>جسم كروي<n> 3 مرات فقط (باستثناء <b>الإرسال</b> الذي يكون مرة واحدة فقط)<br><br>- إذا ذهبت الكرة خرجت إلى جانب فريقك و<b>لم يتحول أي شخص</b> في فريقك إلى <vi>جسم كروي<n> فالنقطة تخص فريقك<br><br>-  إذا خرجت الكرة وشخص ما من فريقك الفريق <b>الذي تحول إلى</b> <vi><b>جسم كروي<b><n> النقطة مملوكة للخصم<br><br>- سيرسل كل لاعب الكرة مرة واحدة  <br><br>-فسيتمكن اللاعب من تنفيذ إجراء لمدة <j>7 ثوانٍ<n>، وإلا فلن يتمكن اللاعب من استخدام <j>مفتاح المسافة<n><br><br>-تعمل المفاتيح 1 و2 و3 و4 على تغيير قوة اللاعب",
-  titleSettings = "<p align='center'><font size='15px'>إعدادات الغرفة</p>",
+  realModeRules = "<p align='center'><font size='16px'>قواعد الوضع الحقيقي للكرة الطائرة<br><br><p align='right'><font size='12px'><b>- يمكن لكل فريق الانضمام <b>يتحول</b> إلى <vi>جسم كروي<n> 3 مرات فقط (باستثناء <b>الإرسال</b> الذي يكون مرة واحدة فقط)<br><br>- إذا ذهبت الكرة خرجت إلى جانب فريقك و<b>لم يتحول أي شخص</b> في فريقك إلى <vi>جسم كروي<n> فالنقطة تخص فريقك<br><br>-  إذا خرجت الكرة وشخص ما من فريقك الفريق <b>الذي تحول إلى</b> <vi><b>جسم كروي<b><n> النقطة مملوكة للخصم<br><br>- سيرسل كل لاعب الكرة مرة واحدة  <br><br>-فسيتمكن اللاعب من تنفيذ إجراء لمدة <j>7 ثوانٍ<n>، وإلا فلن يتمكن اللاعب من استخدام <j>مفتاح المسافة<n><br><br>-تعمل المفاتيح 1 و2 و3 و4 على تغيير قوة اللاعب",
+  titleSettings = "<p align='center'><font size='16px'>إعدادات الغرفة</p>",
   textSettings = "<p align='right'><font size='12px'>اختر وضع اللعبة<br><br><br><br><br><br><br><br><br><br> قم بتنشيط !twoballs الأمر </p>",
   msgAchievements = "<p align='right'><font size='14px'>الإنجازات:",
   msgsTrophies = {
@@ -303,7 +303,7 @@ lang.fr = {
   msgBlueWinner = "L'équipe bleue a gagné!",
   menuOpenText = "<br><br><a href='event:howToPlay'>Comment jouer</a><br><a href='event:realmode'>Mode Réel de Volley</a><br><a href='event:ranking'>Ranking</a><br><a href='event:credits'>Crédits</a><br>",
   closeUIText = "<p align='center'><font size='12px'><a href='event:closeWindow'>Fermer",
-  helpTitle = "<p align='center'><font size='15px'>Comment jouer au Volley ("..gameVersion..")",
+  helpTitle = "<p align='center'><font size='16px'>Comment jouer au Volley ("..gameVersion..")",
   helpText = {
     [1] = { text = "<br><br><p align='left'><font size='12px'>L'objectif du volley est d'éviter que la balle ne tombe sur le sol de votre côté du terrain, et pour éviter cela, vous pouvez transformer votre souris en un objet circulaire en pressant la touche <j><br>[ Espace ]<n>, la souris reprend sa forme originale 3 secondes plus tard. L'équipe qui marque 7 points en première gagne!<br>Créer un salon avec admin: <bv><a href='event:roomadmin'>/salon *#volley0VotreNom#0000</a><n><br><br>Commandes (<rose>*<n> = durant la partie | <vp>*<n> = commandes admin):<br><br><j>!lang<n> <ch>"..languages.."<n> - Pour modifier la langue du mini-jeu<br><j>!join<n> <rose>*<n> - Pour rejoindre la partie<br><j>!leave<n> <rose>*<n> - Pour quitter la partie et aller dans la zone des spectateurs<br><j>!resettimer<n> <vp>*<n> - Réinitialise le temps dans le lobby avant de commencer la partie<br><j>!setmap<n> <ch>[small/large/extra-large]<n> <vp>*<n> - Pour sélectionner une carte spécifique avant de commencer la partie"},
     [2] = { text = "<p align='left'><font size='12px'><br><br>Commandes (<rose>*<n> = durant la partie | <vp>*<n> = commandes admin):<br><br><j>!pw<n> <ch>[password]<n> <vp>*<n> - Mettre un mot de passe dans le salon<br><j>!winscore<n> <ch>[nombre]<n> <rose>*<n> <vp>*<n> - Change le score à atteindre pour gagner la partie<br><j>!customMap<n> <ch>[true ou false]<n> <ch>[index de la carte]<n> <vp>*<n> - Sélectionne une carte customisée<br><j>!maps<n> - Affiche la liste de cartes<br><j>!votemap<n> <ch>[nombre]<n> - Vote pour une carte customisée pour la prochaine partie<br><j>!setscore<n> <ch>[Nom du joueur]<n> <ch>[nombre]<n> <rose>*<n> <vp>*<n> - Change le score du joueur par le nombre<br><j>!setscore<n> <ch>[Nom du joueur]<n> <rose>*<n> <vp>*<n> - Ajoute +1 au score du joueur<br><j>!setscore<n> <ch>[red ou blue]<n> <ch>[nombre]<n> <rose>*<n> <vp>*<n> - Change le score de l'équipe par le nombre<br><j>!4teamsmode<n> <ch>[true ou false]<n> <vp>*<n> - Sélectionne le mode de 4 équipes au Volley"},
@@ -311,7 +311,7 @@ lang.fr = {
     [4] = { text = "<p align='left'><font size='12px'><br><br>Commandes (<rose>*<n> = durant la partie | <vp>*<n> = commandes amdin)<br><br><j>!skiptimer<n> <vp>*<n> - Commence la partie le plus vite possible<br><j>!afksystem<n> <ch>[true ou false]<n> <vp>*<n> - Active ou désactive le système AFK<n><br><j>!settimeafk<n> <ch>[secondes]<n> <vp>*<n> - Sélectionne le temps d'afk en secondes<br><j>!realmode<n> <ch>[true ou false]<n> <vp>*<n> - Sélectionne le mode réel de volée<br><j>!twoballs<n> <ch>[true ou false] <n> <vp>*<n> - Active deux balles dans le jeu<br><j>!consumables<n> <ch>[true ou false]<n> <vp>*<n> - Choisissez un consommable avec les touches (7, 8, 9 et 0) et activez-les en appuyant sur M en mode normal<br><j>!settings<n> <vp>*<n> - Commande pour effectuer les réglages globaux dans la pièce<br><j>!setsync<n> <vp>*<n> - Sélectionne la synchronisation pour le lecteur<br><j>!crown<n> <ch>[true ou false]<n> - Activer/désactiver les images de couronne"},
     [5] = { text = "<p align='left'><font size='12px'><br><br>Commandes (<rose>*<n> = durant la partie | <vp>*<n> = commandes amdin)<br><br><j>!profile<n> <vp>*<n> - Affiche votre profil sur Volley, vous pouvez également ouvrir votre profil en utilisant la touche P<br><j>!profile<n> <ch>[playerName#0000]<n> <vp>*<n> - Affiche le profil du joueur sélectionné dans Volley"}
   },
-  creditsTitle = "<p align='center'><font size='15px'>Crédits (Volley)",
+  creditsTitle = "<p align='center'><font size='16px'>Crédits (Volley)",
   creditsText = "<br><br><p align='left'><font size='12px'>Le jeu a été développé par <j>Refletz#6472 (Soristl)<n><br><br>BR/EN Translation: <j>Refletz#6472 (Soristl)<n><br><br>AR Translation: <j>Ionut_eric_pro#1679<n><br><br>FR Translation: <j>Rowed#4415<n><br><br>PL Translation: <j>Prestige#5656<n>",
   messageSetMaxPlayers = "Nombre de joueurs maximum mis à",
   newPassword = "Nouveau mot de passe:",
@@ -319,8 +319,8 @@ lang.fr = {
   messageMaxPlayersAlert = "<bv>Le maximum de joueurs doit être au minimum de 6 et au maximum de 20<n>",
   previousMessage = "<p align='center'>Précédent",
   nextMessage = "<p align='center'>Suivant",
-  realModeRules = "<p align='center'><font size='15px'>Règles du Volley Real Mode<br><br><p align='left'><font size='12px'><b>- Chaque équipe peut se <b>transformer</b> en un <vi>objet sphérique<n> seulement 3 fois (sauf pour le <b>service</b> où ce n'est qu'UNE fois)<br><br>- Si la balle va dehors de votre côté du terrain et que <b>personne</b> de votre équipe ne s'est transformé en un <vi>objet sphérique<n> le point est pour votre équipe<br><br>- Si la balle va dehors et que quelqu'un de votre équipe <b>s'est transformé</b> en un <vi><b>objet sphérique<b><n> le point revient à l'adversaire<br><br>- Chaque joueur servira la balle une fois <br><br>- Si le joueur quitte le terrain, le joueur pourra effectuer une action pendant <j>7 secondes<n>, autrement le joueur ne sera pas capable d'utiliser la <j>touche espace<n><br><br>- Les touches 1, 2, 3 et 4 changent la force du joueur.",
-  titleSettings = "<p align='center'><font size='15px'>Paramètres de la salle</p>",
+  realModeRules = "<p align='center'><font size='16px'>Règles du Volley Real Mode<br><br><p align='left'><font size='12px'><b>- Chaque équipe peut se <b>transformer</b> en un <vi>objet sphérique<n> seulement 3 fois (sauf pour le <b>service</b> où ce n'est qu'UNE fois)<br><br>- Si la balle va dehors de votre côté du terrain et que <b>personne</b> de votre équipe ne s'est transformé en un <vi>objet sphérique<n> le point est pour votre équipe<br><br>- Si la balle va dehors et que quelqu'un de votre équipe <b>s'est transformé</b> en un <vi><b>objet sphérique<b><n> le point revient à l'adversaire<br><br>- Chaque joueur servira la balle une fois <br><br>- Si le joueur quitte le terrain, le joueur pourra effectuer une action pendant <j>7 secondes<n>, autrement le joueur ne sera pas capable d'utiliser la <j>touche espace<n><br><br>- Les touches 1, 2, 3 et 4 changent la force du joueur.",
+  titleSettings = "<p align='center'><font size='16px'>Paramètres de la salle</p>",
   textSettings = "<p align='left'><font size='12px'>Sélectionner le mode de jeu<br><br><br><br><br><br><br><br><br><br>Activer les !twoballs commande</p>",
   msgAchievements = "<p align='left'><font size='14px'>Réalisations:",
   msgsTrophies = {
@@ -337,7 +337,7 @@ lang.pl = {
   msgBlueWinner = "Drużyna niebieskich wygrała!",
   menuOpenText = "<br><br><a href='event:howToPlay'>Jak grać</a><br><a href='event:realmode'>Volley Real Mode</a><br><a href='event:ranking'>Ranking</a><br><a href='event:credits'>Credits</a><br>",
   closeUIText = "<p align='center'><font size='12px'><a href='event:closeWindow'>Close",
-  helpTitle = "<p align='center'><font size='15px'>Jak grać w Volley ("..gameVersion..")",
+  helpTitle = "<p align='center'><font size='16px'>Jak grać w Volley ("..gameVersion..")",
   helpText = {
     [1] = { text = "<br><br><p align='left'><font size='12px'>Celem siatkówki jest zapobieganie upadkowi piłki na podłogę twojego boiska, a aby to osiągnąć, możesz zamienić myszkę w okrągły obiekt, naciskając przycisk <j>[ Space ]<n> Mysz wraca do pierwotnego kształtu po 3 sekundach. Drużyna, która pierwsza zdobędzie 7 punktów, wygrywa!<br>Stwórz swój pokój: <bv><a href='event:roomadmin'>/room *#volley0YourName#0000</a><n><br><br>Komendy (<rose>*<n> = podczas meczu | <vp>*<n> = komendy administratora):<br><br><j>!lang<n> <ch>"..languages.."<n> - Aby zmodyfikować język minigry<br><j>!join<n> <rose>*<n> - Aby dołączyć do meczu<br><j>!leave<n> <rose>*<n> - Aby opuścić mecz i przejść do strefy oglądających<br><j>!resettimer<n> <vp>*<n> - Resetuje czas w lobby przed rozpoczęciem się meczu<br><j>!setmap<n> <ch>[small/large/extra-large]<n> <vp>*<n> - Aby wybrać określoną mapę przed rozpoczęciem meczu<br><j>!pw<n> <ch>[hasło]<n> <vp>*<n> - Ustaw hasło w pokoju"},
     [2] = { text = "<p align='left'><font size='12px'><br><br>Komendy (<rose>*<n> = podczas meczu | <vp>*<n> = komendy administratora):<br><br><j>!winscore<n> <ch>[liczba]<n> <rose>*<n> <vp>*<n> - Zmień maksymalną ilość punktów by wygrać mecz<br><j>!customMap<n> <ch>[true or false]<n> <ch>[map index]<n> <vp>*<n> - Wybierz niestandardową mapę<br><j>!maps<n> - Pokazuje listę map<br><j>!votemap<n> <ch>[liczba]<n> - Głosowanie za niestadardową mapę w następnym meczu<br><j>!setscore<n> <ch>[nazwa gracza]<n> <ch>[liczba]<n> <rose>*<n> <vp>*<n> - Zmień wynik gracza na liczbę<br><j>!setscore<n> <ch>[nazwa gracza]<n> <rose>*<n> <vp>*<n> - Dodaje +1 do wyniku gracza<br><j>!setscore<n> <ch>[red or blue]<n> <ch>[liczba]<n> <rose>*<n> <vp>*<n> - Zmień wynik drużyny<br><j>!4teamsmode<n> <ch>[true or false]<n> <vp>*<n> - Wybierz 4-drużynowy Volley mode"},
@@ -345,7 +345,7 @@ lang.pl = {
     [4] = { text = "<p align='left'><font size='12px'><br><br>Komendy (<rose>*<n> = podczas meczu | <vp>*<n> = komendy administratora)<br><br><j>!skiptimer<n> <vp>*<n> - Uruchom grę tak szybko, jak to możliwe<br><j>!afksystem<n> <ch>[true or false]<n> <vp>*<n> - Włącza lub wyłącza system AFK<n><br><j>!settimeafk<n> <ch>[seconds]<n> <vp>*<n> - Wybierz czas AFK w sekundach<br><j>!realmode<n> <ch>[true or false]<n> <vp>*<n> - Wybiera tryb prawdziwej siatkówki<br><j>!twoballs<n> <ch>[true or false] <n> <vp>*<n> - Aktywuje dwie kule w grze<br><j>!consumables<n> <ch>[true or false]<n> <vp>*<n> - Wybierz materiał eksploatacyjny za pomocą klawiszy (7, 8, 9 i 0) i aktywuj je naciskając M w trybie normalnym<br><j>!settings<n> <vp>*<n> - Polecenie wykonania globalnych ustawień w pomieszczeniu<br><j>!setsync<n> <vp>*<n> - Wybiera synchronizację odtwarzacza<br><j>!crown<n> <ch>[true or false]<n> - Włącz/wyłącz obrazy korony"},
     [5] = { text = "<p align='left'><font size='12px'><br><br>Komendy (<rose>*<n> = podczas meczu | <vp>*<n> = komendy administratora)<br><br><j>!profile<n> <vp>*<n> - Pokazuje Twój profil na Volley, możesz także otworzyć swój profil za pomocą klawisza P<br><j>!profile<n> <ch>[playerName#0000]<n> <vp>*<n> - Pokazuje profil wybranego zawodnika w grze Volley"}
   },
-  creditsTitle = "<p align='center'><font size='15px'>Credits (Volley)",
+  creditsTitle = "<p align='center'><font size='16px'>Credits (Volley)",
   creditsText = "<br><br><p align='left'><font size='12px'>Gra została stworzona przez <j>Refletz#6472 (Soristl)<n><br><br>BR/EN Tłumaczenie: <j>Refletz#6472 (Soristl)<n><br><br>AR Tłumaczenie: <j>Ionut_eric_pro#1679<n><br><br>FR Tłumaczenie: <j>Rowed#4415<n><br><br>PL Tłumaczenie: <j>Prestige#5656<n>",
   messageSetMaxPlayers = "Z maksymalną liczbą graczy umieszczoną dla",
   newPassword = "Nowe hasło:",
@@ -353,8 +353,8 @@ lang.pl = {
   messageMaxPlayersAlert = "<bv>Maksymalna liczba graczy musi wynosić minimum 6, a maksimum 20<n>",
   previousMessage = "<p align='center'>Powrót",
   nextMessage = "<p align='center'>Następny",
-  realModeRules = "<p align='center'><font size='15px'>Zasady trybu Volley Real Mode<br><br><p align='left'><font size='12px'><b>- Każda drużyna może się zmienić <b>transform</b> w <vi>okrągły obiekt<n> tylko 3 razy (nielicząc <b>serwa</b> który jest tylko raz)<br><br>- Jeśli piłka wyląduje poza boiskiem po stronie twojego zespołu i <b>nikt</b> z twojej drużyny nie przekształcił się w <vi>okrągły obiekt<n> wtedy punkt jest zdobyty przez twoją drużynę<br><br>- Jeśli piłka wylądowała poza boiskiem i ktoś z twojej drużyny <b>zmienił się w</b> <vi><b>okrągły obiekt<b><n> wtedy punkt należy do drużyny przeciwnej<br><br>- Każdy z graczy serwuje raz <br><br>- Jeśli zawodnik opuści boisko, będzie mógł wykonać akcję przez <j>7 sekund<n>, w przeciwnym razie zawodnik nie będzie mógł użyć <j>klawiszu spacji<n><br><br>- Klawisze 1, 2, 3 i 4 zmieniają siłę gracza",
-  titleSettings = "<p align='center'><font size='15px'>Ustawienia pokoju</p>",
+  realModeRules = "<p align='center'><font size='16px'>Zasady trybu Volley Real Mode<br><br><p align='left'><font size='12px'><b>- Każda drużyna może się zmienić <b>transform</b> w <vi>okrągły obiekt<n> tylko 3 razy (nielicząc <b>serwa</b> który jest tylko raz)<br><br>- Jeśli piłka wyląduje poza boiskiem po stronie twojego zespołu i <b>nikt</b> z twojej drużyny nie przekształcił się w <vi>okrągły obiekt<n> wtedy punkt jest zdobyty przez twoją drużynę<br><br>- Jeśli piłka wylądowała poza boiskiem i ktoś z twojej drużyny <b>zmienił się w</b> <vi><b>okrągły obiekt<b><n> wtedy punkt należy do drużyny przeciwnej<br><br>- Każdy z graczy serwuje raz <br><br>- Jeśli zawodnik opuści boisko, będzie mógł wykonać akcję przez <j>7 sekund<n>, w przeciwnym razie zawodnik nie będzie mógł użyć <j>klawiszu spacji<n><br><br>- Klawisze 1, 2, 3 i 4 zmieniają siłę gracza",
+  titleSettings = "<p align='center'><font size='16px'>Ustawienia pokoju</p>",
   textSettings = "<p align='left'><font size='12px'>Wybierz tryb gry<br><br><br><br><br><br><br><br><br><br>Aktywuj !twoballs dowodzenie</p>",
   msgAchievements = "<p align='left'><font size='14px'>Osiągnięcia:",
   msgsTrophies = {
@@ -446,8 +446,8 @@ local customMaps = {
     [6] = '19554044221.png'
   },
   [6] = {
-    [1] = '<C><P F="0" G="0,4" MEDATA="15,1;;;;-0;0:::1-"/><Z><S><S T="7" X="400" Y="400" L="800" H="100" P="0,0,0.1,0.2,0,0,0,0" c="3" N=""/><S T="1" X="400" Y="350" L="10" H="200" P="0,0,0,0.2,0,0,0,0"/><S T="12" X="-10" Y="200" L="20" H="2000" P="0,0,0.2,0.2,0,0,0,0" o="FF0000" N="" m=""/><S T="12" X="810" Y="200" L="20" H="2000" P="0,0,0.2,0.2,0,0,0,0" o="FF0000" N="" m=""/> <S T="12" X="400" Y="1190" L="830" H="20" P="0,0,0,0.2,0,0,0,0" o="FF0000" N="" m=""/><S T="13" X="100" Y="360" L="10" P="0,0,0,0,0,0,0,0" o="324650" c="4"/><S T="13" X="700" Y="360" L="10" P="0,0,0,0,0,0,0,0" o="324650" c="4"/><S T="12" X="50" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="1" X="400" Y="0" L="800" H="10" P="0,0,0,0.2,0,0,0,0" c="3" N=""/><S T="12" X="400" Y="95" L="800" H="10" P="0,0,0.3,0.2,0,0,0,0" o="FFF200" c="3" N="" m=""/><S T="12" X="105" Y="50" L="10" H="100" P="0,0,0,0,0,0,0,0" o="FFF200" c="3" m=""/><S T="12" X="695" Y="50" L="10" H="100" P="0,0,0,0,0,0,0,0" o="FFF200" c="3" N="" m=""/><S T="12" X="400" Y="225" L="830" H="10" P="0,0,0.3,0.2,0,0,0,0" o="FFF200" c="3" m=""/><S T="12" X="400" Y="240" L="10" H="40" P="0,0,0,0,0,0,0,0" o="FFF200" c="3" m=""/><S T="12" X="400" Y="790" L="800" H="10" P="0,0,0.3,0.2,90,0,0,0" o="FF0000" m=""/><S T="12" X="316" Y="-129" L="20" H="200" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3"/><S T="12" X="407" Y="-133" L="20" H="200" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3"/><S T="12" X="363" Y="-92" L="20" H="100" P="0,0,0.2,0.2,90,0,0,0" o="6a7495" c="3"/><S T="12" X="360" Y="-206" L="20" H="100" P="0,0,0.2,0.2,90,0,0,0" o="6a7495" c="3"/><S T="12" X="400" Y="460" L="1600" H="120" P="0,0,0.3,0.2,0,0,0,0" o="6a7495" c="4" N=""/><S T="12" X="750" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="12" X="400" Y="-790" L="830" H="20" P="0,0,0,0.2,0,0,0,0" o="FF0000" N="" m=""/></S><D><P X="700" Y="365" T="10" P="1,0"/><P X="100" Y="365" T="10" P="1,0"/><DS X="360" Y="-151"/></D><O/><L/></Z></C>',
-    [2] = '<C><P L="1200" F="0" G="0,4" MEDATA="15,1;;;;-0;0:::1-"/><Z><S><S T="7" X="600" Y="400" L="1200" H="100" P="0,0,0.1,0.2,0,0,0,0" c="3" N=""/><S T="9" X="600" Y="430" L="1200" H="10" P="0,0,0,0,0,0,0,0"/><S T="1" X="600" Y="350" L="10" H="200" P="0,0,0,0.2,0,0,0,0"/><S T="12" X="-10" Y="200" L="20" H="2000" P="0,0,0.2,0.2,0,0,0,0" o="FF0000" N="" m=""/><S T="12" X="1210" Y="200" L="20" H="2000" P="0,0,0.2,0.2,0,0,0,0" o="FF0000" m=""/><S T="13" X="300" Y="360" L="10" P="0,0,0,0,0,0,0,0" o="324650" c="4"/><S T="13" X="900" Y="360" L="10" P="0,0,0,0,0,0,0,0" o="324650" c="4"/><S T="12" X="250" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="12" X="950" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="1" X="600" Y="0" L="1200" H="10" P="0,0,0,0.2,0,0,0,0" c="3"/><S T="12" X="600" Y="95" L="1200" H="10" P="0,0,0.3,0.2,0,0,0,0" o="FFF200" c="3" N="" m=""/><S T="12" X="305" Y="50" L="10" H="100" P="0,0,0,0,0,0,0,0" o="FFF200" c="3" m=""/><S T="12" X="895" Y="50" L="10" H="100" P="0,0,0,0,0,0,0,0" o="FFF200" c="3" m=""/><S T="12" X="600" Y="225" L="1230" H="10" P="0,0,0.3,0.2,0,0,0,0" o="FFF200" c="3" m=""/><S T="12" X="600" Y="240" L="10" H="40" P="0,0,0,0,0,0,0,0" o="FFF200" c="3" m=""/><S T="12" X="600" Y="790" L="10" H="800" P="0,0,0.3,0.2,180,0,0,0" o="FF0000" m=""/><S T="12" X="316" Y="-129" L="20" H="200" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3"/><S T="12" X="407" Y="-133" L="20" H="200" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3"/><S T="12" X="363" Y="-92" L="20" H="100" P="0,0,0.2,0.2,90,0,0,0" o="6a7495" c="3"/><S T="12" X="360" Y="-206" L="20" H="100" P="0,0,0.2,0.2,90,0,0,0" o="6a7495" c="3"/><S T="12" X="600" Y="460" L="2000" H="120" P="0,0,0.3,0.2,0,0,0,0" o="6a7495" c="4" N=""/><S T="12" X="600" Y="-800" L="1240" H="20" P="0,0,0,0.2,0,0,0,0" o="FF0000" m=""/><S T="12" X="600" Y="1190" L="1240" H="20" P="0,0,0,0.2,0,0,0,0" o="FF0000" m=""/></S><D><P X="900" Y="365" T="10" P="1,0"/><P X="300" Y="365" T="10" P="1,0"/><DS X="365" Y="-141"/></D><O/><L/></Z></C>',
+    [1] = '<C><P F="0" G="0,4" MEDATA=";;;;-0;0:::1-"/><Z><S><S T="7" X="400" Y="400" L="800" H="100" P="0,0,0.1,0.2,0,0,0,0" c="3" N=""/><S T="1" X="400" Y="350" L="10" H="200" P="0,0,0,0.2,0,0,0,0"/><S T="12" X="-10" Y="200" L="20" H="2000" P="0,0,0.2,0.2,0,0,0,0" o="FF0000" N="" m=""/><S T="12" X="810" Y="200" L="20" H="2000" P="0,0,0.2,0.2,0,0,0,0" o="FF0000" N="" m=""/><S T="12" X="400" Y="1190" L="830" H="20" P="0,0,0,0.2,0,0,0,0" o="FF0000" N="" m=""/><S T="13" X="100" Y="360" L="10" P="0,0,0,0,0,0,0,0" o="324650" c="4"/><S T="13" X="700" Y="360" L="10" P="0,0,0,0,0,0,0,0" o="324650" c="4"/><S T="12" X="50" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="1" X="400" Y="-5" L="800" H="10" P="0,0,0,0.2,0,0,0,0" c="3" N=""/><S T="12" X="400" Y="95" L="800" H="10" P="0,0,0.3,0.2,0,0,0,0" o="FFF200" c="3" N="" m=""/><S T="12" X="105" Y="50" L="10" H="100" P="0,0,0,0,0,0,0,0" o="FFF200" c="3" m=""/><S T="12" X="695" Y="50" L="10" H="100" P="0,0,0,0,0,0,0,0" o="FFF200" c="3" N="" m=""/><S T="12" X="400" Y="225" L="840" H="10" P="0,0,0.3,0.2,0,0,0,0" o="FFF200" c="3" m=""/><S T="12" X="400" Y="240" L="10" H="40" P="0,0,0,0,0,0,0,0" o="FFF200" c="3" m=""/><S T="12" X="400" Y="790" L="800" H="10" P="0,0,0.3,0.2,90,0,0,0" o="FF0000" m=""/><S T="12" X="316" Y="-129" L="20" H="200" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3"/><S T="12" X="407" Y="-133" L="20" H="200" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3"/><S T="12" X="363" Y="-92" L="20" H="100" P="0,0,0.2,0.2,90,0,0,0" o="6a7495" c="3"/><S T="12" X="360" Y="-206" L="20" H="100" P="0,0,0.2,0.2,90,0,0,0" o="6a7495" c="3"/><S T="12" X="400" Y="460" L="1600" H="120" P="0,0,0.3,0.2,0,0,0,0" o="6a7495" c="4" N=""/><S T="12" X="750" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="12" X="400" Y="-790" L="830" H="20" P="0,0,0,0.2,0,0,0,0" o="FF0000" N="" m=""/></S><D><P X="700" Y="365" T="10" P="1,0"/><P X="100" Y="365" T="10" P="1,0"/><DS X="360" Y="-151"/></D><O/><L/></Z></C>',
+    [2] = '<C><P L="1200" F="0" G="0,4" MEDATA=";;;;-0;0:::1-"/><Z><S><S T="7" X="600" Y="400" L="1200" H="100" P="0,0,0.1,0.2,0,0,0,0" c="3" N=""/><S T="9" X="600" Y="430" L="1200" H="10" P="0,0,0,0,0,0,0,0"/><S T="1" X="600" Y="350" L="10" H="200" P="0,0,0,0.2,0,0,0,0"/><S T="12" X="-10" Y="200" L="20" H="2000" P="0,0,0.2,0.2,0,0,0,0" o="FF0000" N="" m=""/><S T="12" X="1210" Y="200" L="20" H="2000" P="0,0,0.2,0.2,0,0,0,0" o="FF0000" m=""/><S T="13" X="300" Y="360" L="10" P="0,0,0,0,0,0,0,0" o="324650" c="4"/><S T="13" X="900" Y="360" L="10" P="0,0,0,0,0,0,0,0" o="324650" c="4"/><S T="12" X="250" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="12" X="950" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="1" X="600" Y="-5" L="1200" H="10" P="0,0,0,0.2,0,0,0,0" c="3"/><S T="12" X="600" Y="95" L="1200" H="10" P="0,0,0.3,0.2,0,0,0,0" o="FFF200" c="3" N="" m=""/><S T="12" X="305" Y="50" L="10" H="100" P="0,0,0,0,0,0,0,0" o="FFF200" c="3" m=""/><S T="12" X="895" Y="50" L="10" H="100" P="0,0,0,0,0,0,0,0" o="FFF200" c="3" m=""/><S T="12" X="600" Y="225" L="1240" H="10" P="0,0,0.3,0.2,0,0,0,0" o="FFF200" c="3" m=""/><S T="12" X="600" Y="240" L="10" H="40" P="0,0,0,0,0,0,0,0" o="FFF200" c="3" m=""/><S T="12" X="600" Y="790" L="10" H="800" P="0,0,0.3,0.2,180,0,0,0" o="FF0000" m=""/><S T="12" X="316" Y="-129" L="20" H="200" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3"/><S T="12" X="407" Y="-133" L="20" H="200" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3"/><S T="12" X="363" Y="-92" L="20" H="100" P="0,0,0.2,0.2,90,0,0,0" o="6a7495" c="3"/><S T="12" X="360" Y="-206" L="20" H="100" P="0,0,0.2,0.2,90,0,0,0" o="6a7495" c="3"/><S T="12" X="600" Y="460" L="2000" H="120" P="0,0,0.3,0.2,0,0,0,0" o="6a7495" c="4" N=""/><S T="12" X="600" Y="-800" L="1240" H="20" P="0,0,0,0.2,0,0,0,0" o="FF0000" m=""/><S T="12" X="600" Y="1190" L="1240" H="20" P="0,0,0,0.2,0,0,0,0" o="FF0000" m=""/></S><D><P X="900" Y="365" T="10" P="1,0"/><P X="300" Y="365" T="10" P="1,0"/><DS X="365" Y="-141"/></D><O/><L/></Z></C>',
     [3] = 'Default',
     [4] = 'Refletz#6472',
     [6] = '19539e5756b.png'
@@ -635,9 +635,9 @@ local customMaps = {
     [6] = '19554026d42.png'
   },
   [33] = {
-    [1] = '<C><P F="1" G="0,4" MEDATA="57,1;;;;-0;0:::1-"/><Z><S><S T="12" X="400" Y="95" L="800" H="10" P="0,0,0.3,0.2,0,0,0,0" o="FF0000" c="3" m=""/><S T="12" X="400" Y="0" L="800" H="10" P="0,0,0,0.2,0,0,0,0" o="FF0000" c="3" m=""/><S T="19" X="105" Y="48" L="10" H="100" P="0,0,0.3,0.2,0,0,0,0" c="3" m=""/><S T="19" X="700" Y="48" L="10" H="100" P="0,0,0.3,0.2,0,0,0,0" c="3" m=""/><S T="12" X="399" Y="200" L="1400" H="600" P="0,0,0,0.2,0,0,0,0" o="000000" c="4"/><S T="12" X="400" Y="175" L="15" H="149" P="0,0,0,0.2,0,0,0,0" o="FF0000" c="3" m=""/><S T="13" X="400" Y="346" L="290" P="0,0,0.3,0.2,0,0,0,0" o="290A1D" c="4"/><S T="12" X="690" Y="230" L="10" H="325" P="0,0,0.3,0.2,0,0,0,0" o="242424" c="4"/><S T="12" X="723" Y="79" L="45" H="41" P="0,0,0.3,0.2,-45,0,0,0" o="ffc3ff" c="4"/><S T="12" X="710" Y="230" L="35" H="300" P="0,0,0.3,0.2,0,0,0,0" o="fffc8e" c="4"/><S T="12" X="760" Y="208" L="55" H="325" P="0,0,0.3,0.2,0,0,0,0" o="1B1B1B" c="4"/><S T="12" X="730" Y="205" L="10" H="325" P="0,0,0.3,0.2,0,0,0,0" o="242424" c="4"/><S T="12" X="790" Y="205" L="10" H="325" P="0,0,0.3,0.2,0,0,0,0" o="242424" c="4"/><S T="9" X="400" Y="430" L="800" H="10" P="0,0,0,0,0,0,0,0"/><S T="12" X="360" Y="-206" L="20" H="100" P="0,0,0.2,0.2,90,0,0,0" o="000000" c="3"/><S T="12" X="316" Y="-129" L="20" H="200" P="0,0,0.2,0.2,0,0,0,0" o="000000" c="3"/><S T="12" X="77" Y="79" L="45" H="41" P="0,0,0.3,0.2,45,0,0,0" o="ffc3ff" c="4"/><S T="12" X="89" Y="230" L="35" H="300" P="0,0,0.3,0.2,0,0,0,0" o="fffc8e" c="4"/><S T="12" X="110" Y="230" L="10" H="325" P="0,0,0.3,0.2,0,0,0,0" o="242424" c="4"/><S T="12" X="407" Y="-133" L="20" H="200" P="0,0,0.2,0.2,0,0,0,0" o="000000" c="3"/><S T="12" X="40" Y="208" L="55" H="325" P="0,0,0.3,0.2,0,0,0,0" o="1B1B1B" c="4"/><S T="12" X="10" Y="205" L="10" H="325" P="0,0,0.3,0.2,0,0,0,0" o="242424" c="4"/><S T="12" X="70" Y="205" L="10" H="325" P="0,0,0.3,0.2,0,0,0,0" o="242424" c="4"/><S T="12" X="363" Y="-92" L="20" H="100" P="0,0,0.2,0.2,90,0,0,0" o="000000" c="3"/><S T="13" X="400" Y="347" L="240" P="0,0,0.3,0.2,20,0,0,0" o="ffc3ff" c="4"/><S T="13" X="760" Y="150" L="10" P="0,0,0.3,1,0,0,0,0" o="00CFFF"/><S T="13" X="400" Y="347" L="225" P="0,0,0.3,0.2,0,0,0,0" o="fffc8e" c="4"/><S T="13" X="400" Y="347" L="210" P="0,0,0.3,0.2,0,0,0,0" o="FFFC3E" c="4"/><S T="13" X="760" Y="260" L="10" P="0,0,0.3,1.3,0,0,0,0" o="00CFFF"/><S T="13" X="760" Y="205" L="10" P="0,0,0.3,1.3,0,0,0,0" o="00CFFF"/><S T="12" X="399" Y="245" L="415" H="20" P="0,0,0.3,0.2,0,0,0,0" o="ffc3ff" c="3"/><S T="13" X="760" Y="315" L="10" P="0,0,0.3,1.5,0,0,0,0" o="00CFFF"/><S T="12" X="400" Y="350" L="15" H="200" P="0,0,0,0.2,0,0,0,0" o="242424" N=""/><S T="12" X="389" Y="351" L="10" H="220" P="0,0,0,0.2,0,0,0,0" o="FF75C8" c="4" N=""/><S T="13" X="700" Y="363" L="10" P="0,0,0.3,0.2,0,0,0,0" o="FF75C8" c="4"/><S T="12" X="410" Y="351" L="10" H="220" P="0,0,0,0.2,0,0,0,0" o="FF75C8" c="4" N=""/><S T="13" X="40" Y="150" L="10" P="0,0,0.3,1,0,0,0,0" o="FF0000"/><S T="13" X="40" Y="260" L="10" P="0,0,0.3,1.3,0,0,0,0" o="FF0000"/><S T="13" X="40" Y="205" L="10" P="0,0,0.3,1.3,0,0,0,0" o="FF0000"/><S T="13" X="100" Y="363" L="10" P="0,0,0.3,0.2,0,0,0,0" o="FF75C8" c="4"/><S T="13" X="40" Y="315" L="10" P="0,0,0.3,1.5,0,0,0,0" o="FF0000"/><S T="8" X="805" Y="0" L="10" H="3000" P="0,0,0.3,0.2,0,0,0,0" c="1"/><S T="12" X="400" Y="560" L="1400" H="400" P="0,0,0.1,0.2,0,0,0,0" o="1B1B1B" c="3" N=""/><S T="8" X="-5" Y="201" L="10" H="3000" P="0,0,0.3,0.2,0,0,0,0" c="1" N=""/><S T="12" X="600" Y="-800" L="1200" H="10" P="0,0,0,0.2,0,0,0,0" o="324650"/><S T="12" X="400" Y="474" L="1400" H="10" P="0,0,0.3,0.2,180,0,0,0" o="FF75C8" c="4" N=""/><S T="12" X="400" Y="600" L="1400" H="10" P="0,0,0.3,0.2,180,0,0,0" o="FF75C8" c="4" N=""/><S T="12" X="400" Y="364" L="1400" H="10" P="0,0,0.3,0.2,0,0,0,0" o="FF75C8" c="3" N=""/><S T="12" X="-130" Y="495" L="10" H="530" P="0,0,0.3,0.2,60,0,0,0" o="FF75C8" c="4" N=""/><S T="12" X="930" Y="495" L="10" H="530" P="0,0,0.3,0.2,-60,0,0,0" o="FF75C8" c="4" N=""/><S T="12" X="-212" Y="426" L="10" H="250" P="0,0,0.3,0.2,60,0,0,0" o="FF75C8" c="4" N=""/><S T="12" X="1012" Y="426" L="10" H="250" P="0,0,0.3,0.2,-60,0,0,0" o="FF75C8" c="4" N=""/><S T="12" X="80" Y="564" L="10" H="570" P="0,0,0.3,0.2,45,0,0,0" o="FF75C8" c="4" N=""/><S T="12" X="720" Y="564" L="10" H="570" P="0,0,0.3,0.2,-45,0,0,0" o="FF75C8" c="4" N=""/><S T="12" X="400" Y="170" L="300" H="14" P="0,0,0.3,0.2,0,0,0,0" o="FFC3FF" c="3"/><S T="12" X="275" Y="585" L="10" H="510" P="0,0,0.3,0.2,30,0,0,0" o="FF75C8" c="4" N=""/><S T="12" X="525" Y="585" L="10" H="510" P="0,0,0.3,0.2,-30,0,0,0" o="FF75C8" c="4" N=""/><S T="0" X="400" Y="706" L="15" H="705" P="0,0,0.3,0.2,0,0,0,0" m=""/></S><D><DS X="365" Y="-141"/></D><O/><L/></Z></C>',
-    [2] = '<C><P L="1200" F="7" G="0,4" MEDATA="58,1;;;;-0;0:::1-"/><Z><S><S T="12" X="600" Y="0" L="1800" H="10" P="0,0,0,0.2,0,0,0,0" o="0b0211" c="3"/><S T="12" X="360" Y="-206" L="20" H="100" P="0,0,0.2,0.2,90,0,0,0" o="6a7495" c="3"/><S T="12" X="316" Y="-129" L="20" H="200" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3"/><S T="13" X="600" Y="288" L="240" P="0,0,0.3,0.2,0,0,0,0" o="FF2CAB" c="4"/><S T="12" X="407" Y="-133" L="20" H="200" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3"/><S T="12" X="363" Y="-92" L="20" H="100" P="0,0,0.2,0.2,90,0,0,0" o="6a7495" c="3"/><S T="19" X="900" Y="48" L="10" H="100" P="0,0,0.3,0.2,0,0,0,0" c="3" m=""/><S T="12" X="600" Y="95" L="1200" H="10" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="3" m=""/><S T="12" X="600" Y="175" L="40" H="149" P="0,0,0,0.2,0,0,0,0" o="324650" c="3" m=""/><S T="19" X="305" Y="48" L="10" H="100" P="0,0,0.3,0.2,0,0,0,0" c="3" m=""/><S T="12" X="600" Y="200" L="1800" H="600" P="0,0,0,0,0,0,0,0" o="000000" c="4"/><S T="13" X="900" Y="360" L="10" P="0,0,0.3,0.2,0,0,0,0" o="00EFFF" c="4"/><S T="13" X="600" Y="351" L="257" P="0,0,0.3,0.2,20,0,0,0" o="FF8BFF" c="4"/><S T="13" X="300" Y="360" L="10" P="0,0,0.3,0.2,0,0,0,0" o="FF0000" c="4"/><S T="13" X="600" Y="351" L="225" P="0,0,0.3,0.2,0,0,0,0" o="FFC3FF" c="4"/><S T="13" X="600" Y="351" L="214" P="0,0,0.3,0.2,0,0,0,0" o="FFFC3E" c="4"/><S T="12" X="1052" Y="78" L="50" H="41" P="0,0,0.3,0.2,-45,0,0,0" o="FFFCCB" c="4"/><S T="12" X="600" Y="307" L="435" H="14" P="0,0,0.3,0.2,0,0,0,0" o="FFC3FF" c="3"/><S T="12" X="1016" Y="230" L="10" H="325" P="0,0,0,0.2,0,0,0,0" o="242424" c="4"/><S T="12" X="600" Y="350" L="30" H="200" P="0,0,0,0.2,0,0,0,0" o="242424" N=""/><S T="12" X="583" Y="351" L="10" H="220" P="0,0,0,0.2,0,0,0,0" o="FF75C8" c="4" N=""/><S T="12" X="1053" Y="230" L="65" H="300" P="0,0,0.3,0.2,0,0,0,0" o="FFFCCB" c="4"/><S T="8" X="1205" Y="0" L="10" H="3000" P="0,0,0.3,0.2,0,0,0,0" c="1"/><S T="12" X="150" Y="78" L="50" H="41" P="0,0,0.3,0.2,45,0,0,0" o="FFFCCB" c="4"/><S T="12" X="617" Y="351" L="10" H="220" P="0,0,0,0.2,0,0,0,0" o="FF75C8" c="4" N=""/><S T="8" X="-5" Y="205" L="10" H="3000" P="0,0,0.3,0.2,0,0,0,0" c="1" N=""/><S T="12" X="184" Y="230" L="10" H="325" P="0,0,0.3,0.2,0,0,0,0" o="242424" c="4"/><S T="12" X="147" Y="230" L="65" H="300" P="0,0,0.3,0.2,0,0,0,0" o="FFFCCB" c="4"/><S T="12" X="103" Y="208" L="95" H="325" P="0,0,0.3,0.2,0,0,0,0" o="1B1B1B" c="4"/><S T="9" X="600" Y="430" L="1200" H="10" P="0,0,0,0,0,0,0,0"/><S T="12" X="52" Y="205" L="10" H="325" P="0,0,0.3,0.2,0,0,0,0" o="242424" c="4"/><S T="12" X="600" Y="560" L="1800" H="400" P="0,0,0.1,0.2,0,0,0,0" o="1B1B1B" c="3" N=""/><S T="12" X="600" Y="-800" L="1200" H="10" P="0,0,0,0.2,0,0,0,0" o="324650"/><S T="12" X="148" Y="205" L="10" H="325" P="0,0,0.3,0.2,0,0,0,0" o="242424" c="4"/><S T="12" X="1101" Y="208" L="95" H="325" P="0,0,0.3,0.2,0,0,0,0" o="1B1B1B" c="4"/><S T="12" X="1148" Y="205" L="10" H="325" P="0,0,0.3,0.2,0,0,0,0" o="242424" c="4"/><S T="12" X="1052" Y="205" L="10" H="325" P="0,0,0.3,0.2,0,0,0,0" o="242424" c="4"/><S T="12" X="600" Y="475" L="1800" H="10" P="0,0,0.3,0.2,0,0,0,0" o="FF75C8" c="4" N=""/><S T="12" X="600" Y="364" L="1800" H="10" P="0,0,0.3,0.2,0,0,0,0" o="FF75C8" c="3" N=""/><S T="12" X="90" Y="565" L="10" H="530" P="0,0,0.3,0.2,40,0,0,0" o="FF75C8" c="4" N=""/><S T="12" X="1110" Y="565" L="10" H="530" P="0,0,0.3,0.2,-40,0,0,0" o="FF75C8" c="4" N=""/><S T="12" X="-100" Y="565" L="10" H="530" P="0,0,0.3,0.2,40,0,0,0" o="FF75C8" c="4" N=""/><S T="12" X="1300" Y="565" L="10" H="530" P="0,0,0.3,0.2,-40,0,0,0" o="FF75C8" c="4" N=""/><S T="12" X="-265" Y="555" L="10" H="500" P="0,0,0.3,0.2,40,0,0,0" o="FF75C8" c="4" N=""/><S T="12" X="1465" Y="555" L="10" H="500" P="0,0,0.3,0.2,-40,0,0,0" o="FF75C8" c="4" N=""/><S T="12" X="275" Y="565" L="10" H="520" P="0,0,0.3,0.2,40,0,0,0" o="FF75C8" c="4" N=""/><S T="12" X="925" Y="565" L="10" H="520" P="0,0,0.3,0.2,-40,0,0,0" o="FF75C8" c="4" N=""/><S T="12" X="475" Y="585" L="10" H="510" P="0,0,0.3,0.2,30,0,0,0" o="FF75C8" c="4" N=""/><S T="12" X="725" Y="585" L="10" H="510" P="0,0,0.3,0.2,-30,0,0,0" o="FF75C8" c="4" N=""/><S T="12" X="599" Y="229" L="365" H="14" P="0,0,0.3,0.2,0,0,0,0" o="FFC3FF" c="3"/><S T="12" X="600" Y="159" L="215" H="10" P="0,0,0.3,0.2,0,0,0,0" o="FFC3FF" c="3"/><S T="13" X="600" Y="295" L="10" P="0,0,0.3,0.2,0,0,0,0" o="ff75c8" N=""/><S T="13" X="97" Y="105" L="20" P="0,0,0.3,1,0,0,0,0" o="FF0000"/><S T="13" X="1103" Y="105" L="20" P="0,0,0.3,1.1,0,0,0,0" o="00EFFF"/><S T="13" X="97" Y="205" L="20" P="0,0,0.3,1.3,0,0,0,0" o="FF0000"/><S T="13" X="1103" Y="205" L="20" P="0,0,0.3,1.3,0,0,0,0" o="00EFFF"/><S T="13" X="98" Y="302" L="20" P="0,0,0.3,1.5,0,0,0,0" o="FF0000"/><S T="13" X="1102" Y="302" L="20" P="0,0,0.3,1.5,0,0,0,0" o="00EFFF"/><S T="0" X="600" Y="706" L="15" H="728" P="0,0,0.3,0.2,0,0,0,0" m=""/></S><D><DS X="365" Y="-141"/></D><O/><L/></Z></C>',
-    [3] = 'Cyberpink',
+    [1] = '<C><P G="0,4"/><Z><S><S T="12" X="400" Y="75" L="1600" H="645" P="0,0,0,0.2,0,0,0,0" o="000000" c="4"/><S T="12" X="400" Y="165" L="20" H="150" P="0,0,0,0.2,0,0,0,0" o="FF0000" c="3" N="" m=""/><S T="19" X="795" Y="50" L="10" H="80" P="0,0,0.3,0.2,0,0,0,0" c="3" m=""/><S T="19" X="5" Y="50" L="10" H="80" P="0,0,0.3,0.2,0,0,0,0" c="3" m=""/><S T="12" X="723" Y="79" L="45" H="41" P="0,0,0.3,0.2,-45,0,0,0" o="10000E" c="4"/><S T="12" X="710" Y="230" L="35" H="300" P="0,0,0.3,0.2,0,0,0,0" o="10000E" c="4"/><S T="12" X="760" Y="208" L="55" H="325" P="0,0,0.3,0.2,0,0,0,0" o="1B1B1B" c="4"/><S T="12" X="730" Y="205" L="10" H="325" P="0,0,0.3,0.2,0,0,0,0" o="191919" c="4"/><S T="9" X="400" Y="430" L="800" H="10" P="0,0,0,0,0,0,0,0" archAcc="-10" archCheeseMax="0" archMax="20"/><S T="12" X="360" Y="-206" L="20" H="100" P="0,0,0.2,0.2,90,0,0,0" o="000000" c="3"/><S T="12" X="316" Y="-129" L="20" H="200" P="0,0,0.2,0.2,0,0,0,0" o="000000" c="3"/><S T="12" X="77" Y="79" L="45" H="41" P="0,0,0.3,0.2,45,0,0,0" o="10000E" c="4"/><S T="12" X="89" Y="230" L="35" H="300" P="0,0,0.3,0.2,0,0,0,0" o="10000E" c="4"/><S T="12" X="407" Y="-133" L="20" H="200" P="0,0,0.2,0.2,0,0,0,0" o="000000" c="3"/><S T="12" X="40" Y="208" L="55" H="325" P="0,0,0.3,0.2,0,0,0,0" o="1B1B1B" c="4"/><S T="12" X="70" Y="205" L="10" H="325" P="0,0,0.3,0.2,0,0,0,0" o="191919" c="4"/><S T="12" X="363" Y="-92" L="20" H="100" P="0,0,0.2,0.2,90,0,0,0" o="000000" c="3"/><S T="13" X="400" Y="350" L="250" P="0,0,0.3,0.2,20,0,0,0" o="35002A" c="4"/><S T="13" X="760" Y="150" L="10" P="1,1e-9,0.3,1,0,1,0,0" o="60004c"/><S T="13" X="400" Y="345" L="225" P="0,0,0.3,0.2,0,0,0,0" o="000000" c="4"/><S T="13" X="400" Y="345" L="210" P="0,0,0,0,0,0,0,0" o="0D0D0D" c="4"/><S T="13" X="760" Y="260" L="10" P="1,1e-9,0.3,1.3,0,1,0,0" o="60004c"/><S T="12" X="400" Y="245" L="430" H="20" P="0,0,0.3,0.2,0,0,0,0" o="35002A" c="3"/><S T="13" X="760" Y="315" L="10" P="1,0,0.3,1.1,-210,0,0,0" o="60004c"/><S T="13" X="760" Y="205" L="10" P="1,0,0.3,1.1,-210,0,0,0" o="60004c"/><S T="13" X="40" Y="150" L="10" P="1,1e-9,0.3,1,0,1,0,0" o="60004c"/><S T="13" X="40" Y="260" L="10" P="1,1e-9,0.3,1.3,0,1,0,0" o="60004c"/><S T="13" X="40" Y="315" L="10" P="1,0,0.3,1.1,-330,0,0,0" o="60004c"/><S T="13" X="40" Y="205" L="10" P="1,0,0.3,1.1,-330,0,0,0" o="60004c"/><S T="12" X="865" Y="20" L="20" H="900" P="0,0,0.3,0.2,0,0,0,0" o="35002A" N=""/><S T="12" X="-65" Y="20" L="20" H="900" P="0,0,0.3,0.2,0,0,0,0" o="35002A" N=""/><S T="12" X="400" Y="550" L="1600" H="380" P="0,0,0,0,0,0,0,0" o="1B1B1B" c="3" N=""/><S T="12" X="400" Y="-425" L="940" H="20" P="0,0,0,0.2,0,0,0,0" o="FF0000" m=""/><S T="12" X="400" Y="474" L="1600" H="20" P="1,1e-9,0,0,180,1,0,0" o="35002a" N=""/><S T="12" X="400" Y="600" L="1600" H="20" P="0,0,0,0,180,0,0,0" o="35002a" c="4" N=""/><S T="12" X="400" Y="740" L="1600" H="20" P="0,0,0,0,180,0,0,0" o="35002a" N=""/><S T="12" X="400" Y="300" L="20" H="130" P="0,0,0,0.2,0,0,0,0" o="60004C" N=""/><S T="12" X="400" Y="365" L="1600" H="20" P="0,0,0.3,0.2,0,0,0,0" o="35002a" c="3" N=""/><S T="12" X="-225" Y="480" L="20" H="410" P="0,0,0.3,0.2,55,0,0,0" o="35002a" c="4" N=""/><S T="12" X="1025" Y="480" L="20" H="410" P="0,0,0,0,-55,0,0,0" o="35002a" c="4" N=""/><S T="12" X="400" Y="170" L="310" H="20" P="0,0,0.3,0.2,0,0,0,0" o="35002A" c="3"/><S T="12" X="-20" Y="550" L="20" H="530" P="0,0,0.3,0.2,45,0,0,0" o="35002a" c="4" N=""/><S T="12" X="820" Y="550" L="20" H="530" P="0,0,0.3,0.2,-45,0,0,0" o="35002a" c="4" N=""/><S T="12" X="400" Y="5" L="940" H="10" P="0,0,0,0.2,0,0,0,0" o="FF0000" c="3" N="" m=""/><S T="12" X="400" Y="95" L="940" H="10" P="0,0,0.3,0.2,0,0,0,0" o="FF0000" c="3" N="" m=""/><S T="12" X="400" Y="555" L="20" H="380" P="1,1e-9,0,0.2,0,1,0,0" o="35002a" N=""/><S T="13" X="760" Y="150" L="10" P="1,1e-9,0.3,1,0,1,0,0" o="60004c" m=""/><S T="13" X="760" Y="150" L="10" P="1,1e-9,0.3,1,0,1,0,0" o="60004c" m=""/><S T="13" X="760" Y="150" L="10" P="1,1e-9,0.3,1,0,1,0,0" o="60004c" m=""/><S T="13" X="760" Y="150" L="10" P="1,1e-9,0.3,1,0,1,0,0" o="60004c" m=""/><S T="13" X="760" Y="150" L="10" P="1,1e-9,0.3,1,0,1,0,0" o="60004c" m=""/><S T="13" X="760" Y="150" L="10" P="1,1e-9,0.3,1,0,1,0,0" o="60004c" m=""/><S T="13" X="760" Y="150" L="10" P="1,1e-9,0.3,1,0,1,0,0" o="60004c" m=""/><S T="13" X="760" Y="150" L="10" P="1,1e-9,0.3,1,0,1,0,0" o="60004c" m=""/><S T="13" X="760" Y="150" L="10" P="1,1e-9,0.3,1,0,1,0,0" o="60004c" m=""/><S T="13" X="760" Y="260" L="10" P="1,1e-9,0.3,1.3,0,1,0,0" o="60004c" m=""/><S T="13" X="760" Y="260" L="10" P="1,1e-9,0.3,1.3,0,1,0,0" o="60004c" m=""/><S T="13" X="760" Y="260" L="10" P="1,1e-9,0.3,1.3,0,1,0,0" o="60004c" m=""/><S T="13" X="760" Y="260" L="10" P="1,1e-9,0.3,1.3,0,1,0,0" o="60004c" m=""/><S T="13" X="760" Y="260" L="10" P="1,1e-9,0.3,1.3,0,1,0,0" o="60004c" m=""/><S T="13" X="760" Y="260" L="10" P="1,1e-9,0.3,1.3,0,1,0,0" o="60004c" m=""/><S T="13" X="760" Y="260" L="10" P="1,1e-9,0.3,1.3,0,1,0,0" o="60004c" m=""/><S T="13" X="760" Y="260" L="10" P="1,1e-9,0.3,1.3,0,1,0,0" o="60004c" m=""/><S T="13" X="760" Y="260" L="10" P="1,1e-9,0.3,1.3,0,1,0,0" o="60004c" m=""/><S T="13" X="40" Y="150" L="10" P="1,1e-9,0.3,1,0,1,0,0" o="60004c" m=""/><S T="13" X="40" Y="150" L="10" P="1,1e-9,0.3,1,0,1,0,0" o="60004c" m=""/><S T="13" X="40" Y="150" L="10" P="1,1e-9,0.3,1,0,1,0,0" o="60004c" m=""/><S T="13" X="40" Y="150" L="10" P="1,1e-9,0.3,1,0,1,0,0" o="60004c" m=""/><S T="13" X="40" Y="150" L="10" P="1,1e-9,0.3,1,0,1,0,0" o="60004c" m=""/><S T="13" X="40" Y="150" L="10" P="1,1e-9,0.3,1,0,1,0,0" o="60004c" m=""/><S T="13" X="40" Y="150" L="10" P="1,1e-9,0.3,1,0,1,0,0" o="60004c" m=""/><S T="13" X="40" Y="150" L="10" P="1,1e-9,0.3,1,0,1,0,0" o="60004c" m=""/><S T="13" X="40" Y="150" L="10" P="1,1e-9,0.3,1,0,1,0,0" o="60004c" m=""/><S T="13" X="40" Y="260" L="10" P="1,1e-9,0.3,1.3,0,1,0,0" o="60004c" m=""/><S T="13" X="40" Y="260" L="10" P="1,1e-9,0.3,1.3,0,1,0,0" o="60004c" m=""/><S T="13" X="40" Y="260" L="10" P="1,1e-9,0.3,1.3,0,1,0,0" o="60004c" m=""/><S T="13" X="40" Y="260" L="10" P="1,1e-9,0.3,1.3,0,1,0,0" o="60004c" m=""/><S T="13" X="40" Y="260" L="10" P="1,1e-9,0.3,1.3,0,1,0,0" o="60004c" m=""/><S T="13" X="40" Y="260" L="10" P="1,1e-9,0.3,1.3,0,1,0,0" o="60004c" m=""/><S T="13" X="40" Y="260" L="10" P="1,1e-9,0.3,1.3,0,1,0,0" o="60004c" m=""/><S T="13" X="40" Y="260" L="10" P="1,1e-9,0.3,1.3,0,1,0,0" o="60004c" m=""/><S T="13" X="40" Y="260" L="10" P="1,1e-9,0.3,1.3,0,1,0,0" o="60004c" m=""/><S T="12" X="400" Y="474" L="1600" H="20" P="1,1e-9,0,0,180,1,0,0" o="35002a" N="" m=""/><S T="12" X="400" Y="474" L="1600" H="20" P="1,1e-9,0,0,180,1,0,0" o="35002a" N="" m=""/><S T="12" X="400" Y="474" L="1600" H="20" P="1,1e-9,0,0,180,1,0,0" o="35002a" N="" m=""/><S T="12" X="400" Y="474" L="1600" H="20" P="1,1e-9,0,0,180,1,0,0" o="35002a" N="" m=""/><S T="12" X="400" Y="474" L="1600" H="20" P="1,1e-9,0,0,180,1,0,0" o="35002a" N="" m=""/><S T="12" X="400" Y="474" L="1600" H="20" P="1,1e-9,0,0,180,1,0,0" o="35002a" N="" m=""/><S T="12" X="400" Y="474" L="1600" H="20" P="1,1e-9,0,0,180,1,0,0" o="35002a" N="" m=""/><S T="12" X="400" Y="474" L="1600" H="20" P="1,1e-9,0,0,180,1,0,0" o="35002a" N="" m=""/><S T="12" X="400" Y="474" L="1600" H="20" P="1,1e-9,0,0,180,1,0,0" o="35002a" N="" m=""/></S><D><DS X="365" Y="-141"/></D><O/><L><JP M1="23" AXIS="-1,0" MV="Infinity,3.3333333333333335"/><JP M1="23" AXIS="0,1"/><JP M1="24" AXIS="-1,0" MV="Infinity,3.3333333333333335"/><JP M1="24" AXIS="0,1"/><JP M1="27" AXIS="-1,0" MV="Infinity,3.3333333333333335"/><JP M1="27" AXIS="0,1"/><JP M1="28" AXIS="-1,0" MV="Infinity,3.3333333333333335"/><JP M1="28" AXIS="0,1"/><JR M1="18"/><JR M1="46"/><JR M1="47"/><JR M1="48"/><JR M1="49"/><JR M1="50"/><JR M1="51"/><JR M1="52"/><JR M1="53"/><JR M1="54"/><JR M1="21"/><JR M1="55"/><JR M1="56"/><JR M1="57"/><JR M1="58"/><JR M1="59"/><JR M1="60"/><JR M1="61"/><JR M1="62"/><JR M1="63"/><JR M1="25"/><JR M1="64"/><JR M1="65"/><JR M1="66"/><JR M1="67"/><JR M1="68"/><JR M1="69"/><JR M1="70"/><JR M1="71"/><JR M1="72"/><JR M1="26"/><JR M1="73"/><JR M1="74"/><JR M1="75"/><JR M1="76"/><JR M1="77"/><JR M1="78"/><JR M1="79"/><JR M1="80"/><JR M1="81"/><JR M1="33"/><JR M1="82"/><JR M1="83"/><JR M1="84"/><JR M1="85"/><JR M1="86"/><JR M1="87"/><JR M1="88"/><JR M1="89"/><JR M1="90"/><JR M1="45"/></L></Z></C>',
+    [2] = '<C><P G="0,4" L="1200" F="7"/><Z><S><S X="600" H="10" o="FF0000" L="1220" Y="-5" c="3" P="0,0,0,0.2,0,0,0,0" m="" T="12" N="" /><S X="600" H="645" o="000000" L="2000" Y="75" c="4" P="0,0,0,0.2,0,0,0,0" T="12" /><S X="360" H="100" o="000000" L="20" Y="-206" c="3" P="0,0,0.2,0.2,90,0,0,0" T="12" /><S X="600" H="10" o="35002a" L="250" Y="345" c="4" P="0,0,0.3,0.2,20,0,0,0" T="13" /><S X="600" H="10" o="000000" L="225" Y="341" c="4" P="0,0,0.3,0.2,0,0,0,0" T="13" /><S X="600" H="10" o="0d0d0d" L="214" Y="341" c="4" P="0,0,0.3,0.2,0,0,0,0" T="13" /><S X="316" H="200" o="000000" L="20" Y="-129" c="3" P="0,0,0.2,0.2,0,0,0,0" T="12" /><S X="407" H="200" o="000000" L="20" Y="-133" c="3" P="0,0,0.2,0.2,0,0,0,0" T="12" /><S X="363" H="100" o="000000" L="20" Y="-92" c="3" P="0,0,0.2,0.2,90,0,0,0" T="12" /><S X="1195" H="90" L="10" Y="45" c="3" P="0,0,0.3,0.2,0,0,0,0" m="" T="19" /><S X="600" H="10" o="FF0000" L="1200" Y="95" c="3" P="0,0,0.3,0.2,0,0,0,0" m="" T="12" N="" /><S X="600" H="150" o="FF0000" L="20" Y="165" c="3" P="0,0,0,0.2,0,0,0,0" m="" T="12" /><S X="5" H="90" L="10" Y="45" c="3" P="0,0,0.3,0.2,0,0,0,0" m="" T="19" /><S X="1052" H="41" o="130011" L="50" Y="78" c="4" P="0,0,0.3,0.2,-45,0,0,0" T="12" /><S X="600" H="20" o="35002a" L="450" Y="300" c="3" P="0,0,0.3,0.2,0,0,0,0" T="12" /><S X="1053" H="300" o="130011" L="65" Y="230" c="4" P="0,0,0.3,0.2,0,0,0,0" T="12" /><S X="150" H="41" o="130011" L="50" Y="78" c="4" P="0,0,0.3,0.2,45,0,0,0" T="12" /><S X="147" H="300" o="130011" L="65" Y="230" c="4" P="0,0,0.3,0.2,0,0,0,0" T="12" /><S X="103" H="325" o="1B1B1B" L="95" Y="208" c="4" P="0,0,0.3,0.2,0,0,0,0" T="12" /><S X="600" archAcc="-20" archCheeseMax="0" L="1200" Y="430" archMax="2" P="0,0,0,0,0,0,0,0" H="10" T="9" /><S X="-10" H="900" o="35002a" L="20" Y="20" P="0,0,0.3,0.2,0,0,0,0" T="12" N="" /><S X="600" H="150" o="60004c" L="20" Y="300" P="0,0,0,0.2,0,0,0,0" T="12" N="" /><S X="1210" H="900" o="35002a" L="20" Y="20" P="0,0,0.3,0.2,0,0,0,0" T="12" N="" /><S X="600" H="380" o="1B1B1B" L="2000" Y="560" c="3" P="0,0,0.1,0.2,0,0,0,0" T="12" N="" /><S X="600" H="10" o="FF0000" L="1240" Y="-425" P="0,0,0,0.2,0,0,0,0" m="" T="12" /><S X="148" H="325" o="191919" L="10" Y="205" c="4" P="0,0,0.3,0.2,0,0,0,0" T="12" /><S X="1101" H="325" o="1B1B1B" L="95" Y="208" c="4" P="0,0,0.3,0.2,0,0,0,0" T="12" /><S X="1052" H="325" o="191919" L="10" Y="205" c="4" P="0,0,0.3,0.2,0,0,0,0" T="12" /><S X="600" H="20" o="35002a" L="2000" Y="475" P="1,1e-9,0,0,0,1,0,0" T="12" N="" /><S X="600" H="20" o="35002a" L="2000" Y="600" c="4" P="0,0,0,0,0,0,0,0" T="12" N="" /><S X="600" H="20" o="35002a" L="2000" Y="740" c="4" P="0,0,0,0,0,0,0,0" T="12" N="" /><S X="600" H="20" o="35002a" L="2000" Y="365" c="3" P="0,0,0.3,0.2,0,0,0,0" T="12" N="" /><S X="-200" H="485" o="35002a" L="20" Y="500" c="4" P="0,0,0.3,0.2,55,0,0,0" T="12" N="" /><S X="1405" H="485" o="35002a" L="20" Y="500" c="4" P="0,0,0,0,-55,0,0,0" T="12" N="" /><S X="185" H="530" o="35002a" L="20" Y="550" c="4" P="0,0,0.3,0.2,45,0,0,0" T="12" N="" /><S X="1015" H="530" o="35002a" L="20" Y="550" c="4" P="0,0,0,0,-45,0,0,0" T="12" N="" /><S X="600" H="20" o="35002a" L="410" Y="235" c="3" P="0,0,0.3,0.2,0,0,0,0" T="12" /><S X="600" H="20" o="35002a" L="265" Y="149" c="3" P="0,0,0.3,0.2,0,0,0,0" T="12" /><S X="97" H="10" o="60004c" L="20" Y="105" P="1,1e-9,0.3,1,0,1,0,0" T="13" /><S X="1103" H="10" o="60004c" L="20" Y="105" P="1,1e-9,0.3,1.1,0,1,0,0" T="13" /><S X="97" H="10" o="60004c" L="20" Y="205" P="1,0,0.3,1.3,-330,0,0,0" T="13" /><S X="1103" H="10" o="60004c" L="20" Y="205" P="1,0,0.3,1.3,-210,0,0,0" T="13" /><S X="98" H="10" o="60004c" L="20" Y="302" P="1,0,0.3,1.1,15,0,0,0" T="13" /><S X="600" H="380" o="35002a" L="20" Y="560" P="1,1e-9,0,0,0,1,0,0" T="12" N="" /><S X="1102" H="10" o="60004c" L="20" Y="302" P="1,0,0.3,1.1,155,0,0,0" T="13" /><S X="97" H="10" o="60004c" L="20" Y="105" P="1,1e-9,0.3,1,0,1,0,0" m="" T="13" /><S X="97" H="10" o="60004c" L="20" Y="105" P="1,1e-9,0.3,1,0,1,0,0" m="" T="13" /><S X="97" H="10" o="60004c" L="20" Y="105" P="1,1e-9,0.3,1,0,1,0,0" m="" T="13" /><S X="97" H="10" o="60004c" L="20" Y="105" P="1,1e-9,0.3,1,0,1,0,0" m="" T="13" /><S X="97" H="10" o="60004c" L="20" Y="105" P="1,1e-9,0.3,1,0,1,0,0" m="" T="13" /><S X="97" H="10" o="60004c" L="20" Y="105" P="1,1e-9,0.3,1,0,1,0,0" m="" T="13" /><S X="97" H="10" o="60004c" L="20" Y="105" P="1,1e-9,0.3,1,0,1,0,0" m="" T="13" /><S X="97" H="10" o="60004c" L="20" Y="105" P="1,1e-9,0.3,1,0,1,0,0" m="" T="13" /><S X="97" H="10" o="60004c" L="20" Y="105" P="1,1e-9,0.3,1,0,1,0,0" m="" T="13" /><S X="1103" H="10" o="60004c" L="20" Y="105" P="1,1e-9,0.3,1.1,0,1,0,0" m="" T="13" /><S X="1103" H="10" o="60004c" L="20" Y="105" P="1,1e-9,0.3,1.1,0,1,0,0" m="" T="13" /><S X="1103" H="10" o="60004c" L="20" Y="105" P="1,1e-9,0.3,1.1,0,1,0,0" m="" T="13" /><S X="1103" H="10" o="60004c" L="20" Y="105" P="1,1e-9,0.3,1.1,0,1,0,0" m="" T="13" /><S X="1103" H="10" o="60004c" L="20" Y="105" P="1,1e-9,0.3,1.1,0,1,0,0" m="" T="13" /><S X="1103" H="10" o="60004c" L="20" Y="105" P="1,1e-9,0.3,1.1,0,1,0,0" m="" T="13" /><S X="1103" o="60004c" L="20" Y="105" P="1,1e-9,0.3,1.1,0,1,0,0" m="" T="13" /><S X="1103" o="60004c" L="20" Y="105" P="1,1e-9,0.3,1.1,0,1,0,0" m="" T="13" /><S X="1103" o="60004c" L="20" Y="105" P="1,1e-9,0.3,1.1,0,1,0,0" m="" T="13" /></S><D><DS X="365" Y="-141" /></D><O /><L><JP MV="Infinity,3.3333333333333335" AXIS="-1,0" M1="40" /><JP AXIS="0,1" M1="40" /><JP MV="Infinity,3.3333333333333335" AXIS="-1,0" M1="41" /><JP AXIS="0,1" M1="41" /><JP MV="Infinity,3.3333333333333335" AXIS="-1,0" M1="42" /><JP AXIS="0,1" M1="42" /><JP MV="Infinity,3.3333333333333335" AXIS="-1,0" M1="44" /><JP AXIS="0,1" M1="44" /><JR M1="28" /><JR M1="38" /><JR M1="45" /><JR M1="46" /><JR M1="47" /><JR M1="48" /><JR M1="49" /><JR M1="50" /><JR M1="51" /><JR M1="52" /><JR M1="53" /><JR M1="39" /><JR M1="54" /><JR M1="55" /><JR M1="56" /><JR M1="57" /><JR M1="58" /><JR M1="59" /><JR M1="60" /><JR M1="61" /><JR M1="62" /><JR M1="43" /></L></Z></C>',
+    [3] = 'Cyberpink 2',
     [4] = 'Tanatosl#0000',
     [6] = '195540116ec.png'
   },
@@ -649,8 +649,8 @@ local customMaps = {
     [6] = '1955404133e.png'
   },
   [35] = {
-    [1] = '<C><P F="0" G="0,4" MEDATA=";;;;-0;0::0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0:1-"/><Z><S><S T="7" X="400" Y="370" L="800" H="100" P="0,0,0.1,0.2,0,0,0,0" c="3" N="" m=""/><S T="12" X="-110" Y="385" L="20" H="430" P="1,1e-9,0.3,0.2,0,1,0,0" o="FF0000" m=""/><S T="12" X="910" Y="385" L="20" H="430" P="1,1e-9,0.3,0.2,0,1,0,0" o="FF0000" m=""/><S T="9" X="400" Y="370" L="800" H="100" P="0,0,0,0,0,0,0,0" m="" archAcc="0.5" archMax="1.3"/><S T="9" X="400" Y="-10" L="800" H="100" P="0,0,0,0,0,0,0,0" m="" archAcc="0.5" archMax="-1.5"/><S T="12" X="-10" Y="-330" L="20" H="1000" P="0,0,0.2,0.2,0,0,0,0" o="FF0000" m=""/><S T="12" X="810" Y="-330" L="20" H="1000" P="0,0,0.2,0.2,0,0,0,0" o="FF0000" m=""/><S T="12" X="50" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="1" X="400" Y="-5" L="800" H="10" P="0,0,0,0.2,0,0,0,0" N=""/><S T="12" X="400" Y="95" L="800" H="10" P="0,0,0.3,0.2,0,0,0,0" o="FFF200" c="3" N="" m=""/><S T="12" X="105" Y="50" L="10" H="100" P="0,0,0,0,0,0,0,0" o="FFF200" c="3" m=""/><S T="12" X="695" Y="50" L="10" H="100" P="0,0,0,0,0,0,0,0" o="FFF200" c="3" N="" m=""/><S T="12" X="316" Y="-129" L="20" H="200" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3"/><S T="12" X="407" Y="-133" L="20" H="200" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3"/><S T="12" X="363" Y="-92" L="20" H="100" P="0,0,0.2,0.2,90,0,0,0" o="6a7495" c="3"/><S T="12" X="360" Y="-206" L="20" H="100" P="0,0,0.2,0.2,90,0,0,0" o="6a7495" c="3"/><S T="12" X="400" Y="460" L="1600" H="120" P="0,0,0.3,0.2,0,0,0,0" o="6a7495" c="4" N=""/><S T="12" X="750" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="12" X="400" Y="-790" L="830" H="20" P="0,0,0,0.2,0,0,0,0" o="FF0000" N="" m=""/><S T="12" X="400" Y="245" L="800" H="305" P="0,0,0.3,0.2,0,0,0,0" o="064e3b" c="4"/><S T="13" X="400" Y="252" L="124" P="0,0,0.3,0.2,0,0,0,0" o="FFFFFF" c="4"/><S T="13" X="400" Y="252" L="102" P="0,0,0.3,0.2,0,0,0,0" o="064e3b" c="4"/><S T="12" X="400" Y="246" L="26" H="307" P="0,0,0.3,0.2,0,0,0,0" o="FFFFFF" c="4"/><S T="12" X="-115" Y="310" L="10" H="300" P="0,0,0,0,0,0,0,0" o="FFFFFF" c="4"/><S T="12" X="915" Y="310" L="10" H="300" P="0,0,0,0,0,0,0,0" o="FFFFFF" c="4"/><S T="12" X="-60" Y="165" L="120" H="10" P="0,0,0.3,0.2,0,0,0,0" o="FFFFFF"/><S T="12" X="860" Y="165" L="120" H="10" P="0,0,0.3,0.2,0,0,0,0" o="FFFFFF"/><S T="12" X="-2" Y="285" L="10" H="230" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="3" m=""/><S T="12" X="802" Y="285" L="10" H="230" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="3" m=""/><S T="15" X="-60" Y="285" L="110" H="230" P="0,0,0,0,0,0,0,0" archAcc="0" archCheeseMax="25"/><S T="15" X="860" Y="285" L="110" H="230" P="0,0,0,0,0,0,0,0" archAcc="0" archCheeseMax="25"/><S T="12" X="-60" Y="590" L="120" H="20" P="0,0,0.3,0.2,0,0,0,0" o="FF0000" m=""/><S T="12" X="860" Y="590" L="120" H="20" P="0,0,0.3,0.2,0,0,0,0" o="FF0000" m=""/><S T="12" X="-5" Y="168" L="10" H="10" P="0,0,0.3,0.2,0,0,0,0" o="FFFFFF"/><S T="12" X="805" Y="168" L="10" H="10" P="0,0,0.3,0.2,0,0,0,0" o="FFFFFF"/><S T="12" X="-130" Y="380" L="20" H="440" P="1,1e-9,0.3,0.2,0,1,0,0" o="FFF200" m=""/><S T="12" X="930" Y="380" L="20" H="440" P="1,1e-9,0.3,0.2,0,1,0,0" o="FFF200" m=""/><S T="12" X="-10" Y="480" L="20" H="240" P="0,0,0.3,0.2,0,0,0,0" o="FF0000" m=""/><S T="12" X="810" Y="480" L="20" H="240" P="0,0,0.3,0.2,0,0,0,0" o="FF0000" m=""/><S T="12" X="400" Y="400" L="800" H="10" P="0,0,0.3,0.2,0,0,0,0" o="324650" m=""/><S T="9" X="-60" Y="450" L="120" H="20" P="0,0,0,0,0,0,0,0" m="" archAcc="-1"/><S T="9" X="860" Y="450" L="120" H="20" P="0,0,0,0,0,0,0,0" m="" archAcc="-1"/><S T="12" X="400" Y="365" L="800" H="10" P="0,0,0.3,0.2,0,0,0,0" o="FF0000" N="" m=""/><S T="12" X="-110" Y="385" L="20" H="430" P="1,1e-9,0.3,0.2,0,1,0,0" o="FF0000" m=""/><S T="12" X="-110" Y="385" L="20" H="430" P="1,1e-9,0.3,0.2,0,1,0,0" o="FF0000" m=""/><S T="12" X="-110" Y="385" L="20" H="430" P="1,1e-9,0.3,0.2,0,1,0,0" o="FF0000" m=""/><S T="12" X="-110" Y="385" L="20" H="430" P="1,1e-9,0.3,0.2,0,1,0,0" o="FF0000" m=""/><S T="12" X="-110" Y="385" L="20" H="430" P="1,1e-9,0.3,0.2,0,1,0,0" o="FF0000" m=""/><S T="12" X="-110" Y="385" L="20" H="430" P="1,1e-9,0.3,0.2,0,1,0,0" o="FF0000" m=""/><S T="12" X="-110" Y="385" L="20" H="430" P="1,1e-9,0.3,0.2,0,1,0,0" o="FF0000" m=""/><S T="12" X="-110" Y="385" L="20" H="430" P="1,1e-9,0.3,0.2,0,1,0,0" o="FF0000" m=""/><S T="12" X="-110" Y="385" L="20" H="430" P="1,1e-9,0.3,0.2,0,1,0,0" o="FF0000" m=""/><S T="12" X="910" Y="385" L="20" H="430" P="1,1e-9,0.3,0.2,0,1,0,0" o="FF0000" m=""/><S T="12" X="910" Y="385" L="20" H="430" P="1,1e-9,0.3,0.2,0,1,0,0" o="FF0000" m=""/><S T="12" X="910" Y="385" L="20" H="430" P="1,1e-9,0.3,0.2,0,1,0,0" o="FF0000" m=""/><S T="12" X="910" Y="385" L="20" H="430" P="1,1e-9,0.3,0.2,0,1,0,0" o="FF0000" m=""/><S T="12" X="910" Y="385" L="20" H="430" P="1,1e-9,0.3,0.2,0,1,0,0" o="FF0000" m=""/><S T="12" X="910" Y="385" L="20" H="430" P="1,1e-9,0.3,0.2,0,1,0,0" o="FF0000" m=""/><S T="12" X="910" Y="385" L="20" H="430" P="1,1e-9,0.3,0.2,0,1,0,0" o="FF0000" m=""/><S T="12" X="910" Y="385" L="20" H="430" P="1,1e-9,0.3,0.2,0,1,0,0" o="FF0000" m=""/><S T="12" X="910" Y="385" L="20" H="430" P="1,1e-9,0.3,0.2,0,1,0,0" o="FF0000" m=""/><S T="12" X="-130" Y="380" L="20" H="440" P="1,1e-9,0.3,0.2,0,1,0,0" o="FFF200" m=""/><S T="12" X="-130" Y="380" L="20" H="440" P="1,1e-9,0.3,0.2,0,1,0,0" o="FFF200" m=""/><S T="12" X="-130" Y="380" L="20" H="440" P="1,1e-9,0.3,0.2,0,1,0,0" o="FFF200" m=""/><S T="12" X="-130" Y="380" L="20" H="440" P="1,1e-9,0.3,0.2,0,1,0,0" o="FFF200" m=""/><S T="12" X="-130" Y="380" L="20" H="440" P="1,1e-9,0.3,0.2,0,1,0,0" o="FFF200" m=""/><S T="12" X="-130" Y="380" L="20" H="440" P="1,1e-9,0.3,0.2,0,1,0,0" o="FFF200" m=""/><S T="12" X="-130" Y="380" L="20" H="440" P="1,1e-9,0.3,0.2,0,1,0,0" o="FFF200" m=""/><S T="12" X="-130" Y="380" L="20" H="440" P="1,1e-9,0.3,0.2,0,1,0,0" o="FFF200" m=""/><S T="12" X="-130" Y="380" L="20" H="440" P="1,1e-9,0.3,0.2,0,1,0,0" o="FFF200" m=""/><S T="12" X="930" Y="380" L="20" H="440" P="1,1e-9,0.3,0.2,0,1,0,0" o="FFF200" m=""/><S T="12" X="930" Y="380" L="20" H="440" P="1,1e-9,0.3,0.2,0,1,0,0" o="FFF200" m=""/><S T="12" X="930" Y="380" L="20" H="440" P="1,1e-9,0.3,0.2,0,1,0,0" o="FFF200" m=""/><S T="12" X="930" Y="380" L="20" H="440" P="1,1e-9,0.3,0.2,0,1,0,0" o="FFF200" m=""/><S T="12" X="930" Y="380" L="20" H="440" P="1,1e-9,0.3,0.2,0,1,0,0" o="FFF200" m=""/><S T="12" X="930" Y="380" L="20" H="440" P="1,1e-9,0.3,0.2,0,1,0,0" o="FFF200" m=""/><S T="12" X="930" Y="380" L="20" H="440" P="1,1e-9,0.3,0.2,0,1,0,0" o="FFF200" m=""/><S T="12" X="930" Y="380" L="20" H="440" P="1,1e-9,0.3,0.2,0,1,0,0" o="FFF200" m=""/><S T="12" X="930" Y="380" L="20" H="440" P="1,1e-9,0.3,0.2,0,1,0,0" o="FFF200" m=""/></S><D><P X="400" Y="110" T="131" C="555D77" P="0,0"/><P X="400" Y="110" T="131" C="555D77" P="0,0"/><DS X="365" Y="-141"/></D><O/><L><JR M1="1"/><JR M1="43"/><JR M1="44"/><JR M1="45"/><JR M1="46"/><JR M1="47"/><JR M1="48"/><JR M1="49"/><JR M1="50"/><JR M1="51"/><JR M1="2"/><JR M1="52"/><JR M1="53"/><JR M1="54"/><JR M1="55"/><JR M1="56"/><JR M1="57"/><JR M1="58"/><JR M1="59"/><JR M1="60"/><JR M1="35"/><JR M1="61"/><JR M1="62"/><JR M1="63"/><JR M1="64"/><JR M1="65"/><JR M1="66"/><JR M1="67"/><JR M1="68"/><JR M1="69"/><JR M1="36"/><JR M1="70"/><JR M1="71"/><JR M1="72"/><JR M1="73"/><JR M1="74"/><JR M1="75"/><JR M1="76"/><JR M1="77"/><JR M1="78"/></L></Z></C>',
-    [2] = '<C><P L="1200" F="0" G="0,4" MEDATA=";;;;-0;0::0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0:1-"/><Z><S><S T="7" X="600" Y="370" L="1200" H="100" P="0,0,0.1,0.2,0,0,0,0" c="3" N="" m=""/><S T="12" X="-110" Y="385" L="20" H="430" P="1,1e-9,0.3,0.2,0,1,0,0" o="FF0000" m=""/><S T="12" X="1310" Y="385" L="20" H="430" P="1,1e-9,0.3,0.2,0,1,0,0" o="FF0000" m=""/><S T="9" X="600" Y="370" L="1200" H="100" P="0,0,0,0,0,0,0,0" m="" archAcc="0.5" archMax="1.3"/><S T="9" X="600" Y="-10" L="1200" H="100" P="0,0,0,0,0,0,0,0" m="" archAcc="0.5" archMax="-1.5"/><S T="12" X="-10" Y="-330" L="20" H="1000" P="0,0,0.2,0.2,0,0,0,0" o="FF0000" m=""/><S T="12" X="1210" Y="-330" L="20" H="1000" P="0,0,0.2,0.2,0,0,0,0" o="FF0000" m=""/><S T="12" X="250" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="1" X="600" Y="-5" L="1200" H="10" P="0,0,0,0.2,0,0,0,0" N=""/><S T="12" X="600" Y="95" L="1200" H="10" P="0,0,0.3,0.2,0,0,0,0" o="FFF200" c="3" N="" m=""/><S T="12" X="305" Y="50" L="10" H="100" P="0,0,0,0,0,0,0,0" o="FFF200" c="3" m=""/><S T="12" X="895" Y="50" L="10" H="100" P="0,0,0,0,0,0,0,0" o="FFF200" c="3" N="" m=""/><S T="12" X="316" Y="-129" L="20" H="200" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3"/><S T="12" X="407" Y="-133" L="20" H="200" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3"/><S T="12" X="363" Y="-92" L="20" H="100" P="0,0,0.2,0.2,90,0,0,0" o="6a7495" c="3"/><S T="12" X="360" Y="-206" L="20" H="100" P="0,0,0.2,0.2,90,0,0,0" o="6a7495" c="3"/><S T="12" X="600" Y="460" L="1600" H="120" P="0,0,0.3,0.2,0,0,0,0" o="6a7495" c="4" N=""/><S T="12" X="950" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="12" X="600" Y="-790" L="1240" H="20" P="0,0,0,0.2,0,0,0,0" o="FF0000" N="" m=""/><S T="12" X="600" Y="245" L="1200" H="305" P="0,0,0.3,0.2,0,0,0,0" o="064e3b" c="4"/><S T="13" X="600" Y="252" L="124" P="0,0,0.3,0.2,0,0,0,0" o="FFFFFF" c="4"/><S T="13" X="600" Y="252" L="102" P="0,0,0.3,0.2,0,0,0,0" o="064e3b" c="4"/><S T="12" X="600" Y="246" L="26" H="307" P="0,0,0.3,0.2,0,0,0,0" o="FFFFFF" c="4"/><S T="12" X="-115" Y="310" L="10" H="300" P="0,0,0,0,0,0,0,0" o="FFFFFF" c="4"/><S T="12" X="1315" Y="310" L="10" H="300" P="0,0,0,0,0,0,0,0" o="FFFFFF" c="4"/><S T="12" X="-60" Y="165" L="120" H="10" P="0,0,0.3,0.2,0,0,0,0" o="FFFFFF"/><S T="12" X="1260" Y="165" L="120" H="10" P="0,0,0.3,0.2,0,0,0,0" o="FFFFFF"/><S T="12" X="-2" Y="285" L="10" H="230" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="3" m=""/><S T="12" X="1202" Y="285" L="10" H="230" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="3" m=""/><S T="15" X="-60" Y="285" L="110" H="230" P="0,0,0,0,0,0,0,0" archAcc="0" archCheeseMax="25"/><S T="15" X="1260" Y="285" L="110" H="230" P="0,0,0,0,0,0,0,0" archAcc="0" archCheeseMax="25"/><S T="12" X="-60" Y="590" L="120" H="20" P="0,0,0.3,0.2,0,0,0,0" o="FF0000" m=""/><S T="12" X="1260" Y="590" L="120" H="20" P="0,0,0.3,0.2,0,0,0,0" o="FF0000" m=""/><S T="12" X="-5" Y="168" L="10" H="10" P="0,0,0.3,0.2,0,0,0,0" o="FFFFFF"/><S T="12" X="1205" Y="168" L="10" H="10" P="0,0,0.3,0.2,0,0,0,0" o="FFFFFF"/><S T="12" X="-130" Y="380" L="20" H="440" P="1,1e-9,0.3,0.2,0,1,0,0" o="FFF200" m=""/><S T="12" X="1330" Y="380" L="20" H="440" P="1,1e-9,0.3,0.2,0,1,0,0" o="FFF200" m=""/><S T="12" X="-10" Y="480" L="20" H="240" P="0,0,0.3,0.2,0,0,0,0" o="FF0000" m=""/><S T="12" X="1210" Y="480" L="20" H="240" P="0,0,0.3,0.2,0,0,0,0" o="FF0000" m=""/><S T="12" X="400" Y="400" L="800" H="10" P="0,0,0.3,0.2,0,0,0,0" o="324650" m=""/><S T="9" X="-60" Y="450" L="120" H="20" P="0,0,0,0,0,0,0,0" m="" archAcc="-1"/><S T="9" X="1260" Y="450" L="120" H="20" P="0,0,0,0,0,0,0,0" m="" archAcc="-1"/><S T="12" X="600" Y="365" L="1200" H="10" P="0,0,0.3,0.2,0,0,0,0" o="FF0000" N="" m=""/><S T="12" X="-110" Y="385" L="20" H="430" P="1,1e-9,0.3,0.2,0,1,0,0" o="FF0000" m=""/><S T="12" X="-110" Y="385" L="20" H="430" P="1,1e-9,0.3,0.2,0,1,0,0" o="FF0000" m=""/><S T="12" X="-110" Y="385" L="20" H="430" P="1,1e-9,0.3,0.2,0,1,0,0" o="FF0000" m=""/><S T="12" X="-110" Y="385" L="20" H="430" P="1,1e-9,0.3,0.2,0,1,0,0" o="FF0000" m=""/><S T="12" X="-110" Y="385" L="20" H="430" P="1,1e-9,0.3,0.2,0,1,0,0" o="FF0000" m=""/><S T="12" X="-110" Y="385" L="20" H="430" P="1,1e-9,0.3,0.2,0,1,0,0" o="FF0000" m=""/><S T="12" X="-110" Y="385" L="20" H="430" P="1,1e-9,0.3,0.2,0,1,0,0" o="FF0000" m=""/><S T="12" X="-110" Y="385" L="20" H="430" P="1,1e-9,0.3,0.2,0,1,0,0" o="FF0000" m=""/><S T="12" X="-110" Y="385" L="20" H="430" P="1,1e-9,0.3,0.2,0,1,0,0" o="FF0000" m=""/><S T="12" X="1310" Y="385" L="20" H="430" P="1,1e-9,0.3,0.2,0,1,0,0" o="FF0000" m=""/><S T="12" X="1310" Y="385" L="20" H="430" P="1,1e-9,0.3,0.2,0,1,0,0" o="FF0000" m=""/><S T="12" X="1310" Y="385" L="20" H="430" P="1,1e-9,0.3,0.2,0,1,0,0" o="FF0000" m=""/><S T="12" X="1310" Y="385" L="20" H="430" P="1,1e-9,0.3,0.2,0,1,0,0" o="FF0000" m=""/><S T="12" X="1310" Y="385" L="20" H="430" P="1,1e-9,0.3,0.2,0,1,0,0" o="FF0000" m=""/><S T="12" X="1310" Y="385" L="20" H="430" P="1,1e-9,0.3,0.2,0,1,0,0" o="FF0000" m=""/><S T="12" X="1310" Y="385" L="20" H="430" P="1,1e-9,0.3,0.2,0,1,0,0" o="FF0000" m=""/><S T="12" X="1310" Y="385" L="20" H="430" P="1,1e-9,0.3,0.2,0,1,0,0" o="FF0000" m=""/><S T="12" X="1310" Y="385" L="20" H="430" P="1,1e-9,0.3,0.2,0,1,0,0" o="FF0000" m=""/><S T="12" X="-130" Y="380" L="20" H="440" P="1,1e-9,0.3,0.2,0,1,0,0" o="FFF200" m=""/><S T="12" X="-130" Y="380" L="20" H="440" P="1,1e-9,0.3,0.2,0,1,0,0" o="FFF200" m=""/><S T="12" X="-130" Y="380" L="20" H="440" P="1,1e-9,0.3,0.2,0,1,0,0" o="FFF200" m=""/><S T="12" X="-130" Y="380" L="20" H="440" P="1,1e-9,0.3,0.2,0,1,0,0" o="FFF200" m=""/><S T="12" X="-130" Y="380" L="20" H="440" P="1,1e-9,0.3,0.2,0,1,0,0" o="FFF200" m=""/><S T="12" X="-130" Y="380" L="20" H="440" P="1,1e-9,0.3,0.2,0,1,0,0" o="FFF200" m=""/><S T="12" X="-130" Y="380" L="20" H="440" P="1,1e-9,0.3,0.2,0,1,0,0" o="FFF200" m=""/><S T="12" X="-130" Y="380" L="20" H="440" P="1,1e-9,0.3,0.2,0,1,0,0" o="FFF200" m=""/><S T="12" X="-130" Y="380" L="20" H="440" P="1,1e-9,0.3,0.2,0,1,0,0" o="FFF200" m=""/><S T="12" X="1330" Y="380" L="20" H="440" P="1,1e-9,0.3,0.2,0,1,0,0" o="FFF200" m=""/><S T="12" X="1330" Y="380" L="20" H="440" P="1,1e-9,0.3,0.2,0,1,0,0" o="FFF200" m=""/><S T="12" X="1330" Y="380" L="20" H="440" P="1,1e-9,0.3,0.2,0,1,0,0" o="FFF200" m=""/><S T="12" X="1330" Y="380" L="20" H="440" P="1,1e-9,0.3,0.2,0,1,0,0" o="FFF200" m=""/><S T="12" X="1330" Y="380" L="20" H="440" P="1,1e-9,0.3,0.2,0,1,0,0" o="FFF200" m=""/><S T="12" X="1330" Y="380" L="20" H="440" P="1,1e-9,0.3,0.2,0,1,0,0" o="FFF200" m=""/><S T="12" X="1330" Y="380" L="20" H="440" P="1,1e-9,0.3,0.2,0,1,0,0" o="FFF200" m=""/><S T="12" X="1330" Y="380" L="20" H="440" P="1,1e-9,0.3,0.2,0,1,0,0" o="FFF200" m=""/><S T="12" X="1330" Y="380" L="20" H="440" P="1,1e-9,0.3,0.2,0,1,0,0" o="FFF200" m=""/></S><D><P X="400" Y="110" T="131" C="555D77" P="0,0"/><P X="400" Y="110" T="131" C="555D77" P="0,0"/><DS X="365" Y="-141"/></D><O/><L><JR M1="1"/><JR M1="43"/><JR M1="44"/><JR M1="45"/><JR M1="46"/><JR M1="47"/><JR M1="48"/><JR M1="49"/><JR M1="50"/><JR M1="51"/><JR M1="2"/><JR M1="52"/><JR M1="53"/><JR M1="54"/><JR M1="55"/><JR M1="56"/><JR M1="57"/><JR M1="58"/><JR M1="59"/><JR M1="60"/><JR M1="35"/><JR M1="61"/><JR M1="62"/><JR M1="63"/><JR M1="64"/><JR M1="65"/><JR M1="66"/><JR M1="67"/><JR M1="68"/><JR M1="69"/><JR M1="36"/><JR M1="70"/><JR M1="71"/><JR M1="72"/><JR M1="73"/><JR M1="74"/><JR M1="75"/><JR M1="76"/><JR M1="77"/><JR M1="78"/></L></Z></C>',
+    [1] = '<C><P F="0" G="0,4" playerForce="1.05" MEDATA=";;;;-0;0::0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0:1-"/><Z><S><S T="7" X="400" Y="370" L="800" H="100" P="0,0,0.1,0.2,0,0,0,0" c="3" N="" m=""/><S T="12" X="-110" Y="385" L="20" H="430" P="1,1e-9,0.3,0.2,0,1,0,0" o="FF0000" m=""/><S T="12" X="910" Y="385" L="20" H="430" P="1,1e-9,0.3,0.2,0,1,0,0" o="FF0000" m=""/><S T="9" X="400" Y="370" L="800" H="100" P="0,0,0,0,0,0,0,0" m="" archAcc="0.5" archMax="1.3"/><S T="9" X="400" Y="-10" L="800" H="100" P="0,0,0,0,0,0,0,0" m="" archAcc="0.5" archMax="-1.5"/><S T="12" X="-10" Y="-330" L="20" H="1000" P="0,0,0.2,0.2,0,0,0,0" o="FF0000" m=""/><S T="12" X="810" Y="-330" L="20" H="1000" P="0,0,0.2,0.2,0,0,0,0" o="FF0000" m=""/><S T="12" X="50" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="1" X="400" Y="-5" L="800" H="10" P="0,0,0,0.2,0,0,0,0" N=""/><S T="12" X="400" Y="95" L="800" H="10" P="0,0,0.3,0.2,0,0,0,0" o="FFF200" c="3" N="" m=""/><S T="12" X="105" Y="50" L="10" H="100" P="0,0,0,0,0,0,0,0" o="FFF200" c="3" m=""/><S T="12" X="695" Y="50" L="10" H="100" P="0,0,0,0,0,0,0,0" o="FFF200" c="3" N="" m=""/><S T="12" X="316" Y="-129" L="20" H="200" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3"/><S T="12" X="407" Y="-133" L="20" H="200" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3"/><S T="12" X="363" Y="-92" L="20" H="100" P="0,0,0.2,0.2,90,0,0,0" o="6a7495" c="3"/><S T="12" X="360" Y="-206" L="20" H="100" P="0,0,0.2,0.2,90,0,0,0" o="6a7495" c="3"/><S T="12" X="400" Y="460" L="1600" H="120" P="0,0,0.3,0.2,0,0,0,0" o="6a7495" c="4" N=""/><S T="12" X="750" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="12" X="400" Y="-790" L="830" H="20" P="0,0,0,0.2,0,0,0,0" o="FF0000" N="" m=""/><S T="12" X="400" Y="245" L="800" H="305" P="0,0,0.3,0.2,0,0,0,0" o="064e3b" c="4"/><S T="13" X="400" Y="252" L="124" P="0,0,0.3,0.2,0,0,0,0" o="FFFFFF" c="4"/><S T="13" X="400" Y="252" L="102" P="0,0,0.3,0.2,0,0,0,0" o="064e3b" c="4"/><S T="12" X="400" Y="246" L="26" H="307" P="0,0,0.3,0.2,0,0,0,0" o="FFFFFF" c="4"/><S T="12" X="-115" Y="310" L="10" H="300" P="0,0,0,0,0,0,0,0" o="FFFFFF" c="4"/><S T="12" X="915" Y="310" L="10" H="300" P="0,0,0,0,0,0,0,0" o="FFFFFF" c="4"/><S T="12" X="-60" Y="165" L="120" H="10" P="0,0,0.3,0.2,0,0,0,0" o="FFFFFF"/><S T="12" X="860" Y="165" L="120" H="10" P="0,0,0.3,0.2,0,0,0,0" o="FFFFFF"/><S T="12" X="-2" Y="285" L="10" H="230" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="3" m=""/><S T="12" X="802" Y="285" L="10" H="230" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="3" m=""/><S T="15" X="-60" Y="285" L="110" H="230" P="0,0,0,0,0,0,0,0" archAcc="-20" archCheeseMax="0" archMax="2"/><S T="15" X="860" Y="285" L="110" H="230" P="0,0,0,0,0,0,0,0" archAcc="-20" archCheeseMax="0" archMax="2"/><S T="12" X="-60" Y="590" L="120" H="20" P="0,0,0.3,0.2,0,0,0,0" o="FF0000" m=""/><S T="12" X="860" Y="590" L="120" H="20" P="0,0,0.3,0.2,0,0,0,0" o="FF0000" m=""/><S T="12" X="-5" Y="168" L="10" H="10" P="0,0,0.3,0.2,0,0,0,0" o="FFFFFF"/><S T="12" X="805" Y="168" L="10" H="10" P="0,0,0.3,0.2,0,0,0,0" o="FFFFFF"/><S T="12" X="-130" Y="380" L="20" H="440" P="1,1e-9,0.3,0.2,0,1,0,0" o="FFF200" m=""/><S T="12" X="930" Y="380" L="20" H="440" P="1,1e-9,0.3,0.2,0,1,0,0" o="FFF200" m=""/><S T="12" X="-10" Y="480" L="20" H="240" P="0,0,0.3,0.2,0,0,0,0" o="FF0000" m=""/><S T="12" X="810" Y="480" L="20" H="240" P="0,0,0.3,0.2,0,0,0,0" o="FF0000" m=""/><S T="12" X="400" Y="400" L="800" H="10" P="0,0,0.3,0.2,0,0,0,0" o="324650" m=""/><S T="9" X="-60" Y="450" L="120" H="20" P="0,0,0,0,0,0,0,0" m="" archAcc="-1"/><S T="9" X="860" Y="450" L="120" H="20" P="0,0,0,0,0,0,0,0" m="" archAcc="-1"/><S T="12" X="400" Y="365" L="800" H="10" P="0,0,0.3,0.2,0,0,0,0" o="FF0000" N="" m=""/><S T="12" X="-110" Y="385" L="20" H="430" P="1,1e-9,0.3,0.2,0,1,0,0" o="FF0000" m=""/><S T="12" X="-110" Y="385" L="20" H="430" P="1,1e-9,0.3,0.2,0,1,0,0" o="FF0000" m=""/><S T="12" X="-110" Y="385" L="20" H="430" P="1,1e-9,0.3,0.2,0,1,0,0" o="FF0000" m=""/><S T="12" X="-110" Y="385" L="20" H="430" P="1,1e-9,0.3,0.2,0,1,0,0" o="FF0000" m=""/><S T="12" X="-110" Y="385" L="20" H="430" P="1,1e-9,0.3,0.2,0,1,0,0" o="FF0000" m=""/><S T="12" X="-110" Y="385" L="20" H="430" P="1,1e-9,0.3,0.2,0,1,0,0" o="FF0000" m=""/><S T="12" X="-110" Y="385" L="20" H="430" P="1,1e-9,0.3,0.2,0,1,0,0" o="FF0000" m=""/><S T="12" X="-110" Y="385" L="20" H="430" P="1,1e-9,0.3,0.2,0,1,0,0" o="FF0000" m=""/><S T="12" X="-110" Y="385" L="20" H="430" P="1,1e-9,0.3,0.2,0,1,0,0" o="FF0000" m=""/><S T="12" X="910" Y="385" L="20" H="430" P="1,1e-9,0.3,0.2,0,1,0,0" o="FF0000" m=""/><S T="12" X="910" Y="385" L="20" H="430" P="1,1e-9,0.3,0.2,0,1,0,0" o="FF0000" m=""/><S T="12" X="910" Y="385" L="20" H="430" P="1,1e-9,0.3,0.2,0,1,0,0" o="FF0000" m=""/><S T="12" X="910" Y="385" L="20" H="430" P="1,1e-9,0.3,0.2,0,1,0,0" o="FF0000" m=""/><S T="12" X="910" Y="385" L="20" H="430" P="1,1e-9,0.3,0.2,0,1,0,0" o="FF0000" m=""/><S T="12" X="910" Y="385" L="20" H="430" P="1,1e-9,0.3,0.2,0,1,0,0" o="FF0000" m=""/><S T="12" X="910" Y="385" L="20" H="430" P="1,1e-9,0.3,0.2,0,1,0,0" o="FF0000" m=""/><S T="12" X="910" Y="385" L="20" H="430" P="1,1e-9,0.3,0.2,0,1,0,0" o="FF0000" m=""/><S T="12" X="910" Y="385" L="20" H="430" P="1,1e-9,0.3,0.2,0,1,0,0" o="FF0000" m=""/><S T="12" X="-130" Y="380" L="20" H="440" P="1,1e-9,0.3,0.2,0,1,0,0" o="FFF200" m=""/><S T="12" X="-130" Y="380" L="20" H="440" P="1,1e-9,0.3,0.2,0,1,0,0" o="FFF200" m=""/><S T="12" X="-130" Y="380" L="20" H="440" P="1,1e-9,0.3,0.2,0,1,0,0" o="FFF200" m=""/><S T="12" X="-130" Y="380" L="20" H="440" P="1,1e-9,0.3,0.2,0,1,0,0" o="FFF200" m=""/><S T="12" X="-130" Y="380" L="20" H="440" P="1,1e-9,0.3,0.2,0,1,0,0" o="FFF200" m=""/><S T="12" X="-130" Y="380" L="20" H="440" P="1,1e-9,0.3,0.2,0,1,0,0" o="FFF200" m=""/><S T="12" X="-130" Y="380" L="20" H="440" P="1,1e-9,0.3,0.2,0,1,0,0" o="FFF200" m=""/><S T="12" X="-130" Y="380" L="20" H="440" P="1,1e-9,0.3,0.2,0,1,0,0" o="FFF200" m=""/><S T="12" X="-130" Y="380" L="20" H="440" P="1,1e-9,0.3,0.2,0,1,0,0" o="FFF200" m=""/><S T="12" X="930" Y="380" L="20" H="440" P="1,1e-9,0.3,0.2,0,1,0,0" o="FFF200" m=""/><S T="12" X="930" Y="380" L="20" H="440" P="1,1e-9,0.3,0.2,0,1,0,0" o="FFF200" m=""/><S T="12" X="930" Y="380" L="20" H="440" P="1,1e-9,0.3,0.2,0,1,0,0" o="FFF200" m=""/><S T="12" X="930" Y="380" L="20" H="440" P="1,1e-9,0.3,0.2,0,1,0,0" o="FFF200" m=""/><S T="12" X="930" Y="380" L="20" H="440" P="1,1e-9,0.3,0.2,0,1,0,0" o="FFF200" m=""/><S T="12" X="930" Y="380" L="20" H="440" P="1,1e-9,0.3,0.2,0,1,0,0" o="FFF200" m=""/><S T="12" X="930" Y="380" L="20" H="440" P="1,1e-9,0.3,0.2,0,1,0,0" o="FFF200" m=""/><S T="12" X="930" Y="380" L="20" H="440" P="1,1e-9,0.3,0.2,0,1,0,0" o="FFF200" m=""/><S T="12" X="930" Y="380" L="20" H="440" P="1,1e-9,0.3,0.2,0,1,0,0" o="FFF200" m=""/></S><D><P X="400" Y="110" T="131" C="555D77" P="0,0"/><P X="400" Y="110" T="131" C="555D77" P="0,0"/><DS X="365" Y="-141"/></D><O/><L><JR M1="1"/><JR M1="43"/><JR M1="44"/><JR M1="45"/><JR M1="46"/><JR M1="47"/><JR M1="48"/><JR M1="49"/><JR M1="50"/><JR M1="51"/><JR M1="2"/><JR M1="52"/><JR M1="53"/><JR M1="54"/><JR M1="55"/><JR M1="56"/><JR M1="57"/><JR M1="58"/><JR M1="59"/><JR M1="60"/><JR M1="35"/><JR M1="61"/><JR M1="62"/><JR M1="63"/><JR M1="64"/><JR M1="65"/><JR M1="66"/><JR M1="67"/><JR M1="68"/><JR M1="69"/><JR M1="36"/><JR M1="70"/><JR M1="71"/><JR M1="72"/><JR M1="73"/><JR M1="74"/><JR M1="75"/><JR M1="76"/><JR M1="77"/><JR M1="78"/></L></Z></C>',
+    [2] = '<C><P L="1200" F="0" G="0,4" MEDATA="29,1:30,1;;;;-0;0::0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0:1-"/><Z><S><S T="7" X="600" Y="370" L="1200" H="100" P="0,0,0.1,0.2,0,0,0,0" c="3" N="" m=""/><S T="12" X="-110" Y="385" L="20" H="430" P="1,1e-9,0.3,0.2,0,1,0,0" o="FF0000" m=""/><S T="12" X="1310" Y="385" L="20" H="430" P="1,1e-9,0.3,0.2,0,1,0,0" o="FF0000" m=""/><S T="9" X="600" Y="370" L="1200" H="100" P="0,0,0,0,0,0,0,0" m="" archAcc="0.5" archMax="1.3"/><S T="9" X="600" Y="-10" L="1200" H="100" P="0,0,0,0,0,0,0,0" m="" archAcc="0.5" archMax="-1.5"/><S T="12" X="-10" Y="-330" L="20" H="1000" P="0,0,0.2,0.2,0,0,0,0" o="FF0000" m=""/><S T="12" X="1210" Y="-330" L="20" H="1000" P="0,0,0.2,0.2,0,0,0,0" o="FF0000" m=""/><S T="12" X="250" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="1" X="600" Y="-5" L="1200" H="10" P="0,0,0,0.2,0,0,0,0" N=""/><S T="12" X="600" Y="95" L="1200" H="10" P="0,0,0.3,0.2,0,0,0,0" o="FFF200" c="3" N="" m=""/><S T="12" X="305" Y="50" L="10" H="100" P="0,0,0,0,0,0,0,0" o="FFF200" c="3" m=""/><S T="12" X="895" Y="50" L="10" H="100" P="0,0,0,0,0,0,0,0" o="FFF200" c="3" N="" m=""/><S T="12" X="316" Y="-129" L="20" H="200" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3"/><S T="12" X="407" Y="-133" L="20" H="200" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3"/><S T="12" X="363" Y="-92" L="20" H="100" P="0,0,0.2,0.2,90,0,0,0" o="6a7495" c="3"/><S T="12" X="360" Y="-206" L="20" H="100" P="0,0,0.2,0.2,90,0,0,0" o="6a7495" c="3"/><S T="12" X="600" Y="460" L="1600" H="120" P="0,0,0.3,0.2,0,0,0,0" o="6a7495" c="4" N=""/><S T="12" X="950" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="12" X="600" Y="-790" L="1240" H="20" P="0,0,0,0.2,0,0,0,0" o="FF0000" N="" m=""/><S T="12" X="600" Y="245" L="1200" H="305" P="0,0,0.3,0.2,0,0,0,0" o="064e3b" c="4"/><S T="13" X="600" Y="252" L="124" P="0,0,0.3,0.2,0,0,0,0" o="FFFFFF" c="4"/><S T="13" X="600" Y="252" L="102" P="0,0,0.3,0.2,0,0,0,0" o="064e3b" c="4"/><S T="12" X="600" Y="246" L="26" H="307" P="0,0,0.3,0.2,0,0,0,0" o="FFFFFF" c="4"/><S T="12" X="-115" Y="310" L="10" H="300" P="0,0,0,0,0,0,0,0" o="FFFFFF" c="4"/><S T="12" X="1315" Y="310" L="10" H="300" P="0,0,0,0,0,0,0,0" o="FFFFFF" c="4"/><S T="12" X="-60" Y="165" L="120" H="10" P="0,0,0.3,0.2,0,0,0,0" o="FFFFFF"/><S T="12" X="1260" Y="165" L="120" H="10" P="0,0,0.3,0.2,0,0,0,0" o="FFFFFF"/><S T="12" X="-2" Y="285" L="10" H="230" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="3" m=""/><S T="12" X="1202" Y="285" L="10" H="230" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="3" m=""/><S T="15" X="-60" Y="285" L="110" H="230" P="0,0,0,0,0,0,0,0" archAcc="-20" archCheeseMax="0" archMax="2"/><S T="15" X="1260" Y="285" L="110" H="230" P="0,0,0,0,0,0,0,0" archAcc="-20" archCheeseMax="0" archMax="2"/><S T="12" X="-60" Y="590" L="120" H="20" P="0,0,0.3,0.2,0,0,0,0" o="FF0000" m=""/><S T="12" X="1260" Y="590" L="120" H="20" P="0,0,0.3,0.2,0,0,0,0" o="FF0000" m=""/><S T="12" X="-5" Y="168" L="10" H="10" P="0,0,0.3,0.2,0,0,0,0" o="FFFFFF"/><S T="12" X="1205" Y="168" L="10" H="10" P="0,0,0.3,0.2,0,0,0,0" o="FFFFFF"/><S T="12" X="-130" Y="380" L="20" H="440" P="1,1e-9,0.3,0.2,0,1,0,0" o="FFF200" m=""/><S T="12" X="1330" Y="380" L="20" H="440" P="1,1e-9,0.3,0.2,0,1,0,0" o="FFF200" m=""/><S T="12" X="-10" Y="480" L="20" H="240" P="0,0,0.3,0.2,0,0,0,0" o="FF0000" m=""/><S T="12" X="1210" Y="480" L="20" H="240" P="0,0,0.3,0.2,0,0,0,0" o="FF0000" m=""/><S T="12" X="400" Y="400" L="800" H="10" P="0,0,0.3,0.2,0,0,0,0" o="324650" m=""/><S T="9" X="-60" Y="450" L="120" H="20" P="0,0,0,0,0,0,0,0" m="" archAcc="-1"/><S T="9" X="1260" Y="450" L="120" H="20" P="0,0,0,0,0,0,0,0" m="" archAcc="-1"/><S T="12" X="600" Y="365" L="1200" H="10" P="0,0,0.3,0.2,0,0,0,0" o="FF0000" N="" m=""/><S T="12" X="-110" Y="385" L="20" H="430" P="1,1e-9,0.3,0.2,0,1,0,0" o="FF0000" m=""/><S T="12" X="-110" Y="385" L="20" H="430" P="1,1e-9,0.3,0.2,0,1,0,0" o="FF0000" m=""/><S T="12" X="-110" Y="385" L="20" H="430" P="1,1e-9,0.3,0.2,0,1,0,0" o="FF0000" m=""/><S T="12" X="-110" Y="385" L="20" H="430" P="1,1e-9,0.3,0.2,0,1,0,0" o="FF0000" m=""/><S T="12" X="-110" Y="385" L="20" H="430" P="1,1e-9,0.3,0.2,0,1,0,0" o="FF0000" m=""/><S T="12" X="-110" Y="385" L="20" H="430" P="1,1e-9,0.3,0.2,0,1,0,0" o="FF0000" m=""/><S T="12" X="-110" Y="385" L="20" H="430" P="1,1e-9,0.3,0.2,0,1,0,0" o="FF0000" m=""/><S T="12" X="-110" Y="385" L="20" H="430" P="1,1e-9,0.3,0.2,0,1,0,0" o="FF0000" m=""/><S T="12" X="-110" Y="385" L="20" H="430" P="1,1e-9,0.3,0.2,0,1,0,0" o="FF0000" m=""/><S T="12" X="1310" Y="385" L="20" H="430" P="1,1e-9,0.3,0.2,0,1,0,0" o="FF0000" m=""/><S T="12" X="1310" Y="385" L="20" H="430" P="1,1e-9,0.3,0.2,0,1,0,0" o="FF0000" m=""/><S T="12" X="1310" Y="385" L="20" H="430" P="1,1e-9,0.3,0.2,0,1,0,0" o="FF0000" m=""/><S T="12" X="1310" Y="385" L="20" H="430" P="1,1e-9,0.3,0.2,0,1,0,0" o="FF0000" m=""/><S T="12" X="1310" Y="385" L="20" H="430" P="1,1e-9,0.3,0.2,0,1,0,0" o="FF0000" m=""/><S T="12" X="1310" Y="385" L="20" H="430" P="1,1e-9,0.3,0.2,0,1,0,0" o="FF0000" m=""/><S T="12" X="1310" Y="385" L="20" H="430" P="1,1e-9,0.3,0.2,0,1,0,0" o="FF0000" m=""/><S T="12" X="1310" Y="385" L="20" H="430" P="1,1e-9,0.3,0.2,0,1,0,0" o="FF0000" m=""/><S T="12" X="1310" Y="385" L="20" H="430" P="1,1e-9,0.3,0.2,0,1,0,0" o="FF0000" m=""/><S T="12" X="-130" Y="380" L="20" H="440" P="1,1e-9,0.3,0.2,0,1,0,0" o="FFF200" m=""/><S T="12" X="-130" Y="380" L="20" H="440" P="1,1e-9,0.3,0.2,0,1,0,0" o="FFF200" m=""/><S T="12" X="-130" Y="380" L="20" H="440" P="1,1e-9,0.3,0.2,0,1,0,0" o="FFF200" m=""/><S T="12" X="-130" Y="380" L="20" H="440" P="1,1e-9,0.3,0.2,0,1,0,0" o="FFF200" m=""/><S T="12" X="-130" Y="380" L="20" H="440" P="1,1e-9,0.3,0.2,0,1,0,0" o="FFF200" m=""/><S T="12" X="-130" Y="380" L="20" H="440" P="1,1e-9,0.3,0.2,0,1,0,0" o="FFF200" m=""/><S T="12" X="-130" Y="380" L="20" H="440" P="1,1e-9,0.3,0.2,0,1,0,0" o="FFF200" m=""/><S T="12" X="-130" Y="380" L="20" H="440" P="1,1e-9,0.3,0.2,0,1,0,0" o="FFF200" m=""/><S T="12" X="-130" Y="380" L="20" H="440" P="1,1e-9,0.3,0.2,0,1,0,0" o="FFF200" m=""/><S T="12" X="1330" Y="380" L="20" H="440" P="1,1e-9,0.3,0.2,0,1,0,0" o="FFF200" m=""/><S T="12" X="1330" Y="380" L="20" H="440" P="1,1e-9,0.3,0.2,0,1,0,0" o="FFF200" m=""/><S T="12" X="1330" Y="380" L="20" H="440" P="1,1e-9,0.3,0.2,0,1,0,0" o="FFF200" m=""/><S T="12" X="1330" Y="380" L="20" H="440" P="1,1e-9,0.3,0.2,0,1,0,0" o="FFF200" m=""/><S T="12" X="1330" Y="380" L="20" H="440" P="1,1e-9,0.3,0.2,0,1,0,0" o="FFF200" m=""/><S T="12" X="1330" Y="380" L="20" H="440" P="1,1e-9,0.3,0.2,0,1,0,0" o="FFF200" m=""/><S T="12" X="1330" Y="380" L="20" H="440" P="1,1e-9,0.3,0.2,0,1,0,0" o="FFF200" m=""/><S T="12" X="1330" Y="380" L="20" H="440" P="1,1e-9,0.3,0.2,0,1,0,0" o="FFF200" m=""/><S T="12" X="1330" Y="380" L="20" H="440" P="1,1e-9,0.3,0.2,0,1,0,0" o="FFF200" m=""/></S><D><P X="400" Y="110" T="131" C="555D77" P="0,0"/><P X="400" Y="110" T="131" C="555D77" P="0,0"/><DS X="365" Y="-141"/></D><O/><L><JR M1="1"/><JR M1="43"/><JR M1="44"/><JR M1="45"/><JR M1="46"/><JR M1="47"/><JR M1="48"/><JR M1="49"/><JR M1="50"/><JR M1="51"/><JR M1="2"/><JR M1="52"/><JR M1="53"/><JR M1="54"/><JR M1="55"/><JR M1="56"/><JR M1="57"/><JR M1="58"/><JR M1="59"/><JR M1="60"/><JR M1="35"/><JR M1="61"/><JR M1="62"/><JR M1="63"/><JR M1="64"/><JR M1="65"/><JR M1="66"/><JR M1="67"/><JR M1="68"/><JR M1="69"/><JR M1="36"/><JR M1="70"/><JR M1="71"/><JR M1="72"/><JR M1="73"/><JR M1="74"/><JR M1="75"/><JR M1="76"/><JR M1="77"/><JR M1="78"/></L></Z></C>',
     [3] = 'Soccer',
     [4] = 'Refletz#6472',
     [6] = '1955402e27a.png'
@@ -694,7 +694,7 @@ local customMaps = {
   },
   [41] =
   {
-    [1] = '<C><P F="8" G="0,4" MEDATA=";;;;-0;0::0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0:1-"/><Z><S><S T="12" X="-10" Y="25" L="20" H="270" P="0,0,0,0,0,0,0,0" o="FF0000" m=""/><S T="12" X="810" Y="25" L="20" H="270" P="0,0,0,0,0,0,0,0" o="FF0000" m=""/><S T="12" X="400" Y="430" L="1600" H="200" P="0,0,0.1,0.1,0,0,0,0" o="6A7495" c="3" N=""/><S T="12" X="-5" Y="255" L="10" H="200" P="0,0,1,0.2,0,0,0,0" o="AFAFAF" c="3"/><S T="12" X="805" Y="255" L="10" H="200" P="0,0,1,0.2,0,0,0,0" o="AFAFAF" c="3"/><S T="12" X="-60" Y="505" L="120" H="10" P="0,0,20,0.2,0,0,0,0" o="FF0000" c="2" m=""/><S T="12" X="860" Y="505" L="120" H="10" P="0,0,20,0.2,0,0,0,0" o="FF0000" c="2" m=""/><S T="12" X="-5" Y="425" L="10" H="170" P="0,0,9,0,0,0,0,0" o="ff0000" c="3" m=""/><S T="12" X="805" Y="425" L="10" H="170" P="0,0,9,0,0,0,0,0" o="ff0000" c="3" m=""/><S T="12" X="50" Y="210" L="10" H="270" P="0,0,0.3,0.2,0,0,0,0" o="1c1c1c" c="4"/><S T="12" X="50" Y="50" L="90" H="90" P="0,0,0,0,0,0,0,0" o="324650" c="4"/><S T="12" X="750" Y="210" L="10" H="270" P="0,0,0.3,0.2,0,0,0,0" o="1c1c1c" c="4"/><S T="12" X="50" Y="50" L="80" H="80" P="0,0,0,0.2,0,0,0,0" o="1f1f1f" c="3" friction="-100,-20"/><S T="12" X="316" Y="-129" L="20" H="200" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3"/><S T="12" X="750" Y="50" L="90" H="90" P="0,0,0,0,0,0,0,0" o="324650" c="4"/><S T="12" X="407" Y="-133" L="20" H="200" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3"/><S T="12" X="363" Y="-92" L="20" H="100" P="0,0,0.2,0.2,90,0,0,0" o="6a7495" c="3"/><S T="12" X="360" Y="-206" L="20" H="100" P="0,0,0.2,0.2,90,0,0,0" o="6a7495" c="3"/><S T="12" X="750" Y="50" L="80" H="80" P="0,0,0,0.2,0,0,0,0" o="1F1F1F" c="3" friction="-100,-20"/><S T="12" X="400" Y="-100" L="820" H="20" P="0,0,0,0,0,0,0,0" o="FF0000" N="" m=""/><S T="12" X="-60" Y="155" L="120" H="10" P="0,0,0.3,0.2,0,0,0,0" o="FFFFFF"/><S T="12" X="860" Y="155" L="120" H="10" P="0,0,0.3,0.2,0,0,0,0" o="FFFFFF"/><S T="12" X="-5" Y="158" L="10" H="10" P="0,0,0.3,0.2,0,0,0,0" o="FFFFFF"/><S T="12" X="805" Y="158" L="10" H="10" P="0,0,0.3,0.2,0,0,0,0" o="FFFFFF"/><S T="12" X="-115" Y="330" L="20" H="360" P="1,1e-9,20,0,0,1,0,0" o="FFFFFF"/><S T="12" X="-135" Y="330" L="20" H="360" P="0,0,20,0,0,0,0,0" o="FF0000" m=""/><S T="12" X="915" Y="330" L="20" H="360" P="1,1e-9,20,0,0,1,0,0" o="FFFFFF"/><S T="12" X="935" Y="330" L="20" H="360" P="1,1e-9,20,0,0,1,0,0" o="FF0000" m=""/><S T="9" X="-65" Y="470" L="110" H="20" P="0,0,0,0,0,0,0,0" m="" archAcc="-20"/><S T="9" X="865" Y="470" L="110" H="20" P="0,0,0,0,0,0,0,0" m="" archAcc="-20"/><S T="3" X="802" Y="155" L="10" H="15" P="0,0,0,11,0,0,0,0" c="3"/><S T="3" X="-2" Y="155" L="10" H="15" P="0,0,0,11,0,0,0,0" c="3"/><S T="12" X="400" Y="-5" L="810" H="10" P="0,0,0,0.5,0,0,0,0" o="FF0000" c="3" m=""/><S T="17" X="400" Y="430" L="1200" H="200" P="0,0,0.1,0.1,0,0,0,0" c="3" N=""/><S T="12" X="399" Y="98" L="800" H="10" P="0,0,0.3,0.2,0,0,0,0" o="FF0000" c="3" m=""/><S T="12" X="400" Y="335" L="30" H="10" P="0,0,0,0.2,0,0,0,0" o="FFFFFF" c="4" N=""/><S T="15" X="-60" Y="245" L="100" H="170" P="0,0,0,0,0,0,0,0" archAcc="-20" archCheeseMax="0" archMax="2"/><S T="15" X="860" Y="245" L="100" H="170" P="0,0,0,0,0,0,0,0" archAcc="-20" archCheeseMax="0" archMax="2"/><S T="12" X="400" Y="355" L="800" H="30" P="1,0,0,1,90,0,0,0" o="FF0000" c="2" N="" m=""/><S T="9" X="400" Y="345" L="800" H="30" P="0,0,0,0,0,0,0,0" m="" tint="0000ff"/><S T="12" X="-115" Y="330" L="20" H="360" P="1,1e-9,20,0,0,1,0,0" o="FFFFFF" m=""/><S T="12" X="-115" Y="330" L="20" H="360" P="1,1e-9,20,0,0,1,0,0" o="FFFFFF" m=""/><S T="12" X="-115" Y="330" L="20" H="360" P="1,1e-9,20,0,0,1,0,0" o="FFFFFF" m=""/><S T="12" X="-115" Y="330" L="20" H="360" P="1,1e-9,20,0,0,1,0,0" o="FFFFFF" m=""/><S T="12" X="915" Y="330" L="20" H="360" P="1,1e-9,20,0,0,1,0,0" o="FFFFFF" m=""/><S T="12" X="915" Y="330" L="20" H="360" P="1,1e-9,20,0,0,1,0,0" o="FFFFFF" m=""/><S T="12" X="915" Y="330" L="20" H="360" P="1,1e-9,20,0,0,1,0,0" o="FFFFFF" m=""/><S T="12" X="915" Y="330" L="20" H="360" P="1,1e-9,20,0,0,1,0,0" o="FFFFFF" m=""/><S T="12" X="935" Y="330" L="20" H="360" P="1,1e-9,20,0,0,1,0,0" o="FF0000" m=""/><S T="12" X="935" Y="330" L="20" H="360" P="1,1e-9,20,0,0,1,0,0" o="FF0000" m=""/><S T="12" X="935" Y="330" L="20" H="360" P="1,1e-9,20,0,0,1,0,0" o="FF0000" m=""/><S T="12" X="935" Y="330" L="20" H="360" P="1,1e-9,20,0,0,1,0,0" o="FF0000" m=""/></S><D><P X="400" Y="93" T="131" C="7f7f7f" P="0,0"/><P X="-82" Y="170" T="41" P="1,0"/><P X="-38" Y="171" T="41" P="0,1"/><P X="418" Y="93" T="43" P="0,0"/><P X="387" Y="234" T="45" P="0,0"/><P X="400" Y="332" T="134" P="0,0"/><P X="29" Y="327" T="47" P="0,0"/><P X="407" Y="328" T="47" P="0,0"/><P X="200" Y="330" T="134" P="0,0"/><P X="50" Y="330" T="134" P="0,0"/><P X="268" Y="328" T="47" P="0,0"/><P X="600" Y="327" T="42" P="0,0"/><P X="547" Y="328" T="47" P="0,0"/><P X="686" Y="328" T="47" P="0,0"/><P X="827" Y="328" T="47" P="0,0"/><P X="168" Y="328" T="47" P="0,0"/><P X="836" Y="331" T="98" C="6f4a30,ffffff" P="1,0"/><P X="-77" Y="332" T="118" P="1,0"/><P X="50" Y="331" T="0" P="0,0"/><P X="750" Y="330" T="0" P="0,0"/><P X="-28" Y="150" T="92" C="75ff00,849319,ff0006,ff8a00" P="1,1"/><P X="828" Y="150" T="92" C="bb00ff,189390,3c23ee,000000" P="1,0"/><DS X="365" Y="-141"/></D><O/><L><JP M1="38" AXIS="-1,0" MV="Infinity,0.1"/><JP M1="38" AXIS="0,1"/><JR M1="24"/><JR M1="40"/><JR M1="41"/><JR M1="42"/><JR M1="43"/><JR M1="26"/><JR M1="44"/><JR M1="45"/><JR M1="46"/><JR M1="47"/><JR M1="27"/><JR M1="48"/><JR M1="49"/><JR M1="50"/><JR M1="51"/></L></Z></C>',
+    [1] = '',
     [2] = '<C><P L="1200" F="8" G="0,4" MEDATA=";;;;-0;0::0,0:1-" playerForce="1.03"/><Z><S><S T="12" X="-5" Y="255" L="10" H="200" P="0,0,1,0.2,0,0,0,0" o="afafaf" c="3"/><S T="12" X="1205" Y="255" L="10" H="200" P="0,0,1,0.2,0,0,0,0" o="afafaf" c="3"/><S T="12" X="-5" Y="425" L="10" H="170" P="0,0,9,0,0,0,0,0" o="ff0000" c="3" m=""/><S T="12" X="1205" Y="425" L="10" H="170" P="0,0,9,0,0,0,0,0" o="ff0000" c="3" m=""/><S T="12" X="-10" Y="10" L="20" H="300" P="0,0,0,0,0,0,0,0" o="ff0000" m=""/><S T="12" X="1210" Y="10" L="20" H="300" P="0,0,0,0,0,0,0,0" o="ff0000" m=""/><S T="12" X="250" Y="210" L="10" H="270" P="0,0,0.3,0.2,0,0,0,0" o="1c1c1c" c="4"/><S T="12" X="250" Y="50" L="90" H="90" P="0,0,0,0,0,0,0,0" o="324650" c="4"/><S T="12" X="950" Y="210" L="10" H="270" P="0,0,0.3,0.2,0,0,0,0" o="1c1c1c" c="4"/><S T="12" X="600" Y="-5" L="1200" H="10" P="0,0,0,0.2,0,0,0,0" o="FF0000" c="3" N="" m=""/><S T="12" X="600" Y="-140" L="1240" H="20" P="0,0,0,0,0,0,0,0" o="FF0000" c="2" N="" m=""/><S T="12" X="250" Y="50" L="80" H="80" P="0,0,0,0.2,0,0,0,0" o="1f1f1f" c="3" friction="-100,-20"/><S T="12" X="316" Y="-263" L="20" H="200" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3"/><S T="12" X="950" Y="50" L="90" H="90" P="0,0,0,0,0,0,0,0" o="324650" c="4"/><S T="12" X="407" Y="-267" L="20" H="200" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3"/><S T="12" X="363" Y="-232" L="20" H="100" P="0,0,0.2,0.2,90,0,0,0" o="6a7495" c="3"/><S T="12" X="360" Y="-340" L="20" H="100" P="0,0,0.2,0.2,90,0,0,0" o="6a7495" c="3"/><S T="12" X="950" Y="50" L="80" H="80" P="0,0,0,0.2,0,0,0,0" o="1F1F1F" c="3" friction="-100,-20"/><S T="12" X="-60" Y="155" L="120" H="10" P="0,0,10,0.2,0,0,0,0" o="FFFFFF"/><S T="12" X="1260" Y="155" L="120" H="10" P="0,0,10,0.2,0,0,0,0" o="FFFFFF"/><S T="12" X="-5" Y="158" L="10" H="10" P="0,0,0.3,0.2,0,0,0,0" o="FFFFFF"/><S T="12" X="1200" Y="158" L="10" H="10" P="0,0,0.3,0.2,0,0,0,0" o="FFFFFF"/><S T="12" X="-115" Y="330" L="20" H="360" P="0,0,20,0.2,0,0,0,0" o="FFFFFF" friction="-100,-20"/><S T="12" X="-135" Y="330" L="20" H="360" P="0,0,0,0,0,0,0,0" o="FF0000" c="2" m=""/><S T="12" X="1315" Y="330" L="20" H="360" P="0,0,20,0.2,0,0,0,0" o="FFFFFF" friction="-100,-20"/><S T="12" X="1335" Y="330" L="20" H="360" P="0,0,0,0,0,0,0,0" o="FF0000" c="2" m=""/><S T="12" X="-60" Y="505" L="100" H="10" P="0,0,0.3,0.2,0,0,0,0" o="FF0000" m=""/><S T="12" X="1260" Y="505" L="100" H="10" P="0,0,0.3,0.2,0,0,0,0" o="FF0000" m=""/><S T="9" X="-60" Y="450" L="100" H="20" P="0,0,0,0,0,0,0,0" m="" archAcc="-20"/><S T="9" X="1260" Y="450" L="100" H="20" P="0,0,0,0,0,0,0,0" m="" archAcc="-20"/><S T="3" X="1198" Y="155" L="10" H="15" P="0,0,0,20,0,0,0,0" c="3"/><S T="12" X="600" Y="430" L="2000" H="200" P="0,0,0.2,0.1,0,0,0,0" o="6A7495" c="3" N=""/><S T="17" X="600" Y="430" L="1600" H="200" P="0,0,0.2,0.1,0,0,0,0" c="3" N=""/><S T="3" X="-2" Y="155" L="10" H="15" P="0,0,0,20,0,0,0,0" c="3"/><S T="12" X="600" Y="98" L="1200" H="10" P="0,0,0.3,0.2,0,0,0,0" o="FF0000" c="3" m=""/><S T="12" X="600" Y="335" L="30" H="10" P="0,0,0,0.2,0,0,0,0" o="FFFFFF" c="4" N=""/><S T="15" X="-60" Y="245" L="100" H="170" P="0,0,0,0,0,0,0,0" archAcc="-20" archCheeseMax="0" archMax="2"/><S T="15" X="1260" Y="245" L="100" H="170" P="0,0,0,0,0,0,0,0" archAcc="-20" archCheeseMax="0" archMax="2"/><S T="12" X="600" Y="355" L="1200" H="30" P="1,0,0,1,90,0,0,0" o="FF0000" c="2" N="" m=""/><S T="9" X="600" Y="345" L="1200" H="30" P="0,0,0,0,0,0,0,0" m="" tint="0000ff"/></S><D><P X="600" Y="93" T="131" C="7f7f7f" P="0,0"/><P X="-82" Y="170" T="41" P="1,0"/><P X="-38" Y="171" T="41" P="0,1"/><P X="618" Y="93" T="43" P="0,0"/><P X="387" Y="234" T="45" P="0,0"/><P X="813" Y="234" T="45" P="0,1"/><P X="400" Y="335" T="134" P="0,0"/><P X="1110" Y="332" T="134" P="0,0"/><P X="955" Y="332" T="134" P="0,0"/><P X="60" Y="330" T="134" P="0,0"/><P X="800" Y="332" T="134" P="0,0"/><P X="29" Y="327" T="47" P="0,0"/><P X="407" Y="328" T="47" P="0,0"/><P X="235" Y="335" T="134" P="0,0"/><P X="268" Y="328" T="47" P="0,0"/><P X="600" Y="327" T="42" P="0,0"/><P X="547" Y="328" T="47" P="0,0"/><P X="687" Y="328" T="47" P="0,0"/><P X="827" Y="328" T="47" P="0,0"/><P X="967" Y="328" T="47" P="0,0"/><P X="1106" Y="328" T="47" P="0,0"/><P X="1247" Y="328" T="47" P="0,0"/><P X="168" Y="328" T="47" P="0,0"/><P X="1231" Y="331" T="98" C="6f4a30,ffffff" P="1,0"/><P X="-77" Y="332" T="118" P="1,0"/><P X="250" Y="330" T="0" P="0,0"/><P X="950" Y="331" T="0" P="0,0"/><P X="-28" Y="150" T="92" C="75ff00,849319,ff0006,ff8a00" P="1,1"/><P X="1228" Y="150" T="92" C="bb00ff,189390,3c23ee,FF0000" P="1,0"/><DS X="365" Y="-275"/></D><O/><L><JP M1="38" AXIS="-1,0" MV="Infinity,0.1"/><JP M1="38" AXIS="0,1"/></L></Z></C>',
     [3] = 'Revamped soccer',
     [4] = 'Tanarchosl#4785 and Tanatosl#0000',
@@ -788,7 +788,7 @@ local customMaps = {
   --   [4] = 'author name',
   --   [6] = '19539e5756b.png'
   -- },
-  }
+}
 
 local customMapsFourTeamsMode = {
   [1] = {
@@ -808,11 +808,11 @@ local customMapsFourTeamsMode = {
     [6] = '1955401d276.png'
   },
   [3] = {
-    [1] = '<C><P L="1600" F="3" G="0,4" MEDATA=";;;;-0;0:::1-"/><Z><S><S T="7" X="805" Y="400" L="1610" H="100" P="0,0,0.1,0.2,0,0,0,0" c="3" N=""/><S T="9" X="800" Y="430" L="1600" H="10" P="0,0,0,0,0,0,0,0"/><S T="1" X="400" Y="350" L="10" H="200" P="0,0,0,0.2,0,0,0,0"/><S T="12" X="400" Y="455" L="800" H="10" P="0,0,0.3,0.2,0,0,0,0" o="6a7495"/><S T="12" X="-10" Y="200" L="20" H="2000" P="0,0,0.2,0.2,0,0,0,0" o="FF0000" m=""/><S T="12" X="1610" Y="200" L="20" H="2000" P="0,0,0.2,0.2,0,0,0,0" o="FF0000" m=""/><S T="13" X="100" Y="360" L="10" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="3"/><S T="13" X="600" Y="360" L="10" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="3"/><S T="12" X="250" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="1" X="790" Y="-5" L="1620" H="10" P="0,0,0,0.2,0,0,0,0" c="3"/><S T="12" X="790" Y="95" L="1620" H="10" P="0,0,0.3,0.2,0,0,0,0" o="FFF200" c="3" m=""/><S T="12" X="305" Y="50" L="10" H="100" P="0,0,0.3,0.2,0,0,0,0" o="FFF200" c="3" m=""/><S T="12" X="1295" Y="50" L="10" H="100" P="0,0,0.3,0.2,0,0,0,0" o="FFF200" c="3" m=""/><S T="12" X="790" Y="225" L="1620" H="10" P="0,0,0.3,0.2,0,0,0,0" o="FFF200" c="3" m=""/><S T="12" X="400" Y="239" L="10" H="30" P="0,0,0,0,0,0,0,0" o="FFF200" c="3" m=""/><S T="12" X="400" Y="791" L="800" H="10" P="0,0,0.3,0.2,90,0,0,0" o="FF0000" m=""/><S T="12" X="316" Y="-129" L="20" H="200" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3"/><S T="12" X="407" Y="-133" L="20" H="200" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3"/><S T="12" X="363" Y="-92" L="20" H="100" P="0,0,0.2,0.2,90,0,0,0" o="6a7495" c="3"/><S T="12" X="360" Y="-206" L="20" H="100" P="0,0,0.2,0.2,90,0,0,0" o="6a7495" c="3"/><S T="12" X="800" Y="460" L="2600" H="120" P="0,0,0.3,0.2,0,0,0,0" o="6a7495" c="4" N=""/><S T="12" X="1350" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="12" X="800" Y="-800" L="1640" H="20" P="0,0,0,0.2,0,0,0,0" o="FF0000" m=""/><S T="12" X="800" Y="1190" L="1640" H="20" P="0,0,0,0.2,0,0,0,0" o="FF0000" m=""/><S T="1" X="800" Y="350" L="10" H="200" P="0,0,0,0.2,0,0,0,0"/><S T="12" X="800" Y="790" L="800" H="10" P="0,0,0.3,0.2,90,0,0,0" o="FF0000" m=""/><S T="12" X="800" Y="239" L="10" H="30" P="0,0,0,0,0,0,0,0" o="FFF200" c="3" m=""/><S T="13" X="1000" Y="360" L="10" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="3"/><S T="1" X="1200" Y="350" L="10" H="200" P="0,0,0,0.2,0,0,0,0"/><S T="12" X="1200" Y="239" L="10" H="30" P="0,0,0,0,0,0,0,0" o="FFF200" c="3" m=""/><S T="12" X="1200" Y="790" L="800" H="10" P="0,0,0.3,0.2,90,0,0,0" o="FF0000" m=""/><S T="12" X="600" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="12" X="1000" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="13" X="1500" Y="360" L="10" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="3"/><S T="13" X="400" Y="140" L="15" P="0,0,0.3,0.2,0,0,0,0" o="324650"/><S T="13" X="50" Y="140" L="15" P="0,0,0.3,0.2,0,0,0,0" o="324650"/><S T="13" X="800" Y="140" L="15" P="0,0,0.3,0.2,0,0,0,0" o="324650"/><S T="13" X="1200" Y="140" L="15" P="0,0,0.3,0.2,0,0,0,0" o="324650"/><S T="13" X="1550" Y="137" L="15" P="0,0,0.3,0.2,0,0,0,0" o="324650"/></S><D><P X="600" Y="363" T="10" P="1,0"/><P X="100" Y="363" T="10" P="1,0"/><P X="1000" Y="363" T="10" P="1,0"/><P X="1500" Y="363" T="10" P="1,0"/><DS X="365" Y="-141"/></D><O/><L/></Z></C>',
+    [1] = '<C><P L="1600" F="3" G="0,4" MEDATA=";;;;-0;0:::1-"/><Z><S><S T="7" X="800" Y="400" L="1600" H="100" P="0,0,0.1,0.2,0,0,0,0" c="3" N=""/><S T="9" X="800" Y="430" L="1600" H="10" P="0,0,0,0,0,0,0,0"/><S T="1" X="400" Y="350" L="10" H="200" P="0,0,0,0.2,0,0,0,0"/><S T="12" X="400" Y="455" L="800" H="10" P="0,0,0.3,0.2,0,0,0,0" o="6a7495"/><S T="12" X="-10" Y="200" L="20" H="2000" P="0,0,0.2,0.2,0,0,0,0" o="FF0000" m=""/><S T="12" X="1610" Y="200" L="20" H="2000" P="0,0,0.2,0.2,0,0,0,0" o="FF0000" m=""/><S T="13" X="100" Y="360" L="10" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="3"/><S T="13" X="600" Y="360" L="10" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="3"/><S T="12" X="250" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="1" X="790" Y="-5" L="1620" H="10" P="0,0,0,0.2,0,0,0,0" c="3"/><S T="12" X="790" Y="95" L="1620" H="10" P="0,0,0.3,0.2,0,0,0,0" o="FFF200" c="3" m=""/><S T="12" X="305" Y="50" L="10" H="100" P="0,0,0.3,0.2,0,0,0,0" o="FFF200" c="3" m=""/><S T="12" X="1295" Y="50" L="10" H="100" P="0,0,0.3,0.2,0,0,0,0" o="FFF200" c="3" m=""/><S T="12" X="790" Y="225" L="1620" H="10" P="0,0,0.3,0.2,0,0,0,0" o="FFF200" c="3" m=""/><S T="12" X="400" Y="239" L="10" H="30" P="0,0,0,0,0,0,0,0" o="FFF200" c="3" m=""/><S T="12" X="400" Y="791" L="800" H="10" P="0,0,0.3,0.2,90,0,0,0" o="FF0000" m=""/><S T="12" X="316" Y="-129" L="20" H="200" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3"/><S T="12" X="407" Y="-133" L="20" H="200" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3"/><S T="12" X="363" Y="-92" L="20" H="100" P="0,0,0.2,0.2,90,0,0,0" o="6a7495" c="3"/><S T="12" X="360" Y="-206" L="20" H="100" P="0,0,0.2,0.2,90,0,0,0" o="6a7495" c="3"/><S T="12" X="800" Y="460" L="2600" H="120" P="0,0,0.3,0.2,0,0,0,0" o="6a7495" c="4" N=""/><S T="12" X="1350" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="12" X="800" Y="-800" L="1640" H="20" P="0,0,0,0.2,0,0,0,0" o="FF0000" m=""/><S T="12" X="800" Y="1190" L="1640" H="20" P="0,0,0,0.2,0,0,0,0" o="FF0000" m=""/><S T="1" X="800" Y="350" L="10" H="200" P="0,0,0,0.2,0,0,0,0"/><S T="12" X="800" Y="790" L="800" H="10" P="0,0,0.3,0.2,90,0,0,0" o="FF0000" m=""/><S T="12" X="800" Y="239" L="10" H="30" P="0,0,0,0,0,0,0,0" o="FFF200" c="3" m=""/><S T="13" X="1000" Y="360" L="10" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="3"/><S T="1" X="1200" Y="350" L="10" H="200" P="0,0,0,0.2,0,0,0,0"/><S T="12" X="1200" Y="239" L="10" H="30" P="0,0,0,0,0,0,0,0" o="FFF200" c="3" m=""/><S T="12" X="1200" Y="790" L="800" H="10" P="0,0,0.3,0.2,90,0,0,0" o="FF0000" m=""/><S T="12" X="600" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="12" X="1000" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="13" X="1500" Y="360" L="10" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="3"/><S T="13" X="400" Y="140" L="15" P="0,0,0.3,0.2,0,0,0,0" o="324650"/><S T="13" X="50" Y="140" L="15" P="0,0,0.3,0.2,0,0,0,0" o="324650"/><S T="13" X="800" Y="140" L="15" P="0,0,0.3,0.2,0,0,0,0" o="324650"/><S T="13" X="1200" Y="140" L="15" P="0,0,0.3,0.2,0,0,0,0" o="324650"/><S T="13" X="1550" Y="137" L="15" P="0,0,0.3,0.2,0,0,0,0" o="324650"/></S><D><P X="600" Y="363" T="10" P="1,0"/><P X="100" Y="363" T="10" P="1,0"/><P X="1000" Y="363" T="10" P="1,0"/><P X="1500" Y="363" T="10" P="1,0"/><DS X="365" Y="-141"/></D><O/><L/></Z></C>',
     [2] = '<C><P L="1200" F="3" G="0,4" MEDATA=";;;;-0;0:::1-"/><Z><S><S T="7" X="600" Y="400" L="1200" H="100" P="0,0,0.1,0.2,0,0,0,0" c="3" N=""/><S T="9" X="600" Y="430" L="1200" H="10" P="0,0,0,0,0,0,0,0"/><S T="1" X="400" Y="350" L="10" H="200" P="0,0,0,0.2,0,0,0,0"/><S T="12" X="400" Y="455" L="800" H="10" P="0,0,0.3,0.2,0,0,0,0" o="6a7495"/><S T="12" X="-10" Y="200" L="20" H="2000" P="0,0,0.2,0.2,0,0,0,0" o="FF0000" m=""/><S T="12" X="1210" Y="200" L="20" H="2000" P="0,0,0.2,0.2,0,0,0,0" o="FF0000" m=""/><S T="13" X="100" Y="360" L="10" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="3"/><S T="13" X="600" Y="360" L="10" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="3"/><S T="12" X="250" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="1" X="600" Y="-5" L="1200" H="10" P="0,0,0,0.2,0,0,0,0" c="3"/><S T="12" X="600" Y="95" L="1200" H="10" P="0,0,0.3,0.2,0,0,0,0" o="FFF200" c="3" m=""/><S T="12" X="305" Y="50" L="10" H="100" P="0,0,0.3,0.2,0,0,0,0" o="FFF200" c="3" m=""/><S T="12" X="945" Y="50" L="10" H="100" P="0,0,0.3,0.2,0,0,0,0" o="FFF200" c="3" m=""/><S T="12" X="600" Y="225" L="1240" H="10" P="0,0,0.3,0.2,0,0,0,0" o="FFF200" c="3" m=""/><S T="12" X="400" Y="239" L="10" H="30" P="0,0,0,0,0,0,0,0" o="FFF200" c="3" m=""/><S T="12" X="400" Y="791" L="800" H="10" P="0,0,0.3,0.2,90,0,0,0" o="FF0000" m=""/><S T="12" X="316" Y="-129" L="20" H="200" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3"/><S T="12" X="407" Y="-133" L="20" H="200" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3"/><S T="12" X="363" Y="-92" L="20" H="100" P="0,0,0.2,0.2,90,0,0,0" o="6a7495" c="3"/><S T="12" X="360" Y="-206" L="20" H="100" P="0,0,0.2,0.2,90,0,0,0" o="6a7495" c="3"/><S T="12" X="600" Y="460" L="2000" H="120" P="0,0,0.3,0.2,0,0,0,0" o="6a7495" c="4" N=""/><S T="12" X="600" Y="-800" L="1240" H="20" P="0,0,0,0.2,0,0,0,0" o="FF0000" m=""/><S T="12" X="600" Y="1190" L="1240" H="20" P="0,0,0,0.2,0,0,0,0" o="FF0000" m=""/><S T="1" X="800" Y="350" L="10" H="200" P="0,0,0,0.2,0,0,0,0"/><S T="12" X="800" Y="790" L="800" H="10" P="0,0,0.3,0.2,90,0,0,0" o="FF0000" m=""/><S T="12" X="800" Y="239" L="10" H="30" P="0,0,0,0,0,0,0,0" o="FFF200" c="3" m=""/><S T="13" X="1100" Y="360" L="10" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="3"/><S T="12" X="600" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="12" X="1000" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="13" X="400" Y="140" L="15" P="0,0,0.3,0.2,0,0,0,0" o="324650"/><S T="13" X="50" Y="140" L="15" P="0,0,0.3,0.2,0,0,0,0" o="324650"/><S T="13" X="800" Y="140" L="15" P="0,0,0.3,0.2,0,0,0,0" o="324650"/><S T="13" X="1150" Y="137" L="15" P="0,0,0.3,0.2,0,0,0,0" o="324650"/></S><D><P X="600" Y="363" T="10" P="1,0"/><P X="100" Y="363" T="10" P="1,0"/><P X="1100" Y="363" T="10" P="1,0"/><DS X="365" Y="-141"/></D><O/><L/></Z></C>',
     [3] = 'Circle grounds on the sky',
     [4] = 'Refletz#6472',
-    [5] = '<C><P F="0" G="0,4" MEDATA=";;;;-0;0:::1-" playerForce="1.02"/><Z><S><S T="7" X="400" Y="400" L="800" H="100" P="0,0,0.1,0.2,0,0,0,0" c="3" N=""/><S T="1" X="400" Y="350" L="10" H="200" P="0,0,0,0.2,0,0,0,0"/><S T="13" X="100" Y="360" L="10" P="0,0,0,0,0,0,0,0" o="324650" c="4"/><S T="13" X="700" Y="360" L="10" P="0,0,0,0,0,0,0,0" o="324650" c="4"/><S T="12" X="50" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="1" X="400" Y="-5" L="800" H="10" P="0,0,0,0.2,0,0,0,0" c="3" N=""/><S T="12" X="400" Y="95" L="800" H="10" P="0,0,0.3,0.2,0,0,0,0" o="FFF200" c="3" N="" m=""/><S T="12" X="105" Y="50" L="10" H="100" P="0,0,0,0,0,0,0,0" o="FFF200" c="3" m=""/><S T="12" X="695" Y="50" L="10" H="100" P="0,0,0,0,0,0,0,0" o="FFF200" c="3" N="" m=""/><S T="12" X="400" Y="225" L="840" H="10" P="0,0,0.3,0.2,0,0,0,0" o="FFF200" c="3" m=""/><S T="12" X="400" Y="240" L="10" H="40" P="0,0,0,0,0,0,0,0" o="FFF200" c="3" m=""/><S T="12" X="316" Y="-129" L="20" H="200" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3"/><S T="12" X="407" Y="-133" L="20" H="200" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3"/><S T="12" X="363" Y="-92" L="20" H="100" P="0,0,0.2,0.2,90,0,0,0" o="6a7495" c="3"/><S T="12" X="360" Y="-206" L="20" H="100" P="0,0,0.2,0.2,90,0,0,0" o="6a7495" c="3"/><S T="12" X="400" Y="460" L="1600" H="120" P="0,0,0.3,0.2,0,0,0,0" o="6a7495" c="4" N=""/><S T="12" X="750" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="9" X="380" Y="190" L="15" H="100" P="0,0,0,0,0,0,0,0"/><S T="9" X="420" Y="190" L="15" H="100" P="0,0,0,0,0,0,0,0"/><S T="9" X="460" Y="190" L="15" H="100" P="0,0,0,0,0,0,0,0"/><S T="9" X="340" Y="190" L="15" H="100" P="0,0,0,0,0,0,0,0"/><S T="12" X="400" Y="-800" L="840" H="20" P="0,0,0,0.2,0,0,0,0" o="FF0000" N="" m=""/><S T="12" X="400" Y="790" L="10" H="800" P="0,0,0.3,0.2,0,0,0,0" o="FF0000" N="" m=""/><S T="12" X="400" Y="1190" L="820" H="20" P="0,0,0.3,0.2,0,0,0,0" o="FF0000" N="" m=""/><S T="12" X="-10" Y="200" L="20" H="2000" P="0,0,0.2,0.2,0,0,0,0" o="FF0000" N="" m=""/><S T="12" X="810" Y="200" L="20" H="2000" P="0,0,0.2,0.2,0,0,0,0" o="FF0000" N="" m=""/></S><D><P X="700" Y="365" T="10" P="1,0"/><P X="100" Y="365" T="10" P="1,0"/><DS X="360" Y="-151"/></D><O/><L/></Z></C>',
+    [5] = '<C><P F="0" G="0,4" MEDATA=";;;;-0;0:::1-"/><Z><S><S T="7" X="400" Y="400" L="800" H="100" P="0,0,0.1,0.2,0,0,0,0" c="3" N=""/><S T="1" X="400" Y="350" L="10" H="200" P="0,0,0,0.2,0,0,0,0"/><S T="13" X="100" Y="360" L="10" P="0,0,0,0,0,0,0,0" o="324650" c="4"/><S T="13" X="700" Y="360" L="10" P="0,0,0,0,0,0,0,0" o="324650" c="4"/><S T="12" X="50" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="1" X="400" Y="-5" L="800" H="10" P="0,0,0,0.2,0,0,0,0" c="3" N=""/><S T="12" X="400" Y="95" L="800" H="10" P="0,0,0.3,0.2,0,0,0,0" o="FFF200" c="3" N="" m=""/><S T="12" X="105" Y="50" L="10" H="100" P="0,0,0,0,0,0,0,0" o="FFF200" c="3" m=""/><S T="12" X="695" Y="50" L="10" H="100" P="0,0,0,0,0,0,0,0" o="FFF200" c="3" N="" m=""/><S T="12" X="400" Y="225" L="840" H="10" P="0,0,0.3,0.2,0,0,0,0" o="FFF200" c="3" m=""/><S T="12" X="400" Y="239" L="10" H="30" P="0,0,0,0,0,0,0,0" o="FFF200" c="3" m=""/><S T="12" X="316" Y="-129" L="20" H="200" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3"/><S T="12" X="407" Y="-133" L="20" H="200" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3"/><S T="12" X="363" Y="-92" L="20" H="100" P="0,0,0.2,0.2,90,0,0,0" o="6a7495" c="3"/><S T="12" X="360" Y="-206" L="20" H="100" P="0,0,0.2,0.2,90,0,0,0" o="6a7495" c="3"/><S T="12" X="400" Y="460" L="1600" H="120" P="0,0,0.3,0.2,0,0,0,0" o="6a7495" c="4" N=""/><S T="12" X="750" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="13" X="100" Y="140" L="15" P="0,0,0.3,0.2,0,0,0,0" o="324650"/><S T="13" X="150" Y="180" L="15" P="0,0,0.3,0.2,0,0,0,0" o="324650"/><S T="13" X="650" Y="180" L="15" P="0,0,0.3,0.2,0,0,0,0" o="324650"/><S T="13" X="700" Y="140" L="15" P="0,0,0.3,0.2,0,0,0,0" o="324650"/><S T="12" X="400" Y="-800" L="840" H="20" P="0,0,0,0.2,0,0,0,0" o="FF0000" N="" m=""/><S T="12" X="400" Y="1190" L="840" H="20" P="0,0,0,0.2,0,0,0,0" o="FF0000" N="" m=""/><S T="12" X="400" Y="791" L="800" H="10" P="0,0,0.3,0.2,90,0,0,0" o="FF0000" N="" m=""/><S T="12" X="-10" Y="200" L="20" H="2000" P="0,0,0.2,0.2,0,0,0,0" o="FF0000" N="" m=""/><S T="12" X="810" Y="200" L="20" H="2000" P="0,0,0.2,0.2,0,0,0,0" o="FF0000" N="" m=""/></S><D><P X="700" Y="365" T="10" P="1,0"/><P X="100" Y="365" T="10" P="1,0"/><DS X="360" Y="-151"/></D><O/><L/></Z></C>',
     [6] = '1955400e807.png'
   },
   [4] = {
@@ -1039,8 +1039,7 @@ local customMapsFourTeamsMode = {
     [5] = '<C><P F="7" G="0,4" MEDATA=";;;;-0;0:::1-"/><Z><S><S T="12" X="-10" Y="200" L="20" H="2000" P="0,0,0.2,0.2,0,0,0,0" o="FF0000" N="" m=""/><S T="1" X="400" Y="350" L="10" H="200" P="0,0,0,0.2,0,0,0,0" N=""/><S T="12" X="810" Y="200" L="20" H="2000" P="0,0,0.2,0.2,0,0,0,0" o="FF0000" N="" m=""/><S T="12" X="400" Y="1190" L="830" H="20" P="0,0,0,0.2,0,0,0,0" o="FF0000" N="" m=""/><S T="12" X="50" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="10" X="400" Y="-5" L="800" H="10" P="0,0,0,0.2,0,0,0,0" c="3" N=""/><S T="12" X="400" Y="95" L="800" H="10" P="0,0,0.3,0.2,0,0,0,0" o="FFF200" c="3" N="" m=""/><S T="12" X="105" Y="50" L="10" H="100" P="0,0,0,0,0,0,0,0" o="FFF200" c="3" m=""/><S T="12" X="695" Y="50" L="10" H="100" P="0,0,0,0,0,0,0,0" o="FFF200" c="3" N="" m=""/><S T="12" X="400" Y="175" L="10" H="170" P="0,0,0.2,0,0,0,0,0" o="FFF200" c="3" m=""/><S T="12" X="400" Y="790" L="800" H="10" P="0,0,0.3,0.2,90,0,0,0" o="FF0000" m=""/><S T="12" X="316" Y="-129" L="20" H="200" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3"/><S T="12" X="407" Y="-133" L="20" H="200" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3"/><S T="12" X="363" Y="-92" L="20" H="100" P="0,0,0.2,0.2,90,0,0,0" o="6a7495" c="3"/><S T="12" X="360" Y="-206" L="20" H="100" P="0,0,0.2,0.2,90,0,0,0" o="6a7495" c="3"/><S T="12" X="400" Y="460" L="1600" H="120" P="0,0,0.3,0.2,0,0,0,0" o="6a7495" c="4" N=""/><S T="12" X="750" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="12" X="400" Y="-790" L="830" H="20" P="0,0,0,0.2,0,0,0,0" o="FF0000" N="" m=""/><S T="10" X="400" Y="265" L="230" H="10" P="0,0,0.1,0.2,0,0,0,0" c="3"/><S T="10" X="400" Y="155" L="100" H="10" P="0,0,0.1,0.2,0,0,0,0" c="3"/><S T="10" X="320" Y="214" L="80" H="10" P="0,0,0.1,0.2,0,0,0,0" c="3"/><S T="10" X="480" Y="214" L="80" H="10" P="0,0,0.1,0.2,0,0,0,0" c="3"/><S T="10" X="355" Y="185" L="10" H="65" P="0,0,0.1,0.2,0,0,0,0" c="3"/><S T="10" X="445" Y="185" L="10" H="65" P="0,0,0.1,0.2,0,0,0,0" c="3"/><S T="10" X="50" Y="210" L="10" H="70" P="0,0,0.1,0.2,0,0,0,0" c="3"/><S T="10" X="750" Y="210" L="10" H="70" P="0,0,0.1,0.2,0,0,0,0" c="3"/><S T="10" X="25" Y="180" L="50" H="10" P="0,0,0.1,0.2,0,0,0,0" c="3"/><S T="10" X="775" Y="180" L="50" H="10" P="0,0,0.1,0.2,0,0,0,0" c="3"/><S T="10" X="285" Y="240" L="10" H="60" P="0,0,0.1,0.2,0,0,0,0" c="3"/><S T="10" X="515" Y="240" L="10" H="60" P="0,0,0.1,0.2,0,0,0,0" c="3"/><S T="10" X="190" Y="380" L="140" H="10" P="0,0,0.1,0.2,0,0,0,0" c="3"/><S T="10" X="610" Y="380" L="140" H="10" P="0,0,0.1,0.2,0,0,0,0" c="3"/><S T="10" X="190" Y="325" L="140" H="10" P="0,0,0.1,0.2,0,0,0,0" c="3"/><S T="10" X="610" Y="325" L="140" H="10" P="0,0,0.1,0.2,0,0,0,0" c="3"/><S T="10" X="255" Y="355" L="10" H="60" P="0,0,0.1,0.2,0,0,0,0" c="3"/><S T="10" X="545" Y="355" L="10" H="60" P="0,0,0.1,0.2,0,0,0,0" c="3"/><S T="10" X="125" Y="355" L="10" H="60" P="0,0,0.1,0.2,0,0,0,0" c="3"/><S T="10" X="675" Y="355" L="10" H="60" P="0,0,0.1,0.2,0,0,0,0" c="3"/><S T="10" X="55" Y="300" L="110" H="10" P="0,0,0.1,0.2,0,0,0,0" c="3"/><S T="10" X="745" Y="300" L="110" H="10" P="0,0,0.1,0.2,0,0,0,0" c="3"/><S T="10" X="75" Y="240" L="60" H="10" P="0,0,0.1,0.2,0,0,0,0" c="3"/><S T="10" X="725" Y="240" L="60" H="10" P="0,0,0.1,0.2,0,0,0,0" c="3"/><S T="10" X="105" Y="270" L="10" H="70" P="0,0,0.1,0.2,0,0,0,0" c="3"/><S T="10" X="695" Y="270" L="10" H="70" P="0,0,0.1,0.2,0,0,0,0" c="3"/></S><D><T X="335" Y="251" spawn="2"/><T X="465" Y="251" spawn="2"/><T X="190" Y="366" spawn="1"/><T X="610" Y="366" spawn="1"/><T X="41" Y="281" spawn="3"/><T X="759" Y="281" spawn="3"/><DS X="360" Y="-151"/></D><O/><L/></Z></C>',
     [6] = '196599446e1.png'
   },
-  [32] =
-  {
+  [32] = {
     [1] = '<C><P L="1600" G="0,4" MEDATA="11,1;;;;-0;0:::1-"/><Z><S><S T="12" X="800" Y="515" L="2400" H="300" P="0,0,0.1,0.2,0,0,0,0" o="6A7495" c="4" N=""/><S T="12" X="400" Y="50" L="10" H="100" P="0,0,0,0,0,0,0,0" o="272727" c="4" friction="-100,-20"/><S T="12" X="800" Y="-5" L="1600" H="10" P="0,0,0.3,0.2,0,0,0,0" o="FFF200" c="3" m=""/><S T="12" X="800" Y="185" L="1600" H="450" P="0,0,0,0,0,0,0,0" o="121212" c="4"/><S T="12" X="800" Y="95" L="1600" H="10" P="0,0,0.3,0.2,0,0,0,0" o="FFFFFF" c="3" m=""/><S T="12" X="800" Y="-800" L="1640" H="20" P="0,0,0,0.2,0,0,0,0" o="FF0000" m=""/><S T="12" X="800" Y="1190" L="1640" H="20" P="0,0,0,0.2,0,0,0,0" o="FF0000" m=""/><S T="12" X="400" Y="180" L="10" H="170" P="0,0,0,0,0,0,0,0" o="272727" c="3" friction="-100,-20"/><S T="12" X="800" Y="180" L="10" H="170" P="0,0,0,0,0,0,0,0" o="272727" c="3" friction="-100,-20"/><S T="12" X="1200" Y="180" L="10" H="170" P="0,0,0,0,0,0,0,0" o="272727" c="3" friction="-100,-20"/><S T="12" X="800" Y="50" L="10" H="100" P="0,0,0,0,0,0,0,0" o="272727" c="4" friction="-100,-20"/><S T="12" X="400" Y="370" L="10" H="200" P="0,0,0,0.2,0,0,0,0" o="FFFFFF" N=""/><S T="12" X="800" Y="370" L="10" H="200" P="0,0,0,0.2,0,0,0,0" o="FFFFFF" N=""/><S T="12" X="800" Y="-50" L="1600" H="100" P="0,0,0,0.2,0,0,0,0" o="0d0906" c="3"/><S T="12" X="1200" Y="370" L="10" H="200" P="0,0,0,0.2,0,0,0,0" o="FFFFFF" N=""/><S T="12" X="400" Y="795" L="800" H="10" P="0,0,0.3,0.2,90,0,0,0" o="FF0000" c="3" m=""/><S T="12" X="800" Y="795" L="800" H="10" P="0,0,0.3,0.2,90,0,0,0" o="FF0000" c="3" m=""/><S T="12" X="1200" Y="795" L="800" H="10" P="0,0,0.3,0.2,90,0,0,0" o="FF0000" c="3" m=""/><S T="12" X="-10" Y="200" L="20" H="2000" P="0,0,0.2,0.2,0,0,0,0" o="FF0000" m=""/><S T="12" X="1610" Y="200" L="20" H="2000" P="0,0,0.2,0.2,0,0,0,0" o="FF0000" m=""/><S T="12" X="800" Y="430" L="1600" H="130" P="0,0,0.1,0.2,0,0,0,0" o="0D0906" c="3" N=""/><S T="12" X="318" Y="-204" L="20" H="200" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3"/><S T="12" X="407" Y="-210" L="20" H="200" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3"/><S T="12" X="363" Y="-169" L="20" H="100" P="0,0,0.2,0.2,90,0,0,0" o="6a7495" c="3"/><S T="12" X="360" Y="-283" L="20" H="100" P="0,0,0.2,0.2,90,0,0,0" o="6a7495" c="3"/><S T="12" X="1200" Y="50" L="10" H="100" P="0,0,0,0,0,0,0,0" o="272727" c="4" friction="-100,-20"/><S T="12" X="800" Y="270" L="1600" H="10" P="0,0,0.3,0.2,0,0,0,0" o="FFFFFF" c="3"/><S T="12" X="800" Y="185" L="1600" H="10" P="0,0,0.3,0.2,0,0,0,0" o="FFFFFF" c="3"/><S T="12" X="800" Y="95" L="1600" H="10" P="0,0,0.3,0.2,0,0,0,0" o="FFFFFF" c="3"/></S><D><T X="200" Y="161" spawn="2"/><T X="600" Y="161" spawn="2"/><T X="1000" Y="161" spawn="2"/><T X="1400" Y="161" spawn="2"/><T X="200" Y="246" spawn="1"/><T X="600" Y="246" spawn="1"/><T X="1000" Y="246" spawn="1"/><T X="1400" Y="246" spawn="1"/><T X="200" Y="346" spawn="3"/><T X="600" Y="346" spawn="3"/><T X="1000" Y="346" spawn="3"/><T X="1400" Y="346" spawn="3"/><DS X="365" Y="-200"/></D><O/><L/></Z></C>',
     [2] = '<C><P L="1200" G="0,4" MEDATA=";;;;-0;0:::1-"/><Z><S><S T="12" X="600" Y="515" L="2000" H="300" P="0,0,0.1,0.2,0,0,0,0" o="6A7495" c="4" N=""/><S T="12" X="400" Y="50" L="10" H="100" P="0,0,0,0,0,0,0,0" o="272727" c="4" friction="-100,-20"/><S T="12" X="600" Y="185" L="1200" H="450" P="0,0,0,0,0,0,0,0" o="121212" c="4"/><S T="12" X="600" Y="-5" L="1200" H="10" P="0,0,0.3,0.2,0,0,0,0" o="FFF200" c="3" m=""/><S T="12" X="600" Y="-800" L="1240" H="20" P="0,0,0,0.2,0,0,0,0" o="FF0000" m=""/><S T="12" X="600" Y="1190" L="1240" H="20" P="0,0,0,0.2,0,0,0,0" o="FF0000" m=""/><S T="12" X="400" Y="180" L="10" H="170" P="0,0,0,0,0,0,0,0" o="272727" c="3" friction="-100,-20"/><S T="12" X="800" Y="180" L="10" H="170" P="0,0,0,0,0,0,0,0" o="272727" c="3" friction="-100,-20"/><S T="12" X="800" Y="50" L="10" H="100" P="0,0,0,0,0,0,0,0" o="272727" c="4" friction="-100,-20"/><S T="12" X="400" Y="50" L="10" H="100" P="0,0,0,0,0,0,0,0" o="272727" c="4" friction="-100,-20"/><S T="12" X="600" Y="-50" L="1200" H="100" P="0,0,0,0.2,0,0,0,0" o="0d0906" c="3"/><S T="12" X="400" Y="370" L="10" H="200" P="0,0,0,0.2,0,0,0,0" o="FFFFFF" N=""/><S T="12" X="800" Y="370" L="10" H="200" P="0,0,0,0.2,0,0,0,0" o="FFFFFF" N=""/><S T="12" X="400" Y="795" L="800" H="10" P="0,0,0.3,0.2,90,0,0,0" o="FF0000" c="3" m=""/><S T="12" X="800" Y="795" L="800" H="10" P="0,0,0.3,0.2,90,0,0,0" o="FF0000" c="3" m=""/><S T="12" X="-10" Y="200" L="20" H="2000" P="0,0,0.2,0.2,0,0,0,0" o="FF0000" m=""/><S T="12" X="1210" Y="200" L="20" H="2000" P="0,0,0.2,0.2,0,0,0,0" o="FF0000" m=""/><S T="12" X="600" Y="430" L="1200" H="130" P="0,0,0.1,0.2,0,0,0,0" o="0D0906" c="3" N=""/><S T="12" X="318" Y="-204" L="20" H="200" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3"/><S T="12" X="407" Y="-210" L="20" H="200" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3"/><S T="12" X="363" Y="-169" L="20" H="100" P="0,0,0.2,0.2,90,0,0,0" o="6a7495" c="3"/><S T="12" X="360" Y="-283" L="20" H="100" P="0,0,0.2,0.2,90,0,0,0" o="6a7495" c="3"/><S T="12" X="600" Y="270" L="1200" H="10" P="0,0,0.3,0.2,0,0,0,0" o="FFFFFF" c="3"/><S T="12" X="600" Y="185" L="1200" H="10" P="0,0,0.3,0.2,0,0,0,0" o="FFFFFF" c="3"/><S T="12" X="600" Y="95" L="1200" H="10" P="0,0,0.3,0.2,0,0,0,0" o="FFFFFF" c="3"/></S><D><T X="200" Y="161" spawn="2"/><T X="600" Y="161" spawn="2"/><T X="1000" Y="161" spawn="2"/><T X="200" Y="246" spawn="1"/><T X="600" Y="246" spawn="1"/><T X="1000" Y="246" spawn="1"/><T X="200" Y="346" spawn="3"/><T X="600" Y="346" spawn="3"/><T X="1000" Y="346" spawn="3"/><DS X="365" Y="-200"/></D><O/><L/></Z></C>',
     [3] = 'Some chords',
@@ -1048,13 +1047,20 @@ local customMapsFourTeamsMode = {
     [5] = '<C><P G="0,4" MEDATA=";;;;-0;0:::1-"/><Z><S><S T="12" X="400" Y="515" L="1600" H="300" P="0,0,0.1,0.2,0,0,0,0" o="6A7495" c="4" N=""/><S T="12" X="400" Y="50" L="10" H="100" P="0,0,0,0,0,0,0,0" o="272727" c="4" friction="-100,-20"/><S T="12" X="400" Y="185" L="800" H="450" P="0,0,0,0,0,0,0,0" o="121212" c="4"/><S T="12" X="400" Y="-5" L="800" H="10" P="0,0,0.3,0.2,0,0,0,0" o="FFFFFF" c="3" m=""/><S T="12" X="400" Y="95" L="800" H="10" P="0,0,0.3,0.2,0,0,0,0" o="FFF200" c="3" m=""/><S T="12" X="400" Y="-800" L="840" H="20" P="0,0,0,0.2,0,0,0,0" o="FF0000" m=""/><S T="12" X="400" Y="1190" L="840" H="20" P="0,0,0,0.2,0,0,0,0" o="FF0000" m=""/><S T="12" X="400" Y="180" L="10" H="170" P="0,0,0,0,0,0,0,0" o="272727" c="3" friction="-100,-20"/><S T="12" X="400" Y="50" L="10" H="100" P="0,0,0,0,0,0,0,0" o="272727" c="4" friction="-100,-20"/><S T="12" X="400" Y="50" L="10" H="100" P="0,0,0,0,0,0,0,0" o="272727" c="4" friction="-100,-20"/><S T="12" X="400" Y="-50" L="800" H="100" P="0,0,0,0.2,0,0,0,0" o="0d0906" c="3"/><S T="12" X="400" Y="370" L="10" H="200" P="0,0,0,0.2,0,0,0,0" o="FFFFFF" N=""/><S T="12" X="400" Y="370" L="10" H="200" P="0,0,0,0.2,0,0,0,0" o="FFFFFF" N=""/><S T="12" X="400" Y="795" L="800" H="10" P="0,0,0.3,0.2,90,0,0,0" o="FF0000" c="3" m=""/><S T="12" X="400" Y="795" L="800" H="10" P="0,0,0.3,0.2,90,0,0,0" o="FF0000" c="3" m=""/><S T="12" X="-10" Y="200" L="20" H="2000" P="0,0,0.2,0.2,0,0,0,0" o="FF0000" m=""/><S T="12" X="810" Y="200" L="20" H="2000" P="0,0,0.2,0.2,0,0,0,0" o="FF0000" m=""/><S T="12" X="400" Y="430" L="800" H="130" P="0,0,0.1,0.2,0,0,0,0" o="0D0906" c="3" N=""/><S T="12" X="800" Y="455" L="1600" H="10" P="0,0,0.3,0.2,0,0,0,0" o="6a7495"/><S T="12" X="318" Y="-204" L="20" H="200" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3"/><S T="12" X="407" Y="-210" L="20" H="200" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3"/><S T="12" X="363" Y="-169" L="20" H="100" P="0,0,0.2,0.2,90,0,0,0" o="6a7495" c="3"/><S T="12" X="360" Y="-283" L="20" H="100" P="0,0,0.2,0.2,90,0,0,0" o="6a7495" c="3"/><S T="12" X="400" Y="270" L="700" H="10" P="0,0,0.3,0.2,0,0,0,0" o="FFFFFF" c="3"/><S T="12" X="400" Y="185" L="700" H="10" P="0,0,0.3,0.2,0,0,0,0" o="FFFFFF" c="3"/><S T="12" X="400" Y="95" L="700" H="10" P="0,0,0.3,0.2,0,0,0,0" o="FFFFFF" c="3"/></S><D><T X="200" Y="161" spawn="2"/><T X="600" Y="161" spawn="2"/><T X="600" Y="161" spawn="2"/><T X="200" Y="246" spawn="1"/><T X="600" Y="246" spawn="1"/><T X="600" Y="246" spawn="1"/><T X="200" Y="346" spawn="3"/><T X="600" Y="346" spawn="3"/><T X="600" Y="346" spawn="3"/><DS X="365" Y="-200"/></D><O/><L/></Z></C>',
     [6] = '19539e5756b.png'
   },
-  [33] =
-  {
+  [33] = {
     [1] = '<C><P L="1600" F="8" G="0,4" MEDATA="26,1:27,1:28,1:29,1;;;;-0;0:::1-" playerForce="1.1"/><Z><S><S T="12" X="-60" Y="133" L="120" H="560" P="0,0,0,0,0,0,0,0" o="000000" c="4"/><S T="12" X="1660" Y="133" L="120" H="560" P="0,0,0,0,0,0,0,0" o="000000" c="4"/><S T="9" X="-85" Y="140" L="50" H="430" P="0,0,0,0,0,0,0,0" tint="260042"/><S T="9" X="1685" Y="140" L="50" H="430" P="0,0,0,0,0,0,0,0" tint="260042"/><S T="9" X="-40" Y="320" L="80" H="60" P="0,0,0,0,0,0,0,0" tint="FF0000" archAcc="0.75" archCheeseMax="1" archMax="1"/><S T="9" X="1640" Y="320" L="80" H="60" P="0,0,0,0,0,0,0,0" tint="FF0000" archAcc="0.75" archCheeseMax="1" archMax="1"/><S T="10" X="800" Y="-280" L="1000" H="100" P="0,0,0,0.2,0,0,0,0" tint="1d0034" friction="20,4"/><S T="12" X="800" Y="-5" L="1600" H="10" P="0,0,0,0.2,0,0,0,0" o="FFF200" c="3" m=""/><S T="12" X="802" Y="-80" L="1600" H="10" P="0,0,0,0.2,0,0,0,0" o="FFF200" c="3" m=""/><S T="10" X="800" Y="115" L="1600" H="10" P="0,0,0.3,0.2,0,0,0,0" c="3" tint="1d0034"/><S T="12" X="400" Y="130" L="10" H="260" P="0,0,0,0.2,0,0,0,0" o="FFF200" c="3" m="" friction="-100,-20"/><S T="12" X="800" Y="130" L="10" H="260" P="0,0,0,0.2,0,0,0,0" o="FFF200" c="3" m="" friction="-100,-20"/><S T="12" X="1200" Y="130" L="10" H="260" P="0,0,0,0.2,0,0,0,0" o="FFF200" c="3" m="" friction="-100,-20"/><S T="1" X="400" Y="350" L="10" H="200" P="0,0,0,0,0,0,0,0" tint="1d0034"/><S T="1" X="800" Y="350" L="10" H="200" P="0,0,0,0,0,0,0,0" tint="1d0034"/><S T="1" X="1200" Y="350" L="10" H="200" P="0,0,0,0,0,0,0,0" tint="1d0034"/><S T="12" X="-5" Y="-50" L="10" H="200" P="0,0,0.3,0.2,0,0,0,0" o="FF0000" c="3" m=""/><S T="12" X="1605" Y="-50" L="10" H="200" P="0,0,0.3,0.2,0,0,0,0" o="FF0000" c="3" m=""/><S T="12" X="-60" Y="45" L="120" H="10" P="0,0,0.3,0.2,0,0,0,0" o="FF0000" c="3" m=""/><S T="12" X="1660" Y="45" L="120" H="10" P="0,0,0.3,0.2,0,0,0,0" o="FF0000" c="3" m=""/><S T="10" X="-30" Y="20" L="60" H="60" P="0,0,0.3,0.2,-3,0,0,0" tint="1d0034"/><S T="10" X="1630" Y="20" L="60" H="60" P="0,0,0.3,0.2,3,0,0,0" tint="1d0034"/><S T="10" X="-30" Y="260" L="60" H="60" P="0,0,0.3,0.2,-3,0,0,0" tint="1d0034"/><S T="10" X="1630" Y="260" L="60" H="60" P="0,0,0.3,0.2,3,0,0,0" tint="1d0034"/><S T="10" X="-30" Y="140" L="60" H="60" P="0,0,0.3,0.2,-3,0,0,0" tint="1d0034"/><S T="10" X="1630" Y="140" L="60" H="60" P="0,0,0.3,0.2,3,0,0,0" tint="1d0034"/><S T="12" X="316" Y="-179" L="20" H="200" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3" m=""/><S T="12" X="407" Y="-183" L="20" H="200" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3" m=""/><S T="12" X="363" Y="-92" L="20" H="100" P="0,0,0.2,0.2,90,0,0,0" o="6a7495" c="3" m=""/><S T="12" X="360" Y="-206" L="20" H="100" P="0,0,0.2,0.2,90,0,0,0" o="6a7495" c="3" m=""/><S T="10" X="-33" Y="355" L="65" H="10" P="0,0,0,0.2,0,0,0,0" N="" tint="5C1B56"/><S T="10" X="1633" Y="355" L="65" H="10" P="0,0,0,0.2,0,0,0,0" N="" tint="5C1B56"/><S T="9" X="-40" Y="200" L="80" H="60" P="0,0,0,0,0,0,0,0" tint="00FF40" archAcc="0.5" archCheeseMax="1" archMax="1"/><S T="9" X="1640" Y="200" L="80" H="60" P="0,0,0,0,0,0,0,0" tint="00FF40" archAcc="0.5" archCheeseMax="1" archMax="1"/><S T="9" X="-40" Y="80" L="80" H="60" P="0,0,0,0,0,0,0,0" tint="0008FF" archAcc="0.25" archCheeseMax="1" archMax="1"/><S T="9" X="1640" Y="80" L="80" H="60" P="0,0,0,0,0,0,0,0" tint="0008FF" archAcc="0.25" archCheeseMax="1" archMax="1"/><S T="9" X="-40" Y="-80" L="80" H="140" P="0,0,0,0,0,0,0,0" tint="260042"/><S T="9" X="1640" Y="-80" L="80" H="140" P="0,0,0,0,0,0,0,0" tint="260042"/><S T="10" X="-115" Y="545" L="20" H="1300" P="0,0,0,0,0,0,0,0" tint="1d0034"/><S T="10" X="1715" Y="545" L="20" H="1300" P="0,0,0,0,0,0,0,0" tint="1d0034"/><S T="12" X="800" Y="551" L="2400" H="400" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3" N=""/><S T="10" X="800" Y="400" L="2000" H="100" P="0,0,0.2,0,0,0,0,0" c="3" N="" tint="1d0034"/><S T="10" X="100" Y="-200" L="500" H="100" P="0,0,0,0,-20,0,0,0" tint="1d0034"/><S T="10" X="1500" Y="-200" L="500" H="100" P="0,0,0,0,20,0,0,0" tint="1d0034"/><S T="12" X="400" Y="795" L="10" H="800" P="0,0,0.3,0.2,0,0,0,0" o="FF0000" c="3" N="" m=""/><S T="12" X="800" Y="795" L="10" H="800" P="0,0,0.3,0.2,0,0,0,0" o="FF0000" c="3" N="" m=""/><S T="12" X="1200" Y="795" L="10" H="800" P="0,0,0.3,0.2,0,0,0,0" o="FF0000" c="3" N="" m=""/><S T="12" X="800" Y="1190" L="1850" H="20" P="0,0,0.3,0.2,0,0,0,0" o="FF0000" c="3" N="" m=""/></S><D><P X="1635" Y="345" T="307" P="0,1"/><P X="1635" Y="110" T="306" P="0,0"/><T X="800" Y="-20" lobby="0"/><DS X="365" Y="-141"/></D><O/><L/></Z></C>',
     [2] = '<C><P L="1200" F="8" G="0,4" MEDATA=";;;;-0;0:::1-" playerForce="1.1"/><Z><S><S T="12" X="-60" Y="133" L="120" H="560" P="0,0,0,0,0,0,0,0" o="000000" c="4"/><S T="12" X="1260" Y="133" L="120" H="560" P="0,0,0,0,0,0,0,0" o="000000" c="4"/><S T="9" X="-85" Y="140" L="50" H="430" P="0,0,0,0,0,0,0,0" tint="260042"/><S T="9" X="1285" Y="140" L="50" H="430" P="0,0,0,0,0,0,0,0" tint="260042"/><S T="9" X="-40" Y="320" L="80" H="60" P="0,0,0,0,0,0,0,0" tint="FF0000" archAcc="0.75" archCheeseMax="1" archMax="1"/><S T="9" X="1240" Y="320" L="80" H="60" P="0,0,0,0,0,0,0,0" tint="FF0000" archAcc="0.75" archCheeseMax="1" archMax="1"/><S T="10" X="600" Y="-280" L="600" H="100" P="0,0,0,0.2,0,0,0,0" tint="1d0034" friction="20,4"/><S T="12" X="600" Y="-5" L="1200" H="10" P="0,0,0,0.2,0,0,0,0" o="FFF200" c="3" m=""/><S T="12" X="600" Y="-80" L="1200" H="10" P="0,0,0,0.2,0,0,0,0" o="FFF200" c="3" m=""/><S T="10" X="600" Y="115" L="1200" H="10" P="0,0,0.3,0.2,0,0,0,0" c="3" tint="1d0034"/><S T="12" X="400" Y="130" L="10" H="260" P="0,0,0,0.2,0,0,0,0" o="FFF200" c="3" m="" friction="-100,-20"/><S T="12" X="800" Y="130" L="10" H="260" P="0,0,0,0.2,0,0,0,0" o="FFF200" c="3" m="" friction="-100,-20"/><S T="1" X="400" Y="350" L="10" H="200" P="0,0,0,0,0,0,0,0" tint="1d0034"/><S T="1" X="800" Y="350" L="10" H="200" P="0,0,0,0,0,0,0,0" tint="1d0034"/><S T="12" X="-5" Y="-50" L="10" H="200" P="0,0,0.3,0.2,0,0,0,0" o="FF0000" c="3" m=""/><S T="12" X="1205" Y="-50" L="10" H="200" P="0,0,0.3,0.2,0,0,0,0" o="FF0000" c="3" m=""/><S T="12" X="-60" Y="45" L="120" H="10" P="0,0,0.3,0.2,0,0,0,0" o="FF0000" c="3" m=""/><S T="12" X="1260" Y="45" L="120" H="10" P="0,0,0.3,0.2,0,0,0,0" o="FF0000" c="3" m=""/><S T="10" X="-30" Y="20" L="60" H="60" P="0,0,0.3,0.2,-3,0,0,0" tint="1d0034"/><S T="10" X="1230" Y="20" L="60" H="60" P="0,0,0.3,0.2,3,0,0,0" tint="1d0034"/><S T="10" X="-30" Y="260" L="60" H="60" P="0,0,0.3,0.2,-3,0,0,0" tint="1d0034"/><S T="10" X="1230" Y="260" L="60" H="60" P="0,0,0.3,0.2,3,0,0,0" tint="1d0034"/><S T="10" X="-30" Y="140" L="60" H="60" P="0,0,0.3,0.2,-3,0,0,0" tint="1d0034"/><S T="10" X="1230" Y="140" L="60" H="60" P="0,0,0.3,0.2,3,0,0,0" tint="1d0034"/><S T="12" X="316" Y="-179" L="20" H="200" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3" m=""/><S T="12" X="407" Y="-183" L="20" H="200" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3" m=""/><S T="12" X="363" Y="-92" L="20" H="100" P="0,0,0.2,0.2,90,0,0,0" o="6a7495" c="3" m=""/><S T="12" X="360" Y="-206" L="20" H="100" P="0,0,0.2,0.2,90,0,0,0" o="6a7495" c="3" m=""/><S T="10" X="-33" Y="355" L="65" H="10" P="0,0,0,0.2,0,0,0,0" N="" tint="5C1B56"/><S T="10" X="1233" Y="355" L="65" H="10" P="0,0,0,0.2,0,0,0,0" N="" tint="5C1B56"/><S T="9" X="-40" Y="200" L="80" H="60" P="0,0,0,0,0,0,0,0" tint="00FF40" archAcc="0.5" archCheeseMax="1" archMax="1"/><S T="9" X="1240" Y="200" L="80" H="60" P="0,0,0,0,0,0,0,0" tint="00FF40" archAcc="0.5" archCheeseMax="1" archMax="1"/><S T="9" X="-40" Y="80" L="80" H="60" P="0,0,0,0,0,0,0,0" tint="0008FF" archAcc="0.25" archCheeseMax="1" archMax="1"/><S T="9" X="1240" Y="80" L="80" H="60" P="0,0,0,0,0,0,0,0" tint="0008FF" archAcc="0.25" archCheeseMax="1" archMax="1"/><S T="9" X="-40" Y="-80" L="80" H="140" P="0,0,0,0,0,0,0,0" tint="260042"/><S T="9" X="1240" Y="-80" L="80" H="140" P="0,0,0,0,0,0,0,0" tint="260042"/><S T="10" X="-115" Y="545" L="20" H="1300" P="0,0,0,0,0,0,0,0" tint="1d0034"/><S T="10" X="1315" Y="545" L="20" H="1300" P="0,0,0,0,0,0,0,0" tint="1d0034"/><S T="12" X="600" Y="551" L="2000" H="400" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3" N=""/><S T="10" X="600" Y="400" L="1600" H="100" P="0,0,0.2,0,0,0,0,0" c="3" N="" tint="1d0034"/><S T="10" X="100" Y="-200" L="500" H="100" P="0,0,0,0,-20,0,0,0" tint="1d0034"/><S T="10" X="1100" Y="-200" L="500" H="100" P="0,0,0,0,20,0,0,0" tint="1d0034"/><S T="12" X="400" Y="795" L="10" H="800" P="0,0,0.3,0.2,0,0,0,0" o="FF0000" c="3" N="" m=""/><S T="12" X="800" Y="795" L="10" H="800" P="0,0,0.3,0.2,0,0,0,0" o="FF0000" c="3" N="" m=""/><S T="12" X="600" Y="1190" L="1450" H="20" P="0,0,0.3,0.2,0,0,0,0" o="FF0000" c="3" N="" m=""/></S><D><P X="1235" Y="345" T="307" P="0,1"/><P X="1235" Y="110" T="306" P="0,0"/><T X="600" Y="-20" lobby="0"/><DS X="365" Y="-141"/></D><O/><L/></Z></C>',
     [3] = 'Quad water cannon',
     [4] = 'Tanarchosl#4785 and K1ng#7286',
     [5] = '<C><P F="8" G="0,4" MEDATA=";;;;-0;0:::1-" playerForce="1.03"/><Z><S><S T="12" X="-60" Y="133" L="120" H="560" P="0,0,0,0,0,0,0,0" o="000000" c="4"/><S T="12" X="860" Y="133" L="120" H="560" P="0,0,0,0,0,0,0,0" o="000000" c="4"/><S T="9" X="-85" Y="140" L="50" H="430" P="0,0,0,0,0,0,0,0" tint="260042"/><S T="9" X="885" Y="140" L="50" H="430" P="0,0,0,0,0,0,0,0" tint="260042"/><S T="9" X="-40" Y="320" L="80" H="60" P="0,0,0,0,0,0,0,0" tint="FF0000" archAcc="0.75" archCheeseMax="1" archMax="1"/><S T="9" X="840" Y="320" L="80" H="60" P="0,0,0,0,0,0,0,0" tint="FF0000" archAcc="0.75" archCheeseMax="1" archMax="1"/><S T="10" X="400" Y="-280" L="200" H="100" P="0,0,0,0.2,0,0,0,0" tint="1d0034" friction="20,4"/><S T="12" X="400" Y="-5" L="800" H="10" P="0,0,0,0.2,0,0,0,0" o="FFF200" c="3" m=""/><S T="12" X="400" Y="-80" L="800" H="10" P="0,0,0,0.2,0,0,0,0" o="FFF200" c="3" m=""/><S T="10" X="400" Y="115" L="800" H="10" P="0,0,0.3,0.2,0,0,0,0" c="3" tint="1d0034"/><S T="12" X="400" Y="130" L="10" H="260" P="0,0,0,0.2,0,0,0,0" o="FFF200" c="3" m="" friction="-100,-20"/><S T="1" X="400" Y="350" L="10" H="200" P="0,0,0,0,0,0,0,0" tint="1d0034"/><S T="12" X="-5" Y="-50" L="10" H="200" P="0,0,0.3,0.2,0,0,0,0" o="FF0000" c="3" m=""/><S T="12" X="805" Y="-50" L="10" H="200" P="0,0,0.3,0.2,0,0,0,0" o="FF0000" c="3" m=""/><S T="12" X="-60" Y="45" L="120" H="10" P="0,0,0.3,0.2,0,0,0,0" o="FF0000" c="3" m=""/><S T="12" X="860" Y="45" L="120" H="10" P="0,0,0.3,0.2,0,0,0,0" o="FF0000" c="3" m=""/><S T="10" X="-30" Y="20" L="60" H="60" P="0,0,0.3,0.2,-3,0,0,0" tint="1d0034"/><S T="10" X="830" Y="20" L="60" H="60" P="0,0,0.3,0.2,3,0,0,0" tint="1d0034"/><S T="10" X="-30" Y="260" L="60" H="60" P="0,0,0.3,0.2,-3,0,0,0" tint="1d0034"/><S T="10" X="830" Y="260" L="60" H="60" P="0,0,0.3,0.2,3,0,0,0" tint="1d0034"/><S T="10" X="-30" Y="140" L="60" H="60" P="0,0,0.3,0.2,-3,0,0,0" tint="1d0034"/><S T="10" X="830" Y="140" L="60" H="60" P="0,0,0.3,0.2,3,0,0,0" tint="1d0034"/><S T="12" X="316" Y="-179" L="20" H="200" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3" m=""/><S T="12" X="407" Y="-183" L="20" H="200" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3" m=""/><S T="12" X="363" Y="-92" L="20" H="100" P="0,0,0.2,0.2,90,0,0,0" o="6a7495" c="3" m=""/><S T="12" X="360" Y="-206" L="20" H="100" P="0,0,0.2,0.2,90,0,0,0" o="6a7495" c="3" m=""/><S T="10" X="-33" Y="355" L="65" H="10" P="0,0,0,0.2,0,0,0,0" N="" tint="5C1B56"/><S T="10" X="833" Y="355" L="65" H="10" P="0,0,0,0.2,0,0,0,0" N="" tint="5C1B56"/><S T="9" X="-40" Y="200" L="80" H="60" P="0,0,0,0,0,0,0,0" tint="00FF40" archAcc="0.5" archCheeseMax="1" archMax="1"/><S T="9" X="840" Y="200" L="80" H="60" P="0,0,0,0,0,0,0,0" tint="00FF40" archAcc="0.5" archCheeseMax="1" archMax="1"/><S T="9" X="-40" Y="80" L="80" H="60" P="0,0,0,0,0,0,0,0" tint="0008FF" archAcc="0.25" archCheeseMax="1" archMax="1"/><S T="9" X="840" Y="80" L="80" H="60" P="0,0,0,0,0,0,0,0" tint="0008FF" archAcc="0.25" archCheeseMax="1" archMax="1"/><S T="9" X="-40" Y="-80" L="80" H="140" P="0,0,0,0,0,0,0,0" tint="260042"/><S T="9" X="840" Y="-80" L="80" H="140" P="0,0,0,0,0,0,0,0" tint="260042"/><S T="10" X="-115" Y="545" L="20" H="1300" P="0,0,0,0,0,0,0,0" tint="1d0034"/><S T="10" X="915" Y="545" L="20" H="1300" P="0,0,0,0,0,0,0,0" tint="1d0034"/><S T="12" X="400" Y="550" L="1600" H="400" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3" N=""/><S T="10" X="400" Y="400" L="1200" H="100" P="0,0,0.2,0,0,0,0,0" c="3" N="" tint="1d0034"/><S T="10" X="100" Y="-200" L="500" H="100" P="0,0,0,0,-20,0,0,0" tint="1d0034"/><S T="10" X="700" Y="-200" L="500" H="100" P="0,0,0,0,20,0,0,0" tint="1d0034"/><S T="12" X="400" Y="795" L="10" H="800" P="0,0,0.3,0.2,0,0,0,0" o="FF0000" c="3" N="" m=""/><S T="12" X="400" Y="1190" L="1050" H="20" P="0,0,0.3,0.2,0,0,0,0" o="FF0000" c="3" N="" m=""/></S><D><P X="835" Y="345" T="307" P="0,1"/><P X="835" Y="110" T="306" P="0,0"/><T X="400" Y="-20" lobby="0"/><DS X="365" Y="-141"/></D><O/><L/></Z></C>',
+    [6] = '19539e5756b.png'
+  },
+  [34] = {
+    [1] = '<C><P L="1600" F="3" G="0,4" MEDATA=";;;;-0;0:::1-"/><Z><S><S T="7" X="800" Y="400" L="1600" H="100" P="0,0,0.1,0.2,0,0,0,0" c="3" N=""/><S T="9" X="800" Y="430" L="1600" H="10" P="0,0,0,0,0,0,0,0"/><S T="1" X="400" Y="350" L="10" H="200" P="0,0,0,0.2,0,0,0,0"/><S T="12" X="400" Y="455" L="800" H="10" P="0,0,0.3,0.2,0,0,0,0" o="6a7495"/><S T="12" X="-10" Y="200" L="20" H="2000" P="0,0,0.2,0.2,0,0,0,0" o="FF0000" m=""/><S T="12" X="1610" Y="200" L="20" H="2000" P="0,0,0.2,0.2,0,0,0,0" o="FF0000" m=""/><S T="13" X="100" Y="360" L="10" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="3"/><S T="13" X="600" Y="360" L="10" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="3"/><S T="12" X="250" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="1" X="790" Y="-5" L="1620" H="10" P="0,0,0,0.2,0,0,0,0" c="3"/><S T="12" X="790" Y="95" L="1620" H="10" P="0,0,0.3,0.2,0,0,0,0" o="FFF200" c="3" m=""/><S T="12" X="305" Y="50" L="10" H="100" P="0,0,0.3,0.2,0,0,0,0" o="FFF200" c="3" m=""/><S T="12" X="1295" Y="50" L="10" H="100" P="0,0,0.3,0.2,0,0,0,0" o="FFF200" c="3" m=""/><S T="12" X="790" Y="225" L="1620" H="10" P="0,0,0.3,0.2,0,0,0,0" o="FFF200" c="3" m=""/><S T="12" X="400" Y="239" L="10" H="30" P="0,0,0,0,0,0,0,0" o="FFF200" c="3" m=""/><S T="12" X="400" Y="791" L="800" H="10" P="0,0,0.3,0.2,90,0,0,0" o="FF0000" m=""/><S T="12" X="316" Y="-129" L="20" H="200" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3"/><S T="12" X="407" Y="-133" L="20" H="200" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3"/><S T="12" X="363" Y="-92" L="20" H="100" P="0,0,0.2,0.2,90,0,0,0" o="6a7495" c="3"/><S T="12" X="360" Y="-206" L="20" H="100" P="0,0,0.2,0.2,90,0,0,0" o="6a7495" c="3"/><S T="12" X="800" Y="460" L="2600" H="120" P="0,0,0.3,0.2,0,0,0,0" o="6a7495" c="4" N=""/><S T="12" X="1350" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="12" X="800" Y="-800" L="1640" H="20" P="0,0,0,0.2,0,0,0,0" o="FF0000" m=""/><S T="12" X="800" Y="1190" L="1640" H="20" P="0,0,0,0.2,0,0,0,0" o="FF0000" m=""/><S T="1" X="800" Y="350" L="10" H="200" P="0,0,0,0.2,0,0,0,0"/><S T="12" X="800" Y="790" L="800" H="10" P="0,0,0.3,0.2,90,0,0,0" o="FF0000" m=""/><S T="12" X="800" Y="239" L="10" H="30" P="0,0,0,0,0,0,0,0" o="FFF200" c="3" m=""/><S T="13" X="1000" Y="360" L="10" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="3"/><S T="1" X="1200" Y="350" L="10" H="200" P="0,0,0,0.2,0,0,0,0"/><S T="12" X="1200" Y="239" L="10" H="30" P="0,0,0,0,0,0,0,0" o="FFF200" c="3" m=""/><S T="12" X="1200" Y="790" L="800" H="10" P="0,0,0.3,0.2,90,0,0,0" o="FF0000" m=""/><S T="12" X="600" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="12" X="1000" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="13" X="1500" Y="360" L="10" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="3"/></S><D><P X="600" Y="363" T="10" P="1,0"/><P X="100" Y="363" T="10" P="1,0"/><P X="1000" Y="363" T="10" P="1,0"/><P X="1500" Y="363" T="10" P="1,0"/><DS X="365" Y="-141"/></D><O/><L/></Z></C>',
+    [2] = '<C><P L="1200" F="3" G="0,4" MEDATA="12,1:28,1;;;;-0;0:::1-"/><Z><S><S T="7" X="600" Y="400" L="1200" H="100" P="0,0,0.1,0.2,0,0,0,0" c="3" N=""/><S T="9" X="600" Y="430" L="1200" H="10" P="0,0,0,0,0,0,0,0"/><S T="1" X="400" Y="350" L="10" H="200" P="0,0,0,0.2,0,0,0,0"/><S T="12" X="400" Y="455" L="800" H="10" P="0,0,0.3,0.2,0,0,0,0" o="6a7495"/><S T="12" X="-10" Y="200" L="20" H="2000" P="0,0,0.2,0.2,0,0,0,0" o="FF0000" m=""/><S T="12" X="1210" Y="200" L="20" H="2000" P="0,0,0.2,0.2,0,0,0,0" o="FF0000" m=""/><S T="13" X="100" Y="360" L="10" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="3"/><S T="13" X="600" Y="360" L="10" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="3"/><S T="12" X="250" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="1" X="600" Y="-5" L="1200" H="10" P="0,0,0,0.2,0,0,0,0" c="3"/><S T="12" X="600" Y="95" L="1200" H="10" P="0,0,0.3,0.2,0,0,0,0" o="FFF200" c="3" m=""/><S T="12" X="305" Y="50" L="10" H="100" P="0,0,0.3,0.2,0,0,0,0" o="FFF200" c="3" m=""/><S T="12" X="895" Y="50" L="10" H="100" P="0,0,0.3,0.2,0,0,0,0" o="FFF200" c="3" m=""/><S T="12" X="600" Y="225" L="1240" H="10" P="0,0,0.3,0.2,0,0,0,0" o="FFF200" c="3" m=""/><S T="12" X="400" Y="239" L="10" H="30" P="0,0,0,0,0,0,0,0" o="FFF200" c="3" m=""/><S T="12" X="400" Y="791" L="800" H="10" P="0,0,0.3,0.2,90,0,0,0" o="FF0000" m=""/><S T="12" X="316" Y="-129" L="20" H="200" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3"/><S T="12" X="407" Y="-133" L="20" H="200" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3"/><S T="12" X="363" Y="-92" L="20" H="100" P="0,0,0.2,0.2,90,0,0,0" o="6a7495" c="3"/><S T="12" X="360" Y="-206" L="20" H="100" P="0,0,0.2,0.2,90,0,0,0" o="6a7495" c="3"/><S T="12" X="600" Y="460" L="2000" H="120" P="0,0,0.3,0.2,0,0,0,0" o="6a7495" c="4" N=""/><S T="12" X="600" Y="-800" L="1240" H="20" P="0,0,0,0.2,0,0,0,0" o="FF0000" m=""/><S T="12" X="600" Y="1190" L="1240" H="20" P="0,0,0,0.2,0,0,0,0" o="FF0000" m=""/><S T="1" X="800" Y="350" L="10" H="200" P="0,0,0,0.2,0,0,0,0"/><S T="12" X="800" Y="790" L="800" H="10" P="0,0,0.3,0.2,90,0,0,0" o="FF0000" m=""/><S T="12" X="800" Y="239" L="10" H="30" P="0,0,0,0,0,0,0,0" o="FFF200" c="3" m=""/><S T="13" X="1100" Y="360" L="10" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="3"/><S T="12" X="600" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="12" X="950" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/></S><D><P X="600" Y="363" T="10" P="1,0"/><P X="100" Y="363" T="10" P="1,0"/><P X="1100" Y="363" T="10" P="1,0"/><DS X="365" Y="-141"/></D><O/><L/></Z></C>',
+    [3] = 'Default map',
+    [4] = 'Refletz#6472',
+    [5] = '<C><P F="0" G="0,4" MEDATA=";;;;-0;0:::1-"/><Z><S><S T="7" X="400" Y="400" L="800" H="100" P="0,0,0.1,0.2,0,0,0,0" c="3" N=""/><S T="1" X="400" Y="350" L="10" H="200" P="0,0,0,0.2,0,0,0,0"/><S T="13" X="100" Y="360" L="10" P="0,0,0,0,0,0,0,0" o="324650" c="4"/><S T="13" X="700" Y="360" L="10" P="0,0,0,0,0,0,0,0" o="324650" c="4"/><S T="12" X="50" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="1" X="400" Y="-5" L="800" H="10" P="0,0,0,0.2,0,0,0,0" c="3" N=""/><S T="12" X="400" Y="95" L="800" H="10" P="0,0,0.3,0.2,0,0,0,0" o="FFF200" c="3" N="" m=""/><S T="12" X="105" Y="50" L="10" H="100" P="0,0,0,0,0,0,0,0" o="FFF200" c="3" m=""/><S T="12" X="695" Y="50" L="10" H="100" P="0,0,0,0,0,0,0,0" o="FFF200" c="3" N="" m=""/><S T="12" X="400" Y="225" L="840" H="10" P="0,0,0.3,0.2,0,0,0,0" o="FFF200" c="3" m=""/><S T="12" X="400" Y="239" L="10" H="30" P="0,0,0,0,0,0,0,0" o="FFF200" c="3" m=""/><S T="12" X="316" Y="-129" L="20" H="200" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3"/><S T="12" X="407" Y="-133" L="20" H="200" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3"/><S T="12" X="363" Y="-92" L="20" H="100" P="0,0,0.2,0.2,90,0,0,0" o="6a7495" c="3"/><S T="12" X="360" Y="-206" L="20" H="100" P="0,0,0.2,0.2,90,0,0,0" o="6a7495" c="3"/><S T="12" X="400" Y="460" L="1600" H="120" P="0,0,0.3,0.2,0,0,0,0" o="6a7495" c="4" N=""/><S T="12" X="750" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="12" X="400" Y="-800" L="840" H="20" P="0,0,0,0.2,0,0,0,0" o="FF0000" N="" m=""/><S T="12" X="400" Y="1190" L="840" H="20" P="0,0,0,0.2,0,0,0,0" o="FF0000" N="" m=""/><S T="12" X="400" Y="791" L="800" H="10" P="0,0,0.3,0.2,90,0,0,0" o="FF0000" N="" m=""/><S T="12" X="-10" Y="200" L="20" H="2000" P="0,0,0.2,0.2,0,0,0,0" o="FF0000" N="" m=""/><S T="12" X="810" Y="200" L="20" H="2000" P="0,0,0.2,0.2,0,0,0,0" o="FF0000" N="" m=""/></S><D><P X="700" Y="365" T="10" P="1,0"/><P X="100" Y="365" T="10" P="1,0"/><DS X="360" Y="-151"/></D><O/><L/></Z></C>',
     [6] = '19539e5756b.png'
   },
   -- [99] =
@@ -1070,10 +1076,10 @@ local customMapsFourTeamsMode = {
 
 local balls = {
   [1] = {
-    id = 604,
+    id = 6,
     isImage = false,
     image = '',
-    name = 'Soccer ball'
+    name = 'Default ball'
   },
   [2] = {
     id = 608,
@@ -1147,6 +1153,13 @@ local balls = {
     image = '197d9275c53.png',
     name = 'Morocco ball'
   },
+  [14] = 
+  {
+    id = 604,
+    isImage = false,
+    image = '',
+    name = 'Soccer ball'
+  }
   -- [99] = {
   --   id = 6,
   --   isImage = no,
@@ -1177,7 +1190,7 @@ local afkTimeValue = -60
 local enableAfkSystem = false
 local playerOutOfCourt = {}
 local showOutOfCourtText = {}
-local globalSettings = { mode = 'Normal mode', twoBalls = false }
+local globalSettings = { mode = 'Normal mode', twoBalls = false, randomBall = false, randomMap = false}
 local settings = {}
 local settingsMode = {}
 local playersNormalMode = {}
@@ -1298,6 +1311,7 @@ for name, data in pairs(tfm.get.room.playerList) do
   selectMapImages[name] = {}
   isOpenProfile[name] = false
   playerTrophyImage[name] = 0
+
   if playerAchievements[name] == nil then
     playerAchievements[name] = {
       [1] = { image = "img@193d6763c82", quantity = 0 },
@@ -1305,6 +1319,7 @@ for name, data in pairs(tfm.get.room.playerList) do
       [3] = { image = "197d9272515.png", quantity = 0 }
     }
   end
+
   playerAchievementsImages[name] = {}
   showCrownImages[name] = true
   playersNormalMode[name] = {name = name, matches = 0, wins = 0, winRatio = 0, winsRed = 0, winsBlue = 0}
@@ -1362,6 +1377,7 @@ function ui.addWindow(id, text, player, x, y, width, height, alpha, corners, clo
   ui.addTextArea(id.."0000", "", player, x+5, y+5, width-10, height-10, 0x2d5a61, 0x2d5a61, alpha, true)
   ui.addTextArea(id.."00000", text, player, x+5, y+6, width-10, height-12, 0x142b2e, 0x142b2e, alpha, true)
   local imageId = {}
+
   if corners then
     if showCornerImage[1] == true then
       table.insert(imageId, tfm.exec.addImage("155cbe97a3f.png", "&1", x-7, (y+height)-22, player))
@@ -1379,15 +1395,16 @@ function ui.addWindow(id, text, player, x, y, width, height, alpha, corners, clo
       table.insert(imageId, tfm.exec.addImage("155cbea943a.png", "&1", (x+width)-20, y-7, player))
     end
   end
+
   if closeButton then
     ui.addTextArea(id.."000000", "", player, x+8, y+height-22, width-16, 13, 0x7a8d93, 0x7a8d93, alpha, true)
     ui.addTextArea(id.."0000000", "", player, x+9, y+height-21, width-16, 13, 0xe1619, 0xe1619, alpha, true)
     ui.addTextArea(id.."00000000", "", player, x+9, y+height-21, width-17, 12, 0x314e57, 0x314e57, alpha, true)
     ui.addTextArea(id.."", buttonText, player, x+9, y+height-24, width-17, nil, 0x314e57, 0x314e57, 0, true)
   end
+
   return imageId
 end
-
 
 function ui.addTrophie(id, event, player, playerTarget, x, y, width, height, alpha)
   local indexImage = tonumber(string.sub(event, 8))
@@ -1402,7 +1419,6 @@ function ui.addTrophie(id, event, player, playerTarget, x, y, width, height, alp
   ui.addTextArea(id.."000000", "<p align='right'><font size='10px'>x"..playerAchievements[playerTarget][indexImage].quantity.."", player, x+32, y+height-17, 20, 15, 0x161616, 0x161616, 0, true)
   ui.addTextArea(id.."00000000", "<a href='event:"..event.."'><font size='20px'><br> <br> </a>", player, x+5, y+6, width, height, 0x142b2e, 0x142b2e, 0, true)
 end
-
 
 function windowForHelp(name, pageOfPlayer, textNext, textPrev)
   removeUITrophies(name)
@@ -1544,38 +1560,81 @@ function init()
     mapsVotes[i] = 0
   end
 
-  gameStats = {gameMode = '', redX = 0, blueX = 0, yellowX = 0, greenX = 0, redX2 = 0, blueX2 = 0, setMapName = '', winscore = 7, isCustomMap = false, customMapIndex = 0, initTimer = 0, totalVotes = 0, mapIndexSelected = 0, canTransform = false, teamsMode = false, canJoin = true, typeMap = '', customBall = false, customBallId = 0, banCommandIsEnabled = true, killSpec = false, isGamePaused = false, psyhicObjectForce = 1, twoTeamsMode = false, enableAfkMode = false, realMode = false, redServeIndex = 1, blueServeIndex = 1, redPlayerServe = "", bluePlayerServe = "", redServe = false, blueServe = false, redQuantitySpawn = 0, redLimitSpawn = 3, blueQuantitySpawn = 0, blueLimitSpawn = 3, lastPlayerRed = "", lastPlayerBlue = "", teamWithOutAce = "", reduceForce = false, aceRed = false, aceBlue = false, twoBalls = false, consumables = false, actualMode = ""}
+  gameStats = {
+    gameMode = '', redX = 0, blueX = 0, yellowX = 0, greenX = 0, redX2 = 0, blueX2 = 0,
+    setMapName = '', winscore = 7, isCustomMap = false,
+    randomMap = false, customMapIndex = 0, initTimer = 0, totalVotes = 0,
+    mapIndexSelected = 0, canTransform = false, teamsMode = false, canJoin = true, typeMap = '',
+    customBall = false, customBallId = 0,
+    banCommandIsEnabled = true, killSpec = false, isGamePaused = false,
+    psyhicObjectForce = 1, twoTeamsMode = false, enableAfkMode = false,
+    realMode = false, redServeIndex = 1, blueServeIndex = 1, redPlayerServe = "",
+    bluePlayerServe = "", redServe = false, blueServe = false,
+    redQuantitySpawn = 0, redLimitSpawn = 3, blueQuantitySpawn = 0, blueLimitSpawn = 3,
+    lastPlayerRed = "", lastPlayerBlue = "", teamWithOutAce = "",
+    reduceForce = false, aceRed = false, aceBlue = false,
+    twoBalls = false, consumables = false, actualMode = ""
+  }
+  
   playerCoordinates = {}
   countId = 1
   playerPhysicId = {}
   score_red = 0
   score_blue = 0
   ball_id = 0
-  tfm.exec.newGame('<C><P MEDATA="4,1;;;;-0;0:::1-"/><Z><S><S T="6" X="400" Y="385" L="800" H="50" P="0,0,0.3,0.2,0,0,0,0"/><S T="1" X="2" Y="202" L="10" H="404" P="0,0,0,0.2,0,0,0,0" m=""/><S T="1" X="795" Y="203" L="10" H="404" P="0,0,0,0.2,0,0,0,0" m=""/><S T="1" X="396" Y="7" L="10" H="800" P="0,0,0,0.2,90,0,0,0" m=""/><S T="0" X="450" Y="95" L="700" H="10" P="0,0,0.3,0.2,0,0,0,0" m=""/><S T="9" X="52" Y="222" L="89" H="270" P="0,0,0,0,0,0,0,0" m=""/></S><D><P X="217" Y="359" T="6" P="0,0"/><P X="580" Y="363" T="4" P="0,0"/><P X="319" Y="360" T="5" P="0,0"/><P X="0" Y="0" T="257" P="0,0"/><DS X="400" Y="349"/></D><O/><L/></Z></C>')
+  tfm.exec.newGame('<C><P MEDATA=";;;;-0;0:::1-"/><Z><S><S T="6" X="400" Y="385" L="800" H="50" P="0,0,0.3,0.2,0,0,0,0"/><S T="12" X="-5" Y="205" L="10" H="410" P="0,0,0,0.2,0,0,0,0" o="FF0000" m=""/><S T="12" X="805" Y="205" L="10" H="410" P="0,0,0,0.2,0,0,0,0" o="FF0000" m=""/><S T="12" X="400" Y="5" L="810" H="10" P="0,0,0,0.2,0,0,0,0" o="FF0000" m=""/><S T="12" X="445" Y="95" L="710" H="10" P="0,0,0.3,0.2,0,0,0,0" o="FF0000" m=""/><S T="9" X="45" Y="225" L="90" H="270" P="0,0,0,0,0,0,0,0" m=""/></S><D><P X="217" Y="359" T="6" P="0,0"/><P X="580" Y="363" T="4" P="0,0"/><P X="319" Y="360" T="5" P="0,0"/><P X="0" Y="0" T="257" P="0,0"/><DS X="400" Y="349"/></D><O/><L/></Z></C>')
 
   if globalSettings.mode == "4 teams mode" then
     gameStats.teamsMode = true
     updateLobbyTextAreas(gameStats.teamsMode)
-    tfm.exec.chatMessage("<bv>Room Setup: The room has been configured for 4 teams mode<n>", nil)
-    if globalSettings.twoBalls then
-      gameStats.twoBalls = true
-      tfm.exec.chatMessage("<bv>Room Setup: The two-ball mode has been activated<n>", nil)
-    end
+    tfm.exec.chatMessage("<bv>Room Setup: The room has been configured for "..globalSettings.mode.."<n>", nil)
   elseif globalSettings.mode == "2 teams mode" then
     gameStats.twoTeamsMode = true
     tfm.exec.chatMessage("<bv>Room Setup: The room has been configured for "..globalSettings.mode.."<n>", nil)
-    if globalSettings.twoBalls then
-      gameStats.twoBalls = true
-      tfm.exec.chatMessage("<bv>Room Setup: The two-ball mode has been activated<n>", nil)
-    end
   elseif globalSettings.mode == "Real mode" then
     gameStats.realMode = true
     tfm.exec.chatMessage("<bv>Room Setup: The room has been configured for "..globalSettings.mode.."<n>", nil)
-  elseif globalSettings.mode == "Normal mode" then
-    if globalSettings.twoBalls then
-      gameStats.twoBalls = true
-      tfm.exec.chatMessage("<bv>Room Setup: The two-ball mode has been activated<n>", nil)
+  end
+
+  if globalSettings.twoBalls then
+    gameStats.twoBalls = true
+    tfm.exec.chatMessage("<bv>Room Setup: The two-ball mode has been activated<n>", nil)
+  end
+
+  if globalSettings.randomBall then
+    gameStats.customBall = true
+    print("<bv>Room Setup: The random ball mode has been activated<n>", nil)
+    tfm.exec.chatMessage("<bv>Room Setup: The random ball mode has been activated<n>", nil)
+    local indexBall= math.random(1, #balls)
+    gameStats.customBallId = indexBall
+  end
+
+  if globalSettings.randomMap then
+    gameStats.randomMap = true
+    gameStats.isCustomMap = true
+    local indexMap = ''
+
+    print("<bv>Room Setup: The random map mode has been activated<n>", nil)
+    tfm.exec.chatMessage("<bv>Room Setup: The random map mode has been activated<n>", nil)
+
+    for name1, data in pairs(tfm.get.room.playerList) do
+      if selectMapOpen[name1] then
+        selectMapUI(name1)
+      end
     end
+            
+    if gameStats.twoTeamsMode or gameStats.teamsMode then
+      indexMap = math.random(1, #customMapsFourTeamsMode)
+      gameStats.customMapIndex = indexMap
+      tfm.exec.chatMessage('<bv>'..customMapsFourTeamsMode[gameStats.customMapIndex][3]..' map (created by '..customMapsFourTeamsMode[gameStats.customMapIndex][4]..') selected randomly<n>', nil)
+      print('<bv>'..customMapsFourTeamsMode[gameStats.customMapIndex][3]..' map (created by '..customMapsFourTeamsMode[gameStats.customMapIndex][4]..') selected randomly<n>')
+      return
+    end
+
+    indexMap = math.random(1, #customMaps)
+    gameStats.customMapIndex = indexMap
+    print('<bv>'..customMaps[gameStats.customMapIndex][3]..' map (created by '..customMaps[gameStats.customMapIndex][4]..') selected randomly<n>', nil)
+    tfm.exec.chatMessage('<bv>'..customMaps[gameStats.customMapIndex][3]..' map (created by '..customMaps[gameStats.customMapIndex][4]..') selected randomly<n>', nil)
   end
 
   for name, data in pairs(tfm.get.room.playerList) do
@@ -1623,6 +1682,7 @@ function init()
   ui.addWindow(30, "<p align='center'><font size='13px'><a href='event:selectMap'>Select a map", nil, 10, 370, 150, 30, 1, false, false, _)
   ui.removeTextArea(0)
   ui.addTextArea(7, "<p align='center'>", nil, 375, 50, 30, 20, 0x161616, 0x161616, 1, false)
+  
   if not gameStats.teamsMode then
     for i = 1, 3 do
       ui.addTextArea(i, "<p align='center'><font size='14px'><a href='event:joinTeamRed"..i.."'>Join", nil, x[i], y[i], 150, 40, 0xE14747, 0xE14747, 1, false)
@@ -1748,6 +1808,7 @@ function eventTextAreaCallback(id, name, c)
       ui.addTextArea(index + 10, "<p align='center'><font size='14px'><a href='event:joinTeamGreen"..index.."'>Join", nil, x[index + 9], y[index + 9], 150, 40, 0x109267, 0x109267, 1, false)
     end
   end
+
   if c == "menuOpen" then
     ui.addWindow(23, "<p align='center'><font size='13px'><a href='event:menuClose'>Menu</a>"..playerLanguage[name].tr.menuOpenText, name, 5, 15, 200, 120, 0.2, false, false, _)
   elseif c == "menuClose" then
@@ -1809,12 +1870,22 @@ function eventTextAreaCallback(id, name, c)
   elseif c == "twoballs" and admins[name] then
     if globalSettings.twoBalls then
       globalSettings.twoBalls = false
-      messageLog("<bv>The two balls command was disabled globally in the room in 4-team mode, selected by the admin "..name.."<n>")
+      messageLog("<bv>The two balls command was disabled globally in the room, selected by the admin "..name.."<n>")
     else
       globalSettings.twoBalls = true
-      messageLog("<bv>The two balls command was enabled globally in the room in 4-team mode, selected by the admin "..name.."<n>")
+      messageLog("<bv>The two balls command was enabled globally in the room, selected by the admin "..name.."<n>")
+      print("<bv>The two balls command was enabled globally in the room, selected by the admin "..name.."<n>")
     end
-
+    updateSettingsUI()
+  elseif c == "randomball" and admins[name] then
+    if globalSettings.randomBall then
+      globalSettings.randomBall = false
+      messageLog("<bv>The random ball command was disabled globally in the room, selected by the admin "..name.."<n>")
+    else
+      globalSettings.randomBall = true
+      print("<bv>The random ball command was enabled globally in the room, selected by the admin "..name.."<n>")
+      messageLog("<bv>The random ball command was enabled globally in the room, selected by the admin "..name.."<n>")
+    end
     updateSettingsUI()
   elseif c == "closeMode" then
     settingsMode[name] = false
@@ -1822,7 +1893,7 @@ function eventTextAreaCallback(id, name, c)
   elseif c == "ranking" then
     removeUITrophies(name)
     openRank[name] = true
-    ui.addWindow(24, "<p align='center'><font size='15px'>", name, 125, 60, 650, 300, 1, false, true, playerLanguage[name].tr.closeUIText)
+    ui.addWindow(24, "<p align='center'><font size='16px'>", name, 125, 60, 650, 300, 1, false, true, playerLanguage[name].tr.closeUIText)
     ui.addTextArea(9999543, "<p align='center'>Room Ranking", name, 17, 168, 100, 20, 0x142b2e, 0x8a583c, 1, true)
     ui.addTextArea(9999544, "<p align='center'><n2>Global Ranking<n>", name, 17, 268, 100, 18, 0x142b2e, 0x8a583c, 1, true)
     showMode(playerRankingMode[name], name)
@@ -1889,7 +1960,7 @@ function eventTextAreaCallback(id, name, c)
     end
   elseif c == "selectMap" then
     closeAllWindows(name)
-    ui.addWindow(24, "<p align='center'><font size='15px'>"..playerLanguage[name].tr.mapSelect.."", name, 125, 60, 650, 300, 1, false, true, playerLanguage[name].tr.closeUIText)
+    ui.addWindow(24, "<p align='center'><font size='16px'>"..playerLanguage[name].tr.mapSelect.."", name, 125, 60, 650, 300, 1, false, true, playerLanguage[name].tr.closeUIText)
     selectMapOpen[name] = true
     selectMapPage[name] = 1
     selectMapUI(name)
@@ -1919,6 +1990,15 @@ function eventTextAreaCallback(id, name, c)
     end
 
     tfm.exec.chatMessage("<bv>"..name.." voted for the "..maps[index][3].." map ("..tostring(mapsVotes[index]).." votes), type !maps to see the maps list and to vote !votemap (number)<n>", nil)
+  elseif string.sub(c, 1, 9)  == "randommap" and customMapCommand[name] and not gameStats.realMode and mode == "startGame" and admins[name] then
+    if globalSettings.randomMap then
+        globalSettings.randomMap = false
+        messageLog("<bv>The random map command was disabled globally in the room, selected by the admin "..name.."<n>")
+      else
+        globalSettings.randomMap = true
+        messageLog("<bv>The random map command was enabled globally in the room, selected by the admin "..name.."<n>")
+      end
+      updateSettingsUI()    
   elseif string.sub(c, 1, 6)  == "setmap" and customMapCommand[name] and not gameStats.realMode and mode == "startGame" and admins[name] then
     local index = tonumber(string.sub(c, 7))
     local maps = configSelectMap()
@@ -1946,15 +2026,30 @@ function eventTextAreaCallback(id, name, c)
     closeRankingUI(name)
     removeUITrophies(name)
     settings[name] = true
+
     ui.addWindow(24, ""..playerLanguage[name].tr.titleSettings.."", name, 125, 60, 650, 300, 1, false, true, playerLanguage[name].tr.closeUIText)
     ui.addTextArea(99992, ""..playerLanguage[name].tr.textSettings, name, 150, 110, 500, 200, 0x161616, 0x161616, 0, true)
-    ui.addWindow(25, "<p align='center'><font size='11px'><a href='event:openMode'>Select a mode</a>", name, 665, 110, 100, 30, 1, false, false)
-    if globalSettings.twoBalls then
-      ui.addWindow(21, "<p align='center'><font size='11px'><a href='event:twoballs'>Enabled</a>", name, 665, 250, 100, 30, 1, false, false)
 
-      return
+    ui.addWindow(25, "<p align='center'><font size='11px'><a href='event:openMode'>Select a mode</a>", name, 665, 105, 100, 30, 1, false, false)
+    
+    if globalSettings.randomBall then
+      ui.addWindow(21, "<p align='center'><font size='11px'><a href='event:randomball'>Enabled</a>", name, 665, 160, 100, 30, 1, false, false)
+      else
+      ui.addWindow(21, "<p align='center'><font size='11px'><a href='event:randomball'>Disabled</a>", name, 665, 160, 100, 30, 1, false, false)
     end
-    ui.addWindow(21, "<p align='center'><font size='11px'><a href='event:twoballs'>Disabled</a>", name, 665, 250, 100, 30, 1, false, false)
+
+    if globalSettings.randomMap then
+      ui.addWindow(22, "<p align='center'><font size='11px'><a href='event:randommap'>Enabled</a>", name, 665, 215, 100, 30, 1, false, false)
+      else
+      ui.addWindow(22, "<p align='center'><font size='11px'><a href='event:randommap'>Disabled</a>", name, 665, 215, 100, 30, 1, false, false)
+    end
+
+    if globalSettings.twoBalls then
+      ui.addWindow(23, "<p align='center'><font size='11px'><a href='event:twoballs'>Enabled</a>", name, 665, 275, 100, 30, 1, false, false)
+      else
+      ui.addWindow(23, "<p align='center'><font size='11px'><a href='event:twoballs'>Disabled</a>", name, 665, 275, 100, 30, 1, false, false)
+    end
+
   end
 end
 
@@ -2115,22 +2210,26 @@ function startGame()
   addMatchesToAllPlayers()
   selectMap()
 
-  tfm.exec.addPhysicObject (99999, 800, 460, {
+  tfm.exec.addPhysicObject (99999, 800, 460, 
+  {
     type = 15,
     width = 3000,
     height = 100,
     miceCollision = false,
-    groundCollision = false
+    groundCollision = false   
   })
+
   enableAfkMode()
   removeTextAreasOfLobby()
   showTheScore()
+
   delaySpawnBall = addTimer(function(i)
     if i == 1 then
       teleportPlayers()
       spawnInitialBall()
     end
   end, 1500)
+
   verifyIsPoint()
   showCrownToAllPlayers()
   mode = "gameStart"
@@ -2138,22 +2237,22 @@ function startGame()
 end
 
 function enableAfkMode()
-  local enableAfkSystem1 = addTimer(function(i)
+  local enableAfkSystem = addTimer(function(i)
     if i == 1 then
       gameStats.enableAfkMode = true
     end
-  end, 5000, 1, "enableAfkSystem1")
+  end, 5000, 1, "enableAfkSystem")
 end
 
 function selectMap()
   local maps = {
-    [1] = '<C><P F="0" G="0,4" MEDATA="15,1;;;;-0;0:::1-"/><Z><S><S T="7" X="400" Y="400" L="800" H="100" P="0,0,0.1,0.2,0,0,0,0" c="3" N=""/><S T="9" X="400" Y="430" L="800" H="10" P="0,0,0,0,0,0,0,0"/><S T="1" X="400" Y="350" L="10" H="200" P="0,0,0,0.2,0,0,0,0"/><S T="12" X="400" Y="455" L="800" H="10" P="0,0,0.3,0.2,0,0,0,0" o="6a7495"/><S T="12" X="-5" Y="0" L="10" H="3000" P="0,0,0.2,0.2,0,0,0,0" o="6a7495"/><S T="12" X="805" Y="0" L="10" H="3000" P="0,0,0.2,0.2,0,0,0,0" o="6a7495"/><S T="13" X="100" Y="359" L="10" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="3"/><S T="13" X="700" Y="359" L="10" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="3"/><S T="12" X="50" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="1" X="400" Y="0" L="800" H="10" P="0,0,0,0.2,0,0,0,0" c="3" N=""/><S T="0" X="400" Y="95" L="800" H="10" P="0,0,0.3,0.2,0,0,0,0" c="3" N="" m=""/><S T="0" X="105" Y="48" L="10" H="100" P="0,0,0.3,0.2,0,0,0,0" c="3" m=""/><S T="0" X="700" Y="48" L="10" H="100" P="0,0,0.3,0.2,0,0,0,0" c="3" N="" m=""/><S T="0" X="401" Y="225" L="800" H="10" P="0,0,0.3,0.2,0,0,0,0" c="3" m=""/><S T="0" X="400" Y="239" L="10" H="30" P="0,0,0,0,0,0,0,0" c="3" m=""/><S T="0" X="400" Y="791" L="800" H="10" P="0,0,0.3,0.2,90,0,0,0" m=""/><S T="12" X="316" Y="-129" L="20" H="200" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3"/><S T="12" X="407" Y="-133" L="20" H="200" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3"/><S T="12" X="363" Y="-92" L="20" H="100" P="0,0,0.2,0.2,90,0,0,0" o="6a7495" c="3"/><S T="12" X="360" Y="-206" L="20" H="100" P="0,0,0.2,0.2,90,0,0,0" o="6a7495" c="3"/><S T="12" X="400" Y="460" L="3000" H="120" P="0,0,0.3,0.2,0,0,0,0" o="6a7495" c="4" N=""/><S T="12" X="750" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="1" X="400" Y="-800" L="800" H="10" P="0,0,0,0.2,0,0,0,0" N=""/></S><D><P X="699" Y="365" T="10" P="1,0"/><P X="99" Y="365" T="10" P="1,0"/><DS X="360" Y="-151"/></D><O/><L/></Z></C>',
-    [2] = '<C><P L="1200" F="0" G="0,4" MEDATA="15,1;;;;-0;0:::1-"/><Z><S><S T="7" X="600" Y="400" L="1200" H="100" P="0,0,0.1,0.2,0,0,0,0" c="3" N=""/><S T="9" X="600" Y="430" L="1200" H="10" P="0,0,0,0,0,0,0,0"/><S T="1" X="600" Y="350" L="10" H="200" P="0,0,0,0.2,0,0,0,0"/><S T="12" X="400" Y="455" L="800" H="10" P="0,0,0.3,0.2,0,0,0,0" o="6a7495"/><S T="12" X="-5" Y="0" L="10" H="3000" P="0,0,0.2,0.2,0,0,0,0" o="6a7495"/><S T="12" X="1200" Y="0" L="10" H="3000" P="0,0,0.2,0.2,0,0,0,0" o="6a7495"/><S T="13" X="300" Y="359" L="10" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="3"/><S T="13" X="900" Y="359" L="10" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="3"/><S T="12" X="250" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="1" X="600" Y="0" L="1200" H="10" P="0,0,0,0.2,0,0,0,0" c="3"/><S T="0" X="600" Y="95" L="1200" H="10" P="0,0,0.3,0.2,0,0,0,0" c="3" m=""/><S T="0" X="305" Y="48" L="10" H="100" P="0,0,0.3,0.2,0,0,0,0" c="3" m=""/><S T="0" X="900" Y="48" L="10" H="100" P="0,0,0.3,0.2,0,0,0,0" c="3" m=""/><S T="0" X="601" Y="225" L="1200" H="10" P="0,0,0.3,0.2,0,0,0,0" c="3" m=""/><S T="0" X="600" Y="239" L="10" H="30" P="0,0,0,0,0,0,0,0" c="3" m=""/><S T="0" X="600" Y="791" L="800" H="10" P="0,0,0.3,0.2,90,0,0,0" m=""/><S T="12" X="316" Y="-129" L="20" H="200" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3"/><S T="12" X="407" Y="-133" L="20" H="200" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3"/><S T="12" X="363" Y="-92" L="20" H="100" P="0,0,0.2,0.2,90,0,0,0" o="6a7495" c="3"/><S T="12" X="360" Y="-206" L="20" H="100" P="0,0,0.2,0.2,90,0,0,0" o="6a7495" c="3"/><S T="12" X="400" Y="460" L="3000" H="120" P="0,0,0.3,0.2,0,0,0,0" o="6a7495" c="4" N=""/><S T="12" X="950" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="1" X="600" Y="-800" L="1200" H="10" P="0,0,0,0.2,0,0,0,0"/></S><D><P X="899" Y="365" T="10" P="1,0"/><P X="299" Y="365" T="10" P="1,0"/><DS X="365" Y="-141"/></D><O/><L/></Z></C>',
-    [3] = '<C><P L="1800" F="0" G="0,4" MEDATA="15,1;;;;-0;0:::1-"/><Z><S><S T="7" X="900" Y="400" L="1800" H="100" P="0,0,0.1,0.2,0,0,0,0" c="3" N=""/><S T="9" X="600" Y="430" L="1200" H="10" P="0,0,0,0,0,0,0,0"/><S T="1" X="901" Y="350" L="10" H="200" P="0,0,0,0.2,0,0,0,0"/><S T="12" X="400" Y="455" L="800" H="10" P="0,0,0.3,0.2,0,0,0,0" o="6a7495"/><S T="12" X="-5" Y="0" L="10" H="3000" P="0,0,0.2,0,0,0,0,0" o="6a7495"/><S T="12" X="1800" Y="0" L="10" H="3000" P="0,0,0.2,0,0,0,0,0" o="6a7495"/><S T="13" X="300" Y="359" L="10" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="3"/><S T="13" X="1500" Y="359" L="10" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="3"/><S T="12" X="250" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="1" X="900" Y="0" L="1800" H="10" P="0,0,0,0.2,0,0,0,0" c="3"/><S T="0" X="900" Y="95" L="1800" H="10" P="0,0,0.3,0.2,0,0,0,0" c="3" m=""/><S T="0" X="305" Y="48" L="10" H="100" P="0,0,0.3,0.2,0,0,0,0" c="3" m=""/><S T="0" X="1500" Y="48" L="10" H="100" P="0,0,0.3,0.2,0,0,0,0" c="3" m=""/><S T="0" X="901" Y="225" L="1800" H="10" P="0,0,0.3,0.2,0,0,0,0" c="3" m=""/><S T="0" X="900" Y="239" L="10" H="30" P="0,0,0,0,0,0,0,0" c="3" m=""/><S T="0" X="900" Y="791" L="800" H="10" P="0,0,0.3,0.2,90,0,0,0" m=""/><S T="12" X="316" Y="-129" L="20" H="200" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3"/><S T="12" X="407" Y="-133" L="20" H="200" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3"/><S T="12" X="363" Y="-92" L="20" H="100" P="0,0,0.2,0.2,90,0,0,0" o="6a7495" c="3"/><S T="12" X="360" Y="-206" L="20" H="100" P="0,0,0.2,0.2,90,0,0,0" o="6a7495" c="3"/><S T="12" X="900" Y="460" L="3000" H="120" P="0,0,0.3,0.2,0,0,0,0" o="6a7495" c="4" N=""/><S T="12" X="1550" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="1" X="900" Y="-800" L="1800" H="10" P="0,0,0,0.2,0,0,0,0"/></S><D><P X="1499" Y="365" T="10" P="1,0"/><P X="299" Y="365" T="10" P="1,0"/><DS X="365" Y="-141"/></D><O/><L/></Z></C>'
+    [1] = customMaps[6][1],
+    [2] = customMaps[6][2],
+    [3] = '<C><P L="1800" F="0" G="0,4" MEDATA="13,1;;;;-0;0:::1-"/><Z><S><S T="7" X="900" Y="400" L="1800" H="100" P="0,0,0.1,0.2,0,0,0,0" c="3" N=""/><S T="9" X="600" Y="430" L="1200" H="10" P="0,0,0,0,0,0,0,0"/><S T="1" X="901" Y="350" L="10" H="200" P="0,0,0,0.2,0,0,0,0"/><S T="12" X="400" Y="455" L="800" H="10" P="0,0,0.3,0.2,0,0,0,0" o="6a7495"/><S T="12" X="-10" Y="200" L="20" H="2000" P="0,0,0.2,0,0,0,0,0" o="FF0000" m=""/><S T="12" X="1810" Y="200" L="20" H="2000" P="0,0,0.2,0,0,0,0,0" o="FF0000" m=""/><S T="13" X="300" Y="359" L="10" P="0,0,0,0,0,0,0,0" o="324650" c="4"/><S T="13" X="1500" Y="359" L="10" P="0,0,0,0,0,0,0,0" o="324650" c="4"/><S T="12" X="250" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="1" X="900" Y="-5" L="1800" H="10" P="0,0,0,0.2,0,0,0,0" c="3"/><S T="12" X="900" Y="95" L="1800" H="10" P="0,0,0.3,0.2,0,0,0,0" o="FFF200" c="3" m=""/><S T="12" X="305" Y="48" L="10" H="100" P="0,0,0.3,0.2,0,0,0,0" o="FFF200" c="3" m=""/><S T="12" X="1495" Y="48" L="10" H="100" P="0,0,0.3,0.2,0,0,0,0" o="FFF200" c="3" m=""/><S T="12" X="900" Y="225" L="1800" H="10" P="0,0,0.3,0.2,0,0,0,0" o="FFF200" c="3" m=""/><S T="12" X="900" Y="240" L="10" H="40" P="0,0,0,0,0,0,0,0" o="FFF200" c="3" m=""/><S T="12" X="900" Y="791" L="800" H="10" P="0,0,0.3,0.2,90,0,0,0" o="FF0000" m=""/><S T="12" X="316" Y="-129" L="20" H="200" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3"/><S T="12" X="407" Y="-133" L="20" H="200" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3"/><S T="12" X="363" Y="-92" L="20" H="100" P="0,0,0.2,0.2,90,0,0,0" o="6a7495" c="3"/><S T="12" X="360" Y="-206" L="20" H="100" P="0,0,0.2,0.2,90,0,0,0" o="6a7495" c="3"/><S T="12" X="900" Y="460" L="2600" H="120" P="0,0,0.3,0.2,0,0,0,0" o="6a7495" c="4" N=""/><S T="12" X="1550" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="12" X="900" Y="-800" L="1840" H="20" P="0,0,0,0.2,0,0,0,0" o="FF0000" m=""/><S T="12" X="900" Y="1190" L="1840" H="20" P="0,0,0,0.2,0,0,0,0" o="FF0000" m=""/></S><D><P X="1499" Y="365" T="10" P="1,0"/><P X="299" Y="365" T="10" P="1,0"/><DS X="365" Y="-141"/></D><O/><L/></Z></C>'
   }
 
   if gameStats.realMode then
-    tfm.exec.newGame('<C><P L="2600" F="0" G="0,4" MEDATA="15,1;;;;-0;0:::1-"/><Z><S><S T="7" X="1300" Y="400" L="2600" H="100" P="0,0,0.1,0.2,0,0,0,0" c="3" N=""/><S T="9" X="600" Y="430" L="1200" H="10" P="0,0,0,0,0,0,0,0"/><S T="1" X="1300" Y="350" L="10" H="200" P="0,0,0,0.2,0,0,0,0"/><S T="12" X="400" Y="455" L="800" H="10" P="0,0,0.3,0.2,0,0,0,0" o="6a7495"/><S T="12" X="-5" Y="0" L="10" H="3000" P="0,0,0.2,0,0,0,0,0" o="6a7495"/><S T="12" X="2600" Y="0" L="10" H="3000" P="0,0,0.2,0,0,0,0,0" o="6a7495"/><S T="13" X="700" Y="359" L="10" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="3"/><S T="13" X="1900" Y="359" L="10" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="3"/><S T="12" X="1200" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="1" X="1300" Y="0" L="2600" H="10" P="0,0,0,0.2,0,0,0,0" c="3"/><S T="0" X="1300" Y="95" L="2600" H="10" P="0,0,0.3,0.2,0,0,0,0" c="3" m=""/><S T="0" X="305" Y="48" L="10" H="100" P="0,0,0.3,0.2,0,0,0,0" c="3" m=""/><S T="0" X="2300" Y="48" L="10" H="100" P="0,0,0.3,0.2,0,0,0,0" c="3" m=""/><S T="0" X="1300" Y="225" L="2600" H="10" P="0,0,0.3,0.2,0,0,0,0" c="3" m=""/><S T="0" X="1300" Y="239" L="10" H="30" P="0,0,0,0,0,0,0,0" c="3" m=""/><S T="0" X="1300" Y="788" L="800" H="10" P="0,0,0.3,0.2,90,0,0,0" m=""/><S T="12" X="316" Y="-129" L="20" H="200" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3"/><S T="12" X="407" Y="-133" L="20" H="200" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3"/><S T="12" X="363" Y="-92" L="20" H="100" P="0,0,0.2,0.2,90,0,0,0" o="6a7495" c="3"/><S T="12" X="360" Y="-206" L="20" H="100" P="0,0,0.2,0.2,90,0,0,0" o="6a7495" c="3"/><S T="12" X="1300" Y="460" L="3000" H="120" P="0,0,0.3,0.2,0,0,0,0" o="6a7495" c="4" N=""/><S T="12" X="1400" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="1" X="1300" Y="-800" L="2600" H="10" P="0,0,0,0.2,0,0,0,0"/><S T="4" X="600" Y="850" L="10" H="1000" P="0,0,20,0.2,0,0,0,0" c="2"/><S T="4" X="2000" Y="850" L="10" H="1000" P="0,0,20,0.2,0,0,0,0" c="2"/><S T="4" X="600" Y="355" L="10" H="10" P="0,0,20,0.2,30,0,0,0" c="2"/><S T="4" X="2000" Y="355" L="10" H="10" P="0,0,20,0.2,30,0,0,0" c="2"/><S T="12" X="600" Y="850" L="10" H="1000" P="0,0,0.3,0.2,0,0,0,0" o="FFFFFF" c="4" N=""/><S T="12" X="2000" Y="850" L="10" H="1000" P="0,0,0.3,0.2,0,0,0,0" o="FFFFFF" c="4" N=""/></S><D><P X="1899" Y="365" T="10" P="1,0"/><P X="700" Y="365" T="10" P="1,0"/><DS X="365" Y="-141"/></D><O/><L/></Z></C>')
+    tfm.exec.newGame('<C><P L="2600" F="0" G="0,4" MEDATA=";0,1;;;-0;0:::1-"/><Z><S><S T="7" X="1300" Y="400" L="2600" H="100" P="0,0,0.1,0.2,0,0,0,0" c="3" N=""/><S T="9" X="600" Y="430" L="1200" H="10" P="0,0,0,0,0,0,0,0"/><S T="1" X="1300" Y="350" L="10" H="200" P="0,0,0,0.2,0,0,0,0"/><S T="12" X="400" Y="455" L="800" H="10" P="0,0,0.3,0.2,0,0,0,0" o="6a7495"/><S T="12" X="-10" Y="200" L="20" H="2000" P="0,0,0.2,0,0,0,0,0" o="FF0000" m=""/><S T="12" X="2610" Y="200" L="20" H="2000" P="0,0,0.2,0,0,0,0,0" o="FF0000" m=""/><S T="13" X="700" Y="359" L="10" P="0,0,0,0,0,0,0,0" o="324650" c="4"/><S T="13" X="1900" Y="359" L="10" P="0,0,0,0,0,0,0,0" o="324650" c="4"/><S T="1" X="1300" Y="-5" L="2600" H="10" P="0,0,0,0.2,0,0,0,0" c="3"/><S T="12" X="1300" Y="95" L="2600" H="10" P="0,0,0.3,0.2,0,0,0,0" o="FFF200" c="3" m=""/><S T="12" X="305" Y="48" L="10" H="100" P="0,0,0.3,0.2,0,0,0,0" o="FFF200" c="3" m=""/><S T="12" X="2295" Y="48" L="10" H="100" P="0,0,0.3,0.2,0,0,0,0" o="FFF200" c="3" m=""/><S T="12" X="1200" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="12" X="1300" Y="225" L="2600" H="10" P="0,0,0.3,0.2,0,0,0,0" o="FFF200" c="3" m=""/><S T="12" X="1300" Y="240" L="10" H="40" P="0,0,0,0,0,0,0,0" o="FFF200" c="3" m=""/><S T="12" X="1300" Y="790" L="800" H="10" P="0,0,0.3,0.2,90,0,0,0" o="FF0000" N="" m=""/><S T="12" X="600" Y="770" L="10" H="840" P="0,0,0.3,0.2,0,0,0,0" o="FFFFFF" N=""/><S T="12" X="2000" Y="770" L="10" H="840" P="0,0,0.3,0.2,0,0,0,0" o="FFFFFF" N=""/><S T="12" X="316" Y="-129" L="20" H="200" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3"/><S T="12" X="407" Y="-133" L="20" H="200" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3"/><S T="12" X="363" Y="-92" L="20" H="100" P="0,0,0.2,0.2,90,0,0,0" o="6a7495" c="3"/><S T="12" X="360" Y="-206" L="20" H="100" P="0,0,0.2,0.2,90,0,0,0" o="6a7495" c="3"/><S T="12" X="1300" Y="460" L="3400" H="120" P="0,0,0.3,0.2,0,0,0,0" o="6a7495" c="4" N=""/><S T="12" X="1400" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="12" X="1300" Y="-800" L="2640" H="20" P="0,0,0,0.2,0,0,0,0" o="FF0000" m=""/><S T="12" X="1300" Y="1190" L="2640" H="20" P="0,0,0,0.2,0,0,0,0" o="FF0000" m=""/><S T="12" X="600" Y="355" L="10" H="10" P="0,0,20,0.2,45,0,0,0" o="FFFFFF" c="2"/><S T="12" X="2000" Y="355" L="10" H="10" P="0,0,20,0.2,45,0,0,0" o="FFFFFF" c="2"/></S><D><P X="1900" Y="365" T="10" P="1,0"/><P X="700" Y="365" T="10" P="1,0"/><DS X="365" Y="-141"/></D><O/><L/></Z></C>')
     return
   end
 
@@ -2188,8 +2287,7 @@ function selectMap()
 
       return
     end
-    local defaultMap = '<C><P L="1600" F="3" G="0,4" MEDATA="29,1;;;;-0;0:::1-"/><Z><S><S T="7" X="805" Y="400" L="1610" H="100" P="0,0,0.1,0.2,0,0,0,0" c="3" N=""/><S T="9" X="600" Y="430" L="1200" H="10" P="0,0,0,0,0,0,0,0"/><S T="1" X="400" Y="350" L="10" H="200" P="0,0,0,0.2,0,0,0,0"/><S T="12" X="400" Y="455" L="800" H="10" P="0,0,0.3,0.2,0,0,0,0" o="6a7495"/><S T="12" X="-5" Y="0" L="10" H="3000" P="0,0,0.2,0.2,0,0,0,0" o="6a7495"/><S T="12" X="1600" Y="0" L="10" H="3000" P="0,0,0.2,0.2,0,0,0,0" o="6a7495"/><S T="13" X="100" Y="359" L="10" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="3"/><S T="13" X="600" Y="359" L="10" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="3"/><S T="12" X="250" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="1" X="790" Y="0" L="1620" H="10" P="0,0,0,0.2,0,0,0,0" c="3"/><S T="0" X="790" Y="95" L="1620" H="10" P="0,0,0.3,0.2,0,0,0,0" c="3" m=""/><S T="0" X="305" Y="48" L="10" H="100" P="0,0,0.3,0.2,0,0,0,0" c="3" m=""/><S T="0" X="1300" Y="48" L="10" H="100" P="0,0,0.3,0.2,0,0,0,0" c="3" m=""/><S T="0" X="790" Y="225" L="1620" H="10" P="0,0,0.3,0.2,0,0,0,0" c="3" m=""/><S T="0" X="400" Y="239" L="10" H="30" P="0,0,0,0,0,0,0,0" c="3" m=""/><S T="0" X="400" Y="791" L="800" H="10" P="0,0,0.3,0.2,90,0,0,0" m=""/><S T="12" X="316" Y="-129" L="20" H="200" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3"/><S T="12" X="407" Y="-133" L="20" H="200" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3"/><S T="12" X="363" Y="-92" L="20" H="100" P="0,0,0.2,0.2,90,0,0,0" o="6a7495" c="3"/><S T="12" X="360" Y="-206" L="20" H="100" P="0,0,0.2,0.2,90,0,0,0" o="6a7495" c="3"/><S T="12" X="400" Y="460" L="3000" H="120" P="0,0,0.3,0.2,0,0,0,0" o="6a7495" c="4" N=""/><S T="12" X="1350" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="1" X="600" Y="-800" L="1200" H="10" P="0,0,0,0.2,0,0,0,0"/><S T="1" X="800" Y="350" L="10" H="200" P="0,0,0,0.2,0,0,0,0"/><S T="0" X="800" Y="790" L="800" H="10" P="0,0,0.3,0.2,90,0,0,0" m=""/><S T="0" X="800" Y="239" L="10" H="30" P="0,0,0,0,0,0,0,0" c="3" m=""/><S T="13" X="1000" Y="359" L="10" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="3"/><S T="1" X="1200" Y="350" L="10" H="200" P="0,0,0,0.2,0,0,0,0"/><S T="0" X="1200" Y="239" L="10" H="30" P="0,0,0,0,0,0,0,0" c="3" m=""/><S T="0" X="1200" Y="790" L="800" H="10" P="0,0,0.3,0.2,90,0,0,0" m=""/><S T="12" X="600" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="12" X="1000" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="13" X="1500" Y="359" L="10" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="3"/></S><D><P X="599" Y="363" T="10" P="1,0"/><P X="99" Y="363" T="10" P="1,0"/><P X="999" Y="363" T="10" P="1,0"/><P X="1499" Y="363" T="10" P="1,0"/><DS X="365" Y="-141"/></D><O/><L/></Z></C>'
-    tfm.exec.newGame(defaultMap)
+    tfm.exec.newGame(customMapsFourTeamsMode[34][1])
     return
   end
 
@@ -2224,7 +2322,7 @@ function selectMap()
 
       return
     end
-    tfm.exec.newGame('<C><P L="1600" F="3" G="0,4" MEDATA="29,1;;;;-0;0:::1-"/><Z><S><S T="7" X="805" Y="400" L="1610" H="100" P="0,0,0.1,0.2,0,0,0,0" c="3" N=""/><S T="9" X="600" Y="430" L="1200" H="10" P="0,0,0,0,0,0,0,0"/><S T="1" X="400" Y="350" L="10" H="200" P="0,0,0,0.2,0,0,0,0"/><S T="12" X="400" Y="455" L="800" H="10" P="0,0,0.3,0.2,0,0,0,0" o="6a7495"/><S T="12" X="-5" Y="0" L="10" H="3000" P="0,0,0.2,0.2,0,0,0,0" o="6a7495"/><S T="12" X="1600" Y="0" L="10" H="3000" P="0,0,0.2,0.2,0,0,0,0" o="6a7495"/><S T="13" X="100" Y="359" L="10" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="3"/><S T="13" X="600" Y="359" L="10" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="3"/><S T="12" X="250" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="1" X="790" Y="0" L="1620" H="10" P="0,0,0,0.2,0,0,0,0" c="3"/><S T="0" X="790" Y="95" L="1620" H="10" P="0,0,0.3,0.2,0,0,0,0" c="3" m=""/><S T="0" X="305" Y="48" L="10" H="100" P="0,0,0.3,0.2,0,0,0,0" c="3" m=""/><S T="0" X="1300" Y="48" L="10" H="100" P="0,0,0.3,0.2,0,0,0,0" c="3" m=""/><S T="0" X="790" Y="225" L="1620" H="10" P="0,0,0.3,0.2,0,0,0,0" c="3" m=""/><S T="0" X="400" Y="239" L="10" H="30" P="0,0,0,0,0,0,0,0" c="3" m=""/><S T="0" X="400" Y="791" L="800" H="10" P="0,0,0.3,0.2,90,0,0,0" m=""/><S T="12" X="316" Y="-129" L="20" H="200" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3"/><S T="12" X="407" Y="-133" L="20" H="200" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3"/><S T="12" X="363" Y="-92" L="20" H="100" P="0,0,0.2,0.2,90,0,0,0" o="6a7495" c="3"/><S T="12" X="360" Y="-206" L="20" H="100" P="0,0,0.2,0.2,90,0,0,0" o="6a7495" c="3"/><S T="12" X="400" Y="460" L="3000" H="120" P="0,0,0.3,0.2,0,0,0,0" o="6a7495" c="4" N=""/><S T="12" X="1350" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="1" X="600" Y="-800" L="1200" H="10" P="0,0,0,0.2,0,0,0,0"/><S T="1" X="800" Y="350" L="10" H="200" P="0,0,0,0.2,0,0,0,0"/><S T="0" X="800" Y="790" L="800" H="10" P="0,0,0.3,0.2,90,0,0,0" m=""/><S T="0" X="800" Y="239" L="10" H="30" P="0,0,0,0,0,0,0,0" c="3" m=""/><S T="13" X="1000" Y="359" L="10" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="3"/><S T="1" X="1200" Y="350" L="10" H="200" P="0,0,0,0.2,0,0,0,0"/><S T="0" X="1200" Y="239" L="10" H="30" P="0,0,0,0,0,0,0,0" c="3" m=""/><S T="0" X="1200" Y="790" L="800" H="10" P="0,0,0.3,0.2,90,0,0,0" m=""/><S T="12" X="600" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="12" X="1000" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="13" X="1500" Y="359" L="10" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="3"/></S><D><P X="599" Y="363" T="10" P="1,0"/><P X="99" Y="363" T="10" P="1,0"/><P X="999" Y="363" T="10" P="1,0"/><P X="1499" Y="363" T="10" P="1,0"/><DS X="365" Y="-141"/></D><O/><L/></Z></C>')
+    tfm.exec.newGame(customMapsFourTeamsMode[34][1])
     return
   end
 
@@ -2338,6 +2436,7 @@ function selectMap()
         end, 1000)
         return
       end
+      
       if gameStats.isCustomMap then
         tfm.exec.newGame(customMaps[gameStats.customMapIndex][2])
         foundBallSpawnsOnMap(customMaps[gameStats.customMapIndex][2], true)
@@ -2452,7 +2551,7 @@ function spawnInitialBall()
     x = {400, 1400}
   end
 
-  print(x)
+  --print(x)
 
   spawnBallConfig(spawnBalls, x)
   ballOnGame = true
@@ -2725,9 +2824,9 @@ function spawnBallRealMode(team)
 end
 
 function spawnBall(x, index, y)
-
   local ballSpawnX = x
   local ballSpawnY = 50
+
   if y ~= nil then
     ballSpawnY = y
   end
@@ -2741,20 +2840,21 @@ function spawnBall(x, index, y)
 
     if gameStats.customBall then
       ball_id = tfm.exec.addShamanObject(balls[gameStats.customBallId].id, ballSpawnX, ballSpawnY, 0, 0, -5, true)
+      
       if balls[gameStats.customBallId].isImage then
         tfm.exec.addImage(balls[gameStats.customBallId].image, "#"..ball_id, -15, -15, nil, 1, 1, _, 1)
       end
+
       ballOnGame = true
       updateTwoBallOnGame()
-
       return
     else
       ball_id = tfm.exec.addShamanObject(6, ballSpawnX, ballSpawnY, 0, 0, -5, true)
       ballOnGame = true
       updateTwoBallOnGame()
-
       return
     end
+
   elseif index == 2 then
     tfm.exec.removeObject(ball_id2)
     ball_id2 = nil
@@ -2764,18 +2864,17 @@ function spawnBall(x, index, y)
 
     if gameStats.customBall then
       ball_id2 = tfm.exec.addShamanObject(balls[gameStats.customBallId].id, ballSpawnX, ballSpawnY, 0, 0, -5, true)
+      
       if balls[gameStats.customBallId].isImage then
         tfm.exec.addImage(balls[gameStats.customBallId].image, "#"..ball_id2, -15, -15, nil, 1, 1, _, 1)
       end
       ballOnGame2 = true
       updateTwoBallOnGame()
-
       return
     else
       ball_id2 = tfm.exec.addShamanObject(6, ballSpawnX, ballSpawnY, 0, 0, -5, true)
       ballOnGame2 = true
       updateTwoBallOnGame()
-
       return
     end
   end
@@ -3630,8 +3729,10 @@ function toggleMap()
   gameStats.canTransform = false
   disablePlayersCanTransform(1500)
   ballOnGame = false
+
   if gameStats.typeMap == "large3v3" then
     ui.removeTextArea(8998991)
+
     if mapsToTest[2] ~= "" then
       tfm.exec.newGame(mapsToTest[2])
       local foundMap = addTimer(function(i)
@@ -3650,7 +3751,7 @@ function toggleMap()
         foundBallSpawnsOnMap(customMapsFourTeamsMode[gameStats.mapIndexSelected][2], false)
         foundMiceSpawnsOnMap(customMapsFourTeamsMode[gameStats.mapIndexSelected][2], false)
       else
-        tfm.exec.newGame('<C><P L="1200" F="3" G="0,4" MEDATA="25,1;;;;-0;0:::1-"/><Z><S><S T="7" X="600" Y="400" L="1200" H="100" P="0,0,0.1,0.2,0,0,0,0" c="3" N=""/><S T="9" X="600" Y="430" L="1200" H="10" P="0,0,0,0,0,0,0,0"/><S T="1" X="400" Y="350" L="10" H="200" P="0,0,0,0.2,0,0,0,0"/><S T="12" X="400" Y="455" L="800" H="10" P="0,0,0.3,0.2,0,0,0,0" o="6a7495"/><S T="12" X="-5" Y="0" L="10" H="3000" P="0,0,0.2,0.2,0,0,0,0" o="6a7495"/><S T="12" X="1200" Y="0" L="10" H="3000" P="0,0,0.2,0.2,0,0,0,0" o="6a7495"/><S T="13" X="100" Y="359" L="10" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="3"/><S T="13" X="600" Y="359" L="10" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="3"/><S T="12" X="250" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="1" X="600" Y="0" L="1200" H="10" P="0,0,0,0.2,0,0,0,0" c="3"/><S T="0" X="600" Y="95" L="1200" H="10" P="0,0,0.3,0.2,0,0,0,0" c="3" m=""/><S T="0" X="305" Y="48" L="10" H="100" P="0,0,0.3,0.2,0,0,0,0" c="3" m=""/><S T="0" X="900" Y="48" L="10" H="100" P="0,0,0.3,0.2,0,0,0,0" c="3" m=""/><S T="0" X="601" Y="225" L="1200" H="10" P="0,0,0.3,0.2,0,0,0,0" c="3" m=""/><S T="0" X="400" Y="239" L="10" H="30" P="0,0,0,0,0,0,0,0" c="3" m=""/><S T="0" X="400" Y="791" L="800" H="10" P="0,0,0.3,0.2,90,0,0,0" m=""/><S T="12" X="316" Y="-129" L="20" H="200" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3"/><S T="12" X="407" Y="-133" L="20" H="200" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3"/><S T="12" X="363" Y="-92" L="20" H="100" P="0,0,0.2,0.2,90,0,0,0" o="6a7495" c="3"/><S T="12" X="360" Y="-206" L="20" H="100" P="0,0,0.2,0.2,90,0,0,0" o="6a7495" c="3"/><S T="12" X="400" Y="460" L="3000" H="120" P="0,0,0.3,0.2,0,0,0,0" o="6a7495" c="4" N=""/><S T="12" X="950" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="1" X="600" Y="-800" L="1200" H="10" P="0,0,0,0.2,0,0,0,0"/><S T="1" X="800" Y="350" L="10" H="200" P="0,0,0,0.2,0,0,0,0"/><S T="0" X="800" Y="239" L="10" H="30" P="0,0,0,0,0,0,0,0" c="3" m=""/><S T="0" X="800" Y="791" L="800" H="10" P="0,0,0.3,0.2,90,0,0,0" m=""/><S T="13" X="1100" Y="359" L="10" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="3"/><S T="12" X="600" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/></S><D><P X="599" Y="363" T="10" P="1,0"/><P X="99" Y="363" T="10" P="1,0"/><P X="1099" Y="363" T="10" P="1,0"/><DS X="365" Y="-141"/></D><O/><L/></Z></C>')
+        tfm.exec.newGame(customMapsFourTeamsMode[34][2])
       end
     end
 
@@ -3694,7 +3795,7 @@ function toggleMap()
         foundBallSpawnsOnMap(customMapsFourTeamsMode[gameStats.mapIndexSelected][5], false)
         foundMiceSpawnsOnMap(customMapsFourTeamsMode[gameStats.mapIndexSelected][5], false)
       else
-        tfm.exec.newGame('<C><P F="0" G="0,4" MEDATA="15,1;;;;-0;0:::1-"/><Z><S><S T="7" X="400" Y="400" L="800" H="100" P="0,0,0.1,0.2,0,0,0,0" c="3" N=""/><S T="9" X="400" Y="430" L="800" H="10" P="0,0,0,0,0,0,0,0"/><S T="1" X="400" Y="350" L="10" H="200" P="0,0,0,0.2,0,0,0,0"/><S T="12" X="400" Y="455" L="800" H="10" P="0,0,0.3,0.2,0,0,0,0" o="6a7495"/><S T="12" X="-5" Y="0" L="10" H="3000" P="0,0,0.2,0.2,0,0,0,0" o="6a7495"/><S T="12" X="805" Y="0" L="10" H="3000" P="0,0,0.2,0.2,0,0,0,0" o="6a7495"/><S T="13" X="100" Y="359" L="10" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="3"/><S T="13" X="700" Y="359" L="10" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="3"/><S T="12" X="50" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="1" X="400" Y="0" L="800" H="10" P="0,0,0,0.2,0,0,0,0" c="3" N=""/><S T="0" X="400" Y="95" L="800" H="10" P="0,0,0.3,0.2,0,0,0,0" c="3" N="" m=""/><S T="0" X="105" Y="48" L="10" H="100" P="0,0,0.3,0.2,0,0,0,0" c="3" m=""/><S T="0" X="700" Y="48" L="10" H="100" P="0,0,0.3,0.2,0,0,0,0" c="3" N="" m=""/><S T="0" X="401" Y="225" L="800" H="10" P="0,0,0.3,0.2,0,0,0,0" c="3" m=""/><S T="0" X="400" Y="239" L="10" H="30" P="0,0,0,0,0,0,0,0" c="3" m=""/><S T="0" X="400" Y="791" L="800" H="10" P="0,0,0.3,0.2,90,0,0,0" m=""/><S T="12" X="316" Y="-129" L="20" H="200" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3"/><S T="12" X="407" Y="-133" L="20" H="200" P="0,0,0.2,0.2,0,0,0,0" o="6a7495" c="3"/><S T="12" X="363" Y="-92" L="20" H="100" P="0,0,0.2,0.2,90,0,0,0" o="6a7495" c="3"/><S T="12" X="360" Y="-206" L="20" H="100" P="0,0,0.2,0.2,90,0,0,0" o="6a7495" c="3"/><S T="12" X="400" Y="460" L="3000" H="120" P="0,0,0.3,0.2,0,0,0,0" o="6a7495" c="4" N=""/><S T="12" X="750" Y="45" L="100" H="105" P="0,0,0.3,0.2,0,0,0,0" o="324650" c="4"/><S T="1" X="400" Y="-800" L="800" H="10" P="0,0,0,0.2,0,0,0,0" N=""/></S><D><P X="699" Y="365" T="10" P="1,0"/><P X="99" Y="365" T="10" P="1,0"/><DS X="360" Y="-151"/></D><O/><L/></Z></C>')
+        tfm.exec.newGame(customMaps[6][1])
       end
     end
 
@@ -3907,6 +4008,7 @@ function eventNewPlayer(name)
 
   ui.addWindow(23, "<p align='center'><font size='13px'><a href='event:menuOpen'>Menu", name, 5, 15, 100, 30, 0.2, false, false, _)
   tfm.exec.chatMessage(playerLanguage[name].tr.welcomeMessage, name)
+  
   if mode == "startGame" then
     eventNewGameShowLobbyTexts(gameStats.teamsMode)
 
@@ -3949,7 +4051,6 @@ function setConsumablesForce(key, playerMove)
       speedX = 5
     end
   end
-
   return { speedX, speedY, yCoord }
 end
 
@@ -3967,6 +4068,7 @@ function eventKeyboard(name, key, down, x, y, xv, yv)
   elseif yv > 0 then
     OffsetY = 5
   end
+
   local coordinatesX = (x + xv) + OffsetX
   local coordinatesY = (y + yv) + OffsetY
   tfm.get.room.playerList[name].x = coordinatesX
@@ -4000,9 +4102,7 @@ function eventKeyboard(name, key, down, x, y, xv, yv)
     if openRank[name] then
       openRank[name] = false
       closeAllWindows(name)
-      closeWindow(21, name)
-      closeWindow(24, name)
-      closeWindow(25, name)
+      
       ui.removeTextArea(99992, name)
       closeWindow(266, name)
       removeButtons(25, name)
@@ -4010,7 +4110,7 @@ function eventKeyboard(name, key, down, x, y, xv, yv)
       closeRankingUI(name)
     else
       openRank[name] = true
-      ui.addWindow(24, "<p align='center'><font size='15px'>", name, 125, 60, 650, 300, 1, false, true, playerLanguage[name].tr.closeUIText)
+      ui.addWindow(24, "<p align='center'><font size='16px'>", name, 125, 60, 650, 300, 1, false, true, playerLanguage[name].tr.closeUIText)
       ui.addTextArea(9999543, "<p align='center'>Room Ranking", name, 17, 168, 100, 20, 0x142b2e, 0x8a583c, 1, true)
       ui.addTextArea(9999544, "<p align='center'><n2>Global Ranking<n>", name, 17, 268, 100, 18, 0x142b2e, 0x8a583c, 1, true)
       showMode(playerRankingMode[name], name)
@@ -4507,8 +4607,8 @@ function eventChatCommand(name, c)
   elseif command == "maps" then
     local str = "<bv>Volley maps"
     if gameStats.twoTeamsMode then
-      for i = 1, #customMapsTwoTeamsMode do
-        str = ""..str.."\n"..i.."- "..customMapsTwoTeamsMode[i][3]..""
+      for i = 1, #customMapsFourTeamsMode do
+        str = ""..str.."\n"..i.."- "..customMapsFourTeamsMode[i][3]..""
       end
     elseif gameStats.teamsMode then
       for i = 1, #customMapsFourTeamsMode do
@@ -4612,6 +4712,7 @@ function eventChatCommand(name, c)
       end
     end
   end
+  
   if admins[name] then
     local isPlayerBanned = messagePlayerIsBanned(name)
     if isPlayerBanned then
@@ -4681,6 +4782,75 @@ function eventChatCommand(name, c)
       else
         tfm.exec.chatMessage(playerLanguage[name].tr.passwordRemoved, name)
       end
+    elseif command:sub(1, 9) == "randommap" and mode == "startGame" and customMapCommand[name] then
+      if gameStats.realMode then
+        tfm.exec.chatMessage("<bv>The command !randomMap is not available on Volley Real Mode<n>", name)
+        return
+      end
+
+      local args = split(command)
+      
+      if args[2] ~= "true" and args[2] ~= "false" then
+        tfm.exec.chatMessage('<bv>Second parameter invalid, must be true or false<n>', name)
+        return
+      end
+
+      if args[2] == "false" then
+        customMapCommand[name] = false
+
+        customMapCommandDelay = addTimer(function(i)
+          if i == 1 then
+            customMapCommand[name] = true
+          end
+        end, 2000, 1, "customMapCommandDelay")
+
+        gameStats.isCustomMap = false
+        gameStats.customMapIndex = 0
+        for name1, data in pairs(tfm.get.room.playerList) do
+          if selectMapOpen[name1] then
+            selectMapUI(name1)
+          end
+        end
+
+        print("<bv>Random map has been disabled by the admin "..name.."<n>", nil)
+        tfm.exec.chatMessage("<bv>Random map has been disabled by the admin "..name.."<n>", nil)
+      end
+
+      if args[2] == "true" then
+        local indexMap = ''
+        gameStats.isCustomMap = true
+        tfm.exec.chatMessage("<bv>Random map has been enabled by the admin "..name.."<n>", nil)
+
+        for name1, data in pairs(tfm.get.room.playerList) do
+          if selectMapOpen[name1] then
+            selectMapUI(name1)
+          end
+        end
+                
+        if gameStats.twoTeamsMode or gameStats.teamsMode then
+          indexMap = math.random(1, #customMapsFourTeamsMode)
+          gameStats.customMapIndex = indexMap
+          tfm.exec.chatMessage('<bv>'..customMapsFourTeamsMode[gameStats.customMapIndex][3]..' map (created by '..customMapsFourTeamsMode[gameStats.customMapIndex][4]..') selected by admin '..name..'<n>', nil)
+          print('<bv>'..customMapsFourTeamsMode[gameStats.customMapIndex][3]..' map (created by '..customMapsFourTeamsMode[gameStats.customMapIndex][4]..') selected randomly<n>')
+          return
+        end
+
+        indexMap = math.random(1, #customMaps)
+        gameStats.customMapIndex = indexMap
+        print('<bv>'..customMaps[gameStats.customMapIndex][3]..' map (created by '..customMaps[gameStats.customMapIndex][4]..') selected randomly<n>', nil)
+        tfm.exec.chatMessage('<bv>'..customMaps[gameStats.customMapIndex][3]..' map (created by '..customMaps[gameStats.customMapIndex][4]..') selected randomly<n>', nil)
+        return
+      end
+  
+      gameStats.isCustomMap = false
+      gameStats.customMapIndex = 0
+      
+      for name1, data in pairs(tfm.get.room.playerList) do
+        if selectMapOpen[name1] then
+          selectMapUI(name1)
+        end
+      end
+
     elseif command:sub(1, 9) == "custommap" and mode == "startGame" and customMapCommand[name] then
       if gameStats.realMode then
         tfm.exec.chatMessage("<bv>The command !customMap is not available on Volley Real Mode<n>", name)
@@ -4726,14 +4896,7 @@ function eventChatCommand(name, c)
         return
       end
 
-      if gameStats.twoTeamsMode then
-        if indexMap < 1 or indexMap > #customMapsFourTeamsMode then
-          tfm.exec.chatMessage('<bv>Third parameter invalid, the map index must be higher than 1 and less than '..tostring(#customMapsFourTeamsMode)..'<n>', name)
-          return
-        end
-      end
-
-      if gameStats.teamsMode then
+      if gameStats.twoTeamsMode or gameStats.teamsMode then
         if indexMap < 1 or indexMap > #customMapsFourTeamsMode then
           tfm.exec.chatMessage('<bv>Third parameter invalid, the map index must be higher than 1 and less than '..tostring(#customMapsFourTeamsMode)..'<n>', name)
           return
@@ -4775,6 +4938,7 @@ function eventChatCommand(name, c)
           return
         end
 
+        print('<bv>'..customMaps[gameStats.customMapIndex][3]..' map (created by '..customMaps[gameStats.customMapIndex][4]..') selected by admin '..name..'<n>', nil)
         tfm.exec.chatMessage('<bv>'..customMaps[gameStats.customMapIndex][3]..' map (created by '..customMaps[gameStats.customMapIndex][4]..') selected by admin '..name..'<n>', nil)
         return
       end
@@ -5096,6 +5260,35 @@ function eventChatCommand(name, c)
           print("<bv>"..name.." unbanned the player "..name1.." from the room<n>")
         end
       end
+    elseif command:sub(1,10) == "randomball" and mode == "startGame" then
+      local args = split(command)
+
+      if args[2] ~= "true" and args[2] ~= "false" then
+        tfm.exec.chatMessage('<bv>Second parameter invalid, must be true or false<n>', name)
+        return
+      end
+      
+      if args[2] ~= "true" and args[2] ~= "false" then
+        tfm.exec.chatMessage('<bv>Second parameter invalid, must be true or false<n>', name)
+        return
+      end
+
+      if args[2] == "true" then        
+        print("<bv>Random ball has been enabled by the admin "..name.."<n>", nil)
+        tfm.exec.chatMessage("<bv>Random ball has been enabled by the admin "..name.."<n>", nil)
+        
+        gameStats.customBall = true
+        local indexBall= math.random(1, #balls)
+        gameStats.customBallId = indexBall
+        print("<bv>"..balls[gameStats.customBallId].name.." selected randomly<n>", nil)
+        tfm.exec.chatMessage("<bv>"..balls[gameStats.customBallId].name.." selected randomly<n>", nil)
+        return
+      end
+
+      gameStats.customBall = false
+      print("<bv>Random ball has been disabled by the admin "..name.."<n>", nil)
+      tfm.exec.chatMessage("<bv>Random ball has been disabled by the admin "..name.."<n>", nil)
+
     elseif command:sub(1, 10) == "customball" and mode == "startGame" then
       local args = split(command)
 
@@ -5103,18 +5296,18 @@ function eventChatCommand(name, c)
         tfm.exec.chatMessage('<bv>Second parameter invalid, must be a number<n>', name)
         return
       end
-      local indexMap = math.abs(math.floor(tonumber(args[2])))
+      local indexBall = math.abs(math.floor(tonumber(args[2])))
 
-      if type(indexMap) ~= "number" then
+      if type(indexBall) ~= "number" then
         tfm.exec.chatMessage('<bv>Second parameter invalid, must be a number<n>', name)
         return
-      elseif indexMap < 1 or indexMap > #balls then
-        tfm.exec.chatMessage('<bv>Second parameter invalid, the map index must be higher than 1 and less than '..tostring(#balls)..'<n>', name)
+      elseif indexBall < 1 or indexBall > #balls then
+        tfm.exec.chatMessage('<bv>Second parameter invalid, the ball index must be higher than 1 and less than '..tostring(#balls)..'<n>', name)
         return
       end
 
       gameStats.customBall = true
-      gameStats.customBallId = indexMap
+      gameStats.customBallId = indexBall
 
       tfm.exec.chatMessage("<bv>"..balls[gameStats.customBallId].name.." selected by admin "..name.."<n>", nil)
     elseif command:sub(1, 6) == "lobby" and mode == "gameStart" then
@@ -5254,11 +5447,11 @@ function eventChatCommand(name, c)
 
         if playerOnRoom then
           tfm.exec.setPlayerSync(playerName)
-
           tfm.exec.chatMessage("<bv>Set new player sync: "..playerName.."<n>", nil)
         end
 
       end
+
     elseif command == "setsync" then
       windowUISync(name)
     elseif command == "synctfm" then
@@ -5402,12 +5595,12 @@ function eventChatCommand(name, c)
       end
       if args[2] == "true" then
         gameStats.twoBalls = true
-        tfm.exec.chatMessage("<bv>Two balls on game has enabled by the admin "..name.."<n>", nil)
+        tfm.exec.chatMessage("<bv>Two balls has been enabled by the admin "..name.."<n>", nil)
         return
       end
 
       gameStats.twoBalls = false
-      tfm.exec.chatMessage("<bv>Two balls on 4 teams has disabled by the admin "..name.."<n>", nil)
+      tfm.exec.chatMessage("<bv>Two balls has been disabled by the admin "..name.."<n>", nil)
     elseif command:sub(1, 11) == "consumables" and mode == "startGame" then
       local args = split(command)
 
@@ -5428,19 +5621,33 @@ function eventChatCommand(name, c)
 
       gameStats.consumables = false
       tfm.exec.chatMessage("<bv>Consumables on normal mode has disabled by the admin "..name.."<n>", nil)
-    elseif command == "settings" then
+    elseif command == "settings" then 
       closeRankingUI(name)
       removeUITrophies(name)
       settings[name] = true
+      
       ui.addWindow(24, ""..playerLanguage[name].tr.titleSettings.."", name, 125, 60, 650, 300, 1, false, true, playerLanguage[name].tr.closeUIText)
       ui.addTextArea(99992, ""..playerLanguage[name].tr.textSettings, name, 150, 110, 500, 200, 0x161616, 0x161616, 0, true)
-      ui.addWindow(25, "<p align='center'><font size='11px'><a href='event:openMode'>Select a mode</a>", name, 665, 110, 100, 30, 1, false, false)
-      if globalSettings.twoBalls then
-        ui.addWindow(21, "<p align='center'><font size='11px'><a href='event:twoballs'>Enabled</a>", name, 665, 250, 100, 30, 1, false, false)
 
-        return
+      ui.addWindow(25, "<p align='center'><font size='11px'><a href='event:openMode'>Select a mode</a>", name, 665, 105, 100, 30, 1, false, false)
+      
+      if globalSettings.randomBall then
+        ui.addWindow(21, "<p align='center'><font size='11px'><a href='event:randomball'>Enabled</a>", name, 665, 160, 100, 30, 1, false, false)
+        else
+        ui.addWindow(21, "<p align='center'><font size='11px'><a href='event:randomball'>Disabled</a>", name, 665, 160, 100, 30, 1, false, false)
       end
-      ui.addWindow(21, "<p align='center'><font size='11px'><a href='event:twoballs'>Disabled</a>", name, 665, 250, 100, 30, 1, false, false)
+
+      if globalSettings.randomMap then
+        ui.addWindow(22, "<p align='center'><font size='11px'><a href='event:randommap'>Enabled</a>", name, 665, 215, 100, 30, 1, false, false)
+        else
+        ui.addWindow(22, "<p align='center'><font size='11px'><a href='event:randommap'>Disabled</a>", name, 665, 215, 100, 30, 1, false, false)
+      end
+
+      if globalSettings.twoBalls then
+        ui.addWindow(23, "<p align='center'><font size='11px'><a href='event:twoballs'>Enabled</a>", name, 665, 275, 100, 30, 1, false, false)
+        else
+        ui.addWindow(23, "<p align='center'><font size='11px'><a href='event:twoballs'>Disabled</a>", name, 665, 275, 100, 30, 1, false, false)
+      end
     elseif command:sub(1, 2) == "np" and tfm.get.room.isTribeHouse and mode == "startGame" then
       local args = split(command)
       local regexMap = "^@%d%d%d%d%d%d%d$"
@@ -5472,7 +5679,7 @@ function eventChatCommand(name, c)
         mapsToTest[1] = args[2]
 
         if type(args[3]) == "nil" then
-          mapsToTest[2] = '<C><P F="3" L="1200" G="0,4" /><Z><S><S H="100" L="1200" X="600" c="3" N="" Y="400" T="7" P="0,0,.1,.2,,0,0,0" /><S L="1200" X="600" H="10" Y="430" T="9" P="0,0,,,,0,0,0" /><S L="10" H="200" X="400" Y="350" T="1" P="0,0,.0,,,0,0,0" /><S P="0,0,.3,.2,,0,0,0" L="800" o="6a7495" X="400" Y="455" T="12" H="10" /><S H="3000" L="10" o="6a7495" X="-5" c="1" Y="0" T="12" P="0,0,.2,,,0,0,0" /><S H="3000" L="10" o="6a7495" X="1200" c="1" Y="0" T="12" P="0,0,.2,,,0,0,0" /><S H="10" L="10" o="324650" X="100" c="3" Y="359" T="13" P="0,0,.3,.2,,0,0,0" /><S X="600" L="10" o="324650" H="10" c="3" Y="359" T="13" P="0,0,.3,.2,,0,0,0" /><S P="0,0,.3,.2,,0,0,0" L="100" o="324650" X="250" c="4" Y="45" T="12" H="105" /><S P="0,0,0,0.2,0,0,0,0" L="1200" X="600" c="3" Y="0" T="1" H="10" /><S P="0,0,0.3,0.2,0,0,0,0" L="1200" X="600" c="3" Y="95" T="0" m="" H="10" /><S P="0,0,0.3,0.2,0,0,0,0" L="10" X="305" c="3" Y="48" T="0" m="" H="100" /><S P="0,0,0.3,0.2,0,0,0,0" L="10" H="100" c="3" Y="48" T="0" m="" X="900" /><S H="10" L="1200" X="601" c="3" Y="225" T="0" m="" P="0,0,0.3,0.2,0,0,0,0" /><S H="30" L="10" X="400" c="3" Y="239" T="0" m="" P="0,0,0,0,0,0,0,0" /><S H="10" L="800" X="400" c="3" Y="791" T="0" m="" P="0,0,0.3,0.2,90,0,0,0" /><S P="0,0,.2,,,0,0,0" L="20" o="6a7495" X="316" c="3" Y="-129" T="12" H="200" /><S H="200" L="20" o="6a7495" X="407" c="3" Y="-133" T="12" P="0,0,.2,,,0,0,0" /><S P="0,0,.2,,90,0,0,0" L="20" o="6a7495" X="363" c="3" Y="-92" T="12" H="100" /><S H="100" L="20" o="6a7495" X="360" c="3" Y="-206" T="12" P="0,0,.2,,90,0,0,0" /><S P="0,0,0.3,0.2,0,0,0,0" L="3000" o="6a7495" X="400" c="4" N="" Y="460" T="12" H="120" /><S H="105" L="100" o="324650" X="950" c="4" Y="45" T="12" P="0,0,.3,.2,,0,0,0" /><S H="10" L="1200" X="600" c="1" Y="-800" T="1" P="0,0,0,0.2,0,0,0,0" /><S L="10" X="800" H="200" Y="350" T="1" P="0,0,.0,,,0,0,0" /><S P="0,0,0,0,0,0,0,0" L="10" H="30" c="3" Y="239" T="0" m="" X="800" /><S P="0,0,0.3,0.2,90,0,0,0" L="800" H="10" c="3" Y="791" T="0" m="" X="800" /><S P="0,0,.3,.2,,0,0,0" L="10" o="324650" H="10" c="3" Y="359" T="13" X="1100" /><S P="0,0,.3,.2,,0,0,0" L="100" o="324650" X="600" c="4" Y="45" T="12" H="105" /></S><D><P P="1" Y="363" T="10" X="599" /><P X="99" Y="363" T="10" P="1" /><DS Y="-141" X="365" /><P X="1099" Y="363" T="10" P="1" /></D><O /></Z></C>'
+          mapsToTest[2] = customMapsFourTeamsMode[34][2]
           tfm.exec.chatMessage("<bv>Warning: in 4-team mode, the !np command should be !np @map @map @map, but if you only have one map ready and want to test it, the game will set the default map for the other maps<n>", name)
           print("<bv>Warning: in 4-team mode, the !np command should be !np @map @map @map, but if you only have one map ready and want to test it, the game will set the default map for the other maps<n>")
         else
@@ -5486,7 +5693,7 @@ function eventChatCommand(name, c)
         end
 
         if type(args[4]) == "nil" then
-          mapsToTest[3] = '<C><P G="0,4" F="0" /><Z><S><S X="400" L="800" H="100" c="3" N="" Y="400" T="7" P="0,0,.1,.2,,0,0,0" /><S L="800" X="400" H="10" Y="430" T="9" P="0,0,,,,0,0,0" /><S L="10" H="200" X="400" Y="350" T="1" P="0,0,.0,,,0,0,0" /><S L="800" o="6a7495" X="400" H="10" Y="455" T="12" P="0,0,.3,.2,,0,0,0" /><S H="3000" L="10" o="6a7495" X="-5" c="1" Y="0" T="12" P="0,0,.2,,,0,0,0" /><S H="3000" L="10" o="6a7495" X="805" c="1" Y="0" T="12" P="0,0,.2,,,0,0,0" /><S H="10" L="10" o="324650" X="100" c="3" Y="359" T="13" P="0,0,.3,.2,,0,0,0" /><S X="700" L="10" o="324650" H="10" c="3" Y="359" T="13" P="0,0,.3,.2,,0,0,0" /><S P="0,0,.3,.2,,0,0,0" L="100" o="324650" X="50" c="4" Y="45" T="12" H="105" /><S P="0,0,0,0.2,0,0,0,0" L="800" H="10" c="3" N="" Y="0" T="1" X="400" /><S P="0,0,0.3,0.2,0,0,0,0" L="800" H="10" c="3" N="" Y="95" T="0" m="" X="400" /><S P="0,0,0.3,0.2,0,0,0,0" L="10" H="100" c="3" Y="48" T="0" m="" X="105" /><S P="0,0,0.3,0.2,0,0,0,0" L="10" X="700" c="3" N="" Y="48" T="0" m="" H="100" /><S X="401" L="800" H="10" c="3" Y="225" T="0" m="" P="0,0,0.3,0.2,0,0,0,0" /><S X="400" L="10" H="30" c="3" Y="239" T="0" m="" P="0,0,0,0,0,0,0,0" /><S X="400" L="800" H="10" c="3" Y="791" T="0" m="" P="0,0,0.3,0.2,90,0,0,0" /><S P="0,0,.2,,,0,0,0" L="20" o="6a7495" X="316" c="3" Y="-129" T="12" H="200" /><S H="200" L="20" o="6a7495" X="407" c="3" Y="-133" T="12" P="0,0,.2,,,0,0,0" /><S P="0,0,.2,,90,0,0,0" L="20" o="6a7495" X="363" c="3" Y="-92" T="12" H="100" /><S H="100" L="20" o="6a7495" X="360" c="3" Y="-206" T="12" P="0,0,.2,,90,0,0,0" /><S P="0,0,0.3,0.2,0,0,0,0" L="3000" o="6a7495" X="400" c="4" N="" Y="460" T="12" H="120" /><S H="105" L="100" o="324650" X="750" c="4" Y="45" T="12" P="0,0,.3,.2,,0,0,0" /><S X="400" L="800" H="10" c="1" N="" Y="-800" T="1" P="0,0,0,0.2,0,0,0,0" /></S><D><P X="699" Y="365" T="10" P="1" /><P P="1" Y="365" T="10" X="99" /><DS Y="-151" X="360" /></D><O /></Z></C>'
+          mapsToTest[3] = customMapsFourTeamsMode[34][5]
           tfm.exec.chatMessage("<bv>Warning: in 4-team mode, the !np command should be !np @map @map @map, but if you only have one map ready and want to test it, the game will set the default map for the other maps<n>", name)
           print("<bv>Warning: in 4-team mode, the !np command should be !np @map @map @map, but if you only have one map ready and want to test it, the game will set the default map for the other maps<n>")
         else
@@ -5500,18 +5707,15 @@ function eventChatCommand(name, c)
         end
 
         tfm.exec.chatMessage("<bv>Test map successfully selected<n>", nil)
-
         return
       end
 
       if type(args[2]) == "nil" then
         tfm.exec.chatMessage("<bv>Second parameter invalid, must be a tfm map like @3493212<n>", name)
-
         return
       end
       if string.match(args[2], regexMap) == nil then
         tfm.exec.chatMessage("<bv>Second parameter invalid, must be a tfm map like @3493212<n>", name)
-
         return
       end
 
@@ -7190,6 +7394,7 @@ function updateSettingsUI()
     if settings[name] then
       ui.addWindow(24, ""..playerLanguage[name].tr.titleSettings.."", name, 125, 60, 650, 300, 1, false, true, playerLanguage[name].tr.closeUIText)
       ui.addTextArea(99992, ""..playerLanguage[name].tr.textSettings.."", name, 150, 110, 500, 200, 0x161616, 0x161616, 0, true)
+      
       if settingsMode[name] then
         local modes = getActionsModes()
         local str = ''
@@ -7202,11 +7407,28 @@ function updateSettingsUI()
         ui.addWindow(25, "<p align='center'><font size='11px'><a href='event:openMode'>Select a mode</a>", name, 665, 110, 100, 30, 1, false, false)
       end
 
-      if globalSettings.twoBalls then
-        ui.addWindow(21, "<p align='center'><font size='11px'><a href='event:twoballs'>Enabled</a>", name, 665, 250, 100, 30, 1, false, false)
+      ui.addWindow(24, ""..playerLanguage[name].tr.titleSettings.."", name, 125, 60, 650, 300, 1, false, true, playerLanguage[name].tr.closeUIText)
+    ui.addTextArea(99992, ""..playerLanguage[name].tr.textSettings, name, 150, 110, 500, 200, 0x161616, 0x161616, 0, true)
+
+    ui.addWindow(25, "<p align='center'><font size='11px'><a href='event:openMode'>Select a mode</a>", name, 665, 105, 100, 30, 1, false, false)
+    
+    if globalSettings.randomBall then
+      ui.addWindow(21, "<p align='center'><font size='11px'><a href='event:randomball'>Enabled</a>", name, 665, 160, 100, 30, 1, false, false)
       else
-        ui.addWindow(21, "<p align='center'><font size='11px'><a href='event:twoballs'>Disabled</a>", name, 665, 250, 100, 30, 1, false, false)
-      end
+      ui.addWindow(21, "<p align='center'><font size='11px'><a href='event:randomball'>Disabled</a>", name, 665, 160, 100, 30, 1, false, false)
+    end
+
+    if globalSettings.randomMap then
+      ui.addWindow(22, "<p align='center'><font size='11px'><a href='event:randommap'>Enabled</a>", name, 665, 215, 100, 30, 1, false, false)
+      else
+      ui.addWindow(22, "<p align='center'><font size='11px'><a href='event:randommap'>Disabled</a>", name, 665, 215, 100, 30, 1, false, false)
+    end
+
+    if globalSettings.twoBalls then
+      ui.addWindow(23, "<p align='center'><font size='11px'><a href='event:twoballs'>Enabled</a>", name, 665, 275, 100, 30, 1, false, false)
+      else
+      ui.addWindow(23, "<p align='center'><font size='11px'><a href='event:twoballs'>Disabled</a>", name, 665, 275, 100, 30, 1, false, false)
+    end
     end
   end
 end
@@ -7404,7 +7626,6 @@ function getTeamName(text)
     return "Green"
   end
 end
-
 
 function updateRankingFourTeamsMode()
   local rank_list = {}
@@ -7619,7 +7840,6 @@ function configSelectMap()
 
   if gameStats.teamsMode or gameStats.twoTeamsMode then
     maps = customMapsFourTeamsMode
-
     return maps
   end
 
@@ -7943,9 +8163,9 @@ function closeAllWindows(name)
   openRank[name] = false
   selectMapOpen[name] = false
   selectMapPage[name] = 1
-  closeWindow(21, name)
-  closeWindow(24, name)
-  closeWindow(25, name)
+  for i=21, 25 do
+    closeWindow(i, name)
+  end
   removeUITrophies(name)
   removeSelectUI(name)
   ui.removeTextArea(99992, name)
@@ -8126,8 +8346,9 @@ function spawnBallConfig(spawnBalls, x)
   local customBallId = 6
   local ballPlaces = spawnBallsOnSpecificPlaces(spawnBalls, x)
 
-  print(ballPlaces)
-
+  -- print("Ball places:")
+  -- print(ballPlaces)
+  
   if gameStats.customBall then
     customBallId = balls[gameStats.customBallId].id
   end
