@@ -193,6 +193,7 @@ local gameVersion = "V2.2.2"
 local trad = ""
 local lang = {}
 local languages = "[AR/BR/EN/FR/PL]"
+
 lang.br = {
   welcomeMessage = "<j>Bem vindo ao Volley, jogo criado por Refletz#6472<n>",
   welcomeMessage2 = "<j>Digite !join para entrar na partida<n>",
@@ -218,7 +219,7 @@ lang.br = {
   nextMessage = "<p align='center'>Próximo",
   realModeRules = "<p align='center'><font size='16px'>Volley Real Mode Regras<br><br><p align='left'><font size='12px'><b>- Cada time pode se <b>transformar</b> em um <vi>objeto esférico<n> somente 3x (exceto no <b>saque</b> que é apenas 1x)<br><br>- Se a bola for para a fora do lado do seu time e <b>ninguém</b> do seu time se transformou em um <vi>objeto esférico<n> o ponto é do seu time<br><br>- Se a bola foi para fora e o seu time se <b>transformou no</b> <vi><b>objeto esférico<b><n> o ponto é do adversário<br><br>- Cada jogador irá sacar a bola uma vez conforme o andamento da partida<br><br>- Se o jogador sair da quadra, o jogador poderá realizar uma ação por <j>7 segundos<n>, caso contrário o jogador não poderá usar a <j>tecla de espaço<n><br><br>- As teclas 1, 2, 3 e 4 alteram a força do jogador",
   titleSettings = "<p align='center'><font size='16px'>Configurações da sala</p>",
-  textSettings = "<p align='left'><font size='12px'>Selecionar modo de jogo<br><br><br><br><br><br><br><br><br><br>Ativar o comando !twoballs</p>",
+  textSettings = "<p align='left'><font size='12px'>Selecionar modo de jogo<br><br><br><br>Ativar o comando !randomball<br><br><br><br>Ativar o comando !randommap<br><br><br><br>Ativar o comando !twoballs</p>",
   msgAchievements = "<p align='left'><font size='14px'>Conquistas:",
   msgsTrophies = {
     [1] = "Troféu Copa do Mundo de Vôlei",
@@ -227,6 +228,7 @@ lang.br = {
   },
   mapSelect = 'Selecionar um mapa',
 }
+
 lang.en = {
   welcomeMessage = "<j>Welcome to the Volley, game was created by Refletz#6472<n>",
   welcomeMessage2 = "<j>Type !join to join on the match<n>",
@@ -261,6 +263,7 @@ lang.en = {
   },
   mapSelect = 'Select a map'
 }
+
 lang.ar = {
   welcomeMessage = "<j>مرحبًا بكم في لعبة كرة الطائرة، التي تم إنشاؤها من طرف Refletz#6472<n>",
   welcomeMessage2 = "<j>اكتب  !join للانضمام إلى المباراة.<n>",
@@ -286,7 +289,7 @@ lang.ar = {
   nextMessage = "<p align='center'>التالي",
   realModeRules = "<p align='center'><font size='16px'>قواعد الوضع الحقيقي للكرة الطائرة<br><br><p align='right'><font size='12px'><b>- يمكن لكل فريق الانضمام <b>يتحول</b> إلى <vi>جسم كروي<n> 3 مرات فقط (باستثناء <b>الإرسال</b> الذي يكون مرة واحدة فقط)<br><br>- إذا ذهبت الكرة خرجت إلى جانب فريقك و<b>لم يتحول أي شخص</b> في فريقك إلى <vi>جسم كروي<n> فالنقطة تخص فريقك<br><br>-  إذا خرجت الكرة وشخص ما من فريقك الفريق <b>الذي تحول إلى</b> <vi><b>جسم كروي<b><n> النقطة مملوكة للخصم<br><br>- سيرسل كل لاعب الكرة مرة واحدة  <br><br>-فسيتمكن اللاعب من تنفيذ إجراء لمدة <j>7 ثوانٍ<n>، وإلا فلن يتمكن اللاعب من استخدام <j>مفتاح المسافة<n><br><br>-تعمل المفاتيح 1 و2 و3 و4 على تغيير قوة اللاعب",
   titleSettings = "<p align='center'><font size='16px'>إعدادات الغرفة</p>",
-  textSettings = "<p align='right'><font size='12px'>اختر وضع اللعبة<br><br><br><br><br><br><br><br><br><br> قم بتنشيط !twoballs الأمر </p>",
+  textSettings = "<p align='right'><font size='12px'>اختر وضع اللعبة<br><br><br><br>قم بتفعيل !randomball الأمر<br><br><br><br>قم بتفعيل !randommap الأمر<br><br><br><br>قم بتفعيل !twoballs الأمر </p>",
   msgAchievements = "<p align='right'><font size='14px'>الإنجازات:",
   msgsTrophies = {
     [1] = "كأس العالم للكرة الطائرة",
@@ -321,7 +324,7 @@ lang.fr = {
   nextMessage = "<p align='center'>Suivant",
   realModeRules = "<p align='center'><font size='16px'>Règles du Volley Real Mode<br><br><p align='left'><font size='12px'><b>- Chaque équipe peut se <b>transformer</b> en un <vi>objet sphérique<n> seulement 3 fois (sauf pour le <b>service</b> où ce n'est qu'UNE fois)<br><br>- Si la balle va dehors de votre côté du terrain et que <b>personne</b> de votre équipe ne s'est transformé en un <vi>objet sphérique<n> le point est pour votre équipe<br><br>- Si la balle va dehors et que quelqu'un de votre équipe <b>s'est transformé</b> en un <vi><b>objet sphérique<b><n> le point revient à l'adversaire<br><br>- Chaque joueur servira la balle une fois <br><br>- Si le joueur quitte le terrain, le joueur pourra effectuer une action pendant <j>7 secondes<n>, autrement le joueur ne sera pas capable d'utiliser la <j>touche espace<n><br><br>- Les touches 1, 2, 3 et 4 changent la force du joueur.",
   titleSettings = "<p align='center'><font size='16px'>Paramètres de la salle</p>",
-  textSettings = "<p align='left'><font size='12px'>Sélectionner le mode de jeu<br><br><br><br><br><br><br><br><br><br>Activer les !twoballs commande</p>",
+  textSettings = "<p align='left'><font size='12px'>Sélectionner le mode de jeu<br><br><br><br>Activer les !randomball commande<br><br><br><br>Activer les !randommap commande<br><br><br><br>Activer les !twoballs commande</p>",
   msgAchievements = "<p align='left'><font size='14px'>Réalisations:",
   msgsTrophies = {
     [1] = "Trophée de la Coupe du Monde de Volleyball",
@@ -330,6 +333,7 @@ lang.fr = {
   },
   mapSelect = 'Sélectionner une carte'
 }
+
 lang.pl = {
   welcomeMessage = "<j>Witaj w Volley, gra została stworzona przez Refletz#6472<n>",
   welcomeMessage2 = "<j>Wpisz !join, by dołączyć do meczu<n>",
@@ -355,7 +359,7 @@ lang.pl = {
   nextMessage = "<p align='center'>Następny",
   realModeRules = "<p align='center'><font size='16px'>Zasady trybu Volley Real Mode<br><br><p align='left'><font size='12px'><b>- Każda drużyna może się zmienić <b>transform</b> w <vi>okrągły obiekt<n> tylko 3 razy (nielicząc <b>serwa</b> który jest tylko raz)<br><br>- Jeśli piłka wyląduje poza boiskiem po stronie twojego zespołu i <b>nikt</b> z twojej drużyny nie przekształcił się w <vi>okrągły obiekt<n> wtedy punkt jest zdobyty przez twoją drużynę<br><br>- Jeśli piłka wylądowała poza boiskiem i ktoś z twojej drużyny <b>zmienił się w</b> <vi><b>okrągły obiekt<b><n> wtedy punkt należy do drużyny przeciwnej<br><br>- Każdy z graczy serwuje raz <br><br>- Jeśli zawodnik opuści boisko, będzie mógł wykonać akcję przez <j>7 sekund<n>, w przeciwnym razie zawodnik nie będzie mógł użyć <j>klawiszu spacji<n><br><br>- Klawisze 1, 2, 3 i 4 zmieniają siłę gracza",
   titleSettings = "<p align='center'><font size='16px'>Ustawienia pokoju</p>",
-  textSettings = "<p align='left'><font size='12px'>Wybierz tryb gry<br><br><br><br><br><br><br><br><br><br>Aktywuj !twoballs dowodzenie</p>",
+  textSettings = "<p align='left'><font size='12px'>Wybierz tryb gry<br><br><br><br>Aktywuj !randomball dowodzenie<br><br><br><br>Aktywuj !randommap dowodzenie<br><br><br><br>Aktywuj !twoballs dowodzenie</p>",
   msgAchievements = "<p align='left'><font size='14px'>Osiągnięcia:",
   msgsTrophies = {
     [1] = "Trofeum Pucharu Świata w siatkówce",
@@ -1075,91 +1079,20 @@ local customMapsFourTeamsMode = {
 }
 
 local balls = {
-  [1] = {
-    id = 6,
-    isImage = false,
-    image = '',
-    name = 'Default ball'
-  },
-  [2] = {
-    id = 608,
-    isImage = false,
-    image = '',
-    name = 'Futuristic ball'
-  },
-  [3] = {
-    id = 611,
-    isImage = false,
-    image = '',
-    name = 'Dino egg ball'
-  },
-  [4] = {
-    id = 612,
-    isImage = false,
-    image = '',
-    name = 'Basketball'
-  },
-  [5] = {
-    id = 616,
-    isImage = false,
-    image = '',
-    name = 'Earth ball'
-  },
-  [6] = {
-    id = 619,
-    isImage = false,
-    image = '',
-    name = 'Poisoned apple ball'
-  },
-  [7] = {
-    id = 621,
-    isImage = false,
-    image = '',
-    name = 'Snow globe ball'
-  },
-  [8] = {
-    id = 626,
-    isImage = false,
-    image = '',
-    name = 'Bubble ball'
-  },
-  [9] = {
-    id = 630,
-    isImage = false,
-    image = '',
-    name = 'Moon ball'
-  },
-  [10] = {
-    id = 635,
-    isImage = false,
-    image = '',
-    name = 'Crystal ball'
-  },
-  [11] = {
-    id = 6,
-    isImage = true,
-    image = '18fd18e2334.png',
-    name = 'White Volley ball'
-  },
-  [12] = {
-    id = 6,
-    isImage = true,
-    image = '18fd18e5dc6.png',
-    name = 'Original Volley ball'
-  },
-  [13] = {
-    id = 6,
-    isImage = true,
-    image = '197d9275c53.png',
-    name = 'Morocco ball'
-  },
-  [14] = 
-  {
-    id = 604,
-    isImage = false,
-    image = '',
-    name = 'Soccer ball'
-  }
+  [1] = { id = 6, isImage = false, image = '', name = 'Default ball' },
+  [2] = { id = 608, isImage = false, image = '', name = 'Futuristic ball'},
+  [3] = { id = 611, isImage = false, image = '', name = 'Dino egg ball'},
+  [4] = { id = 612, isImage = false, image = '', name = 'Basketball' },
+  [5] = { id = 616, isImage = false, image = '', name = 'Earth ball' },
+  [6] = { id = 619, isImage = false, image = '', name = 'Poisoned apple ball' },
+  [7] = { id = 621, isImage = false, image = '', name = 'Snow globe ball' },
+  [8] = { id = 626, isImage = false, image = '', name = 'Bubble ball' },
+  [9] = { id = 630, isImage = false, image = '', name = 'Moon ball' },
+  [10] = { id = 635, isImage = false, image = '', name = 'Crystal ball' },
+  [11] = { id = 6, isImage = true, image = '18fd18e2334.png', name = 'White Volley ball' },
+  [12] = { id = 6, isImage = true, image = '18fd18e5dc6.png', name = 'Original Volley ball' },
+  [13] = { id = 6, isImage = true, image = '197d9275c53.png', name = 'Morocco ball' },
+  [14] = { id = 604, isImage = false, image = '', name = 'Soccer ball' }
   -- [99] = {
   --   id = 6,
   --   isImage = no,
@@ -1190,8 +1123,8 @@ local afkTimeValue = -60
 local enableAfkSystem = false
 local playerOutOfCourt = {}
 local showOutOfCourtText = {}
-local globalSettings = { mode = 'Normal mode', twoBalls = false, randomBall = false, randomMap = false}
-local settings = {}
+local globalSettings = { mode = 'Normal mode', twoBalls = false, randomBall = true, randomMap = true }
+local settings = { duration = "300"}
 local settingsMode = {}
 local playersNormalMode = {}
 local rankNormalMode = {}
@@ -1562,10 +1495,10 @@ function init()
 
   gameStats = {
     gameMode = '', redX = 0, blueX = 0, yellowX = 0, greenX = 0, redX2 = 0, blueX2 = 0,
-    setMapName = '', winscore = 7, isCustomMap = false,
-    randomMap = false, customMapIndex = 0, initTimer = 0, totalVotes = 0,
-    mapIndexSelected = 0, canTransform = false, teamsMode = false, canJoin = true, typeMap = '',
-    customBall = false, customBallId = 0,
+    setMapName = '', winscore = 7, initTimer = 0,
+    isCustomMap = true, randomMap = true, customMapIndex = 0, totalVotes = 0,
+    mapIndexSelected = 0, canTransform = false, teamsMode = false, canJoin = true,
+    customBall = true, customBallId = 0,
     banCommandIsEnabled = true, killSpec = false, isGamePaused = false,
     psyhicObjectForce = 1, twoTeamsMode = false, enableAfkMode = false,
     realMode = false, redServeIndex = 1, blueServeIndex = 1, redPlayerServe = "",
@@ -1628,13 +1561,12 @@ function init()
       gameStats.customMapIndex = indexMap
       tfm.exec.chatMessage('<bv>'..customMapsFourTeamsMode[gameStats.customMapIndex][3]..' map (created by '..customMapsFourTeamsMode[gameStats.customMapIndex][4]..') selected randomly<n>', nil)
       print('<bv>'..customMapsFourTeamsMode[gameStats.customMapIndex][3]..' map (created by '..customMapsFourTeamsMode[gameStats.customMapIndex][4]..') selected randomly<n>')
-      return
+    elseif not gameStats.realMode then
+      indexMap = math.random(1, #customMaps)
+      gameStats.customMapIndex = indexMap
+      print('<bv>'..customMaps[gameStats.customMapIndex][3]..' map (created by '..customMaps[gameStats.customMapIndex][4]..') selected randomly<n>', nil)
+      tfm.exec.chatMessage('<bv>'..customMaps[gameStats.customMapIndex][3]..' map (created by '..customMaps[gameStats.customMapIndex][4]..') selected randomly<n>', nil)
     end
-
-    indexMap = math.random(1, #customMaps)
-    gameStats.customMapIndex = indexMap
-    print('<bv>'..customMaps[gameStats.customMapIndex][3]..' map (created by '..customMaps[gameStats.customMapIndex][4]..') selected randomly<n>', nil)
-    tfm.exec.chatMessage('<bv>'..customMaps[gameStats.customMapIndex][3]..' map (created by '..customMaps[gameStats.customMapIndex][4]..') selected randomly<n>', nil)
   end
 
   for name, data in pairs(tfm.get.room.playerList) do
@@ -4720,6 +4652,27 @@ function eventChatCommand(name, c)
     end
     if command == "resettimer" and mode == "startGame" then
       initGame = os.time() + 15000
+    elseif command:sub(1,11) == "setduration" then
+      local args = split(command)
+
+      local current_time = os.time()
+      print("current_time:")
+      print(current_time)
+      print("Elapsed time:")
+      print(elapsedTime)
+
+      if #args >= 2 then
+        if type(tonumber(args[2])) ~= "number" then
+          print('<bv>Second parameter invalid, must be a number<n>', name)
+          tfm.exec.chatMessage('<bv>Second parameter invalid, must be a number<n>', name)
+          return
+        end
+        duration = math.abs(math.floor(tonumber(args[2])))
+      end
+
+      tfm.exec.setGameTime(duration, true)
+      print("<bv>The match duration was set to "..command:sub(12).." seconds by admin "..name.."<n>", nil)
+      tfm.exec.chatMessage("<bv>The match duration was set to"..command:sub(11).." seconds by admin "..name.."<n>", nil)
     elseif command == "skiptimer" and mode == "startGame" then
       initGame = os.time() + 5000
     elseif command:sub(1, 13) == "setmaxplayers" then
