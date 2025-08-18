@@ -160,9 +160,10 @@ function timersLoop()
   end
 end
 
-local admins = {
+local admins = 
+{
   ["Refletz#6472"] = true,
-  ["Soristl1#0000"] = true,
+  ["Soristl1#0000"] = true, 
   ["+Mimounaaa#0000"] = true,
   ["Axeldoton#0000"] = true,
   ["Nagi#6356"] = true,
@@ -176,7 +177,8 @@ local admins = {
   ["Haytam#0000"] = true
 }
 
-local permanentAdmins = {
+local permanentAdmins = 
+{
   "Refletz#6472",
   "Soristl1#0000",
   "+Mimounaaa#0000",
@@ -5105,15 +5107,13 @@ function eventChatCommand(name, c)
       local args = split(command)
       local permanentAdmin = isPermanentAdmin(name)
 
-      if args[2] == "all" then
-        for i = 1, #permanentAdmins do  
-          local admin = string.lower(permanentAdmins[i])
-          if name == admin then
-            admins = permanentAdmins
-            tfm.exec.chatMessage("<bv>Admin list reseted by admin "..name.."<n>", nil)
-            return
-          end
+      if args[2] == "all" and permanentAdmin then
+        admins = {}
+        for i = 1, #permanentAdmins do
+          admins[permanentAdmins[i]] = true
         end
+        tfm.exec.chatMessage("<bv>Admin list reseted by admin "..name.."<n>", nil)
+        return
       end
 
       for i = 1, #permanentAdmins do
