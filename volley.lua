@@ -1484,7 +1484,7 @@ function init()
     setMapName = '', winscore = 7, initTimer = 0,
     isCustomMap = false, randomMap = false, customMapIndex = 0, totalVotes = 0,
     mapIndexSelected = 0, canTransform = false, teamsMode = false, canJoin = true,
-    customBall = true, customBallId = 11,
+    customBall = true, customBallId = 12,
     banCommandIsEnabled = true, killSpec = false, isGamePaused = false,
     psyhicObjectForce = 1, twoTeamsMode = false, enableAfkMode = false,
     realMode = false, redServeIndex = 1, blueServeIndex = 1, redPlayerServe = "",
