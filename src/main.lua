@@ -33,8 +33,6 @@ local permanentAdmins =
   "Haytam#0000"
 }
 
-local gameVersion = "V2.2.2"
-
 local trad = ""
 
 if tfm.get.room.language == "br" then

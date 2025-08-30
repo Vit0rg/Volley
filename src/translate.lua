@@ -1,6 +1,8 @@
 local lang = {}
 local languages = "[AR/BR/EN/FR/PL]"
 
+local gameVersion = "V2.2.2"
+
 lang.br = {
   welcomeMessage = "<j>Bem vindo ao Volley, jogo criado por Refletz#6472<n>",
   welcomeMessage2 = "<j>Digite !join para entrar na partida<n>",
