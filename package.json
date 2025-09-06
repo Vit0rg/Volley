@@ -1,0 +1,25 @@
+{
+	"name": "volley",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"build": "node build.js",
+		"watch": "node build.js watch",
+		"minify": "node build.js minify"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Soristl/Volley/issues"
+	},
+	"homepage": "https://github.com/Soristl/Volley#readme",
+	"dependencies": {
+		"luamin": "^1.0.4",
+		"watch": "^1.0.2"
+	},
+	"devDependencies": {
+		"prettier": "3.6.2"
+	}
+}

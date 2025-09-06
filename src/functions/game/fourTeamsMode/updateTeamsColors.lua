@@ -1,0 +1,10 @@
+function updateTeamsColors(index)
+  table.remove(messageTeamsLostOneLife, index)
+  table.remove(messageTeamsLifes, index)
+  table.remove(getTeamsColors, index)
+  table.remove(getTeamsColorsName, index)
+  table.remove(messageTeamsLifesTextChat, index)
+  table.remove(messageWinners, index)
+  table.remove(teamsPlayersOnGame, index)
+  table.remove(getTeamsLifes, index)
+end
