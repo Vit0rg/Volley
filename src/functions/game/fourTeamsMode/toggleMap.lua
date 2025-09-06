@@ -72,9 +72,19 @@ function toggleMap()
       end
     end
     
-    teleportPlayersWithTypeMap(false)
     showTheScore()
-    spawnInitialBall()
+    
+    if mapsToTest[2] ~= '' or mapsToTest[3] ~= '' then
+      delaySpawnBall = addTimer(function(i)
+        if i == 1 then
+          spawnInitialBall()
+          teleportPlayersWithTypeMap(false)
+        end
+      end, 1500)
+    else
+      spawnInitialBall()
+      teleportPlayersWithTypeMap(false)
+    end
     tfm.exec.addPhysicObject (99999, 800, 460, {
       type = 15,
       width = 3000,
