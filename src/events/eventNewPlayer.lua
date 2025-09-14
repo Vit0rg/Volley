@@ -28,7 +28,6 @@ function eventNewPlayer(name)
   openRank[name] = false
   playerLanguage[name] = {tr = trad, name = name}
   pagesList[name] = {helpPage = 1}
-  playersAfk[name] = os.time()
 
   showCrownToAllPlayers()
   if canVote[name] == nil then

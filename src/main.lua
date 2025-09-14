@@ -72,7 +72,6 @@ local playerCanTransform = {}
 local playerForce = {}
 local playerBan = {}
 local playerBanHistory = {}
-local playersAfk = {}
 local playerInGame = {}
 local countId = 1
 local playerPhysicId = {}
@@ -97,8 +96,6 @@ local gameStats = {gameMode = ''}
 local pagesList = {}
 local mapsVotes = {}
 local canVote = {}
-local afkTimeValue = -60
-local enableAfkSystem = false
 local playerOutOfCourt = {}
 local showOutOfCourtText = {}
 local globalSettings = { mode = 'Normal mode', twoBalls = false, randomBall = false, randomMap = false }
@@ -143,6 +140,8 @@ local playersSpawn1200 = {}
 local playersSpawn1600 = {}
 
 local gameTimeEnd = os.time() + 5000
+
+local keys = {32, 0, 1, 2, 3, 49, 50, 51, 52, 55, 56, 57, 48, 77, 76, 80}
 
 for name, data in pairs(tfm.get.room.playerList) do
   customMapCommand[name] = true
@@ -193,20 +192,8 @@ for name, data in pairs(tfm.get.room.playerList) do
       admins[name] = true
     end
   end
-  system.bindKeyboard(name, 32, true, true)
-  system.bindKeyboard(name, 0, true, true)
-  system.bindKeyboard(name, 1, true, true)
-  system.bindKeyboard(name, 2, true, true)
-  system.bindKeyboard(name, 3, true, true)
-  system.bindKeyboard(name, 49, true, true)
-  system.bindKeyboard(name, 50, true, true)
-  system.bindKeyboard(name, 51, true, true)
-  system.bindKeyboard(name, 52, true, true)
-  system.bindKeyboard(name, 55, true, true)
-  system.bindKeyboard(name, 56, true, true)
-  system.bindKeyboard(name, 57, true, true)
-  system.bindKeyboard(name, 48, true, true)
-  system.bindKeyboard(name, 77, true, true)
-  system.bindKeyboard(name, 76, true, true)
-  system.bindKeyboard(name, 80, true, true)
+
+  for i = 1, #keys do
+    system.bindKeyboard(name, keys[i], true, true)
+  end
 end

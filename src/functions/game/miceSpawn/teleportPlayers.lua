@@ -7,7 +7,6 @@ function teleportPlayers()
       if playersRed[i].name ~= '' then
         playersOnGameHistoric[playersRed[i].name] = { teams = {"red"} }
         if spawnOnMiddle then
-          playersAfk[playersRed[i].name] = os.time()
           if #playersSpawn800 > 0 then
             teleportPlayerWithSpecificSpawn(playersSpawn800, playersRed[i].name)
           else
@@ -19,7 +18,6 @@ function teleportPlayers()
           
           spawnOnMiddle = false
         else
-          playersAfk[playersRed[i].name] = os.time()
           if #playersSpawn1600 > 0 then
             teleportPlayerWithSpecificSpawn(playersSpawn1600, playersRed[i].name)
           else
@@ -42,7 +40,6 @@ function teleportPlayers()
       if playersBlue[i].name ~= '' then
         playersOnGameHistoric[playersBlue[i].name] = { teams = {"blue"} }
         if spawnOnMiddle then
-          playersAfk[playersBlue[i].name] = os.time()
           if #playersSpawn1200 > 0 then
             teleportPlayerWithSpecificSpawn(playersSpawn1200, playersBlue[i].name)
           else
@@ -53,7 +50,6 @@ function teleportPlayers()
           
           spawnOnMiddle = false
         else
-          playersAfk[playersBlue[i].name] = os.time()
           if #playersSpawn400 > 0 then
             teleportPlayerWithSpecificSpawn(playersSpawn400, playersBlue[i].name)
           else
@@ -76,7 +72,6 @@ function teleportPlayers()
     for i = 1, #playersYellow do
       if playersYellow[i].name ~= '' then
         playersOnGameHistoric[playersYellow[i].name] = { teams = {"yellow"} }
-        playersAfk[playersYellow[i].name] = os.time()
         if #playersSpawn400 > 0 then
           teleportPlayerWithSpecificSpawn(playersSpawn400, playersYellow[i].name)
         else
@@ -89,7 +84,6 @@ function teleportPlayers()
     for i = 1, #playersRed do
       if playersRed[i].name ~= '' then
         playersOnGameHistoric[playersRed[i].name] = { teams = {"red"} }
-        playersAfk[playersRed[i].name] = os.time()
         if #playersSpawn800 > 0 then
           teleportPlayerWithSpecificSpawn(playersSpawn800, playersRed[i].name)
         else
@@ -102,7 +96,6 @@ function teleportPlayers()
     for i = 1, #playersBlue do
       if playersBlue[i].name ~= '' then
         playersOnGameHistoric[playersBlue[i].name] = { teams = {"blue"} }
-        playersAfk[playersBlue[i].name] = os.time()
         if #playersSpawn1200 > 0 then
           teleportPlayerWithSpecificSpawn(playersSpawn1200, playersBlue[i].name)
         else
@@ -115,7 +108,6 @@ function teleportPlayers()
     for i = 1, #playersGreen do
       if playersGreen[i].name ~= '' then
         playersOnGameHistoric[playersGreen[i].name] = { teams = {"green"} }
-        playersAfk[playersGreen[i].name] = os.time()
         if #playersSpawn1600 > 0 then
           teleportPlayerWithSpecificSpawn(playersSpawn1600, playersGreen[i].name)
         else
@@ -133,7 +125,6 @@ function teleportPlayers()
     if playersRed[i].name ~= '' then
       playersOnGameHistoric[playersRed[i].name] = { teams = {"red"} }
       
-      playersAfk[playersRed[i].name] = os.time()
       if gameStats.realMode then
         tfm.exec.movePlayer(playersRed[i].name, 900, 334)
       else
@@ -161,7 +152,6 @@ function teleportPlayers()
   for i = 1, #playersBlue do
     if playersBlue[i].name ~= '' then
       playersOnGameHistoric[playersBlue[i].name] = { teams = {"blue"} }
-      playersAfk[playersBlue[i].name] = os.time()
       if gameStats.realMode then
         tfm.exec.movePlayer(playersBlue[i].name, 1700, 334)
       else

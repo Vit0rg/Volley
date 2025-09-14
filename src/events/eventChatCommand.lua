@@ -2,7 +2,6 @@ function eventChatCommand(name, c)
   local command = string.lower(c)
   if command == "join" and playerInGame[name] == false and mode == "gameStart" then
     local isPlayerBanned = messagePlayerIsBanned(name)
-    playersAfk[name] = os.time()
     if isPlayerBanned then
       return
     end
@@ -1079,44 +1078,6 @@ function eventChatCommand(name, c)
       gameStats.twoTeamsMode = false
       resetMapsList()
       tfm.exec.chatMessage("<bv>2-team volley mode disabled by admin "..name.."<n>", nil)
-    elseif command:sub(1, 9) == "afksystem" and false and mode == "startGame" then
-      local args = split(command)
-      if args[2] ~= "true" and args[2] ~= "false" then
-        tfm.exec.chatMessage('<bv>Second parameter invalid, must be true or false<n>', name)
-        return
-      end
-      if args[2] == "true" then
-        enableAfkSystem = true
-        tfm.exec.chatMessage("<bv>The afk system has enabled by the admin "..name.."<n>", nil)
-        return
-      end
-
-      enableAfkSystem = false
-      tfm.exec.chatMessage("<bv>The afk system has disabled by the admin "..name.."<n>", nil)
-
-      return
-    elseif command:sub(1, 10) == "setafktime" and false then
-      local args = split(command)
-      if type(tonumber(args[2])) ~= "number" then
-        tfm.exec.chatMessage('<bv>Second parameter invalid, must be a number<n>', name)
-        return
-      end
-
-      local afkTime = math.abs(math.floor(tonumber(args[2])))
-
-      if type(afkTime) ~= "number" then
-        tfm.exec.chatMessage('<bv>Second parameter invalid, must be a number<n>', name)
-        return
-      end
-
-      if afkTime < 60 then
-        tfm.exec.chatMessage("<bv>Second invalid parameter, the time in seconds must be greater than or equal to 60<n>", name)
-        return
-      end
-
-      afkTimeValue = math.abs(afkTime - (afkTime * 2))
-
-      tfm.exec.chatMessage("<bv>Afk timeout changed to "..afkTime.." seconds by admin "..name.."<n>", nil)
     elseif command:sub(1, 8) == "twoballs" and mode == "startGame" then
       local args = split(command)
       print(args[2])
