@@ -49,14 +49,18 @@ else
   trad = lang.en
 end
 
+/* Encapsulate and abstract getRoomAdmin function as: */
+/*
 local regex = "#volley%d+([%+_]*[%w_#]+)"
 local getRoomAdmin = string.match(tfm.get.room.name, regex)
 
 if getRoomAdmin ~= nil then
   admins[getRoomAdmin] = true
 else
+  // Maybe button to get admin here
   getRoomAdmin = ""
 end
+*/
 
 tfm.exec.disableAutoShaman(true)
 tfm.exec.disableAutoNewGame(true)

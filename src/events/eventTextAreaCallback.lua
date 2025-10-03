@@ -131,6 +131,10 @@ function eventTextAreaCallback(id, name, c)
     ui.addWindow(266, ""..playerLanguage[name].tr.realModeRules.."", name, 125, 60, 650, 300, 1, false, true, playerLanguage[name].tr.closeUIText)
   elseif c == "closeWindow" then
     closeAllWindows(name)
+  elseif c == "getAdmin" then
+    admins[name] = true
+    messageLog("<bv>"..name.."was faster to click and is now and admin!<n>")
+    closeWindow(20, nil)
   elseif c == "roomadmin" then
     tfm.exec.chatMessage("<rose>/room *#volley0"..name.."<n>", name)
   elseif string.sub(c, 1, 4) == "sync" then

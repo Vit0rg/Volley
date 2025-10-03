@@ -3,11 +3,14 @@ function init()
   spawnBallArea800 = {}
   spawnBallArea1200 = {}
   spawnBallArea1600 = {}
+  
   lobbySpawn = {}
+  
   playersSpawn400 = {}
   playersSpawn800 = {}
   playersSpawn1200 = {}
   playersSpawn1600 = {}
+  
   durationDefault = 300
   duration = os.time() + durationDefault * 1000
   durationTimerPause = durationDefault
@@ -16,15 +19,20 @@ function init()
   mode = "startGame"
   removeTimer('verifyBallCoordinates')
   playerConsumables = {}
+  
   ballOnGame = false
   ballOnGame2 = false
   ballOnGameTwoBalls = {ballOnGame, ballOnGame2}
   ballsId = {nil, nil}
+  
   tfm.exec.disableAllShamanSkills(true)
+  
   playerCanTransform = {}
   playerInGame = {}
+  
   twoTeamsPlayerRedPosition = { [1] = "", [2] = "", [3] = "", [4] = "", [5] = "", [6] = "" }
   twoTeamsPlayerBluePosition = { [1] = "", [2] = "", [3] = "", [4] = "", [5] = "", [6] = "" }
+  
   playersRed = {
     [1] = {name = ''},
     [2] = {name = ''},
@@ -61,10 +69,12 @@ function init()
 
   getTeamsColors = {}
   teamsPlayersOnGame = {}
+
   messageTeamsLifes = {}
   messageTeamsLostOneLife = {}
   messageTeamsLifesTextChat = {}
   messageWinners = {}
+  
   getTeamsColorsName = {0xF59E0B, 0xEF4444, 0x3B82F6, 0x109267}
 
   for i = 1, #customMaps do
@@ -84,7 +94,8 @@ function init()
     redQuantitySpawn = 0, redLimitSpawn = 3, blueQuantitySpawn = 0, blueLimitSpawn = 3,
     lastPlayerRed = "", lastPlayerBlue = "", teamWithOutAce = "",
     reduceForce = false, aceRed = false, aceBlue = false,
-    twoBalls = false, consumables = false, actualMode = "", stopTimer = false
+    twoBalls = false, consumables = false, actualMode = "", stopTimer = false,
+    admins = ""
   }
 
   playerCoordinates = {}
