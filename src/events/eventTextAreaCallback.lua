@@ -153,7 +153,7 @@ function eventTextAreaCallback(id, name, c)
     for i = 1, #modes do
       str = ""..str..""..modes[i].."<br>"
     end
-    ui.addWindow(25, "<p align='center'><font size='11px'><a href='event:closeMode'>Select a mode</a><br><br>"..str.."", name, 665, 110, 100, 100, 1, false, false)
+    ui.addWindow(25, "<p align='center'><font size='11px'><a href='event:closeMode'>Select a mode</a><br><br>"..str.."", name, 665, 100, 100, 100, 1, false, false)
   elseif c:sub(1, 7) == "setMode" then
     local modes = getModesText()
     local index = tonumber(c:sub(8))
@@ -161,6 +161,9 @@ function eventTextAreaCallback(id, name, c)
     globalSettings.mode = modes[index]
     messageLog("<bv>The room has been set to "..modes[index]..", selected by the admin "..name.."<n>")
     updateSettingsUI()
+  elseif c == "closeMode" then
+    settingsMode[name] = false
+    ui.addWindow(25, "<p align='center'><font size='11px'><a href='event:openMode'>Select a mode</a>", name, 665, 100, 100, 30, 1, false, false)
   elseif c == "twoballs" and admins[name] then
     if globalSettings.twoBalls then
       globalSettings.twoBalls = false
@@ -181,9 +184,34 @@ function eventTextAreaCallback(id, name, c)
       messageLog("<bv>The random ball command was enabled globally in the room, selected by the admin "..name.."<n>")
     end
     updateSettingsUI()
-  elseif c == "closeMode" then
+  elseif c == "openMapType" and admins[name] then
+    settingsMode[name] = true
+    local modes = getMapTypesActions()
+    local str = ''
+    for i = 1, #modes do
+      str = ""..str..""..modes[i].."<br>"
+    end
+    ui.addWindow(25, "<p align='center'><font size='11px'><a href='event:closeMapType'>Select map</a><br><br>"..str.."", name, 665, 100, 100, 100, 1, false, false)
+  elseif c:sub(1, 10) == "setMapType" and not gameStats.teamsMode and not gameStats.twoTeamsMode and not gameStats.realMode then
+    local modes = getMapTypesText()
+    local index = tonumber(c:sub(11))
+
+    globalSettings.mapType = string.lower(modes[index])
+    messageLog("<bv>The map size in normal mode was set by "..modes[index].." by the admin "..name.."<n>")
+    updateSettingsUI()
+  elseif c == "closeMapType" then
     settingsMode[name] = false
-    ui.addWindow(25, "<p align='center'><font size='11px'><a href='event:openMode'>Select a mode</a>", name, 665, 110, 100, 30, 1, false, false)
+    ui.addWindow(25, "<p align='center'><font size='11px'><a href='event:openMapType'>Select map</a>", name, 665, 100, 100, 30, 1, false, false)
+  elseif string.sub(c, 1, 12) == 'nextSettings' then
+    local page = tonumber(string.sub(c, 13))
+    pagePlayerSettings[name] = page
+
+    updateSettingsUI(name)
+  elseif string.sub(c, 1, 12) == 'prevSettings' then
+    local page = tonumber(string.sub(c, 13))
+    pagePlayerSettings[name] = page
+
+    updateSettingsUI(name)
   elseif c == "ranking" then
     removeUITrophies(name)
     openRank[name] = true
@@ -286,16 +314,28 @@ function eventTextAreaCallback(id, name, c)
     tfm.exec.chatMessage("<bv>"..name.." voted for the "..maps[index][3].." map ("..tostring(mapsVotes[index]).." votes), type !maps to see the maps list and to vote !votemap (number)<n>", nil)
   elseif string.sub(c, 1, 9) == "randommap" and not gameStats.realMode and admins[name] then
     if globalSettings.randomMap then
-        globalSettings.randomMap = false
-        print("<bv>The random map command was disabled globally in the room, selected by the admin "..name.."<n>")
-        messageLog("<bv>The random map command was disabled globally in the room, selected by the admin "..name.."<n>")
-      else
-        globalSettings.randomMap = true
-        print("<bv>The random map command was enabled globally in the room, selected by the admin "..name.."<n>")
-        messageLog("<bv>The random map command was enabled globally in the room, selected by the admin "..name.."<n>")
-      end
+      globalSettings.randomMap = false
+      print("<bv>The random map command was disabled globally in the room, selected by the admin "..name.."<n>")
+      messageLog("<bv>The random map command was disabled globally in the room, selected by the admin "..name.."<n>")
+    else
+      globalSettings.randomMap = true
+      print("<bv>The random map command was enabled globally in the room, selected by the admin "..name.."<n>")
+      messageLog("<bv>The random map command was enabled globally in the room, selected by the admin "..name.."<n>")
+    end
 
-      updateSettingsUI()    
+    updateSettingsUI()
+  elseif c == "consumables" then
+    if globalSettings.consumables then
+      globalSettings.consumables = false
+
+      messageLog("<bv>The consumables command has been disabled globally by the admin "..name.."<n>")
+    else
+      globalSettings.consumables = true
+
+      messageLog("<bv>The consumables command has been enabled globally by the admin "..name.."<n>")
+    end
+
+    updateSettingsUI()
   elseif string.sub(c, 1, 6)  == "setmap" and customMapCommand[name] and not gameStats.realMode and mode == "startGame" and admins[name] then
     local index = tonumber(string.sub(c, 7))
     local maps = configSelectMap()
@@ -324,29 +364,6 @@ function eventTextAreaCallback(id, name, c)
     removeUITrophies(name)
     settings[name] = true
 
-    ui.addWindow(24, ""..playerLanguage[name].tr.titleSettings.."", name, 125, 60, 650, 300, 1, false, true, playerLanguage[name].tr.closeUIText)
-    ui.addTextArea(99992, ""..playerLanguage[name].tr.textSettings, name, 150, 110, 500, 200, 0x161616, 0x161616, 0, true)
-
-    ui.addWindow(25, "<p align='center'><font size='11px'><a href='event:openMode'>Select a mode</a>", name, 665, 105, 100, 30, 1, false, false)
-    
-    if globalSettings.randomBall then
-      ui.addWindow(21, "<p align='center'><font size='11px'><a href='event:randomball'>Enabled</a>", name, 665, 160, 100, 30, 1, false, false)
-      else
-      ui.addWindow(21, "<p align='center'><font size='11px'><a href='event:randomball'>Disabled</a>", name, 665, 160, 100, 30, 1, false, false)
-    end
-
-    if globalSettings.randomMap then
-      print("RANDOM MAP UI UPDATE")
-      ui.addWindow(22, "<p align='center'><font size='11px'><a href='event:randommap'>Enabled</a>", name, 665, 215, 100, 30, 1, false, false)
-      else
-      ui.addWindow(22, "<p align='center'><font size='11px'><a href='event:randommap'>Disabled</a>", name, 665, 215, 100, 30, 1, false, false)
-    end
-
-    if globalSettings.twoBalls then
-      ui.addWindow(44, "<p align='center'><font size='11px'><a href='event:twoballs'>Enabled</a>", name, 665, 275, 100, 30, 1, false, false)
-      else
-      ui.addWindow(44, "<p align='center'><font size='11px'><a href='event:twoballs'>Disabled</a>", name, 665, 275, 100, 30, 1, false, false)
-    end
-
+    updateSettingsUI(name)
   end
 end

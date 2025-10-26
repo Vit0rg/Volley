@@ -1,4 +1,12 @@
 function eventNewPlayer(name)
+  if string.sub(name, 1, 1) == "*" then
+    tfm.exec.chatMessage("<bv>This room does not allow guest accounts to enter. Create an account to enter the room.<n>", name)
+    tfm.exec.kickPlayer(name)
+
+    return
+  end
+
+  pagePlayerSettings[name] = 1
   customMapCommand[name] = true
   selectMapOpen[name] = false
   selectMapPage[name] = 1
@@ -28,6 +36,7 @@ function eventNewPlayer(name)
   openRank[name] = false
   playerLanguage[name] = {tr = trad, name = name}
   pagesList[name] = {helpPage = 1}
+  playersAfk[name] = os.time()
 
   showCrownToAllPlayers()
   if canVote[name] == nil then

@@ -98,7 +98,7 @@ local mapsVotes = {}
 local canVote = {}
 local playerOutOfCourt = {}
 local showOutOfCourtText = {}
-local globalSettings = { mode = 'Normal mode', twoBalls = false, randomBall = false, randomMap = false }
+local globalSettings = { mode = 'Normal mode', twoBalls = false, randomBall = false, randomMap = false, mapType = '', consumables = false }
 local settings = {}
 local settingsMode = {}
 local playersNormalMode = {}
@@ -138,6 +138,9 @@ local playersSpawn400 = {}
 local playersSpawn800 = {}
 local playersSpawn1200 = {}
 local playersSpawn1600 = {}
+local playersAfk = {}
+local pagePlayerSettings = {}
+local maxPageSettings = 2
 
 local gameTimeEnd = os.time() + 5000
 
@@ -161,6 +164,8 @@ for name, data in pairs(tfm.get.room.playerList) do
     }
   end
   
+  pagePlayerSettings[name] = 1
+  playersAfk[name] = os.time()
   playerAchievementsImages[name] = {}
   showCrownImages[name] = true
   playersNormalMode[name] = {name = name, matches = 0, wins = 0, winRatio = 0, winsRed = 0, winsBlue = 0}

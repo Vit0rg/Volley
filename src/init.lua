@@ -147,6 +147,20 @@ function init()
     end
   end
 
+  if not gameStats.teamsMode and not gameStats.twoTeamsMode and not gameStats.realmode then
+    if globalSettings.consumables then
+      gameStats.consumables = true
+
+      tfm.exec.chatMessage("<bv>Room Setup: Consumables has been activated in normal mode<n>", nil)
+    end
+
+    if globalSettings.mapType ~= '' then
+      gameStats.setMapName = globalSettings.mapType
+
+      tfm.exec.chatMessage("<bv>Room Setup: The map size has been set to "..globalSettings.mapType.."<n>", nil)
+    end
+  end
+
   for name, data in pairs(tfm.get.room.playerList) do
     playerLeftRight[name] = 0
     playerConsumableKey[name] = 56
@@ -200,6 +214,8 @@ function init()
       ui.addTextArea(i, "<p align='center'><font size='14px'><a href='event:joinTeamBlue"..(i - 4).."'>Join", nil, x[i - 1], y[i - 1], 150, 40, 0x184F81, 0x184F81, 1, false)
     end
   end
+
+  afkSystem() 
 
   initGame = os.time() + 25000
 end
