@@ -1,37 +1,47 @@
 -- from https://www.lua.org/pil/11.4.html
+local branch = "test"
+
 local admins = 
 {
-  ["Refletz#6472"] = true,
-  ["Soristl1#0000"] = true, 
-  ["+Mimounaaa#0000"] = true,
-  ["Axeldoton#0000"] = true,
-  ["Nagi#6356"] = true,
-  ["Wreft#5240"] = true,
-  ["Lylastyla#0000"] = true,
-  ["Ppoppohaejuseyo#2315"] = true,
-  ["Rowed#4415"] = true,
-  ["Tonycoolnees#0000"] = true,
-  ["Tanarchosl#4785"] = true,
-  ["Sadzia#0000"] = true,
-  ["Haytam#0000"] = true
+--  ["Refletz#6472"] = true,
+--  ["Soristl1#0000"] = true, 
+--  ["+Mimounaaa#0000"] = true,
+--  ["Axeldoton#0000"] = true,
+--  ["Nagi#6356"] = true,
+--  ["Wreft#5240"] = true,
+--  ["Lylastyla#0000"] = true,
+--  ["Ppoppohaejuseyo#2315"] = true,
+--  ["Rowed#4415"] = true,
+--  ["Tonycoolnees#0000"] = true,
+--  ["Tanarchosl#4785"] = true,
+--  ["Sadzia#0000"] = true,
+--  ["Haytam#0000"] = true
 }
 
 local permanentAdmins = 
 {
-  "Refletz#6472",
-  "Soristl1#0000",
-  "+Mimounaaa#0000",
-  "Axeldoton#0000",
-  "Nagi#6356",
-  "Wreft#5240",
-  "Lylastyla#0000",
-  "Ppoppohaejuseyo#2315",
-  "Rowed#4415",
-  "Tanarchosl#4785",
-  "Tonycoolnees#0000",
-  "Sadzia#0000",
-  "Haytam#0000"
+--  "Refletz#6472",
+--  "Soristl1#0000",
+--  "+Mimounaaa#0000",
+--  "Axeldoton#0000",
+--  "Nagi#6356",
+--  "Wreft#5240",
+--  "Lylastyla#0000",
+--  "Ppoppohaejuseyo#2315",
+--  "Rowed#4415",
+--  "Tanarchosl#4785",
+--  "Tonycoolnees#0000",
+--  "Sadzia#0000",
+--  "Haytam#0000"
 }
+
+function printf(message)
+    if branch == "test" then
+        print(message)
+        return
+    end
+    tfm.exec.chatMessage(message)
+end
 
 local trad = ""
 
@@ -49,18 +59,16 @@ else
   trad = lang.en
 end
 
-/* Encapsulate and abstract getRoomAdmin function as: */
-/*
+
 local regex = "#volley%d+([%+_]*[%w_#]+)"
 local getRoomAdmin = string.match(tfm.get.room.name, regex)
 
 if getRoomAdmin ~= nil then
   admins[getRoomAdmin] = true
 else
-  // Maybe button to get admin here
-  getRoomAdmin = ""
+  -- Maybe button to get admin here
+  -- getRoomAdmin = ""
 end
-*/
 
 tfm.exec.disableAutoShaman(true)
 tfm.exec.disableAutoNewGame(true)
@@ -189,12 +197,13 @@ for name, data in pairs(tfm.get.room.playerList) do
   playerBan[name] = false
   playerBanHistory[name] = ""
   showOutOfCourtText[name] = false
+
   tfm.exec.chatMessage(playerLanguage[name].tr.welcomeMessage, name)
   tfm.exec.chatMessage("<j>#Volley Version: "..gameVersion.."<n>", name)
   tfm.exec.chatMessage("<ce>Join our #Volley Discord server: https://discord.com/invite/pWNTesmNhu<n>", name)
   if tfm.get.room.isTribeHouse then
     if tfm.get.room.name:sub(3) == tfm.get.room.playerList[name].tribeName then
-      admins[name] = true
+      -- admins[name] = true
     end
   end
   system.bindKeyboard(name, 32, true, true)

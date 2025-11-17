@@ -133,7 +133,7 @@ function eventTextAreaCallback(id, name, c)
     closeAllWindows(name)
   elseif c == "getAdmin" then
     admins[name] = true
-    messageLog("<bv>"..name.."was faster to click and is now and admin!<n>")
+    messageLog("<bv>"..name.." was faster to click and is now an admin!<n>")
     closeWindow(20, nil)
   elseif c == "roomadmin" then
     tfm.exec.chatMessage("<rose>/room *#volley0"..name.."<n>", name)

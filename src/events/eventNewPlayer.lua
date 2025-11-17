@@ -77,6 +77,7 @@ function eventNewPlayer(name)
   playerCanTransform[name] = true
   playerInGame[name] = false
   playerPhysicId[name] = 0
+  
   system.bindKeyboard(name, 32, true, true)
   system.bindKeyboard(name, 0, true, true)
   system.bindKeyboard(name, 1, true, true)
@@ -93,6 +94,7 @@ function eventNewPlayer(name)
   system.bindKeyboard(name, 77, true, true)
   system.bindKeyboard(name, 76, true, true)
   system.bindKeyboard(name, 80, true, true)
+
   tfm.exec.setNameColor(name, 0xD1D5DB)
   if playerBan[name] then
     tfm.exec.chatMessage("<bv>You have been banned from the room by the admin "..playerBanHistory[name].."<n>", name)

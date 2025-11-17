@@ -17,12 +17,12 @@ function selectballUI(name)
         textSelect = "<n2>Select ball<n>"
       end
 
-      /*
-      //Maybe add vote system for balls?
-      if not canVote[name] then
-        voteText = "<n2>Vote ball<n> ("..showballVotes(balls, index)..")"
-      end
-      */
+      
+      -- Maybe add vote system for balls?
+      -- if not canVote[name] then
+      --  voteText = "<n2>Vote ball<n> ("..showballVotes(balls, index)..")"
+      --end
+      
 
       ui.addTextArea(""..tostring(99999)..""..tostring(i).."", "", name, (142 + ((i - 1) * 125)), 115, 110, 140, 0x142b2e, 0x8a583c, 1, true)
       ui.addTextArea(""..tostring(999999)..""..tostring(i).."", "", name, (147  + ((i - 1) * 125)), 120, 100, 43, 0x142b2e, 0x2d5a61, 1, true)
