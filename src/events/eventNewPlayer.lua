@@ -108,9 +108,10 @@ function eventNewPlayer(name)
     eventNewGameShowLobbyTexts(gameStats.teamsMode)
 
     ui.addWindow(30, "<p align='center'><font size='13px'><a href='event:selectMap'>Select a map", name, 10, 370, 150, 30, 1, false, false, _)
+    ui.addWindow(32, "<p align='center'><font size='13px'><a href='event:selectBall'>Select a ball", name, 180, 370, 150, 30, 1, false, false, _)
 
     if admins[name] then
-      ui.addWindow(31, "<p align='center'><font size='13px'><a href='event:settings'>Room settings", name, 180, 370, 150, 30, 1, false, false, _)
+      ui.addWindow(31, "<p align='center'><font size='13px'><a href='event:settings'>Room settings", name, 350, 370, 150, 30, 1, false, false, _)
     end
   elseif mode ~= "startGame" then
     tfm.exec.chatMessage("<ch>If you don't want to see the ranking crowns, type the command !crown false<n>", name)

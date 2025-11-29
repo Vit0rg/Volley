@@ -125,10 +125,14 @@ function init()
 
   if globalSettings.randomBall then
     gameStats.customBall = true
+
     print("<bv>Room Setup: The random ball mode has been activated<n>", nil)
     tfm.exec.chatMessage("<bv>Room Setup: The random ball mode has been activated<n>", nil)
+    
     local indexBall= math.random(1, #balls)
     gameStats.customBallId = indexBall
+
+    
   end
 
   if globalSettings.randomMap then
@@ -195,12 +199,14 @@ function init()
     end
     
     if admins[name] then
-      ui.addWindow(31, "<p align='center'><font size='13px'><a href='event:settings'>Room settings", name, 180, 370, 150, 30, 1, false, false, _)
+      ui.addWindow(31, "<p align='center'><font size='13px'><a href='event:settings'>Room settings", name, 350, 370, 150, 30, 1, false, false, _)
     end
   end
 
   ui.addWindow(23, "<p align='center'><font size='13px'><a href='event:menuOpen'>Menu", nil, 5, 15, 100, 30, 0.2, false, false, _)
   ui.addWindow(30, "<p align='center'><font size='13px'><a href='event:selectMap'>Select a map", nil, 10, 370, 150, 30, 1, false, false, _)
+  ui.addWindow(32, "<p align='center'><font size='13px'><a href='event:selectBall'>Select a ball", nil, 180, 370, 150, 30, 1, false, false, _)
+  
   ui.removeTextArea(0)
   ui.addTextArea(7, "<p align='center'>", nil, 375, 50, 30, 20, 0x161616, 0x161616, 1, false)
 

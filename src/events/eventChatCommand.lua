@@ -181,6 +181,7 @@ function eventChatCommand(name, c)
     if isPlayerBanned then
       return
     end
+
     if command == "resettimer" and mode == "startGame" then
       initGame = os.time() + 15000
 
@@ -253,10 +254,12 @@ function eventChatCommand(name, c)
         commandNotAvailable(command:sub(1, 6), name)
         return
       end
+
       if command:sub(8) == "small" or command:sub(8) == "large" or command:sub(8) == "extra-large" then
         if command:sub(8) == "small" or command:sub(8) == "large" then
           resetMapsToTest()
         end
+
         gameStats.setMapName = command:sub(8)
         tfm.exec.chatMessage("<bv>"..gameStats.setMapName.." map selected by admin "..name.."<n>", nil)
       else
@@ -313,7 +316,7 @@ function eventChatCommand(name, c)
           if i == 1 then
             customMapCommand[name] = true
           end
-        end, 2000, 1, "customMapCommandDelay")
+        end, 2500, 1, "customMapCommandDelay")
 
         gameStats.isCustomMap = false
         gameStats.customMapIndex = 0
@@ -389,7 +392,7 @@ function eventChatCommand(name, c)
           if i == 1 then
             customMapCommand[name] = true
           end
-        end, 2000, 1, "customMapCommandDelay")
+        end, 2500, 1, "customMapCommandDelay")
 
         gameStats.isCustomMap = false
         gameStats.customMapIndex = 0
@@ -618,7 +621,7 @@ function eventChatCommand(name, c)
           tfm.exec.chatMessage("<bv>Admin selected for "..name1.." command used by "..name.."<n>", nil)
 
           if mode == "startGame" then
-            ui.addWindow(31, "<p align='center'><font size='13px'><a href='event:settings'>Room settings", name1, 180, 370, 150, 30, 1, false, false, _)
+            ui.addWindow(31, "<p align='center'><font size='13px'><a href='event:settings'>Room settings", name, 350, 370, 150, 30, 1, false, false, _)
 
             if selectMapOpen[name1] then
               selectMapUI(name1)
