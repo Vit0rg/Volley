@@ -6,11 +6,11 @@ local afkSystem = addTimer(function(i)
         if time <= afkTimeValue then
           if gameStats.teamsMode and gameStats.canTransform then
             leaveTeamTeamsMode(name)
-            tfm.exec.chatMessage("<bv>"..name.." left the game because "..name.." was AFK<n>", nil)
+            printf("<bv>"..name.." left the game because "..name.." was AFK<n>", nil)
           else
             if not gameStats.teamsMode then
               leaveTeam(name)
-              tfm.exec.chatMessage("<bv>"..name.." left the game because "..name.." was AFK<n>", nil)
+              printf("<bv>"..name.." left the game because "..name.." was AFK<n>", nil)
             end
           end
         end
