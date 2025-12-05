@@ -35,14 +35,6 @@ local permanentAdmins =
   "Haytam#0000"
 }
 
-function printf(message)
-    if branch == "test" then
-        print(message)
-        return
-    end
-    tfm.exec.eventChatCommand(message)
-end
-
 local trad = ""
 
 if tfm.get.room.language == "br" then
@@ -200,9 +192,14 @@ for name, data in pairs(tfm.get.room.playerList) do
   playerBanHistory[name] = ""
   showOutOfCourtText[name] = false
 
-  printf(playerLanguage[name].tr.welcomeMessage, name)
-  printf("<j>#Volley Version: "..gameVersion.."<n>", name)
-  printf("<ce>Join our #Volley Discord server: https://discord.com/invite/pWNTesmNhu<n>", name)
+  welcomeMessage = welcomeMessage.."<br><j>Welcome to the Volley, created by Refletz#6472"
+  welcomeMessage = welcomeMessage.."<br>".."<n>#Volley Version: <j>2.3.0<n>"
+  welcomeMessage = welcomeMessage.."<br>".."<v>Join our #Volley Discord server: <ce>discord.com/invite/pWNTesmNhu<n><br>"
+
+  printf("info", playerLanguage[name].tr.welcomeMessage, name)
+  printf("info", "<n>#Volley Version: <j>"..gameVersion, name)
+  printf("info", "<n>Join our #Volley Discord server: <ce>https://discord.com/invite/pWNTesmNhu<n><br>", name)
+
   if tfm.get.room.isTribeHouse then
     if tfm.get.room.name:sub(3) == tfm.get.room.playerList[name].tribeName then
       admins[name] = true

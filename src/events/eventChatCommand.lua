@@ -8,15 +8,18 @@ local short_commands = { j = "join", l = "leave", la = "lang", ads = "admins", b
                    ks = "killspec", p = "pause", sy = "sync", ssy = "setsync",
                    syt = "synctfm", lsy = "listsync", spf = "setplayerforce", 
                    t = "test", tt = "2teamsmode", afk = "afksystem", sat = "setafktime",
-                   tb = "twoballs", co = "consumables", se = "settings"
+                   tb = "twoballs", co = "consumables", se = "settings", dc = "discord"
                 }
 
 function eventChatCommand(name, c)
   local command = string.lower(c)
+  
   if short_commands[command] then
     command = short_commands[command]
   end
 
+  local permanentAdmin = isPermanentAdmin(name)
+  
 
   if (command == "join" and playerInGame[name] == false and mode == "gameStart" then
     local isPlayerBanned = messagePlayerIsBanned(name)
@@ -192,7 +195,15 @@ function eventChatCommand(name, c)
         end
       end
     end
+  elseif command == "discord" then
+    if permanentAdmin then
+      printf("info", "<bv>https://discord.com/invite/pWNTesmNhu", nil)  
+      return
+    end
+
+    printf("info", "<bv>https://discord.com/invite/pWNTesmNhu", name)
   end
+  
   
   if admins[name] then
     local isPlayerBanned = messagePlayerIsBanned(name)
