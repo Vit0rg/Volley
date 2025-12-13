@@ -9,6 +9,13 @@ function eventTextAreaCallback(id, name, c)
       local index = tonumber(string.sub(c, 12))
       playerInGame[name] = true
       playersRed[index].name = name
+
+      if gameStats.threeTeamsMode then
+        ui.addTextArea(threeTeamsMode.id[index], "<p align='center'><font size='14px'><a href='event:leaveTeamRed"..index.."'>"..name.."", nil, threeTeamsMode.x[index], threeTeamsMode.y[index], 150, 40, 0x871F1F, 0x871F1F, 1, false)
+
+        return
+      end
+
       if index > 3 then
         ui.addTextArea(index + 4, "<p align='center'><font size='14px'><a href='event:leaveTeamRed"..index.."'>"..name.."", nil, x[index + 3], y[index + 3], 150, 40, 0x871F1F, 0x871F1F, 1, false)
       else
@@ -23,34 +30,56 @@ function eventTextAreaCallback(id, name, c)
       local index = tonumber(string.sub(c, 13))
       playerInGame[name] = false
       playersRed[index].name = ''
+
+      if gameStats.threeTeamsMode then
+        ui.addTextArea(threeTeamsMode.id[index], "<p align='center'><font size='14px'><a href='event:joinTeamRed"..index.."'>Join", nil, threeTeamsMode.x[index], threeTeamsMode.y[index], 150, 40, 0xE14747, 0xE14747, 1, false)
+
+        return
+      end
+
       if index > 3 then
         ui.addTextArea(index + 4, "<p align='center'><font size='14px'><a href='event:joinTeamRed"..index.."'>Join", nil, x[index + 3], y[index + 3], 150, 40, 0xE14747, 0xE14747, 1, false)
       else
         ui.addTextArea(index, "<p align='center'><font size='14px'><a href='event:joinTeamRed"..index.."'>Join", nil, x[index], y[index], 150, 40, 0xE14747, 0xE14747, 1, false)
       end
-    elseif string.sub(c, 1, 12) == "joinTeamBlue" and playerInGame[name] == false and playersBlue[tonumber(string.sub(c, 13)-3)].name == '' then
+    elseif string.sub(c, 1, 12) == "joinTeamBlue" and playerInGame[name] == false and playersBlue[teamBlueIndex(tonumber(string.sub(c, 13)))].name == '' then
       local isPlayerBanned = messagePlayerIsBanned(name)
       if isPlayerBanned then
         return
       end
 
-      local index = tonumber(string.sub(c, 13) - 3)
+      local index = teamBlueIndex(tonumber(string.sub(c, 13)))
       playerInGame[name] = true
       playersBlue[index].name = name
+
+      if gameStats.threeTeamsMode then
+        ui.addTextArea(threeTeamsMode.id[index + 4], "<p align='center'><font size='14px'><a href='event:leaveTeamBlue"..(index).."'>"..name.."", nil, threeTeamsMode.x[index + 4], threeTeamsMode.y[index + 4], 150, 40, 0x0B3356, 0x0B3356, 1, false)
+
+        return
+      end
+
       if index > 3 then
         ui.addTextArea(index + 7, "<p align='center'><font size='14px'><a href='event:leaveTeamBlue"..(index + 3).."'>"..name.."", nil, x[index + 6], y[index + 6], 150, 40, 0x0B3356, 0x0B3356, 1, false)
       else
         ui.addTextArea(index + 3, "<p align='center'><font size='14px'><a href='event:leaveTeamBlue"..(index + 3).."'>"..name.."", nil, x[index + 3], y[index + 3], 150, 40, 0x0B3356, 0x0B3356, 1, false)
       end
-    elseif string.sub(c, 1, 13) == "leaveTeamBlue" and playersBlue[tonumber(string.sub(c, 14)) - 3].name == name then
+    elseif string.sub(c, 1, 13) == "leaveTeamBlue" and playersBlue[teamBlueIndex(tonumber(string.sub(c, 14)))].name == name then
       local isPlayerBanned = messagePlayerIsBanned(name)
       if isPlayerBanned then
         return
       end
 
-      local index = tonumber(string.sub(c, 14) - 3)
+      local index = teamBlueIndex(tonumber(string.sub(c, 14)))
       playerInGame[name] = false
       playersBlue[index].name = ''
+
+      if gameStats.threeTeamsMode then
+
+        ui.addTextArea(threeTeamsMode.id[index + 4], "<p align='center'><font size='14px'><a href='event:joinTeamBlue"..(index).."'>Join", nil, threeTeamsMode.x[index + 4], threeTeamsMode.y[index + 4], 150, 40, 0x184F81, 0x184F81, 1, false)
+
+        return
+      end
+
       if index > 3 then
         ui.addTextArea(index + 7, "<p align='center'><font size='14px'><a href='event:joinTeamBlue"..(index + 3).."'>Join", nil, x[index + 6], y[index + 6], 150, 40, 0x184F81, 0x184F81, 1, false)
       else
@@ -88,6 +117,12 @@ function eventTextAreaCallback(id, name, c)
       playerInGame[name] = true
       playersGreen[index].name = name
 
+      if gameStats.threeTeamsMode then
+        ui.addTextArea(threeTeamsMode.id[index + 8], "<p align='center'><font size='14px'><a href='event:leaveTeamGreen"..index.."'>"..name.."", nil, threeTeamsMode.x[index + 8], threeTeamsMode.y[index + 8], 150, 40, 0x0C6346, 0x0C6346, 1, false)
+
+        return
+      end
+
       ui.addTextArea(index + 10, "<p align='center'><font size='14px'><a href='event:leaveTeamGreen"..index.."'>"..name.."", nil, x[index + 9], y[index + 9], 150, 40, 0x0C6346, 0x0C6346, 1, false)
     elseif string.sub(c, 1, 14) == "leaveTeamGreen" and playersGreen[tonumber(string.sub(c, 15))].name == name then
       local isPlayerBanned = messagePlayerIsBanned(name)
@@ -98,6 +133,12 @@ function eventTextAreaCallback(id, name, c)
       local index = tonumber(string.sub(c, 15))
       playerInGame[name] = false
       playersGreen[index].name = ''
+
+      if gameStats.threeTeamsMode then
+        ui.addTextArea(threeTeamsMode.id[index + 8], "<p align='center'><font size='14px'><a href='event:joinTeamGreen"..index.."'>Join", nil, threeTeamsMode.x[index + 8], threeTeamsMode.y[index + 8], 150, 40, 0x109267, 0x109267, 1, false)
+
+        return
+      end
 
       ui.addTextArea(index + 10, "<p align='center'><font size='14px'><a href='event:joinTeamGreen"..index.."'>Join", nil, x[index + 9], y[index + 9], 150, 40, 0x109267, 0x109267, 1, false)
     end
@@ -153,7 +194,7 @@ function eventTextAreaCallback(id, name, c)
     for i = 1, #modes do
       str = ""..str..""..modes[i].."<br>"
     end
-    ui.addWindow(25, "<p align='center'><font size='11px'><a href='event:closeMode'>Select a mode</a><br><br>"..str.."", name, 665, 100, 100, 100, 1, false, false)
+    ui.addWindow(25, "<p align='center'><font size='11px'><a href='event:closeMode'>Select a mode</a><br><br>"..str.."", name, 665, 100, 100, 110, 1, false, false)
   elseif c:sub(1, 7) == "setMode" then
     local modes = getModesText()
     local index = tonumber(c:sub(8))
@@ -172,6 +213,16 @@ function eventTextAreaCallback(id, name, c)
       globalSettings.twoBalls = true
       messageLog("<bv>The two balls command was enabled globally in the room, selected by the admin "..name.."<n>")
       print("<bv>The two balls command was enabled globally in the room, selected by the admin "..name.."<n>")
+    end
+    updateSettingsUI()
+  elseif c == "threeballs" and admins[name] then
+    if globalSettings.threeBalls then
+      globalSettings.threeBalls = false
+      messageLog("<bv>The three balls on 3 teams mode command was disabled globally in the room, selected by the admin "..name.."<n>")
+    else
+      globalSettings.threeBalls = true
+      messageLog("<bv>The three balls on 3 teams mode command was enabled globally in the room, selected by the admin "..name.."<n>")
+      print("<bv>The three balls on 3 teams mode command was enabled globally in the room, selected by the admin "..name.."<n>")
     end
     updateSettingsUI()
   elseif c == "randomball" and admins[name] then
@@ -225,6 +276,10 @@ function eventTextAreaCallback(id, name, c)
     showMode(playerRankingMode[name], name)
   elseif c == "4 teams mode" then
     playerRankingMode[name] = "4 teams mode"
+
+    showMode(playerRankingMode[name], name)
+  elseif c == "3 teams mode" then
+    playerRankingMode[name] = "3 teams mode"
 
     showMode(playerRankingMode[name], name)
   elseif c == "2 teams mode" then

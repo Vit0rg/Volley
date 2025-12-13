@@ -121,6 +121,49 @@ function teleportPlayers()
     return
   end
 
+  if gameStats.threeTeamsMode then
+    for i = 1, #playersRed do
+      if playersRed[i].name ~= '' then
+        playersOnGameHistoric[playersRed[i].name] = { teams = {"red"} }
+        if #playersSpawn400 > 0 then
+          teleportPlayerWithSpecificSpawn(playersSpawn400, playersRed[i].name)
+        else
+          tfm.exec.movePlayer(playersRed[i].name, 300, 334)
+        end
+        
+        tfm.exec.setNameColor(playersRed[i].name, 0xEF4444)
+      end
+    end
+
+    for i = 1, #playersBlue do
+      if playersBlue[i].name ~= '' then
+        playersOnGameHistoric[playersBlue[i].name] = { teams = {"blue"} }
+        if #playersSpawn800 > 0 then
+          teleportPlayerWithSpecificSpawn(playersSpawn800, playersBlue[i].name)
+        else
+          tfm.exec.movePlayer(playersBlue[i].name, 900, 334)
+        end
+        
+        tfm.exec.setNameColor(playersBlue[i].name, 0x3B82F6)
+      end
+    end
+
+    for i = 1, #playersGreen do
+      if playersGreen[i].name ~= '' then
+        playersOnGameHistoric[playersGreen[i].name] = { teams = {"green"} }
+        if #playersSpawn1200 > 0 then
+          teleportPlayerWithSpecificSpawn(playersSpawn1200, playersGreen[i].name)
+        else
+          tfm.exec.movePlayer(playersGreen[i].name, 1500, 334)
+        end
+        
+        tfm.exec.setNameColor(playersGreen[i].name, 0x109267)
+      end
+    end
+
+    return
+  end
+
   for i = 1, #playersRed do
     if playersRed[i].name ~= '' then
       playersOnGameHistoric[playersRed[i].name] = { teams = {"red"} }

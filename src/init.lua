@@ -18,8 +18,9 @@ function init()
   playerConsumables = {}
   ballOnGame = false
   ballOnGame2 = false
-  ballOnGameTwoBalls = {ballOnGame, ballOnGame2}
-  ballsId = {nil, nil}
+  ballOnGame3 = false
+  ballOnGameTwoBalls = {ballOnGame, ballOnGame2, ballOnGame3}
+  ballsId = {nil, nil, nil}
   tfm.exec.disableAllShamanSkills(true)
   playerCanTransform = {}
   playerInGame = {}
@@ -84,7 +85,8 @@ function init()
     redQuantitySpawn = 0, redLimitSpawn = 3, blueQuantitySpawn = 0, blueLimitSpawn = 3,
     lastPlayerRed = "", lastPlayerBlue = "", teamWithOutAce = "",
     reduceForce = false, aceRed = false, aceBlue = false,
-    twoBalls = false, consumables = false, actualMode = "", stopTimer = false
+    twoBalls = false, consumables = false, actualMode = "", stopTimer = false, threeTeamsMode = false,
+    threeBalls = false
   }
 
   playerCoordinates = {}
@@ -97,8 +99,35 @@ function init()
 
   if globalSettings.mode == "4 teams mode" then
     gameStats.teamsMode = true
-    updateLobbyTextAreas(gameStats.teamsMode)
+    getTeamsColorsName = {0xF59E0B, 0xEF4444, 0x3B82F6, 0x109267}
+    teamsLifes = { [1] = {yellow = 3}, [2] = {red = 3}, [3] = {blue = 3}, [4] = {green = 3} }
+    updateLobbyTextAreas()
     tfm.exec.chatMessage("<bv>Room Setup: The room has been configured for "..globalSettings.mode.."<n>", nil)
+  elseif globalSettings.mode == "3 teams mode" then
+    gameStats.threeTeamsMode = true
+    getTeamsColorsName = {0xEF4444, 0x3B82F6, 0x109267}
+    playersYellow = {
+      [1] = {name = ''},
+      [2] = {name = ''},
+      [3] = {name = ''},
+      [4] = {name = ''}
+    }
+
+    playersGreen = {
+      [1] = {name = ''},
+      [2] = {name = ''},
+      [3] = {name = ''},
+      [4] = {name = ''}
+    }
+
+    teamsLifes = { [1] = {yellow = 5}, [2] = {red = 5}, [3] = {blue = 5}, [4] = {green = 5} }
+    updateLobbyTextAreas()
+    tfm.exec.chatMessage("<bv>Room Setup: The room has been configured for "..globalSettings.mode.."<n>", nil)
+
+    if globalSettings.threeBalls then
+      gameStats.threeBalls = true
+      tfm.exec.chatMessage("<bv>Room Setup: The three-ball mode has been activated", nil)
+    end
   elseif globalSettings.mode == "2 teams mode" then
     gameStats.twoTeamsMode = true
     tfm.exec.chatMessage("<bv>Room Setup: The room has been configured for "..globalSettings.mode.."<n>", nil)
@@ -139,6 +168,11 @@ function init()
       gameStats.customMapIndex = indexMap
       tfm.exec.chatMessage('<bv>'..customMapsFourTeamsMode[gameStats.customMapIndex][3]..' map (created by '..customMapsFourTeamsMode[gameStats.customMapIndex][4]..') selected randomly<n>', nil)
       print('<bv>'..customMapsFourTeamsMode[gameStats.customMapIndex][3]..' map (created by '..customMapsFourTeamsMode[gameStats.customMapIndex][4]..') selected randomly<n>')
+    elseif gameStats.threeTeamsMode then
+      indexMap = math.random(1, #customMapsThreeTeamsMode)
+      gameStats.customMapIndex = indexMap
+      tfm.exec.chatMessage('<bv>'..customMapsThreeTeamsMode[gameStats.customMapIndex][3]..' map (created by '..customMapsThreeTeamsMode[gameStats.customMapIndex][4]..') selected randomly<n>', nil)
+      print('<bv>'..customMapsThreeTeamsMode[gameStats.customMapIndex][3]..' map (created by '..customMapsThreeTeamsMode[gameStats.customMapIndex][4]..') selected randomly<n>')
     elseif not gameStats.realMode then
       indexMap = math.random(1, #customMaps)
       gameStats.customMapIndex = indexMap

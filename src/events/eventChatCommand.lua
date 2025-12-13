@@ -6,6 +6,16 @@ function eventChatCommand(name, c)
       return
     end
 
+    if gameStats.threeTeamsMode and gameStats.canTransform then
+      if tfm.get.room.playerList[name].isDead then
+        tfm.exec.respawnPlayer(name)
+      end
+
+      chooseTeamThreeTeamsMode(name)
+      --showCrownToAllPlayers()
+      return
+    end
+
     if gameStats.teamsMode and gameStats.canTransform then
       if tfm.get.room.playerList[name].isDead then
         tfm.exec.respawnPlayer(name)
@@ -28,6 +38,11 @@ function eventChatCommand(name, c)
   elseif command == "leave" and playerInGame[name] and mode == "gameStart" then
     local isPlayerBanned = messagePlayerIsBanned(name)
     if isPlayerBanned then
+      return
+    end
+
+    if gameStats.threeTeamsMode and gameStats.canTransform then
+      leaveTeamTeamsMode(name)
       return
     end
 
@@ -413,6 +428,13 @@ function eventChatCommand(name, c)
         end
       end
 
+      if gameStats.threeTeamsMode then
+        if indexMap < 1 or indexMap > #customMapsThreeTeamsMode then
+          tfm.exec.chatMessage('<bv>Third parameter invalid, the map index must be higher than 1 and less than '..tostring(#customMapsThreeTeamsMode)..'<n>', name)
+          return
+        end
+      end
+
       if not gameStats.twoTeamsMode and not gameStats.teamsMode then
         if indexMap < 1 or indexMap > #customMaps then
           tfm.exec.chatMessage('<bv>Third parameter invalid, the map index must be higher than 1 and less than '..tostring(#customMaps)..'<n>', name)
@@ -439,6 +461,12 @@ function eventChatCommand(name, c)
         if gameStats.twoTeamsMode then
           tfm.exec.chatMessage('<bv>'..customMapsFourTeamsMode[gameStats.customMapIndex][3]..' map (created by '..customMapsFourTeamsMode[gameStats.customMapIndex][4]..') selected by admin '..name..'<n>', nil)
           print('<bv>'..customMapsFourTeamsMode[gameStats.customMapIndex][3]..' map (created by '..customMapsFourTeamsMode[gameStats.customMapIndex][4]..') selected by admin '..name..'<n>')
+          return
+        end
+
+        if gameStats.threeTeamsMode then
+          tfm.exec.chatMessage('<bv>'..customMapsThreeTeamsMode[gameStats.customMapIndex][3]..' map (created by '..customMapsThreeTeamsMode[gameStats.customMapIndex][4]..') selected by admin '..name..'<n>', nil)
+          print('<bv>'..customMapsThreeTeamsMode[gameStats.customMapIndex][3]..' map (created by '..customMapsThreeTeamsMode[gameStats.customMapIndex][4]..') selected by admin '..name..'<n>')
           return
         end
 
@@ -537,6 +565,10 @@ function eventChatCommand(name, c)
         tfm.exec.chatMessage("<bv>You should disable the 2 teams mode first to enable the 4 teams mode<n>", nil)
         return
       end
+      if gameStats.threeTeamsMode then
+        tfm.exec.chatMessage("<bv>You should disable the 3 teams mode first to enable the 4 teams mode<n>", nil)
+        return
+      end
       if gameStats.realMode then
         tfm.exec.chatMessage("<bv>You should disable the real mode first to enable the 4 teams mode<n>", nil)
         return
@@ -550,6 +582,8 @@ function eventChatCommand(name, c)
       gameStats.canJoin = false
       gameStats.isCustomMap = false
       gameStats.customMapIndex = 0
+      getTeamsColorsName = {0xF59E0B, 0xEF4444, 0x3B82F6, 0x109267}
+      teamsLifes = { [1] = {yellow = 3}, [2] = {red = 3}, [3] = {blue = 3}, [4] = {green = 3} }
 
       if args[2] == "true" then
         if gameStats.teamsMode then
@@ -559,7 +593,7 @@ function eventChatCommand(name, c)
         gameStats.teamsMode = true
         resetMapsList()
         tfm.exec.chatMessage("<bv>4-team volley mode activated by admin "..name.."<n>", nil)
-        updateLobbyTextAreas(gameStats.teamsMode)
+        updateLobbyTextAreas()
         return
       end
 
@@ -571,15 +605,67 @@ function eventChatCommand(name, c)
       gameStats.teamsMode = false
       resetMapsList()
       tfm.exec.chatMessage("<bv>4-team volley mode disabled by admin "..name.."<n>", nil)
-      updateLobbyTextAreas(gameStats.teamsMode)
+      updateLobbyTextAreas()
+    elseif command:sub(1, 10) == "3teamsmode" and mode == "startGame" then
+      if gameStats.teamsMode then
+        tfm.exec.chatMessage("<bv>You should disable the 4 teams mode first to enable the 3 teams mode<n>", nil)
+        return
+      end
+      if gameStats.twoTeamsMode then
+        tfm.exec.chatMessage("<bv>You should disable the 2 teams mode first to enable the 3 teams mode<n>", nil)
+        return
+      end
+      if gameStats.realMode then
+        tfm.exec.chatMessage("<bv>You should disable the real mode first to enable the 3 teams mode<n>", nil)
+        return
+      end
+      local args = split(command)
+      if args[2] ~= "true" and args[2] ~= "false" then
+        tfm.exec.chatMessage('<bv>Second parameter invalid, must be true or false<n>', name)
+        return
+      end
+
+      gameStats.canJoin = false
+      gameStats.isCustomMap = false
+      gameStats.customMapIndex = 0
+      getTeamsColorsName = {0xEF4444, 0x3B82F6, 0x109267}
+      teamsLifes = { [1] = {yellow = 5}, [2] = {red = 5}, [3] = {blue = 5}, [4] = {green = 5} }
+
+      if args[2] == "true" then
+        if gameStats.threeTeamsMode then
+          return
+        end
+        resetMapsToTest()
+        gameStats.threeTeamsMode = true
+        resetMapsList()
+        tfm.exec.chatMessage("<bv>3-team volley mode activated by admin "..name.."<n>", nil)
+        updateLobbyTextAreas()
+        return
+      end
+
+      if not gameStats.threeTeamsMode then
+        return
+      end
+      resetMapsToTest()
+
+      gameStats.threeTeamsMode = false
+      gameStats.threeBalls = false
+      resetMapsList()
+      tfm.exec.chatMessage("<bv>3-team volley mode disabled by admin "..name.."<n>", nil)
+      updateLobbyTextAreas()
     elseif command:sub(1, 8) == "realmode" and mode == "startGame" then
       if gameStats.twoTeamsMode then
-        tfm.exec.chatMessage("<bv>You should disable the real mode first to enable the 4 teams mode<n>", nil)
+        tfm.exec.chatMessage("<bv>You should disable the real mode first to enable the real mode<n>", nil)
+        return
+      end
+
+      if gameStats.threeTeamsMode then
+        tfm.exec.chatMessage("<bv>You should disable the 3 teams mode first to enable the real mode<n>", nil)
         return
       end
 
       if gameStats.teamsMode then
-        tfm.exec.chatMessage("<bv>You should disable the realmode mode first to enable the 2 teams mode<n>", nil)
+        tfm.exec.chatMessage("<bv>You should disable the realmode mode first to enable the real mode<n>", nil)
         return
       end
 
@@ -707,10 +793,12 @@ function eventChatCommand(name, c)
 
       for name1, data in pairs(tfm.get.room.playerList) do
         if string.lower(name1) == args[2] then
-          if gameStats.teamsMode and gameStats.canTransform then
-            leaveTeamTeamsMode(name1)
-            tfm.exec.chatMessage("<bv>Force leave used on "..name1.." command used by "..name.."<n>", nil)
-            return
+          if gameStats.teamsMode or gameStats.threeTeamsMode then
+            if gameStats.canTransform then
+                leaveTeamTeamsMode(name1)
+                tfm.exec.chatMessage("<bv>Force leave used on "..name1.." command used by "..name.."<n>", nil)
+                return
+            end
           else
             if not gameStats.teamsMode then
               leaveTeam(name1)
@@ -841,13 +929,16 @@ function eventChatCommand(name, c)
     elseif command:sub(1, 6) == "lobby" and mode == "gameStart" then
       ballOnGame = false
       ballOnGame2 = false
-      ballOnGameTwoBalls = {ballOnGame, ballOnGame2}
+      ballOnGame3 = false
+      ballOnGameTwoBalls = {ballOnGame, ballOnGame2, ballOnGame3}
       tfm.exec.removeObject(ball_id)
       mode = "endGame"
       gameTimeEnd = os.time() + 5000
 
       if gameStats.teamsMode then
         updateRankingFourTeamsMode()
+      elseif gameStats.threeTeamsMode then
+        updateRankingThreeTeamsMode()
       elseif gameStats.twoTeamsMode then
         updateRankingTwoTeamsMode()
       elseif gameStats.realMode then
@@ -929,10 +1020,12 @@ function eventChatCommand(name, c)
           gameStats.isGamePaused = true
           ballOnGame = false
           ballOnGame2 = false
-          ballOnGameTwoBalls = {ballOnGame, ballOnGame2}
+          ballOnGame3 = false
+          ballOnGameTwoBalls = {ballOnGame, ballOnGame2, ballOnGame3}
 
           tfm.exec.removeObject(ball_id)
           tfm.exec.removeObject(ball_id2)
+          tfm.exec.removeObject(ball_id3)
           tfm.exec.chatMessage("<bv>Command !pause used by admin "..name.."<n>", nil)
 
           local timer = math.ceil((duration - os.time())/1000)
@@ -1033,16 +1126,27 @@ function eventChatCommand(name, c)
       tfm.exec.chatMessage("<bv>The strength of the player's object has been changed to "..tostring(gameStats.psyhicObjectForce).."<n>", name)
       print("<bv>The strength of the player's object has been changed to "..tostring(gameStats.psyhicObjectForce).."<n>")
     elseif command == "test" and tfm.get.room.isTribeHouse and mode == "startGame" then
-      playersRed[1].name = "a"
-      playersRed[2].name = "a"
-      playersBlue[1].name = "a"
-      playersBlue[2].name = "a"
-      playersGreen[1].name = "a"
-      playersYellow[1].name = "a"
-      eventNewGameShowLobbyTexts(gameStats.teamsMode)
+      if gameStats.threeTeamsMode then
+        playersRed[1].name = "a"
+        playersBlue[1].name = "a"
+        playersGreen[1].name = "a"
+      else
+        playersRed[1].name = "a"
+        playersRed[2].name = "a"
+        playersBlue[1].name = "a"
+        playersBlue[2].name = "a"
+        playersGreen[1].name = "a"
+        playersYellow[1].name = "a"
+      end
+      
+      eventNewGameShowLobbyTexts()
     elseif command:sub(1, 10) == "2teamsmode" and mode == "startGame" then
       if gameStats.teamsMode then
         tfm.exec.chatMessage("<bv>You should disable the 4 teams mode first to enable the 2 teams mode<n>", nil)
+        return
+      end
+      if gameStats.threeTeamsMode then
+        tfm.exec.chatMessage("<bv>You should disable the 3 teams mode first to enable the 2 teams mode<n>", nil)
         return
       end
       if gameStats.realMode then
@@ -1098,6 +1202,27 @@ function eventChatCommand(name, c)
 
       gameStats.twoBalls = false
       tfm.exec.chatMessage("<bv>Two balls has been disabled by the admin "..name.."<n>", nil)
+    elseif command:sub(1, 10) == "threeballs" and mode == "startGame" then
+      local args = split(command)
+      print(args[2])
+      if not gameStats.threeTeamsMode then
+        tfm.exec.chatMessage("<bv>This command is only available for the 3-team mode.<n>", name)
+
+        return
+      end
+      if args[2] ~= "true" and args[2] ~= "false" then
+        tfm.exec.chatMessage('<bv>Second parameter invalid, must be true or false<n>', name)
+        return
+      end
+      if args[2] == "true" then
+        print('ativou')
+        gameStats.threeBalls = true
+        tfm.exec.chatMessage("<bv>Two balls has been enabled by the admin "..name.."<n>", nil)
+        return
+      end
+
+      gameStats.threeBalls = false
+      tfm.exec.chatMessage("<bv>Two balls has been disabled by the admin "..name.."<n>", nil)
     elseif command:sub(1, 11) == "consumables" and mode == "startGame" then
       local args = split(command)
 
@@ -1135,6 +1260,37 @@ function eventChatCommand(name, c)
 
       if gameStats.setMapName == "extra-large" then
         tfm.exec.chatMessage("<bv>There aren't availables maps to test on extra-large map", name)
+        return
+      end
+
+      if gameStats.threeTeamsMode then
+        if type(args[2]) == "nil" then
+          tfm.exec.chatMessage("<bv>Second parameter invalid, must be a tfm map like @3493212<n>", name)
+          return
+        end
+
+        if string.match(args[2], regexMap) == nil then
+          tfm.exec.chatMessage("<bv>Second parameter invalid, must be a tfm map like @3493212<n>", name)
+          return
+        end
+
+        mapsToTest[1] = args[2]
+
+        if type(args[3]) == "nil" then
+          mapsToTest[2] = customMapsThreeTeamsMode[1][2]
+          tfm.exec.chatMessage("<bv>Warning: in 4-team mode, the !np command should be !np @map @map @map, but if you only have one map ready and want to test it, the game will set the default map for the other maps<n>", name)
+          print("<bv>Warning: in 4-team mode, the !np command should be !np @map @map @map, but if you only have one map ready and want to test it, the game will set the default map for the other maps<n>")
+        else
+          if string.match(args[3], regexMap) == nil then
+            tfm.exec.chatMessage("<bv>Third parameter invalid, must be a tfm map like @3493212<n>", name)
+
+            return
+          else
+            mapsToTest[2] = args[3]
+          end
+        end
+
+        tfm.exec.chatMessage("<bv>Test map successfully selected<n>", nil)
         return
       end
 

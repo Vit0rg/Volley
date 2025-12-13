@@ -21,4 +21,10 @@ function settingsPageTwo(name)
   else
     ui.addWindow(21, "<p align='center'><font size='11px'><a href='event:consumables'>Disabled</a>", name, 665, 150, 100, 30, 1, false, false)
   end
+
+  if globalSettings.threeBalls then
+    ui.addWindow(44, "<p align='center'><font size='11px'><a href='event:threeballs'>Enabled</a>", name, 665, 200, 100, 30, 1, false, false)
+  else
+    ui.addWindow(44, "<p align='center'><font size='11px'><a href='event:threeballs'>Disabled</a>", name, 665, 200, 100, 30, 1, false, false)
+  end
 end

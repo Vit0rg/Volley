@@ -8,15 +8,14 @@ function afkSystem()
 
     local playerAfkTime = timestampNow - playersAfk[name]
 
-    if playerAfkTime >= (1 * 60 * 1000) then
+    if playerAfkTime >= (10 * 60 * 1000) then
       playersAfkList[#playersAfkList + 1] = { name = name, timestamp = playerAfkTime }
     end
   end
 
   table.sort(playersAfkList, function(a, b) return a.timestamp > b.timestamp end)
 
-  --local maxPlayers = tfm.get.room.maxPlayers
-  local maxPlayers = 4
+  local maxPlayers = tfm.get.room.maxPlayers
 
   local countDifference = 0
 
