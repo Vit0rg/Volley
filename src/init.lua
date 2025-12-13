@@ -3,11 +3,14 @@ function init()
   spawnBallArea800 = {}
   spawnBallArea1200 = {}
   spawnBallArea1600 = {}
+  
   lobbySpawn = {}
+  
   playersSpawn400 = {}
   playersSpawn800 = {}
   playersSpawn1200 = {}
   playersSpawn1600 = {}
+  
   durationDefault = 300
   duration = os.time() + durationDefault * 1000
   durationTimerPause = durationDefault
@@ -16,15 +19,20 @@ function init()
   mode = "startGame"
   removeTimer('verifyBallCoordinates')
   playerConsumables = {}
+  
   ballOnGame = false
   ballOnGame2 = false
   ballOnGameTwoBalls = {ballOnGame, ballOnGame2}
   ballsId = {nil, nil}
+  
   tfm.exec.disableAllShamanSkills(true)
+  
   playerCanTransform = {}
   playerInGame = {}
+  
   twoTeamsPlayerRedPosition = { [1] = "", [2] = "", [3] = "", [4] = "", [5] = "", [6] = "" }
   twoTeamsPlayerBluePosition = { [1] = "", [2] = "", [3] = "", [4] = "", [5] = "", [6] = "" }
+  
   playersRed = {
     [1] = {name = ''},
     [2] = {name = ''},
@@ -61,10 +69,12 @@ function init()
 
   getTeamsColors = {}
   teamsPlayersOnGame = {}
+
   messageTeamsLifes = {}
   messageTeamsLostOneLife = {}
   messageTeamsLifesTextChat = {}
   messageWinners = {}
+  
   getTeamsColorsName = {0xF59E0B, 0xEF4444, 0x3B82F6, 0x109267}
 
   for i = 1, #customMaps do
@@ -84,7 +94,8 @@ function init()
     redQuantitySpawn = 0, redLimitSpawn = 3, blueQuantitySpawn = 0, blueLimitSpawn = 3,
     lastPlayerRed = "", lastPlayerBlue = "", teamWithOutAce = "",
     reduceForce = false, aceRed = false, aceBlue = false,
-    twoBalls = false, consumables = false, actualMode = "", stopTimer = false
+    twoBalls = false, consumables = false, actualMode = "", stopTimer = false,
+    admins = ""
   }
 
   playerCoordinates = {}
@@ -93,31 +104,35 @@ function init()
   score_red = 0
   score_blue = 0
   ball_id = 0
-  tfm.exec.newGame('<C><P/><Z><S><S T="6" X="400" Y="385" L="800" H="50" P="0,0,0.3,0.2,0,0,0,0"/><S T="12" X="-5" Y="205" L="10" H="410" P="0,0,0,0.2,0,0,0,0" o="FF0000" m=""/><S T="12" X="805" Y="205" L="10" H="410" P="0,0,0,0.2,0,0,0,0" o="FF0000" m=""/><S T="12" X="400" Y="5" L="810" H="10" P="0,0,0,0.2,0,0,0,0" o="FF0000" m=""/><S T="12" X="445" Y="95" L="710" H="10" P="0,0,0.3,0.2,0,0,0,0" o="FF0000" m=""/><S T="9" X="45" Y="225" L="90" H="270" P="0,0,0,0,0,0,0,0" m=""/></S><D><P X="217" Y="359" T="6" P="0,0"/><P X="580" Y="363" T="4" P="0,0"/><P X="319" Y="360" T="5" P="0,0"/><P X="0" Y="0" T="257" P="0,0"/><DS X="400" Y="349"/></D><O/><L/></Z></C>')
+  lobby_map = '<C><P/><Z><S><S T="6" X="400" Y="385" L="800" H="50" P="0,0,0.3,0.2,0,0,0,0"/><S T="12" X="-5" Y="205" L="10" H="410" P="0,0,0,0.2,0,0,0,0" o="FF0000" m=""/><S T="12" X="805" Y="205" L="10" H="410" P="0,0,0,0.2,0,0,0,0" o="FF0000" m=""/><S T="12" X="400" Y="5" L="810" H="10" P="0,0,0,0.2,0,0,0,0" o="FF0000" m=""/><S T="12" X="445" Y="95" L="710" H="10" P="0,0,0.3,0.2,0,0,0,0" o="FF0000" m=""/><S T="9" X="45" Y="225" L="90" H="270" P="0,0,0,0,0,0,0,0" m=""/></S><D><P X="217" Y="359" T="6" P="0,0"/><P X="580" Y="363" T="4" P="0,0"/><P X="319" Y="360" T="5" P="0,0"/><P X="0" Y="0" T="257" P="0,0"/><DS X="400" Y="349"/></D><O/><L/></Z></C>'
+  
+  tfm.exec.newGame(lobby_map)
 
   if globalSettings.mode == "4 teams mode" then
     gameStats.teamsMode = true
     updateLobbyTextAreas(gameStats.teamsMode)
-    tfm.exec.chatMessage("<bv>Room Setup: The room has been configured for "..globalSettings.mode.."<n>", nil)
+    printf("<bv>Room Setup: The room has been configured for "..globalSettings.mode.."<n>", nil)
   elseif globalSettings.mode == "2 teams mode" then
     gameStats.twoTeamsMode = true
-    tfm.exec.chatMessage("<bv>Room Setup: The room has been configured for "..globalSettings.mode.."<n>", nil)
+    printf("<bv>Room Setup: The room has been configured for "..globalSettings.mode.."<n>", nil)
   elseif globalSettings.mode == "Real mode" then
     gameStats.realMode = true
-    tfm.exec.chatMessage("<bv>Room Setup: The room has been configured for "..globalSettings.mode.."<n>", nil)
+    printf("<bv>Room Setup: The room has been configured for "..globalSettings.mode.."<n>", nil)
   end
 
   if globalSettings.twoBalls then
     gameStats.twoBalls = true
-    tfm.exec.chatMessage("<bv>Room Setup: The two-ball mode has been activated<n>", nil)
+    printf("<bv>Room Setup: The two-ball mode has been activated<n>", nil)
   end
 
   if globalSettings.randomBall then
     gameStats.customBall = true
-    print("<bv>Room Setup: The random ball mode has been activated<n>", nil)
-    tfm.exec.chatMessage("<bv>Room Setup: The random ball mode has been activated<n>", nil)
+
+    printf("<bv>Room Setup: The random ball mode has been activated<n>", nil)
+    
     local indexBall= math.random(1, #balls)
     gameStats.customBallId = indexBall
+    
   end
 
   if globalSettings.randomMap then
@@ -125,8 +140,7 @@ function init()
     gameStats.isCustomMap = true
     local indexMap = ''
     
-    print("<bv>Room Setup: The random map mode has been activated<n>", nil)
-    tfm.exec.chatMessage("<bv>Room Setup: The random map mode has been activated<n>", nil)
+    printf("<bv>Room Setup: The random map mode has been activated<n>", nil)
     
     for name1, data in pairs(tfm.get.room.playerList) do
       if selectMapOpen[name1] then
@@ -137,13 +151,13 @@ function init()
     if gameStats.twoTeamsMode or gameStats.teamsMode then
       indexMap = math.random(1, #customMapsFourTeamsMode)
       gameStats.customMapIndex = indexMap
-      tfm.exec.chatMessage('<bv>'..customMapsFourTeamsMode[gameStats.customMapIndex][3]..' map (created by '..customMapsFourTeamsMode[gameStats.customMapIndex][4]..') selected randomly<n>', nil)
-      print('<bv>'..customMapsFourTeamsMode[gameStats.customMapIndex][3]..' map (created by '..customMapsFourTeamsMode[gameStats.customMapIndex][4]..') selected randomly<n>')
+      printf('<bv>'..customMapsFourTeamsMode[gameStats.customMapIndex][3]..' map (created by '..customMapsFourTeamsMode[gameStats.customMapIndex][4]..') selected randomly<n>', nil)
+      
     elseif not gameStats.realMode then
       indexMap = math.random(1, #customMaps)
       gameStats.customMapIndex = indexMap
-      print('<bv>'..customMaps[gameStats.customMapIndex][3]..' map (created by '..customMaps[gameStats.customMapIndex][4]..') selected randomly<n>', nil)
-      tfm.exec.chatMessage('<bv>'..customMaps[gameStats.customMapIndex][3]..' map (created by '..customMaps[gameStats.customMapIndex][4]..') selected randomly<n>', nil)
+      
+      printf('<bv>'..customMaps[gameStats.customMapIndex][3]..' map (created by '..customMaps[gameStats.customMapIndex][4]..') selected randomly<n>', nil)
     end
   end
 
@@ -190,6 +204,7 @@ function init()
 
   ui.addWindow(23, "<p align='center'><font size='13px'><a href='event:menuOpen'>Menu", nil, 5, 15, 100, 30, 0.2, false, false, _)
   ui.addWindow(30, "<p align='center'><font size='13px'><a href='event:selectMap'>Select a map", nil, 10, 370, 150, 30, 1, false, false, _)
+  
   ui.removeTextArea(0)
   ui.addTextArea(7, "<p align='center'>", nil, 375, 50, 30, 20, 0x161616, 0x161616, 1, false)
 

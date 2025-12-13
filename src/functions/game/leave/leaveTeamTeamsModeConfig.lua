@@ -26,7 +26,7 @@ function leaveTeamTeamsModeConfig(name)
       ball_id = nil
       ball_id2 = nil
       updateTwoBallOnGame()
-      tfm.exec.chatMessage("<j>Yellow team lost all their lives<n>", nil)
+      printf("<j>Yellow team lost all their lives<n>", nil)
       teamsLifes[1].yellow = 0
       toggleMapType()
       updateTeamsColors(1)
@@ -66,7 +66,7 @@ function leaveTeamTeamsModeConfig(name)
       ball_id = nil
       ball_id2 = nil
       updateTwoBallOnGame()
-      tfm.exec.chatMessage("<r>Red team lost all their lives<n>", nil)
+      printf("<r>Red team lost all their lives<n>", nil)
       teamsLifes[2].red = 0
       toggleMapType()
       updateTeamsColors(2)
@@ -105,7 +105,7 @@ function leaveTeamTeamsModeConfig(name)
       ball_id = nil
       ball_id2 = nil
       updateTwoBallOnGame()
-      tfm.exec.chatMessage("<bv>Blue team lost all their lives<n>", nil)
+      printf("<bv>Blue team lost all their lives<n>", nil)
       teamsLifes[3].blue = 0
       toggleMapType()
       updateTeamsColors(3)
@@ -144,7 +144,7 @@ function leaveTeamTeamsModeConfig(name)
       ball_id = nil
       ball_id2 = nil
       updateTwoBallOnGame()
-      tfm.exec.chatMessage("<vp>Green team lost all their lives<n>", nil)
+      printf("<vp>Green team lost all their lives<n>", nil)
       teamsLifes[4].green = 0
       toggleMapType()
       updateTeamsColors(3)
@@ -182,7 +182,7 @@ function leaveTeamTeamsModeConfig(name)
         ball_id = nil
         ball_id2 = nil
         updateTwoBallOnGame()
-        tfm.exec.chatMessage(messageTeamsLifes[index], nil)
+        printf(messageTeamsLifes[index], nil)
         print(messageTeamsLifes[index])
         updateTeamsColors(index)
         toggleMapType()
@@ -219,7 +219,7 @@ function leaveTeamTeamsModeConfig(name)
       end
       
       if count == 0 then
-        tfm.exec.chatMessage(messageTeamsLifes[index], nil)
+        printf(messageTeamsLifes[index], nil)
         print(messageTeamsLifes[index])
         showTheScore()
         updateTeamsColors(index)

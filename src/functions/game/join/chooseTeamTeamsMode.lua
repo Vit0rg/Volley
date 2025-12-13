@@ -109,7 +109,7 @@ function chooseTeamTeamsMode(name)
         end
       end
     else
-      tfm.exec.chatMessage("<bv>The teams are full<n>", name)
+      printf("<bv>The teams are full<n>", name)
     end
   elseif gameStats.typeMap == "large3v3" or gameStats.typeMap == "small" then
     local x = {200, 600, 1000}

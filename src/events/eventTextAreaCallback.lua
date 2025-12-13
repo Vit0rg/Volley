@@ -131,20 +131,24 @@ function eventTextAreaCallback(id, name, c)
     ui.addWindow(266, ""..playerLanguage[name].tr.realModeRules.."", name, 125, 60, 650, 300, 1, false, true, playerLanguage[name].tr.closeUIText)
   elseif c == "closeWindow" then
     closeAllWindows(name)
+  elseif c == "getAdmin" then
+    admins[name] = true
+    messageLog("<bv>"..name.." was faster to click and is now an admin!<n>")
+    closeWindow(20, nil)
   elseif c == "roomadmin" then
-    tfm.exec.chatMessage("<rose>/room *#volley0"..name.."<n>", name)
+    printf("<rose>/room *#volley0"..name.."<n>", name)
   elseif string.sub(c, 1, 4) == "sync" then
     local playerSync = string.sub(c, 5)
 
     print(playerLeft[name])
 
     if playerLeft[playerSync] then
-      tfm.exec.chatMessage("<bv>Player not found, choose another player<n>", name)
+      printf("<bv>Player not found, choose another player<n>", name)
       windowUISync(name)
     else
       closeWindow(24, name)
       tfm.exec.setPlayerSync(playerSync)
-      tfm.exec.chatMessage("<bv>Set new player sync: "..playerSync.."<n>", nil)
+      printf("<bv>Set new player sync: "..playerSync.."<n>", nil)
     end
   elseif c == "openMode" and admins[name] then
     settingsMode[name] = true
@@ -242,7 +246,7 @@ function eventTextAreaCallback(id, name, c)
   elseif string.sub(c, 1, 7) == "trophie" then
     local index = tonumber(string.sub(c, 8))
 
-    tfm.exec.chatMessage("<ce>"..playerLanguage[name].tr.msgsTrophies[index].."<n>", name)
+    printf("<ce>"..playerLanguage[name].tr.msgsTrophies[index].."<n>", name)
     print("<ce>"..playerLanguage[name].tr.msgsTrophies[index].."<n>")
 
     if playerAchievements[name][index].quantity >= 1 then
@@ -263,7 +267,7 @@ function eventTextAreaCallback(id, name, c)
     selectMapPage[name] = index
     selectMapUI(name)
   elseif string.sub(c, 1, 3) == "map" then
-    tfm.exec.chatMessage('<bv>'..string.sub(c, 4)..'<n>', name)
+    printf('<bv>'..string.sub(c, 4)..'<n>', name)
   elseif string.sub(c, 1, 7) == "votemap" and canVote[name] and not gameStats.realMode and mode == "startGame" then
     local index = tonumber(string.sub(c, 8))
     local maps = configSelectMap()
@@ -283,7 +287,7 @@ function eventTextAreaCallback(id, name, c)
       end
     end
 
-    tfm.exec.chatMessage("<bv>"..name.." voted for the "..maps[index][3].." map ("..tostring(mapsVotes[index]).." votes), type !maps to see the maps list and to vote !votemap (number)<n>", nil)
+    printf("<bv>"..name.." voted for the "..maps[index][3].." map ("..tostring(mapsVotes[index]).." votes), type !maps to see the maps list and to vote !votemap (number)<n>", nil)
   elseif string.sub(c, 1, 9) == "randommap" and not gameStats.realMode and admins[name] then
     if globalSettings.randomMap then
         globalSettings.randomMap = false
@@ -311,7 +315,7 @@ function eventTextAreaCallback(id, name, c)
     gameStats.isCustomMap = true
     gameStats.customMapIndex = index
 
-    tfm.exec.chatMessage('<bv>'..maps[gameStats.customMapIndex][3]..' map (created by '..maps[gameStats.customMapIndex][4]..') selected by admin '..name..'<n>', nil)
+    printf('<bv>'..maps[gameStats.customMapIndex][3]..' map (created by '..maps[gameStats.customMapIndex][4]..') selected by admin '..name..'<n>', nil)
     print('<bv>'..maps[gameStats.customMapIndex][3]..' map (created by '..maps[gameStats.customMapIndex][4]..') selected by admin '..name..'<n>')
 
     for name1, data in pairs(tfm.get.room.playerList) do

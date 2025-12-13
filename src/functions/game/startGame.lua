@@ -34,5 +34,5 @@ function startGame()
   verifyIsPoint()
   showCrownToAllPlayers()
   mode = "gameStart"
-  tfm.exec.chatMessage("<ch>If you don't want to see the ranking crowns, type the command !crown false<n>", nil)
+  printf("<ch>If you don't want to see the ranking crowns, type the command !crown false<n>", nil)
 end
