@@ -1,9 +1,9 @@
-local short_commands = { j = "join", l = "leave", la = "lang", ads = "admins", b = "balls", 
+local short_commands = { j = "join", l = "leave", la = "lang", ads = "admins", bs = "balls", 
                    vm = "votemap", cr = "crown", pr = "profile", rt = "resettimer",
                    skip = "skiptimer", stop = "stoptimer", smp = "setmaxplayers",
                    w = "winscore", rm = "randommap", cm = "custommap", bc = "ballcoords",
-                   ssc = "setscore", ftm = "4teamsmode", rm = "realmode",
-                   a = "admin", ua = "unadmin", k = "kick", f = "fleave", b = "ban",
+                   ssc = "setscore", ftm = "4teamsmode", re = "realmode",
+                   a = "admin", ua = "unadmin", k = "kick", f = "fleave", ban = "ban",
                    ub = "unban", rb = "randomball", cb = "customball", lo = "lobby",
                    ks = "killspec", p = "pause", sy = "sync", ssy = "setsync",
                    syt = "synctfm", lsy = "listsync", spf = "setplayerforce", 
@@ -21,7 +21,7 @@ function eventChatCommand(name, c)
   local permanentAdmin = isPermanentAdmin(name)
   
 
-  if (command == "join" and playerInGame[name] == false and mode == "gameStart" then
+  if (command == "join" and playerInGame[name] == false and mode == "gameStart") then
     local isPlayerBanned = messagePlayerIsBanned(name)
     playersAfk[name] = os.time()
     if isPlayerBanned then
