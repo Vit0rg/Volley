@@ -5,6 +5,12 @@ function verifyIsPoint()
       
       return
     end
+
+    if gameStats.threeTeamsMode then
+      verifyIsPointThreeTeamsMode()
+      
+      return
+    end
     
     if gameStats.twoTeamsMode and ballOnGame then
       verifyIsPointTwoTeamsMode()

@@ -24,7 +24,6 @@ function init()
   ballOnGame2 = false
   ballOnGameTwoBalls = {ballOnGame, ballOnGame2}
   ballsId = {nil, nil}
-  
   tfm.exec.disableAllShamanSkills(true)
   
   playerCanTransform = {}
@@ -94,8 +93,7 @@ function init()
     redQuantitySpawn = 0, redLimitSpawn = 3, blueQuantitySpawn = 0, blueLimitSpawn = 3,
     lastPlayerRed = "", lastPlayerBlue = "", teamWithOutAce = "",
     reduceForce = false, aceRed = false, aceBlue = false,
-    twoBalls = false, consumables = false, actualMode = "", stopTimer = false,
-    admins = ""
+    twoBalls = false, consumables = false, actualMode = "", stopTimer = false
   }
 
   playerCoordinates = {}
@@ -111,7 +109,7 @@ function init()
   if globalSettings.mode == "4 teams mode" then
     gameStats.teamsMode = true
     updateLobbyTextAreas(gameStats.teamsMode)
-    printf("<bv>Room Setup: The room has been configured for "..globalSettings.mode.."<n>", nil)
+    tfm.exec.chatMessage("<bv>Room Setup: The room has been configured for "..globalSettings.mode.."<n>", nil)
   elseif globalSettings.mode == "2 teams mode" then
     gameStats.twoTeamsMode = true
     printf("<bv>Room Setup: The room has been configured for "..globalSettings.mode.."<n>", nil)
@@ -151,13 +149,27 @@ function init()
     if gameStats.twoTeamsMode or gameStats.teamsMode then
       indexMap = math.random(1, #customMapsFourTeamsMode)
       gameStats.customMapIndex = indexMap
-      printf('<bv>'..customMapsFourTeamsMode[gameStats.customMapIndex][3]..' map (created by '..customMapsFourTeamsMode[gameStats.customMapIndex][4]..') selected randomly<n>', nil)
-      
+      tfm.exec.chatMessage('<bv>'..customMapsFourTeamsMode[gameStats.customMapIndex][3]..' map (created by '..customMapsFourTeamsMode[gameStats.customMapIndex][4]..') selected randomly<n>', nil)
+      print('<bv>'..customMapsFourTeamsMode[gameStats.customMapIndex][3]..' map (created by '..customMapsFourTeamsMode[gameStats.customMapIndex][4]..') selected randomly<n>')
     elseif not gameStats.realMode then
       indexMap = math.random(1, #customMaps)
       gameStats.customMapIndex = indexMap
       
       printf('<bv>'..customMaps[gameStats.customMapIndex][3]..' map (created by '..customMaps[gameStats.customMapIndex][4]..') selected randomly<n>', nil)
+    end
+  end
+
+  if not gameStats.teamsMode and not gameStats.twoTeamsMode and not gameStats.realmode then
+    if globalSettings.consumables then
+      gameStats.consumables = true
+
+      tfm.exec.chatMessage("<bv>Room Setup: Consumables has been activated in normal mode<n>", nil)
+    end
+
+    if globalSettings.mapType ~= '' then
+      gameStats.setMapName = globalSettings.mapType
+
+      tfm.exec.chatMessage("<bv>Room Setup: The map size has been set to "..globalSettings.mapType.."<n>", nil)
     end
   end
 
@@ -172,21 +184,11 @@ function init()
     playerCoordinates[name] = {x = 0, y = 0}
     playerPhysicId[name] = 0
     playersOnGameHistoric[name] = { teams = {} }
-    playersAfk[name] = os.time()
-    system.bindKeyboard(name, 32, true, true)
-    system.bindKeyboard(name, 0, true, true)
-    system.bindKeyboard(name, 1, true, true)
-    system.bindKeyboard(name, 2, true, true)
-    system.bindKeyboard(name, 3, true, true)
-    system.bindKeyboard(name, 49, true, true)
-    system.bindKeyboard(name, 50, true, true)
-    system.bindKeyboard(name, 51, true, true)
-    system.bindKeyboard(name, 52, true, true)
-    system.bindKeyboard(name, 55, true, true)
-    system.bindKeyboard(name, 56, true, true)
-    system.bindKeyboard(name, 57, true, true)
-    system.bindKeyboard(name, 48, true, true)
-    system.bindKeyboard(name, 77, true, true)
+
+    for i = 1, #keys do
+      system.bindKeyboard(name, keys[i], true, true)
+    end
+
     tfm.exec.setNameColor(name, 0xD1D5DB)
     tfm.exec.setPlayerScore(name, 0, false)
     pagesList[name] = {helpPage = 1}
@@ -225,6 +227,8 @@ function init()
       ui.addTextArea(i, "<p align='center'><font size='14px'><a href='event:joinTeamBlue"..(i - 4).."'>Join", nil, x[i - 1], y[i - 1], 150, 40, 0x184F81, 0x184F81, 1, false)
     end
   end
+
+  afkSystem() 
 
   initGame = os.time() + 25000
 end

@@ -19,6 +19,8 @@ function eventKeyboard(name, key, down, x, y, xv, yv)
   tfm.get.room.playerList[name].y = coordinatesY
 
   if key == 0 or key == 1 or key == 2 or key == 3 then
+    playersAfk[name] = os.time()
+
     removePlayerTrophy(name)
   end
 
@@ -111,10 +113,6 @@ function eventKeyboard(name, key, down, x, y, xv, yv)
           end, 15000, 1, "removeShamanObject")
         end
       end
-    end
-
-    if key == 0 or key == 1 or key == 2 or key == 3 or key == 32 then
-      playersAfk[name] = os.time()
     end
 
     if gameStats.realMode then

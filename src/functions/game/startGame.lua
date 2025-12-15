@@ -20,7 +20,6 @@ function startGame()
     groundCollision = false   
   })
 
-  enableAfkMode()
   removeTextAreasOfLobby()
   showTheScore()
 
