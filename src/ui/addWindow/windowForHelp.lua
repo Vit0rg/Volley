@@ -1,6 +1,6 @@
 function windowForHelp(name, pageOfPlayer, textNext, textPrev)
   removeUITrophies(name)
-  local pageList = #trad.helpText
+  local pageList = #translation.helpText
   ui.addWindow(24, ""..playerLanguage[name].tr.helpTitle..""..playerLanguage[name].tr.helpText[pageOfPlayer].text.."", name, 125, 60, 650, 300, 1, false, true, playerLanguage[name].tr.closeUIText)
   if pageOfPlayer >= 1 and pageOfPlayer < pageList then
     local page = pageOfPlayer + 1

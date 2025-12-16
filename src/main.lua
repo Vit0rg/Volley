@@ -31,22 +31,12 @@ local permanentAdmins =
   "Sadzia#0000"
 }
 
-local trad = ""
+-- The amount of data scattered around needs to be changed,
+-- maybe using functions. Tanarchosl
 
-if tfm.get.room.language == "br" then
-  trad = lang.br
-elseif tfm.get.room.language == "en" then
-  trad = lang.en
-elseif tfm.get.room.language == "ar" then
-  trad = lang.ar
-elseif tfm.get.room.language == "fr" then
-  trad = lang.fr
-elseif tfm.get.room.language == "pl" then
-  trad = lang.pl
-else
-  trad = lang.en
-end
-
+local translations = {"ar", "br", "en", "fr", "pl"}
+local language = tfm.get.room.language
+local translation = translations[language] or translations['en']
 
 local regex = "#volley%d+([%+_]*[%w_#]+)"
 local getRoomAdmin = string.match(tfm.get.room.name, regex)
@@ -89,13 +79,14 @@ local playerLeftRight = {}
 local playerConsumableKey = {}
 local ballOnGameTwoBalls = {}
 local ballsId = {}
-local gameStats = {gameMode = ''}
+local gameStats = {gameMode = 'Normal Mode'}
 local pagesList = {}
 local mapsVotes = {}
 local canVote = {}
 local playerOutOfCourt = {}
 local showOutOfCourtText = {}
-local globalSettings = { mode = 'Normal mode', twoBalls = false, randomBall = false, randomMap = false, mapType = '', consumables = false, threeBalls = false }
+local globalSettings = { mode = 'Normal mode', twoBalls = false, randomBall = false,
+                         randomMap = false, mapType = '', consumables = false, threeBalls = false }
 local settings = {}
 local settingsMode = {}
 local playersNormalMode = {}
@@ -169,7 +160,7 @@ for name, data in pairs(tfm.get.room.playerList) do
       [5] = { image = "1984ac773d3.png", quantity = 0 }
     }
   end
-  
+
   pagePlayerSettings[name] = 1
   playersAfk[name] = os.time()
   playerAchievementsImages[name] = {}
@@ -189,7 +180,7 @@ for name, data in pairs(tfm.get.room.playerList) do
   openRank[name] = false
   settings[name] = false
   settingsMode[name] = false
-  playerLanguage[name] = {tr = trad, name = name}
+  playerLanguage[name] = {tr = translation, name = name}
   playerOutOfCourt[name] = false
   playerCanTransform[name] = true
   playerInGame[name] = false

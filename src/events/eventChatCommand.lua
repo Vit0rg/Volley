@@ -19,7 +19,6 @@ function eventChatCommand(name, c)
   end
 
   local permanentAdmin = isPermanentAdmin(name)
-  
 
   if (command == "join" and playerInGame[name] == false and mode == "gameStart") then
     local isPlayerBanned = messagePlayerIsBanned(name)
@@ -217,8 +216,7 @@ function eventChatCommand(name, c)
 
     printf("info", "<bv>https://discord.com/invite/pWNTesmNhu", name)
   end
-  
-  
+
   if admins[name] then
     local isPlayerBanned = messagePlayerIsBanned(name)
     if isPlayerBanned then
