@@ -250,14 +250,14 @@ local function initializeSettings()
     end
 
     tfm.exec.setNameColor(name, 0xD1D5DB)
-  
+
     -- This has no real effect for now, but persistent individual ranking system 
     -- could make use of it
     -- Tanarchosl
     tfm.exec.setPlayerScore(name, 0, false)
 
     pagesList[name] = { helpPage = 1 }
-    
+
     canVote[name] = true
   end
 end

@@ -11,8 +11,48 @@ local short_commands = { j = "join", l = "leave", la = "lang", ads = "admins", b
                    tb = "twoballs", co = "consumables", se = "settings", dc = "discord"
                 }
 
+local long_commands = {["join"] = {true},}
+
+-- local function join(name)
+--   local isPlayerBanned = messagePlayerIsBanned(name)
+--   if isPlayerBanned then
+--       return
+--   end
+-- 
+--   if gameStats.threeTeamsMode and gameStats.canTransform then
+--     if tfm.get.room.playerList[name].isDead then
+--       tfm.exec.respawnPlayer(name)
+--     end
+--     chooseTeamThreeTeamsMode(name)
+--     --showCrownToAllPlayers()
+--     return
+--   end
+--   
+--   if gameStats.teamsMode and gameStats.canTransform then
+--     if tfm.get.room.playerList[name].isDead then
+--       tfm.exec.respawnPlayer(name)
+--     end
+--     chooseTeamTeamsMode(name)
+--     showCrownToAllPlayers()
+--     return
+--   else
+--     if not gameStats.teamsMode then
+--       if tfm.get.room.playerList[name].isDead then
+--         tfm.exec.respawnPlayer(name)
+--       end
+--       chooseTeam(name)
+--       showCrownToAllPlayers()
+--       return
+--     end
+--     printf("<bv>The join command is disabled now, please try the same command in few seconds<n>", name)
+--     return
+--   end
+-- end
+
+
 function eventChatCommand(name, c)
-  local command = string.lower(c)
+  local args = split(c)
+  local command = string.lower(args[1])
   
   if short_commands[command] then
     command = short_commands[command]
@@ -139,7 +179,6 @@ function eventChatCommand(name, c)
       commandNotAvailable(command:sub(1, 7), name)
       return
     end
-    local args = split(command)
 
     if #args < 2 then
       return
@@ -177,7 +216,7 @@ function eventChatCommand(name, c)
     verifyMostMapVoted()
     printf("<bv>"..name.." voted for the "..maps[indexMap][3].." map ("..tostring(mapsVotes[indexMap]).." votes), type !maps to see the maps list and to vote !votemap (number)<n>", nil)
   elseif command:sub(1, 5) == "crown" then
-    local args = split(command)
+    
 
     if args[2] ~= "true" and args[2] ~= "false" then
       printf('<bv>Second parameter invalid, must be true or false<n>', name)
@@ -197,7 +236,7 @@ function eventChatCommand(name, c)
     removeButtons(25, name)
     removeButtons(26, name)
     removeUITrophies(name)
-    local args = split(command)
+    
 
     if #args == 1 then
       profileUI(name, name)
@@ -226,9 +265,39 @@ function eventChatCommand(name, c)
     if command == "resettimer" and mode == "startGame" then
       initGame = os.time() + 15000
 
-      printf("<bv>resettimer command enabled by admin "..name.."<n>", nil)
+      tfm.exec.chatMessage("<bv>resettimer command enabled by admin "..name.."<n>", nil)
+    elseif command:sub(1,2) == "pg" then
+      print("<rose>Global search:\n")
+
+      for k, v in pairs(_G) do
+        -- print(k, v)
+
+        local match = '_'
+        if args[2] then
+          match = args[2]
+        end
+
+        local i, j
+        i, j = string.find(k, match)
+        
+        local message = "<fc>Search:<j> "..match.."<n>\n"
+        if i then
+          message = message.."<pt>Key:<ch2> "..tostring(k)..'<n>: '
+          if type(v) == "table" then
+            message = message.."\nFound Table:<j> "..(v.name or "<unnamed>")..'\n'
+            for k2,v2 in pairs(v) do
+              message = message.."<vp>Key:<ch2> "..tostring(k2)..' '
+              message = message.."<ch>Value:<ch2> "..tostring(v2)..'\n' 
+            end
+          else
+            message = message.."<bl>Value:<ch2> "..tostring(v)..'<n>\n'
+          end
+          print(message)
+        end
+      end
+    --
     elseif command:sub(1,11) == "setduration" then
-      local args = split(command)
+      
 
       if #args >= 2 then
         if type(tonumber(args[2])) ~= "number" then
@@ -343,7 +412,7 @@ function eventChatCommand(name, c)
         return
       end
 
-      local args = split(command)
+      
       
       if args[2] ~= "true" and args[2] ~= "false" then
         printf('<bv>Second parameter invalid, must be true or false<n>', name)
@@ -411,7 +480,7 @@ function eventChatCommand(name, c)
         printf("<bv>The command !customMap is not available on Volley Real Mode<n>", name)
         return
       end
-      local args = split(command)
+      
       local indexMap = ""
       if #args >= 3 then
         if type(tonumber(args[3])) ~= "number" then
@@ -522,7 +591,7 @@ function eventChatCommand(name, c)
       print('X: '..tfm.get.room.objectList[ball_id].x..'')
       print('Y: '..tfm.get.room.objectList[ball_id].y..'')
     elseif command:sub(1, 8) == "setscore" and mode ~= "startGame" then
-      local args = split(command)
+      
       local isPlayerInTheRoom = false
       local scoreNumber = nil
 
@@ -603,7 +672,7 @@ function eventChatCommand(name, c)
         printf("<bv>You should disable the real mode first to enable the 4 teams mode<n>", nil)
         return
       end
-      local args = split(command)
+      
       if args[2] ~= "true" and args[2] ~= "false" then
         printf('<bv>Second parameter invalid, must be true or false<n>', name)
         return
@@ -649,7 +718,7 @@ function eventChatCommand(name, c)
         tfm.exec.chatMessage("<bv>You should disable the real mode first to enable the 3 teams mode<n>", nil)
         return
       end
-      local args = split(command)
+      
       if args[2] ~= "true" and args[2] ~= "false" then
         tfm.exec.chatMessage('<bv>Second parameter invalid, must be true or false<n>', name)
         return
@@ -699,7 +768,7 @@ function eventChatCommand(name, c)
         return
       end
 
-      local args = split(command)
+      
       if args[2] ~= "true" and args[2] ~= "false" then
         printf('<bv>Second parameter invalid, must be true or false<n>', name)
         return
@@ -721,7 +790,7 @@ function eventChatCommand(name, c)
       resetMapsToTest()
       printf("<bv>real volley mode disabled by admin "..name.."<n>", nil)
     elseif command:sub(1, 5) == "admin" then
-      local args = split(command)
+      
 
       for name1, data in pairs(tfm.get.room.playerList) do
         if string.lower(name1) == args[2] then
@@ -742,7 +811,7 @@ function eventChatCommand(name, c)
         end
       end
     elseif command:sub(1, 7) == "unadmin" then
-      local args = split(command)
+      
       local permanentAdmin = isPermanentAdmin(name)
 
       if args[2] == "all" and permanentAdmin then
@@ -784,7 +853,7 @@ function eventChatCommand(name, c)
         end
       end
     elseif command:sub(1, 4) == "kick" then
-      local args = split(command)
+      
       local permanentAdmin = isPermanentAdmin(name)
 
       if not permanentAdmin then
@@ -807,7 +876,7 @@ function eventChatCommand(name, c)
         end
       end
     elseif command:sub(1, 6) == "fleave" and mode == "gameStart" then
-      local args = split(command)
+      
       local permanentAdmin = isPermanentAdmin(name)
 
       if not permanentAdmin then
@@ -841,7 +910,7 @@ function eventChatCommand(name, c)
         end
       end
     elseif command:sub(1, 3) == "ban" and gameStats.banCommandIsEnabled then
-      local args = split(command)
+      
       local permanentAdmin = isPermanentAdmin(name)
 
       if not permanentAdmin then
@@ -884,7 +953,7 @@ function eventChatCommand(name, c)
         end
       end
     elseif command:sub(1, 5) == "unban" and gameStats.banCommandIsEnabled then
-      local args = split(command)
+      
       local permanentAdmin = isPermanentAdmin(name)
 
       if not permanentAdmin then
@@ -907,7 +976,7 @@ function eventChatCommand(name, c)
         end
       end
     elseif command:sub(1,10) == "randomball" and mode == "startGame" then
-      local args = split(command)
+      
 
       if args[2] ~= "true" and args[2] ~= "false" then
         printf('<bv>Second parameter invalid, must be true or false<n>', name)
@@ -936,7 +1005,7 @@ function eventChatCommand(name, c)
       printf("<bv>Random ball has been disabled by the admin "..name.."<n>", nil)
 
     elseif command:sub(1, 10) == "customball" and mode == "startGame" then
-      local args = split(command)
+      
 
       if type(tonumber(args[2])) ~= "number" then
         printf('<bv>Second parameter invalid, must be a number<n>', name)
@@ -1183,7 +1252,7 @@ function eventChatCommand(name, c)
         printf("<bv>You should disable the real mode first to enable the 2 teams mode<n>", nil)
         return
       end
-      local args = split(command)
+      
       if args[2] ~= "true" and args[2] ~= "false" then
         printf('<bv>Second parameter invalid, must be true or false<n>', name)
         return
@@ -1213,7 +1282,7 @@ function eventChatCommand(name, c)
       resetMapsList()
       printf("<bv>2-team volley mode disabled by admin "..name.."<n>", nil)
     elseif command:sub(1, 8) == "twoballs" and mode == "startGame" then
-      local args = split(command)
+      
       print(args[2])
       if gameStats.realMode then
         tfm.exec.chatMessage("<bv>The command two balls isn't available for Volley Real Mode<n>", name)
@@ -1233,7 +1302,7 @@ function eventChatCommand(name, c)
       gameStats.twoBalls = false
       tfm.exec.chatMessage("<bv>Two balls has been disabled by the admin "..name.."<n>", nil)
     elseif command:sub(1, 10) == "threeballs" and mode == "startGame" then
-      local args = split(command)
+      
       print(args[2])
       if gameStats.realMode then
         tfm.exec.chatMessage("<bv>The command two balls isn't available for Volley Real Mode<n>", name)
@@ -1254,7 +1323,7 @@ function eventChatCommand(name, c)
       gameStats.threeBalls = false
       printf("<bv>Two balls has been disabled by the admin "..name.."<n>", nil)
     elseif command:sub(1, 11) == "consumables" and mode == "startGame" then
-      local args = split(command)
+      
 
       if not gameStats.teamsMode and not gameStats.twoTeamsMode and not gameStats.realMode then
         printf("<bv>The command consumables only works on normal mode<n>", name)
@@ -1280,7 +1349,7 @@ function eventChatCommand(name, c)
       
       updateSettingsUI(name)
     elseif command:sub(1, 2) == "np" and tfm.get.room.isTribeHouse and mode == "startGame" then
-      local args = split(command)
+      
       local regexMap = "^@%d%d%d%d%d%d%d$"
 
       if gameStats.realMode then
@@ -1386,7 +1455,7 @@ function eventChatCommand(name, c)
         return
       end
 
-      local args = split(command)
+      
       
       if #args >= 3 then
         local colorValues = {yellow = 200, blue = 400, red = 600, green = 1000}  
