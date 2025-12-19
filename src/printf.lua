@@ -11,55 +11,63 @@ local printf_colors = {
 
 local branch = "test"
 
+-- Redefines print behavior
 if branch == "test" then
     print = print
-else
+ else
     print = tfm.exec.chatMessage
-end
+ end
 
-ui.addTextArea(3232, "<font size = 14px>Debug zone", 
+ -- Loads the ui (caching)
+ui.addTextArea(3232, "<font size = 14px>Debug zone",
                 nil, -310, 5, 300, 600,
-			    0x000000, 0x00ffaa, 0.9, 
+			    0x000000, 0x00ffaa, 0.9,
 			    true)
 
-function debug_textArea(text, target)
+-- updates ui (should be a proper file)
+local function debug_textArea(text, target)
     ui.updateTextArea(3232, text, target)
 end
 
-
+-- It is just here for testing
+-- Delete later
 function split(inputstr, sep)
   if sep == nil then
     sep = "%s"
   end
   local t={}
+
   for str in string.gmatch(inputstr, "([^"..sep.."]+)") do
     table.insert(t, str)
   end
   return t
 end
 
-local printf_categories = 
-{
-    warning, info, err, debug, sensible 
-}
-
+-- proper function
 function printf(type, message, target)
     --print("Type:"..type)
 	--print("Message:"..message)
 	--print(target)
 
-    if type == "info" then
-        print(message)
-    elseif type == "debug" then
+    -- local printf_categories = {
+    --     _warning = "print",
+    --     _info = "print",
+    --     _debug = "debug_textArea",
+    --     _sensible = "print" }
+
+    if type == "_debug" then
         debug_textArea(message)
+    else
+        printf(message)
     end
 
 end
 
--- printf("info", "<br><j>Welcome to the Volley, created by Refletz#6472", name)
--- printf("info", "<n>#Volley Version: <j>2.3.0<n>", name)
--- printf("info", "<n>Join our #Volley Discord server: <ce>https://discord.com/invite/pWNTesmNhu<n><br>", name)
+-- garbage area
+-- printf("_info", "<n>#Volley Version: <j>2.3.0<n>", name)
 
 message = "<font size = '12x'>"
+
+message = message.."This is a test"
 
 printf("debug", message, name)

@@ -183,42 +183,31 @@ local function initializeSettings()
       end
     end
 
+    local _modes = {['normalMode'] = 'customMaps',
+                    ['twoTeamsMode'] = 'customMapsFourTeamsMode',
+                    ['teamsMode'] = 'customMapsFourTeamsMode',
+                    ['threeTeamsMode'] = 'customMapsThreeTeamsMode'
+                  }
+
     -- This looks disgusting
     if gameStats.twoTeamsMode or gameStats.teamsMode then
       indexMap = math.random(1, #customMapsFourTeamsMode)
       gameStats.customMapIndex = indexMap
-      tfm.exec.chatMessage(
-      '<bv>' ..
-      customMapsFourTeamsMode[gameStats.customMapIndex][3] ..
-      ' map (created by ' .. customMapsFourTeamsMode[gameStats.customMapIndex][4] .. ') selected randomly<n>', nil)
-      print('<bv>' ..
-      customMapsFourTeamsMode[gameStats.customMapIndex][3] ..
-      ' map (created by ' .. customMapsFourTeamsMode[gameStats.customMapIndex][4] .. ') selected randomly<n>')
+      tfm.exec.chatMessage('<bv>' ..customMapsFourTeamsMode[gameStats.customMapIndex][3] ..' map (created by ' .. customMapsFourTeamsMode[gameStats.customMapIndex][4] .. ') selected randomly<n>', nil)
     elseif gameStats.threeTeamsMode then
       indexMap = math.random(1, #customMapsThreeTeamsMode)
       gameStats.customMapIndex = indexMap
-      tfm.exec.chatMessage(
-      '<bv>' ..
-      customMapsThreeTeamsMode[gameStats.customMapIndex][3] ..
-      ' map (created by ' .. customMapsThreeTeamsMode[gameStats.customMapIndex][4] .. ') selected randomly<n>', nil)
-      print('<bv>' ..
-      customMapsThreeTeamsMode[gameStats.customMapIndex][3] ..
-      ' map (created by ' .. customMapsThreeTeamsMode[gameStats.customMapIndex][4] .. ') selected randomly<n>')
+      tfm.exec.chatMessage('<bv>'..customMapsThreeTeamsMode[gameStats.customMapIndex][3] ..' map (created by ' .. customMapsThreeTeamsMode[gameStats.customMapIndex][4] .. ') selected randomly<n>', nil)
     elseif not gameStats.realMode then
       indexMap = math.random(1, #customMaps)
       gameStats.customMapIndex = indexMap
-      print(
-      '<bv>' ..
-      customMaps[gameStats.customMapIndex][3] ..
-      ' map (created by ' .. customMaps[gameStats.customMapIndex][4] .. ') selected randomly<n>', nil)
-      tfm.exec.chatMessage(
-      '<bv>' ..
-      customMaps[gameStats.customMapIndex][3] ..
-      ' map (created by ' .. customMaps[gameStats.customMapIndex][4] .. ') selected randomly<n>', nil)
+      print('<bv>'..customMaps[gameStats.customMapIndex][3]..' map (created by ' .. customMaps[gameStats.customMapIndex][4] .. ') selected randomly<n>', nil)
     end
   end
 
-  -- Refactor this
+  --[[ Refactor this
+    if gameStats.mode = "normalMode" then
+    ]]
   if not gameStats.teamsMode and not gameStats.twoTeamsMode and not gameStats.realmode then
     if globalSettings.consumables then
       gameStats.consumables = true

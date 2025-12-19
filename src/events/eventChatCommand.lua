@@ -53,7 +53,7 @@ local long_commands = {["join"] = {true},}
 function eventChatCommand(name, c)
   local args = split(c)
   local command = string.lower(args[1])
-  
+
   if short_commands[command] then
     command = short_commands[command]
   end
@@ -287,7 +287,7 @@ function eventChatCommand(name, c)
             message = message.."\nFound Table:<j> "..(v.name or "<unnamed>")..'\n'
             for k2,v2 in pairs(v) do
               message = message.."<vp>Key:<ch2> "..tostring(k2)..' '
-              message = message.."<ch>Value:<ch2> "..tostring(v2)..'\n' 
+              message = message.."<ch>Value:<ch2> "..tostring(v2)..'\n'
             end
           else
             message = message.."<bl>Value:<ch2> "..tostring(v)..'<n>\n'
@@ -301,8 +301,7 @@ function eventChatCommand(name, c)
 
       if #args >= 2 then
         if type(tonumber(args[2])) ~= "number" then
-          print('<bv>Second parameter invalid, must be a number<n>', name)
-          printf('<bv>Second parameter invalid, must be a number<n>', name)
+          printf("info", '<bv>Second parameter invalid, must be a number<n>', name)
           return
         end
 
@@ -311,8 +310,11 @@ function eventChatCommand(name, c)
         durationTimerPause = timer
 
         tfm.exec.setGameTime(durationTimerPause, true)
+        tfm.exec.chatMessage(message, nil)
+        message = "Match duration:"..tostring(durationTimerPause).."seconds"
+        message = message.."<tc>Admin:"..name 
         print("<bv>The match duration was set to "..tostring(durationTimerPause).." seconds by admin "..name.."<n>")
-        printf("<bv>The match duration was set to"..tostring(durationTimerPause).." seconds by admin "..name.."<n>", nil)
+        local message = "<bv>The match duration was set to"..tostring(durationTimerPause).." seconds by admin "..name.."<n>"
 
         return
       end
@@ -505,7 +507,7 @@ function eventChatCommand(name, c)
         end, 2500, 1, "customMapCommandDelay")
 
         gameStats.isCustomMap = false
-        gameStats.customMapIndex = 0
+        gameStats.customMapIndex = 1
         for name1, data in pairs(tfm.get.room.playerList) do
           if selectMapOpen[name1] then
             selectMapUI(name1)
