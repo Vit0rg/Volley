@@ -38,6 +38,26 @@ function split(inputstr, sep)
   return t
 end
 
+-- Supposed to take (type, message, target)
+-- But can also take (message, target)
+function vararg(...)
+    local args = table.pack(...)
+    local _handler = { 'args[1]', 'args[2], args[3]' 'args[1], args[2], args[3]' }
+    if #args == '3' then
+        print(args[2], args[3])
+    end
+    
+end
+   
+
+function printf(message, target)
+    --print("Type:"..type)
+	--print("Message:"..message)
+	--print(target)
+    print(message, target)
+end
+
+--[[
 local printf_categories = 
 {
     warning, info, err, debug, sensible
@@ -55,11 +75,11 @@ function printf(type, message, target)
     end
 
 end
+]]
 
 -- printf("info", "<br><j>Welcome to the Volley, created by Refletz#6472", name)
 -- printf("info", "<n>#Volley Version: <j>2.3.0<n>", name)
 -- printf("info", "<n>Join our #Volley Discord server: <ce>https://discord.com/invite/pWNTesmNhu<n><br>", name)
 
-message = "<font size = '12x'>"
-
-printf("debug", message, name)
+-- message = "<font size = '12x'>"
+-- printf("debug", message, name)

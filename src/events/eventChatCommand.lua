@@ -53,7 +53,7 @@ local long_commands = {["join"] = {true},}
 function eventChatCommand(name, c)
   local args = split(c)
   local command = string.lower(args[1])
-  
+
   if short_commands[command] then
     command = short_commands[command]
   end
@@ -1423,7 +1423,6 @@ function eventChatCommand(name, c)
         if type(args[4]) == "nil" then
           mapsToTest[3] = customMapsFourTeamsMode[34][5]
           printf("<bv>Warning: in 4-team mode, the !np command should be !np @map @map @map, but if you only have one map ready and want to test it, the game will set the default map for the other maps<n>", name)
-          print("<bv>Warning: in 4-team mode, the !np command should be !np @map @map @map, but if you only have one map ready and want to test it, the game will set the default map for the other maps<n>")
         else
           if string.match(args[4], regexMap) == nil then
             printf("<bv>Fourth parameter invalid, must be a tfm map like @3493212<n>", name)
