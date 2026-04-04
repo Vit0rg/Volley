@@ -1,3 +1,9 @@
+--
+-- File: init.lua
+-- Description: Game initialization and setup logic
+--
+
+--- Initialize the game state and configure all systems
 function init()
   spawnBallArea400 = {}
   spawnBallArea800 = {}

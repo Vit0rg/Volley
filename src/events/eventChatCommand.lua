@@ -1,4 +1,9 @@
-local short_commands = { j = "join", l = "leave", la = "lang", ads = "admins", b = "balls", 
+--
+-- File: eventChatCommand.lua
+-- Description: Chat command handler for all game commands
+--
+
+local short_commands = { j = "join", l = "leave", la = "lang", ads = "admins", b = "balls",
                    vm = "votemap", cr = "crown", pr = "profile", rt = "resettimer",
                    skip = "skiptimer", stop = "stoptimer", smp = "setmaxplayers",
                    w = "winscore", rm = "randommap", cm = "custommap", bc = "ballcoords",
@@ -6,7 +11,7 @@ local short_commands = { j = "join", l = "leave", la = "lang", ads = "admins", b
                    a = "admin", ua = "unadmin", k = "kick", f = "fleave", b = "ban",
                    ub = "unban", rb = "randomball", cb = "customball", lo = "lobby",
                    ks = "killspec", p = "pause", sy = "sync", ssy = "setsync",
-                   syt = "synctfm", lsy = "listsync", spf = "setplayerforce", 
+                   syt = "synctfm", lsy = "listsync", spf = "setplayerforce",
                    t = "test", tt = "2teamsmode", afk = "afksystem", sat = "setafktime",
                    tb = "twoballs", co = "consumables", se = "settings", dc = "discord"
                 }

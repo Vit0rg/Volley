@@ -1,4 +1,8 @@
--- from https://www.lua.org/pil/11.4.html
+--
+-- File: main.lua
+-- Description: Global state initialization, admin configuration, and room setup
+--
+
 local branch = "test"
 
 local admins = 

@@ -1,3 +1,9 @@
+--
+-- File: translate.lua
+-- Description: Internationalization support (BR, EN, AR, FR, PL languages)
+-- Version: V2.3.0
+--
+
 local lang = {}
 local languages = "[AR/BR/EN/FR/PL]"
 

@@ -1,3 +1,9 @@
+--
+-- File: timer.lua
+-- Description: Custom timer system with List data structure for managing timed events
+--
+
+--- List data structure for timer ID pooling
 local List = {}
 function List.new ()
   return {first = 0, last = -1}
@@ -41,6 +47,13 @@ end
 local timerList = {}
 local timersPool = List.new()
 
+--- Add a new timer to the system
+-- @param callback function The function to call when timer triggers
+-- @param ms number Time in milliseconds between triggers
+-- @param loops number Number of times to trigger (0 = infinite)
+-- @param label string Optional label for timer identification
+-- @param ... any Additional arguments to pass to callback
+-- @return number Timer ID
 function addTimer(callback, ms, loops, label, ...)
   local id = List.popleft(timersPool)
   if id then

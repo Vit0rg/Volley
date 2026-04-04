@@ -1,3 +1,8 @@
+--
+-- File: maps.lua
+-- Description: Custom map definitions (53+ maps, including team-specific variants)
+--
+
 local customMaps = {
   [1] = {
     [1] = '@7976180',
