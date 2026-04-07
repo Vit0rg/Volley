@@ -68,7 +68,40 @@ All notable changes to Volley will be documented in this file.
 
 ---
 
-## V2.3.0
+## V2.3.2
+
+### Added
+
+- **Three-Teams Mode**
+  - Helper function `endThreeTeamsModeGame` for proper game-end logic
+  - `threeTeamsMode` support in ban command force-leave (calls `leaveTeamTeamsMode`)
+
+### Changed
+
+- **Version** — Bumped from V2.3.1 to V2.3.2 (`src/translate.lua`)
+
+### Fixed
+
+- **Ban Command** (`src/events/eventChatCommand.lua`)
+  - Removed debug `print()` statements from ban/unban handlers
+  - Removed duplicate `print()` calls that duplicated ban/unban chat messages
+  - Added `threeTeamsMode` branch in ban force-leave logic to call correct leave function
+
+- **Ball Spawning** (`src/functions/game/spawnBall/spawnInitialBall.lua`)
+  - Fixed mismatched spawnBalls/x arrays for threeBalls + large3v3 mode
+  - Added guard to prevent empty `spawnBallArea1200` table on maps without third spawn point
+
+- **Three-Teams Game End** (`src/functions/game/leave/leaveTeamTeamsModeConfig.lua`)
+  - Fixed state mutation bug where team elimination via ban could leave dangling state
+  - Extracted `endThreeTeamsModeGame()` helper to avoid code duplication across team elimination blocks
+
+- **Score UI Timing** (`src/functions/game/fourTeamsMode/toggleMap.lua`)
+  - Removed redundant `showTheScore()` call before timer in large3v3 branch
+  - Moved `showTheScore()` into timer callback in small branch for consistency
+
+---
+
+## V2.3.1
 
 ### Fixed
 

@@ -13,10 +13,11 @@ function spawnInitialBall()
     local spawnBalls = { spawnBallArea400, spawnBallArea800 }
     x = {300, 900}
 
-    if gameStats.threeBalls then
+    if gameStats.threeBalls and #spawnBallArea1200 > 0 then
       x = {300, 600, 900}
+      spawnBalls[#spawnBalls + 1] = spawnBallArea1200
     end
-    
+
     spawnBallConfig(spawnBalls, x)
 
     return

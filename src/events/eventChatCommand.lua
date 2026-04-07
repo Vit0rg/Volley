@@ -878,14 +878,12 @@ function eventChatCommand(name, c)
       local permanentAdmin = isPermanentAdmin(name)
 
       if not permanentAdmin then
-        print('first condition')
         return
       end
 
       for i = 1, #permanentAdmins do
         local admin = string.lower(permanentAdmins[i])
         if args[2] == admin then
-          print('second condition')
           return
         end
       end
@@ -893,18 +891,21 @@ function eventChatCommand(name, c)
       for name1, data in pairs(tfm.get.room.playerList) do
         if args[2] == string.lower(name1) then
           if args[2] == string.lower(getRoomAdmin) and not permanentAdmin then
-            print('third condition')
             return
           end
           playerBan[name1] = true
           tfm.exec.chatMessage("<bv>You have been banned from the room by the admin "..name.."<n>", name1)
           tfm.exec.chatMessage("<bv>"..name.." banned the player "..name1.." from the room<n>", nil)
-          print("<bv>"..name.." banned the player "..name1.." from the room<n>")
           tfm.exec.kickPlayer(name1)
           playerBanHistory[name1] = name
           if mode == "startGame" then
             updateLobbyTexts(name1)
           elseif mode == "gameStart" then
+            if gameStats.threeTeamsMode and gameStats.canTransform then
+              leaveTeamTeamsMode(name1)
+              return
+            end
+
             if gameStats.teamsMode and gameStats.canTransform then
               leaveTeamTeamsMode(name1)
               return
@@ -939,7 +940,6 @@ function eventChatCommand(name, c)
 
           playerBan[name1] = false
           tfm.exec.chatMessage("<bv>"..name.." unbanned the player "..name1.." from the room<n>", nil)
-          print("<bv>"..name.." unbanned the player "..name1.." from the room<n>")
         end
       end
     elseif command:sub(1,10) == "randomball" and mode == "startGame" then

@@ -67,8 +67,7 @@ function toggleMap()
         end
       end
     end
-    
-    showTheScore()
+
     delaySpawnBall = addTimer(function(i)
       if i == 1 then
         teleportPlayersWithTypeMap(true)
@@ -120,13 +119,12 @@ function toggleMap()
         tfm.exec.newGame(customMaps[6][1])
       end
     end
-    
-    showTheScore()
-    
+
     delaySpawnBall = addTimer(function(i)
       if i == 1 then
         spawnInitialBall()
         teleportPlayersWithTypeMap(false)
+        showTheScore()
       end
     end, 2500)
 

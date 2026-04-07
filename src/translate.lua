@@ -1,13 +1,13 @@
 --
 -- File: translate.lua
 -- Description: Internationalization support (BR, EN, AR, FR, PL languages)
--- Version: V2.3.0
+-- Version: V2.3.2
 --
 
 local lang = {}
 local languages = "[AR/BR/EN/FR/PL]"
 
-local gameVersion = "V2.3.1"
+local gameVersion = "V2.3.2"
 
 lang.br = {
   welcomeMessage = "<j>Bem vindo ao Volley, jogo criado por Refletz#6472<n>",

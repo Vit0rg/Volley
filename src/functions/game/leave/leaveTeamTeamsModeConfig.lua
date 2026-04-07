@@ -70,12 +70,14 @@ function leaveTeamTeamsModeConfig(name)
       updateTwoBallOnGame()
       tfm.exec.chatMessage("<r>Red team lost all their lives<n>", nil)
       teamsLifes[2].red = 0
-      toggleMapType()
       local index = 2
 
       if gameStats.threeTeamsMode then
-        index = 1
+        endThreeTeamsModeGame("<r>Red team lost all their lives<n>", 2, messageTeamsLifes[1], playersRed)
+        return
       end
+
+      toggleMapType()
 
       updateTeamsColors(index)
       gameStats.canTransform = false
@@ -115,6 +117,12 @@ function leaveTeamTeamsModeConfig(name)
       updateTwoBallOnGame()
       tfm.exec.chatMessage("<bv>Blue team lost all their lives<n>", nil)
       teamsLifes[3].blue = 0
+
+      if gameStats.threeTeamsMode then
+        endThreeTeamsModeGame("<bv>Blue team lost all their lives<n>", 3, messageTeamsLifes[1], playersRed)
+        return
+      end
+
       toggleMapType()
 
       local index = 3
@@ -161,6 +169,12 @@ function leaveTeamTeamsModeConfig(name)
       updateTwoBallOnGame()
       tfm.exec.chatMessage("<vp>Green team lost all their lives<n>", nil)
       teamsLifes[4].green = 0
+
+      if gameStats.threeTeamsMode then
+        endThreeTeamsModeGame("<vp>Green team lost all their lives<n>", 4, messageTeamsLifes[1], playersRed)
+        return
+      end
+
       toggleMapType()
       local index = 4
 
