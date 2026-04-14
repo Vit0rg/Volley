@@ -1,10 +1,12 @@
+
 function verifyIsPointRealMode()
+  if not ball_id or not tfm.get.room.objectList[ball_id] then return end
   local ballX = tfm.get.room.objectList[ball_id].x
   local ballY = tfm.get.room.objectList[ball_id].y
   
   resetQuantityTeams()
   
-  if ballX <= 599 and ballY >= 368 then
+  if ballX <= 599 and isBallOnGround(ball_id) then
     if gameStats.redQuantitySpawn > 0 or gameStats.redServe then
       gameStats.aceRed = false
       score_blue = score_blue + 1
@@ -62,7 +64,7 @@ function verifyIsPointRealMode()
     end
     showTheScore()
     return
-  elseif ballX >= gameStats.redX and ballX <= 1299 and ballY >= 368 then
+  elseif ballX >= gameStats.redX and ballX <= 1299 and isBallOnGround(ball_id) then
     score_blue = score_blue + 1
     gameStats.aceRed = false
     tfm.exec.chatMessage("<bv>Team Blue scored!<n>", nil)
@@ -94,7 +96,7 @@ function verifyIsPointRealMode()
     end
     showTheScore()
     return
-  elseif ballX >= 1301 and ballX <= gameStats.blueX and ballY >= 368 then
+  elseif ballX >= 1301 and ballX <= gameStats.blueX and isBallOnGround(ball_id) then
     score_red = score_red + 1
     gameStats.aceBlue = false
     tfm.exec.chatMessage("<r>Team Red scored!<n>", nil)
@@ -126,7 +128,7 @@ function verifyIsPointRealMode()
     end
     showTheScore()
     return
-  elseif ballX >= 2001 and ballY >= 368 then
+  elseif ballX >= 2001 and isBallOnGround(ball_id) then
     if gameStats.blueQuantitySpawn > 0 or gameStats.blueServe then
       gameStats.aceBlue = false
       score_red = score_red + 1
@@ -187,3 +189,5 @@ function verifyIsPointRealMode()
     return
   end
 end
+
+

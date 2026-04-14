@@ -1,3 +1,4 @@
+
 function resetMapsToTest()
   if not tfm.get.room.isTribeHouse then
     return
@@ -13,3 +14,5 @@ function resetMapsToTest()
     [3] = ""
   }
 end
+
+

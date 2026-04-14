@@ -1,3 +1,4 @@
+
 function teleportPlayer(name, mode)
   local xRed = {[1] = 101}
   local xBlue = {[1] = 700}
@@ -50,3 +51,5 @@ function teleportPlayer(name, mode)
     end
   end
 end
+
+

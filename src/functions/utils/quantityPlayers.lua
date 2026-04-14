@@ -1,3 +1,4 @@
+
 function quantityPlayers()
   local quantity = {red = 0, blue = 0}
   if gameStats.teamsMode then
@@ -42,3 +43,5 @@ function quantityPlayers()
 
   return quantity
 end
+
+

@@ -1,3 +1,4 @@
+
 function positions(page)
   local positions = {}
   
@@ -7,3 +8,5 @@ function positions(page)
   
   return positions
 end
+
+

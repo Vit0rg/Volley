@@ -1,3 +1,4 @@
+
 function toggleMap()
   gameStats.canTransform = false
   disablePlayersCanTransform(1500)
@@ -71,6 +72,7 @@ function toggleMap()
     showTheScore()
     delaySpawnBall = addTimer(function(i)
       if i == 1 then
+        updateBoundariesFromMap()
         teleportPlayersWithTypeMap(true)
         spawnInitialBall()
         showTheScore()
@@ -125,6 +127,7 @@ function toggleMap()
     
     delaySpawnBall = addTimer(function(i)
       if i == 1 then
+        updateBoundariesFromMap()
         spawnInitialBall()
         teleportPlayersWithTypeMap(false)
       end
@@ -141,3 +144,5 @@ function toggleMap()
     showCrownToAllPlayers()
   end
 end
+
+

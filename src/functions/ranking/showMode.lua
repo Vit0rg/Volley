@@ -1,3 +1,4 @@
+
 function showMode(mode, name)
   removeUITrophies(name)
   if mode ~= "4 teams mode" then
@@ -107,3 +108,5 @@ function showMode(mode, name)
     buttonNextOrPrev(25, name, 560, 300, 200, 30, 1, "<a href='event:nextRank"..tostring(page + 1).."'>"..playerLanguage[name].tr.nextMessage.."</a>")
   end
 end
+
+

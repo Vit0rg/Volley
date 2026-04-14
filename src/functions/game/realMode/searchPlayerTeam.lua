@@ -1,3 +1,4 @@
+
 function searchPlayerTeam(name)
   local team = ""
 
@@ -17,3 +18,5 @@ function searchPlayerTeam(name)
     end
   end
 end
+
+

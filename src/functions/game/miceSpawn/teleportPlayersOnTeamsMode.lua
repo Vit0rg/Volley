@@ -1,3 +1,4 @@
+
 function teleportPlayerOnTeamsMode(name)
   local x = {[1] = 200, [2] = 600, [3] = 1000}
 
@@ -43,3 +44,5 @@ function teleportPlayerOnTeamsMode(name)
     end
   end
 end
+
+

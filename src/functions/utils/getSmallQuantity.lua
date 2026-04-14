@@ -1,3 +1,4 @@
+
 function getSmallQuantity(quantity)
   local quantityNumbers = {quantity.yellow, quantity.red, quantity.blue, quantity.green}
 
@@ -17,3 +18,5 @@ function getSmallQuantity(quantity)
   local smallQuantity = {[1] = smallNumber, [2] = index}
   return smallQuantity
 end
+
+

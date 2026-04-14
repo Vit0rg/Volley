@@ -1,3 +1,4 @@
+
 function getQuantityPlayers()
   local quantity = {yellow = 0, red = 0, blue = 0, green = 0}
   if gameStats.typeMap == "large4v4" then
@@ -43,3 +44,5 @@ function getQuantityPlayers()
     return quantity
   end
 end
+
+

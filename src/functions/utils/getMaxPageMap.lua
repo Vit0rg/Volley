@@ -1,3 +1,4 @@
+
 function getMaxPageMap(mapsList)
   local count = math.floor(#mapsList / 5)
   
@@ -7,3 +8,5 @@ function getMaxPageMap(mapsList)
   
   return count
 end
+
+

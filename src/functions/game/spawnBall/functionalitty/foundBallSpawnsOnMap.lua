@@ -1,3 +1,4 @@
+
 function foundBallSpawnsOnMap(map, isLargeMap)
   local tags_T131 = {}
   spawnBallArea400 = {}
@@ -58,3 +59,5 @@ function foundBallSpawnsOnMap(map, isLargeMap)
     end
   end
 end
+
+

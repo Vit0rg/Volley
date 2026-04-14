@@ -1,3 +1,4 @@
+
 function showMapVotes(maps, index)
   if mapsVotes[index] == nil then
     return 0
@@ -5,3 +6,5 @@ function showMapVotes(maps, index)
   
   return mapsVotes[index]
 end
+
+

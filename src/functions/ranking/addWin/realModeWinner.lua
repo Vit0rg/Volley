@@ -1,3 +1,4 @@
+
 function realModeWinner(team)
   if team == "red" then
     for i = 1, #playersRed do
@@ -22,3 +23,5 @@ function realModeWinner(team)
     end
   end
 end
+
+

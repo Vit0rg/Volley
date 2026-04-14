@@ -1,3 +1,4 @@
+
 function updateLobbyTexts(name)
   if gameStats.threeTeamsMode then
     for i = 1, 4 do
@@ -73,3 +74,5 @@ function updateLobbyTexts(name)
     end
   end
 end
+
+

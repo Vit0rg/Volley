@@ -1,3 +1,4 @@
+
 function resetQuantityTeams()
   if ballOnGame then
     local ballX = tfm.get.room.objectList[ball_id].x + tfm.get.room.objectList[ball_id].vx
@@ -27,3 +28,5 @@ function resetQuantityTeams()
     showTheScore()
   end
 end
+
+

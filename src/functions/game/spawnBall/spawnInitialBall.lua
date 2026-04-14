@@ -1,3 +1,4 @@
+
 function spawnInitialBall()
   local x = {}
 
@@ -90,7 +91,7 @@ function spawnInitialBall()
       if i == 1 then
         ballOnGame = true
       end
-    end, 2000, 1, "delayToVerifyBall")
+    end, 5000, 1, "delayToVerifyBall")
     return
   end
 
@@ -112,3 +113,5 @@ function spawnInitialBall()
   ballOnGame = true
   updateTwoBallOnGame()
 end
+
+

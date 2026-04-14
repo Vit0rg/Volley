@@ -1,3 +1,4 @@
+
 function eventNewGameShowLobbyTexts()
   if gameStats.threeTeamsMode then
     for i = 1, 4 do
@@ -75,3 +76,5 @@ function eventNewGameShowLobbyTexts()
     end
   end
 end
+
+

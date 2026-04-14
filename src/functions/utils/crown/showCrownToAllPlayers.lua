@@ -1,3 +1,4 @@
+
 function showCrownToAllPlayers()
   local crowns = {redCrown, blueCrown, greenCrown, yellowCrown}
   local teams = {playersRed, playersBlue, playersGreen, playersYellow}
@@ -23,3 +24,5 @@ function showCrownToAllPlayers()
     end
   end
 end
+
+

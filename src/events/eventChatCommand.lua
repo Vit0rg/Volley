@@ -1,3 +1,4 @@
+
 local short_commands = { j = "join", l = "leave", la = "lang", ads = "admins", b = "balls", 
                    vm = "votemap", cr = "crown", pr = "profile", rt = "resettimer",
                    skip = "skiptimer", stop = "stoptimer", smp = "setmaxplayers",
@@ -401,6 +402,14 @@ function eventChatCommand(name, c)
           gameStats.customMapIndex = indexMap
           tfm.exec.chatMessage('<bv>'..customMapsFourTeamsMode[gameStats.customMapIndex][3]..' map (created by '..customMapsFourTeamsMode[gameStats.customMapIndex][4]..') selected by admin '..name..'<n>', nil)
           print('<bv>'..customMapsFourTeamsMode[gameStats.customMapIndex][3]..' map (created by '..customMapsFourTeamsMode[gameStats.customMapIndex][4]..') selected randomly<n>')
+          return
+        end
+
+        if gameStats.threeTeamsMode then
+          indexMap = math.random(1, #customMapsThreeTeamsMode)
+          gameStats.customMapIndex = indexMap
+          tfm.exec.chatMessage('<bv>'..customMapsThreeTeamsMode[gameStats.customMapIndex][3]..' map (created by '..customMapsThreeTeamsMode[gameStats.customMapIndex][4]..') selected by admin '..name..'<n>', nil)
+          print('<bv>'..customMapsThreeTeamsMode[gameStats.customMapIndex][3]..' map (created by '..customMapsThreeTeamsMode[gameStats.customMapIndex][4]..') selected randomly<n>')
           return
         end
 
@@ -993,6 +1002,13 @@ function eventChatCommand(name, c)
       ballOnGame3 = false
       ballOnGameTwoBalls = {ballOnGame, ballOnGame2, ballOnGame3}
       tfm.exec.removeObject(ball_id)
+      tfm.exec.removeObject(ball_id2)
+      tfm.exec.removeObject(ball_id3)
+      removeTimer('verifyBallCoordinates')
+      ui.removeTextArea(0)
+      ui.removeTextArea(1)
+      ui.removeTextArea(899899)
+      ui.removeTextArea(8998991)
       mode = "endGame"
       gameTimeEnd = os.time() + 5000
 
@@ -1437,3 +1453,5 @@ function eventChatCommand(name, c)
     end
   end
 end
+
+

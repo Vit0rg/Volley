@@ -1,3 +1,4 @@
+
 function eventLoop(elapsedTime, remainingTime)
   if gameStats.isGamePaused then
     tfm.exec.setGameTime(durationTimerPause, true)
@@ -141,3 +142,6 @@ function eventLoop(elapsedTime, remainingTime)
   end
   timersLoop()
 end
+
+
+

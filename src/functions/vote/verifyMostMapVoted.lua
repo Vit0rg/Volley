@@ -1,3 +1,4 @@
+
 function verifyMostMapVoted()
   local mostMapVotedIndex = 1
   local mapsTie = {}
@@ -32,3 +33,5 @@ function verifyMostMapVoted()
 
   gameStats.mapIndexSelected = mostMapVotedIndex
 end
+
+

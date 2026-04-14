@@ -1,3 +1,4 @@
+
 function updateTeamsColors(index)
   table.remove(messageTeamsLostOneLife, index)
   table.remove(messageTeamsLifes, index)
@@ -8,3 +9,5 @@ function updateTeamsColors(index)
   table.remove(teamsPlayersOnGame, index)
   table.remove(getTeamsLifes, index)
 end
+
+

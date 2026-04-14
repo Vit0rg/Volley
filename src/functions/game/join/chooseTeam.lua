@@ -1,3 +1,4 @@
+
 function chooseTeam(name)
   local maxPlayersOnGame = maxPlayers()
   if gameStats.twoTeamsMode or gameStats.realMode then
@@ -232,3 +233,5 @@ function chooseTeam(name)
     tfm.exec.chatMessage("<bv>The teams are full<n>", name)
   end
 end
+
+

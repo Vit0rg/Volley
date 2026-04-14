@@ -1,3 +1,4 @@
+
 function setConsumablesForce(key, playerMove)
   local speedX = 0
   local speedY = 0
@@ -22,3 +23,5 @@ function setConsumablesForce(key, playerMove)
   end
   return { speedX, speedY, yCoord }
 end
+
+

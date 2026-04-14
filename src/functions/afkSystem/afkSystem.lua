@@ -1,3 +1,4 @@
+
 function afkSystem() 
   local timestampNow = os.time()
   local playersAfkList = {}
@@ -66,3 +67,5 @@ function afkSystem()
     end
   end
 end
+
+

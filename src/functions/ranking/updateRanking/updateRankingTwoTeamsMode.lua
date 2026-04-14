@@ -1,3 +1,4 @@
+
 function updateRankingTwoTeamsMode()
   local rank_list = {}
 
@@ -17,3 +18,5 @@ function updateRankingTwoTeamsMode()
 
   rankTwoTeamsMode = rank_list
 end
+
+

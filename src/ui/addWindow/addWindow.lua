@@ -1,3 +1,4 @@
+
 function ui.addWindow(id, text, player, x, y, width, height, alpha, corners, closeButton, buttonText, showCornerImage)
   id = tostring(id)
   ui.addTextArea(id.."0", "", player, x+1, y+1, width-2, height-2, 0x8a583c, 0x8a583c, alpha, true)
@@ -34,3 +35,5 @@ function ui.addWindow(id, text, player, x, y, width, height, alpha, corners, clo
 
   return imageId
 end
+
+

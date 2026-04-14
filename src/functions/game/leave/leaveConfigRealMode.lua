@@ -1,3 +1,4 @@
+
 function leaveConfigRealMode(name)
   local quantity = quantityPlayers()
 
@@ -45,3 +46,5 @@ function leaveConfigRealMode(name)
     end, 6000, 1, "delaySpawnBall")
   end
 end
+
+

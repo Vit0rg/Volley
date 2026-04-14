@@ -1,3 +1,4 @@
+
 function spawnGetAdminButton()
   -- ui.addWindow(20, "<p align='center'><font size='13px'><a href='event:getAdmin'>Get Admin", name, 600, 370, 120, 30, 1, false, false, _)
   local id = 20
@@ -26,3 +27,6 @@ function checkRoomkAdmins()
   end
   return false
 end
+
+
+

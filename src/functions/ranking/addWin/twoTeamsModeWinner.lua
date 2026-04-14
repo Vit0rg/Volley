@@ -1,3 +1,4 @@
+
 function twoTeamsModeWinner(team)
   if team == "red" then
     for i = 1, #playersRed do
@@ -22,3 +23,5 @@ function twoTeamsModeWinner(team)
     end
   end
 end
+
+

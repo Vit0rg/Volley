@@ -1,3 +1,4 @@
+
 function eventPlayerLeft(name)
   playerLeft[name] = true
   playerLastMatchCount[name] = countMatches
@@ -30,3 +31,5 @@ function eventPlayerLeft(name)
     end
   end
 end
+
+

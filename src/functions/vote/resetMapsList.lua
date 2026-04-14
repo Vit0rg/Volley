@@ -1,3 +1,4 @@
+
 function resetMapsList()
   mapsVotes = {}
   gameStats.totalVotes = 0
@@ -11,3 +12,5 @@ function resetMapsList()
     end
   end
 end
+
+

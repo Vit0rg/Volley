@@ -1,3 +1,4 @@
+
 function addMatchesToAllPlayers()
   local mode = verifyMode()
 
@@ -38,3 +39,6 @@ function addMatchesToAllPlayers()
     end
   end
 end
+
+
+

@@ -1,3 +1,4 @@
+
 function windowUISync(name)
   local playersSync = {}
   closeRankingUI(name)
@@ -22,3 +23,5 @@ function windowUISync(name)
   
   ui.addWindow(24, "<p align='center'><font size='14px'>Select player sync (click on player name to select the sync)</p><br><br><p align='left'><font size='12px'>Player</p><p align='right'><font size='12px'>Sync condition</p><br>"..str.."", name, 125, 60, 650, 300, 1, false, true, playerLanguage[name].tr.closeUIText)
 end
+
+

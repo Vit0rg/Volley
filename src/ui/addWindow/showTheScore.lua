@@ -1,3 +1,4 @@
+
 function showTheScore()
   if gameStats.realMode then
     ui.addTextArea(0, "<p align='center'><font size='40px'><r>"..score_red.."<n>", nil, 1150, 20, 100, 100, 0x161616, 0x161616, 0, false)
@@ -81,3 +82,5 @@ function showTheScore()
     ui.addTextArea(1, "<p align='center'><font size='40px'><bv>"..score_blue.."<n>", nil, 1500, 20, 100, 100, 0x161616, 0x161616, 0, false)
   end
 end
+
+

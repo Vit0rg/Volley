@@ -1,3 +1,4 @@
+
 function verifyPlayerTeam(name)
   if playerOutOfCourt[name] then
     return
@@ -41,3 +42,5 @@ function verifyPlayerTeam(name)
     end
   end
 end
+
+

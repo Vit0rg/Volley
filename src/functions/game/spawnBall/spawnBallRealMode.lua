@@ -1,3 +1,4 @@
+
 function spawnBallRealMode(team)
   gameStats.reduceForce = true
   if team == "red" then
@@ -41,3 +42,5 @@ function spawnBallRealMode(team)
 
   end
 end
+
+

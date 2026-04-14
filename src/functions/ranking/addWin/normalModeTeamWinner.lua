@@ -1,3 +1,4 @@
+
 function normalModeTeamWinner(team)
   if team == "red" then
     for i = 1, #playersRed do
@@ -22,3 +23,5 @@ function normalModeTeamWinner(team)
     end
   end
 end
+
+

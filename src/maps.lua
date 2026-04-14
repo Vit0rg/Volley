@@ -1,3 +1,4 @@
+
 local customMaps = {
   [1] = {
     [1] = '@7976180',
@@ -748,3 +749,5 @@ local customMapsFourTeamsMode = {
   --   [6] = '19539e5756b.png'
   -- }
 }
+
+

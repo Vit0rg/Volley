@@ -1,3 +1,4 @@
+
 function removeUITrophies(name)
   isOpenProfile[name] = false
   
@@ -12,3 +13,5 @@ function removeUITrophies(name)
   
   playerAchievementsImages[name] = {}
 end
+
+

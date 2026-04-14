@@ -1,3 +1,4 @@
+
 function spawnBallsOnSpecificPlaces(spawnBallsTable, defaultSpawnBallTable)
   local spawnBalls = spawnBallsTable
   local defaultSpawnBall = defaultSpawnBallTable
@@ -26,3 +27,5 @@ function spawnBallsOnSpecificPlaces(spawnBallsTable, defaultSpawnBallTable)
   
   return spawnPlaces
 end
+
+

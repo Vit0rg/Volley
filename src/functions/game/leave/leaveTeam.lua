@@ -1,3 +1,4 @@
+
 function leaveTeam(name)
   playerInGame[name] = false
   tfm.exec.setNameColor(name, 0xD1D5DB)
@@ -38,3 +39,5 @@ function leaveTeam(name)
     end
   end
 end
+
+

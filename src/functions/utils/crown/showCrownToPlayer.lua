@@ -1,3 +1,4 @@
+
 function setCrownToPlayer(playerName)
   local crowns = {redCrown, blueCrown, greenCrown, yellowCrown}
   local teams = {playersRed, playersBlue, playersGreen, playersYellow}
@@ -25,3 +26,5 @@ function setCrownToPlayer(playerName)
     end
   end
 end
+
+

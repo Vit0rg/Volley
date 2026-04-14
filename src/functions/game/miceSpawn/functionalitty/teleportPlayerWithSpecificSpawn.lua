@@ -1,4 +1,5 @@
 
+
 function teleportPlayerWithSpecificSpawn(playersSpawn, name)
   local lowestPlayersQuantity
   local availableIndexesToSpawn = {}
@@ -56,3 +57,5 @@ function teleportPlayerWithSpecificSpawn(playersSpawn, name)
   playersSpawn[index].players[#playersSpawn[index].players + 1] = name
   tfm.exec.movePlayer(name, playersSpawn[index].x, playersSpawn[index].y)
 end
+
+

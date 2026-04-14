@@ -1,3 +1,4 @@
+
 function eventTextAreaCallback(id, name, c)
   if gameStats.initTimer > 2 and gameStats.canJoin then
     if string.sub(c, 1, 11) == "joinTeamRed" and playerInGame[name] == false and playersRed[tonumber(string.sub(c, 12))].name == '' then
@@ -426,3 +427,5 @@ function eventTextAreaCallback(id, name, c)
     updateSettingsUI(name)
   end
 end
+
+

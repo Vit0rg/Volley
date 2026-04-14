@@ -1,3 +1,4 @@
+
 function verifyIsPointThreeTeamsMode()
   local quantityBalls = 1
   
@@ -17,7 +18,7 @@ function verifyIsPointThreeTeamsMode()
     print(ballOnGameTwoBalls[j])
     print('===')
     if gameStats.typeMap == "large4v4" and ballOnGameTwoBalls[j] and ballsId[j] ~= nil then
-      if tfm.get.room.objectList[ballsId[j]].x <= gameStats.redX and tfm.get.room.objectList[ballsId[j]].y >= 368 and teamsLifes[2].red >= 1 and not onCondition and not lostLife then
+      if tfm.get.room.objectList[ballsId[j]].x <= gameStats.redX and isBallOnGround(ballsId[j]) and teamsLifes[2].red >= 1 and not onCondition and not lostLife then
         lostLife = true
         onCondition = true
         teamsLifes[2].red = teamsLifes[2].red - 1
@@ -59,7 +60,7 @@ function verifyIsPointThreeTeamsMode()
           spawnBall(300, j)
         end
         showTheScore()
-      elseif tfm.get.room.objectList[ballsId[j]].x <= gameStats.blueX and tfm.get.room.objectList[ballsId[j]].y >= 368 and teamsLifes[3].blue >= 1 and not onCondition and not lostLife then
+      elseif tfm.get.room.objectList[ballsId[j]].x <= gameStats.blueX and isBallOnGround(ballsId[j]) and teamsLifes[3].blue >= 1 and not onCondition and not lostLife then
         lostLife = true
         onCondition = true
         teamsLifes[3].blue = teamsLifes[3].blue - 1
@@ -101,7 +102,7 @@ function verifyIsPointThreeTeamsMode()
         end
         
         showTheScore()
-      elseif tfm.get.room.objectList[ballsId[j]].x >= gameStats.greenX and tfm.get.room.objectList[ballsId[j]].y >= 368 and teamsLifes[4].green >= 1 and not onCondition and not lostLife then
+      elseif tfm.get.room.objectList[ballsId[j]].x >= gameStats.greenX and isBallOnGround(ballsId[j]) and teamsLifes[4].green >= 1 and not onCondition and not lostLife then
         lostLife = true
         onCondition = true
         teamsLifes[4].green = teamsLifes[4].green - 1
@@ -146,7 +147,7 @@ function verifyIsPointThreeTeamsMode()
       end
     elseif gameStats.typeMap == "large3v3" and ballOnGameTwoBalls[j] and ballsId[j] ~= nil then
       for i = 1, #getTeamsLifes do
-        if tfm.get.room.objectList[ballsId[j]].x <= 599 and tfm.get.room.objectList[ballsId[j]].y >= 368 and getTeamsLifes[1] >= 1 and i == 1 and not lostLife then
+        if tfm.get.room.objectList[ballsId[j]].x <= gameStats.redX and isBallOnGround(ballsId[j]) and getTeamsLifes[1] >= 1 and i == 1 and not lostLife then
           lostLife = true
           getTeamsLifes[1] = getTeamsLifes[1] - 1
           if getTeamsLifes[1] == 0 then
@@ -191,7 +192,7 @@ function verifyIsPointThreeTeamsMode()
             spawnBall(300, j)
           end
           showTheScore()
-        elseif tfm.get.room.objectList[ballsId[j]].x >= 601 and tfm.get.room.objectList[ballsId[j]].y >= 368 and getTeamsLifes[2] >= 1 and i == 2 and not lostLife then
+        elseif tfm.get.room.objectList[ballsId[j]].x >= gameStats.blueX and isBallOnGround(ballsId[j]) and getTeamsLifes[2] >= 1 and i == 2 and not lostLife then
           lostLife = true
           getTeamsLifes[2] = getTeamsLifes[2] - 1
           if getTeamsLifes[2] == 0 then
@@ -239,3 +240,5 @@ function verifyIsPointThreeTeamsMode()
     end
   end
 end
+
+

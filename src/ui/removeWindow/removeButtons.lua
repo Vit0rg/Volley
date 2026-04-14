@@ -1,3 +1,4 @@
+
 function removeButtons(id, name)
   local id = tostring(id)
   local str = "000000000"
@@ -7,3 +8,5 @@ function removeButtons(id, name)
     str = ""..str.."0"
   end
 end
+
+

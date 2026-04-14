@@ -1,3 +1,4 @@
+
 function spawnBallConfig(spawnBalls, x)
   local customBallId = 6
   local ballPlaces = spawnBallsOnSpecificPlaces(spawnBalls, x)
@@ -42,3 +43,5 @@ function spawnBallConfig(spawnBalls, x)
   ballOnGame = true
   updateTwoBallOnGame()
 end
+
+

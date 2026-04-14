@@ -1,3 +1,4 @@
+
 function playerNearOfTheBall(name, x, y)
   if ballOnGame then
     resetQuantityTeams()
@@ -29,3 +30,5 @@ function playerNearOfTheBall(name, x, y)
     showTheScore()
   end
 end
+
+

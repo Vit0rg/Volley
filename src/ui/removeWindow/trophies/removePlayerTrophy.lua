@@ -1,3 +1,4 @@
+
 function removePlayerTrophy(name)
   if playerTrophyImage[name] ~= 0 then
     tfm.exec.removeImage(playerTrophyImage[name])
@@ -5,3 +6,5 @@ function removePlayerTrophy(name)
     removeTimer("trophy"..name.."")
   end
 end
+
+

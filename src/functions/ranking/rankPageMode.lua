@@ -1,3 +1,4 @@
+
 function rankPageMode(mode, name)
   if mode == "Normal mode" then
     return pageNormalMode[name]
@@ -11,3 +12,5 @@ function rankPageMode(mode, name)
     return pageRealMode[name]
   end
 end
+
+

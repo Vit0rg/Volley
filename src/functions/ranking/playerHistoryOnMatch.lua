@@ -1,3 +1,4 @@
+
 function playerHistoryOnMatch(team, name)
   local playerTeams = playersOnGameHistoric[name].teams
   local notFindSameTeam = true
@@ -14,3 +15,5 @@ function playerHistoryOnMatch(team, name)
   
   return false
 end
+
+

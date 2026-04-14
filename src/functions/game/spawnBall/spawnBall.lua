@@ -1,3 +1,4 @@
+
 function spawnBall(x, index, y)
   local ballSpawnX = x
   local ballSpawnY = 50
@@ -76,3 +77,5 @@ function spawnBall(x, index, y)
     end
   end
 end
+
+

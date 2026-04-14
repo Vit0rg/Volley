@@ -1,3 +1,4 @@
+
 function closeWindow(id, name)
   local id = tostring(id)
   local str = "0"
@@ -7,3 +8,6 @@ function closeWindow(id, name)
     str = ""..str.."0"
   end
 end
+
+
+

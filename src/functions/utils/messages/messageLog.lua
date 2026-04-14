@@ -1,3 +1,4 @@
+
 function messageLog(message)
   for name, data in pairs(tfm.get.room.playerList) do
     if admins[name] then
@@ -5,3 +6,6 @@ function messageLog(message)
     end
   end
 end
+
+
+

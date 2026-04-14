@@ -1,3 +1,4 @@
+
 function teleportPlayersWithTypeMap(islargeMode)
   teleportPlayersToSpec()
 
@@ -96,3 +97,5 @@ function teleportPlayersWithTypeMap(islargeMode)
     end
   end
 end
+
+

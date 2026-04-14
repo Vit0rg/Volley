@@ -1,3 +1,4 @@
+
 function getMapTypesActions() 
   local modes = getMapTypesText()
   
@@ -11,3 +12,5 @@ function getMapTypesActions()
   
   return modes
 end
+
+

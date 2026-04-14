@@ -1,3 +1,4 @@
+
 function setBadgeWinner(badge, badgeGrayscale, playersWinner)
   local playersBadgeWinners = {"Jenji#1475", "Ramasevosaff#0000", "Rex#2654", "Raidensnd#0000", "Mulan#5042", "Basker#2338", "Ppoppohaejuseyo#2315", "Djadja#5590", "Lightning#7523", "Nkmk#3180", "Sfjoud#8638", "Raf02#4942", "Axeldoton#0000", "Badmice9#0000", "Nagi#6356"}
   
@@ -33,3 +34,6 @@ setBadgeWinner("19636905a3c.png", "19636907e9e.png", { { player = "Mulan#5042", 
 setBadgeWinner("197d9274460.png", "197d9272515.png", { { player = "Jenji#1475", quantity = 1 }, { player = "Ramasevosaff#0000", quantity = 1 }, { player = "Lightning#7523", quantity = 1 }, { player = "Nkmk#3180", quantity = 1 } })
 setBadgeWinner("1984ac7a614.png", "1984ac78d52.png", { { player = "Sfjoud#8638", quantity = 1 }, { player = "Raf02#4942", quantity = 1 } })
 setBadgeWinner("1984ac7c1ac.png", "1984ac773d3.png", { { player = "Sfjoud#8638", quantity = 1 }, { player = "Raf02#4942", quantity = 1 } })
+
+
+

@@ -1,3 +1,4 @@
+
 function ui.addTrophie(id, event, player, playerTarget, x, y, width, height, alpha)
   local indexImage = tonumber(string.sub(event, 8))
   id = tostring(id)
@@ -11,3 +12,5 @@ function ui.addTrophie(id, event, player, playerTarget, x, y, width, height, alp
   ui.addTextArea(id.."000000", "<p align='right'><font size='10px'>x"..playerAchievements[playerTarget][indexImage].quantity.."", player, x+32, y+height-17, 20, 15, 0x161616, 0x161616, 0, true)
   ui.addTextArea(id.."00000000", "<a href='event:"..event.."'><font size='20px'><br> <br> </a>", player, x+5, y+6, width, height, 0x142b2e, 0x142b2e, 0, true)
 end
+
+

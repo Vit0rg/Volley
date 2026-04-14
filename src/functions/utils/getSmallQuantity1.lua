@@ -1,3 +1,4 @@
+
 function getSmallQuantity1(quantity)
   local smallNumber = 9999
   local index = 0
@@ -12,3 +13,5 @@ function getSmallQuantity1(quantity)
   local smallQuantity = {[1] = smallNumber, [2] = index}
   return smallQuantity
 end
+
+

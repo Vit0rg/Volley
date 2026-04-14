@@ -1,3 +1,4 @@
+
 function setConfigPlayersSpawn(isLargeMap, xNumber, yNumber, spawnPriority)
   if gameStats.threeTeamsMode then
     if xNumber >= 0 and xNumber <= 600 then
@@ -39,3 +40,5 @@ function setConfigPlayersSpawn(isLargeMap, xNumber, yNumber, spawnPriority)
     end
   end
 end
+
+

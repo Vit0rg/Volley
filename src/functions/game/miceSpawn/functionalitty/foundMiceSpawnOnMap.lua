@@ -1,3 +1,4 @@
+
 function foundMiceSpawnsOnMap(map, isLargeMap)
   lobbySpawn = {}
   playersSpawn400 = {}
@@ -40,3 +41,5 @@ function foundMiceSpawnsOnMap(map, isLargeMap)
   print('1200: '..#playersSpawn1200..'')
   print('1600: '..#playersSpawn1600..'')
 end
+
+

@@ -1,3 +1,4 @@
+
 function selectMap()
   local maps = {
     [1] = customMaps[6][1],
@@ -316,3 +317,5 @@ function selectMap()
     end
   end
 end
+
+

@@ -1,3 +1,4 @@
+
 function updateLobbyTextAreas()
   resetPlayerConfigs()
   initGame = os.time() + 25000
@@ -151,3 +152,5 @@ function updateLobbyTextAreas()
   end, 2500, 1, "canJoin")
 
 end
+
+

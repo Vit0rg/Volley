@@ -1,3 +1,4 @@
+
 function updateRankingRealMode()
   local rank_list = {}
 
@@ -17,3 +18,6 @@ function updateRankingRealMode()
 
   rankRealMode = rank_list
 end
+
+
+

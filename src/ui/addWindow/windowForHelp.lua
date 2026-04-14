@@ -1,3 +1,4 @@
+
 function windowForHelp(name, pageOfPlayer, textNext, textPrev)
   removeUITrophies(name)
   local pageList = #trad.helpText
@@ -15,3 +16,5 @@ function windowForHelp(name, pageOfPlayer, textNext, textPrev)
     buttonNextOrPrev(26, name, 160, 300, 200, 30, 1, "<n2>"..textPrev.."")
   end
 end
+
+

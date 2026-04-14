@@ -1,3 +1,4 @@
+
 function chooseTeamThreeTeamsMode(name)
   local quantity = getQuantityPlayers()
   local smallQuantity = ""
@@ -148,3 +149,5 @@ function chooseTeamThreeTeamsMode(name)
     end
   end
 end
+
+

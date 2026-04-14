@@ -1,3 +1,4 @@
+
 local lang = {}
 local languages = "[AR/BR/EN/FR/PL]"
 
@@ -192,3 +193,6 @@ lang.pl = {
   },
   mapSelect = 'Wybierz mapę'
 }
+
+
+

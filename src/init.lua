@@ -1,3 +1,4 @@
+
 function init()
   spawnBallArea400 = {}
   spawnBallArea800 = {}

@@ -1,3 +1,4 @@
+
 function selectMapPointersNavigation(name, page, maxPage)
   local str = ""
   for i = 1, maxPage do
@@ -10,3 +11,5 @@ function selectMapPointersNavigation(name, page, maxPage)
 
   ui.addTextArea(9999999999, "<p align='center'><font size='18px'>"..str.."", name, 347, 300, 200, 20, 0x161616, 0x161616, 0, true)
 end
+
+

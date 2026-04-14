@@ -1,3 +1,4 @@
+
 function getTeamName(text)
   if string.sub(text, 1, 9) == "<j>Yellow" then
     return "Yellow"
@@ -9,3 +10,5 @@ function getTeamName(text)
     return "Green"
   end
 end
+
+

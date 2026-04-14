@@ -1,3 +1,4 @@
+
 function resetPlayerConfigs()
   for name, data in pairs(tfm.get.room.playerList) do
     playerCanTransform[name] = true
@@ -19,3 +20,5 @@ function resetPlayerConfigs()
     canVote[name] = true
   end
 end
+
+

@@ -1,3 +1,4 @@
+
 function disablePlayerCanTransform(name)
   playerCanTransform[name] = false
   playersCanTransform = addTimer(function(i)
@@ -6,3 +7,5 @@ function disablePlayerCanTransform(name)
     end
   end, 2000, 1, "playersCanTransform")
 end
+
+

@@ -1,3 +1,4 @@
+
 function settingsPageTwo(name) 
   ui.addTextArea(99992, ""..playerLanguage[name].tr.textSettings2.."", name, 150, 110, 500, 200, 0x161616, 0x161616, 0, true)
   
@@ -28,3 +29,5 @@ function settingsPageTwo(name)
     ui.addWindow(44, "<p align='center'><font size='11px'><a href='event:threeballs'>Disabled</a>", name, 665, 200, 100, 30, 1, false, false)
   end
 end
+
+

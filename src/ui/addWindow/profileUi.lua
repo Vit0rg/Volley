@@ -1,3 +1,4 @@
+
 function profileUI(name, playerTarget)
   isOpenProfile[name] = true
   local images3 = ui.addWindow(26, "<textformat leading='55'><br>"..playerLanguage[name].tr.msgAchievements.."", name, 217, 120, 470, 240, 1, true, true, playerLanguage[name].tr.closeUIText, {true, false, true, false})
@@ -13,3 +14,5 @@ function profileUI(name, playerTarget)
   appendAchievementsImages(name, images2)
   appendAchievementsImages(name, images3)
 end
+
+

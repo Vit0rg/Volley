@@ -1,3 +1,4 @@
+
 function removePlayerTrophyImage(name)
   local removeImage = addTimer(function(i)
     if i == 1 then
@@ -8,3 +9,5 @@ function removePlayerTrophyImage(name)
     end
   end, 10000, 1, "trophy"..name.."")
 end
+
+

@@ -1,3 +1,4 @@
+
 function getQuantityPlayersOnPosition(team)
   local quantity = {middle = 0, back = 0}
 
@@ -27,3 +28,5 @@ function getQuantityPlayersOnPosition(team)
 
   return quantity
 end
+
+

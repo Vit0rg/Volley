@@ -1,3 +1,4 @@
+
 function closeAllWindows(name)
   openRank[name] = false
   selectMapOpen[name] = false
@@ -18,3 +19,5 @@ function closeAllWindows(name)
   
   closeRankingUI(name)
 end
+
+

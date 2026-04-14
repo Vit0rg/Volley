@@ -1,3 +1,4 @@
+
 function positionsString(page)
   local positions = {}
   
@@ -15,3 +16,5 @@ function positionsString(page)
   
   return positions
 end
+
+

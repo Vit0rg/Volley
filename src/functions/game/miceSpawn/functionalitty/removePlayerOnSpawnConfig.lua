@@ -1,3 +1,4 @@
+
 function removePlayerOnSpawnConfig(name)
   for i = 1, #playersSpawn400 do
     for j = 1, #playersSpawn400[i].players do
@@ -39,3 +40,5 @@ function removePlayerOnSpawnConfig(name)
     end
   end
 end
+
+

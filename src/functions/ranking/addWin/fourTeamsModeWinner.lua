@@ -1,3 +1,4 @@
+
 function fourTeamsModeWinner(teamText, playersOnTeam)
   local team = getTeamName(teamText)
 
@@ -51,3 +52,5 @@ function fourTeamsModeWinner(teamText, playersOnTeam)
     return
   end
 end
+
+

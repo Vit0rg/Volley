@@ -1,3 +1,4 @@
+
 function startGame()
   gameStats.canTransform = false
   disablePlayersCanTransform(1500)
@@ -25,6 +26,7 @@ function startGame()
 
   delaySpawnBall = addTimer(function(i)
     if i == 1 then
+      updateBoundariesFromMap()
       teleportPlayers()
       spawnInitialBall()
     end
@@ -35,3 +37,5 @@ function startGame()
   mode = "gameStart"
   tfm.exec.chatMessage("<ch>If you don't want to see the ranking crowns, type the command !crown false<n>", nil)
 end
+
+

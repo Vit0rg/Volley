@@ -1,3 +1,4 @@
+
 function leaveTeamTeamsModeConfig(name)
   local count = 0
   local index = 1
@@ -284,3 +285,5 @@ function leaveTeamTeamsModeConfig(name)
     end
   end
 end
+
+

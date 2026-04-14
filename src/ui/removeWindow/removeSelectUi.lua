@@ -1,3 +1,4 @@
+
 function removeSelectUI(name)
   local ids = {99999, 999999, 9999999, 99999999, 999999999}
 
@@ -13,3 +14,5 @@ function removeSelectUI(name)
     tfm.exec.removeImage(selectMapImages[name][i])
   end
 end
+
+

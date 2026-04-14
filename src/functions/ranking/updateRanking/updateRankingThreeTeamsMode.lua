@@ -1,3 +1,4 @@
+
 function updateRankingThreeTeamsMode()
   local rank_list = {}
 
@@ -17,3 +18,5 @@ function updateRankingThreeTeamsMode()
 
   rankThreeTeamsMode = rank_list
 end
+
+

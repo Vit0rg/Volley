@@ -1,3 +1,4 @@
+
 function chooseInitialPlayer()
   local teams = {"red", "blue"}
 
@@ -88,3 +89,5 @@ function chooseInitialPlayer()
   return chooseTeam
 
 end
+
+

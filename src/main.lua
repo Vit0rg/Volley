@@ -1,3 +1,4 @@
+
 -- from https://www.lua.org/pil/11.4.html
 local branch = "test"
 
@@ -154,6 +155,8 @@ local gameTimeEnd = os.time() + 5000
 
 local keys = {32, 0, 1, 2, 3, 49, 50, 51, 52, 55, 56, 57, 48, 77, 76, 80}
 
+GROUND_LINE_Y = 370
+
 for name, data in pairs(tfm.get.room.playerList) do
   customMapCommand[name] = true
   selectMapOpen[name] = false
@@ -218,3 +221,5 @@ for name, data in pairs(tfm.get.room.playerList) do
     system.bindKeyboard(name, keys[i], true, true)
   end
 end
+
+

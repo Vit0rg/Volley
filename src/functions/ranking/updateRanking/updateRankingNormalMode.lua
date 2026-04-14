@@ -1,3 +1,4 @@
+
 function updateRankingNormalMode()
   local rank_list = {}
 
@@ -17,3 +18,5 @@ function updateRankingNormalMode()
 
   rankNormalMode = rank_list
 end
+
+

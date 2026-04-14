@@ -1,3 +1,4 @@
+
 function eventNewPlayer(name)
   if string.sub(name, 1, 1) == "*" then
     tfm.exec.chatMessage("<bv>This room does not allow guest accounts to enter. Create an account to enter the room.<n>", name)
@@ -130,3 +131,5 @@ function eventNewPlayer(name)
   tfm.exec.chatMessage("<j>#Volley Version: "..gameVersion.."<n>", name)
   tfm.exec.chatMessage("<ce>Join our #Volley Discord server: https://discord.com/invite/pWNTesmNhu<n>", name)
 end
+
+

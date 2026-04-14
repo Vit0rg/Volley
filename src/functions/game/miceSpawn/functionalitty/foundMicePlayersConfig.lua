@@ -1,3 +1,4 @@
+
 function foundMicePlayersConfig(map)
   local mapXML = ""
   
@@ -17,3 +18,5 @@ function foundMicePlayersConfig(map)
     end
   end
 end
+
+

@@ -1,3 +1,4 @@
+
 function selectMapUI(name)
   removeSelectUI(name)
   local maps = configSelectMap()
@@ -46,3 +47,5 @@ function selectMapUI(name)
     buttonNextOrPrev(25, name, 560, 300, 200, 30, 1, "<a href='event:nextSelectMap"..tostring(page + 1).."'>"..playerLanguage[name].tr.nextMessage.."</a>")
   end
 end
+
+
