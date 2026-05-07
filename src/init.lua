@@ -89,7 +89,7 @@ function init()
     mapIndexSelected = 0, canTransform = false, teamsMode = false, canJoin = true,
     customBall = true, customBallId = 12,
     banCommandIsEnabled = true, killSpec = false, isGamePaused = false,
-    psyhicObjectForce = 1, twoTeamsMode = false, enableAfkMode = false,
+    physicObjectForce = 1, twoTeamsMode = false, enableAfkMode = false,
     realMode = false, redServeIndex = 1, blueServeIndex = 1, redPlayerServe = "",
     bluePlayerServe = "", redServe = false, blueServe = false,
     redQuantitySpawn = 0, redLimitSpawn = 3, blueQuantitySpawn = 0, blueLimitSpawn = 3,

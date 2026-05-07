@@ -14,7 +14,7 @@ function foundMicePlayersConfig(map)
     local playerForce = string.match(pTag, 'playerForce="([^"]+)"')
     
     if type(tonumber(playerForce)) == 'number' then
-      gameStats.psyhicObjectForce = tonumber(playerForce)
+      gameStats.physicObjectForce = tonumber(playerForce)
     end
   end
 end

@@ -1198,10 +1198,10 @@ function eventChatCommand(name, c)
         return
       end
 
-      gameStats.psyhicObjectForce = numberForce
+      gameStats.physicObjectForce = numberForce
 
-      tfm.exec.chatMessage("<bv>The strength of the player's object has been changed to "..tostring(gameStats.psyhicObjectForce).."<n>", name)
-      print("<bv>The strength of the player's object has been changed to "..tostring(gameStats.psyhicObjectForce).."<n>")
+      tfm.exec.chatMessage("<bv>The strength of the player's object has been changed to "..tostring(gameStats.physicObjectForce).."<n>", name)
+      print("<bv>The strength of the player's object has been changed to "..tostring(gameStats.physicObjectForce).."<n>")
     elseif command == "test" and tfm.get.room.isTribeHouse and mode == "startGame" then
       if gameStats.threeTeamsMode then
         playersRed[1].name = "a"

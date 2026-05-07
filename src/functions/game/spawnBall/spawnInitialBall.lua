@@ -103,7 +103,7 @@ function spawnInitialBall()
     x = {400, 800}
     spawnBalls = {spawnBallArea800, spawnBallArea1600}
   else
-    gameStats.psyhicObjectForce = 1.2
+    gameStats.physicObjectForce = 1.2
     x = {400, 1400}
   end
 

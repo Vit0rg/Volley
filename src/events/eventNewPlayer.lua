@@ -18,9 +18,11 @@ function eventNewPlayer(name)
 
   pagePlayerSettings[name] = 1
   customMapCommand[name] = true
+
   selectMapOpen[name] = false
   selectMapPage[name] = 1
   selectMapImages[name] = {}
+
   isOpenProfile[name] = false
   playerTrophyImage[name] = 0
   if playerAchievements[name] == nil then
@@ -32,17 +34,20 @@ function eventNewPlayer(name)
       [5] = { image = "1984ac773d3.png", quantity = 0 }
     }
   end
-  playerAchievementsImages[name] = {}
+
   settings[name] = false
   settingsMode[name] = false
+
+  playerAchievementsImages[name] = {}
   playerLeft[name] = false
   playerLeftRight[name] = 0
   playerConsumable[name] = true
   playerConsumableKey[name] = 56
   playerConsumableItem[name] = 80
   playerForce[name] = 0
-  showOutOfCourtText[name] = false
   playerOutOfCourt[name] = false
+
+  showOutOfCourtText[name] = false
   openRank[name] = false
   playerLanguage[name] = {tr = trad, name = name}
   pagesList[name] = {helpPage = 1}
@@ -81,16 +86,26 @@ function eventNewPlayer(name)
   end
 
   if playersNormalMode[name] == nil then
+    --[[
+      This could all be inside one single table:
+      --Vit0rg
+    ]]
     playersNormalMode[name] = {name = name, matches = 0, wins = 0, winRatio = 0, winsRed = 0, winsBlue = 0}
-    pageNormalMode[name] = 1
     playersFourTeamsMode[name] = {name = name, matches = 0, wins = 0, winRatio = 0, winsRed = 0, winsBlue = 0, winsYellow = 0, winsGreen = 0}
-    pageFourTeamsMode[name] = 1
     playersThreeTeamsMode[name] = {name = name, matches = 0, wins = 0, winRatio = 0, winsRed = 0, winsBlue = 0, winsGreen = 0}
-    pageThreeTeamsMode[name] = 1
     playersTwoTeamsMode[name] = {name = name, matches = 0, wins = 0, winRatio = 0, winsRed = 0, winsBlue = 0}
-    pageTwoTeamsMode[name] = 1
     playersRealMode[name] = {name = name, matches = 0, wins = 0, winRatio = 0, winsRed = 0, winsBlue = 0}
+    
+    --[[
+      This could also  all be inside one single table:
+      --Vit0rg
+    ]]
+    pageFourTeamsMode[name] = 1
+    pageNormalMode[name] = 1
+    pageThreeTeamsMode[name] = 1
+    pageTwoTeamsMode[name] = 1
     pageRealMode[name] = 1
+
     playerRankingMode[name] = "Normal mode"
   end
 
@@ -102,7 +117,7 @@ function eventNewPlayer(name)
   for i = 1, #keys do
     system.bindKeyboard(name, keys[i], true, true)
   end
-  
+
   tfm.exec.setNameColor(name, 0xD1D5DB)
   if playerBan[name] then
     tfm.exec.chatMessage("<bv>You have been banned from the room by the admin "..playerBanHistory[name].."<n>", name)
